@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.5.2...v0.6.0) (2026-11-04)
+
+
+### Features
+
+* opensourceeurope.org with the OSE knowledge base ([118d3e9](https://github.com/opensourceeurope/opensourceeurope.org/commit/118d3e992ff13a9128ba0563473b133a2846ff68))
+
 ## [0.5.2](https://github.com/opensourceeurope/ose-knowledge-mcp/compare/v0.5.1...v0.5.2) (2026-08-22)
 
 
