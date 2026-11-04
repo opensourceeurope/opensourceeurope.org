@@ -60,8 +60,8 @@ These are all the `secrets.*` and `vars.*` the workflows in `.github/workflows/`
 |---|---|---|
 | `SCW_ACCESS_KEY` | secret | `deploy-site.yml`, `deploy-function.yml`, `deploy-chat-function.yml`, `deploy-analytics-job.yml`, `release.yml` |
 | `SCW_SECRET_KEY` | secret | same as `SCW_ACCESS_KEY` |
-| `SCW_DEFAULT_PROJECT_ID` | secret | `deploy-chat-function.yml`, `deploy-analytics-job.yml`, `release.yml` |
-| `SCW_DEFAULT_ORGANIZATION_ID` | secret | `deploy-chat-function.yml`, `deploy-analytics-job.yml`, `release.yml` |
+| `SCW_DEFAULT_PROJECT_ID` | secret | `deploy-function.yml`, `deploy-chat-function.yml`, `deploy-analytics-job.yml`, `release.yml` |
+| `SCW_DEFAULT_ORGANIZATION_ID` | secret | `deploy-function.yml`, `deploy-chat-function.yml`, `deploy-analytics-job.yml`, `release.yml` |
 | `MISTRAL_API_KEY` | secret | `deploy-chat-function.yml`, `release.yml` |
 | `RELEASE_TOKEN` | secret | `release.yml`, `refresh.yml` |
 | `SCW_REGION` | variable | `deploy-site.yml`, `deploy-function.yml`, `deploy-chat-function.yml`, `deploy-analytics-job.yml`, `release.yml` |

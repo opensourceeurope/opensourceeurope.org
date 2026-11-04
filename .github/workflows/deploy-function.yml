@@ -7,6 +7,8 @@ on:
     secrets:
       SCW_ACCESS_KEY: { required: true }
       SCW_SECRET_KEY: { required: true }
+      SCW_DEFAULT_PROJECT_ID: { required: true }
+      SCW_DEFAULT_ORGANIZATION_ID: { required: true }
   workflow_dispatch:
 
 permissions:
@@ -42,11 +44,13 @@ jobs:
         env:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
+          SCW_DEFAULT_PROJECT_ID: ${{ secrets.SCW_DEFAULT_PROJECT_ID }}
+          SCW_DEFAULT_ORGANIZATION_ID: ${{ secrets.SCW_DEFAULT_ORGANIZATION_ID }}
           SCW_REGION: ${{ vars.SCW_REGION }}
           SCW_FUNCTION_ID: ${{ vars.SCW_FUNCTION_ID }}
         run: |
           missing=0
-          for name in SCW_ACCESS_KEY SCW_SECRET_KEY SCW_REGION SCW_FUNCTION_ID; do
+          for name in SCW_ACCESS_KEY SCW_SECRET_KEY SCW_DEFAULT_PROJECT_ID SCW_DEFAULT_ORGANIZATION_ID SCW_REGION SCW_FUNCTION_ID; do
             if [ -z "${!name}" ]; then
               echo "::error::$name is not set. See docs/deployment.md."
               missing=1
@@ -72,6 +76,9 @@ jobs:
         env:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
+          # scw function deploy fails with "organization ID is required" without these.
+          SCW_DEFAULT_PROJECT_ID: ${{ secrets.SCW_DEFAULT_PROJECT_ID }}
+          SCW_DEFAULT_ORGANIZATION_ID: ${{ secrets.SCW_DEFAULT_ORGANIZATION_ID }}
           SCW_DEFAULT_REGION: ${{ vars.SCW_REGION }}
           SCW_FUNCTION_ID: ${{ vars.SCW_FUNCTION_ID }}
         run: |

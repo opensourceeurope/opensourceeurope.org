@@ -276,6 +276,8 @@ jobs:
     secrets:
       SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
       SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
+      SCW_DEFAULT_PROJECT_ID: ${{ secrets.SCW_DEFAULT_PROJECT_ID }}
+      SCW_DEFAULT_ORGANIZATION_ID: ${{ secrets.SCW_DEFAULT_ORGANIZATION_ID }}
 
   # The site, with the pinned package version in /ask/. It waits for publish, so /ask/
   # never shows a pin that PyPI does not have. A manual dispatch skips it, because that
