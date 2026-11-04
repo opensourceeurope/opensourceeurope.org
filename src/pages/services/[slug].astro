@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+import Sections from '../../components/Sections.astro';
+import Base from '../../layouts/Base.astro';
+import { loadPage } from '../../lib/page';
+
+// One page per entry in src/content/services/. The file name is the slug.
+export async function getStaticPaths() {
+  return (await getCollection('services')).map((entry) => ({ params: { slug: entry.id } }));
+}
+
+const { seo, sections } = await loadPage('services', Astro.params.slug);
+---
+
+<Base seo={seo}>
+  <Sections sections={sections} />
+</Base>

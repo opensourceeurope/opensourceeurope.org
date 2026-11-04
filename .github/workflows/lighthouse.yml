@@ -1,0 +1,44 @@
+# Lighthouse budgets on every enabled route, desktop and mobile. The budgets are
+# in lighthouserc.desktop.json and lighthouserc.mobile.json. @lhci/cli is the
+# version pinned in package-lock.json.
+name: lighthouse
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lighthouse-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build the site
+        env:
+          PUBLIC_CONTACT_ENDPOINT: http://localhost:8081
+          PUBLIC_CHAT_ENDPOINT: http://localhost:8080
+        run: npm run build
+
+      - name: Lighthouse, mobile
+        run: npx lhci autorun --config=lighthouserc.mobile.json
+
+      - name: Lighthouse, desktop
+        run: npx lhci autorun --config=lighthouserc.desktop.json

@@ -1,0 +1,382 @@
+---
+import Cta from '../Cta.astro';
+import Eyebrow from '../Eyebrow.astro';
+import Heading from '../Heading.astro';
+import Img from '../Img.astro';
+import Wrap from '../Wrap.astro';
+import Cursor from '../motion/Cursor.astro';
+import StackCards from '../motion/StackCards.astro';
+import type { SectionOf } from '../../lib/sections';
+
+interface Props {
+  section: SectionOf<'steps'>;
+}
+const { section } = Astro.props;
+// stacked cards carry their number as a heading, as on the live site.
+const stacked = section.variant === 'stacked';
+const spotlight = section.variant === 'spotlight';
+// stacked: the E10 script pins an inner block while the cards stack, so the
+// section's content sits in a wrapper.
+---
+
+<section
+  id={section.id}
+  class:list={['steps', `steps--${section.variant}`, { 'grid-26': !stacked, 'steps--has-bg': section.background }]}
+  data-pin-circle-over={spotlight && section.background ? '' : undefined}
+  data-stack={stacked ? '' : undefined}
+>
+  <Wrap when={stacked} class="steps__pin grid-26">
+  {
+    section.background && (
+      <div class="steps__bg">
+        <Img image={section.background} />
+      </div>
+    )
+  }
+  <div class="steps__head">
+    <Eyebrow text={section.eyebrow} />
+    <Heading heading={section.heading} />
+  </div>
+  <ol>
+    {
+      section.items.map((item, i) => (
+        <li data-glow={spotlight ? 'card' : undefined}>
+          {item.image && (
+            <div class="steps__media">
+              <Img image={item.image} />
+            </div>
+          )}
+          <div class="steps__text">
+            {stacked && <h3 class="steps__number">{String(i + 1).padStart(2, '0')}</h3>}
+            <div class="steps__copy">
+              <h3>{item.title}</h3>
+              {item.body && <p>{item.body}</p>}
+            </div>
+          </div>
+        </li>
+      ))
+    }
+  </ol>
+  {section.cta && <div class="steps__cta"><Cta cta={section.cta} /></div>}
+  </Wrap>
+</section>
+{spotlight && <Cursor />}
+{stacked && <StackCards />}
+
+<style>
+  .steps {
+    position: relative;
+    isolation: isolate;
+    padding-block: var(--section-pad-y);
+  }
+  .steps__head > :global(* + *) {
+    margin-top: var(--space-4);
+  }
+  .steps :global(h2) {
+    font-size: var(--text-h2);
+    line-height: var(--leading-h2);
+  }
+  ol {
+    display: grid;
+    gap: var(--space-4);
+    margin: var(--space-7) 0 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: step;
+  }
+  li {
+    position: relative;
+    overflow: hidden;
+    border: var(--border-card);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+    counter-increment: step;
+  }
+  .steps__text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding: var(--space-4);
+  }
+  h3 {
+    margin: 0;
+    font-size: var(--text-h3);
+    line-height: var(--leading-h3);
+    font-weight: var(--weight-semibold);
+  }
+  .steps__text p {
+    margin: 0;
+    font-size: var(--text-sm);
+    line-height: var(--leading-sm);
+    font-weight: var(--weight-light);
+  }
+
+  .steps__cta {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-7);
+  }
+
+  /* Title and text sit straight in the card's text column, except in
+     stacked cards, where they form one block below the number. */
+  .steps__copy {
+    display: contents;
+  }
+
+  /* numbered: 01, 02, … before each title */
+  .steps--numbered .steps__text::before {
+    content: counter(step, decimal-leading-zero);
+    color: var(--color-text-muted);
+  }
+
+  /* spotlight: centred heading, image cards, over a large round image */
+  .steps--spotlight {
+    overflow: hidden;
+  }
+  .steps--spotlight.steps--has-bg {
+    padding-top: 112px;
+  }
+  .steps--spotlight .steps__text p {
+    font-size: var(--text-base);
+  }
+  .steps--spotlight .steps__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .steps--spotlight :global(h2) {
+    max-width: 664px;
+  }
+  .steps--spotlight > .steps__bg {
+    grid-column: auto;
+  }
+  .steps__bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    width: max(150vw, 1200px);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: translateX(-50%);
+  }
+  .steps__bg :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .steps--spotlight::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0 0;
+    z-index: -1;
+    height: 45%;
+    background: linear-gradient(to top, var(--color-bg) 15%, transparent);
+  }
+  /* Content sits above the pointer glow (E5) of spotlight cards. */
+  .steps--spotlight li > * {
+    position: relative;
+    z-index: 1;
+  }
+  .steps__media {
+    position: relative;
+    height: 226px;
+    background: var(--color-surface);
+  }
+  .steps__media :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .steps__media::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 110px;
+    background: linear-gradient(to top, var(--color-card-fade), transparent);
+  }
+
+  /* stacked: "How it works" on the service pages. Wide cards with the
+     number and text on one side and the image on the other, listed one
+     after another (the settled state of E10). */
+  .steps--stacked {
+    padding-block: 0;
+  }
+  .steps--stacked :global(.steps__pin) {
+    position: relative;
+    padding-block: var(--section-pad-y) var(--space-9);
+  }
+  .steps--stacked .steps__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .steps--stacked :global(h2) {
+    max-width: 664px;
+  }
+  .steps--stacked .steps__bg {
+    display: none;
+    grid-column: auto;
+    inset: 0;
+    width: auto;
+    aspect-ratio: auto;
+    border-radius: 0;
+    transform: none;
+  }
+  .steps--stacked .steps__bg :global(img) {
+    object-fit: contain;
+  }
+  .steps--stacked ol {
+    margin-top: var(--space-8);
+  }
+  .steps--stacked li {
+    display: flex;
+    flex-direction: column;
+    height: 554px;
+  }
+  .steps--stacked .steps__text {
+    flex: none;
+    justify-content: space-between;
+    gap: 0;
+    height: 214px;
+    margin: var(--space-6);
+    padding: 0;
+  }
+  .steps--stacked .steps__copy {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .steps--stacked .steps__number {
+    color: var(--color-text-muted);
+    font-size: var(--text-h2);
+    line-height: var(--leading-h2);
+    font-weight: var(--weight-medium);
+  }
+  .steps--stacked .steps__copy h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .steps--stacked .steps__copy p {
+    max-width: 349px;
+  }
+  .steps--stacked .steps__media {
+    order: 1;
+    flex: 1;
+    min-height: 0;
+    height: auto;
+    padding-top: var(--space-4);
+    background: none;
+  }
+  .steps--stacked .steps__media :global(img) {
+    object-fit: contain;
+    object-position: bottom;
+  }
+
+  /* Below 1024 px the image keeps its own height at the bottom of the card.
+     The text is 214 px tall and gets shorter when a tall image needs the
+     room, as on live. */
+  @media (max-width: 1023px) {
+    .steps--stacked .steps__text {
+      flex: 0 1 214px;
+      height: auto;
+    }
+    .steps--stacked .steps__media {
+      flex: none;
+      margin-top: auto;
+    }
+    .steps--stacked .steps__media :global(img) {
+      display: block;
+      height: auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .steps--stacked .steps__bg {
+      display: block;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .steps--stacked :global(.steps__pin) {
+      padding-block: 100px var(--space-10);
+    }
+    .steps--stacked :global(.steps__pin) > * {
+      grid-column: 4 / 24;
+    }
+    .steps--stacked ol {
+      grid-template-columns: none;
+      gap: var(--space-6);
+      margin-top: var(--space-8);
+    }
+    .steps--stacked li {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 340px;
+    }
+    .steps--stacked .steps__text {
+      height: auto;
+      margin: var(--space-8) 88px;
+      padding: 0;
+    }
+    .steps--stacked .steps__media {
+      flex: 0 1 50%;
+      height: auto;
+      padding-top: 15px;
+    }
+    .steps__cta {
+      margin-top: var(--space-8);
+    }
+    .steps--spotlight .steps__text p {
+      font-size: var(--text-sm);
+    }
+    .steps--spotlight > * {
+      grid-column: 3 / 25;
+    }
+    ol {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-6);
+      margin-top: var(--space-8);
+    }
+    .steps__text {
+      padding: var(--space-6);
+    }
+    .steps__media {
+      height: 316px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .steps--stacked :global(.steps__pin) {
+      padding-top: 130px;
+    }
+  }
+
+  /* E10, pinned by the script: the cards share one place and stack. */
+  .steps--stacked.is-pinned :global(.steps__pin) {
+    position: sticky;
+    top: var(--pin-top, 0px);
+  }
+  .steps--stacked.is-pinned ol {
+    display: grid;
+    grid-template-columns: none;
+  }
+  .steps--stacked.is-pinned li {
+    grid-area: 1 / 1;
+    will-change: transform;
+  }
+
+  /* E2: while the home circle section is pinned, this section scrolls up
+     over the large circle, so it drops its own copy of the circle. */
+  :global(.pin-circle) .steps--spotlight {
+    z-index: 1;
+    margin-top: 200vh;
+  }
+  :global(.pin-circle) .steps--spotlight > .steps__bg {
+    display: none;
+  }
+</style>

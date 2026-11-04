@@ -1,0 +1,56 @@
+name: knowledge-ci
+
+on:
+  push:
+    branches: [main]
+  # No path filter: validate is a required check, and a required check that
+  # never runs blocks the merge.
+  pull_request: {}
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Check the plugin agent is in sync with the canonical persona
+        run: ./scripts/knowledge/sync-agent.sh --check
+
+      # Fails the PR if chunks.json changed without regenerating the committed
+      # embeddings.json + milvus.db. Pure hash comparison — no opencrane / model download.
+      - name: Check the committed vector index is in sync with the chunks
+        run: ./scripts/knowledge/ensure-index.sh --check
+
+      # .opencrane/constraints.txt caps dependencies opencrane leaves unpinned. Fail if an
+      # opencrane install in the scripts or workflows skips it, or the Dockerfile ignores it.
+      - name: Check every opencrane install applies the dependency caps
+        run: |
+          missing="$(git grep -nE '^[^#]*uvx .*opencrane' -- scripts/knowledge .github/workflows ':!.github/workflows/knowledge-ci.yml' | grep -v -- '--constraints .opencrane/constraints.txt' || true)"
+          if [ -n "$missing" ]; then
+            echo "::error::opencrane installed without --constraints .opencrane/constraints.txt:"
+            echo "$missing"
+            exit 1
+          fi
+          grep -q '^transformers<' .opencrane/constraints.txt || { echo "::error::.opencrane/constraints.txt has no transformers cap"; exit 1; }
+          grep -q -- '-c /tmp/constraints.txt' .opencrane/Dockerfile || { echo "::error::.opencrane/Dockerfile does not install with the constraints"; exit 1; }
+          grep -q 'cap-pack-deps.sh' .github/workflows/release.yml || { echo "::error::release.yml does not cap the packed dependencies"; exit 1; }
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+
+      - name: Build + test the chat function
+        working-directory: functions/chat
+        run: |
+          npm ci
+          npm run build
+          npm test
+
+      # Workflow linting lives in lint-workflows.yml, and the dependency and workflow
+      # audit in security-audit.yml. Neither is repeated here.

@@ -1,0 +1,24 @@
+---
+import Chat from './Chat.astro';
+import type { ChatTexts } from '../../scripts/chat/types';
+
+interface Props {
+  texts: ChatTexts;
+}
+const { texts } = Astro.props;
+---
+
+<dialog class="ask-panel__dialog" aria-labelledby="ask-panel-title">
+  <div class="ask-panel__head">
+    <h2 class="ask-panel__title" id="ask-panel-title">{texts.title}</h2>
+    <button type="button" class="ask-panel__close" aria-label={texts.close_label} data-ask-close>
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+        <path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"
+        ></path>
+      </svg>
+    </button>
+  </div>
+  <div class="ask-panel__body">
+    <Chat texts={texts} variant="panel" />
+  </div>
+</dialog>

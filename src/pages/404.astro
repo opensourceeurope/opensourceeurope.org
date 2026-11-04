@@ -1,0 +1,11 @@
+---
+import Sections from '../components/Sections.astro';
+import Base from '../layouts/Base.astro';
+import { loadPage } from '../lib/page';
+
+const { seo, sections } = await loadPage('pages', '404');
+---
+
+<Base seo={seo} footer={false}>
+  <Sections sections={sections} />
+</Base>

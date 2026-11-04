@@ -1,0 +1,32 @@
+node_modules/
+dist/
+.astro/
+.worktrees/
+reference/
+functions/contact/dist/
+functions/contact/*.zip
+test-results/
+playwright-report/
+.lighthouseci/
+.env
+
+# Knowledge base
+# The index inputs and artifacts under .opencrane/ are committed (see AGENTS.md).
+# Only the transient Milvus lock files stay ignored.
+*.db.lock
+.opencrane/**/*.db.lock
+# opencrane pack output, built and published in CI
+.opencrane/pack/
+.opencrane/fetch_docs.log
+*.log
+# model and Hugging Face caches
+.cache/
+**/.huggingface/
+# python
+__pycache__/
+*.pyc
+.venv/
+# chat function build output and dependencies, at any depth
+**/dist/
+.superpowers/
+docs/superpowers/

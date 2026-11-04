@@ -1,0 +1,21 @@
+seo:
+  title: Our services | Open Source Europe
+  description: Open Source Europe supports open source projects with fiscal hosting, admin and financial support, and technical resources and guidance.
+
+sections:
+  - type: hero
+    variant: title
+    heading:
+      text: Our services
+    background:
+      src: ../../assets/theme/webp/bg-hero-w-home.webp
+      alt: ""
+      decorative: true
+
+  # The rows come from src/content/services/, in their `order`.
+  - type: serviceList
+    eyebrow: // Services
+    linkLabel: Read more
+
+  - type: shared
+    ref: cta-host

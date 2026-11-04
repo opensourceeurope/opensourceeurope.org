@@ -1,0 +1,150 @@
+---
+import Cta from '../Cta.astro';
+import Eyebrow from '../Eyebrow.astro';
+import Heading from '../Heading.astro';
+import Img from '../Img.astro';
+import type { SectionOf } from '../../lib/sections';
+
+interface Props {
+  section: SectionOf<'hero'>;
+}
+const { section } = Astro.props;
+---
+
+<section
+  id={section.id}
+  class:list={['hero grid-26', { 'hero--full': section.variant === 'full' && section.background, 'hero--title': section.variant === 'title' }]}
+>
+  {
+    section.background && (
+      <div class="hero__bg">
+        <Img image={section.background} loading="eager" />
+      </div>
+    )
+  }
+  <div class="hero__title">
+    <Eyebrow text={section.eyebrow} />
+    <Heading heading={section.heading} level={1} />
+  </div>
+  {section.body && <p class="hero__lead">{section.body}</p>}
+  {section.ctas.length > 0 && <div class="hero__ctas">{section.ctas.map((cta) => <Cta cta={cta} />)}</div>}
+  {section.image && <Img image={section.image} class="hero__image" loading="eager" />}
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    isolation: isolate;
+    padding-top: var(--hero-pad-top);
+    padding-bottom: var(--section-pad-y);
+  }
+  .hero :global(h1) {
+    font-size: var(--text-display);
+    line-height: var(--leading-display);
+    font-weight: var(--weight-semibold);
+  }
+  .hero__lead {
+    margin: var(--space-5) 0 0;
+    font-size: var(--text-lead);
+    line-height: var(--leading-lead);
+    font-weight: var(--weight-light);
+  }
+  .hero__ctas {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+  }
+
+  /* Full-screen hero with an image behind it: the text sits at the bottom
+     on small screens; from 1024 px the title sits high and the paragraph
+     and buttons share the bottom row. */
+  .hero--full {
+    min-height: 100vh;
+    min-height: 100svh;
+    align-content: end;
+    padding-bottom: 90px;
+  }
+  .hero__bg {
+    grid-column: auto;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+  .hero__bg :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero__bg::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 686px;
+    max-height: 100%;
+    background: linear-gradient(to top, var(--color-bg), transparent);
+  }
+
+  /* title: a centred page title over a short gradient banner (About). */
+  .hero--title {
+    min-height: 402px;
+    /* Rows keep their height when the text is shorter than the banner. */
+    align-content: start;
+    padding-bottom: 54px;
+    text-align: center;
+  }
+  /* The fade covers the whole banner, almost straight up, as on live. */
+  .hero--title .hero__bg::after {
+    height: 100%;
+    background: linear-gradient(-1deg, var(--color-bg) 10%, transparent 100%);
+  }
+  .hero--title :global(h1) {
+    max-width: 702px;
+    margin-inline: auto;
+  }
+  .hero--title .hero__lead {
+    max-width: 775px;
+    margin: var(--space-4) auto 0;
+  }
+  .hero--title .hero__ctas {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: 1024px) {
+    .hero--title {
+      padding-bottom: 118px;
+    }
+    .hero--title > :not(.hero__bg) {
+      grid-column: 6 / 22;
+    }
+    .hero--title .hero__lead {
+      margin-top: 33px;
+    }
+    .hero--full {
+      grid-template-rows: auto 1fr auto;
+      align-content: stretch;
+      padding-top: 267px;
+      padding-bottom: 56px;
+    }
+    .hero--full .hero__title {
+      grid-column: 2 / 15;
+    }
+    .hero--full .hero__lead {
+      grid-column: 2 / 12;
+      grid-row: 3;
+      margin: 0;
+      align-self: end;
+    }
+    .hero--full .hero__ctas {
+      grid-column: 17 / 26;
+      grid-row: 3;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-self: end;
+      margin: 0;
+    }
+  }
+</style>

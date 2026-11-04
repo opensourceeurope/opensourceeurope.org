@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "ose-knowledge": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["ose-knowledge-mcp==0.5.2"]
+    }
+  }
+}

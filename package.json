@@ -1,0 +1,44 @@
+{
+  "name": "opensourceeurope.org",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "prepare": "git config core.hooksPath .githooks || true",
+    "capture": "tsx scripts/live/capture.ts",
+    "drift": "tsx scripts/live/drift.ts",
+    "dev:chat": "bash scripts/knowledge/run-local.sh --no-ui",
+    "dev:function": "tsx functions/contact/src/dev.ts",
+    "build:function": "node functions/contact/build.mjs",
+    "licences": "node scripts/check-licences.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "3.7.4",
+    "astro": "7.4.2",
+    "nodemailer": "10.1.7"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.12",
+    "@axe-core/playwright": "4.14.0",
+    "@lhci/cli": "0.15.1",
+    "@playwright/test": "1.64.1",
+    "@scaleway/serverless-functions": "1.1.2",
+    "esbuild": "0.28.2",
+    "fflate": "0.8.3",
+    "happy-dom": "21.0.4",
+    "node-html-parser": "9.0.5",
+    "smtp-server": "3.20.2",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3",
+    "vitest": "5.0.5"
+  }
+}

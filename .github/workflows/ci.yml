@@ -1,0 +1,68 @@
+# Type check, unit tests, build, end-to-end tests, licence check and the
+# co-author check, in one job. The Playwright web server builds the site again
+# in CI, because it does not reuse a running server there.
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run check
+
+      - run: npm test
+
+      - name: Build the site
+        env:
+          PUBLIC_CONTACT_ENDPOINT: http://localhost:8081
+          PUBLIC_CHAT_ENDPOINT: http://localhost:8080
+        run: npm run build
+
+      - run: npm run build:function
+
+      - run: npx playwright install --with-deps chromium
+
+      - run: npm run test:e2e
+
+      - run: npm ci --prefix functions/chat
+
+      - run: npm run licences
+
+      - name: Check commits for agent co-authors
+        env:
+          # A new branch has an all-zero "before"; fall back to main then.
+          BASE: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
+          HEAD: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+        run: |
+          if [ -z "$BASE" ] || [ "$BASE" = "0000000000000000000000000000000000000000" ]; then
+            BASE=$(git merge-base origin/main "$HEAD" 2>/dev/null || true)
+          fi
+          if [ -z "$BASE" ] || [ "$BASE" = "$HEAD" ]; then
+            echo "::notice::No base commit to compare against; skipping the co-author check."
+            exit 0
+          fi
+          bash scripts/check-coauthors.sh "$BASE" "$HEAD"

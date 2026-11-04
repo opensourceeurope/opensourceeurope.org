@@ -1,0 +1,30 @@
+---
+import Eyebrow from '../Eyebrow.astro';
+import Heading from '../Heading.astro';
+import type { SectionOf } from '../../lib/sections';
+
+interface Props {
+  section: SectionOf<'richText'>;
+}
+const { section } = Astro.props;
+---
+
+<section id={section.id} class="rich-text">
+  <Eyebrow text={section.eyebrow} />
+  {section.heading && <Heading heading={section.heading} />}
+  {section.body.map((paragraph) => <p>{paragraph}</p>)}
+</section>
+
+<style>
+  section {
+    padding: var(--section-pad-y) var(--grid-gutter);
+  }
+  .rich-text :global(h2) {
+    font-size: var(--text-h2);
+    line-height: var(--leading-h2);
+  }
+  p {
+    font-size: var(--text-body);
+    line-height: var(--leading-body-text);
+  }
+</style>

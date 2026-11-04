@@ -1,0 +1,88 @@
+---
+import { getCollection } from 'astro:content';
+import Cta from '../Cta.astro';
+import Eyebrow from '../Eyebrow.astro';
+import Heading from '../Heading.astro';
+import Img from '../Img.astro';
+import type { SectionOf } from '../../lib/sections';
+
+interface Props {
+  section: SectionOf<'serviceList'>;
+}
+const { section } = Astro.props;
+
+// The same entries build the service pages, so the list and the pages share one source.
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<div id={section.id} class="services">
+  {
+    services.map((service) => (
+      <section class="service grid-26" data-service>
+        <div class="service__text">
+          <Eyebrow text={section.eyebrow} />
+          <Heading heading={service.data.heading} />
+          <p class="service__body body-copy">{service.data.summary}</p>
+          <div class="service__cta">
+            <Cta cta={{ label: section.linkLabel, href: `/services/${service.id}/`, variant: 'primary' }} context={service.data.heading.text} />
+          </div>
+        </div>
+        <div class="service__media">
+          <Img image={service.data.image} sizes="(min-width: 1024px) 40vw, 60vw" />
+        </div>
+      </section>
+    ))
+  }
+</div>
+
+<style>
+  .service {
+    padding-block: var(--section-pad-y);
+  }
+  .service :global(h2) {
+    margin-top: var(--space-4);
+    font-size: var(--text-h2);
+    line-height: var(--leading-h2);
+  }
+  .service__body {
+    margin: 20px 0 0;
+  }
+  .service__cta {
+    margin-top: var(--space-6);
+  }
+  .service__media {
+    margin-top: var(--space-7);
+    height: 292px;
+  }
+  .service__media :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (min-width: 1024px) {
+    .service {
+      align-items: center;
+    }
+    .service__text {
+      grid-column: 15 / 25;
+      grid-row: 1;
+    }
+    .service__text > :global(.eyebrow) {
+      margin-top: var(--space-2);
+    }
+    .service__body {
+      max-width: 492px;
+      margin-top: var(--space-7);
+    }
+    .service__cta {
+      margin-top: var(--space-7);
+    }
+    .service__media {
+      grid-column: 3 / 13;
+      grid-row: 1;
+      margin-top: 0;
+      height: 514px;
+    }
+  }
+</style>

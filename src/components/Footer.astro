@@ -1,0 +1,257 @@
+---
+import { Image } from 'astro:assets';
+import type { loadSettings } from '../lib/site';
+
+interface Props {
+  settings: Awaited<ReturnType<typeof loadSettings>>;
+}
+
+const { settings } = Astro.props;
+const { ui, footer } = settings;
+const isExternal = (href: string) => /^https?:\/\//.test(href);
+---
+
+<footer class="site-footer grid-26">
+  <div class="site-footer__bg">
+    <Image src={footer.background} alt="" loading="lazy" />
+  </div>
+  <div class="site-footer__brand">
+    <a href="/"><img src={ui.logo.src} alt={ui.logo.alt} width={ui.logo.width} height={ui.logo.height} loading="lazy" /></a>
+  </div>
+  <nav class="site-footer__columns" aria-label={ui.footer_nav_label}>
+    {
+      footer.columns.map((column) => (
+        <section>
+          <h2 class="site-footer__title">{column.title}</h2>
+          <ul>
+            {column.links.map((link) => (
+              <li>
+                {link.prefix && <span>{link.prefix} </span>}
+                <a
+                  href={link.href}
+                  {...(link.external || isExternal(link.href) ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </nav>
+  {
+    footer.social.length > 0 && (
+      <ul class="site-footer__social">
+        {footer.social.map((link) => (
+          <li>
+            <a href={link.href} target="_blank" rel="noopener noreferrer">
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+  <div class="site-footer__rule"></div>
+  <div class="site-footer__credits">
+    <p>{footer.copyright}</p>
+    {
+      footer.credit && (
+        <p>
+          {footer.credit.prefix}{' '}
+          <a href={footer.credit.href} target="_blank" rel="noopener noreferrer">{footer.credit.label}</a>
+        </p>
+      )
+    }
+  </div>
+  <ul class="site-footer__legal">
+    {
+      footer.legal.map((item) => (
+        <li class={item.action === 'cookie-settings' ? 'site-footer__consent' : undefined} data-js-only={item.action === 'cookie-settings' ? '' : undefined}>
+          {item.action === 'cookie-settings' ? (
+            <button type="button" class="site-footer__link-button" data-consent-open>
+              {item.label}
+            </button>
+          ) : (
+            <a href={item.href}>{item.label}</a>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+</footer>
+
+<style>
+  .site-footer {
+    position: relative;
+    isolation: isolate;
+    padding-block: 44px;
+    background: var(--color-bg);
+    font-size: var(--text-base);
+    line-height: 24px;
+    font-weight: var(--weight-light);
+  }
+  .site-footer__bg {
+    grid-column: auto;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+  .site-footer__bg :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* The page colour fades into the footer image. */
+  .site-footer__bg::after {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 390px;
+    background: linear-gradient(to bottom, var(--color-bg), transparent);
+  }
+  .site-footer__brand {
+    margin-bottom: var(--space-7);
+  }
+  .site-footer__brand a {
+    display: inline-flex;
+  }
+  .site-footer__brand img {
+    width: 119px;
+    height: 50px;
+  }
+  .site-footer__columns {
+    display: grid;
+    grid-template-columns: 10fr 14fr;
+  }
+  .site-footer__title {
+    margin: 0 0 var(--space-5);
+    font-size: var(--text-label);
+    line-height: var(--leading-label);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--color-text);
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .site-footer__columns ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  /* The consent settings need the script, so the button shows only under html.js. */
+  :global(html:not(.js)) .site-footer__consent {
+    display: none;
+  }
+  a,
+  .site-footer__link-button {
+    position: relative;
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  /* Underline that grows on hover, as on the live site (E13). */
+  a::after,
+  .site-footer__link-button::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 -1px 0;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--duration-base) var(--ease-css);
+  }
+  a:hover::after,
+  .site-footer__link-button:hover::after {
+    transform: scaleX(1);
+  }
+  .site-footer__brand a::after {
+    content: none;
+  }
+  .site-footer__link-button {
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+  }
+  .site-footer__rule {
+    height: 1px;
+    margin: var(--space-8) 0 var(--space-6);
+    background: rgb(255 255 255 / 20%);
+  }
+  .site-footer__credits,
+  .site-footer__legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    font-size: var(--text-xs);
+    line-height: var(--leading-xs);
+  }
+  .site-footer__credits p {
+    margin: 0;
+  }
+  .site-footer__legal {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-1) var(--space-3);
+    margin: var(--space-3) 0 var(--space-5);
+    line-height: 20px;
+  }
+  /* Separators as on the live site, hidden from screen readers. */
+  .site-footer__legal li + li::before {
+    content: '•' / '';
+    margin-right: var(--space-3);
+  }
+
+  @media (min-width: 1024px) {
+    .site-footer {
+      padding-top: 55px;
+      padding-bottom: 40px;
+    }
+    .site-footer__brand {
+      grid-column: 3 / 9;
+      grid-row: 1;
+      margin: 0;
+    }
+    .site-footer__columns {
+      grid-column: 14 / 25;
+      grid-row: 1;
+      grid-template-columns: 6fr 5fr;
+    }
+    .site-footer__rule {
+      grid-column: 3 / 25;
+      margin-top: var(--space-10);
+    }
+    .site-footer__credits {
+      grid-column: 3 / 14;
+      flex-direction: row;
+      gap: var(--space-4);
+      font-size: var(--text-sm);
+      line-height: var(--leading-sm);
+    }
+    .site-footer__credits p + p::before {
+      content: '|' / '';
+      margin-right: var(--space-4);
+    }
+    .site-footer__legal {
+      grid-column: 14 / 21;
+      justify-content: flex-start;
+      align-self: center;
+      margin: 0;
+    }
+  }
+  @media (min-width: 1280px) {
+    .site-footer__legal {
+      font-size: var(--text-sm);
+    }
+  }
+</style>

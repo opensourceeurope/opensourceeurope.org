@@ -1,0 +1,324 @@
+---
+import Cta from '../Cta.astro';
+import Eyebrow from '../Eyebrow.astro';
+import Heading from '../Heading.astro';
+import Img from '../Img.astro';
+import Inline from '../Inline.astro';
+import type { SectionOf } from '../../lib/sections';
+
+interface Props {
+  section: SectionOf<'intro'>;
+}
+const { section } = Astro.props;
+---
+
+<section id={section.id} class:list={['intro grid-26', `intro--${section.variant}`]}>
+  {
+    section.background && (
+      <div class="intro__bg">
+        <Img image={section.background} />
+      </div>
+    )
+  }
+  <div class="intro__text">
+  <div class="intro__eyebrow"><Eyebrow text={section.eyebrow} /></div>
+  {section.heading && <div class="intro__heading"><Heading heading={section.heading} /></div>}
+  {
+    section.body.length > 0 && (
+      <div class="intro__body body-copy">
+        {section.body.map((paragraph) => (
+          <p>
+            <Inline text={paragraph} />
+          </p>
+        ))}
+      </div>
+    )
+  }
+  {
+    section.quote && (
+      <figure class="intro__quote">
+        <blockquote>{section.quote.text}</blockquote>
+        <figcaption>
+          {section.quote.author}
+          {section.quote.role && <span>, {section.quote.role}</span>}
+        </figcaption>
+      </figure>
+    )
+  }
+  {section.cta && <div class="intro__cta"><Cta cta={section.cta} /></div>}
+  </div>
+  {section.image && <div class="intro__media"><Img image={section.image} /></div>}
+  {
+    section.images.map((image, i) => (
+      <div class={`intro__media intro__media--${i + 1}`}>
+        <Img image={image} />
+      </div>
+    ))
+  }
+</section>
+
+<style>
+  .intro {
+    padding-block: var(--section-pad-y);
+  }
+  .intro__text > :global(* + *) {
+    margin-top: var(--space-4);
+  }
+  .intro :global(h2) {
+    font-size: var(--text-h2);
+    line-height: var(--leading-h2);
+  }
+  .intro__quote {
+    margin: var(--space-5) 0;
+  }
+  .intro__quote blockquote {
+    margin: 0 0 var(--space-3);
+  }
+  .intro__media :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* mission: "// Our mission" */
+  .intro--mission {
+    padding-top: 64px;
+    padding-bottom: 44px;
+  }
+  .intro--mission .intro__text {
+    display: contents;
+  }
+  @media (max-width: 1023.98px) {
+    .intro--mission .intro__text > * {
+      grid-column: 2 / 26;
+    }
+  }
+  .intro--mission .intro__body {
+    margin-top: 20px;
+  }
+  .intro--mission .intro__media {
+    margin-top: var(--space-7);
+    height: 268px;
+    border-radius: var(--radius-card);
+    overflow: hidden;
+  }
+
+  /* split: text on the left, image on the right */
+  .intro--split .intro__heading {
+    margin-top: var(--space-4);
+  }
+  .intro--split .intro__body {
+    margin-top: 20px;
+  }
+  .intro--split .intro__cta {
+    margin-top: var(--space-6);
+  }
+  .intro--split .intro__media {
+    margin-top: var(--space-7);
+    height: 292px;
+  }
+
+  /* story: "// Our story". One image below the text on small screens. */
+  .intro--story {
+    padding-top: 64px;
+    padding-bottom: 44px;
+  }
+  .intro--story .intro__body {
+    margin-top: var(--space-5);
+  }
+  .intro--story .intro__media {
+    margin-top: var(--space-7);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+  }
+  .intro--story .intro__media--1 {
+    height: 425px;
+  }
+  .intro--story .intro__media--2 {
+    display: none;
+  }
+
+  /* vision: text over a gradient background, the image above it on small
+     screens. */
+  .intro--vision {
+    position: relative;
+    isolation: isolate;
+  }
+  .intro__bg {
+    grid-column: auto;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+  .intro__bg :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .intro__bg::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 60%;
+    background: linear-gradient(to top, var(--color-bg) 15%, transparent);
+  }
+  .intro--vision .intro__media {
+    order: -1;
+    justify-self: center;
+    width: min(100%, 300px);
+    margin-bottom: var(--space-7);
+  }
+  .intro--vision .intro__media :global(img) {
+    height: auto;
+    object-fit: contain;
+  }
+  .intro--vision .intro__body {
+    margin-top: var(--space-5);
+  }
+
+  /* split-reverse: "Pricing". Text first on small screens, the image on the
+     left from 1024 px. */
+  .intro--split-reverse .intro__body {
+    margin-top: 20px;
+  }
+  .intro--split-reverse .intro__media {
+    height: 292px;
+    margin-top: var(--space-7);
+  }
+  .intro--split-reverse .intro__media :global(img) {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (min-width: 1024px) {
+    .intro--story {
+      padding-block: 112px;
+    }
+    .intro--story .intro__text {
+      display: contents;
+    }
+    .intro--story .intro__eyebrow {
+      grid-column: 3 / 9;
+      grid-row: 1;
+      margin-top: var(--space-2);
+    }
+    .intro--story .intro__heading {
+      grid-column: 10 / 25;
+      grid-row: 1;
+      margin-top: var(--space-2);
+    }
+    .intro--story .intro__body {
+      grid-column: 16 / 23;
+      grid-row: 2;
+      margin-top: 73px;
+    }
+    .intro--story .intro__media {
+      margin-top: 69px;
+    }
+    .intro--story .intro__media--1 {
+      grid-column: 3 / 13;
+      grid-row: 2 / 4;
+      height: 664px;
+    }
+    .intro--story .intro__media--2 {
+      display: block;
+      grid-column: 16 / 23;
+      grid-row: 3;
+      align-self: end;
+      height: 453px;
+    }
+
+    .intro--vision {
+      min-height: 900px;
+      align-items: center;
+      align-content: center;
+    }
+    .intro--vision .intro__text {
+      grid-column: 3 / 13;
+      grid-row: 1;
+    }
+    .intro--vision .intro__media {
+      grid-column: 19 / 25;
+      grid-row: 1;
+      justify-self: end;
+      width: 323px;
+      margin: 0;
+    }
+    .intro--vision .intro__body,
+    .intro--split-reverse .intro__body {
+      margin-top: var(--space-7);
+    }
+
+    .intro--split-reverse {
+      align-items: center;
+    }
+    .intro--split-reverse .intro__media {
+      grid-column: 3 / 13;
+      grid-row: 1;
+      height: 514px;
+      margin: 0;
+    }
+    .intro--split-reverse .intro__text {
+      grid-column: 15 / 25;
+      grid-row: 1;
+    }
+    /* The live eyebrow has 8 px above it from 1024 px. */
+    .intro--split-reverse .intro__eyebrow,
+    .intro--split .intro__eyebrow {
+      margin-top: 8px;
+    }
+    .intro--split-reverse .intro__body {
+      max-width: 492px;
+    }
+
+    .intro--mission {
+      padding-top: 112px;
+      padding-bottom: 79px;
+    }
+    .intro--mission .intro__eyebrow {
+      grid-column: 2 / 6;
+      grid-row: 1;
+      margin: var(--space-2) 0 0;
+    }
+    .intro--mission .intro__heading {
+      grid-column: 6 / 16;
+      grid-row: 1;
+      margin-top: 0;
+    }
+    .intro--mission .intro__body {
+      grid-column: 18 / 26;
+      grid-row: 1;
+      margin-top: 6px;
+    }
+    .intro--mission .intro__media {
+      grid-row: 2;
+      margin-top: var(--space-8);
+      height: 609px;
+    }
+
+    .intro--split {
+      align-items: center;
+    }
+    .intro--split .intro__text {
+      grid-column: 3 / 13;
+      grid-row: 1;
+    }
+    .intro--split .intro__heading,
+    .intro--split .intro__body {
+      max-width: 492px;
+    }
+    .intro--split .intro__body {
+      margin-top: var(--space-7);
+    }
+    .intro--split .intro__cta {
+      margin-top: var(--space-7);
+    }
+    .intro--split .intro__media {
+      grid-column: 14 / 25;
+      grid-row: 1;
+      margin-top: 45px;
+      height: 514px;
+    }
+  }
+</style>

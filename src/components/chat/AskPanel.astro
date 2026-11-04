@@ -1,0 +1,37 @@
+---
+import type { ChatTexts } from '../../scripts/chat/types';
+
+interface Props {
+  settings: { chat: ChatTexts };
+}
+const texts = Astro.props.settings.chat;
+---
+
+<!-- Inline in the body, right before the button, so these rules stay out of the head and the button never shows unstyled. -->
+<style is:inline>
+  .site-footer{margin-bottom:72px}
+  html.js [data-ask-panel]:not([data-ready]) .ask-panel__button{visibility:hidden;animation:ask-show 0s 3s forwards}
+  @keyframes ask-show{to{visibility:visible}}
+  .ask-panel__button{position:fixed;z-index:1000;right:20px;bottom:calc(20px + var(--ask-offset,0px));display:inline-flex;align-items:center;height:var(--button-height);padding-inline:20px;border:2px solid var(--color-brand-cyan);border-radius:999px;background:var(--color-bg);color:var(--color-text);font-size:14px;line-height:20px;font-weight:600;letter-spacing:1.12px;text-transform:uppercase;text-decoration:none;box-shadow:0 4px 16px #0006}
+  .ask-panel__hint{margin-inline-start:10px;padding:1px 6px;border:1px solid var(--color-border);border-radius:6px;font:inherit;font-size:12px;line-height:16px;font-weight:500;letter-spacing:.5px;text-transform:none;color:var(--color-text-muted)}
+  .ask-panel__hint[hidden]{display:none}
+  @media (hover:none){.ask-panel__hint{display:none}}
+</style>
+<div data-ask-panel>
+  <a class="ask-panel__button" href="/ask/" data-ask-open data-ask-fragment="/ask/panel.html">{texts.open_label}<kbd class="ask-panel__hint" data-ask-hint data-mac={texts.shortcut_mac} data-other={texts.shortcut_other} aria-hidden="true" hidden></kbd></a>
+</div>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-ask-panel]');
+  // The button stays hidden until the panel code has placed it, so it never jumps when the consent
+  // banner appears. Whatever goes wrong, or however late the load event is, a CSS animation shows it after 3 s, even if no script runs.
+  const reveal = (): void => {
+    if (root) root.dataset.ready = '';
+  };
+  // The panel code loads after the page has loaded, so it never competes with the page's own scripts.
+  const start = (): void => {
+    import('../../scripts/chat/panel').then((m) => m.initAskPanel()).catch(reveal);
+  };
+  if (document.readyState === 'complete') start();
+  else window.addEventListener('load', start, { once: true });
+</script>

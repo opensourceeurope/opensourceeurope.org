@@ -1,0 +1,18 @@
+type: faq
+id: faq
+eyebrow: // faq
+heading:
+  text: Frequently asked questions
+  highlight: asked
+  decor: chevron-underscore
+items:
+  - question: Do I need to create a legal entity?
+    answer: No. OSE provides the fiscal structure so you don’t have to.
+  - question: Do you control my project?
+    answer: "No. Your project remains fully autonomous: your project, your rules."
+  - question: How long does it take to get started?
+    answer: Most projects are live within a week.
+  - question: Who can apply?
+    answer: Any open source project, regardless of size or maturity.
+  - question: Do we lose independence?
+    answer: "No. Your project remains fully yours: your project, your rules."

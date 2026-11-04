@@ -1,0 +1,78 @@
+---
+import Cta from '../Cta.astro';
+import Heading from '../Heading.astro';
+import Layers from '../Layers.astro';
+import type { SectionOf } from '../../lib/sections';
+
+interface Props {
+  section: SectionOf<'notFound'>;
+}
+const { section } = Astro.props;
+---
+
+<section id={section.id} class="not-found grid-26">
+  <Layers layers={section.layers} />
+  <div class="not-found__text">
+    <Heading heading={section.heading} level={1} />
+    <p class="not-found__lead">{section.lead}</p>
+    <p class="not-found__body">{section.body}</p>
+    <div class="not-found__cta"><Cta cta={section.cta} /></div>
+  </div>
+</section>
+
+<style>
+  /* One screen tall, the text centred vertically over the layers. */
+  .not-found {
+    position: relative;
+    isolation: isolate;
+    min-height: 100vh;
+    min-height: 100svh;
+    align-content: center;
+  }
+  .not-found :global(h1) {
+    font-size: 72px;
+    line-height: 50px;
+    font-weight: var(--weight-semibold);
+  }
+  .not-found__lead {
+    margin: var(--space-7) 0 0;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: var(--weight-medium);
+  }
+  .not-found__body {
+    margin: var(--space-4) 0 0;
+    font-size: var(--text-body);
+    line-height: var(--leading-body-text);
+    font-weight: var(--weight-light);
+  }
+  .not-found__cta {
+    margin-top: var(--space-7);
+  }
+
+  @media (min-width: 1024px) {
+    .not-found {
+      padding-top: 90px;
+    }
+    .not-found__text {
+      grid-column: 8 / 18;
+    }
+    .not-found :global(h1) {
+      line-height: 60px;
+    }
+    .not-found__lead {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    .not-found__body {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .not-found :global(h1) {
+      line-height: 72px;
+    }
+  }
+</style>

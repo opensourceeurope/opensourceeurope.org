@@ -1,0 +1,24 @@
+---
+import { inlineParts } from '../lib/inline';
+
+interface Props {
+  text: string;
+}
+const parts = inlineParts(Astro.props.text);
+---
+
+{
+  parts.map((part) =>
+    part.kind === 'strong' ? <strong>{part.text}</strong> : part.kind === 'mark' ? <mark>{part.text}</mark> : part.text,
+  )
+}
+
+<style>
+  strong {
+    font-weight: var(--weight-bold);
+  }
+  mark {
+    background: var(--color-highlight);
+    color: inherit;
+  }
+</style>

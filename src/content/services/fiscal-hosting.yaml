@@ -1,0 +1,87 @@
+seo:
+  title: Fiscal hosting | Open Source Europe
+  description: OSE offers fiscal hosting, a simple way for open source projects to receive funds, stay compliant, and share resources transparently without creating a legal entity.
+
+order: 2
+heading:
+  text: Fiscal hosting
+  highlight: hosting
+  decor: parens
+summary: "Handling donations and grants can be one of the hardest parts of running an open source project. OSE offers fiscal hosting: a simple way to receive funds, stay compliant, and share resources transparently — without creating a legal entity. That way, your project stays focused on code, not paperwork."
+image:
+  src: ../../assets/uploads/2025/11/IMage-1.png
+  alt: ""
+  decorative: true
+
+sections:
+  - type: hero
+    variant: title
+    heading:
+      text: Fiscal hosting
+    body: "Handling donations and grants can be one of the hardest parts of running an open source project. OSE offers fiscal hosting: a simple way to receive funds, stay compliant, and share resources transparently — without creating a legal entity. That way, your project stays focused on code, not paperwork."
+    background:
+      src: ../../assets/theme/webp/bg-hero-w-home.webp
+      alt: ""
+      decorative: true
+
+  - type: features
+    variant: list
+    eyebrow: // Key benefits
+    heading:
+      text: What makes this possible
+      highlight: makes
+      decor: chevron-underscore
+    items:
+      - title: "Transparency by default: every donation, grant, or expense is ==public.=="
+      - title: "Legal recognition across ==Europe==: OSE gives your project a trusted fiscal home."
+      - title: "Access to international funding: US foundations can donate with ==tax advantages== thanks to ED certification."
+      - title: "Fast onboarding: projects can be live and receiving funds ==within days.=="
+    image:
+      src: ../../assets/uploads/2025/11/IMage-1.png
+      alt: ""
+      decorative: true
+
+  - type: steps
+    variant: stacked
+    background:
+      src: ../../assets/theme/webp/bg-circle-gradient-2560.webp
+      alt: ""
+      decorative: true
+    eyebrow: // How it works
+    heading:
+      text: Turn your project into a collective in no time
+      highlight: collective
+      decor: chevron-underscore
+    items:
+      - title: Apply online
+        body: Fill out a quick form to submit your project and start the process easily.
+        image: { src: ../../assets/uploads/2025/11/ede5938e0d0e8d729af0fd253344b8a5a462f8ee-1.webp, alt: "", decorative: true }
+      - title: Publish your project
+        body: Launch your collective page with a public budget to show transparency.
+        image: { src: ../../assets/uploads/2025/11/ede5938e0d0e8d729af0fd253344b8a5a462f8ee-1.webp, alt: "", decorative: true }
+      - title: Receive your funds
+        body: Accept contributions through credit card, PayPal, or bank transfer with ease.
+        image: { src: ../../assets/uploads/2025/11/ede5938e0d0e8d729af0fd253344b8a5a462f8ee-1.webp, alt: "", decorative: true }
+      - title: Manage payments
+        body: Reimburse contributors or pay providers, all tracked in real time openly.
+        image: { src: ../../assets/uploads/2025/11/ede5938e0d0e8d729af0fd253344b8a5a462f8ee-1.webp, alt: "", decorative: true }
+
+  - type: faq
+    id: faq
+    eyebrow: // faq
+    heading:
+      text: Frequently asked questions
+      highlight: asked
+      decor: chevron-underscore
+    items:
+      - question: Who can apply?
+        answer: Any open source project, regardless of size or maturity.
+      - question: Do we lose independence?
+        answer: "No. Your project remains fully yours: your project, your rules."
+      - question: How long does it take to get started?
+        answer: Most projects are live within a week.
+      - question: Do you take ownership of the project?
+        answer: No. We never own or govern your project.
+
+  - type: shared
+    ref: cta-submit

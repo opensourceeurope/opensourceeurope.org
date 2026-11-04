@@ -1,0 +1,132 @@
+---
+import DotIcon from '../DotIcon.astro';
+import Eyebrow from '../Eyebrow.astro';
+import Heading from '../Heading.astro';
+import Img from '../Img.astro';
+import Inline from '../Inline.astro';
+import type { SectionOf } from '../../lib/sections';
+
+interface Props {
+  section: SectionOf<'features'>;
+}
+const { section } = Astro.props;
+---
+
+<section id={section.id} class:list={['features grid-26', `features--${section.variant}`]}>
+  <div class="features__text">
+    <Eyebrow text={section.eyebrow} />
+    <Heading heading={section.heading} />
+    {section.body && <p class="features__body body-copy">{section.body}</p>}
+    {
+      section.variant === 'list' ? (
+        <ul class="features__list body-copy">
+          {section.items.map((item) => (
+            <li>
+              <DotIcon kind="arrow" />
+              <p>
+                <Inline text={item.title} />
+              </p>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <ul class="features__cards">
+          {section.items.map((item) => (
+            <li>
+              <h3>{item.title}</h3>
+              {item.body && <p>{item.body}</p>}
+            </li>
+          ))}
+        </ul>
+      )
+    }
+    {section.closing && <p class="features__closing body-copy">{section.closing}</p>}
+  </div>
+  {section.image && <div class="features__media"><Img image={section.image} /></div>}
+</section>
+
+<style>
+  .features {
+    padding-block: var(--section-pad-y);
+  }
+  .features :global(h2) {
+    margin-top: var(--space-4);
+    font-size: var(--text-h2);
+    line-height: var(--leading-h2);
+  }
+  ul {
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .features__cards {
+    display: grid;
+    gap: var(--space-4);
+  }
+  h3 {
+    font-size: var(--text-h3);
+    line-height: var(--leading-h3);
+  }
+  .features__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  .features__list li {
+    display: flex;
+    gap: var(--space-3);
+    align-items: flex-start;
+  }
+  .features__list li :global(svg) {
+    margin-top: 3px;
+  }
+  .features__list p,
+  .features__list > li {
+    margin: 0;
+  }
+  .features__body {
+    margin: 20px 0 0;
+  }
+  .features__body + ul,
+  .features__closing {
+    margin: var(--space-3) 0 0;
+  }
+  .features__media {
+    margin-top: var(--space-7);
+    height: 292px;
+  }
+  .features__media :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (min-width: 1024px) {
+    .features--list {
+      align-items: center;
+    }
+    .features--list .features__text {
+      grid-column: 15 / 25;
+      grid-row: 1;
+    }
+    .features--list .features__text > :global(.eyebrow) {
+      margin-top: 8px;
+    }
+    .features--list ul,
+    .features--list .features__body,
+    .features--list .features__closing {
+      max-width: 492px;
+      margin-top: var(--space-7);
+    }
+    .features--list .features__body + ul,
+    .features--list .features__closing {
+      margin-top: var(--space-4);
+    }
+    .features--list .features__media {
+      grid-column: 3 / 13;
+      grid-row: 1;
+      margin-top: 0;
+      height: 514px;
+    }
+  }
+</style>

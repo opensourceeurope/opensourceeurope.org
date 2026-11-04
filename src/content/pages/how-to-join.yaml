@@ -1,0 +1,86 @@
+seo:
+  title: How to join | Open Source Europe
+  description: Joining Open Source Europe is simple. Submit your project, publish your collective page, and start receiving funds, with no legal entity to create.
+
+sections:
+  - type: hero
+    variant: title
+    heading:
+      text: Joining OSE is simple
+    background:
+      src: ../../assets/theme/webp/bg-hero-w-home.webp
+      alt: ""
+      decorative: true
+
+  - type: steps
+    variant: spotlight
+    eyebrow: // How to join us
+    heading:
+      text: For projects
+      highlight: projects
+      decor: chevron-underscore
+    items:
+      - title: Submit your project
+        body: Apply through Open Collective. After you apply, OSE emails you a short form for the rest of your project details.
+        image:
+          src: ../../assets/uploads/2025/11/Create-your-collective-_-open-source-europe.png
+          alt: ""
+          decorative: true
+      - title: Publish your project
+        body: Create your collective page and make it visible to supporters and contributors.
+        image:
+          src: ../../assets/uploads/2025/11/Start-receiving-funds-_-open-source-europe-1.png
+          alt: ""
+          decorative: true
+      - title: Start receiving funds
+        body: Begin accepting donations and manage your finances transparently with ease.
+        image:
+          src: ../../assets/uploads/2025/11/Manage-your-funds-_-open-source-europe-1.png
+          alt: ""
+          decorative: true
+    cta:
+      label: submit a project
+      href: https://opencollective.com/europe/apply
+
+  - type: shared
+    ref: funders
+
+  - type: features
+    variant: list
+    eyebrow: // conditions
+    heading:
+      text: Conditions for developers
+      highlight: for
+      decor: chevron-underscore
+    body: "We want to make sure every project aligns with our collective values. To join, developers need to meet a few conditions:"
+    items:
+      - title: The project is open and transparent in fund management
+      - title: The team is ready to communicate clearly with the community
+      - title: There is a commitment to use funds responsibly
+    closing: These conditions help maintain trust and quality within the community.
+    image:
+      src: ../../assets/uploads/2025/11/Asset-developer.png
+      alt: ""
+      decorative: true
+
+  # The live page reuses the eligibility heading here with pricing text, so
+  # this section is not the shared `eligibility` entry.
+  - type: intro
+    variant: split-reverse
+    eyebrow: // pricing
+    heading:
+      text: Open to every open source project
+      highlight: project
+      decor: chevron-underscore
+    body:
+      - OSE charges 8% plus Stripe or PayPal fees on online contributions, and 10% on bank transfers, tax-deductible donations and grants. No setup fees. No hidden costs.
+    image:
+      src: ../../assets/uploads/2025/11/Icon-arrow.png
+      alt: ""
+      decorative: true
+
+  - type: shared
+    ref: faq
+
+  - type: shared
+    ref: cta-submit

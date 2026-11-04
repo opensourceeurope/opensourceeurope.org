@@ -1,0 +1,63 @@
+---
+import Chat from '../chat/Chat.astro';
+import { loadSettings } from '../../lib/site';
+import type { SectionOf } from '../../lib/sections';
+
+interface Props {
+  section: SectionOf<'chat'>;
+}
+const { section } = Astro.props;
+const { chat } = await loadSettings();
+---
+
+<section id={section.id ?? 'chat'} class="chat-section grid-26" aria-label={chat.title}>
+  <div class="chat-section__inner">
+    <Chat texts={chat} variant="page" />
+  </div>
+</section>
+
+<script>
+  import { mountChat } from '../../scripts/chat/controller';
+  import { shortcutApplies } from '../../scripts/chat/shortcut';
+  import type { ChatTexts } from '../../scripts/chat/types';
+
+  for (const root of document.querySelectorAll<HTMLElement>('.chat--page[data-chat]')) {
+    mountChat(root, {
+      endpoint: root.dataset.chatEndpoint ?? '',
+      texts: JSON.parse(root.dataset.chatTexts ?? '{}') as ChatTexts,
+    });
+  }
+
+  // Ctrl+K or Cmd+K brings the chat into view and focuses the question field.
+  document.addEventListener('keydown', (event) => {
+    if (!shortcutApplies(event)) return;
+    const input = document.querySelector<HTMLTextAreaElement>('.chat--page [data-chat-input]');
+    if (!input) return;
+    event.preventDefault();
+    input.scrollIntoView({ block: 'center' });
+    input.focus({ preventScroll: true });
+  });
+</script>
+
+<style>
+  /* The chat card sits right under the centred hero, in the same column as
+     the hero text, so the page reads as one block: title, then the question. */
+  .chat-section {
+    position: relative;
+    z-index: 1;
+    padding-block: 0 var(--section-pad-y);
+  }
+  .chat-section__inner {
+    width: 100%;
+    max-width: 775px;
+    margin-inline: auto;
+  }
+  @media (min-width: 1024px) {
+    .chat-section__inner {
+      grid-column: 6 / 22;
+    }
+    .chat-section {
+      margin-top: calc(-1 * var(--space-8));
+    }
+  }
+</style>

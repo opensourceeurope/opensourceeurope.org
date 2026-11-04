@@ -1,0 +1,191 @@
+---
+import MobileMenu from './MobileMenu.astro';
+import type { loadSettings } from '../lib/site';
+
+interface Props {
+  settings: Awaited<ReturnType<typeof loadSettings>>;
+  currentPath: string;
+}
+
+const { settings, currentPath } = Astro.props;
+const { ui, nav, apply_url } = settings;
+// The exact page is "page". A section page, such as a single service under
+// /services/, marks its section link "true".
+const ariaCurrent = (href: string) =>
+  href === currentPath ? 'page' : href !== '/' && currentPath.startsWith(href) ? 'true' : undefined;
+---
+
+<header class="site-header" data-site-header>
+  <div class="site-header__bar">
+    <a class="site-header__logo" href="/">
+      <img src={ui.logo.src} alt={ui.logo.alt} width={ui.logo.width} height={ui.logo.height} />
+    </a>
+    <MobileMenu label={ui.menu_label} controls="site-menu" />
+    <nav class="site-nav" aria-label={ui.nav_label}>
+      <ul class="site-nav__list" id="site-menu">
+        {
+          nav.map((item) => (
+            <li>
+              <a class="site-nav__link" href={item.href} aria-current={ariaCurrent(item.href)}>
+                <span>{item.label}</span>
+              </a>
+            </li>
+          ))
+        }
+        <li class="site-nav__apply">
+          <a class="site-nav__button" href={apply_url}>{ui.apply_label}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+  import { initHeaderScroll } from '../scripts/header-scroll';
+  initHeaderScroll();
+</script>
+
+<style>
+  .site-header {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 100;
+    background: var(--color-bg);
+    transition: transform var(--duration-slow) var(--ease-standard);
+  }
+  :global(.js) .site-header:not(.is-solid):not(.is-open) {
+    background: transparent;
+  }
+  .site-header.is-hidden {
+    transform: translateY(-100%);
+  }
+  .site-header__bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-height: var(--header-height);
+    padding-inline: var(--grid-gutter);
+    position: relative;
+  }
+  .site-header__logo {
+    display: flex;
+  }
+  .site-header__logo img {
+    width: 85px;
+    height: 36px;
+  }
+  @media (min-width: 1024px) {
+    .site-header__logo img {
+      width: 119px;
+      height: 50px;
+    }
+  }
+
+  .site-nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-5);
+    align-items: center;
+  }
+  .site-nav {
+    flex-basis: 100%;
+    padding-bottom: var(--space-3);
+  }
+  .site-nav__link,
+  .site-nav__button {
+    font-size: var(--text-label);
+    line-height: var(--leading-label);
+    letter-spacing: var(--tracking-label);
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-text);
+  }
+  .site-nav__link {
+    position: relative;
+    display: inline-block;
+    padding-block: var(--space-2);
+  }
+  .site-nav__link::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--duration-base) var(--ease-css);
+  }
+  .site-nav__link:hover::after {
+    transform: scaleX(1);
+  }
+  .site-nav__button {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--button-height-header);
+    padding-inline: var(--button-pad-x);
+    border-radius: var(--radius-pill);
+    background: var(--color-white-8);
+  }
+
+  /* With JavaScript, below 1280 px the list becomes a panel under the bar. */
+  @media (max-width: 1279.98px) {
+    :global(.js) .site-nav {
+      position: absolute;
+      inset: 100% 0 auto 0;
+      flex-basis: auto;
+      padding: 0;
+      background: var(--color-bg);
+      max-height: 0;
+      overflow: hidden;
+      visibility: hidden;
+      transform: translateY(-100%);
+      transition:
+        max-height var(--duration-base) var(--ease-standard),
+        transform var(--duration-base) var(--ease-standard),
+        visibility 0s linear var(--duration-base);
+    }
+    :global(.js) .is-open .site-nav {
+      max-height: calc(100vh - var(--header-height));
+      max-height: calc(100dvh - var(--header-height));
+      overflow-y: auto;
+      visibility: visible;
+      transform: none;
+      transition-delay: 0s;
+    }
+    :global(.js) .site-nav__list {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: var(--space-3) var(--grid-gutter) var(--space-5);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .site-header,
+    .site-nav,
+    .site-nav__link::after {
+      transition: none !important;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .site-header__bar {
+      flex-wrap: nowrap;
+    }
+    .site-nav {
+      flex-basis: auto;
+      padding: 0;
+    }
+    .site-nav__list {
+      flex-wrap: nowrap;
+      gap: var(--space-6);
+    }
+    .site-nav__apply {
+      margin-left: var(--space-5);
+    }
+  }
+</style>

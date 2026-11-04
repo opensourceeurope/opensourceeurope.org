@@ -1,0 +1,154 @@
+---
+import Cta from '../Cta.astro';
+import Eyebrow from '../Eyebrow.astro';
+import Heading from '../Heading.astro';
+import Img from '../Img.astro';
+import Layers from '../Layers.astro';
+import type { SectionOf } from '../../lib/sections';
+
+interface Props {
+  section: SectionOf<'cta'>;
+}
+const { section } = Astro.props;
+---
+
+<section id={section.id} class:list={['cta-section grid-26', `cta-section--${section.variant}`]}>
+  <Layers layers={section.layers} />
+  <div class="cta-section__panel">
+    {
+      section.background && (
+        <div class="cta-section__bg">
+          <Img image={section.background} />
+        </div>
+      )
+    }
+    <div class="cta-section__content">
+      <Eyebrow text={section.eyebrow} />
+      <Heading heading={section.heading} />
+      {section.body && <p class="body-copy">{section.body}</p>}
+      {section.ctas.length > 0 && <div class="ctas">{section.ctas.map((cta) => <Cta cta={cta} />)}</div>}
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-section {
+    position: relative;
+    isolation: isolate;
+    padding-block: var(--section-pad-y-lg);
+  }
+  .cta-section__content > :global(* + *) {
+    margin-top: var(--space-4);
+  }
+  .cta-section :global(h2) {
+    font-size: var(--text-h2-sm);
+    line-height: var(--leading-h2-sm);
+  }
+  .cta-section .body-copy {
+    margin-bottom: 0;
+  }
+  .ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+  }
+  .cta-section__bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+  .cta-section__bg :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* funders and banner: centred text */
+  .cta-section--funders .cta-section__content,
+  .cta-section--banner .cta-section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .cta-section--funders .body-copy,
+  .cta-section--banner .body-copy {
+    max-width: 492px;
+  }
+
+  /* funders: over a field of outlined circles */
+  .cta-section--funders {
+    min-height: 660px;
+    height: 740px;
+    align-content: center;
+  }
+  .cta-section--funders :global(h2) {
+    font-size: var(--text-h2);
+    line-height: var(--leading-h2);
+  }
+  .cta-section--funders .body-copy {
+    margin-top: 20px;
+  }
+  .cta-section--funders .ctas {
+    margin-top: var(--space-6);
+  }
+
+  /* banner: a framed panel with the brand gradient image */
+  .cta-section--banner {
+    padding-block: 44px;
+  }
+  .cta-section--banner .cta-section__panel {
+    position: relative;
+    isolation: isolate;
+    padding: 6px;
+    border-radius: var(--radius-card);
+    background: var(--color-white-12);
+  }
+  .cta-section--banner .cta-section__bg {
+    inset: 6px;
+    border-radius: 9px;
+  }
+  .cta-section--banner .cta-section__content {
+    min-height: 280px;
+    justify-content: center;
+    padding: var(--space-4);
+  }
+  .cta-section--banner :global(h2) {
+    max-width: 656px;
+    font-weight: var(--weight-medium);
+  }
+  .cta-section--banner .body-copy {
+    max-width: 656px;
+  }
+  .cta-section--banner .ctas {
+    margin-top: var(--space-6);
+  }
+
+  @media (min-width: 1024px) {
+    .cta-section--funders {
+      height: auto;
+      padding-block: var(--space-9);
+    }
+    .cta-section--funders .body-copy {
+      margin-block: var(--space-7) 0;
+    }
+    .cta-section--funders .ctas {
+      margin-top: var(--space-7);
+    }
+    .cta-section--banner {
+      padding-top: var(--space-6);
+      padding-bottom: 72px;
+    }
+    .cta-section--banner .cta-section__panel {
+      grid-column: 3 / 25;
+      padding: 10px;
+    }
+    .cta-section--banner .cta-section__bg {
+      inset: 10px;
+    }
+    .cta-section--banner .cta-section__content {
+      min-height: 314px;
+    }
+  }
+</style>

@@ -1,0 +1,23 @@
+---
+import { getCollection, render } from 'astro:content';
+import Sections from '../components/Sections.astro';
+import Legal from '../components/Legal.astro';
+import Base from '../layouts/Base.astro';
+import type { Section } from '../lib/sections';
+
+// One page per file in src/content/legal/. The file name is the path.
+export async function getStaticPaths() {
+  const entries = await getCollection('legal');
+  return entries.map((entry) => ({ params: { legal: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Base seo={entry.data.seo}>
+  <Legal title={entry.data.title} lead={entry.data.lead} background={entry.data.background}>
+    <Content />
+  </Legal>
+  <Sections sections={entry.data.sections as Section[]} />
+</Base>

@@ -1,0 +1,53 @@
+---
+// Decorative dot glyphs from the live theme, drawn as SVG circles.
+interface Props {
+  kind: 'quote' | 'arrow';
+  class?: string;
+}
+const { kind, class: className } = Astro.props;
+
+// Each pattern lists dot centres in its own viewBox.
+const MARK: [number, number][] = [
+  [24.6, 5.2],
+  [19, 12.9],
+  [9.5, 22.4], [19, 22.4], [28.5, 22.4],
+  [9.5, 31.9], [19, 31.9], [28.5, 31.9], [38, 31.9],
+  [9.5, 41.4], [19, 41.4], [28.5, 41.4], [38, 41.4],
+  [19, 50.8], [28.5, 50.8],
+];
+// Six dots pointing right, used for list bullets and FAQ questions.
+const ARROW: [number, number][] = [[4, 4], [10, 4], [10, 10], [16, 10], [4, 16], [10, 16]];
+
+const PATTERNS: Record<Props['kind'], { box: [number, number]; dots: [number, number][]; r: number }> = {
+  // Two dotted quotation marks, each 48 x 56 as on live.
+  quote: { box: [96, 56], dots: [...MARK, ...MARK.map(([x, y]) => [x + 48, y] as [number, number])], r: 3.88 },
+  // 4 px dots in a 20 px box, as on live.
+  arrow: { box: [20, 20], dots: ARROW, r: 2 },
+};
+const { box, dots, r } = PATTERNS[kind];
+---
+
+<svg
+  class:list={['dots', `dots--${kind}`, className]}
+  viewBox={`0 0 ${box[0]} ${box[1]}`}
+  aria-hidden="true"
+  focusable="false"
+>
+  {dots.map(([x, y]) => <circle cx={x} cy={y} r={r} />)}
+</svg>
+
+<style>
+  .dots {
+    display: block;
+    flex: none;
+    fill: currentColor;
+  }
+  .dots--quote {
+    width: 96px;
+    height: 56px;
+  }
+  .dots--arrow {
+    width: 20px;
+    height: 20px;
+  }
+</style>

@@ -1,0 +1,87 @@
+seo:
+  title: Admin & financial support | Open Source Europe
+  description: OSE acts as the financial back office of open source projects. Contributors get reimbursed, invoices are checked, and every transaction is public.
+
+order: 3
+heading:
+  text: Admin & financial support
+  highlight: financial
+summary: "Reimbursing contributors, processing invoices, and staying compliant takes energy away from coding. OSE acts as your financial back office: no paperwork jungle, just a simple, human process that lets your project stay focused on development."
+image:
+  src: ../../assets/uploads/2025/11/IMage-min.png
+  alt: ""
+  decorative: true
+
+sections:
+  - type: hero
+    variant: title
+    heading:
+      text: Admin & financial support
+    body: "Reimbursing contributors, processing invoices, and staying compliant takes energy away from coding. OSE acts as your financial back office: no paperwork jungle, just a simple, human process that lets your project stay focused on development."
+    background:
+      src: ../../assets/theme/webp/bg-hero-w-home.webp
+      alt: ""
+      decorative: true
+
+  - type: features
+    variant: list
+    eyebrow: // Key benefits
+    heading:
+      text: What makes this possible
+      highlight: makes
+      decor: chevron-underscore
+    items:
+      - title: "Simple reimbursements: contributors upload receipts ==directly==."
+      - title: "Secure invoicing: all transactions checked for compliance with ==EU nonprofit law.=="
+      - title: "==No paperwork== jungle: we keep processes light and human."
+      - title: "Public dashboards: all flows are visible to the ==whole community.=="
+    image:
+      src: ../../assets/uploads/2025/11/IMage-min.png
+      alt: ""
+      decorative: true
+
+  # The live cards repeat each title as the text below it.
+  - type: steps
+    variant: stacked
+    background:
+      src: ../../assets/theme/webp/bg-circle-gradient-2560.webp
+      alt: ""
+      decorative: true
+    eyebrow: // How it works
+    heading:
+      text: Turn your project into a collective in no time
+      highlight: collective
+      decor: chevron-underscore
+    items:
+      - title: Contributors submit expenses online
+        body: Contributors submit expenses online
+        image: { src: ../../assets/uploads/2025/11/Start-receiving-funds-_-open-source-europe-1.png, alt: "", decorative: true }
+      - title: OSE validates them for compliance.
+        body: OSE validates them for compliance.
+        image: { src: ../../assets/uploads/2025/11/Start-receiving-funds-_-open-source-europe-1.png, alt: "", decorative: true }
+      - title: Payments are processed quickly by bank transfer or PayPal.
+        body: Payments are processed quickly by bank transfer or PayPal.
+        image: { src: ../../assets/uploads/2025/11/Start-receiving-funds-_-open-source-europe-1.png, alt: "", decorative: true }
+      - title: Transactions appear instantly on the collective’s public budget.
+        body: Transactions appear instantly on the collective’s public budget.
+        image: { src: ../../assets/uploads/2025/11/Start-receiving-funds-_-open-source-europe-1.png, alt: "", decorative: true }
+
+  - type: faq
+    id: faq
+    eyebrow: // faq
+    heading:
+      text: Frequently asked questions
+      highlight: asked
+      decor: chevron-underscore
+    items:
+      - question: Do contributors need to be in Europe?
+        answer: No. Anyone worldwide can be reimbursed with valid receipts.
+      - question: How long are reimbursements?
+        answer: Usually processed within 5 business days.
+      - question: What currencies are supported?
+        answer: Euro by default, others possible via providers.
+      - question: Can we pay providers like hosting or design agencies?
+        answer: Yes, if the expense is related to your project.
+
+  - type: shared
+    ref: cta-submit

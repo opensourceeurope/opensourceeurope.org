@@ -1,0 +1,88 @@
+seo:
+  title: Technical Resources & Guidance | Open Source Europe
+  description: OSE supports open source projects with resources, documentation, and a network of peers and funders that build long-term impact.
+
+order: 1
+heading:
+  text: Technical Resources & Guidance
+  highlight: Resources
+  decor: parens
+summary: Sustainability in open source is about more than money. OSE supports projects with resources, documentation, and a network of peers and funders. By joining OSE, your project connects to tools and people that build long-term impact.
+image:
+  src: ../../assets/uploads/2025/11/Lamp-icon.png
+  alt: ""
+  decorative: true
+
+sections:
+  - type: hero
+    variant: title
+    heading:
+      text: Technical Resources & Guidance
+    body: Sustainability in open source is about more than money. OSE supports projects with resources, documentation, and a network of peers and funders. By joining OSE, your project connects to tools and people that build long-term impact.
+    background:
+      src: ../../assets/theme/webp/bg-hero-w-home.webp
+      alt: ""
+      decorative: true
+
+  - type: features
+    variant: list
+    eyebrow: // Key benefits
+    heading:
+      text: What makes this possible
+      highlight: makes
+      decor: chevron-underscore
+    items:
+      - title: "Guides and templates: ==ready-to-use== for budgets, invoices, governance."
+      - title: "Networking: from online community calls to events like ==FOSDEM.=="
+      - title: "Best practices: years of experience with ==diverse projects.=="
+      - title: "==Human support:== our team is available for guidance."
+    image:
+      src: ../../assets/uploads/2025/11/Lamp-icon.png
+      alt: ""
+      decorative: true
+
+  # The live cards repeat each title as the text below it.
+  - type: steps
+    variant: stacked
+    background:
+      src: ../../assets/theme/webp/bg-circle-gradient-2560.webp
+      alt: ""
+      decorative: true
+    eyebrow: // How it works
+    heading:
+      text: Turn your project into a collective in no time
+      highlight: collective
+      decor: chevron-underscore
+    items:
+      - title: Access documentation and templates.
+        body: Access documentation and templates.
+        image: { src: ../../assets/uploads/2025/11/Manage-your-funds-_-open-source-europe-1.png, alt: "", decorative: true }
+      - title: Join events and workshops.
+        body: Join events and workshops.
+        image: { src: ../../assets/uploads/2025/11/Manage-your-funds-_-open-source-europe-1.png, alt: "", decorative: true }
+      - title: Connect with maintainers and funders across Europe.
+        body: Connect with maintainers and funders across Europe.
+        image: { src: ../../assets/uploads/2025/11/Manage-your-funds-_-open-source-europe-1.png, alt: "", decorative: true }
+      - title: Use OSE’s network to grow your project sustainably.
+        body: Use OSE’s network to grow your project sustainably.
+        image: { src: ../../assets/uploads/2025/11/Manage-your-funds-_-open-source-europe-1.png, alt: "", decorative: true }
+
+  - type: faq
+    id: faq
+    eyebrow: // faq
+    heading:
+      text: Frequently asked questions
+      highlight: asked
+      decor: chevron-underscore
+    items:
+      - question: Do you host code?
+        answer: No, only finances and legal structure.
+      - question: Are resources included in the service fee?
+        answer: Yes, everything is included.
+      - question: Can we get individual advice?
+        answer: Yes, guidance is available when needed.
+      - question: What kind of events do you organize?
+        answer: Community meetups, FOSDEM panels, and online sessions.
+
+  - type: shared
+    ref: cta-submit

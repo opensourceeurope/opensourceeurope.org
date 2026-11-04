@@ -1,0 +1,117 @@
+---
+import Cursor from './motion/Cursor.astro';
+import type { CtaData } from '../lib/sections';
+import { loadSettings } from '../lib/site';
+
+interface Props {
+  cta: CtaData;
+  // Extra words for screen readers and crawlers, so "Read more" says what it opens.
+  context?: string;
+}
+
+const { cta, context } = Astro.props;
+const { ui } = await loadSettings();
+const external = /^https?:\/\//.test(cta.href) && !cta.href.startsWith(Astro.site!.origin);
+---
+
+<a
+  class:list={['cta', cta.variant]}
+  href={cta.href}
+  rel={external ? 'noopener' : undefined}
+  data-glow={cta.variant === 'secondary' ? 'button' : undefined}
+>
+  <div class="cta__face" data-glow={cta.variant === 'primary' ? 'button' : undefined}>
+    <span>{cta.label}{context && <span class="visually-hidden"> {ui.cta_context_connector} {context}</span>}</span>
+    {
+      cta.variant === 'text' && (
+        <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+          <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" />
+        </svg>
+      )
+    }
+  </div>
+</a>
+{cta.variant !== 'text' && <Cursor />}
+
+<style>
+  .cta {
+    position: relative;
+    isolation: isolate;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    color: var(--color-text);
+    font-size: var(--text-label);
+    line-height: var(--leading-label);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .cta__face > span {
+    position: relative;
+    z-index: 1;
+  }
+  .cta__face {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+  }
+
+  /* Gradient ring around a dark face, with a soft halo on hover (E13). */
+  .primary {
+    height: var(--button-height);
+    padding-inline: 2px;
+    border-radius: var(--radius-pill);
+    background: var(--gradient-brand);
+  }
+  .primary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: var(--gradient-brand);
+    filter: blur(16px);
+    opacity: 0;
+    transition: opacity var(--duration-base) var(--ease-standard);
+  }
+  .primary:hover::before {
+    opacity: 0.8;
+  }
+  .primary .cta__face {
+    position: relative;
+    overflow: hidden;
+    height: var(--button-inner-height);
+    padding-inline: var(--button-pad-x);
+    border-radius: var(--radius-pill);
+    background: var(--color-bg);
+  }
+  .secondary {
+    overflow: hidden;
+    height: var(--button-height);
+    padding-inline: var(--button-pad-x);
+    border-radius: var(--radius-pill);
+    background: var(--color-white-8);
+  }
+
+  /* Text link with an arrow and a line that fills on hover (E13). */
+  .text {
+    padding-bottom: var(--space-3);
+    border-bottom: 1px solid var(--color-white-40);
+  }
+  .text::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 -1px 0;
+    height: 1px;
+    background: var(--color-text);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--duration-base) var(--ease-css);
+  }
+  .text:hover::after {
+    transform: scaleX(1);
+  }
+</style>

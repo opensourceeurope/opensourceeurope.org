@@ -1,0 +1,169 @@
+/*
+ * Design tokens, measured on https://opensourceeurope.org with `npm run capture`
+ * (computed styles in reference/styles/*.json, at 390 and 1440 px wide, plus
+ * spot checks at 768, 1023, 1024, 1279, 1280 and 1920 px).
+ *
+ * Mobile values are the default. The `lg` block below holds the values from
+ * 1024 px up, the width where the live site switches its type scale.
+ *
+ * Breakpoints (custom properties can't be used inside media queries, so the
+ * widths are repeated here for reference):
+ *   md  768 px   logo marquee runs at full speed above this width (E3)
+ *   lg 1024 px   type scale, header height, two-card carousel, carousel arrows
+ *   xl 1280 px   full desktop navigation replaces the menu button; h1 at 72 px
+ */
+:root {
+  /* Colour */
+  --color-bg: #0a242b;
+  --color-surface: #0e282f;
+  --color-surface-hover: #163037;
+  --color-text: #ffffff;
+  --color-text-muted: rgb(255 255 255 / 50%);
+  --color-link: #ffffff;
+  --color-accent: #9fe7f5;
+  --color-accent-contrast: #0a242b;
+  --color-border: rgb(255 255 255 / 16%);
+  --color-focus: #9fe7f5;
+  --color-white-8: rgb(255 255 255 / 8%);
+  --color-white-12: rgb(255 255 255 / 12%);
+  --color-white-16: rgb(255 255 255 / 16%);
+  --color-white-40: rgb(255 255 255 / 40%);
+  --color-highlight: rgb(255 255 255 / 14%);
+  --color-card-fade: #0f282e; /* bottom fade over step card images */
+  --color-faq-icon: #f27f0c;
+  --color-input-border: #6b7779; /* form field borders, 3:1 against --color-bg (MN-036) */
+  --color-brand-blue: #419ebd;
+  --color-brand-cyan: #9fe7f5;
+  --color-brand-yellow: #f7ad1a;
+  --color-brand-orange: #f27f0c;
+  --gradient-brand: linear-gradient(
+    135deg,
+    var(--color-brand-blue) 10%,
+    var(--color-brand-cyan) 25%,
+    var(--color-brand-yellow) 75%,
+    var(--color-brand-orange) 100%
+  );
+  --glow-card: radial-gradient(circle, rgb(159 231 245 / 30%) 0%, rgb(159 231 245 / 3%) 80%);
+
+  /* Type */
+  --font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --text-display: 44px; /* h1 */
+  --leading-display: 50px;
+  --text-h2: 32px;
+  --leading-h2: 40px;
+  --text-h2-sm: 26px; /* call-to-action and quote headings */
+  --leading-h2-sm: 34px;
+  --text-h3: 18px; /* card and FAQ titles */
+  --leading-h3: 26px;
+  --text-lead: 16px; /* hero and intro paragraphs */
+  --leading-lead: 24px;
+  --text-body: 16px;
+  --leading-body-text: 24px;
+  --text-sm: 14px;
+  --leading-sm: 20px;
+  --text-xs: 12px;
+  --leading-xs: 18px;
+  --text-eyebrow: 12px; /* "// Our mission" labels, bold uppercase */
+  --leading-eyebrow: 16px;
+  --text-label: 14px; /* nav links, text links, buttons: bold uppercase */
+  --leading-label: 20px;
+  --tracking-label: 1.12px;
+
+  /* Kept for the base styles */
+  --text-base: 16px;
+  --text-lg: var(--text-lead);
+  --text-xl: var(--text-h2-sm);
+  --text-2xl: var(--text-h2);
+  --leading-body: 1.5;
+  --leading-heading: 1.15;
+
+  /* Space */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 40px;
+  --space-8: 64px;
+  --space-9: 80px;
+  --space-10: 112px;
+  --section-pad-y: 44px;
+  --section-pad-y-lg: 48px; /* sections with more air: FAQ, CTA */
+  --hero-pad-top: 114px;
+  --stack-gap: 12px; /* gap between heading lines and paragraphs in a text block */
+
+  /* Layout: a 26-column grid. Content spans columns 2 to 25, each at most
+     60 px wide, so the content area stops growing at 1440 px. */
+  --grid-columns: 26;
+  --grid-col: min(60px, calc(100vw / 26));
+  --grid-gutter: max(var(--grid-col), calc((100vw - 24 * 60px) / 2));
+  --content-width: 1440px;
+  --header-height: 64px;
+
+  /* Shape */
+  --radius-card: 12px;
+  --radius-media: 16px;
+  --radius-pill: 9999px;
+  --border-card: 2px solid var(--color-border);
+  --border-faq: 1px solid var(--color-border);
+  --button-height: 48px; /* primary button, including its 2 px gradient ring */
+  --button-inner-height: 44px; /* primary button face inside the ring */
+  --button-height-header: 44px; /* "submit a project" in the header */
+  --button-pad-x: 24px;
+
+  /* Motion, as observed (see docs/animations.md) */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-css: ease;
+  --ease-in-out-sine: cubic-bezier(0.37, 0, 0.63, 1);
+  --ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+  --ease-dot: cubic-bezier(0.77, 0, 0.18, 1);
+  --duration-fast: 200ms;
+  --duration-base: 300ms;
+  --duration-slow: 500ms;
+  --duration-slide: 600ms;
+  --duration-highlight: 700ms;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --text-display: 54px;
+    --leading-display: 60px;
+    --text-h2: 48px;
+    --leading-h2: 56px;
+    --text-h2-sm: 36px;
+    --leading-h2-sm: 44px;
+    --text-h3: 20px;
+    --leading-h3: 30px;
+    --text-lead: 20px;
+    --leading-lead: 30px;
+    --text-body: 18px;
+    --leading-body-text: 26px;
+    --text-eyebrow: 14px;
+    --leading-eyebrow: 20px;
+
+    --section-pad-y: 80px;
+    --section-pad-y-lg: 112px;
+    --hero-pad-top: 169px;
+    --stack-gap: 16px;
+
+    --header-height: 78px;
+    --button-height: 56px;
+    --button-inner-height: 52px;
+    --button-pad-x: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --text-display: 72px;
+    --leading-display: 72px;
+  }
+}

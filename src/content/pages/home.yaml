@@ -1,0 +1,228 @@
+seo:
+  title: Open Source Europe | A simple fiscal home for open source projects
+  description: Open Source Europe (OSE) is a European nonprofit that offers open source projects a simple fiscal home. Receive donations, manage expenses, and grow without creating a legal entity.
+
+sections:
+  - type: hero
+    heading:
+      text: We take care of the admin. You take care of the code
+    body: "Open Source Europe (OSE) is a European nonprofit that offers open source projects a simple fiscal home : receive donations, manage expenses, and grow — without the burden of creating a legal entity."
+    ctas:
+      - label: submit a project
+        href: https://opencollective.com/europe/apply
+      - label: for funders
+        href: "#for-funders"
+        variant: secondary
+    background:
+      src: ../../assets/theme/webp/bg-hero.webp
+      alt: ""
+      decorative: true
+
+  - type: intro
+    variant: mission
+    eyebrow: // Our mission
+    heading:
+      text: We make open source sustainable without paperwork
+      highlight: sustainable
+      decor: chevron-underscore
+    body:
+      - "Our mission is simple: provide **open source projects** with the legal and **financial framework** they need to operate like an **organization** — without becoming one. At **OSE**, we keep admin **invisible and impact visible**, so **contributors** focus on their tools, not their tax status."
+    image:
+      src: ../../assets/uploads/2026/01/Gemini_Generated_Image_1z56s01z56s01z56-1.png
+      alt: ""
+      decorative: true
+
+  - type: quote
+    quote:
+      text: The digital infrastructure that powers government services demands the same investment commitment as the roads and bridges that connect our communities.
+      highlight: [government, communities.]
+    author: Dries Buytaert
+    role: Founder of Drupal
+    avatar:
+      src: ../../assets/uploads/2026/02/1516256287984.jpeg
+      alt: ""
+      decorative: true
+    # Four rows of nine round holders below the quote (E2).
+    circles:
+      - - empty
+        - ring
+        - { logo: { src: ../../assets/uploads/2025/11/mastodon-2.svg, alt: "", decorative: true } }
+        - empty
+        - empty
+        - empty
+        - empty
+        - empty
+        - empty
+      - - white
+        - { photo: { src: ../../assets/theme/png/circle-2.png, alt: "", decorative: true } }
+        - empty
+        - empty
+        - empty
+        - empty
+        - empty
+        - ring
+        - empty
+      - - blue
+        - { logo: { src: ../../assets/uploads/2025/11/manjaro-seeklogo-1.svg, alt: "", decorative: true } }
+        - ring
+        - ring
+        - { center: { src: ../../assets/theme/webp/bg-how-to.webp, alt: "", decorative: true } }
+        - { logo: { src: ../../assets/uploads/2025/11/endeavouros-seeklogo.svg, alt: "", decorative: true } }
+        - ring
+        - { logo: { src: ../../assets/uploads/2025/11/ghostery-svgrepo-com.svg, alt: "", decorative: true } }
+        - ring
+      - - white
+        - ring
+        - orange
+        - ring
+        - white
+        - ring
+        - ring
+        - white
+        - white
+
+  - type: steps
+    variant: spotlight
+    background:
+      src: ../../assets/theme/webp/bg-how-to.webp
+      alt: ""
+      decorative: true
+    eyebrow: // How to join us
+    heading:
+      text: Getting started with OSE is quick and simple
+      highlight: quick
+      decor: parens
+    items:
+      - title: Create your collective
+        body: Create your collective on Open Collective with a ready legal and financial framework
+        image:
+          src: ../../assets/uploads/2025/11/Create-your-collective-_-open-source-europe.png
+          alt: ""
+          decorative: true
+      - title: Start receiving funds
+        body: Start receiving donations and grants from people, companies, or foundations.
+        image:
+          src: ../../assets/uploads/2025/11/Start-receiving-funds-_-open-source-europe-1.png
+          alt: ""
+          decorative: true
+      - title: Manage your funds
+        body: Manage expenses openly on our platform, with full compliance and trust
+        image:
+          src: ../../assets/uploads/2025/11/Manage-your-funds-_-open-source-europe-1.png
+          alt: ""
+          decorative: true
+
+  - type: features
+    variant: list
+    eyebrow: // Key benefits
+    heading:
+      text: What makes this possible
+      highlight: makes
+      decor: chevron-underscore
+      decorAfter: makes
+    items:
+      - title: "Radical transparency : every budget is ==public=="
+      - title: Simple admin processes
+      - title: A nonprofit structure compliant with ==EU law==
+      - title: Eligibility for both ==European and US==-based funding.
+    image:
+      src: ../../assets/uploads/2025/11/Key-benefits-Open-Source.svg
+      alt: ""
+      decorative: true
+
+  - type: cards
+    variant: carousel
+    eyebrow: // Supported project
+    heading:
+      text: Trusted by hundreds of open source projects across Europe
+      highlight: source
+      decor: chevron-underscore
+    body: Hundreds of projects already trust OSE to manage their finances transparently. We support everything from small, single-maintainer libraries to large collaborative ecosystems — always without bureaucracy.
+    cta:
+      label: explore all on open collective
+      href: https://opencollective.com/
+    items:
+      - title: FM
+        body: "\"For open source projects, finances can be traumatic. Open Source Europe removes that pain, making expenses, fundraising, and transparency as easy as it could possibly be.\" - Dee, Fedi Monster"
+        image:
+          src: ../../assets/uploads/2025/11/8920e7c20bb2ed3354756238ed9b05ee7cca6c5b-min.jpg
+          alt: ""
+          decorative: true
+        logo:
+          src: ../../assets/uploads/2025/11/Frame-1707483558.png
+          alt: GitHub
+        cta:
+          label: view project
+          href: https://opencollective.com/
+          variant: text
+      - title: Semantic MediaWiki
+        body: "\"For open source projects, finances can be traumatic. Open Source Europe removes that pain, making expenses, fundraising, and transparency as easy as it could possibly be.\" - Dee, Fedi Monster"
+        image:
+          src: ../../assets/uploads/2025/11/0ae91a10990473bf86578eedaef23bf92f2cea09-min-scaled.jpg
+          alt: ""
+          decorative: true
+        logo:
+          src: ../../assets/uploads/2025/11/Frame-1707483559.png
+          alt: NLnet Foundation
+        cta:
+          label: view project
+          href: https://opencollective.com/
+          variant: text
+      - title: Project EdgeTX
+        body: ASince 2021, the RC model transmitter firmware project EdgeTX, has chosen OpenCollective to manage its funds. We appreciate the openness of public financial records and the ease of management that Open Collective offers to our open-source project.
+        image:
+          src: ../../assets/uploads/2025/11/8920e7c20bb2ed3354756238ed9b05ee7cca6c5b-min.jpg
+          alt: ""
+          decorative: true
+        logo:
+          src: ../../assets/uploads/2025/11/Frame-1707483562.png
+          alt: Silicon Valley Community Foundation
+        cta:
+          label: view project
+          href: https://opencollective.com/
+          variant: text
+
+  - type: shared
+    ref: eligibility
+
+  - type: shared
+    ref: funders
+
+  - type: logos
+    eyebrow: // Partners & sponsors
+    heading:
+      text: No ecosystem grows alone
+      highlight: grows
+      decor: chevron-underscore
+    body: OSE works with funders, companies, and individual donors who believe that open source deserves lasting support. Their contributions strengthen the ecosystem and help projects of all sizes thrive.
+    items:
+      - name: Silicon Valley Community Foundation
+        image:
+          src: ../../assets/uploads/2025/11/Frame-1707483562.png
+          alt: Silicon Valley Community Foundation
+      - name: GitHub
+        image:
+          src: ../../assets/uploads/2025/11/Frame-1707483558.png
+          alt: GitHub
+      - name: NLnet Foundation
+        image:
+          src: ../../assets/uploads/2025/11/Frame-1707483559.png
+          alt: NLnet Foundation
+      - name: Myriad USA
+        image:
+          src: ../../assets/uploads/2025/11/Frame-1707483561.png
+          alt: Myriad USA
+      - name: Open Source Collective
+        image:
+          src: ../../assets/uploads/2026/02/Design-sans-titre-1.png
+          alt: Open Source Collective
+      - name: OFi Consortium
+        image:
+          src: ../../assets/uploads/2026/02/ed9d72f7-bf9e-465f-9d0c-66df9dec05b0.png
+          alt: OFi Consortium
+
+  - type: shared
+    ref: faq
+
+  - type: shared
+    ref: cta-host

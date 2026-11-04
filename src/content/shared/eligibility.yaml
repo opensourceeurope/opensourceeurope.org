@@ -1,0 +1,17 @@
+# "Open to every open source project". Used on Home, About, How to join and Contact.
+type: intro
+variant: split
+eyebrow: // apply project
+heading:
+  text: Open to every open source project
+  highlight: project
+  decor: chevron-underscore
+body:
+  - OSE works with funders, companies, and individual donors who believe that open source deserves lasting support. Their contributions strengthen the ecosystem and help projects of all sizes thrive.
+cta:
+  label: submit a project
+  href: https://opencollective.com/europe/apply
+image:
+  src: ../../assets/uploads/2025/11/IMage1.png
+  alt: ""
+  decorative: true

@@ -1,0 +1,20 @@
+# Heavy derived artifacts — regenerated inside the image (Dockerfile stage 3)
+.opencrane/embeddings.json
+.opencrane/**/*.db
+**/*.log
+
+# The MCP image builds from the repo root; keep the site and the chat function out of it
+.git
+.github
+functions
+src
+public
+tests
+docs
+.claude-plugin
+agent
+**/__pycache__
+**/.venv
+**/.cache
+**/.huggingface
+node_modules

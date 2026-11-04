@@ -1,0 +1,216 @@
+{
+  "url": "https://opensourceeurope.org/services/",
+  "title": "Services - open source europe",
+  "description": "",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Our services"
+    },
+    {
+      "level": 2,
+      "text": "Technical Resources & Guidance"
+    },
+    {
+      "level": 2,
+      "text": "Fiscal hosting"
+    },
+    {
+      "level": 2,
+      "text": "Admin & financial support"
+    },
+    {
+      "level": 2,
+      "text": "Ready to host your project?"
+    }
+  ],
+  "textBlocks": [
+    "Home",
+    "Services",
+    "About",
+    "How to join",
+    "Contact",
+    "submit a project",
+    "Home",
+    "Services",
+    "About",
+    "How to join",
+    "Contact",
+    "submit a project",
+    "// Services",
+    "Sustainability in open source is about more than money. OSE supports projects with resources, documentation, and a network of peers and funders. By joining OSE, your project connects to tools and people that build long-term impact.",
+    "Read more",
+    "// Services",
+    "Handling donations and grants can be one of the hardest parts of running an open source project. OSE offers fiscal hosting: a simple way to receive funds, stay compliant, and share resources transparently — without creating a legal entity. That way, your project stays focused on code, not paperwork.",
+    "Read more",
+    "// Services",
+    "Reimbursing contributors, processing invoices, and staying compliant takes energy away from coding. OSE acts as your financial back office: no paperwork jungle, just a simple, human process that lets your project stay focused on development.",
+    "Read more",
+    "Start in minutes. No paperwork. No barriers. Just open source, sustained.",
+    "Submit a project",
+    "Quick links",
+    "About",
+    "Services",
+    "How to join",
+    "Contact",
+    "Contact",
+    "E: oce@opencollective.com",
+    "A: Brussels, Belgium",
+    "2026 Open Source Europe. All rights reserved.",
+    "|",
+    "© Copyright Boukan Studio",
+    "Privacy Policy",
+    "•",
+    "Term & conditions",
+    "•",
+    "Cookies"
+  ],
+  "images": [
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/webp/bg-hero-w-home.webp",
+      "alt": "hero background"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/11/Lamp-icon.png",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/11/IMage-1.png",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/11/IMage-min.png",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/webp/ready-to.webp",
+      "alt": "circle"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/png/ready-to-blur.png",
+      "alt": "circle"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/png/ready/stars.png",
+      "alt": "circle"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/webp/bg-footer.webp",
+      "alt": "footer"
+    }
+  ],
+  "links": [
+    {
+      "text": "",
+      "href": "https://opensourceeurope.org"
+    },
+    {
+      "text": "Home",
+      "href": "https://opensourceeurope.org/"
+    },
+    {
+      "text": "Services",
+      "href": "https://opensourceeurope.org/services/"
+    },
+    {
+      "text": "About",
+      "href": "https://opensourceeurope.org/about/"
+    },
+    {
+      "text": "How to join",
+      "href": "https://opensourceeurope.org/how-to-join/"
+    },
+    {
+      "text": "Contact",
+      "href": "https://opensourceeurope.org/contact/"
+    },
+    {
+      "text": "submit a project",
+      "href": "https://oceu.typeform.com/apply?typeform-source=www.oceurope.org"
+    },
+    {
+      "text": "Home",
+      "href": "https://opensourceeurope.org/"
+    },
+    {
+      "text": "Services",
+      "href": "https://opensourceeurope.org/services/"
+    },
+    {
+      "text": "About",
+      "href": "https://opensourceeurope.org/about/"
+    },
+    {
+      "text": "How to join",
+      "href": "https://opensourceeurope.org/how-to-join/"
+    },
+    {
+      "text": "Contact",
+      "href": "https://opensourceeurope.org/contact/"
+    },
+    {
+      "text": "submit a project",
+      "href": "https://oceu.typeform.com/apply?typeform-source=www.oceurope.org"
+    },
+    {
+      "text": "Read more",
+      "href": "https://opensourceeurope.org/services/technical-resources-guidance/"
+    },
+    {
+      "text": "Read more",
+      "href": "https://opensourceeurope.org/services/fiscal-hosting/"
+    },
+    {
+      "text": "Read more",
+      "href": "https://opensourceeurope.org/services/admin-financial-support/"
+    },
+    {
+      "text": "Submit a project",
+      "href": "https://oceu.typeform.com/apply?typeform-source=www.oceurope.org"
+    },
+    {
+      "text": "",
+      "href": "https://opensourceeurope.org"
+    },
+    {
+      "text": "About",
+      "href": "https://opensourceeurope.org/about/"
+    },
+    {
+      "text": "Services",
+      "href": "https://opensourceeurope.org/services/"
+    },
+    {
+      "text": "How to join",
+      "href": "https://opensourceeurope.org/how-to-join/"
+    },
+    {
+      "text": "Contact",
+      "href": "https://opensourceeurope.org/contact/"
+    },
+    {
+      "text": "oce@opencollective.com",
+      "href": "mailto:oce@opencollective.com"
+    },
+    {
+      "text": "Brussels, Belgium",
+      "href": "https://maps.app.goo.gl/cc81nBsmR5Tubq2t5"
+    },
+    {
+      "text": "Boukan Studio",
+      "href": "https://www.boukan.studio/"
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "https://opensourceeurope.org/privacy-policy/"
+    },
+    {
+      "text": "Term & conditions",
+      "href": "https://opensourceeurope.org/term-conditions/"
+    },
+    {
+      "text": "Cookies",
+      "href": "#"
+    }
+  ]
+}

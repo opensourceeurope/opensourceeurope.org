@@ -1,0 +1,24 @@
+seo:
+  title: Page not found | Open Source Europe
+  description: The page you are looking for does not exist on the Open Source Europe website.
+  noindex: true
+
+sections:
+  - type: notFound
+    heading:
+      text: "404"
+    lead: Oops, this page doesn’t exist!
+    body: Look like the page you looking for is currently unavailable or under maintenance. Let’s get you back on track
+    cta:
+      label: return to homepage
+      href: /
+    layers:
+      - image: { src: ../../assets/theme/png/404-circle.png, alt: "", decorative: true }
+        show: large
+      - image: { src: ../../assets/theme/webp/bg-circle-gradient-2560.webp, alt: "", decorative: true }
+        fit: contain
+        show: large
+      - image: { src: ../../assets/theme/png/404/bg-mobile.png, alt: "", decorative: true }
+        show: small
+      - image: { src: ../../assets/theme/png/404/center.png, alt: "", decorative: true }
+        show: small

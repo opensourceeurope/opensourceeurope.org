@@ -1,0 +1,169 @@
+seo:
+  title: About us | Open Source Europe
+  description: Open Source Europe was founded in Brussels in 2017 and is now a fiscal host for more than 270 open source projects. Our story, vision, values, team and pricing.
+
+sections:
+  - type: hero
+    variant: title
+    heading:
+      text: About us
+    background:
+      src: ../../assets/theme/webp/bg-hero-w-home.webp
+      alt: ""
+      decorative: true
+
+  - type: intro
+    variant: story
+    eyebrow: // Our story
+    heading:
+      text: From a handful of initiatives in 2017 to hundreds today, we support open source by building the infrastructure that sustains it
+    body:
+      - Open Source Europe was founded in Brussels in 2017 by Xavier Damman, soon joined by Jean-François De Hertogh. What started with just 7 collectives has grown into a fiscal host supporting more than 270 projects today.
+    images:
+      - src: ../../assets/uploads/2025/11/8920e7c20bb2ed3354756238ed9b05ee7cca6c5b-min.jpg
+        alt: ""
+        decorative: true
+      - src: ../../assets/uploads/2025/11/0ae91a10990473bf86578eedaef23bf92f2cea09-min-scaled.jpg
+        alt: ""
+        decorative: true
+
+  - type: intro
+    variant: vision
+    eyebrow: // our vision
+    heading:
+      text: Open source is public infrastructures
+      highlight: source
+      decor: chevron
+      decorAfter: Open
+    body:
+      - Just like roads and bridges, the digital tools we all rely on deserve sustainable investment. At OSE, we make this vision real with transparent legal and financial structures that let companies, institutions, and citizens contribute to open source in Europe. But today, open source is still the most neglected part of our digital infrastructure. That’s why OSE exists.
+    image:
+      src: ../../assets/theme/png/about/section-3.png
+      alt: ""
+      decorative: true
+    background:
+      src: ../../assets/theme/webp/bg-how-to.webp
+      alt: ""
+      decorative: true
+
+  - type: values
+    id: our-values
+    heading:
+      text: Our values
+      highlight: values
+      decor: chevron-underscore
+    cardBackground:
+      src: ../../assets/theme/png/about/section-4-card.png
+      alt: ""
+      decorative: true
+    items:
+      - label: Openness / transparency
+        title: No doors, no walls
+        body: Transparency is our default choice. We believe in open budgets, open questions, and open minds.
+        icon: { src: ../../assets/uploads/2025/11/Dotted-shape_stairs_dark-blue.svg, alt: "", decorative: true }
+      - label: Resilient Communities
+        title: Stronger together
+        body: When systems fail, communities step in. Resilience grows as neighbors support each other and build strong, shared networks.
+        icon: { src: ../../assets/uploads/2025/11/Dotted-shape_triangle_dark-blue.svg, alt: "", decorative: true }
+      - label: Autonomy
+        title: Your project, your rules
+        body: You write the code, you run the show. We don’t tell projects what to do. We build infrastructure that gets out of your way.
+        icon: { src: ../../assets/uploads/2025/11/Dotted-shape-_wave_dark-blue.svg, alt: "", decorative: true }
+      - label: Reliability
+        title: Solid trust
+        body: We’re the kind of host you don’t have to think about (until you need us). And when you do, we’re here.
+        icon: { src: ../../assets/uploads/2025/11/Dotted-shape_spiral_dark-blue.png, alt: "", decorative: true }
+      - label: Open Innovation
+        title: Share to scale
+        body: Knowledge thrives when shared. Open source, citizen science, and maker spaces show how innovation grows faster together.
+        icon: { src: ../../assets/uploads/2025/11/Dotted-shape_cross_dark-blue.png, alt: "", decorative: true }
+      - label: Accessibility
+        title: Adios bureaucracy
+        body: Just enough structure to keep things clean. No paperwork jungles. No legalese riddles. We speak human, not admin.
+        icon: { src: ../../assets/uploads/2025/11/Dotted-shape_arrow_dark-blue.png, alt: "", decorative: true }
+
+  - type: team
+    eyebrow: // meet our team
+    heading:
+      text: Team & Governance
+      highlight: Governance
+      decor: chevron-underscore
+    items:
+      - name: Jean-François De Hertogh
+        role: Co-director & Board Member
+        bio: Exec Director & Co-Founder | Philanthropy, tech for good, humanitarian relief
+        photo: { src: ../../assets/uploads/2025/12/Jean-Francois-Open-Source-Europe-1.png, alt: "", decorative: true }
+        link:
+          label: Jean-François De Hertogh on LinkedIn
+          href: https://www.linkedin.com/in/jean-fran%C3%A7ois-de-hertogh-28630242/
+      - name: Ivan Cukeric
+        role: Co-director & Board Member
+        bio: Head of Operations at Open Collective Europe
+        photo: { src: ../../assets/uploads/2025/12/Ivan-Cukeric-Open-Source-Europe-1.png, alt: "", decorative: true }
+        link:
+          label: Ivan Cukeric on LinkedIn
+          href: https://www.linkedin.com/in/ivan-cukeri%C4%87-715b3618b/
+      - name: Pia Mancini
+        role: Board Member
+        bio: Cofounder & CEO at Give Zero
+        photo: { src: ../../assets/uploads/2025/12/Pia-Mancini-Open-Source-Europe-1.png, alt: "", decorative: true }
+        link:
+          label: Pia Mancini on LinkedIn
+          href: https://www.linkedin.com/in/piamancini/
+      - name: Shannon Wray
+        role: Board Member
+        bio: Building Open Collective
+        photo: { src: ../../assets/uploads/2025/12/Shannon-Wray-Open-Source-Europe.png, alt: "", decorative: true }
+        link:
+          label: Shannon Wray on LinkedIn
+          href: https://www.linkedin.com/in/shannonwray/
+
+  - type: intro
+    variant: split-reverse
+    eyebrow: // funds
+    heading:
+      text: Pricing
+      highlight: Pricing
+      decor: chevron-underscore
+    body:
+      - OSE charges 8% plus Stripe or PayPal fees on online contributions, and 10% on bank transfers, tax-deductible donations and grants. No setup fees. No hidden costs.
+    image:
+      src: ../../assets/uploads/2025/11/Pricing-Open-Source-Europe.png
+      alt: ""
+      decorative: true
+
+  - type: resources
+    heading:
+      text: Resources
+      decor: chevron-underscore
+    items:
+      - icon: { src: ../../assets/uploads/2025/11/Icon-gitbook-documentation.png, alt: "", decorative: true }
+        heading:
+          text: Gitbook documentation
+          highlight: documentation
+        cta:
+          label: Read documentation
+          href: https://docs.opencollective.com/oceurope
+          variant: text
+      - icon: { src: ../../assets/uploads/2025/11/Icon-ready-to-use-templates.png, alt: "", decorative: true }
+        heading:
+          text: Ready-to-use templates
+          highlight: Ready-to-use
+        cta:
+          label: discover our template
+          href: https://opencollective.com/search?q=template
+          variant: text
+      - icon: { src: ../../assets/uploads/2025/11/Icon-blog-posts.png, alt: "", decorative: true }
+        heading:
+          text: Get insight from our blog posts
+          highlight: blog posts
+        cta:
+          label: read our blog
+          href: https://blog.opencollective.com/
+          variant: text
+
+  - type: shared
+    ref: funders
+
+  - type: shared
+    ref: cta-host

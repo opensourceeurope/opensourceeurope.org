@@ -1,0 +1,34 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageData } from '../lib/sections';
+
+interface Props {
+  image: ImageData;
+  class?: string;
+  loading?: 'lazy' | 'eager';
+  // The width the image is shown at, for the browser to pick a file. Full width by default.
+  sizes?: string;
+}
+
+const { image, class: className, loading = 'lazy', sizes = '100vw' } = Astro.props;
+// SVG stays as it is; everything else becomes AVIF at several widths.
+const vector = image.src.format === 'svg';
+---
+
+{
+  vector ? (
+    <Image src={image.src} alt={image.decorative ? '' : image.alt} class={className} loading={loading} format="svg" />
+  ) : (
+    <Image
+      src={image.src}
+      alt={image.decorative ? '' : image.alt}
+      class={className}
+      loading={loading}
+      fetchpriority={loading === 'eager' ? 'high' : undefined}
+      format="avif"
+      quality={40}
+      widths={[360, 540, 720, 960, 1280, 1920]}
+      sizes={sizes}
+    />
+  )
+}

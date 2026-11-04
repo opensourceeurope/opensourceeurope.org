@@ -1,0 +1,39 @@
+---
+import Head from '../components/Head.astro';
+import Header from '../components/Header.astro';
+import ConsentBanner from '../components/ConsentBanner.astro';
+import Footer from '../components/Footer.astro';
+import AskPanel from '../components/chat/AskPanel.astro';
+import { loadSettings } from '../lib/site';
+import type { Seo } from '../lib/seo';
+
+interface Props {
+  seo: Seo;
+  bodyClass?: string;
+  // The 404 page has no footer, as on the live site.
+  footer?: boolean;
+}
+
+const { seo, bodyClass, footer = true } = Astro.props;
+const settings = await loadSettings();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <script is:inline>
+      document.documentElement.classList.add('js');
+    </script>
+    <Head seo={seo} />
+  </head>
+  <body class={bodyClass}>
+    <ConsentBanner consent={settings.consent} analytics={settings.analytics} />
+    <a class="skip-link" href="#main">{settings.ui.skip_link_label}</a>
+    <Header settings={settings} currentPath={Astro.url.pathname} />
+    <main id="main">
+      <slot />
+    </main>
+    {footer && <Footer settings={settings} />}
+    {Astro.url.pathname !== '/ask/' && <AskPanel settings={settings} />}
+  </body>
+</html>

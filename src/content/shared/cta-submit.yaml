@@ -1,0 +1,19 @@
+# "Submit your project today and start receiving funds transparently." Used on the three service pages.
+type: cta
+variant: banner
+background:
+  src: ../../assets/theme/webp/ready-to.webp
+  alt: ""
+  decorative: true
+layers:
+  - image: { src: ../../assets/theme/png/ready-to-blur.png, alt: "", decorative: true }
+    show: large
+  - image: { src: ../../assets/theme/png/ready/stars.png, alt: "", decorative: true }
+    fit: natural
+    position: bottom
+    show: large
+heading:
+  text: Submit your project today and start receiving funds transparently.
+ctas:
+  - label: submit a project
+    href: https://opencollective.com/europe/apply

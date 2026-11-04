@@ -1,0 +1,102 @@
+seo:
+  title: Contact | Open Source Europe
+  description: Contact Open Source Europe. Send us a message with the contact form, or write to us by email. Our office is in Brussels.
+
+sections:
+  - type: hero
+    variant: title
+    heading:
+      text: Get in touch
+    body: Ask about fiscal hosting for your open source project, about a project OSE already hosts, or about a partnership. Use the form, or write to home@opensourceeurope.org.
+    background:
+      src: ../../assets/theme/webp/bg-hero-w-home.webp
+      alt: ""
+      decorative: true
+
+  - type: contactForm
+    id: contact-form
+    details:
+      title: Contact detail
+      items:
+        - label: Office address
+          text: Avenue Louise 500 Box 205 - 1050 Brussels - Belgium
+          href: https://maps.app.goo.gl/cc81nBsmR5Tubq2t5
+        - label: Email address
+          text: home@opensourceeurope.org
+          href: mailto:home@opensourceeurope.org
+    form:
+      name:
+        label: Full name*
+        placeholder: Your full name
+      email:
+        label: Email address*
+        placeholder: name@email.com
+      interest:
+        legend: I am interested in*
+        options:
+          - Founding a project
+          - Getting information on a project
+          - Becoming a partner
+          - Publish a project
+          - Other
+        checked: Founding a project
+        other: Other
+        otherLabel: Other Choice, please specify
+      message:
+        label: What's your message*
+        placeholder: Write your message here...
+        description: Please give as much information as possible for a quicker resolution
+      link:
+        label: Add a link with files or something additional
+        placeholder: https://
+        description: We encourage you to include files or images in a cloud drive link.
+      honeypotLabel: Leave this field empty
+      submit: send a message
+      # The live confirmation text only shows after a real submission. These
+      # are placeholders for OSE to replace (MN-034, MN-035).
+      status:
+        sent: Thank you for your message. We will get back to you soon.
+        invalid: Please check the form and try again.
+        error: Your message could not be sent. Please try again later, or email us at home@opensourceeurope.org.
+
+  # The contact page lists six questions, not the five of the shared FAQ.
+  - type: faq
+    id: faq
+    eyebrow: // faq
+    heading:
+      text: Frequently asked questions
+      highlight: asked
+      decor: chevron-underscore
+    items:
+      - question: Do I need to create a legal entity?
+        answer: No. OSE provides the fiscal structure so you don’t have to.
+      - question: Do you control my project?
+        answer: "No. Your project remains fully autonomous: your project, your rules."
+      - question: How long does it take to get started?
+        answer: Most projects are live within a week.
+      - question: Who can apply?
+        answer: Any open source project, regardless of size or maturity.
+      - question: Can we get individual advice?
+        answer: Yes, guidance is available when needed.
+      - question: Do contributors need to be in Europe?
+        answer: No. Anyone worldwide can be reimbursed with valid receipts.
+
+  - type: cta
+    variant: banner
+    background:
+      src: ../../assets/theme/webp/ready-to.webp
+      alt: ""
+      decorative: true
+    layers:
+      - image: { src: ../../assets/theme/png/ready-to-blur.png, alt: "", decorative: true }
+        show: large
+      - image: { src: ../../assets/theme/png/ready/stars.png, alt: "", decorative: true }
+        fit: natural
+        position: bottom
+        show: large
+    heading:
+      text: Everything you need in one guide
+    body: Access a complete guide on GitBook designed to help you set up, manage, and grow your collective with clarity and ease.
+    ctas:
+      - label: read the guide
+        href: https://docs.opencollective.com/oceurope

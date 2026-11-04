@@ -1,0 +1,131 @@
+ui:
+  logo:
+    src: /images/ose-logo.svg
+    alt: Open Source Europe
+    width: 119
+    height: 50
+  apply_label: submit a project
+  menu_label: Menu
+  skip_link_label: Skip to main content
+  nav_label: Main
+  footer_nav_label: Footer
+  marquee_pause_label: Pause the logo animation
+  carousel_prev_label: Previous project
+  carousel_next_label: Next project
+  carousel_dot_label: Show project
+  cta_context_connector: about
+  copy_label: Copy
+  copied_label: Copied
+
+chat:
+  title: Ask Open Source Europe
+  intro: A public assistant that searches the official OSE documentation and answers with sources you can verify. Fiscal hosting, onboarding, policies, processes. Ask in your own words.
+  placeholder: Ask about OSE…
+  input_label: Your question
+  send_label: Send question
+  suggestions_label: Try
+  suggestions:
+    - What is Open Source Europe?
+    - How does fiscal hosting work at OSE?
+    - How do I submit an expense and get paid?
+  sharing_on: Your questions are shared to help OSE improve the docs.
+  sharing_off: Your questions are not shared.
+  sharing_settings: Change this in Privacy settings
+  small_model_note_short: A public demo running a small model. Answers can be incomplete, so check the sources.
+  memory_note: The conversation ends when you open another page.
+  sources_label: Sources
+  you_label: You
+  assistant_label: OSE
+  loading: Searching the OSE docs…
+  loading_long: Still working…
+  status_searching_start: Searching the OSE docs…
+  status_searching: 'Searching the docs: {query}…'
+  status_writing: Writing the answer…
+  status_ready: Answer ready
+  stop_label: Stop the answer
+  stopped_note: Stopped. The answer is incomplete.
+  followups_label: Ask next
+  error: Sorry, I couldn't reach the OSE assistant just now. Please check your connection and try again in a moment.
+  error_busy: The assistant is busy. Try again in a minute.
+  error_unavailable: The assistant is not available right now. Try again later.
+  error_timeout: The answer took too long. Try again in a moment.
+  no_js: The chat needs JavaScript. Turn it on in your browser to ask a question.
+  open_label: Ask
+  close_label: Close the chat
+  how_it_works:
+    label: How this works
+    href: /ask/
+  shortcut_mac: ⌘K
+  shortcut_other: Ctrl K
+
+seo:
+  site_name: Open Source Europe
+  logo: /app/uploads/2026/01/cropped-ose.png
+  default_og_image: /app/uploads/2026/01/cropped-ose.png
+
+nav:
+  - label: Home
+    href: /
+  - label: Services
+    href: /services/
+  - label: About
+    href: /about/
+  - label: How to join
+    href: /how-to-join/
+  - label: Contact
+    href: /contact/
+
+footer:
+  background: ../../assets/theme/webp/bg-footer.webp
+  columns:
+    - title: Quick links
+      links:
+        - label: About
+          href: /about/
+        - label: Services
+          href: /services/
+        - label: How to join
+          href: /how-to-join/
+        - label: Contact
+          href: /contact/
+    - title: Contact
+      links:
+        - label: home@opensourceeurope.org
+          href: mailto:home@opensourceeurope.org
+          prefix: "E:"
+        - label: Brussels, Belgium
+          href: https://maps.app.goo.gl/cc81nBsmR5Tubq2t5
+          prefix: "A:"
+          external: true
+  social: []
+  legal:
+    - label: Privacy Policy
+      href: /privacy-policy/
+    - label: Term & conditions
+      href: /term-conditions/
+    - label: Privacy settings
+      href: "#"
+      action: cookie-settings
+  copyright: 2026 Open Source Europe. All rights reserved.
+
+consent:
+  title: Privacy settings
+  body: This site sets no cookies and loads nothing from other sites. It keeps your choice in your browser's local storage. If you accept analytics, the questions you ask the chat are shared with OSE. You can change your choice at any time with the Privacy settings link at the bottom of each page.
+  privacy_link:
+    label: Privacy policy
+    href: /privacy-policy/
+  accept: Accept analytics
+  reject: Reject analytics
+  settings: Manage my preferences
+  save: Save my choice
+  close_label: Close
+  always_on: Always on
+  necessary:
+    name: Necessary
+    description: Remembers your choice on this banner in your browser's local storage. The site sets no cookies.
+  analytics:
+    name: Analytics
+    description: If you accept, the questions you ask the chat are shared with OSE to improve the docs. OSE gets the question text, the number of calls to the AI model, whether the docs answered it, a version label of the assistant's instructions and the time. Nothing else is measured in your browser. If you reject, nothing is shared.
+
+apply_url: https://opencollective.com/europe/apply
+analytics: null

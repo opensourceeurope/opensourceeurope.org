@@ -1,0 +1,105 @@
+# Builds the site and syncs dist/ to the Scaleway Object Storage bucket.
+# Setup, variables and secrets are listed in docs/deployment.md.
+name: deploy site
+
+on:
+  workflow_call:         # invoked by the release pipeline (release.yml)
+    secrets:
+      SCW_ACCESS_KEY: { required: true }
+      SCW_SECRET_KEY: { required: true }
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-site
+  cancel-in-progress: false
+
+env:
+  AWS_CLI_VERSION: 2.34.9
+  # sha256 of awscli-exe-linux-x86_64-2.34.9.zip. AWS publishes PGP signatures,
+  # not checksums, so this was computed from a download of that file.
+  AWS_CLI_SHA256: 9100eee6468edd00eac08e7acdd5ea6c761584264bbe2234dc4fe48e123b05b1
+
+jobs:
+  deploy:
+    # A manual run from another branch must not reach production.
+    if: github.ref == 'refs/heads/main'
+    environment: production
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Check the deploy settings
+        env:
+          SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
+          SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
+          SITE_S3_BUCKET: ${{ vars.SITE_S3_BUCKET }}
+          SCW_REGION: ${{ vars.SCW_REGION }}
+          CONTACT_ENDPOINT: ${{ vars.CONTACT_ENDPOINT }}
+          CHAT_FUNCTION_URL: ${{ vars.CHAT_FUNCTION_URL }}
+        run: |
+          missing=0
+          for name in SCW_ACCESS_KEY SCW_SECRET_KEY SITE_S3_BUCKET SCW_REGION CONTACT_ENDPOINT CHAT_FUNCTION_URL; do
+            if [ -z "${!name}" ]; then
+              echo "::error::$name is not set. See docs/deployment.md."
+              missing=1
+            fi
+          done
+          exit "$missing"
+
+      - name: Install the AWS CLI
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/awscli"
+          cd "$RUNNER_TEMP/awscli"
+          curl -fsSLo awscli.zip "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-${AWS_CLI_VERSION}.zip"
+          echo "${AWS_CLI_SHA256}  awscli.zip" | sha256sum --check
+          unzip -q awscli.zip
+          ./aws/install --install-dir "$RUNNER_TEMP/awscli/dist" --bin-dir "$RUNNER_TEMP/awscli/bin"
+          "$RUNNER_TEMP/awscli/bin/aws" --version | grep -q "^aws-cli/${AWS_CLI_VERSION} " \
+            || { echo "::error::Installed AWS CLI is not ${AWS_CLI_VERSION}"; exit 1; }
+          echo "AWS_BIN=$RUNNER_TEMP/awscli/bin/aws" >> "$GITHUB_ENV"
+
+      - run: npm ci
+
+      - name: Build the site
+        env:
+          PUBLIC_CONTACT_ENDPOINT: ${{ vars.CONTACT_ENDPOINT }}
+          PUBLIC_CHAT_ENDPOINT: ${{ vars.CHAT_FUNCTION_URL }}
+        run: npm run build
+
+      - name: Upload to Object Storage
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.SCW_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SCW_SECRET_KEY }}
+          AWS_DEFAULT_REGION: ${{ vars.SCW_REGION }}
+          # AWS CLI 2.23 and later add checksum headers that other S3 providers can reject.
+          AWS_REQUEST_CHECKSUM_CALCULATION: when_required
+          AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
+          BUCKET: ${{ vars.SITE_S3_BUCKET }}
+          REGION: ${{ vars.SCW_REGION }}
+        run: |
+          set -euo pipefail
+          ENDPOINT="https://s3.${REGION}.scw.cloud"
+          # Pass 1: hashed assets first, never deleted. Pages that are still
+          # cached elsewhere keep finding the files they point to.
+          "$AWS_BIN" s3 sync dist/_astro/ "s3://${BUCKET}/_astro/" \
+            --endpoint-url "$ENDPOINT" \
+            --cache-control "public, max-age=31536000, immutable"
+          # Pass 2: everything else, with a short cache, and drop pages that no longer exist.
+          "$AWS_BIN" s3 sync dist/ "s3://${BUCKET}/" \
+            --endpoint-url "$ENDPOINT" \
+            --exclude "_astro/*" \
+            --cache-control "public, max-age=300" \
+            --delete
+          echo "Uploaded. Purge the Edge Services cache, see docs/deployment.md."

@@ -1,0 +1,327 @@
+---
+import Cta from '../Cta.astro';
+import Eyebrow from '../Eyebrow.astro';
+import Heading from '../Heading.astro';
+import Img from '../Img.astro';
+import Carousel from '../motion/Carousel.astro';
+import Cursor from '../motion/Cursor.astro';
+import type { SectionOf } from '../../lib/sections';
+import { loadSettings } from '../../lib/site';
+
+interface Props {
+  section: SectionOf<'cards'>;
+}
+const { section } = Astro.props;
+const carousel = section.variant === 'carousel';
+const { ui } = await loadSettings();
+const arrow = 'M5 12h14M13 6l6 6-6 6';
+---
+
+<section id={section.id} class:list={['cards grid-26', `cards--${section.variant}`]}>
+  <div class="cards__head">
+    <Eyebrow text={section.eyebrow} />
+    <Heading heading={section.heading} />
+  </div>
+  {
+    (section.body || section.cta) && (
+      <div class="cards__intro">
+        {section.body && <p class="body-copy">{section.body}</p>}
+        {section.cta && <Cta cta={section.cta} />}
+      </div>
+    )
+  }
+  <div class="cards__body" data-carousel={carousel ? '' : undefined}>
+  <ul class="cards__list" data-cards-track={carousel ? '' : undefined}>
+    {
+      section.items.map((item) => (
+        <li class="card">
+          {item.image && (
+            <div class="card__media">
+              <Img image={item.image} class="card__photo" />
+              {item.logo && <Img image={item.logo} class="card__logo" />}
+            </div>
+          )}
+          <div class="card__text">
+            <div>
+              {carousel ? <p class="card__title">{item.title}</p> : <h3 class="card__title">{item.title}</h3>}
+              {item.body && <p class="card__body">{item.body}</p>}
+            </div>
+            {item.cta && <Cta cta={item.cta} />}
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+  {
+    carousel && (
+      <>
+        <button type="button" class="cards__nav cards__nav--prev" data-carousel-prev aria-label={ui.carousel_prev_label}>
+          <span class="cards__arrow" data-follow>
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d={arrow} stroke="currentColor" stroke-width="1.5" fill="none" transform="rotate(180 12 12)" />
+            </svg>
+          </span>
+        </button>
+        <button type="button" class="cards__nav cards__nav--next" data-carousel-next aria-label={ui.carousel_next_label}>
+          <span class="cards__arrow" data-follow>
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d={arrow} stroke="currentColor" stroke-width="1.5" fill="none" />
+            </svg>
+          </span>
+        </button>
+        <div class="cards__dots">
+          {section.items.map((_, i) => (
+            <button type="button" class="cards__dot" data-carousel-dot={i} aria-label={`${ui.carousel_dot_label} ${i + 1}`} />
+          ))}
+        </div>
+      </>
+    )
+  }
+  </div>
+</section>
+{carousel && <Carousel />}
+{carousel && <Cursor />}
+
+<style>
+  .cards {
+    padding-block: var(--section-pad-y);
+  }
+  .cards__head > :global(* + *) {
+    margin-top: var(--space-4);
+  }
+  .cards :global(h2) {
+    font-size: var(--text-h2);
+    line-height: var(--leading-h2);
+  }
+  .cards__intro {
+    margin-top: 20px;
+  }
+  .cards__intro p {
+    margin: 0 0 var(--space-6);
+    font-size: var(--text-base);
+    line-height: 24px;
+  }
+  .cards__list {
+    display: grid;
+    gap: var(--space-5);
+    margin: var(--space-7) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .card__title {
+    margin: 0 0 var(--space-4);
+    font-size: var(--text-h3);
+    line-height: var(--leading-h3);
+    font-weight: var(--weight-semibold);
+  }
+  .card__body {
+    margin: 0 0 var(--space-6);
+    font-size: var(--text-base);
+    line-height: 24px;
+    font-weight: var(--weight-light);
+  }
+  .cards--grid .card {
+    padding: var(--space-5);
+    border: var(--border-card);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+  }
+
+  /* carousel: settled state of E4, a row of equal cards that scrolls
+     sideways. The next card peeks in from the right. */
+  .cards--carousel {
+    padding-top: 64px;
+    padding-bottom: 44px;
+  }
+  .cards--carousel .cards__body {
+    position: relative;
+    grid-column: 1 / -1;
+  }
+  .cards--carousel .cards__list {
+    --peek: calc(var(--grid-gutter) + var(--grid-col));
+    --gap: var(--space-4);
+    --per-view: 1;
+    display: flex;
+    gap: var(--gap);
+    overflow-x: auto;
+    padding-inline: var(--peek);
+    scroll-padding-inline: var(--peek);
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+  .cards--carousel .card {
+    /* The percentage is of the row inside its side padding. */
+    flex: 0 0 calc((100% - (var(--per-view) - 1) * var(--gap)) / var(--per-view));
+    min-height: 531px;
+    scroll-snap-align: start;
+  }
+  .card__media {
+    position: relative;
+    height: 216px;
+    border-radius: var(--radius-media);
+    overflow: hidden;
+  }
+  .card__media :global(.card__photo) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: transform var(--duration-slow) var(--ease-standard);
+  }
+  .card__media :global(.card__logo) {
+    position: absolute;
+    top: var(--space-4);
+    left: var(--space-4);
+    width: 89px;
+    height: 35px;
+    object-fit: contain;
+    object-position: left;
+  }
+  .cards--carousel .card__text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 275px;
+    margin-top: var(--space-5);
+  }
+
+  @media (min-width: 1024px) {
+    .cards--carousel {
+      padding-block: var(--space-9);
+    }
+    .cards__head {
+      grid-column: 3 / 13;
+    }
+    .cards__intro {
+      grid-column: 15 / 25;
+      grid-row: 1;
+      margin-top: var(--space-7);
+    }
+    .cards__intro p {
+      margin-bottom: var(--space-7);
+    }
+    .cards__list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-6);
+    }
+    .cards--carousel .cards__list {
+      --gap: var(--space-6);
+      --per-view: 2;
+      margin-top: var(--space-8);
+    }
+    .cards--carousel .card {
+      min-height: 640px;
+    }
+    .card__media {
+      height: 410px;
+    }
+    .card__media :global(.card__logo) {
+      top: var(--space-5);
+      left: var(--space-5);
+      width: 133px;
+    }
+    .card:hover :global(.card__photo) {
+      transform: scale(1.2);
+    }
+    .cards--carousel .card__text {
+      min-height: 210px;
+    }
+  }
+  /* E4 controls. They need the script, so they show only under html.js.
+     Below 1024 px: three dots. From 1024 px: a previous and a next zone over
+     the left and right 20 % of the row, each with a white arrow circle that
+     shows on hover and on keyboard focus. */
+  .cards__nav,
+  .cards__dots {
+    display: none;
+  }
+  /* The 8 px dots sit 20 px below the cards, as on live. Each button is a
+     24 px target, so the row overlaps the section padding by 8 px. */
+  :global(.js) .cards__dots {
+    display: flex;
+    justify-content: center;
+    margin: 12px 0 -8px;
+  }
+  .cards__dot {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+  }
+  .cards__dot::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: auto;
+    border-radius: 50%;
+    background: rgb(255 255 255 / 85%);
+    opacity: 0.5;
+  }
+  .cards__dot[aria-current='true']::before {
+    background: #fff;
+    opacity: 1;
+  }
+  .cards__arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    height: 88px;
+    margin: -44px 0 0 -44px;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--color-accent-contrast);
+    opacity: 0;
+    pointer-events: none;
+    /* Offset from the middle of the zone; the pointer script moves it. */
+    transform: translate(var(--x, 0px), var(--y, 0px));
+  }
+
+  @media (min-width: 1024px) {
+    :global(.js) .cards__dots {
+      display: none;
+    }
+    :global(.js) .cards__nav {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      display: block;
+      width: 20%;
+      padding: 0;
+      border: 0;
+      background: none;
+      cursor: pointer;
+    }
+    .cards__nav--prev {
+      left: 0;
+    }
+    .cards__nav--next {
+      right: 0;
+    }
+    /* At the first or last position the zone lets clicks through to the card. */
+    .cards__nav[aria-disabled='true'] {
+      pointer-events: none;
+    }
+    .cards__nav:hover:not([aria-disabled='true']) .cards__arrow,
+    .cards__nav:focus-visible .cards__arrow {
+      opacity: 1;
+    }
+    .cards__nav:focus-visible {
+      outline-offset: -3px;
+    }
+    .cards__nav[aria-disabled='true']:focus-visible .cards__arrow {
+      opacity: 0.4;
+    }
+  }
+</style>

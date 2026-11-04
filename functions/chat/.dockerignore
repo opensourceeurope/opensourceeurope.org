@@ -1,0 +1,9 @@
+# Build context is functions/chat/. Keep: package.json, node_modules, dist.
+# Exclude secrets + things not needed at runtime.
+.env
+.env.*
+src
+test
+scripts
+tsconfig.json
+*.md

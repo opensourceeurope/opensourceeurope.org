@@ -1,0 +1,60 @@
+---
+import { getCollection } from 'astro:content';
+import { resolveShared } from '../lib/shared';
+import type { Section, SectionType } from '../lib/sections';
+import Cards from './sections/Cards.astro';
+import ChatSection from './sections/ChatSection.astro';
+import ContactForm from './sections/ContactForm.astro';
+import Cta from './sections/CtaBanner.astro';
+import Faq from './sections/Faq.astro';
+import Features from './sections/Features.astro';
+import Hero from './sections/Hero.astro';
+import Intro from './sections/Intro.astro';
+import Logos from './sections/Logos.astro';
+import NotFound from './sections/NotFound.astro';
+import Quote from './sections/Quote.astro';
+import RichText from './sections/RichText.astro';
+import Resources from './sections/Resources.astro';
+import ServiceList from './sections/ServiceList.astro';
+import Snippets from './sections/Snippets.astro';
+import Steps from './sections/Steps.astro';
+import Team from './sections/Team.astro';
+import Values from './sections/Values.astro';
+
+interface Props {
+  sections: Section[];
+}
+
+// `shared` is replaced by resolveShared, so it has no component.
+const components: Record<Exclude<SectionType, 'shared'>, (props: any) => any> = {
+  hero: Hero,
+  intro: Intro,
+  quote: Quote,
+  steps: Steps,
+  features: Features,
+  logos: Logos,
+  cards: Cards,
+  values: Values,
+  team: Team,
+  resources: Resources,
+  serviceList: ServiceList,
+  faq: Faq,
+  cta: Cta,
+  richText: RichText,
+  contactForm: ContactForm,
+  notFound: NotFound,
+  chat: ChatSection,
+  snippets: Snippets,
+};
+
+const shared = new Map<string, Section>((await getCollection('shared')).map((entry) => [entry.id, entry.data as Section]));
+const resolved = resolveShared(Astro.props.sections, shared);
+
+const rendered = resolved.map((section) => {
+  const Component = components[section.type as keyof typeof components];
+  if (!Component) throw new Error(`No component for section type "${section.type}"`);
+  return { Component, section };
+});
+---
+
+{rendered.map(({ Component, section }) => <Component section={section} />)}

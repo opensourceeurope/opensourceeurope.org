@@ -1,0 +1,694 @@
+{
+  "*": [
+    {
+      "diff": "Cookies",
+      "note": "MN-056: the footer link that reopens the consent banner is labelled Privacy settings"
+    },
+    {
+      "diff": "Privacy settings",
+      "note": "MN-056: the footer link that reopens the consent banner is labelled Privacy settings"
+    },
+    {
+      "diff": "Quick links",
+      "note": "MN-012: footer column titles are headings"
+    },
+    {
+      "diff": "Contact",
+      "note": "MN-012: footer column titles are headings"
+    },
+    {
+      "diff": "|",
+      "note": "MN-012: footer separators are drawn with CSS"
+    },
+    {
+      "diff": "•",
+      "note": "MN-012: footer separators are drawn with CSS"
+    },
+    {
+      "diff": "© Copyright Boukan Studio",
+      "note": "MN-046: the agency credit is removed from the footer"
+    },
+    {
+      "diff": "E: oce@opencollective.com",
+      "note": "MN-049: one contact email on every page"
+    },
+    {
+      "diff": "E: home@opensourceeurope.org",
+      "note": "MN-049: one contact email on every page"
+    },
+    {
+      "diff": "oce@opencollective.com",
+      "note": "MN-049: one contact email on every page"
+    },
+    {
+      "diff": "home@opensourceeurope.org",
+      "note": "MN-049: one contact email on every page"
+    }
+  ],
+  "/": [
+    {
+      "diff": "We take care of the admin.You take care of the code",
+      "note": "MN-009: live h1 has no space after the full stop"
+    },
+    {
+      "diff": "We take care of the admin. You take care of the code",
+      "note": "MN-009: local h1 with the space restored"
+    },
+    {
+      "diff": "Start in minutes. No paperwork. No barriers. Just open source, sustained.",
+      "note": "MN-052: applications go through Open Collective"
+    },
+    {
+      "diff": "Apply on Open Collective in minutes. After you apply, OSE emails you a short form for the rest of your project details.",
+      "note": "MN-052: applications go through Open Collective"
+    }
+  ],
+  "/privacy-policy/": [
+    {
+      "diff": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      "note": "MN-006: the bold section titles on the legal pages are h2 headings"
+    },
+    {
+      "diff": "Contact form",
+      "note": "MN-025, MN-048: new section on the contact form"
+    },
+    {
+      "diff": "The contact form on the Contact page asks for your full name, your email address, what you are interested in, and your message. If you pick \"Other\", it also asks you to say what that is. You can add a link if you want to.",
+      "note": "MN-025, MN-048: new section on the contact form"
+    },
+    {
+      "diff": "Ask chat",
+      "note": "MN-053: the chat section and the lines that mention the chat"
+    },
+    {
+      "diff": "This website sets no cookies, runs no tracking scripts, and loads nothing from other websites. It handles three kinds of personal data. The first is what you type into the contact form. The second is what you type into the Ask chat, if you use it. The third is the technical data that every web server receives when your browser asks for a page.",
+      "note": "MN-053: the chat section and the lines that mention the chat"
+    },
+    {
+      "diff": "The Ask page and the \"Ask\" panel on every other page let you put a question to a chat assistant. Your browser contacts the chat function only when you send a question. When you send one, your browser sends the conversation so far, and a yes or no for your analytics choice in the privacy settings banner, to the chat function, a serverless container on Scaleway. The function asks Mistral Small, an AI model that runs on Scaleway's generative AI service in the European Union, to write the answer. To find the answer, the function also sends search phrases, which the model derives from your question, to the OSE documentation search server (the MCP server), which also runs on Scaleway in the European Union. Your IP address and a description of your browser reach the function with the request.",
+      "note": "MN-053: the chat section and the lines that mention the chat"
+    },
+    {
+      "diff": "The conversation lives only in your browser's memory. It ends when you open another page or close the tab. The function does not store it, and the website does not write it to your browser storage.",
+      "note": "MN-053: the chat section and the lines that mention the chat"
+    },
+    {
+      "diff": "Nothing is shared by default. Sharing happens only after you accept analytics in the privacy settings banner. Then the function logs to Scaleway Cockpit: the text of your question (its first 500 characters), the number of calls to the AI model needed for the answer, whether the documentation answered the question, and a short version label for the assistant's instructions. Cockpit adds the time. The version label lets OSE link changes in answer quality to changes in those instructions. It is the same for every visitor and is not personal data. The log line holds no IP address and no earlier messages. Cockpit keeps the log lines for seven days. Every few days, an export job copies them to a private Scaleway bucket in the European Union. The copies stay there until OSE deletes them. OSE reads them to find gaps in its documentation. If you reject analytics or make no choice, nothing from your conversation is logged. You can change your choice at any time with the Privacy settings link at the bottom of each page.",
+      "note": "MN-053: the chat section and the lines that mention the chat"
+    },
+    {
+      "diff": "The legal basis for the chat is OSE's legitimate interest in answering your question, under Article 6(1)(f) GDPR. The legal basis for logging your question is your consent, under Article 6(1)(a) GDPR. Reject analytics through the Privacy settings link at any time to stop the logging. To have a logged question deleted, write to home@opensourceeurope.org. Because the log holds no name, IP address or other identifier, OSE can find a question only if you quote its text.",
+      "note": "MN-053: the chat section and the lines that mention the chat"
+    },
+    {
+      "diff": "The website serves its fonts, images, and scripts from its own domain. Your browser contacts no other website when you open a page. The chat sends your question to the OSE chat function, as the \"Ask chat\" section describes, and only after you send it.",
+      "note": "MN-053: the chat section and the lines that mention the chat"
+    },
+    {
+      "diff": "Scaleway SAS, France: website hosting, the contact form function, the chat function, the documentation search server, and the AI model that answers chat questions. Scaleway processes this data in the European Union.",
+      "note": "MN-053: the chat section and the lines that mention the chat"
+    },
+    {
+      "diff": "Cookies and browser storage",
+      "note": "MN-027, MN-048: new section on cookies and browser storage"
+    },
+    {
+      "diff": "Our story began in 2016, when a group of finance professionals started supporting the operational needs of other organizations under the name BFS – Business & Finance Solutions. Over the years, we earned the trust of clients and candidates across a wide range of sectors by ensuring continuity and results. This journey strengthened our ambition",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "to affirm our position in the industry and in people’s minds. Today, we are proud to continue that story as Proffinco. The new name reflects our identity as professionals in finance and control, and the brand itself symbolizes our evolution. We are YOUR United Forces in Finance.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Summary",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Who is responsible for your data",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Visiting the website",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Fonts, images, and scripts",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Links to other websites",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Who processes your data for OSE",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Your rights",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Changes to this policy",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "How this website handles your personal data",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Last updated: 4 November 2026.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Open Collective Europe ASBL operates the Open Source Europe (OSE) fiscal hosting programme and this website. In this policy, \"OSE\" means Open Collective Europe ASBL acting through that programme. OSE is the controller of your personal data.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Open Collective Europe ASBL/vzw Avenue Louise 500, b. 205, 1050 Brussels, Belgium Company number: 0680.493.996 Email: home@opensourceeurope.org",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Send any question about your personal data to this email address.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "The legal basis is OSE's legitimate interest in a working and secure website, under Article 6(1)(f) of the General Data Protection Regulation (GDPR).",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "OSE uses your details only to answer your message. If you ask about hosting, OSE also uses them to discuss your application with you. OSE does not add you to a mailing list and does not pass your details to anyone else.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "For a question about hosting, the legal basis is the steps you ask OSE to take before a possible hosting agreement, under Article 6(1)(b) GDPR. For any other question, it is OSE's legitimate interest in answering you, under Article 6(1)(f) GDPR.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "OSE deletes your message 12 months after its last exchange with you. To have it deleted sooner, write to home@opensourceeurope.org at any time. If your message leads to a hosting agreement, the correspondence becomes part of the records of that agreement. Belgian accounting and tax law sets how long OSE keeps those records.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "The website serves its fonts, images, and scripts from its own domain. Your browser contacts no other website when you open a page.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Some links open other websites. Examples are the hosting application form on Typeform, the OSE pages on Open Collective, and the office address on Google Maps. Those websites collect data under their own privacy policies. Read them before you send them personal data.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Proton AG, Switzerland: delivers the contact form messages by email and hosts the OSE mailbox, which stores the messages that reach OSE. The European Commission recognizes Switzerland as a country with adequate data protection, so EU law allows this transfer.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "OSE does not sell your personal data, and does not make automated decisions about you.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Under the GDPR, you can ask OSE to:",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "give you a copy of your personal data",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "correct your personal data",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "delete your personal data",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "limit how OSE uses your personal data",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "send your personal data to you, or to another controller, in a machine-readable format",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "You can also object to any use of your personal data that relies on legitimate interest. To use any of these rights, write to home@opensourceeurope.org. OSE answers within one month.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "If you think OSE handles your personal data unlawfully, you can complain to the Belgian Data Protection Authority.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "When this policy changes, OSE publishes the new version on this page and changes the \"Last updated\" date in the Summary section.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Like any website, this website receives your IP address and a description of your browser with every page request. Scaleway, the hosting provider, needs your IP address to send the page back to you. OSE has not turned on access logs for this website, so no record of your visit is kept for OSE. OSE does not use this data to identify you or to build visitor profiles.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "The contact form on the Contact page asks for your full name, your email address, what you are interested in, and your message. If you pick \"Other\", it also asks you to say what that is. You can add a link if you want to. OSE needs the fields marked with an asterisk to answer you. If you prefer not to use the form, write to home@opensourceeurope.org instead.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "When you send the form, a Scaleway Serverless Function receives your details and delivers them by email through Proton Mail (Proton AG, Switzerland) to the OSE mailbox. The function also receives your IP address and a description of your browser with the request. The website and the function do not store any of this data. Proton stores the message in the OSE mailbox.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "This website sets no cookies, runs no tracking scripts, and loads nothing from other websites. It handles two kinds of personal data. The first is what you type into the contact form. The second is the technical data that every web server receives when your browser asks for a page.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Like any website, this website receives your IP address and a description of your browser with every page request. Scaleway, the hosting provider, needs your IP address to send the page back to you.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Scaleway Edge Services also writes a log entry for each page request. The entry holds your IP address, the address of the page, the time, the website you came from, and the description of your browser. Scaleway Cockpit stores these logs in the European Union and deletes them after seven days. Every few days, a job counts the page views for each page and each website that links here, and keeps only these totals. The totals hold no IP addresses and nothing else that identifies you. OSE uses them to see which pages people read. OSE does not use the logs to identify you or to build visitor profiles.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "The legal basis is OSE's legitimate interest in a working and secure website, and in knowing which pages people read, under Article 6(1)(f) of the General Data Protection Regulation (GDPR).",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "This website sets no cookies and runs no tracking scripts. It stores one thing in your browser: your choice in the consent banner, kept in localStorage under the key \"ose-consent\". This value never leaves your browser. To remove it, clear the site data for opensourceeurope.org in your browser settings.",
+      "note": "MN-048: the placeholder privacy policy is replaced with a full policy"
+    },
+    {
+      "diff": "Start in minutes. No paperwork. No barriers. Just open source, sustained.",
+      "note": "MN-048, MN-052: privacy policy and the Open Collective application"
+    },
+    {
+      "diff": "Some links open other websites. Examples are the hosting application and the OSE pages on Open Collective, and the office address on Google Maps. Those websites collect data under their own privacy policies. Read them before you send them personal data.",
+      "note": "MN-048, MN-052: privacy policy and the Open Collective application"
+    },
+    {
+      "diff": "Apply on Open Collective in minutes. After you apply, OSE emails you a short form for the rest of your project details.",
+      "note": "MN-048, MN-052: privacy policy and the Open Collective application"
+    }
+  ],
+  "/term-conditions/": [
+    {
+      "diff": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      "note": "MN-006: the bold section titles on the legal pages are h2 headings"
+    },
+    {
+      "diff": "Term & conditions",
+      "note": "MN-047: the placeholder terms are replaced with the Terms of Hosting"
+    },
+    {
+      "diff": "Our story began in 2016, when a group of finance professionals started supporting the operational needs of other organizations under the name BFS – Business & Finance Solutions. Over the years, we earned the trust of clients and candidates across a wide range of sectors by ensuring continuity and results. This journey strengthened our ambition to affirm our position in the industry and in people’s minds. Today, we are proud to continue that story as Proffinco. The new name reflects our identity as professionals in finance and control, and the brand itself symbolizes our evolution. We are YOUR United Forces in Finance.",
+      "note": "MN-047: the placeholder terms are replaced with the Terms of Hosting"
+    },
+    {
+      "diff": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "note": "MN-047: the placeholder terms are replaced with the Terms of Hosting"
+    },
+    {
+      "diff": "Terms of Hosting",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Legal Agreement (official)",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "RECITALS",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "AGREEMENT",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "1. RECITALS",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "2. TERMS OF AGREEMENT",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "3. RELATIONSHIP & PROCESS",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "4. THE INITIATIVE",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "5. CHARITABLE PURPOSES",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "6. TERMINATION",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "7. NOTICE",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "8. MISCELLANEOUS",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Severability",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "No Waiver",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Transfer of Rights or Obligations",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "EXHIBIT A: Protocols",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "(the “Agreement”)",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "These are the basic Terms of Hosting of OPEN COLLECTIVE EUROPE ASBL, operating the Open Source Europe fiscal hosting programme (“the Association”). This Agreement enters into effect (“Effective Date”) upon acceptance of this Agreement when creating an initiative (“the Initiative”) and requesting to make use of Open Collective’s platform and services in certain matters.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "The Initiative’s charitable mission as set forth in the materials submitted to Open Collective Europe meets the Association’s criteria as set forth in Exhibit A.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "The Initiative desires to make use of the services rendered by the Association, upon the terms and subject to the conditions set forth in this Agreement.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "In support of the Initiative, the Association has authorized the creation of a restricted fund (referred to as the \"Fund\") designed to receive donations and other assets specifically designated for supporting the Initiative. The primary purpose of this Fund is to act as an intermediary vehicle through which the Association, while maintaining a distinct separation, indirectly represents (middellijke vertegenwoordiging / représentation indirecte) and assists the Initiative. The Fund will receive all contributions made during the Term (as defined herein), with the exception of deductions for administrative charges, interest, expenses, and other fees, as outlined in the Protocols. These contributions will subsequently be disbursed to the Initiative to support the objectives of the Initiative. This arrangement emphasizes the Association's role as an intermediary, facilitating support for the Initiative, while clarifying that the Association holds no direct ownership over these contributions received by the Fund.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "In consideration of the mutual promises in this Agreement, the Initiative and the Association agree to be bound by the following:",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "The above cited Recitals are incorporated herein by this reference and made a part of this Agreement.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "This Agreement shall commence upon the Effective Date, and will continue unless and until terminated under Section 6 of this Agreement (“Term”).",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "The Association will assist in managing the Fund owned by the Initiative and held by the Association on behalf and for the benefit of the Initiative. The Association will receive the contributions to the Fund on behalf and for the benefit of the Initiative and, in strict adherence to the Protocols, will exclusively manage the disbursement of the contributions for the exclusive purposes of the Initiative, without ever assuming ownership of these contributions.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Relationship. The Initiative cannot legally act for the Association. It is expressly understood that, unless a separate, specific partnership agreement (of any kind) is concluded, the relationship between the Initiative and the Association shall be unequivocally construed as one of indirect representation (middellijke vertegenwoordiging / représentation indirecte). This means that the Initiative retains full responsibility for its activities and all related (tax) compliance obligations in relation to its activities. In that regard an Initiative is expressly prohibited from utilizing the Association's tax identification number (e.g. for the issuance or receipt of invoices). Should the Initiative require a tax identification number, it shall be responsible for obtaining its own tax identification number in accordance with the regulations of its country of activity.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Protocols. The Association will manage the Fund according to the Protocols, as set forth in Exhibit A. The Association may update the Protocols from time to time. If the Association makes any changes to the Protocols that significantly affect the Initiative’s rights or obligations under this Agreement, the Association will notify the Initiative of the changes, and the changes will become effective 30 days after that notification.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Solicitation of Contributions. The Initiative may solicit contributions, such as gifts, sponsorships, public subsidies and grants, for its charitable purpose. The Fund is allowed to receive these contributions on behalf and for the benefit of the Initiative, which will then be recorded in the Association’s website platform (“Platform”). However, at least 60 days prior to any official solicitation of contributions, the Initiative shall be required to provide notice in writing to the Association so that the Association may comply with any applicable state or local rules or regulations. Moreover, the Initiative will have to sign a Service Agreement.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Agreements with third parties. The Initiative is not authorized to enter into any agreement or obligation with a donor, sponsor, vendor or other third party that purports to bind the Association or any agreement restricting the use of any contribution, negatively impacting the Association or going against their nonprofit purposes. The Association must approve, in advance and in writing, any agreement with a third party committing Initiative funds or establishing any obligation on the part of the Association. In order to enter into agreements with a donor, a sponsor, or other third party, the Initiative must sign an additional cooperation agreement with the Association.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Ownership of Initiative Property. The Initiative shall retain all right, title, and interest in any intellectual property of the Initiative, including any copyrights, trademarks, trade names, artwork, designs, logos, copy, and all other intellectual property (collectively, “Intellectual Property”). Furthermore, the Initiative represents that it has the authority to represent the interests of and act on behalf and for the benefit of the Initiative. The Association acknowledges and agrees that, absent any separate agreement to the contrary, any Intellectual Property provided to the Association by the Initiative shall not be transferred to the Association.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "According to the terms of this Agreement, the Association will create a Fund for the Initiative designed to receive contributions on behalf and for the benefit of the Initiative, and to make disbursements for expenses incurred in furtherance of the Initiative. Beginning on the Effective Date, all contributions received by the Association on behalf and for the benefit of the Initiative shall be placed into the Fund. These contributions are the rightful property of the Initiative, and the Association shall exclusively operate as an intermediary (middellijke vertegenwoordiger / représentation indirecte), facilitating the allocation and utilization of these contributions solely on behalf and for the benefit of the Initiative's mission and objectives. Any significant changes to the Initiative’s mission and objectives must be approved in advance by the Association to ensure alignment with the Association’s mission. The Association will exercise full control over the Initiative’s financial administration, management, and disbursement of the Fund. The Association shall have the right to deduct any fees and expenses directly from the Fund without further approval by the Initiative.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Restricted Fund: Association’s Income. Given the qualification of the services provided by the Association as indirect representation (middellijke vertegenwoordiging / représentation indirecte), all contributions to the Fund will not be reported as the income of the Association, for both accounting and tax purposes of the Association.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Restricted Fund: Acknowledgment of Contributions. The Association is responsible for providing donors with acknowledgement of charitable contributions received by the Association on behalf and for the benefit of the Initiative. Please note for completeness’ sake that such acknowledgements do not qualify as tax certificates that allow a donor to obtain a tax advantage in return for the donation made.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Restricted Fund: Disbursements. The Association shall facilitate the disbursement of contributions from the Fund exclusively for valid expenses incurred by the Initiative. These disbursements shall occur solely upon the receipt of a formal request from the Initiative, which must detail and substantiate the specific expense in accordance with the Protocols. It is essential to emphasize that the monies held within the Fund and the ownership of Other Assets unambiguously belong to the Initiative, with the Association solely acting as an intermediary (middellijke vertegenwoordiger / représentation indirecte) that does not assume ownership of the aforementioned monies and Other Assets.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "All of the contributions received by the Association on behalf and for the benefit of the Initiative under the terms of this Agreement will be devoted to the mission and objectives of the Initiative in furtherance of the Association’s charitable mission. The Initiative agrees it will use the funds which the Association disburses to it from the Fund, solely for the purposes of the Initiative, and it will repay to the Association any portion of those funds that is not spent or committed for those purposes.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "The Initiative will not use any portion of the contributions to participate or intervene in any political campaign on behalf of or in opposition to any candidate for public office, to induce or encourage violations of law or public policy, to cause any private inurement or improper private benefit to occur, nor to take any other action inconsistent with the Belgian Code of Companies and Associations.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Either the Association or the Initiative may terminate this Agreement on 30 days' written notice to the other party.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "If there is a positive balance in the Initiative’s Fund or the Association holds other assets of the Initiative at the time of termination, this positive balance or other assets will be distributed as follows:",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "The Association will reimburse any valid expenses of the Initiative upon receipt of a final request from the Initiative, submitted within 15 days of notice of termination, detailing and documenting the expense as specifically set forth in the Protocols.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Which is recognized as a non-profit organisation.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "To which distribution of the Initiative Fund is otherwise consistent with applicable tax and charitable trust laws (a “Successor”).",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Upon determining that the Successor meets these qualifications, and that the distribution is permitted by applicable laws, the Association – on behalf of the Initiative – will transfer the positive balance and other assets of the Fund to the Successor. To initiate such transfer the Successor must submit an expense note as outlined in the Protocols. The transfer will be made after the end of the notice period or any extension thereof, subject to the approval of any third parties that may be required.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "As an alternative to the transfer to a Successor, the Initiative may choose to transfer the positive balance and other assets of its Fund to another Initiative of the Association, or to the Association’s general operating Fund, subject to applicable laws and the approval of any third parties that may be required.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "If no Successor or other qualified recipient as outlined in the previous paragraph is identified prior to the end of the notice period (including any mutually agreed extensions), the Association may, in its sole discretion, distribute or spend the positive balance and other assets of the Fund in any manner consistent with applicable tax and charitable trust laws, which may include granting any balance to another fiscal sponsor, re-allocating any balance to another initiative for substantially similar purposes, or using any balance to defray the Association’s costs of administering its fiscal sponsorship program.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Any notice, demand, delivery, or other communication under this Agreement will be in writing and will be deemed properly given if delivered in person or mailed by first class or certified mail, postage prepaid, or sent by facsimile or email in the manner provided in this paragraph to the following persons:",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "To the Association:",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Open Collective Europe ASBL/vzw Avenue Louise 500, b. 205, 1050 Brussels, Belgium Email: home@opensourceeurope.org",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "If any provision or obligation in this Agreement is null or unenforceable, or would be contrary to a provision of mandatory law, but would be valid if some part of the provision were deleted or restricted, the provision with such deletion or restriction will be amended as may be necessary to make it valid.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "The nullity or non-applicability of any provision of the Agreement shall not affect the validity or applicability of other provisions of the Agreement, which shall remain in full force and effect.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "When refraining from exercising a right or postponing its exercise, then it will not be considered as a waiver of this right, nor will an exercise or partial exercise thereof prevent its future exercise (in full) or the exercise of another right.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "When not exercising a right or remedy or postponing the exercise thereof, this will not be considered as an (implicit) waiver of the right or remedy concerned. Nor shall the partial exercise of a right or remedy prevent the further exercise of such right or remedy.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "The rights arising out of this Agreement do not damage the other rights or remedies pursuant to the law or any other agreement.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Unless provided otherwise, the rights and obligations arising from this Agreement cannot be transferred to a third party. As long as consent is not obtained, the transferring party remains liable for all allegedly transferred obligations (without prejudice to any other right or remedy).",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "The following are Protocols of the Association; these Protocols may be amended by the Association with 30 days’ notice at any time.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Criteria: In furtherance of the Association’s mission, it promotes initiatives with the charitable purposes outlined below. As such, the Association has provided evidence and the Association has confirmed that the Initiative has met the following criteria for the Association’s fiscal sponsorship of the Initiative:",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Not for profit: Initiatives that join the Association must justify the non-profit nature of their project. Initiatives must have a charitable mission and purpose. They may develop commercial activities, but these may not be the main source of income for the Initiative. Moreover, the profits generated by a commercial activity must be used to fulfil the Initiative's (and therefore the Association's) mission and purpose, and may not be used to enrich the Initiative’s administrators.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Apolitical: Initiatives that join the Association must be non-political and non-partisan. They cannot engage in political campaigns to promote a certain political party. Nor can Initiatives carry out fundraising campaigns to support a political figure. Political neutrality is therefore a must.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Secular: Initiatives that join the Association must be secular. They cannot represent a certain religious movement and must remain neutral. However, Initiatives aiming at launching a think tank in the place of a religion or spirituality can be accepted under certain conditions (at the discretion of the Association). Groups aiming to promote or launch educational programmes about a religion or spirituality are not accepted.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Requirements Imposed on the Initiative: To remain in compliance under the terms of this Agreement, the Initiative must use the contributions received for stated activities; and maintain at all times a public and transparent ledger for the disbursement of those funds on the Platform. The Initiative must maintain an updated and detailed description of its activities on its Platform page, and provide regular updates (minimum once a year).",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "The Association Administrative Contribution & Expenses: The Initiative will be required to give an administrative contribution and cover any expenses the Association incurs on the Initiative’s behalf as a result of this Agreement. Unless there is a specific Service Agreement in place between the Association and the Initiative, the following administrative contribution and expenses will be automatically deducted from the Initiative’s Fund:",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Administrative contribution consists of:",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "8% of the gross amount of donations received by the Association through the Platform on behalf of the Initiative (including, but not limited to donations by cards through the Platform (PayPal/Stripe)) during the term of this Agreement; AND",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "10% of the gross amount of donations received by the Association through direct bank transfers to the bank account of the Association on behalf of the Initiative (including, but not limited to tax deductible donations, grants, grants from 501(c)(3) foundations and funds through our equivalency determination) during the term of this Agreement; AND",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "All interest income earned on the contributions made to the Fund will be retained by the Association.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Expenses: In addition to the administrative contribution, the Initiative is responsible for any expenses (including, but not limited to, merchant account credit card processing fees) incurred by the Association as a result of administration of the Fund, which are directly related to the Initiative’s actions.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Platform: Upon execution of this Agreement, the Initiative will be featured on the Platform located at https://opencollective.com/europe. The Association will set the Initiative up on the Platform such that the Initiative will have its own dedicated page that tracks, in total transparency, the contributions that it receives and the expenses it incurs in relation to the Initiative. The Initiative’s page on the Platform will be linked to the Association’s Stripe account, Wise account, and PayPal account so that the Association has control over the contributions received and disbursed under the Platform for purposes of the Initiative’s purpose. The Platform thus serves as a fundraising avenue for the Initiative’s approved Initiative enabling it to receive contributions and pay for Initiative expenses. The Platform makes the revenue and expenses of the Initiative available to the public through a transparent ledger.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Disbursements: In order to receive a disbursement from the Fund to cover expenses incurred in furtherance of the Initiative, the Initiative must upload its receipts/invoices onto the Platform for review by the staff members of the Association. Upon the Association’s receipt of said receipts/invoices its staff members will review all documentation to ensure the expenses to be incurred are valid and in alignment with the Association’s charitable mission and purposes and the terms of this Agreement. Upon approval by the Association staff members, the Association will allow those expenses to be incurred from the Fund by the Initiative through the Platform using PayPal, Wise, or other mutually agreed payment method. Each time the Association approves such expenses, the contributions allocated to the Initiative on the Platform will automatically decrease by the amount used. Specifically, the Initiative shall be required to submit details of such anticipated Foreign Expenses to the Association, which shall include but not be limited to the maximum amount to be incurred. In the event the Association determines in writing that such Foreign Expenses may be eligible for reimbursement from the Fund as provided for above, the Initiative shall be permitted to incur the disclosed and approved Foreign Expenses and seek disbursement from the Fund pursuant to the process set forth above. The Association shall not reimburse from the Fund, any Foreign Expenses incurred by the Initiative for which the Association does not provide prior written approval.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Funds Received/Expenses Paid Outside Platform: In the event that the Initiative receives contributions outside of the Platform (i.e. that do not go directly into the Fund), the Initiative will immediately transfer such contributions to the Association for deposit into the Initiative’s Fund; at no time shall the Initiative hold any contributions outside of the Fund or utilise the services of any other fiscal sponsor during the Term of this Agreement. The Association will use a feature enabled on the Platform to ‘Manually Add Funds’ to the Initiative’s page upon the Association’s receipt and deposit of these contributions into the Fund. This means that the Association will assign the contributions received in the Fund destined to the Initiative for the Initiative, thus increasing its budget. In the same fashion, if an expense is paid outside of the Platform by the Initiative, because for example the recipient does not hold a PayPal account or another payout method is required, then the Association will use the ‘Mark as Paid’ feature on the Platform, that allows the Association to record that an expense has already been paid through a different method and that amount is automatically deducted from the Initiative’s Fund balance.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Reporting: The Association will send the Initiative a monthly email report with all transactions related to the Fund including the contributions received and the invoices and expenses that have been paid.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "These are the basic Terms of Hosting of OPEN COLLECTIVE EUROPE ASBL, operating the Open Source Europe fiscal hosting programme (“the Association”). This Agreement enters into effect (“Effective Date”) upon acceptance of this Agreement when creating an initiative (“the Initiative”) and requesting to make use of the Association’s platform and services in certain matters.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "OPEN COLLECTIVE EUROPE ASBL is a non-profit association (vereniging zonder winstoogmerk / association sans but lucratif), incorporated and existing under the laws of Belgium, with offices at 1050 Brussels, Avenue Louise 500, boîte 205, registered with the Belgian Crossroads Bank for Enterprises under number 0680.493.996 (RLE Brussels, French-speaking division). Its charitable purposes and activities allow groups of natural persons – such as an Initiative which meets the criteria set forth in the protocols, which are attached hereto and incorporated herein by reference as Exhibit A (“Protocols”) – to form a collective in order to raise funds (and manage these funds transparently) for particular projects, initiatives and movements, without having to incorporate a legal entity with legal personality.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "The Initiative’s charitable mission as set forth in the materials submitted to the Association meets the Association’s criteria as set forth in Exhibit A.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Solicitation of Contributions. The Initiative may solicit contributions, such as gifts, sponsorships, public subsidies and grants, for its charitable purpose. The Fund is allowed to receive these contributions on behalf and for the benefit of the Initiative, which will then be recorded in the Association’s website platform (“Platform”). However, at least 60 days prior to any official solicitation of contributions, the Initiative shall be required to provide notice in writing to the Association so that the Association may comply with any applicable rules or regulations. Moreover, the Initiative will have to sign a Service Agreement.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Within the 30-day notice period, the Initiative may identify a successor organisation who is willing and able to carry on the Initiative, and",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Criteria: In furtherance of the Association’s mission, it promotes initiatives with the charitable purposes outlined below. As such, the Initiative has provided evidence and the Association has confirmed that the Initiative has met the following criteria for the Association’s fiscal sponsorship of the Initiative:",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Platform: Upon execution of this Agreement, the Initiative will be featured on the Platform located at https://opencollective.com/europe. The Association will set the Initiative up on the Platform such that the Initiative will have its own dedicated page that tracks, in total transparency, the contributions that it receives and the expenses it incurs in relation to the Initiative. The Initiative’s page on the Platform will be linked to the Association’s Stripe account, Wise account, and PayPal account so that the Association has control over the contributions received and disbursed under the Platform for purposes of the Initiative’s purpose. The Platform thus serves as a fundraising avenue for the Initiative’s approved activities, enabling it to receive contributions and pay for Initiative expenses. The Platform makes the revenue and expenses of the Initiative available to the public through a transparent ledger.",
+      "note": "MN-047: Terms of Hosting text"
+    },
+    {
+      "diff": "Start in minutes. No paperwork. No barriers. Just open source, sustained.",
+      "note": "MN-052: applications go through Open Collective"
+    },
+    {
+      "diff": "Apply on Open Collective in minutes. After you apply, OSE emails you a short form for the rest of your project details.",
+      "note": "MN-052: applications go through Open Collective"
+    }
+  ],
+  "/services/": [
+    {
+      "diff": "Read more",
+      "note": "MN-040: Read more links name their service for screen readers"
+    },
+    {
+      "diff": "Read more about Technical Resources & Guidance",
+      "note": "MN-040: Read more links name their service for screen readers"
+    },
+    {
+      "diff": "Read more about Fiscal hosting",
+      "note": "MN-040: Read more links name their service for screen readers"
+    },
+    {
+      "diff": "Read more about Admin & financial support",
+      "note": "MN-040: Read more links name their service for screen readers"
+    },
+    {
+      "diff": "Start in minutes. No paperwork. No barriers. Just open source, sustained.",
+      "note": "MN-052: applications go through Open Collective"
+    },
+    {
+      "diff": "Apply on Open Collective in minutes. After you apply, OSE emails you a short form for the rest of your project details.",
+      "note": "MN-052: applications go through Open Collective"
+    }
+  ],
+  "/about/": [
+    {
+      "diff": "OSE charges an 8% fee on incoming funds, plus payment provider fees & 10% on public grants and subsidies.. No setup fees. No hidden costs.",
+      "note": "MN-050: the confirmed fees"
+    },
+    {
+      "diff": "OSE charges 8% plus Stripe or PayPal fees on online contributions, and 10% on bank transfers, tax-deductible donations and grants. No setup fees. No hidden costs.",
+      "note": "MN-050: the confirmed fees"
+    },
+    {
+      "diff": "Start in minutes. No paperwork. No barriers. Just open source, sustained.",
+      "note": "MN-052: applications go through Open Collective"
+    },
+    {
+      "diff": "Apply on Open Collective in minutes. After you apply, OSE emails you a short form for the rest of your project details.",
+      "note": "MN-052: applications go through Open Collective"
+    }
+  ],
+  "/how-to-join/": [
+    {
+      "diff": "OSE charges an 8% fee on incoming funds, plus payment provider fees & 10% on public grants and subsidies.. No setup fees. No hidden costs.",
+      "note": "MN-050: the confirmed fees"
+    },
+    {
+      "diff": "OSE charges 8% plus Stripe or PayPal fees on online contributions, and 10% on bank transfers, tax-deductible donations and grants. No setup fees. No hidden costs.",
+      "note": "MN-050: the confirmed fees"
+    },
+    {
+      "diff": "Send us your project details and share what you aim to achieve with the community.",
+      "note": "MN-052: applications go through Open Collective"
+    },
+    {
+      "diff": "Apply through Open Collective. After you apply, OSE emails you a short form for the rest of your project details.",
+      "note": "MN-052: applications go through Open Collective"
+    }
+  ],
+  "/contact/": [
+    {
+      "diff": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy",
+      "note": "MN-051: the contact intro replaces placeholder text"
+    },
+    {
+      "diff": "Ask about fiscal hosting for your open source project, about a project OSE already hosts, or about a partnership. Use the form, or write to home@opensourceeurope.org.",
+      "note": "MN-051: the contact intro replaces placeholder text"
+    }
+  ]
+}

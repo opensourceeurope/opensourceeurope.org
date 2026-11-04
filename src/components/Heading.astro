@@ -1,0 +1,74 @@
+---
+import Chars from './motion/Chars.astro';
+import { headingParts } from '../lib/heading';
+import type { HeadingData } from '../lib/sections';
+
+interface Props {
+  heading: HeadingData;
+  level?: 1 | 2 | 3;
+  class?: string;
+  id?: string;
+}
+
+const { heading, level = 2, class: className, id } = Astro.props;
+const Tag = `h${level}` as 'h1' | 'h2' | 'h3';
+const parts = headingParts(heading);
+const animated = parts.some((part) => part.kind === 'highlight');
+// E1: the visible letters are aria-hidden; a visually hidden copy carries the word.
+const chars = (text: string) => [...text].map((c) => (c === ' ' ? '\u00a0' : c));
+---
+
+<Tag id={id} class:list={['heading', className]}>
+  {
+    parts.map((part) =>
+      part.kind === 'decor' ? (
+        <span class="decor" aria-hidden="true">{part.text}</span>
+      ) : part.kind === 'highlight' ? (
+        <mark class="highlight" data-highlight><span class="visually-hidden">{part.text}</span><span class="highlight__chars" aria-hidden="true">{chars(part.text).map((c) => <span class="char">{c}</span>)}</span></mark>
+      ) : (
+        part.text
+      ),
+    )
+  }
+</Tag>
+{animated && <Chars />}
+
+<style>
+  .heading {
+    margin: 0;
+    font-weight: var(--weight-medium);
+  }
+  .highlight {
+    background: linear-gradient(var(--color-highlight), var(--color-highlight)) no-repeat;
+    background-size: 100% 100%;
+    color: inherit;
+    padding-inline: 5px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+  /* The letters are inline blocks, so the word needs nowrap to stay on one line. */
+  .highlight__chars {
+    white-space: nowrap;
+  }
+  .char {
+    display: inline-block;
+    transform-origin: 50% 80%;
+  }
+  /* E1, started by the script when the word comes into view. */
+  .highlight.is-growing {
+    animation: highlight-bar var(--duration-highlight) var(--ease-css) both;
+  }
+  .highlight.is-growing .char {
+    animation: highlight-char var(--duration-slow) var(--ease-in-out-sine) both;
+  }
+  @keyframes highlight-bar {
+    from {
+      background-size: 0 100%;
+    }
+  }
+  @keyframes highlight-char {
+    from {
+      transform: scaleY(0);
+    }
+  }
+</style>

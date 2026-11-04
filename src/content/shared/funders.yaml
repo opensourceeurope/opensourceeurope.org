@@ -1,0 +1,30 @@
+# "For funders". The hero's "for funders" button links to its id.
+type: cta
+id: for-funders
+variant: funders
+layers:
+  - image: { src: ../../assets/theme/png/funders/top.png, alt: "", decorative: true }
+    fit: contain
+    position: top
+    show: small
+  - image: { src: ../../assets/theme/png/funders/bottom.png, alt: "", decorative: true }
+    fit: contain
+    position: bottom
+    show: small
+  - image: { src: ../../assets/theme/png/funders/center.png, alt: "", decorative: true }
+    fit: contain
+    show: small
+  - image: { src: ../../assets/theme/svg/Circle.png, alt: "", decorative: true }
+    show: large
+  - image: { src: ../../assets/theme/webp/bg-circle-gradient-2560.webp, alt: "", decorative: true }
+    fit: contain
+    show: large
+eyebrow: // become a funder
+heading:
+  text: For funders
+  highlight: funders
+  decor: chevron-underscore
+body: OSE offers a trusted, compliant channel for donations and grants in both the EU and the US. Thanks to ED certification, US foundations can give tax-deductible grants.
+ctas:
+  - label: contact us
+    href: /contact/

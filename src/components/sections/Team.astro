@@ -1,0 +1,141 @@
+---
+import Eyebrow from '../Eyebrow.astro';
+import Heading from '../Heading.astro';
+import Img from '../Img.astro';
+import type { SectionOf } from '../../lib/sections';
+
+interface Props {
+  section: SectionOf<'team'>;
+}
+const { section } = Astro.props;
+---
+
+<section id={section.id} class="team grid-26">
+  <div class="team__head">
+    <Eyebrow text={section.eyebrow} />
+    <Heading heading={section.heading} />
+  </div>
+  <ul class="team__list">
+    {
+      section.items.map((member) => (
+        <li class="member">
+          <div class="member__media">
+            <div class="member__frame" />
+            <Img image={member.photo} class="member__photo" />
+          </div>
+          <p class="member__name">{member.name}</p>
+          {member.role && <p class="member__role">{member.role}</p>}
+          {member.bio && <p class="member__bio">{member.bio}</p>}
+          {member.link && (
+            <a class="member__link" href={member.link.href} aria-label={member.link.label} rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M2 0h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2Zm1.5 7.5V17h3V7.5h-3ZM5 3a1.75 1.75 0 1 0 0 3.5A1.75 1.75 0 0 0 5 3Zm3.5 4.5V17h3v-5c0-1.4.6-2.2 1.7-2.2 1 0 1.5.7 1.5 2.2v5h3v-5.8c0-2.7-1.4-3.9-3.4-3.9-1.4 0-2.3.6-2.8 1.4V7.5h-3Z"
+                />
+              </svg>
+            </a>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  .team {
+    padding-block: var(--section-pad-y);
+  }
+  .team__head {
+    text-align: center;
+  }
+  .team__head > :global(* + *) {
+    margin-top: var(--space-4);
+  }
+  .team :global(h2) {
+    font-size: var(--text-h2);
+    line-height: var(--leading-h2);
+  }
+  .team__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-6);
+    margin: var(--space-7) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  /* The cut-out photo rises above a framed panel, and its bottom fades into
+     the page. Sizes as on live: a 200 px photo over a 145 px frame, and
+     337 px over 246 px from 1024 px. */
+  .member__media {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    height: 200px;
+    margin-bottom: var(--space-5);
+  }
+  .member__frame {
+    position: absolute;
+    inset: auto 0 0;
+    height: 145px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    mask-image: linear-gradient(to bottom, #000 50%, transparent);
+  }
+  .member__media :global(.member__photo) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mask-image: linear-gradient(to bottom, #000 40%, transparent);
+  }
+  .member__name {
+    margin: 0;
+    font-size: var(--text-h3);
+    line-height: var(--leading-h3);
+    font-weight: var(--weight-semibold);
+  }
+  .member__role {
+    margin: 0;
+    font-size: var(--text-body);
+    line-height: var(--leading-body-text);
+    font-weight: var(--weight-light);
+  }
+  .member__bio {
+    margin: var(--space-4) 0 0;
+    font-size: var(--text-sm);
+    line-height: var(--leading-sm);
+    font-weight: var(--weight-light);
+  }
+  .member__link {
+    display: inline-flex;
+    margin-top: var(--space-5);
+    padding: 2px;
+    color: var(--color-text);
+  }
+
+  @media (min-width: 1024px) {
+    .team__list {
+      grid-column: 3 / 25;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-top: 64px;
+    }
+    .member__media {
+      height: 337px;
+    }
+    .member__frame {
+      height: 246px;
+    }
+    .member__bio {
+      font-size: var(--text-base);
+      line-height: 24px;
+    }
+  }
+</style>

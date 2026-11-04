@@ -1,0 +1,91 @@
+/* The Ask panel dialog. Loaded on the first open, with the chat styles. */
+.ask-panel__dialog {
+  position: fixed;
+  inset: 0 0 0 auto;
+  width: 100vw;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: var(--space-4);
+  border: 0;
+  border-left: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text);
+  overflow: hidden;
+}
+.ask-panel__dialog[open] {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  animation: ask-panel-in var(--duration-base) var(--ease-out-cubic);
+}
+.ask-panel__dialog::backdrop {
+  background: rgb(0 0 0 / 55%);
+}
+@media (min-width: 640px) {
+  .ask-panel__dialog {
+    width: 440px;
+    padding: var(--space-5);
+  }
+}
+@keyframes ask-panel-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ask-panel__dialog[open] {
+    animation: none;
+  }
+}
+.ask-panel__head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex: none;
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+.ask-panel__title {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: var(--text-body);
+  line-height: var(--leading-body-text);
+  font-weight: var(--weight-semibold);
+}
+.ask-panel__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  margin: calc(var(--space-2) * -1) calc(var(--space-2) * -1) calc(var(--space-2) * -1) 0;
+}
+.ask-panel__close:hover {
+  background: var(--color-surface-hover);
+}
+.ask-panel__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  overflow-y: auto;
+}
+.ask-panel__body .chat {
+  flex: 1;
+  min-height: 0;
+}
+.ask-panel__body .chat__app {
+  flex: 1;
+}

@@ -1,0 +1,145 @@
+---
+import Eyebrow from '../Eyebrow.astro';
+import Heading from '../Heading.astro';
+import { loadSettings } from '../../lib/site';
+import type { SectionOf } from '../../lib/sections';
+
+interface Props {
+  section: SectionOf<'snippets'>;
+}
+const { section } = Astro.props;
+const { ui } = await loadSettings();
+const uid = section.id ?? 'snippets';
+---
+
+<section id={section.id} class="snippets grid-26">
+  <div class="snippets__inner">
+    <div class="snippets__head">
+      <Eyebrow text={section.eyebrow} />
+      <Heading heading={section.heading} />
+      {section.intro && <p class="snippets__intro body-copy">{section.intro}</p>}
+    </div>
+    <ul class="snippets__list">
+      {
+        section.items.map((item, i) => (
+          <li class="snippets__item">
+            <div class="snippets__bar">
+              <h3 class="snippets__title">{item.title}</h3>
+              <button
+                type="button"
+                class="snippets__copy"
+                data-js-only
+                data-copy-button
+                data-copy-target={`${uid}-code-${i}`}
+                data-copied-label={ui.copied_label}
+              >
+                <span data-copy-label>{ui.copy_label}</span>
+                <span class="visually-hidden"> {item.title}</span>
+              </button>
+              <span class="visually-hidden" role="status" data-copy-status />
+            </div>
+            <!-- prettier-ignore -->
+            <pre class="snippets__code" tabindex="0" role="region" aria-label={item.title}><code id={`${uid}-code-${i}`} class="snippets__source">{item.code}</code></pre>
+            {item.hint && <p class="snippets__hint">{item.hint}</p>}
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<script>
+  import { initCopyButtons } from '../../scripts/copy';
+
+  initCopyButtons();
+</script>
+
+<style>
+  .snippets {
+    padding-block: var(--section-pad-y);
+  }
+  .snippets__head :global(h2) {
+    margin-top: var(--space-4);
+    font-size: var(--text-h2);
+    line-height: var(--leading-h2);
+  }
+  .snippets__intro {
+    margin: var(--space-4) 0 0;
+    max-width: 62ch;
+  }
+  .snippets__list {
+    display: grid;
+    gap: var(--space-4);
+    margin: var(--space-6) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .snippets__item {
+    min-width: 0;
+    padding: var(--space-4);
+    border: var(--border-card);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+  }
+  .snippets__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+  }
+  .snippets__title {
+    margin: 0;
+    font-size: var(--text-body);
+    line-height: var(--leading-body-text);
+    font-weight: var(--weight-bold);
+  }
+  .snippets__copy {
+    flex: none;
+    min-height: 44px;
+    padding: 0 var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background: transparent;
+    color: var(--color-text);
+    font: inherit;
+    cursor: pointer;
+  }
+  .snippets__copy:hover {
+    background: var(--color-surface-hover);
+  }
+  :global(html:not(.js)) .snippets__copy {
+    display: none;
+  }
+  .snippets__code {
+    margin: var(--space-3) 0 0;
+    padding: var(--space-3);
+    overflow-x: auto;
+    border-radius: 8px;
+    background: var(--color-bg);
+    font-size: 0.875rem;
+    line-height: 1.6;
+    white-space: pre;
+  }
+  .snippets__code:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+  }
+  .snippets__hint {
+    margin: var(--space-3) 0 0;
+    color: var(--color-text);
+    font-size: var(--text-body);
+    line-height: var(--leading-body-text);
+  }
+
+  @media (min-width: 1024px) {
+    .snippets__inner {
+      grid-column: 3 / 25;
+    }
+    .snippets__list {
+      grid-template-columns: 1fr 1fr;
+    }
+    .snippets__item:last-child {
+      grid-column: 1 / -1;
+    }
+  }
+</style>

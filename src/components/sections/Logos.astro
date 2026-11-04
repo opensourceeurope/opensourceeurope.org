@@ -1,0 +1,171 @@
+---
+import Eyebrow from '../Eyebrow.astro';
+import Heading from '../Heading.astro';
+import Img from '../Img.astro';
+import Marquee from '../motion/Marquee.astro';
+import type { SectionOf } from '../../lib/sections';
+import { loadSettings } from '../../lib/site';
+
+interface Props {
+  section: SectionOf<'logos'>;
+}
+const { section } = Astro.props;
+const { ui } = await loadSettings();
+---
+
+<section id={section.id} class="logos grid-26">
+  {
+    (section.eyebrow || section.heading) && (
+      <div class="logos__head">
+        <Eyebrow text={section.eyebrow} />
+        {section.heading && <Heading heading={section.heading} />}
+      </div>
+    )
+  }
+  {section.body && <p class="logos__body body-copy">{section.body}</p>}
+  <!-- Settled state of the E3 marquee: the logos sit still and wrap. -->
+  <div class="logos__marquee" data-marquee>
+  <ul class="logos__list" data-marquee-track>
+    {
+      section.items.map((item) => (
+        <li>
+          {item.href ? (
+            <a href={item.href} rel="noopener">
+              <Img image={item.image} />
+            </a>
+          ) : (
+            <Img image={item.image} />
+          )}
+        </li>
+      ))
+    }
+  </ul>
+  <button type="button" class="logos__pause" data-marquee-pause aria-pressed="false" aria-label={ui.marquee_pause_label}>
+    <svg class="logos__pause-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <path d="M4 2h3v12H4zM9 2h3v12H9z" fill="currentColor" />
+    </svg>
+    <svg class="logos__play-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <path d="M4 2l10 6-10 6z" fill="currentColor" />
+    </svg>
+  </button>
+  </div>
+</section>
+<Marquee />
+
+<style>
+  .logos {
+    padding-block: var(--section-pad-y);
+  }
+  .logos__head > :global(* + *) {
+    margin-top: var(--space-4);
+  }
+  .logos :global(h2) {
+    font-size: var(--text-h2);
+    line-height: var(--leading-h2);
+  }
+  .logos__body {
+    margin: 20px 0 0;
+  }
+  .logos__marquee {
+    grid-column: 1 / -1;
+  }
+  .logos__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-5) var(--space-6);
+    margin: 0;
+    padding: var(--space-7) var(--grid-gutter) 0;
+    list-style: none;
+  }
+  .logos__list :global(img) {
+    width: 127px;
+    height: 44px;
+    object-fit: contain;
+  }
+
+  @media (min-width: 769px) {
+    .logos__list {
+      column-gap: 72px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .logos {
+      min-height: 424px;
+    }
+    .logos__head {
+      grid-column: 3 / 10;
+    }
+    .logos__head > :global(.eyebrow) {
+      margin-top: 8px;
+    }
+    .logos__body {
+      grid-column: 15 / 25;
+      grid-row: 1;
+      margin: 50px 0 40px;
+    }
+    .logos__list {
+      column-gap: var(--space-7);
+      padding-top: var(--space-8);
+      padding-inline: 0;
+    }
+    .logos__list :global(img) {
+      width: 190px;
+      height: 66px;
+    }
+  }
+  /* E3, started by the script when motion is allowed: one row that moves
+     left without a seam, with a pause button. */
+  .logos__pause {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: var(--space-5) 0 0 var(--grid-gutter);
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: var(--color-white-8);
+    color: var(--color-text);
+    cursor: pointer;
+  }
+  .logos__pause[aria-pressed='true'] .logos__pause-icon,
+  .logos__pause[aria-pressed='false'] .logos__play-icon {
+    display: none;
+  }
+  .is-running .logos__pause {
+    display: inline-flex;
+  }
+  .is-running {
+    overflow: hidden;
+  }
+  .is-running .logos__list {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: max-content;
+    gap: 0;
+    padding-inline: 0;
+    animation: marquee var(--marquee-duration, 30s) linear infinite;
+  }
+  .is-running .logos__list > li {
+    flex: none;
+    margin-right: 32px;
+  }
+  .is-running.is-paused .logos__list,
+  .is-running .logos__list:hover,
+  .is-running .logos__list:focus-within {
+    animation-play-state: paused;
+  }
+  @keyframes marquee {
+    to {
+      transform: translateX(var(--marquee-shift, -50%));
+    }
+  }
+  @media (min-width: 769px) {
+    .is-running .logos__list > li {
+      margin-right: 72px;
+    }
+  }
+</style>

@@ -1,0 +1,105 @@
+name: Weekly knowledge refresh
+
+on:
+  schedule:
+    - cron: "0 3 * * 6"   # Saturdays 03:00 UTC
+  workflow_dispatch:
+    inputs:
+      force_reindex:
+        description: "Rebuild embeddings.json + milvus.db with the pinned opencrane even if chunks.json is unchanged (use after an opencrane bump)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86 # v5.4.2
+        with:
+          version: "0.8.19"
+
+      # opencrane is version-locked in .opencrane/opencrane-version (never floats to the
+      # latest PyPI release); every uvx call below pins to it. --constraints applies the
+      # caps in .opencrane/constraints.txt to the dependencies opencrane leaves unpinned.
+      - name: Resolve the pinned opencrane version
+        run: echo "OPENCRANE_VERSION=$(tr -d '[:space:]' < .opencrane/opencrane-version)" >> "$GITHUB_ENV"
+
+      # The RAG pipeline deps (docling/PyGithub/tiktoken) live in opencrane's optional
+      # `[pipeline]` extra (kept out of the serve-only base so `uvx ose-knowledge-mcp`
+      # stays slim); fetch and chunk need them, so the build steps request the extra.
+      - name: Re-fetch sources and regenerate committed inputs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}   # opencrane fetch needs a non-empty token
+        run: |
+          uvx --constraints .opencrane/constraints.txt "opencrane[pipeline]@${OPENCRANE_VERSION}" fetch
+          uvx --constraints .opencrane/constraints.txt "opencrane[pipeline]@${OPENCRANE_VERSION}" llms
+          uvx --constraints .opencrane/constraints.txt "opencrane[pipeline]@${OPENCRANE_VERSION}" chunk
+
+      # Manual runs can force a full re-embed even when chunks.json is unchanged —
+      # needed after an opencrane bump, where the committed index was built by the old
+      # version but the diff-gate below would otherwise see nothing to ship. Dropping
+      # the artifacts makes ensure-index.sh regenerate them (same trick as
+      # run-local.sh --fresh).
+      - name: Drop the committed index (force_reindex)
+        if: github.event_name == 'workflow_dispatch' && inputs.force_reindex
+        run: rm -f .opencrane/embeddings.json .opencrane/milvus.db
+
+      # If the re-chunk changed chunks.json, rebuild embeddings.json + milvus.db so the
+      # committed index tracks the refreshed content; a no-op (reuses the committed
+      # artifacts) when the sources didn't change. This is where the weekly re-embed
+      # happens — the release path just packs the result.
+      - name: Rebuild the vector index if chunks changed
+        # ensure-index.sh reads the same pinned version from .opencrane/opencrane-version.
+        run: ./scripts/knowledge/ensure-index.sh
+
+      - name: Commit refreshed inputs and open a PR if changed
+        id: commit
+        env:
+          # main is branch-protected (no direct push), and the org blocks the built-in
+          # GITHUB_TOKEN from creating PRs — so use RELEASE_TOKEN (the org PAT release.yml
+          # already uses) to push the branch + open the PR. It also gives the PR its CI runs.
+          GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Committed INPUTS (llmstxt snapshots + chunks.json) AND the committed vector
+          # index (embeddings.json + milvus.db), so the index ships with its chunks.
+          git add .opencrane/llmstxt .opencrane/chunks.json .opencrane/embeddings.json .opencrane/milvus.db
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No source changes this week."
+          else
+            branch="chore/knowledge-refresh"
+            git checkout -B "$branch"
+            # `fix:` (not `chore:`) so release-please rolls this into the release PR — see below.
+            git commit -m "fix(knowledge): refresh OSE knowledge sources ($(date -u +%Y-%m-%d))"
+            remote="https://x-access-token:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.git"
+            git push --force "$remote" "HEAD:$branch"
+            if ! gh pr view "$branch" --json state --jq .state 2>/dev/null | grep -q OPEN; then
+              gh pr create --base main --head "$branch" \
+                --title "fix(knowledge): weekly OSE knowledge refresh" \
+                --body "Automated weekly refresh of the OSE knowledge base. The workflow fetched the llms.txt sources again and re-chunked them, then rebuilt the vector index only if the chunks changed. It rolls into the release PR on merge."
+            fi
+            # Keep shipping hands-off: auto-merge once the required checks (validate +
+            # commitlint) are green. Squash so release-please detects the fix: and rolls it in.
+            gh pr merge "$branch" --auto --squash --repo "$GITHUB_REPOSITORY"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+# Shipping: main is protected, so the refresh now lands via an auto-merging PR (above)
+# instead of a direct push. Its commit is a `fix:`, so once that PR auto-merges,
+# release-please rolls it into the rolling release PR (a patch bump). Merging that release
+# PR cuts vX.Y.Z and, in the same run, release.yml publishes ose-knowledge-mcp to PyPI and
+# deploys the MCP container, the chat function and the site with the refreshed knowledge baked
+# in. Still fully hands-off: both the refresh PR and the release PR auto-merge on green CI.

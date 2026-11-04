@@ -1,0 +1,202 @@
+{
+  "url": "https://opensourceeurope.org/contact/",
+  "title": "Contact - open source europe",
+  "description": "",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Get in touch"
+    },
+    {
+      "level": 2,
+      "text": "Frequently asked questions"
+    },
+    {
+      "level": 2,
+      "text": "Everything you need in one guide"
+    }
+  ],
+  "textBlocks": [
+    "Home",
+    "Services",
+    "About",
+    "How to join",
+    "Contact",
+    "submit a project",
+    "Home",
+    "Services",
+    "About",
+    "How to join",
+    "Contact",
+    "submit a project",
+    "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy",
+    "Contact detail",
+    "Office address",
+    "Avenue Louise 500 Box 205 - 1050 Brussels - Belgium",
+    "Email address",
+    "oce@opencollective.com",
+    "// faq",
+    "Do I need to create a legal entity?",
+    "No. OSE provides the fiscal structure so you don’t have to.",
+    "Do you control my project?",
+    "No. Your project remains fully autonomous: your project, your rules.",
+    "How long does it take to get started?",
+    "Most projects are live within a week.",
+    "Who can apply?",
+    "Any open source project, regardless of size or maturity.",
+    "Can we get individual advice?",
+    "Yes, guidance is available when needed.",
+    "Do contributors need to be in Europe?",
+    "No. Anyone worldwide can be reimbursed with valid receipts.",
+    "Access a complete guide on GitBook designed to help you set up, manage, and grow your collective with clarity and ease.",
+    "read the guide",
+    "Quick links",
+    "About",
+    "Services",
+    "How to join",
+    "Contact",
+    "Contact",
+    "E: oce@opencollective.com",
+    "A: Brussels, Belgium",
+    "2026 Open Source Europe. All rights reserved.",
+    "|",
+    "© Copyright Boukan Studio",
+    "Privacy Policy",
+    "•",
+    "Term & conditions",
+    "•",
+    "Cookies"
+  ],
+  "images": [
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/webp/bg-hero-w-home.webp",
+      "alt": "hero background"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/webp/ready-to.webp",
+      "alt": "circle"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/png/ready-to-blur.png",
+      "alt": "circle"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/png/ready/stars.png",
+      "alt": "circle"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/webp/bg-footer.webp",
+      "alt": "footer"
+    }
+  ],
+  "links": [
+    {
+      "text": "",
+      "href": "https://opensourceeurope.org"
+    },
+    {
+      "text": "Home",
+      "href": "https://opensourceeurope.org/"
+    },
+    {
+      "text": "Services",
+      "href": "https://opensourceeurope.org/services/"
+    },
+    {
+      "text": "About",
+      "href": "https://opensourceeurope.org/about/"
+    },
+    {
+      "text": "How to join",
+      "href": "https://opensourceeurope.org/how-to-join/"
+    },
+    {
+      "text": "Contact",
+      "href": "https://opensourceeurope.org/contact/"
+    },
+    {
+      "text": "submit a project",
+      "href": "https://oceu.typeform.com/apply?typeform-source=www.oceurope.org"
+    },
+    {
+      "text": "Home",
+      "href": "https://opensourceeurope.org/"
+    },
+    {
+      "text": "Services",
+      "href": "https://opensourceeurope.org/services/"
+    },
+    {
+      "text": "About",
+      "href": "https://opensourceeurope.org/about/"
+    },
+    {
+      "text": "How to join",
+      "href": "https://opensourceeurope.org/how-to-join/"
+    },
+    {
+      "text": "Contact",
+      "href": "https://opensourceeurope.org/contact/"
+    },
+    {
+      "text": "submit a project",
+      "href": "https://oceu.typeform.com/apply?typeform-source=www.oceurope.org"
+    },
+    {
+      "text": "Avenue Louise 500 Box 205 - 1050 Brussels - Belgium",
+      "href": "https://maps.app.goo.gl/cc81nBsmR5Tubq2t5"
+    },
+    {
+      "text": "oce@opencollective.com",
+      "href": "mailto:oce@opencollective.com"
+    },
+    {
+      "text": "read the guide",
+      "href": "https://docs.opencollective.com/oceurope"
+    },
+    {
+      "text": "",
+      "href": "https://opensourceeurope.org"
+    },
+    {
+      "text": "About",
+      "href": "https://opensourceeurope.org/about/"
+    },
+    {
+      "text": "Services",
+      "href": "https://opensourceeurope.org/services/"
+    },
+    {
+      "text": "How to join",
+      "href": "https://opensourceeurope.org/how-to-join/"
+    },
+    {
+      "text": "Contact",
+      "href": "https://opensourceeurope.org/contact/"
+    },
+    {
+      "text": "oce@opencollective.com",
+      "href": "mailto:oce@opencollective.com"
+    },
+    {
+      "text": "Brussels, Belgium",
+      "href": "https://maps.app.goo.gl/cc81nBsmR5Tubq2t5"
+    },
+    {
+      "text": "Boukan Studio",
+      "href": "https://www.boukan.studio/"
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "https://opensourceeurope.org/privacy-policy/"
+    },
+    {
+      "text": "Term & conditions",
+      "href": "https://opensourceeurope.org/term-conditions/"
+    },
+    {
+      "text": "Cookies",
+      "href": "#"
+    }
+  ]
+}

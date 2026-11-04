@@ -1,0 +1,420 @@
+---
+import { PUBLIC_CONTACT_ENDPOINT } from 'astro:env/client';
+import Eyebrow from '../Eyebrow.astro';
+import Heading from '../Heading.astro';
+import type { SectionOf } from '../../lib/sections';
+import { MAX } from '../../../functions/contact/src/fields';
+
+interface Props {
+  section: SectionOf<'contactForm'>;
+}
+const { section } = Astro.props;
+const { form, details } = section;
+
+// A trailing `*` marks a required field. It stays in the label text, so the
+// accessible name matches the live form, and is drawn in the accent colour.
+const labelParts = (label: string) => (label.endsWith('*') ? { text: label.slice(0, -1), star: true } : { text: label, star: false });
+const name = labelParts(form.name.label);
+const email = labelParts(form.email.label);
+const legend = labelParts(form.interest.legend);
+const message = labelParts(form.message.label);
+const link = labelParts(form.link.label);
+---
+
+<section id={section.id ?? 'contact-form'} class="contact grid-26">
+  {
+    (section.eyebrow || section.heading || section.body) && (
+      <div class="contact__intro">
+        <Eyebrow text={section.eyebrow} />
+        {section.heading && <Heading heading={section.heading} />}
+        {section.body && <p>{section.body}</p>}
+      </div>
+    )
+  }
+  {
+    details && (
+      <div class="contact__details">
+        <p class="contact__title">{details.title}</p>
+        {details.items.map((item) => (
+          <div class="contact__item">
+            <p class="contact__label">{item.label}</p>
+            <a href={item.href} rel={/^https?:\/\//.test(item.href) ? 'noopener' : undefined}>
+              {item.text}
+            </a>
+          </div>
+        ))}
+      </div>
+    )
+  }
+
+  <form
+    class="form"
+    data-contact
+    method="post"
+    action={PUBLIC_CONTACT_ENDPOINT}
+    data-msg-sent={form.status.sent}
+    data-msg-invalid={form.status.invalid}
+    data-msg-error={form.status.error}
+  >
+    <div class="field">
+      <label for="name">{name.text}{name.star && <span class="star">*</span>}</label>
+      <input id="name" name="name" type="text" maxlength={MAX.name} autocomplete="name" required placeholder={form.name.placeholder} aria-describedby="name-error" />
+      <p id="name-error" class="field__error" hidden></p>
+    </div>
+
+    <div class="field">
+      <label for="email">{email.text}{email.star && <span class="star">*</span>}</label>
+      <input id="email" name="email" type="email" maxlength={MAX.email} autocomplete="email" required placeholder={form.email.placeholder} aria-describedby="email-error" />
+      <p id="email-error" class="field__error" hidden></p>
+    </div>
+
+    <fieldset class="field field--wide interest" role="radiogroup" aria-describedby="interest-error">
+      <legend>{legend.text}{legend.star && <span class="star">*</span>}</legend>
+      <div class="interest__options">
+        {
+          form.interest.options.map((option, i) => (
+            <label class="radio">
+              <input
+                type="radio"
+                name="interest"
+                value={option}
+                id={`interest-${i}`}
+                checked={option === form.interest.checked}
+                required
+                data-other={option === form.interest.other ? '' : undefined}
+              />
+              <span>{option}</span>
+            </label>
+          ))
+        }
+      </div>
+      <div class="interest__other" data-other-field>
+        <input id="interest_other" name="interest_other" type="text" maxlength={MAX.interestOther} aria-label={form.interest.otherLabel} aria-describedby="interest_other-error" />
+        <p id="interest_other-error" class="field__error" hidden></p>
+      </div>
+      <p id="interest-error" class="field__error" hidden></p>
+    </fieldset>
+
+    <div class="field field--wide">
+      <label for="message">{message.text}{message.star && <span class="star">*</span>}</label>
+      <textarea id="message" name="message" maxlength={MAX.message} required placeholder={form.message.placeholder} aria-describedby="message-desc message-error"></textarea>
+      {form.message.description && <p id="message-desc" class="field__desc">{form.message.description}</p>}
+      <p id="message-error" class="field__error" hidden></p>
+    </div>
+
+    <div class="field field--wide">
+      <label for="link">{link.text}{link.star && <span class="star">*</span>}</label>
+      <input id="link" name="link" type="url" maxlength={MAX.link} autocomplete="url" placeholder={form.link.placeholder} aria-describedby="link-desc link-error" />
+      {form.link.description && <p id="link-desc" class="field__desc">{form.link.description}</p>}
+      <p id="link-error" class="field__error" hidden></p>
+    </div>
+
+    <div class="honeypot" aria-hidden="true">
+      <label for="website">{form.honeypotLabel}</label>
+      <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    </div>
+    <input type="hidden" name="ts" value="" />
+
+    <div class="field--wide actions">
+      <button type="submit" class="submit"><span>{form.submit}</span></button>
+    </div>
+
+    <p class="form__status" aria-live="polite" data-status></p>
+    <p id="form-sent" class="form__state" tabindex="-1">{form.status.sent}</p>
+    <p id="form-invalid" class="form__state form__state--error" tabindex="-1">{form.status.invalid}</p>
+    <p id="form-error" class="form__state form__state--error" tabindex="-1">{form.status.error}</p>
+  </form>
+</section>
+
+<script>
+  import { initContactForm } from '../../scripts/contact-form';
+
+  for (const form of document.querySelectorAll<HTMLFormElement>('form[data-contact]')) initContactForm(form);
+</script>
+
+<style>
+  .contact {
+    padding-top: var(--section-pad-y);
+    padding-bottom: 42px;
+    row-gap: 44px;
+  }
+
+  /* Contact details: below the form on small screens, beside it from 1024 px. */
+  .contact__details {
+    order: 2;
+  }
+  .contact__title {
+    margin: 0 0 32px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: var(--weight-semibold);
+  }
+  .contact__item + .contact__item {
+    margin-top: 32px;
+  }
+  .contact__label {
+    margin: 0 0 1px;
+    font-size: var(--text-xs);
+    line-height: var(--leading-xs);
+    font-weight: var(--weight-light);
+  }
+  .contact__details a {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: var(--weight-light);
+    text-decoration: none;
+  }
+  .contact__details a:hover {
+    text-decoration: underline;
+  }
+
+  .form {
+    order: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px 16px;
+  }
+  .field {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+  .field > label,
+  .interest legend {
+    margin-bottom: 6px;
+    padding: 0;
+    font-size: var(--text-label);
+    line-height: var(--leading-label);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+  }
+  .star {
+    margin-left: 6px;
+    color: var(--color-brand-orange);
+  }
+
+  .form input:not([type='radio']),
+  .form textarea {
+    width: 100%;
+    height: 52px;
+    padding: 14px 16px;
+    border: 1px solid var(--color-input-border);
+    border-radius: 6px;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font: inherit;
+    font-size: var(--text-sm);
+    line-height: 22.4px;
+    font-weight: var(--weight-medium);
+  }
+  .form textarea {
+    height: 130px;
+    resize: vertical;
+  }
+  .form ::placeholder {
+    color: var(--color-text);
+    opacity: 0.6;
+    font-size: 16px;
+    font-weight: var(--weight-light);
+  }
+  .form input:not([type='radio']):focus-visible,
+  .form textarea:focus-visible {
+    outline-offset: 0;
+    border-color: var(--color-brand-blue);
+  }
+  .form [aria-invalid='true'] {
+    border-color: var(--color-brand-orange);
+  }
+
+  .field__desc,
+  .field__error {
+    margin: 6px 0 0;
+    font-size: var(--text-xs);
+    line-height: var(--leading-xs);
+    font-weight: var(--weight-light);
+  }
+  .field__error {
+    color: var(--color-brand-orange);
+    font-weight: var(--weight-medium);
+  }
+
+  .interest {
+    margin: 0 0 6px;
+    padding: 0;
+    border: 0;
+    min-inline-size: 0;
+  }
+  .interest legend {
+    margin-bottom: 16px;
+  }
+  .interest__options {
+    display: grid;
+    gap: 18px 12px;
+  }
+  .radio {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: var(--weight-light);
+    letter-spacing: var(--tracking-label);
+    cursor: pointer;
+  }
+  .radio input {
+    appearance: none;
+    flex: none;
+    display: grid;
+    place-content: center;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    border: 1px solid var(--color-input-border);
+    border-radius: 50%;
+    background: var(--color-bg);
+    cursor: pointer;
+  }
+  .radio input::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--color-brand-blue);
+    transform: scale(0);
+    transition: transform var(--duration-fast) var(--ease-standard);
+  }
+  .radio input:checked {
+    border-color: var(--color-brand-blue);
+  }
+  .radio input:checked::before {
+    transform: scale(1);
+  }
+  .interest__other {
+    margin-top: 18px;
+  }
+  /* The text field shows only while "Other" is picked. The script also sets
+     `hidden` and `required`, for browsers without :has(). */
+  .interest:not(:has([data-other]:checked)) .interest__other,
+  .interest__other[hidden] {
+    display: none;
+  }
+
+  /* Off screen rather than display: none, so form-filling bots still see it. */
+  .honeypot {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .actions {
+    margin-top: 10px;
+  }
+  /* The gradient ring button of the site's primary links (Cta.astro). */
+  .submit {
+    position: relative;
+    isolation: isolate;
+    display: inline-flex;
+    height: 56px;
+    padding: 2px;
+    border: 0;
+    border-radius: var(--radius-pill);
+    background: var(--gradient-brand);
+    color: var(--color-text);
+    font: inherit;
+    font-size: var(--text-label);
+    line-height: var(--leading-label);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .submit::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: var(--gradient-brand);
+    filter: blur(16px);
+    opacity: 0;
+    transition: opacity var(--duration-base) var(--ease-standard);
+  }
+  .submit:hover::before {
+    opacity: 0.8;
+  }
+  .submit > span {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    height: 52px;
+    padding-inline: 24px;
+    border-radius: var(--radius-pill);
+    background: var(--color-bg);
+  }
+  .submit:disabled {
+    cursor: progress;
+  }
+  .submit[aria-busy='true'] > span::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .form__status:empty {
+    display: none;
+  }
+  .form__status,
+  .form__state {
+    margin: 0;
+    font-size: var(--text-body);
+    line-height: var(--leading-body-text);
+  }
+  .form__state {
+    display: none;
+  }
+  .form__state:target {
+    display: block;
+  }
+  .form__state--error {
+    color: var(--color-brand-orange);
+  }
+
+  @media (min-width: 1024px) {
+    .contact {
+      padding-bottom: 88px;
+    }
+    .contact__details,
+    .form {
+      order: 0;
+    }
+    .contact__details {
+      grid-column: 3 / 9;
+    }
+    .form {
+      grid-column: 11 / 25;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .field--wide {
+      grid-column: 1 / -1;
+    }
+    .interest__options {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 12px;
+    }
+    .form > :is(.form__status, .form__state) {
+      grid-column: 1 / -1;
+    }
+  }
+</style>

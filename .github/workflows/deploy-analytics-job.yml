@@ -1,0 +1,126 @@
+name: Deploy analytics export job to Scaleway
+
+# Builds the analytics/ image and pushes it to the Scaleway registry, then (if the
+# job definition already exists) points that job definition at the new image. The
+# job itself runs ON SCALEWAY, in the EU region, on a cron — it pulls the chat
+# analytics shared with consent from Cockpit and writes them to a private bucket. Building the image in
+# GitHub (US runners) is fine: the image carries no analytics data; only the job,
+# running in the EU, ever touches the logs.
+#
+# This workflow CREATES the job definition on its first run (image + cron + env +
+# the Scaleway S3 keys), and only rolls the image forward on later runs. It does
+# NOT set COCKPIT_TOKEN — that is added once by hand in the console, so the log
+# path stays EU-only and the token never enters GitHub.
+#
+# One-time setup by the maintainer:
+#   1. Create a PRIVATE bucket, e.g. opensourceeurope-analytics (region pl-waw).
+#   2. Create a Cockpit token with logs read access; note its secret + the Loki URL.
+#   3. Set repo variables:  ANALYTICS_BUCKET=<bucket>,  OSE_ANALYTICS_LOKI_URL=<url>.
+#   4. Let this workflow run (push to analytics/**). It creates the job.
+#   5. In the console, add a COCKPIT_TOKEN env var to the 'ose-analytics-export'
+#      job, then start a run. Done — subsequent pushes just refresh the image.
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - analytics/**
+      - .github/workflows/deploy-analytics-job.yml
+
+permissions:
+  contents: read
+
+env:
+  SCW_CLI_VERSION: 2.65.2
+  # From the SHA256SUMS file of the v2.65.2 release, entry scaleway-cli_2.65.2_linux_amd64.
+  SCW_CLI_SHA256: 184e697e6ab8a8e825be1c5cf61d104341abe3598bb0e20b7a54618cb05231b3
+
+concurrency:
+  group: deploy-analytics-job
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    env:
+      SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
+      SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
+      SCW_DEFAULT_PROJECT_ID: ${{ secrets.SCW_DEFAULT_PROJECT_ID }}
+      SCW_DEFAULT_ORGANIZATION_ID: ${{ secrets.SCW_DEFAULT_ORGANIZATION_ID }}
+      SCW_DEFAULT_REGION: ${{ vars.SCW_REGION }}
+      REGISTRY: rg.${{ vars.SCW_REGION }}.scw.cloud/${{ vars.SCW_REGISTRY_NAMESPACE }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Install the Scaleway CLI
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/scw"
+          cd "$RUNNER_TEMP/scw"
+          curl -fsSLo scw "https://github.com/scaleway/scaleway-cli/releases/download/v${SCW_CLI_VERSION}/scaleway-cli_${SCW_CLI_VERSION}_linux_amd64"
+          echo "${SCW_CLI_SHA256}  scw" | sha256sum --check
+          chmod +x scw
+          echo "$RUNNER_TEMP/scw" >> "$GITHUB_PATH"
+
+      - uses: docker/setup-buildx-action@8d2750c68a42422c14e847fe6c8ac0403b4cbd6f # v3.12.0
+
+      - name: Log in to Scaleway Container Registry
+        uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v3.7.0
+        with:
+          registry: rg.${{ vars.SCW_REGION }}.scw.cloud
+          username: nologin
+          password: ${{ secrets.SCW_SECRET_KEY }}
+
+      - name: Build and push image
+        uses: docker/build-push-action@10e90e3645eae34f1e60eeb005ba3a3d33f178e8 # v6.19.2
+        with:
+          context: analytics
+          file: analytics/Dockerfile
+          push: true
+          tags: |
+            ${{ env.REGISTRY }}/ose-analytics-job:latest
+            ${{ env.REGISTRY }}/ose-analytics-job:${{ github.sha }}
+
+      - name: Create or update the analytics job definition
+        env:
+          IMAGE: ${{ env.REGISTRY }}/ose-analytics-job:${{ github.sha }}
+          REGION: ${{ vars.SCW_REGION }}
+          LOKI_URL: ${{ vars.OSE_ANALYTICS_LOKI_URL }}
+          ANALYTICS_BUCKET: ${{ vars.ANALYTICS_BUCKET }}
+          # The job needs Scaleway S3 keys to upload to the bucket. COCKPIT_TOKEN is
+          # NOT set here — it's added once by hand in the console (kept out of GitHub
+          # so the log path stays EU-only). The first run fails without it; add it, rerun.
+          JOB_SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
+          JOB_SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
+        run: |
+          set -euo pipefail
+          NAME=ose-analytics-export
+          [ -n "$LOKI_URL" ] || { echo "::error::repo variable OSE_ANALYTICS_LOKI_URL is not set"; exit 1; }
+          [ -n "$ANALYTICS_BUCKET" ] || { echo "::error::repo variable ANALYTICS_BUCKET is not set"; exit 1; }
+
+          # Idempotent by name: create on first run, image-only update thereafter.
+          # Image-only update is deliberate — it must NOT touch environment-variables,
+          # or it would wipe the hand-added COCKPIT_TOKEN on every redeploy.
+          ID="$(scw jobs definition list region="$REGION" -o json \
+            | jq -r --arg n "$NAME" '.[] | select(.name==$n) | .id' | head -n1)"
+
+          if [ -z "$ID" ]; then
+            echo "Creating job definition $NAME"
+            scw jobs definition create region="$REGION" \
+              name="$NAME" cpu-limit=70 memory-limit=128 local-storage-capacity=1000 job-timeout=300s \
+              image-uri="$IMAGE" \
+              cron-schedule.schedule="0 4 */3 * *" cron-schedule.timezone="Europe/Warsaw" \
+              environment-variables.LOKI_URL="$LOKI_URL" \
+              environment-variables.ANALYTICS_BUCKET="$ANALYTICS_BUCKET" \
+              environment-variables.SCW_REGION="$REGION" \
+              environment-variables.SCW_ACCESS_KEY="$JOB_SCW_ACCESS_KEY" \
+              environment-variables.SCW_SECRET_KEY="$JOB_SCW_SECRET_KEY"
+            echo "::notice::Job 'ose-analytics-export' created. Add a COCKPIT_TOKEN env var"
+            echo "::notice::to it in the Scaleway console (Serverless Jobs), then start a run."
+          else
+            echo "Rolling image forward on existing job definition $ID"
+            scw jobs definition update "$ID" region="$REGION" image-uri="$IMAGE"
+          fi

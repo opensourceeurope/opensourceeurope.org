@@ -1,0 +1,5 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["functions/chat", "dist", "node_modules", ".worktrees", "reference", "tests"]
+}

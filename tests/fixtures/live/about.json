@@ -1,0 +1,415 @@
+{
+  "url": "https://opensourceeurope.org/about/",
+  "title": "About - open source europe",
+  "description": "",
+  "headings": [
+    {
+      "level": 1,
+      "text": "About us"
+    },
+    {
+      "level": 2,
+      "text": "From a handful of initiatives in 2017 to hundreds today, we support open source by building the infrastructure that sustains it"
+    },
+    {
+      "level": 2,
+      "text": "Open source is public infrastructures"
+    },
+    {
+      "level": 2,
+      "text": "Our values"
+    },
+    {
+      "level": 2,
+      "text": "Team & Governance"
+    },
+    {
+      "level": 2,
+      "text": "Pricing"
+    },
+    {
+      "level": 2,
+      "text": "Resources"
+    },
+    {
+      "level": 2,
+      "text": "Gitbook documentation"
+    },
+    {
+      "level": 2,
+      "text": "Ready-to-use templates"
+    },
+    {
+      "level": 2,
+      "text": "Get insight from our blog posts"
+    },
+    {
+      "level": 2,
+      "text": "For funders"
+    },
+    {
+      "level": 2,
+      "text": "Ready to host your project?"
+    }
+  ],
+  "textBlocks": [
+    "Home",
+    "Services",
+    "About",
+    "How to join",
+    "Contact",
+    "submit a project",
+    "Home",
+    "Services",
+    "About",
+    "How to join",
+    "Contact",
+    "submit a project",
+    "// Our story",
+    "Open Source Europe was founded in Brussels in 2017 by Xavier Damman, soon joined by Jean-François De Hertogh. What started with just 7 collectives has grown into a fiscal host supporting more than 270 projects today.",
+    "Open Source Europe was founded in Brussels in 2017 by Xavier Damman, soon joined by Jean-François De Hertogh. What started with just 7 collectives has grown into a fiscal host supporting more than 270 projects today.",
+    "// our vision",
+    "Just like roads and bridges, the digital tools we all rely on deserve sustainable investment. At OSE, we make this vision real with transparent legal and financial structures that let companies, institutions, and citizens contribute to open source in Europe. But today, open source is still the most neglected part of our digital infrastructure. That’s why OSE exists.",
+    "Openness / transparency",
+    "No doors, no walls",
+    "Transparency is our default choice. We believe in open budgets, open questions, and open minds.",
+    "Resilient Communities",
+    "Stronger together",
+    "When systems fail, communities step in. Resilience grows as neighbors support each other and build strong, shared networks.",
+    "Autonomy",
+    "Your project, your rules",
+    "You write the code, you run the show. We don’t tell projects what to do. We build infrastructure that gets out of your way.",
+    "Reliability",
+    "Solid trust",
+    "We’re the kind of host you don’t have to think about (until you need us). And when you do, we’re here.",
+    "Open Innovation",
+    "Share to scale",
+    "Knowledge thrives when shared. Open source, citizen science, and maker spaces show how innovation grows faster together.",
+    "Accessibility",
+    "Adios bureaucracy",
+    "Just enough structure to keep things clean. No paperwork jungles. No legalese riddles. We speak human, not admin.",
+    "// meet our team",
+    "Jean-François De Hertogh",
+    "Co-director & Board Member",
+    "Exec Director & Co-Founder | Philanthropy, tech for good, humanitarian relief",
+    "Ivan Cukeric",
+    "Co-director & Board Member",
+    "Head of Operations at Open Collective Europe",
+    "Pia Mancini",
+    "Board Member",
+    "Cofounder & CEO at Give Zero",
+    "Shannon Wray",
+    "Board Member",
+    "Building Open Collective",
+    "// funds",
+    "OSE charges an 8% fee on incoming funds, plus payment provider fees & 10% on public grants and subsidies.. No setup fees. No hidden costs.",
+    "Read documentation",
+    "discover our template",
+    "read our blog",
+    "// become a funder",
+    "OSE offers a trusted, compliant channel for donations and grants in both the EU and the US. Thanks to ED certification, US foundations can give tax-deductible grants.",
+    "contact us",
+    "Start in minutes. No paperwork. No barriers. Just open source, sustained.",
+    "Submit a project",
+    "Quick links",
+    "About",
+    "Services",
+    "How to join",
+    "Contact",
+    "Contact",
+    "E: oce@opencollective.com",
+    "A: Brussels, Belgium",
+    "2026 Open Source Europe. All rights reserved.",
+    "|",
+    "© Copyright Boukan Studio",
+    "Privacy Policy",
+    "•",
+    "Term & conditions",
+    "•",
+    "Cookies"
+  ],
+  "images": [
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/webp/bg-hero-w-home.webp",
+      "alt": "hero background"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/11/8920e7c20bb2ed3354756238ed9b05ee7cca6c5b-min.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/11/0ae91a10990473bf86578eedaef23bf92f2cea09-min-scaled.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/png/about/section-3.png",
+      "alt": "background"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/webp/bg-how-to.webp",
+      "alt": "background"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/11/Dotted-shape_stairs_dark-blue.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/png/about/section-4-card.png",
+      "alt": "background"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/11/Dotted-shape_triangle_dark-blue.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/png/about/section-4-card.png",
+      "alt": "background"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/11/Dotted-shape-_wave_dark-blue.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/png/about/section-4-card.png",
+      "alt": "background"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/11/Dotted-shape_spiral_dark-blue.png",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/png/about/section-4-card.png",
+      "alt": "background"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/11/Dotted-shape_cross_dark-blue.png",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/png/about/section-4-card.png",
+      "alt": "background"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/11/Dotted-shape_arrow_dark-blue.png",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/png/about/section-4-card.png",
+      "alt": "background"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/12/Jean-Francois-Open-Source-Europe-1.png",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/12/Ivan-Cukeric-Open-Source-Europe-1.png",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/12/Pia-Mancini-Open-Source-Europe-1.png",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/12/Shannon-Wray-Open-Source-Europe.png",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/11/Pricing-Open-Source-Europe.png",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/11/Icon-gitbook-documentation.png",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/11/Icon-ready-to-use-templates.png",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/uploads/2025/11/Icon-blog-posts.png",
+      "alt": ""
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/png/funders/top.png",
+      "alt": "circle"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/png/funders/center.png",
+      "alt": "circle"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/png/funders/bottom.png",
+      "alt": "circle"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/svg/Circle.png",
+      "alt": "circle"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/webp/bg-circle-gradient-2560.webp",
+      "alt": "circle"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/webp/ready-to.webp",
+      "alt": "circle"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/png/ready-to-blur.png",
+      "alt": "circle"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/png/ready/stars.png",
+      "alt": "circle"
+    },
+    {
+      "src": "https://opensourceeurope.org/app/themes/maju-agency/resources/images/webp/bg-footer.webp",
+      "alt": "footer"
+    }
+  ],
+  "links": [
+    {
+      "text": "",
+      "href": "https://opensourceeurope.org"
+    },
+    {
+      "text": "Home",
+      "href": "https://opensourceeurope.org/"
+    },
+    {
+      "text": "Services",
+      "href": "https://opensourceeurope.org/services/"
+    },
+    {
+      "text": "About",
+      "href": "https://opensourceeurope.org/about/"
+    },
+    {
+      "text": "How to join",
+      "href": "https://opensourceeurope.org/how-to-join/"
+    },
+    {
+      "text": "Contact",
+      "href": "https://opensourceeurope.org/contact/"
+    },
+    {
+      "text": "submit a project",
+      "href": "https://oceu.typeform.com/apply?typeform-source=www.oceurope.org"
+    },
+    {
+      "text": "Home",
+      "href": "https://opensourceeurope.org/"
+    },
+    {
+      "text": "Services",
+      "href": "https://opensourceeurope.org/services/"
+    },
+    {
+      "text": "About",
+      "href": "https://opensourceeurope.org/about/"
+    },
+    {
+      "text": "How to join",
+      "href": "https://opensourceeurope.org/how-to-join/"
+    },
+    {
+      "text": "Contact",
+      "href": "https://opensourceeurope.org/contact/"
+    },
+    {
+      "text": "submit a project",
+      "href": "https://oceu.typeform.com/apply?typeform-source=www.oceurope.org"
+    },
+    {
+      "text": "",
+      "href": "https://www.linkedin.com/in/jean-fran%C3%A7ois-de-hertogh-28630242/"
+    },
+    {
+      "text": "",
+      "href": "https://www.linkedin.com/in/ivan-cukeri%C4%87-715b3618b/"
+    },
+    {
+      "text": "",
+      "href": "https://www.linkedin.com/in/piamancini/"
+    },
+    {
+      "text": "",
+      "href": "https://www.linkedin.com/in/shannonwray/"
+    },
+    {
+      "text": "",
+      "href": "https://docs.opencollective.com/oceurope"
+    },
+    {
+      "text": "Read documentation",
+      "href": "https://docs.opencollective.com/oceurope"
+    },
+    {
+      "text": "",
+      "href": "https://opencollective.com/search?q=template"
+    },
+    {
+      "text": "discover our template",
+      "href": "https://opencollective.com/search?q=template"
+    },
+    {
+      "text": "",
+      "href": "https://blog.opencollective.com/"
+    },
+    {
+      "text": "read our blog",
+      "href": "https://blog.opencollective.com/"
+    },
+    {
+      "text": "contact us",
+      "href": "https://opensourceeurope.org/contact/"
+    },
+    {
+      "text": "Submit a project",
+      "href": "https://oceu.typeform.com/apply?typeform-source=www.oceurope.org"
+    },
+    {
+      "text": "",
+      "href": "https://opensourceeurope.org"
+    },
+    {
+      "text": "About",
+      "href": "https://opensourceeurope.org/about/"
+    },
+    {
+      "text": "Services",
+      "href": "https://opensourceeurope.org/services/"
+    },
+    {
+      "text": "How to join",
+      "href": "https://opensourceeurope.org/how-to-join/"
+    },
+    {
+      "text": "Contact",
+      "href": "https://opensourceeurope.org/contact/"
+    },
+    {
+      "text": "oce@opencollective.com",
+      "href": "mailto:oce@opencollective.com"
+    },
+    {
+      "text": "Brussels, Belgium",
+      "href": "https://maps.app.goo.gl/cc81nBsmR5Tubq2t5"
+    },
+    {
+      "text": "Boukan Studio",
+      "href": "https://www.boukan.studio/"
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "https://opensourceeurope.org/privacy-policy/"
+    },
+    {
+      "text": "Term & conditions",
+      "href": "https://opensourceeurope.org/term-conditions/"
+    },
+    {
+      "text": "Cookies",
+      "href": "#"
+    }
+  ]
+}

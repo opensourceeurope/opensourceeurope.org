@@ -1,0 +1,198 @@
+---
+import Eyebrow from '../Eyebrow.astro';
+import Heading from '../Heading.astro';
+import Img from '../Img.astro';
+import PinRow from '../motion/PinRow.astro';
+import type { SectionOf } from '../../lib/sections';
+
+interface Props {
+  section: SectionOf<'values'>;
+}
+const { section } = Astro.props;
+const headingId = `${section.id ?? 'values'}-heading`;
+---
+
+<!--
+  Settled state of E9: one row of cards that scrolls sideways. When motion is
+  allowed, the script pins the inner block and drives the row from the page
+  scroll.
+-->
+<section id={section.id} class="values" data-values>
+  <div class="values__pin grid-26">
+  <div class="values__head">
+    <Eyebrow text={section.eyebrow} />
+    <Heading heading={section.heading} id={headingId} />
+  </div>
+  <div class="values__track" role="region" aria-labelledby={headingId} tabindex="0" data-values-track>
+    <ul class="values__list">
+      {
+        section.items.map((item) => (
+          <li class="value">
+            <p class="value__label">{item.label}</p>
+            <div class="value__card">
+              {section.cardBackground && (
+                <div class="value__bg">
+                  <Img image={section.cardBackground} />
+                </div>
+              )}
+              {item.icon && <Img image={item.icon} class="value__icon" />}
+              <p class="value__title">{item.title}</p>
+              <p class="value__body">{item.body}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  </div>
+</section>
+<PinRow />
+
+<style>
+  .values {
+    --card-width: 300px;
+    --card-gap: var(--space-4);
+    --row-end: var(--space-4);
+    /* clip, not hidden: a hidden overflow would stop the inner block from pinning. */
+    overflow-x: clip;
+  }
+  .values__pin {
+    padding-block: var(--section-pad-y);
+  }
+  /* E9, pinned by the script: the row moves with the page scroll instead. */
+  .values.is-pinned .values__pin {
+    position: sticky;
+    top: var(--pin-top, 0px);
+  }
+  .values.is-pinned .values__track {
+    overflow-x: clip;
+  }
+  .values.is-pinned .values__list {
+    will-change: transform;
+  }
+  .values__head {
+    text-align: center;
+  }
+  .values__head > :global(* + *) {
+    margin-top: var(--space-4);
+  }
+  .values :global(h2) {
+    font-size: var(--text-h2);
+    line-height: var(--leading-h2);
+  }
+  .values__track {
+    grid-column: 1 / -1;
+    margin-top: 150px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+  .values__track:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: -2px;
+  }
+  .values__list {
+    display: flex;
+    gap: var(--card-gap);
+    width: max-content;
+    margin: 0;
+    padding: 0 var(--row-end) 0 var(--grid-gutter);
+    list-style: none;
+  }
+  .value {
+    flex: 0 0 var(--card-width);
+    display: flex;
+    flex-direction: column;
+  }
+  .value__label {
+    margin: 0 0 var(--space-5);
+    font-size: var(--text-label);
+    line-height: var(--leading-label);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+  }
+  .value__card {
+    position: relative;
+    isolation: isolate;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-4) var(--space-6) var(--space-8);
+    border-radius: 32px;
+    overflow: hidden;
+    text-align: center;
+  }
+  /* A thin border that fades out towards the bottom of the card. */
+  .value__card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid var(--color-border);
+    border-radius: inherit;
+    mask-image: linear-gradient(to bottom, #000 40%, transparent 90%);
+    pointer-events: none;
+  }
+  .value__bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+  .value__bg :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .value__card :global(.value__icon) {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  }
+  .value__title {
+    max-width: 236px;
+    margin: var(--space-6) 0 0;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: var(--weight-medium);
+  }
+  .value__body {
+    max-width: 236px;
+    margin: var(--space-4) 0 0;
+    font-size: var(--text-sm);
+    line-height: var(--leading-sm);
+    font-weight: var(--weight-light);
+  }
+
+  @media (min-width: 1024px) {
+    .values {
+      --card-width: 388px;
+      --card-gap: var(--space-6);
+      --row-end: 120px;
+    }
+    .values__track {
+      margin-top: 141px;
+    }
+    .values__list {
+      padding-left: calc(var(--grid-gutter) + (100% - 2 * var(--grid-gutter)) / 24);
+    }
+    .value__card {
+      padding: 20px var(--space-6) var(--space-6);
+    }
+    .value__card :global(.value__icon) {
+      width: 254px;
+      height: 254px;
+    }
+    .value__title {
+      max-width: 324px;
+      margin-top: var(--space-5);
+      font-size: 28px;
+      line-height: 36px;
+    }
+    .value__body {
+      max-width: 324px;
+      font-size: var(--text-base);
+      line-height: 24px;
+    }
+  }
+</style>

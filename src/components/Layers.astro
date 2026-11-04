@@ -1,0 +1,78 @@
+---
+import Img from './Img.astro';
+import type { LayerData } from '../lib/sections';
+
+interface Props {
+  layers: LayerData[];
+}
+const { layers } = Astro.props;
+---
+
+{
+  layers.length > 0 && (
+    <div class="layers">
+      {layers.map((layer) => (
+        <div class:list={['layer', `layer--${layer.fit}`, `layer--${layer.position}`, `layer--${layer.show}`]}>
+          <Img image={layer.image} />
+        </div>
+      ))}
+    </div>
+  )
+}
+
+<style>
+  .layers {
+    grid-column: auto;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .layer {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .layer :global(img) {
+    width: 100%;
+    height: 100%;
+  }
+  .layer--cover :global(img) {
+    object-fit: cover;
+  }
+  .layer--contain :global(img) {
+    object-fit: contain;
+  }
+  .layer--natural :global(img) {
+    width: auto;
+    height: auto;
+    max-width: none;
+  }
+  .layer--top {
+    align-items: flex-start;
+  }
+  .layer--top :global(img) {
+    object-position: top;
+  }
+  .layer--center {
+    align-items: center;
+  }
+  .layer--bottom {
+    align-items: flex-end;
+  }
+  .layer--bottom :global(img) {
+    object-position: bottom;
+  }
+  @media (min-width: 1024px) {
+    .layer--small {
+      display: none;
+    }
+  }
+  @media (max-width: 1023.98px) {
+    .layer--large {
+      display: none;
+    }
+  }
+</style>

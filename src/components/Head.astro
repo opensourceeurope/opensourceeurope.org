@@ -1,0 +1,44 @@
+---
+import '../styles/tokens.css';
+import '../styles/base.css';
+import { organizationJsonLd, websiteJsonLd, type Seo } from '../lib/seo';
+import { loadSettings } from '../lib/site';
+
+interface Props {
+  seo: Seo;
+}
+
+const { seo } = Astro.props;
+const site = Astro.site!;
+const { seo: siteSeo } = await loadSettings();
+const canonical = new URL(Astro.url.pathname, site).href;
+const ogImage = new URL(seo.ogImage ?? siteSeo.default_og_image, site).href;
+const jsonLd = [organizationJsonLd(site, siteSeo), websiteJsonLd(site, siteSeo)];
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{seo.title}</title>
+<meta name="description" content={seo.description} />
+{seo.noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonical} />}
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content={siteSeo.site_name} />
+<meta property="og:title" content={seo.title} />
+<meta property="og:description" content={seo.description} />
+<meta property="og:image" content={ogImage} />
+{!seo.noindex && <meta property="og:url" content={canonical} />}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={seo.title} />
+<meta name="twitter:description" content={seo.description} />
+<meta name="twitter:image" content={ogImage} />
+
+<link rel="icon" href="/app/uploads/2026/01/cropped-ose-32x32.png" sizes="32x32" />
+<link rel="icon" href="/app/uploads/2026/01/cropped-ose-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="/app/uploads/2026/01/cropped-ose-180x180.png" />
+
+<link rel="preload" href="/fonts/manrope/Manrope-Light.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/manrope/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/manrope/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+
+{jsonLd.map((data) => <script is:inline type="application/ld+json" set:html={JSON.stringify(data)} />)}

@@ -1,0 +1,93 @@
+---
+import Cta from '../Cta.astro';
+import Eyebrow from '../Eyebrow.astro';
+import Heading from '../Heading.astro';
+import Img from '../Img.astro';
+import type { SectionOf } from '../../lib/sections';
+
+interface Props {
+  section: SectionOf<'resources'>;
+}
+const { section } = Astro.props;
+---
+
+<section id={section.id} class="resources grid-26">
+  <div class="resources__head">
+    <Eyebrow text={section.eyebrow} />
+    <Heading heading={section.heading} />
+  </div>
+  <ul class="resources__list">
+    {
+      section.items.map((item) => (
+        <li class="resource">
+          {item.icon && <Img image={item.icon} class="resource__icon" />}
+          <Heading heading={item.heading} level={3} class="resource__title" />
+          <Cta cta={item.cta} />
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  .resources {
+    padding-block: var(--section-pad-y);
+  }
+  .resources__head {
+    text-align: center;
+  }
+  .resources__head > :global(* + *) {
+    margin-top: var(--space-4);
+  }
+  .resources__head :global(h2) {
+    font-size: var(--text-h2);
+    line-height: var(--leading-h2);
+  }
+  .resources__list {
+    display: grid;
+    gap: var(--space-6);
+    margin: var(--space-7) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  /* A card at least 338 px tall, as on live: the icon at the top, the title
+     and link at the bottom, and a border that fades out towards the bottom. */
+  .resource {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 338px;
+    padding: var(--space-6);
+  }
+  .resource::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    mask-image: linear-gradient(to bottom, #000 60%, transparent);
+    pointer-events: none;
+  }
+  .resource :global(.resource__icon) {
+    width: 58px;
+    height: 58px;
+  }
+  .resource :global(.resource__title) {
+    margin: auto 0 var(--space-6);
+    padding-top: var(--space-6);
+    font-size: var(--text-h2-sm);
+    line-height: var(--leading-h2-sm);
+  }
+
+  @media (min-width: 1024px) {
+    .resources {
+      padding-block: 72px;
+    }
+    .resources__list {
+      grid-column: 3 / 25;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 54px;
+    }
+  }
+</style>

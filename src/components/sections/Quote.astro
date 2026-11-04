@@ -1,0 +1,198 @@
+---
+import DotIcon from '../DotIcon.astro';
+import Heading from '../Heading.astro';
+import Img from '../Img.astro';
+import PinCircle from '../motion/PinCircle.astro';
+import type { SectionOf } from '../../lib/sections';
+
+interface Props {
+  section: SectionOf<'quote'>;
+}
+const { section } = Astro.props;
+---
+
+<section
+  id={section.id}
+  class:list={['quote grid-26', { 'quote--circles': section.circles }]}
+  data-pin-circle={section.circles ? '' : undefined}
+>
+  <div class="quote__inner">
+    <DotIcon kind="quote" />
+    <Heading heading={section.quote} level={3} class="quote__text" />
+    <div class="quote__author">
+      {section.avatar && <Img image={section.avatar} class="quote__avatar" />}
+      <div>
+        <p class="quote__name">{section.author}</p>
+        {section.role && <p class="quote__role">{section.role}</p>}
+      </div>
+    </div>
+  </div>
+  {
+    section.circles && (
+      <div class="circles" aria-hidden="true">
+        {section.circles.map((row) => (
+          <div class="circles__row">
+            {row.map((item) =>
+              typeof item === 'string' ? (
+                <div class={`circles__item circles__item--${item}`} />
+              ) : 'logo' in item ? (
+                <div class="circles__item circles__item--ring circles__item--logo">
+                  <Img image={item.logo} />
+                </div>
+              ) : 'photo' in item ? (
+                <div class="circles__item">
+                  <Img image={item.photo} />
+                </div>
+              ) : (
+                <div class="circles__item circles__item--center">
+                  <Img image={item.center} />
+                  <div class="circles__fade" />
+                </div>
+              ),
+            )}
+          </div>
+        ))}
+      </div>
+    )
+  }
+</section>
+{section.circles && <PinCircle />}
+
+<style>
+  .quote {
+    padding-top: var(--section-pad-y);
+    padding-bottom: var(--section-pad-y);
+  }
+  .quote :global(.quote__text) {
+    margin-top: var(--space-7);
+    font-size: var(--text-h2-sm);
+    line-height: var(--leading-h2-sm);
+  }
+  .quote__author {
+    display: flex;
+    gap: var(--space-4);
+    align-items: center;
+    margin-top: var(--space-7);
+  }
+  .quote__author :global(.quote__avatar) {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .quote__author p {
+    margin: 0;
+  }
+  .quote__name {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: var(--weight-semibold);
+  }
+  .quote__role {
+    margin-top: var(--space-1) !important;
+    font-size: var(--text-sm);
+    line-height: var(--leading-sm);
+    font-weight: var(--weight-light);
+  }
+
+  /* E2: rows of round holders along the bottom edge. This is the settled
+     state; the script pins the section and drives the custom properties. */
+  .quote--circles {
+    --c-size: 45px;
+    --c-y: 0px;
+    --c-pad: 10px;
+    --c-rows: -20px;
+    --c-gap: 8px;
+    --c-fade-h: 0px;
+    --c-fade-b: -20px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 232px;
+  }
+  .quote__inner {
+    position: relative;
+  }
+  .circles {
+    position: absolute;
+    left: 50%;
+    bottom: var(--c-rows);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    transform: translateX(-50%);
+  }
+  .circles__row {
+    display: flex;
+    gap: var(--c-gap);
+    align-items: center;
+    justify-content: center;
+  }
+  .circles__item {
+    position: relative;
+    flex: none;
+    width: var(--c-size);
+    height: var(--c-size);
+    border-radius: 50%;
+    overflow: hidden;
+    transform: translateY(var(--c-y));
+  }
+  .circles__item--ring {
+    border: 1px solid rgb(255 255 255 / 50%);
+  }
+  .circles__item--logo {
+    padding: var(--c-pad);
+  }
+  .circles__item--white {
+    background: #fff;
+  }
+  .circles__item--blue {
+    background: var(--color-brand-blue);
+  }
+  .circles__item--orange {
+    background: var(--color-brand-orange);
+  }
+  .circles__item :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .circles__item--logo :global(img) {
+    object-fit: contain;
+  }
+  .circles__fade {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: var(--c-fade-b);
+    height: var(--c-fade-h);
+    background: linear-gradient(to top, var(--color-bg), transparent);
+  }
+  /* Pinned while the circles grow (motion allowed, script running). */
+  :global(.pin-circle) .quote--circles {
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    height: 100vh;
+  }
+
+  @media (min-width: 1024px) {
+    .quote {
+      padding-top: 72px;
+    }
+    .quote--circles {
+      --c-size: 150px;
+      --c-pad: 30px;
+      --c-rows: -75px;
+      --c-gap: 20px;
+      padding-bottom: 360px;
+    }
+    .quote__inner {
+      grid-column: 12 / 22;
+    }
+    .quote :global(.quote__text),
+    .quote__author {
+      margin-top: 54px;
+    }
+  }
+</style>

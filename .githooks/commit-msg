@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Rejects a commit whose message has an agent Co-authored-by trailer.
+# Enable with: git config core.hooksPath .githooks
+set -u
+root=$(cd "$(dirname "$0")/.." && pwd)
+# shellcheck source=../scripts/agent-trailer.sh
+. "$root/scripts/agent-trailer.sh"
+
+if is_agent_trailer "$1"; then
+  {
+    echo "Commit rejected: the message has a Co-authored-by trailer naming an agent."
+    echo "OSE AI policy: agents are assistants, never co-authors. Remove the trailer."
+    echo "Disclose AI use with a Generated-by: line in the pull request instead."
+  } >&2
+  exit 1
+fi
+exit 0
