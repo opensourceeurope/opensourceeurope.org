@@ -113,7 +113,8 @@ The push to `main` starts `release.yml`. release-please opens a release pull req
 
 Add branch protection on `main` after the first push. It requires these checks:
 
-- `ci`
+- `ci` (type check, unit tests, licences and the co-author check)
+- `e2e` (Playwright and the accessibility scan, the second job of `ci.yml`)
 - `validate` (the job of `knowledge-ci.yml`)
 - `commitlint`
 - `lighthouse`
