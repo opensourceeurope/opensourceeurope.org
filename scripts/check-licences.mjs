@@ -1,7 +1,8 @@
 // Checks the licence of every installed package against an allowlist.
 // Exceptions live in licence-exceptions.json and need a reason each.
 import { execFileSync } from 'node:child_process';
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const ALLOWED = [
@@ -81,6 +82,36 @@ function licenceOf(node) {
   return undefined;
 }
 
+// Recognises the standard text of a few permissive licences in a LICENSE file.
+// Anything else stays unknown, so a person has to look at it.
+export function licenceFromText(text) {
+  const t = text.replace(/\s+/g, ' ');
+  if (/Apache License,? Version 2\.0/i.test(t)) return 'Apache-2.0';
+  if (/Permission is hereby granted, free of charge/i.test(t)) return 'MIT';
+  if (/Redistribution and use in source and binary forms/i.test(t)) {
+    return /used to endorse or promote/i.test(t) ? 'BSD-3-Clause' : 'BSD-2-Clause';
+  }
+  return undefined;
+}
+
+// Some packages declare no licence, the legacy "BSD" or "SEE LICENSE IN" in
+// package.json but ship the full text. npm ls --long gives each node's path.
+// A declared SPDX licence is never overridden.
+function licenceFromFile(dir) {
+  if (!dir) return undefined;
+  let files;
+  try {
+    files = readdirSync(dir).filter((f) => /^LICEN[CS]E(\.md|\.txt)?$/i.test(f));
+  } catch {
+    return undefined;
+  }
+  for (const f of files) {
+    const found = licenceFromText(readFileSync(join(dir, f), 'utf8'));
+    if (found) return found;
+  }
+  return undefined;
+}
+
 // Nodes that are missing or extraneous (left in node_modules but not required by
 // the lockfile tree, so `npm ci` does not install them) are skipped.
 export function collect(tree) {
@@ -90,7 +121,12 @@ export function collect(tree) {
       if (node && !node.missing && !node.extraneous && node.version) {
         const name = node.name || key;
         const id = `${name}@${node.version}`;
-        if (!found.has(id)) found.set(id, { name, version: node.version, licence: licenceOf(node) });
+        if (!found.has(id)) {
+          let licence = licenceOf(node);
+          const legacy = !licence || /^(BSD|SEE LICEN[CS]E IN .*)$/i.test(licence.trim());
+          if (legacy) licence = licenceFromFile(node.path) ?? licence;
+          found.set(id, { name, version: node.version, licence });
+        }
       }
       if (node) walk(node.dependencies);
     }
