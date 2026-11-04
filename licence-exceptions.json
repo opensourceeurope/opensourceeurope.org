@@ -3,15 +3,5 @@
     "package": "@img/sharp-libvips-*",
     "licence": "LGPL-3.0-or-later",
     "reason": "build-time image tool used by Astro; not shipped to visitors"
-  },
-  {
-    "package": "parse-cache-control",
-    "licence": "BSD-3-Clause (declared as legacy \"BSD\", or \"unknown\" when npm omits the legacy field)",
-    "reason": "dev-only, via @lhci/cli; LICENSE file is the 3-clause BSD text"
-  },
-  {
-    "package": "@mistralai/mistralai",
-    "licence": "unknown",
-    "reason": "chat function dependency. package.json has no licence field; its LICENSE file is the Apache-2.0 text"
   }
 ]
