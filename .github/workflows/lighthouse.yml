@@ -16,9 +16,16 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  lighthouse:
+  # Mobile and desktop run on separate runners. Two audits on one runner share its
+  # CPU, and that lowers the performance scores the budgets check.
+  audit:
+    name: lighthouse (${{ matrix.form }})
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        form: [mobile, desktop]
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -37,8 +44,21 @@ jobs:
           PUBLIC_CHAT_ENDPOINT: http://localhost:8080
         run: npm run build
 
-      - name: Lighthouse, mobile
-        run: npx lhci autorun --config=lighthouserc.mobile.json
+      - name: Lighthouse, ${{ matrix.form }}
+        run: npx lhci autorun --config=lighthouserc.${{ matrix.form }}.json
 
-      - name: Lighthouse, desktop
-        run: npx lhci autorun --config=lighthouserc.desktop.json
+  # Branch protection on main requires a check named lighthouse. The matrix jobs
+  # report as lighthouse (mobile) and lighthouse (desktop), so this job carries
+  # the required name and fails unless both audits succeeded.
+  lighthouse:
+    needs: audit
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Require both audits to pass
+        env:
+          RESULT: ${{ needs.audit.result }}
+        run: |
+          echo "Lighthouse audits: $RESULT"
+          [ "$RESULT" = success ]
