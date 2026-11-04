@@ -1,2 +1,13 @@
 accept = [200, 429, 999]
-exclude = ["localhost", "node_modules"]
+timeout = 30
+max_retries = 3
+exclude = [
+  "localhost",
+  "node_modules",
+  # The site's own origin: canonical and share URLs. Internal links are checked
+  # against dist/ as paths, and the live domain serves the old site until cutover.
+  '^https://(www\.)?opensourceeurope\.org/',
+  # These answer 403 to automated clients but work in a browser.
+  '^https://maps\.app\.goo\.gl/',
+  '^https://(www\.)?scaleway\.com/',
+]
