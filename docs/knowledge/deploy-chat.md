@@ -228,7 +228,8 @@ The workflow fails fast with a clear message if a required value is missing.
 4. Confirm enforcement works: `curl -X POST <FUNCTION_URL> -H 'content-type:
    application/json' -d '{"messages":[{"role":"user","content":"hi"}]}'` (no Origin
    header) must return `403`. If it returns an answer, `ALLOWED_ORIGINS` is still `*`.
-5. Sharing is **off by default**. The site sends `analyticsOptIn: true` only when the visitor accepted analytics in the consent banner (there is no checkbox in the chat). Then the function logs one
-   anonymous line (`ANALYTICS {...}` — query text, round count, whether the docs answered it and the prompt version, no IP/PII) to stdout,
-   which lands in Scaleway Cockpit (EU). The export job in `analytics/` keeps it in a private
+5. Sharing is **off by default**. The site sends `analyticsOptIn: true` only when the visitor accepted analytics in the consent banner (there is no checkbox in the chat). Then the function logs, to stdout,
+   one line per answer (`ANALYTICS {"type":"answer",...}`: round count, whether the docs answered it and the prompt version, no question text)
+   and, when the visitor closes the panel or leaves the page, one summary line without personal data (`ANALYTICS {"type":"summary",...}`,
+   see "Analytics summary" in `functions/chat/README.md`). No IP. Both land in Scaleway Cockpit (EU). The export job in `analytics/` keeps it in a private
    bucket.

@@ -1,7 +1,8 @@
 import { createServer } from "node:http";
-import { handleChat, handleChatStream, type Env } from "./handler.js";
+import { handleChat, handleChatStream, PROMPT_VERSION, type Env } from "./handler.js";
 import { wantsEventStream } from "./stream.js";
 import { isOriginAllowed } from "./origin.js";
+import { handleSummary, isSummaryRequest } from "./summary.js";
 
 const env = process.env as unknown as Env;
 const allowed = process.env.ALLOWED_ORIGINS || "*";
@@ -62,6 +63,19 @@ const server = createServer((req, res) => {
     } catch {
       res.writeHead(400, { "content-type": "application/json" });
       res.end(JSON.stringify({ error: "bad_request" }));
+      return;
+    }
+    // The summary the browser sends when the visitor leaves (fetch keepalive,
+    // as text/plain, so no preflight request). Its reply is never read.
+    if (isSummaryRequest(body)) {
+      try {
+        const out = await handleSummary(body, env, PROMPT_VERSION);
+        if (out.json) res.writeHead(out.status, { "content-type": "application/json" }).end(JSON.stringify(out.json));
+        else res.writeHead(out.status).end();
+      } catch (e: any) {
+        console.error("summary_error", e?.name ?? "Error");
+        res.writeHead(204).end();
+      }
       return;
     }
     if (wantsEventStream(req.headers.accept)) {

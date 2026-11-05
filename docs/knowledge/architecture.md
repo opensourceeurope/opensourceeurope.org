@@ -57,7 +57,7 @@ with the same object as `done`, and the browser reads that too (see
 holds the inference key, enforces the origin allowlist, and builds each citation from the
 `search_docs` result — linking to the exact section (`source_url#section_anchor`) when opencrane
 supplies one, else the page.
-Nothing is persisted; the chat logs the anonymized question to Scaleway Cockpit only when the visitor accepted analytics in the site's consent banner.
+Nothing is persisted. Only when the visitor accepted analytics in the site's consent banner, the chat logs to Scaleway Cockpit the answer details and, when the visitor closes the panel or leaves the page, a summary of what was asked and answered without personal data.
 
 ## Flow 2 — Your own agent (local or any MCP client)
 

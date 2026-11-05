@@ -118,7 +118,7 @@ footer:
 
 consent:
   title: Privacy settings
-  body: This site sets no cookies and loads nothing from other sites. It keeps your choice in your browser's local storage. If you accept analytics, the questions you ask the chat are shared with OSE. You can change your choice at any time with the Privacy settings link at the bottom of each page.
+  body: This site sets no cookies and loads nothing from other sites. It keeps your choice in your browser's local storage. If you accept analytics, a summary of what you ask the chat is shared with OSE. You can change your choice at any time with the Privacy settings link at the bottom of each page.
   privacy_link:
     label: Privacy policy
     href: /privacy-policy/
@@ -133,6 +133,6 @@ consent:
     description: Remembers your choice on this banner in your browser's local storage. The site sets no cookies.
   analytics:
     name: Analytics
-    description: If you accept, the questions you ask the chat are shared with OSE to improve the docs. OSE gets the question text, the number of calls to the AI model, whether the docs answered it, a version label of the assistant's instructions and the time. Nothing else is measured in your browser. If you reject, nothing is shared.
+    description: If you accept, the chat shares with OSE what you ask, to improve the docs. When you close the chat or leave the page, OSE gets a short summary of what you asked and what the answer said, with personal data removed by an automated step. For each answer, OSE gets the number of calls to the AI model, whether the docs answered it, a version label of the assistant's instructions and the time. Nothing else is measured in your browser. If you reject, nothing is shared.
 
 apply_url: https://opencollective.com/europe/apply

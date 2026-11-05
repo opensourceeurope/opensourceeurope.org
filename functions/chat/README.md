@@ -28,9 +28,10 @@ It holds the inference API key, runs the agentic loop (tool-calling -> MCP
 or streams the answer as Server-Sent Events (see "Streaming" below).
 `unanswered` is `true` when the documentation does not answer the question: the
 model ends such an answer with the `[[unanswered]]` marker, which the function
-strips. With analytics consent, the `ANALYTICS` log line records it too, with
-`prompt`: the first 8 hex characters of the SHA-256 of the full system prompt,
-computed once at startup, so answer quality can be tied to prompt edits.
+strips. With analytics consent, the `ANALYTICS` log line of type `answer` records it too, with
+`rounds` and `prompt`: the first 8 hex characters of the SHA-256 of the full system prompt,
+computed once at startup, so answer quality can be tied to prompt edits. That line
+holds no question text. See "Analytics summary" below for what was asked.
 Node 22 + TypeScript; the system prompt is the canonical `agent/ose-researcher.md`,
 bundled at build time so the chat always follows the same persona as the plugin.
 Chat-only rules (citation markers, answer first, language, prompt-injection
@@ -210,6 +211,34 @@ A comment line `: keep-alive` is sent whenever nothing else was sent for 10 s.
 
 Nothing new is stored or logged for a stream. The `ANALYTICS` line is the same
 as for JSON.
+
+## Analytics summary
+
+With analytics consent, the browser keeps the turns it sent with
+`analyticsOptIn: true`. When the visitor closes the Ask panel, hides the tab or
+leaves the page, it posts them once to the same endpoint:
+`{ "summary": true, "messages": [...], "analyticsOptIn": true }`. It sends the
+body as `text/plain` with `fetch` and `keepalive`, so the request needs no
+preflight and outlives the page. The server parses the body as JSON whatever
+the content type. A withdrawn consent drops the turns that wait, and turns
+asked without consent are never sent.
+
+`src/summary.ts` handles the request. Without `analyticsOptIn: true` it answers
+`204` and does nothing else. Otherwise it:
+
+1. Keeps the last 12 user and assistant turns, capped as for a chat request.
+2. Runs the fixed rules in `src/redact.ts`, which replace email addresses,
+   phone, card and ID numbers, IBANs, links outside opensourceeurope.org,
+   labelled passwords and keys, and long token-like strings.
+3. Asks the model (temperature 0, one call, 20 s) for two lines, `Asked:` and
+   `Answer:`, in English, without names or other personal details. The
+   conversation goes in between `<conversation>` tags as data.
+4. Runs the same rules on both lines, caps each at 400 characters, and logs
+   `ANALYTICS {"type":"summary","asked":"...","answer":"...","questions":<n>,"prompt":"<8 hex>","summaryPrompt":"<8 hex>"}`.
+
+It always answers `204`, also when the model fails or answers in another
+format. Then it logs only `summary_error` with the error code and name, or
+`summary_unparsed`. The browser never reads the reply.
 
 ## Citations
 

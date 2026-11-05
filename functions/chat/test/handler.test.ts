@@ -274,7 +274,7 @@ describe("handleChat unanswered marker and analytics", () => {
     captured.complete = vi.fn(async () => textReply("Not covered.\n[[unanswered]]"));
     const { openSearch } = fakeSession();
     await handleChat({ messages: [{ role: "user", content: "parking?" }], analyticsOptIn: true }, ENV, { openSearch });
-    expect(analyticsLine(log)).toMatchObject({ q: "parking?", rounds: 2, unanswered: true });
+    expect(analyticsLine(log)).toMatchObject({ type: "answer", rounds: 2, unanswered: true });
   });
 
   it("adds the prompt version to the opt-in analytics line", async () => {
@@ -283,7 +283,16 @@ describe("handleChat unanswered marker and analytics", () => {
     captured.complete = vi.fn(async () => textReply("OSE is a fiscal host."));
     const { openSearch } = fakeSession();
     await handleChat({ messages: [{ role: "user", content: "what?" }], analyticsOptIn: true }, ENV, { openSearch });
-    expect(analyticsLine(log)).toEqual({ q: "what?", rounds: 2, unanswered: false, prompt: PROMPT_VERSION });
+    expect(analyticsLine(log)).toEqual({ type: "answer", rounds: 2, unanswered: false, prompt: PROMPT_VERSION });
+  });
+
+  it("keeps the question text out of the per-answer line", async () => {
+    const log = vi.spyOn(console, "log").mockImplementation(() => {});
+    captured.complete = vi.fn(async () => textReply("OSE is a fiscal host."));
+    const { openSearch } = fakeSession();
+    await handleChat({ messages: [{ role: "user", content: "my email is a@b.eu" }], analyticsOptIn: true }, ENV, { openSearch });
+    const line = String(log.mock.calls.find((c) => String(c[0]).startsWith("ANALYTICS "))![0]);
+    expect(line).not.toMatch(/email|a@b/);
   });
 
   it("logs nothing without consent", async () => {
