@@ -37,8 +37,6 @@ const jsonLd = [organizationJsonLd(site, siteSeo), websiteJsonLd(site, siteSeo)]
 <link rel="icon" href="/app/uploads/2026/01/cropped-ose-192x192.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="/app/uploads/2026/01/cropped-ose-180x180.png" />
 
-<link rel="preload" href="/fonts/manrope/Manrope-Light.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/fonts/manrope/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/fonts/manrope/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/manrope/Manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
 
 {jsonLd.map((data) => <script is:inline type="application/ld+json" set:html={JSON.stringify(data)} />)}
