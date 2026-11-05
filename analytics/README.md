@@ -58,6 +58,72 @@ it is at least 2: one call that leads to a search, and the answer.
 promised in the UI. (A user could still type personal data *into* a question; the
 data is not scrubbed.)
 
+## Job configuration
+
+The job definition `ose-analytics-export` runs `export.sh` at 500 mCPU in `pl-waw`. It gets these environment variables:
+
+| Variable | Source | Value |
+|---|---|---|
+| `LOKI_URL` | Plain variable | Loki URL of the project's Cockpit logs data source |
+| `ANALYTICS_BUCKET` | Plain variable | `opensourceeurope-analytics` |
+| `SCW_REGION` | Plain variable | `pl-waw` |
+| `SCW_ACCESS_KEY` | Plain variable | Access key ID of the IAM application `ose-analytics-export` |
+| `SCW_SECRET_KEY` | Secret Manager, secret `ose-analytics-export-scw-secret-key`, version `latest` | Secret key of that access key |
+| `COCKPIT_TOKEN` | Secret Manager, secret `ose-analytics-export-cockpit-token`, version `latest` | Secret key of a Cockpit token with only the `read_only_logs` scope |
+
+The IAM application `ose-analytics-export` has one policy, with the `ObjectStorageObjectsWrite` permission set in the project. The job never gets the CI deploy key. The values of the two secrets stay in Secret Manager and never enter GitHub.
+
+`deploy-analytics-job.yml` creates the job definition on its first run, with the plain variables and the two secret references. Later runs change only the image and the CPU limit. To rotate a secret, add a new version to it in Secret Manager. The next run reads the new version.
+
+## Set up the job
+
+Run these steps once, before the first run of `deploy-analytics-job.yml`. Use the Scaleway CLI with a profile that can manage IAM, Cockpit and Secret Manager. Replace `{PROJECT_ID}` with the ID of the project.
+
+1. Create a private bucket in `pl-waw`, for example `opensourceeurope-analytics`.
+2. Create the IAM application and its policy. Replace `{APP_ID}` with the ID that the first command prints.
+
+   ```bash
+   scw iam application create name=ose-analytics-export description="Analytics export job"
+   scw iam policy create name=ose-analytics-export-s3-write application-id={APP_ID} rules.0.permission-set-names.0=ObjectStorageObjectsWrite rules.0.project-ids.0={PROJECT_ID}
+   ```
+
+3. Create an API key for the application, and store its secret key in Secret Manager. The commands write the secret key to a file that only you can read, and delete the file at the end. Replace `{SECRET_ID}` with the ID that `scw secret secret create` prints.
+
+   ```bash
+   umask 077
+   scw iam api-key create application-id={APP_ID} default-project-id={PROJECT_ID} description="ose-analytics-export job" -o json > api-key.json
+   jq -r .access_key api-key.json
+   jq -j .secret_key api-key.json > scw-secret-key.txt
+   scw secret secret create region=pl-waw project-id={PROJECT_ID} name=ose-analytics-export-scw-secret-key
+   scw secret version create {SECRET_ID} region=pl-waw data=@scw-secret-key.txt
+   rm api-key.json scw-secret-key.txt
+   ```
+
+   The `jq -r .access_key` command prints the access key ID. Keep it for step 5. Use `jq -j`, not `jq -r`, for the secret key, because `jq -r` adds a newline that becomes part of the secret.
+
+4. Create the Cockpit token, and store its secret key in Secret Manager. Replace `{SECRET_ID}` with the ID that `scw secret secret create` prints.
+
+   ```bash
+   umask 077
+   scw cockpit token create region=pl-waw project-id={PROJECT_ID} name=ose-analytics-export token-scopes.0=read_only_logs -o json | jq -j .secret_key > cockpit-token.txt
+   scw secret secret create region=pl-waw project-id={PROJECT_ID} name=ose-analytics-export-cockpit-token
+   scw secret version create {SECRET_ID} region=pl-waw data=@cockpit-token.txt
+   rm cockpit-token.txt
+   ```
+
+5. Set these repository variables under Settings, Secrets and variables, Actions:
+   - `ANALYTICS_BUCKET`: the bucket name from step 1.
+   - `OSE_ANALYTICS_LOKI_URL`: the Loki URL of the project's Cockpit logs data source.
+   - `ANALYTICS_EXPORT_ACCESS_KEY`: the access key ID from step 3.
+6. Run `deploy-analytics-job.yml`. The workflow finds the two secrets by name in the project and attaches them to the new job definition. The CI deploy key must be allowed to list secrets in Secret Manager. When a secret is missing, the workflow stops and names it.
+7. Start a run of the job in the Scaleway console and check that the two files reach the bucket.
+
+A job definition that exists without the secret references does not get them from the workflow, because later runs change only the image. The following command attaches them by hand. Replace `{JOB_ID}` with the ID of the job definition, and the two secret IDs with the IDs from `scw secret secret list region=pl-waw name=ose-analytics-export`.
+
+```bash
+scw jobs secret create job-definition-id={JOB_ID} region=pl-waw secrets.0.secret-manager-id={SCW_SECRET_KEY_SECRET_ID} secrets.0.secret-manager-version=latest secrets.0.env-var-name=SCW_SECRET_KEY secrets.1.secret-manager-id={COCKPIT_TOKEN_SECRET_ID} secrets.1.secret-manager-version=latest secrets.1.env-var-name=COCKPIT_TOKEN
+```
+
 ---
 
 ## Quick start: fetch the data locally

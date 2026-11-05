@@ -13,13 +13,13 @@
 # We pull those lines from Cockpit, normalise them to {timestamp, q, rounds, unanswered, prompt},
 # and write JSONL (source of truth) + CSV (human review) to the bucket.
 #
-# Required env (set on the job definition):
+# Required env (set on the job definition, see analytics/README.md):
 #   LOKI_URL          https://<data-source-id>.logs.cockpit.<region>.scw.cloud
-#   COCKPIT_TOKEN     Cockpit token secret key — X-Token auth for Loki   [secret]
+#   COCKPIT_TOKEN     Cockpit token secret key, X-Token auth for Loki. From Secret Manager.
 #   ANALYTICS_BUCKET  target private bucket, e.g. opensourceeurope-analytics
 #   SCW_REGION        e.g. pl-waw
-#   SCW_ACCESS_KEY    Scaleway API key  (used as AWS_ACCESS_KEY_ID)       [secret]
-#   SCW_SECRET_KEY    Scaleway API secret (AWS_SECRET_ACCESS_KEY)         [secret]
+#   SCW_ACCESS_KEY    access key ID of the ose-analytics-export IAM application (AWS_ACCESS_KEY_ID)
+#   SCW_SECRET_KEY    its secret key (AWS_SECRET_ACCESS_KEY). From Secret Manager.
 # Optional:
 #   LOOKBACK_DAYS     how far back to query (default 6 — 2x the 3-day cadence,
 #                     so a single missed run self-heals on the next run)
