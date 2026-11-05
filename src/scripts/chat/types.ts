@@ -49,6 +49,7 @@ export interface ChatTexts {
   no_js: string;
   open_label: string;
   close_label: string;
+  resize_label: string;
   how_it_works: { label: string; href: string };
   shortcut_mac: string;
   shortcut_other: string;

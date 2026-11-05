@@ -12,7 +12,7 @@ const texts: ChatTexts = {
   loading_long: 'Still', error: 'Something failed',
   status_searching_start: 'Searching the docs…', status_searching: 'Searching: {query}…', status_writing: 'Writing…', status_ready: 'Answer ready',
   stop_label: 'Stop', stopped_note: 'Stopped.', followups_label: 'Ask next',
-  error_busy: 'Busy now', error_unavailable: 'Down now', error_timeout: 'Too slow', shortcut_mac: '⌘K', shortcut_other: 'Ctrl K', no_js: 'nj', open_label: 'op', close_label: 'cl',
+  error_busy: 'Busy now', error_unavailable: 'Down now', error_timeout: 'Too slow', shortcut_mac: '⌘K', shortcut_other: 'Ctrl K', no_js: 'nj', open_label: 'op', close_label: 'cl', resize_label: 'rs',
   how_it_works: { label: 'h', href: '/h/' },
 };
 

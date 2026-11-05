@@ -52,6 +52,7 @@ chat:
   no_js: The chat needs JavaScript. Turn it on in your browser to ask a question.
   open_label: Ask
   close_label: Close the chat
+  resize_label: Resize the chat panel
   how_it_works:
     label: How this works
     href: /ask/

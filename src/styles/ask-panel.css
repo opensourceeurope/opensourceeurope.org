@@ -23,10 +23,44 @@
 .ask-panel__dialog::backdrop {
   background: rgb(0 0 0 / 55%);
 }
+.ask-panel__resize {
+  display: none;
+}
 @media (min-width: 640px) {
   .ask-panel__dialog {
-    width: 440px;
+    /* --ask-panel-width is set by the resize handle. 96px of the page always stays visible to its left. */
+    width: max(440px, min(var(--ask-panel-width, 440px), calc(100vw - 96px)));
     padding: var(--space-5);
+  }
+  .ask-panel__resize {
+    position: absolute;
+    inset: 0 auto 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    cursor: ew-resize;
+    touch-action: none;
+  }
+  .ask-panel__resize::before {
+    content: '';
+    width: 4px;
+    height: 48px;
+    border-radius: var(--radius-pill);
+    background: var(--color-border);
+    transition: background-color var(--duration-fast);
+  }
+  .ask-panel__resize:hover::before,
+  .ask-panel__resize:focus-visible::before,
+  .ask-panel__dialog[data-resizing] .ask-panel__resize::before {
+    background: var(--color-brand-cyan);
+  }
+  .ask-panel__resize:focus-visible {
+    outline-offset: -3px;
+  }
+  .ask-panel__dialog[data-resizing] {
+    cursor: ew-resize;
+    user-select: none;
   }
 }
 @keyframes ask-panel-in {
@@ -40,6 +74,9 @@
 @media (prefers-reduced-motion: reduce) {
   .ask-panel__dialog[open] {
     animation: none;
+  }
+  .ask-panel__resize::before {
+    transition: none;
   }
 }
 .ask-panel__head {
