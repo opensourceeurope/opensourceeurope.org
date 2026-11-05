@@ -96,8 +96,8 @@ Releases are cut by release-please. Do not tag by hand and do not bump a version
 release-please owns these files. Do not edit them by hand:
 
 - `CHANGELOG.md` and `plugins/ose-knowledge/CHANGELOG.md` (a pointer to the root file).
-- The `version` in `plugins/ose-knowledge/.claude-plugin/plugin.json`.
-- The `ose-knowledge-mcp==` pin in `plugins/ose-knowledge/.mcp.json`, `src/content/pages/ask.yaml` and `README.md`. `scripts/knowledge/sync-mcp-version.sh` rewrites them on the release pull request. Contributors must not hand-edit the pin in `ask.yaml`.
+- The `version` in `plugins/ose-knowledge/.claude-plugin/plugin.json` and `plugins/ose-knowledge/plugin.json`.
+- The `ose-knowledge-mcp==` pin in `plugins/ose-knowledge/.mcp.json`, `plugins/ose-knowledge/mcp.json`, `src/content/pages/ask.yaml` and `README.md`. `scripts/knowledge/sync-mcp-version.sh` rewrites them on the release pull request. Contributors must not hand-edit the pin in `ask.yaml`.
 - `.release-please-manifest.json`, the version state file. It is plain JSON and cannot hold comments.
 - Git tags and GitHub Releases.
 

@@ -17,7 +17,8 @@
 # pinning the URL (…/ose-knowledge-mcp==0.1.1) — hence these tighter anchors.
 #
 # Rewrites:
-#   - plugins/ose-knowledge/.mcp.json   (the uvx arg pin)
+#   - plugins/ose-knowledge/.mcp.json   (the uvx arg pin, Claude Code)
+#   - plugins/ose-knowledge/mcp.json    (the same pin, Agent Plugins format for Codex)
 #   - src/content/pages/ask.yaml        (the "MCP config" snippet pin)
 #   - README.md                         (the quick-start uvx + JSON config pins)
 #
@@ -65,6 +66,7 @@ sync_file() {
 }
 
 sync_file "plugins/ose-knowledge/.mcp.json"
+sync_file "plugins/ose-knowledge/mcp.json"
 sync_file "src/content/pages/ask.yaml"
 sync_file "README.md"
 

@@ -21,6 +21,11 @@
           "type": "json",
           "path": "plugins/ose-knowledge/.claude-plugin/plugin.json",
           "jsonpath": "$.version"
+        },
+        {
+          "type": "json",
+          "path": "plugins/ose-knowledge/plugin.json",
+          "jsonpath": "$.version"
         }
       ]
     }
