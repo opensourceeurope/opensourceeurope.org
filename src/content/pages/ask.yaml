@@ -31,7 +31,7 @@ sections:
     id: tools
     heading:
       text: Use it in your own tools — or run it locally
-    intro: The OSE knowledge RAG speaks MCP. Wire it into your editor, install the Claude Code plugin, or clone the repository and run this whole chat on your machine. For better answers than the small demo model gives, connect it to your own agent and model.
+    intro: The OSE knowledge RAG speaks MCP. Wire it into your editor, install the Claude Code or Codex plugin, or clone the repository and run this whole chat on your machine. For better answers than the small demo model gives, connect it to your own agent and model.
     items:
       - title: Any agentic tool, MCP config
         code: |-
@@ -50,6 +50,10 @@ sections:
           /plugin marketplace add opensourceeurope/ose-ai
           /plugin install ose-knowledge@ose-ai
         hint: More than the MCP server. The plugin also ships an ose-researcher subagent tuned to query the knowledge RAG efficiently and return concise, cited answers.
+      - title: Codex plugin
+        code: |-
+          codex plugin marketplace add opensourceeurope/ose-ai
+        hint: Then run /plugins in Codex, install ose-knowledge, and start a new session. You get the MCP server and the ask-about-ose skill.
       - title: Run this chat locally with Ollama
         code: |-
           git clone https://github.com/opensourceeurope/opensourceeurope.org.git
