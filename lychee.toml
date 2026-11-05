@@ -10,4 +10,7 @@ exclude = [
   # These answer 403 to automated clients but work in a browser.
   '^https://maps\.app\.goo\.gl/',
   '^https://(www\.)?scaleway\.com/',
+  # opencollective.com and its subdomains answer 403 to some GitHub runners,
+  # so the check fails on some runs for links that work in a browser.
+  '^https://([a-z0-9-]+\.)*opencollective\.com/',
 ]
