@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.8.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.7.2...v0.8.0) (2026-11-05)
+
+
+### Features
+
+* count page views per page from the Edge Services logs ([#20](https://github.com/opensourceeurope/opensourceeurope.org/issues/20)) ([86861cd](https://github.com/opensourceeurope/opensourceeurope.org/commit/86861cdbe0c6f2471b7458fa5a936bf3659642ad))
+* let visitors widen the Ask panel on wider screens ([#17](https://github.com/opensourceeurope/opensourceeurope.org/issues/17)) ([3642883](https://github.com/opensourceeurope/opensourceeurope.org/commit/3642883b99b7ecdce0ac9e3732ab30847b82eff8))
+* link the Ask chat from the header and point visitors to the local run first ([#15](https://github.com/opensourceeurope/opensourceeurope.org/issues/15)) ([36fc4b6](https://github.com/opensourceeurope/opensourceeurope.org/commit/36fc4b6812f313aa881419e61a8f65a9443fb86d))
+
+
+### Bug Fixes
+
+* cap the first chat model call so small talk does not time out ([#21](https://github.com/opensourceeurope/opensourceeurope.org/issues/21)) ([917d12a](https://github.com/opensourceeurope/opensourceeurope.org/commit/917d12a3e6171fedd5617d41f9b0b05c8df7f9b5))
+
 ## [0.7.2](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.7.1...v0.7.2) (2026-11-05)
 
 
