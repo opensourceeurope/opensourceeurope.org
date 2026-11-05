@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.2](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.7.1...v0.7.2) (2026-11-05)
+
+
+### Bug Fixes
+
+* align the privacy policy with production and drop the unused analytics loader ([#16](https://github.com/opensourceeurope/opensourceeurope.org/issues/16)) ([9d1e453](https://github.com/opensourceeurope/opensourceeurope.org/commit/9d1e453386981d806de52fb19ed77f7b4ddf208b))
+
 ## [0.7.1](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.7.0...v0.7.1) (2026-11-05)
 
 
