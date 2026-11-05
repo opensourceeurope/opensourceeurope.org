@@ -3,12 +3,16 @@ name: Deploy analytics export job to Scaleway
 # Builds the analytics/ image, pushes it to the Scaleway registry and deploys the
 # analytics export job. The job runs on Scaleway in the EU region, on a cron. It reads
 # the chat analytics that visitors shared with consent from Cockpit and writes them to
-# a private bucket. The image holds only the script, so building it on GitHub runners
-# in the US moves no analytics data out of the EU.
+# a private bucket. It then counts page views per page from the Edge Services logs in
+# Cockpit and writes only these totals to the same bucket. The image holds only the
+# scripts, so building it on GitHub runners in the US moves no analytics data out of
+# the EU.
 #
-# The job reads two secrets from Scaleway Secret Manager at run time:
-#   SCW_SECRET_KEY  from ose-analytics-export-scw-secret-key
-#   COCKPIT_TOKEN   from ose-analytics-export-cockpit-token
+# The job reads these secrets from Scaleway Secret Manager at run time:
+#   SCW_SECRET_KEY      from ose-analytics-export-scw-secret-key
+#   COCKPIT_TOKEN       from ose-analytics-export-cockpit-token
+#   EDGE_COCKPIT_TOKEN  from ose-analytics-export-edge-cockpit-token, only when the
+#                       repository variable OSE_EDGE_LOKI_URL is set
 # Their values never enter GitHub. SCW_ACCESS_KEY on the job is the access key of the
 # IAM application ose-analytics-export, which can only write objects in the project.
 # The CI deploy key never goes into the job.
@@ -90,6 +94,9 @@ jobs:
           REGION: ${{ vars.SCW_REGION }}
           LOKI_URL: ${{ vars.OSE_ANALYTICS_LOKI_URL }}
           ANALYTICS_BUCKET: ${{ vars.ANALYTICS_BUCKET }}
+          # Loki URL of the Cockpit logs data source that holds the Edge Services logs.
+          # Empty means the job skips the page-view counts.
+          EDGE_LOKI_URL: ${{ vars.OSE_EDGE_LOKI_URL }}
           # Access key ID of the ose-analytics-export IAM application. An access key ID
           # is not a secret: the matching secret key stays in Secret Manager.
           JOB_ACCESS_KEY: ${{ vars.ANALYTICS_EXPORT_ACCESS_KEY }}
@@ -98,6 +105,7 @@ jobs:
           NAME=ose-analytics-export
           SECRET_KEY_SECRET=ose-analytics-export-scw-secret-key
           COCKPIT_TOKEN_SECRET=ose-analytics-export-cockpit-token
+          EDGE_TOKEN_SECRET=ose-analytics-export-edge-cockpit-token
 
           # Keep this at 500 mCPU or more. At 70 mCPU, TLS handshakes and the Python aws CLI
           # are so slow that a run passes the 300 s job timeout before its uploads finish.
@@ -129,9 +137,21 @@ jobs:
           missing=""
           [ -n "$SECRET_KEY_ID" ] || missing="$missing $SECRET_KEY_SECRET"
           [ -n "$COCKPIT_TOKEN_ID" ] || missing="$missing $COCKPIT_TOKEN_SECRET"
+          EDGE_TOKEN_ID=""
+          if [ -n "$EDGE_LOKI_URL" ]; then
+            EDGE_TOKEN_ID="$(secret_id "$EDGE_TOKEN_SECRET")"
+            [ -n "$EDGE_TOKEN_ID" ] || missing="$missing $EDGE_TOKEN_SECRET"
+          fi
           if [ -n "$missing" ]; then
             echo "::error::Secret Manager in $REGION has no secret named:$missing. Create it as described in analytics/README.md, then run this workflow again."
             exit 1
+          fi
+
+          edge_env=()
+          edge_secret=()
+          if [ -n "$EDGE_LOKI_URL" ]; then
+            edge_env=(environment-variables.EDGE_LOKI_URL="$EDGE_LOKI_URL")
+            edge_secret=(secrets.2.secret-manager-id="$EDGE_TOKEN_ID" secrets.2.secret-manager-version=latest secrets.2.env-var-name=EDGE_COCKPIT_TOKEN)
           fi
 
           echo "Creating job definition $NAME"
@@ -143,12 +163,14 @@ jobs:
             environment-variables.ANALYTICS_BUCKET="$ANALYTICS_BUCKET" \
             environment-variables.SCW_REGION="$REGION" \
             environment-variables.SCW_ACCESS_KEY="$JOB_ACCESS_KEY" \
+            "${edge_env[@]}" \
             | jq -r '.id')"
 
           echo "Attaching the Secret Manager references to job definition $ID"
           if ! scw jobs secret create job-definition-id="$ID" region="$REGION" \
             secrets.0.secret-manager-id="$SECRET_KEY_ID" secrets.0.secret-manager-version=latest secrets.0.env-var-name=SCW_SECRET_KEY \
-            secrets.1.secret-manager-id="$COCKPIT_TOKEN_ID" secrets.1.secret-manager-version=latest secrets.1.env-var-name=COCKPIT_TOKEN; then
+            secrets.1.secret-manager-id="$COCKPIT_TOKEN_ID" secrets.1.secret-manager-version=latest secrets.1.env-var-name=COCKPIT_TOKEN \
+            "${edge_secret[@]}"; then
             echo "::error::Job definition $ID exists but has no secret references. Later runs only update the image, so attach them by hand with the scw jobs secret create command in analytics/README.md."
             exit 1
           fi

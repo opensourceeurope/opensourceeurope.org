@@ -1,11 +1,11 @@
-# Minimal image for the analytics export Serverless Job.
-# Ships only the export script + its CLI deps (curl, jq, aws CLI as an S3 client).
+# Minimal image for the analytics Serverless Job: the chat export and the page-view counts.
+# Ships only the scripts + their CLI deps (curl, jq, aws CLI as an S3 client).
 FROM alpine:3.21
 
 RUN apk add --no-cache bash curl jq aws-cli ca-certificates
 
 WORKDIR /app
-COPY export.sh /app/export.sh
-RUN chmod +x /app/export.sh
+COPY run.sh export.sh pageviews.sh pageviews.jq /app/
+RUN chmod +x /app/run.sh /app/export.sh /app/pageviews.sh
 
-ENTRYPOINT ["/app/export.sh"]
+ENTRYPOINT ["/app/run.sh"]
