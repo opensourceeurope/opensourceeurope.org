@@ -4,7 +4,7 @@ Instructions for coding agents working on opensourceeurope.org. Humans can read 
 
 ## Stack
 
-Astro (static output, TypeScript strict), content in `src/content/`, a Scaleway Serverless Function for the contact form under `functions/`, hosting on Scaleway Object Storage. The repository also holds the OSE knowledge base: an OpenCrane index in `.opencrane/` served as an MCP server (`ose-knowledge-mcp` on PyPI), a Claude plugin in `plugins/ose-knowledge/`, the agent persona in `agent/`, a chat function in `functions/chat/` (its own `package.json`, Node 22) and the chat UI on the site (`/ask/` and the Ask panel). Target Node 22. This file and `docs/` are the authority for how the site and the knowledge base are built.
+Astro (static output, TypeScript strict), content in `src/content/`, a Scaleway Serverless Function for the contact form under `functions/`, hosting on Scaleway Object Storage. The repository also holds the OSE knowledge base: an OpenCrane index in `.opencrane/` served as an MCP server (`ose-knowledge-mcp` on PyPI), a Claude plugin in `plugins/ose-knowledge/`, the agent persona in `agent/`, a chat function in `functions/chat/` (its own `package.json`, Node 22) and the chat UI on the site (`/ask/` and the Ask panel). Target Node 22. Every workflow reads the exact version from `.node-version`, because `node-version: 22` takes whatever the runner has cached, and some runner images cache a version older than Astro accepts. This file and `docs/` are the authority for how the site and the knowledge base are built.
 
 ## Commands
 
