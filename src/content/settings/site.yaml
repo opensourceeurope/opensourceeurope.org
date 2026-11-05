@@ -31,7 +31,11 @@ chat:
   sharing_on: Your questions are shared to help OSE improve the docs.
   sharing_off: Your questions are not shared.
   sharing_settings: Change this in Privacy settings
-  small_model_note_short: A public demo running a small model. Answers can be incomplete, so check the sources.
+  local_note: Run the assistant on your own machine or in your own AI tool, and OSE never sees your questions.
+  local_link:
+    label: Set it up
+    href: /ask/#tools
+  demo_note: This chat is a public demo. Answers can be incomplete, so check the sources.
   memory_note: The conversation ends when you open another page.
   sources_label: Sources
   you_label: You
@@ -50,7 +54,7 @@ chat:
   error_unavailable: The assistant is not available right now. Try again later.
   error_timeout: The answer took too long. Try again in a moment.
   no_js: The chat needs JavaScript. Turn it on in your browser to ask a question.
-  open_label: Ask
+  open_label: Ask AI
   close_label: Close the chat
   resize_label: Resize the chat panel
   how_it_works:
@@ -75,6 +79,9 @@ nav:
     href: /how-to-join/
   - label: Contact
     href: /contact/
+  - label: Ask AI
+    href: /ask/
+    icon: ai
 
 footer:
   background: ../../assets/theme/webp/bg-footer.webp

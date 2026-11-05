@@ -10,13 +10,13 @@ whatever LLM the consumer brings. The chat on opensourceeurope.org is just one s
 |---|---|---|
 | **OpenCrane MCP server** | `.opencrane/` | The RAG. Indexes the OSE docs into Milvus Lite and exposes the `search_docs` tool over MCP. Shipped two ways: a public Scaleway container, **and** the `ose-knowledge-mcp` PyPI package (runs locally via `uvx`). |
 | **Claude plugin** | `plugins/ose-knowledge/` | Registers the MCP + an `ose-researcher` agent for Claude Code. |
-| **Chat** *(optional)* | `/ask/` and the Ask panel on the site (`src/pages/`, `src/components/chat/`, `src/scripts/chat/`) + `functions/chat/` | The `/ask/` page and the slide-out panel are part of the static site (Scaleway Object Storage). They call a stateless function (Scaleway Serverless container) that runs the agent loop with EU-hosted inference (Mistral Small on Scaleway Generative APIs). **The only part that calls an LLM or holds a key.** |
+| **Chat** *(optional)* | `/ask/` and the Ask panel on the site (`src/pages/`, `src/components/chat/`, `src/scripts/chat/`) + `functions/chat/` | The `/ask/` page and the slide-out panel are part of the static site (Scaleway Object Storage). They call a stateless function (Scaleway Serverless container) that runs the agent loop with EU-hosted inference (Mistral Medium on Scaleway Generative APIs). **The only part that calls an LLM or holds a key.** |
 
 Two ways to consume the knowledge base, below.
 
 ## Flow 1 — Public chat on the site
 
-We provide the model (Mistral Small on Scaleway, EU) and the orchestration, so a visitor needs **zero setup**.
+We provide the model (Mistral Medium on Scaleway, EU) and the orchestration, so a visitor needs **zero setup**.
 Everything in the request path is EU-hosted (sovereign).
 
 ```mermaid
@@ -24,7 +24,7 @@ sequenceDiagram
     actor User
     participant UI as /ask/ page and Ask panel<br/>opensourceeurope.org, Scaleway Object Storage
     participant Fn as Chat function<br/>Scaleway Serverless, holds inference key
-    participant LLM as Scaleway Generative APIs · EU<br/>mistral-small-3.2
+    participant LLM as Scaleway Generative APIs · EU<br/>mistral-medium-3.5
     participant MCP as OSE MCP<br/>Scaleway container
     participant DB as Milvus Lite index
 

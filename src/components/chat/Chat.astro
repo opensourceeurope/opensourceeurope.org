@@ -8,7 +8,6 @@ interface Props {
 }
 const { texts, variant } = Astro.props;
 const uid = `chat-${variant}`;
-const note = texts.small_model_note_short;
 ---
 
 <div
@@ -63,12 +62,16 @@ const note = texts.small_model_note_short;
       </div>
     </form>
     <div class="chat__meta">
+      <p class="chat__note chat__local">
+        {texts.local_note}{' '}
+        <a class="chat__meta-link" href={texts.local_link.href}>{texts.local_link.label}</a>
+      </p>
       <p class="chat__sharing" aria-live="polite">
         <span data-chat-sharing-text>{texts.sharing_off}</span>{' '}
         <button type="button" class="chat__meta-link" data-consent-open>{texts.sharing_settings}</button>
       </p>
       <p class="chat__note">
-        {`${note} ${texts.memory_note}`}
+        {`${texts.demo_note} ${texts.memory_note}`}
         {
           variant === 'panel' && (
             <>

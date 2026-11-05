@@ -96,7 +96,9 @@ const settings = defineCollection({
             sharing_on: z.string().min(1),
             sharing_off: z.string().min(1),
             sharing_settings: z.string().min(1),
-            small_model_note_short: z.string().min(1),
+            local_note: z.string().min(1),
+            local_link: link,
+            demo_note: z.string().min(1),
             memory_note: z.string().min(1),
             sources_label: z.string().min(1),
             you_label: z.string().min(1),
@@ -134,7 +136,7 @@ const settings = defineCollection({
             default_og_image: z.string().startsWith('/'),
           })
           .strict(),
-        nav: z.array(link),
+        nav: z.array(link.extend({ icon: z.literal('ai').optional() }).strict()),
         footer: z
           .object({
             background: image(),

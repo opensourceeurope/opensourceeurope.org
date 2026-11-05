@@ -3,7 +3,7 @@
 The public chat is two decoupled pieces, both EU-hosted:
 
 - **`functions/chat/`**: a stateless Node 22 / TypeScript serverless container. It holds the
-  inference API key, runs the agentic loop (`mistral-small-3.2-24b-instruct-2506`
+  inference API key, runs the agentic loop (`mistral-medium-3.5-128b`
   tool-calling on Scaleway Generative APIs -> the OSE MCP `search_docs` -> a final cited
   answer), and returns JSON `{ answer, citations }`. Entry point is `dist/server.js`,
   which listens on `$PORT`.
@@ -21,8 +21,8 @@ deploy) and reuses the same `scw` conventions. Everything runs on **Scaleway**.
 
 The entire request path runs on European infrastructure:
 
-- **Inference** — Scaleway Generative APIs (EU), `mistral-small-3.2-24b-instruct-2506`
-  (Mistral Small, Apache 2.0, built in France).
+- **Inference**: Scaleway Generative APIs (EU), `mistral-medium-3.5-128b`
+  (Mistral Medium 3.5, built in France).
 - **Function + site**: Scaleway (EU).
 - **MCP** — the OSE MCP server on Scaleway (EU), per [`deploy-scaleway.md`](deploy-scaleway.md).
 
@@ -48,8 +48,8 @@ There is **no custom rate-limiting** in the function itself. The spend controls 
 
 - **`MAX_TOOL_ROUNDS`** (default `4`) caps how many tool-call rounds a single request can
   run, bounding the inference calls per question. Lower it to tighten the ceiling.
-- **`MISTRAL_MODEL`** — keep the small model (`mistral-small-3.2-24b-instruct-2506`)
-  rather than switching to a larger, pricier one on Scaleway, to reduce per-call cost.
+- **`MISTRAL_MODEL`** sets the cost of each call. The hosted chat runs `mistral-medium-3.5-128b`.
+  A smaller model, such as `mistral-small-3.2-24b-instruct-2506`, costs less per call.
 - **Request bodies are capped at 128 KiB** and chat history is trimmed to the last 12
   turns, bounding per-request token volume.
 
@@ -64,7 +64,7 @@ gateway/CDN) rather than in this code.
 | Var | Required | Default | Notes |
 | --- | --- | --- | --- |
 | `MISTRAL_API_KEY` | yes | — | Inference API key (your Scaleway key for the hosted deployment); store as a **secret**, never as a plain env value. |
-| `MISTRAL_MODEL` | no | `mistral-small-latest` | Model id. Set to `mistral-small-3.2-24b-instruct-2506` for Scaleway. Spend control (see above). |
+| `MISTRAL_MODEL` | no | `mistral-small-latest` | Model id. The hosted chat sets `mistral-medium-3.5-128b` on Scaleway. Spend control (see above). |
 | `MISTRAL_BASE_URL` | no | — | OpenAI-compatible endpoint. `https://api.scaleway.ai` for Scaleway Generative APIs (EU); a local Ollama URL for offline; unset = Mistral's own API. The SDK appends `/v1/chat/completions`, so do **not** include `/v1`. |
 | `OSE_MCP_URL` | yes | — | Deployed MCP endpoint, e.g. `https://<endpoint>/mcp`. |
 | `ALLOWED_ORIGINS` | no | `*` | **Enforced server-side** (403 when Origin is missing/not listed). Set to the **site origins** in prod, e.g. `https://opensourceeurope.org`. Comma-separated for multiple. `*` disables the check — never leave it in prod. In the automated deploy this is built for you: the `CHAT_S3_BUCKET` bucket website URL plus the `CHAT_EXTRA_ORIGINS` repo variable (see below). `/ask/` and the panel get a 403 until `CHAT_EXTRA_ORIGINS` holds the site origins. |
@@ -115,7 +115,7 @@ scw function function deploy <function-id> zip-file=../ose-chat-function.zip
 # Set env vars and the secret (replace <function-id>).
 scw function function update <function-id> \
   environment-variables.MISTRAL_BASE_URL=https://api.scaleway.ai \
-  environment-variables.MISTRAL_MODEL=mistral-small-3.2-24b-instruct-2506 \
+  environment-variables.MISTRAL_MODEL=mistral-medium-3.5-128b \
   environment-variables.OSE_MCP_URL=https://<mcp-endpoint>/mcp \
   environment-variables.ALLOWED_ORIGINS=https://opensourceeurope.org \
   environment-variables.MAX_TOOL_ROUNDS=4 \
