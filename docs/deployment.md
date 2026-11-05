@@ -81,8 +81,9 @@ These are all the `secrets.*` and `vars.*` the workflows in `.github/workflows/`
 | `ANALYTICS_BUCKET` | variable | `deploy-analytics-job.yml` |
 | `OSE_ANALYTICS_LOKI_URL` | variable | `deploy-analytics-job.yml` |
 | `ANALYTICS_EXPORT_ACCESS_KEY` | variable | `deploy-analytics-job.yml` |
+| `OSE_EDGE_LOKI_URL` | variable, optional | `deploy-analytics-job.yml` |
 
-`ANALYTICS_EXPORT_ACCESS_KEY` holds the access key ID of the IAM application `ose-analytics-export`, not a secret key. `deploy-analytics-job.yml` reads it only when it creates the job definition. The job's secret key and Cockpit token stay in Scaleway Secret Manager. See [`analytics/README.md`](../analytics/README.md).
+`ANALYTICS_EXPORT_ACCESS_KEY` holds the access key ID of the IAM application `ose-analytics-export`, not a secret key. `deploy-analytics-job.yml` reads it only when it creates the job definition. `OSE_EDGE_LOKI_URL` holds the Loki URL of the `fr-par` Cockpit logs data source, which holds the Edge Services logs. Without it, a new job definition skips the page-view counts. The job's secret key and Cockpit tokens stay in Scaleway Secret Manager. See [`analytics/README.md`](../analytics/README.md).
 
 `CHAT_FUNCTION_URL` is used by `deploy-site.yml`, and `CHAT_S3_BUCKET` by `deploy-chat-function.yml`. `SITE_S3_BUCKET` and `CHAT_S3_BUCKET` hold the same bucket name, `opensourceeurope-site`. `GITHUB_TOKEN` is provided by GitHub and needs no setup.
 
@@ -309,8 +310,8 @@ The contact form needs no email records. It sends through Proton, which the doma
 
 ## Before launch
 
-- **Legal pages.** OSE legal should review the privacy policy (MN-048 in `docs/migration-notes.md`) and the terms.
-- **Page-view counts.** The privacy policy says that Scaleway Edge Services logs each page request to Scaleway Cockpit, which deletes the logs after seven days, and that a job keeps only page-view totals. Turn on Edge Services logs for the pipeline and deploy that job before launch, or change the policy.
+- **Legal pages.** OSE legal should review the privacy policy (MN-048 in `docs/migration-notes.md`) and the terms. The section "Visiting the website" names the country of the request as a logged field, because the Edge Services log holds it.
+- **Page-view counts.** Edge Services writes a log entry for each request to Scaleway Cockpit in `fr-par`. No setting turns the logs on. Cockpit deletes them after seven days. The analytics job counts page views per page and per day from these logs, and writes only the totals to the private bucket. Run the steps in "Set up the page-view counts" in [`analytics/README.md`](../analytics/README.md). After the first run, check that the `pageviews-` files reach the bucket and that they count the hosts the site is served from.
 - **Chat model.** Check that `MISTRAL_BASE_URL` is `https://api.scaleway.ai`. With it unset, questions go to Mistral's own API, and the privacy policy says they stay on Scaleway in the EU.
 - **Chat logs.** The privacy policy says that the chat logs to Scaleway Cockpit the question text, the number of calls to the AI model, whether the documentation answered the question and a version label of the instructions, with the time when the visitor has accepted analytics in the consent banner, that Cockpit keeps them for seven days, and that the export job copies them to a private bucket in the EU, where OSE deletes them 12 months after they were logged. The bucket `opensourceeurope-analytics` has the lifecycle rule `expire-chat-analytics-12-months`, which expires objects 365 days after they were written. Check that it is still there. The same export job serves both texts. Check that the job runs and that the bucket is private.
 - **Drift check.** Run `npm run drift` and review `docs/migration-notes.md`. The first compares the rebuilt pages with the live site. The second lists every difference that is on purpose. Any difference that is in neither needs a decision.

@@ -32,7 +32,7 @@ Send any question about your personal data to this email address.
 
 Like any website, this website receives your IP address and a description of your browser with every page request. Scaleway, the hosting provider, needs your IP address to send the page back to you.
 
-Scaleway Edge Services also writes a log entry for each page request. The entry holds your IP address, the address of the page, the time, the website you came from, and the description of your browser. Scaleway Cockpit stores these logs in the European Union and deletes them after seven days. Every few days, a job counts the page views for each page and each website that links here, and keeps only these totals. The totals hold no IP addresses and nothing else that identifies you. OSE uses them to see which pages people read. OSE does not use the logs to identify you or to build visitor profiles.
+Scaleway Edge Services also writes a log entry for each page request. The entry holds your IP address, the address of the page, the time and the country the request came from. It also holds technical details of the request, such as the status code and the encryption version. Scaleway Cockpit stores these logs in the European Union and deletes them after seven days. Every few days, a job counts the page views for each page and each day, and keeps only these totals. The totals hold no IP addresses and nothing else that identifies you. OSE uses them to see which pages people read. OSE does not use the logs to identify you or to build visitor profiles.
 
 The legal basis is OSE's legitimate interest in a working and secure website, and in knowing which pages people read, under Article 6(1)(f) of the General Data Protection Regulation (GDPR).
 
