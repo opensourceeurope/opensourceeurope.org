@@ -398,4 +398,75 @@ describe('mountChat', () => {
     expect(root.querySelector('.followups')).toBeNull();
     handle.destroy();
   });
+
+  describe('summary when the visitor leaves', () => {
+    const GRANTED = '{"v":1,"analytics":"granted"}';
+    const okResponse = async () => new Response(JSON.stringify({ answer: 'ok', citations: [] }));
+    const summaryCalls = () =>
+      (fetch as unknown as ReturnType<typeof vi.fn>).mock.calls
+        .map((c) => JSON.parse((c[1] as RequestInit).body as string))
+        .filter((b) => b.summary === true);
+    const hide = (): void => {
+      Object.defineProperty(document, 'visibilityState', { value: 'hidden', configurable: true });
+      document.dispatchEvent(new Event('visibilitychange'));
+    };
+    afterEach(() => {
+      Object.defineProperty(document, 'visibilityState', { value: 'visible', configurable: true });
+    });
+
+    it('sends the shared turns once, on summarize() or when the page is hidden', async () => {
+      localStorage.setItem('ose-consent', GRANTED);
+      const { submit, handle } = setup(okResponse);
+      submit();
+      await flush();
+      handle.summarize();
+      hide();
+      window.dispatchEvent(new Event('pagehide'));
+      expect(summaryCalls()).toEqual([
+        { summary: true, analyticsOptIn: true, messages: [{ role: 'user', content: 'question' }, { role: 'assistant', content: 'ok' }] },
+      ]);
+      // A later question is summarised on its own.
+      submit();
+      await flush();
+      hide();
+      expect(summaryCalls()).toHaveLength(2);
+      expect(summaryCalls()[1].messages).toHaveLength(2);
+      handle.destroy();
+    });
+
+    it('sends nothing without consent', async () => {
+      const { submit, handle } = setup(okResponse);
+      submit();
+      await flush();
+      handle.summarize();
+      hide();
+      expect(summaryCalls()).toEqual([]);
+      handle.destroy();
+    });
+
+    it('never sends turns asked before consent was granted', async () => {
+      const { submit, handle } = setup(okResponse);
+      submit();
+      await flush();
+      localStorage.setItem('ose-consent', GRANTED);
+      document.dispatchEvent(new Event(CONSENT_EVENT));
+      handle.summarize();
+      expect(summaryCalls()).toEqual([]);
+      handle.destroy();
+    });
+
+    it('drops waiting turns when consent is withdrawn', async () => {
+      localStorage.setItem('ose-consent', GRANTED);
+      const { submit, handle } = setup(okResponse);
+      submit();
+      await flush();
+      localStorage.setItem('ose-consent', '{"v":1,"analytics":"denied"}');
+      document.dispatchEvent(new Event(CONSENT_EVENT));
+      localStorage.setItem('ose-consent', GRANTED);
+      document.dispatchEvent(new Event(CONSENT_EVENT));
+      handle.summarize();
+      expect(summaryCalls()).toEqual([]);
+      handle.destroy();
+    });
+  });
 });

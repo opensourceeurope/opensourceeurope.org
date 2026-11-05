@@ -231,3 +231,45 @@ export async function sendChat(
   if (!res.ok) throw new ChatError(await errorCodeOf(res));
   return readJsonReply(res);
 }
+
+// A keepalive request may carry at most 64 KiB, counted for all keepalive
+// requests the page has open. The summary stays well below that.
+export const MAX_SUMMARY_BYTES = 48 * 1024;
+const SUMMARY_CAPS = { user: 2000, assistant: 4000 };
+
+/** The turns to send for a summary: each capped, oldest dropped until the body fits. */
+export function summaryBody(messages: ChatMessage[]): string | null {
+  let turns = messages.map((m) => ({ role: m.role, content: m.content.slice(0, SUMMARY_CAPS[m.role]) }));
+  const encode = (t: ChatMessage[]) => JSON.stringify({ summary: true, messages: t, analyticsOptIn: true });
+  const bytes = (s: string) => new TextEncoder().encode(s).length;
+  let body = encode(turns);
+  while (bytes(body) > MAX_SUMMARY_BYTES && turns.length > 1) {
+    turns = turns.slice(1);
+    body = encode(turns);
+  }
+  if (!turns.some((t) => t.role === 'user') || bytes(body) > MAX_SUMMARY_BYTES) return null;
+  return body;
+}
+
+/**
+ * Asks the chat function to log a summary of these turns. Used only with
+ * analytics consent, when the visitor closes the panel or leaves the page, so
+ * the request must outlive the page: fetch with keepalive, or sendBeacon
+ * where that fails. The body goes as text/plain, which needs no preflight
+ * request. Nothing is read back and no error reaches the visitor.
+ */
+export function sendSummary(endpoint: string, messages: ChatMessage[], fetchFn: typeof fetch = fetch): void {
+  if (!endpoint) return;
+  const body = summaryBody(messages);
+  if (!body) return;
+  const headers = { 'content-type': 'text/plain;charset=UTF-8' };
+  try {
+    void fetchFn(endpoint, { method: 'POST', headers, body, keepalive: true, credentials: 'omit' }).catch(() => undefined);
+  } catch {
+    try {
+      navigator.sendBeacon?.(endpoint, new Blob([body], { type: headers['content-type'] }));
+    } catch {
+      // Nothing to do: the summary is lost.
+    }
+  }
+}

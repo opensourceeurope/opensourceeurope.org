@@ -148,6 +148,55 @@ test.describe('ask panel', () => {
     expect(await page.evaluate(() => Object.keys(localStorage))).toEqual(['ose-consent']);
   });
 
+  test('closing the panel sends one summary of the shared turns, as text/plain', async ({ page }) => {
+    await page.addInitScript(() => localStorage.setItem('ose-consent', JSON.stringify({ v: 1, analytics: 'granted' })));
+    const posts: Array<{ body: Record<string, unknown>; type: string }> = [];
+    await mockChat(page, { answer: 'Mocked answer text.', citations: [] });
+    page.on('request', (r) => {
+      if (r.url() === CHAT_URL && r.method() === 'POST') posts.push({ body: r.postDataJSON(), type: r.headers()['content-type'] ?? '' });
+    });
+    await page.goto('/about/');
+    await button(page).click();
+    await page.locator('dialog [data-chat-input]').fill('How do I join?');
+    await page.locator('dialog [data-chat-send]').click();
+    await expect(dialog(page).getByText('Mocked answer text.')).toBeVisible();
+    await page.keyboard.press('Escape');
+    await expect(dialog(page)).toBeHidden();
+    await expect.poll(() => posts.length).toBe(2);
+    expect(posts[1].type).toMatch(/^text\/plain/);
+    expect(posts[1].body).toEqual({
+      summary: true,
+      analyticsOptIn: true,
+      messages: [
+        { role: 'user', content: 'How do I join?' },
+        { role: 'assistant', content: 'Mocked answer text.' },
+      ],
+    });
+    // Opened and closed again with nothing new: no second summary.
+    await button(page).click();
+    await page.keyboard.press('Escape');
+    await expect(dialog(page)).toBeHidden();
+    await page.waitForTimeout(300);
+    expect(posts).toHaveLength(2);
+  });
+
+  test('closing the panel sends no summary without consent', async ({ page }) => {
+    const posts: unknown[] = [];
+    await mockChat(page, { answer: 'Mocked answer text.', citations: [] });
+    page.on('request', (r) => {
+      if (r.url() === CHAT_URL && r.method() === 'POST') posts.push(r.postDataJSON());
+    });
+    await page.goto('/about/');
+    await button(page).click();
+    await page.locator('dialog [data-chat-input]').fill('How do I join?');
+    await page.locator('dialog [data-chat-send]').click();
+    await expect(dialog(page).getByText('Mocked answer text.')).toBeVisible();
+    await page.keyboard.press('Escape');
+    await expect(dialog(page)).toBeHidden();
+    await page.waitForTimeout(300);
+    expect(posts).toHaveLength(1);
+  });
+
   test('the button stays visible and links to /ask/ when the panel code cannot load', async ({ page }) => {
     await page.route(/\/panel\.[^/]*\.js$/, (route) => route.abort());
     await page.goto('/about/');

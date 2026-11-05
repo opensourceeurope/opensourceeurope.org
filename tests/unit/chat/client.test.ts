@@ -193,3 +193,40 @@ describe('follow-ups in the reply', () => {
     expect((await sendChat('x', messages, false, okFetch({ answer: 'a', citations: [] }))).followups).toEqual([]);
   });
 });
+
+describe('sendSummary', () => {
+  const turns: ChatMessage[] = [
+    { role: 'user', content: 'How do I join?' },
+    { role: 'assistant', content: 'Apply through the form.' },
+  ];
+
+  it('posts the turns as text/plain with keepalive and no credentials', async () => {
+    const { sendSummary } = await import('../../../src/scripts/chat/client');
+    const f = vi.fn(async () => new Response(null, { status: 204 })) as unknown as typeof fetch;
+    sendSummary('https://f.example/chat', turns, f);
+    const [url, init] = (f as unknown as ReturnType<typeof vi.fn>).mock.calls[0] as [string, RequestInit];
+    expect(url).toBe('https://f.example/chat');
+    expect(init).toMatchObject({ method: 'POST', keepalive: true, credentials: 'omit' });
+    expect((init.headers as Record<string, string>)['content-type']).toMatch(/^text\/plain/);
+    expect(JSON.parse(init.body as string)).toEqual({ summary: true, messages: turns, analyticsOptIn: true });
+  });
+
+  it('drops the oldest turns until the body fits a keepalive request', async () => {
+    const { summaryBody, MAX_SUMMARY_BYTES } = await import('../../../src/scripts/chat/client');
+    const long: ChatMessage[] = Array.from({ length: 30 }, (_, i) => ({
+      role: i % 2 ? 'assistant' : 'user',
+      content: 'ż'.repeat(5000),
+    }));
+    const body = summaryBody(long)!;
+    expect(new TextEncoder().encode(body).length).toBeLessThanOrEqual(MAX_SUMMARY_BYTES);
+    expect(JSON.parse(body).messages.length).toBeLessThan(30);
+  });
+
+  it('sends nothing without a question or an endpoint', async () => {
+    const { sendSummary } = await import('../../../src/scripts/chat/client');
+    const f = vi.fn() as unknown as typeof fetch;
+    sendSummary('https://f.example/chat', [{ role: 'assistant', content: 'hi' }], f);
+    sendSummary('', turns, f);
+    expect(f).not.toHaveBeenCalled();
+  });
+});

@@ -8,9 +8,16 @@
 # transiting US compute. The container image is built in CI (carries no data);
 # only this script, running on Scaleway, ever touches the logs.
 #
-# Source of the data: functions/chat/src/handler.ts logs one line per opted-in answer:
-#   ANALYTICS {"q":"<question, first 500 chars>","rounds":<n>,"unanswered":<bool>,"prompt":"<8 hex>"}
-# We pull those lines from Cockpit, normalise them to {timestamp, q, rounds, unanswered, prompt},
+# Source of the data: the chat function logs two kinds of ANALYTICS line, only
+# for visitors who accepted analytics:
+#   one per answer (functions/chat/src/handler.ts), without question text:
+#     ANALYTICS {"type":"answer","rounds":<n>,"unanswered":<bool>,"prompt":"<8 hex>"}
+#   one per visit to the chat, when the visitor closes the Ask panel or leaves
+#   the page (functions/chat/src/summary.ts), with personal data removed:
+#     ANALYTICS {"type":"summary","asked":"...","answer":"...","questions":<n>,"prompt":"<8 hex>","summaryPrompt":"<8 hex>"}
+# Lines logged before the summaries existed have no type and carry the question
+# as "q"; they are exported with type "question".
+# We pull those lines from Cockpit, normalise them to one record shape,
 # and write JSONL (source of truth) + CSV (human review) to the bucket.
 #
 # Required env (set on the job definition, see analytics/README.md):
@@ -68,9 +75,9 @@ raw="$(curl -fsSG "${LOKI_URL}/loki/api/v1/query_range" \
   --data-urlencode "limit=5000" \
   --data-urlencode "direction=FORWARD")"
 
-# Parse Loki result -> {timestamp, q, rounds, unanswered, prompt}. Strip everything up to "ANALYTICS ",
-# Lines logged before a field existed get null for it (an empty CSV cell).
-# then parse the JSON payload (tolerant of malformed lines via try/catch).
+# Parse Loki result -> {timestamp, type, asked, answer, questions, q, rounds, unanswered, prompt, summaryPrompt}.
+# Strip everything up to "ANALYTICS ", then parse the JSON payload (tolerant of
+# malformed lines via try/catch). A field a line does not have is null (an empty CSV cell).
 # `sort -u` removes exact-duplicate records introduced by the overlapping window.
 echo "$raw" | jq -c '
   .data.result[]? | .values[]?
@@ -79,10 +86,15 @@ echo "$raw" | jq -c '
   | (try (.line | sub("^.*?ANALYTICS "; "") | fromjson) catch null) as $p
   | select($p != null)
   | { timestamp: ((.ts | tonumber) / 1000000000 | todate),
+      type: ($p.type // (if $p.q != null then "question" else null end)),
+      asked: $p.asked,
+      answer: $p.answer,
+      questions: $p.questions,
       q: $p.q,
       rounds: $p.rounds,
       unanswered: $p.unanswered,
-      prompt: $p.prompt }
+      prompt: $p.prompt,
+      summaryPrompt: $p.summaryPrompt }
 ' | sort -u > "$JSONL_FILE"
 
 count="$(wc -l < "$JSONL_FILE" | tr -d ' ')"
@@ -108,8 +120,8 @@ fi
 
 # CSV for quick human review. @csv handles quoting commas/quotes inside questions.
 {
-  printf 'timestamp,rounds,question,unanswered,prompt\n'
-  jq -r '[.timestamp, .rounds, .q, .unanswered, .prompt] | @csv' "$JSONL_FILE"
+  printf 'timestamp,type,asked,answer,questions,question,rounds,unanswered,prompt,summary_prompt\n'
+  jq -r '[.timestamp, .type, .asked, .answer, .questions, .q, .rounds, .unanswered, .prompt, .summaryPrompt] | @csv' "$JSONL_FILE"
 } > "$CSV_FILE"
 
 # Upload to the private bucket. aws CLI is an S3 client here, pointed at Scaleway

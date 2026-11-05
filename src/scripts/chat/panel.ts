@@ -126,11 +126,11 @@ export function initAskPanel(): void {
         const found = template.content.querySelector<HTMLDialogElement>('dialog');
         const chatRoot = template.content.querySelector<HTMLElement>('[data-chat]');
         if (!found || !chatRoot) throw new Error('fragment without dialog');
-        controller.mountChat(chatRoot, {
+        const chat = controller.mountChat(chatRoot, {
           endpoint: chatRoot.dataset.chatEndpoint ?? '',
           texts: JSON.parse(chatRoot.dataset.chatTexts ?? '{}') as ChatTexts,
         });
-        wire(found);
+        wire(found, chat.summarize);
         // Insert only now, so a failed attempt leaves no markup behind.
         root.append(found);
         dialog = found;
@@ -146,7 +146,8 @@ export function initAskPanel(): void {
   // Where the focus was when the shortcut opened the panel. A click on the button leaves it null.
   let returnTo: HTMLElement | null = null;
   let reportWidth = (): void => undefined;
-  const wire = (d: HTMLDialogElement): void => {
+  // `summarize` sends the summary of what was asked (only with analytics consent).
+  const wire = (d: HTMLDialogElement, summarize: () => void): void => {
     reportWidth = wireResize(d);
     d.querySelector('[data-ask-close]')?.addEventListener('click', () => d.close());
     // Close on a click outside the panel's box only. A click on its padding also targets the dialog.
@@ -176,6 +177,9 @@ export function initAskPanel(): void {
       }
     });
     d.addEventListener('close', () => {
+      // Closing the panel ends a visit to the chat. A visitor on the way to the
+      // privacy settings may withdraw consent there: no summary yet.
+      if (!toBanner) summarize();
       if (!toBanner) (returnTo?.isConnected ? returnTo : button).focus();
       returnTo = null;
       toBanner = false;

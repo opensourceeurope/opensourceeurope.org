@@ -30,8 +30,15 @@
  * token: the status element says what happens and "Answer ready" at the end.
  * All text comes from opts.texts. Nothing is persisted. Whether a question is
  * shared follows the consent banner (readConsent), read on every send.
+ *
+ * Summary: with analytics consent, the turns asked while it was granted are
+ * kept until the visitor leaves. summarize() sends them once to the chat
+ * function, which logs a summary without personal data. The panel calls it
+ * when it closes; the controller calls it when the page is hidden or left.
+ * Turns asked without consent are never sent, and a withdrawn consent drops
+ * the turns that wait.
  */
-import { streamChat, ChatError, type ChatStatus } from './client';
+import { streamChat, sendSummary, ChatError, type ChatStatus } from './client';
 import { renderMarkdown } from './markdown';
 import { CONSENT_EVENT, readConsent } from '../consent';
 import type { ChatMessage, ChatTexts, Citation } from './types';
@@ -54,7 +61,7 @@ function need<T extends Element>(root: HTMLElement, sel: string): T {
 export function mountChat(
   root: HTMLElement,
   opts: { endpoint: string; texts: ChatTexts },
-): { destroy(): void } {
+): { destroy(): void; summarize(): void } {
   const { endpoint, texts } = opts;
   const transcript = need<HTMLElement>(root, '[data-chat-transcript]');
   const form = need<HTMLFormElement>(root, '[data-chat-form]');
@@ -76,6 +83,8 @@ export function mountChat(
   let abortController: AbortController | undefined;
 
   const conversation: ChatMessage[] = [];
+  // Turns asked with analytics consent that are not summarised yet.
+  let unsummarised: ChatMessage[] = [];
   let inFlight = false;
   let timer: ReturnType<typeof setTimeout> | undefined;
   const cleanups: Array<() => void> = [];
@@ -89,9 +98,21 @@ export function mountChat(
   const sharing = (): boolean => readConsent() === 'granted';
   const showSharing = (): void => {
     if (sharingText) sharingText.textContent = sharing() ? texts.sharing_on : texts.sharing_off;
+    if (!sharing()) unsummarised = [];
   };
   showSharing();
   listen<Event>(document, CONSENT_EVENT, showSharing);
+
+  const summarize = (): void => {
+    const turns = unsummarised;
+    unsummarised = [];
+    if (!turns.length || !sharing()) return;
+    sendSummary(endpoint, turns);
+  };
+  listen<Event>(document, 'visibilitychange', () => {
+    if (document.visibilityState === 'hidden') summarize();
+  });
+  listen<Event>(window, 'pagehide', summarize);
 
   const scrollToEnd = (): void => {
     transcript.scrollTop = transcript.scrollHeight;
@@ -269,6 +290,8 @@ export function mountChat(
     let partial = '';
     const controller = new AbortController();
     abortController = controller;
+    // Whether this question went out with analytics consent.
+    let sharedTurn = false;
 
     const dropStreamed = (): void => {
       streaming?.wrap.remove();
@@ -277,7 +300,8 @@ export function mountChat(
     };
 
     try {
-      const reply = await streamChat(endpoint, conversation.slice(), sharing(), {
+      sharedTurn = sharing();
+      const reply = await streamChat(endpoint, conversation.slice(), sharedTurn, {
         signal: controller.signal,
         onStream: () => loader?.keep(),
         onStatus: (status) => {
@@ -319,6 +343,7 @@ export function mountChat(
       renderCitations(wrap, reply.citations);
       renderFollowups(wrap, reply.followups);
       conversation.push({ role: 'assistant', content: reply.answer });
+      if (sharedTurn) unsummarised.push({ role: 'user', content: question }, { role: 'assistant', content: reply.answer });
       announce(texts.status_ready);
     } catch (err) {
       loader?.done();
@@ -329,6 +354,7 @@ export function mountChat(
           streaming.wrap.removeAttribute('aria-hidden');
           streaming.bubble.setAttribute('aria-busy', 'false');
           conversation.push({ role: 'assistant', content: partial });
+          if (sharedTurn) unsummarised.push({ role: 'user', content: question }, { role: 'assistant', content: partial });
         } else {
           wrap = el('div', 'msg msg--assistant');
           wrap.appendChild(el('span', 'msg__role', texts.assistant_label));
@@ -381,6 +407,7 @@ export function mountChat(
   });
 
   return {
+    summarize,
     destroy() {
       if (timer) clearTimeout(timer);
       abortController?.abort();

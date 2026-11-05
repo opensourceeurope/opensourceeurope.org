@@ -417,14 +417,15 @@ async function runChat(body: ChatRequest, env: Env, deps: HandlerDeps, hooks: Ch
     question,
   });
 
-  // Opt-in, anonymous: the question (first 500 characters), the number of model
-  // calls ("rounds"), whether the docs answered it and the prompt version. No
-  // IP, no earlier messages. Lands in Scaleway Cockpit (EU), which adds the time.
+  // Opt-in, anonymous: the number of model calls ("rounds"), whether the docs
+  // answered and the prompt version. No question text: what was asked is
+  // logged once as a summary without personal data (summary.ts). No IP. Lands
+  // in Scaleway Cockpit (EU), which adds the time.
   if (body.analyticsOptIn) {
     // During a search outage the docs were never consulted, so the question is
     // not logged as a documentation gap.
     const unanswered = out.unanswered && !result.searchFailed;
-    const line = { q: question.slice(0, 500), rounds: result.rounds, unanswered, prompt: PROMPT_VERSION };
+    const line = { type: "answer", rounds: result.rounds, unanswered, prompt: PROMPT_VERSION };
     console.log(`ANALYTICS ${JSON.stringify(line)}`);
   }
 

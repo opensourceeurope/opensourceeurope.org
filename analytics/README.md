@@ -2,8 +2,10 @@
 
 The analytics job `ose-analytics-export` runs two steps: the chat analytics export, then the page-view counts. `run.sh` runs both. When one step fails, the other still runs, and the job run fails. The page-view counts are described in [Page-view counts](#page-view-counts).
 
-Chat questions from visitors who accepted analytics in the site's consent
-banner (the default is no sharing) are logged by the chat function as `ANALYTICS {...}` lines and land in
+For visitors who accepted analytics in the site's consent banner (the default
+is no sharing), the chat function logs `ANALYTICS {...}` lines: one per answer,
+without question text, and one summary per visit to the chat, without personal
+data. They land in
 **Scaleway Cockpit** (EU, region `pl-waw`). Cockpit keeps logs for **7 days** by
 default, so this job archives them to a **private bucket** before they expire.
 
@@ -15,7 +17,7 @@ Scaleway Cron (every 3 days, EU)
         ▼
 Scaleway Serverless Job  ─── runs inside Scaleway EU, never touches US infra ───┐
    1. query Cockpit Loki: last 6 days, lines matching  |= "ANALYTICS"           │
-   2. normalise → {timestamp, q, rounds, unanswered, prompt}, dedupe dups      │
+   2. normalise to one record shape (see "Files produced"), dedupe dups       │
    3. write  analytics-YYYY-MM-DD.jsonl  +  analytics-YYYY-MM-DD.csv            │
    4. upload both to the private bucket                                         │
    5. count page views in the fr-par Cockpit, upload pageviews-YYYY-MM-DD.*     │
@@ -24,7 +26,7 @@ Scaleway Serverless Job  ─── runs inside Scaleway EU, never touches US inf
 
 The container **image** is built in GitHub Actions (US runners) — but it carries
 no data, only the script. The **log fetch** happens at runtime on Scaleway in the
-EU, so user questions never transit US compute. That is the whole reason
+EU, so the summaries never transit US compute. That is the whole reason
 this is a Scaleway job and not a GitHub Actions cron.
 
 **Cadence vs retention:** runs every 3 days but queries the last **6 days** (2×),
@@ -36,10 +38,28 @@ file, and see "Combine + dedupe" below for across files.
 
 ## Files produced
 
-- `analytics-YYYY-MM-DD.jsonl` — source of truth, one record per line:
-  `{"timestamp":"2026-06-26T08:08:20Z","q":"how do I claim an eSIM?","rounds":3,"unanswered":false,"prompt":"1a2b3c4d"}`
-- `analytics-YYYY-MM-DD.csv` — same data, columns `timestamp,rounds,question,unanswered,prompt`,
+- `analytics-YYYY-MM-DD.jsonl`: the source of truth, one record per line, with
+  every field. A field the line does not have is `null`:
+  `{"timestamp":"2026-06-26T08:08:20Z","type":"answer","asked":null,"answer":null,"questions":null,"q":null,"rounds":3,"unanswered":false,"prompt":"1a2b3c4d","summaryPrompt":null}`
+  `{"timestamp":"2026-06-26T08:09:02Z","type":"summary","asked":"How a project joins OSE.","answer":"Apply through the form on the How to join page.","questions":2,"q":null,"rounds":null,"unanswered":null,"prompt":"1a2b3c4d","summaryPrompt":"5e6f7a8b"}`
+- `analytics-YYYY-MM-DD.csv`: the same data, in columns
+  `timestamp,type,asked,answer,questions,question,rounds,unanswered,prompt,summary_prompt`,
   for eyeballing in a spreadsheet.
+
+`type` says which line a record comes from:
+
+- `answer`: one per answer. It has `rounds`, `unanswered` and `prompt`, and no text.
+- `summary`: one per visit to the chat, logged when the visitor closes the Ask
+  panel, hides the tab or leaves the page. `asked` and `answer` are the model's
+  summary of what was asked and what the answer said, in English, at most 400
+  characters each, after `functions/chat/src/redact.ts` removed contact details,
+  links, account numbers and credentials. `questions` is the number of questions
+  it covers. `summaryPrompt` is the version label of the summary instructions.
+  A visit the browser never reports, such as a tab a phone closes in the
+  background, has no summary.
+- `question`: a line logged before the summaries existed. It carries the question
+  text, first 500 characters, as `q`. These lines leave Cockpit 7 days after the
+  release that added the summaries.
 
 `unanswered` is `true` when the documentation did not answer the question (the
 model ended its answer with the `[[unanswered]]` marker, which the function
@@ -57,9 +77,10 @@ cell in the CSV.
 final one. With the automatic first search (`CHAT_SEARCH_FIRST`, on by default)
 it is at least 2: one call that leads to a search, and the answer.
 
-`q` is the user's question (first 500 chars). No IP, no identity — anonymous, as
-promised in the UI. (A user could still type personal data *into* a question; the
-data is not scrubbed.)
+No line holds an IP or an identity. The summary filter is automated: fixed rules
+and the model's instructions can miss a name or a detail typed in free text, so
+the policy still asks visitors not to type personal data. Delete a record that
+holds personal data when you find one.
 
 ## Page-view counts
 
@@ -241,23 +262,23 @@ aws s3 sync "$B/" ./analytics-data/ --endpoint-url "$EP"
 
 ### Combine + dedupe across files
 
-Because the query windows overlap, the same question can appear in two daily
-files. Merge and de-duplicate by `(timestamp, q)`:
+Because the query windows overlap, the same record can appear in two daily
+files. Merge and de-duplicate by the whole record:
 
 ```bash
-cat analytics-data/*.jsonl | jq -s 'unique_by(.timestamp, .q)' > all-analytics.json
+cat analytics-data/*.jsonl | jq -s 'unique' > all-analytics.json
 
-# Most common questions (quick signal for doc gaps)
-jq -r '.q' all-analytics.json | sort | uniq -c | sort -rn | head -20
+# What visitors asked, newest first
+jq -r '.[] | select(.type == "summary") | "\(.timestamp)  \(.asked)"' all-analytics.json | sort -r
 
-# Share of unanswered questions per prompt version
-jq -r 'group_by(.prompt)[] | "\(.[0].prompt // "none") \(map(select(.unanswered == true)) | length)/\(length)"' all-analytics.json
+# Visits where the answer says the docs do not cover it (the clearest doc gaps)
+jq -r '.[] | select(.type == "summary" and (.answer | test("not cover|does not|doesn.t|no information"; "i"))) | .asked' all-analytics.json
 
-# Questions the docs could not answer (the clearest doc gaps)
-jq -r 'select(.unanswered == true) | .q' all-analytics.json | sort | uniq -c | sort -rn
+# Share of unanswered answers per prompt version
+jq -r '[.[] | select(.type == "answer" or .type == "question")] | group_by(.prompt)[] | "\(.[0].prompt // "none") \(map(select(.unanswered == true)) | length)/\(length)"' all-analytics.json
 
-# Questions where the agent needed the most model calls (hardest to answer)
-jq -r 'select(.rounds >= 4) | .q' all-analytics.json | sort -u
+# Answers that needed the most model calls
+jq -r '[.[] | select(.rounds >= 4)] | length' all-analytics.json
 ```
 
 > **Note:** downloading to your machine pulls the data out of EU infrastructure to
