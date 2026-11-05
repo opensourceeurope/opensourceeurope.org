@@ -151,7 +151,7 @@ const settings = defineCollection({
             credit: z.object({ prefix: z.string(), label: z.string(), href: z.string() }).strict().optional(),
           })
           .strict(),
-        // Wording of the consent banner. `analytics` below decides whether accepting loads anything.
+        // Wording of the consent banner. Accepting analytics loads no script. It only lets the chat share questions.
         consent: z
           .object({
             title: z.string().min(1),
@@ -168,7 +168,6 @@ const settings = defineCollection({
           })
           .strict(),
         apply_url: z.url(),
-        analytics: z.object({ provider: z.string(), script: z.string() }).strict().nullable(),
       })
       .strict(),
 });

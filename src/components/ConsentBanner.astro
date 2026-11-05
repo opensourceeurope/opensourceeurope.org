@@ -13,13 +13,12 @@ interface Props {
     necessary: { name: string; description: string };
     analytics: { name: string; description: string };
   };
-  analytics: { provider: string; script: string } | null;
 }
-const { consent, analytics } = Astro.props;
+const { consent } = Astro.props;
 ---
 
 <!-- First in the body, so it is first in the tab order when shown. Hidden until the script finds no stored choice, so without JavaScript it never covers content. -->
-<section class="consent" role="region" aria-labelledby="consent-title" data-consent data-analytics-src={analytics?.script} hidden>
+<section class="consent" role="region" aria-labelledby="consent-title" data-consent hidden>
   <div class="consent__head">
     <h2 id="consent-title" class="consent__title">{consent.title}</h2>
     <button type="button" class="consent__close" aria-label={consent.close_label} data-consent-close>

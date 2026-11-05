@@ -128,4 +128,3 @@ consent:
     description: If you accept, the questions you ask the chat are shared with OSE to improve the docs. OSE gets the question text, the number of calls to the AI model, whether the docs answered it, a version label of the assistant's instructions and the time. Nothing else is measured in your browser. If you reject, nothing is shared.
 
 apply_url: https://opencollective.com/europe/apply
-analytics: null

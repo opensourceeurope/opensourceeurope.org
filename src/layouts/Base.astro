@@ -27,7 +27,7 @@ const settings = await loadSettings();
     <Head seo={seo} />
   </head>
   <body class={bodyClass}>
-    <ConsentBanner consent={settings.consent} analytics={settings.analytics} />
+    <ConsentBanner consent={settings.consent} />
     <a class="skip-link" href="#main">{settings.ui.skip_link_label}</a>
     <Header settings={settings} currentPath={Astro.url.pathname} />
     <main id="main">
