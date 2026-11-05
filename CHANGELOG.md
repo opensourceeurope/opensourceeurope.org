@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.8.0...v0.9.0) (2026-11-05)
+
+
+### Features
+
+* log a summary of each chat visit instead of the question text ([#18](https://github.com/opensourceeurope/opensourceeurope.org/issues/18)) ([899e996](https://github.com/opensourceeurope/opensourceeurope.org/commit/899e9968c3930ca03df5f3b8d56a700d508df91c))
+
 ## [0.8.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.7.2...v0.8.0) (2026-11-05)
 
 
