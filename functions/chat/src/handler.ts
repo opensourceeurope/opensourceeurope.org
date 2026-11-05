@@ -104,6 +104,12 @@ export const MAX_MODEL_TIMEOUT_MS = 120_000;
 export const MAX_BUDGET_MS = 240_000;
 export const FINAL_ANSWER_RESERVE_MS = 20_000;
 export const COLD_CONNECT_MAX_MS = 25_000;
+// Length cap for the required first call, which only has to return search
+// calls (up to about 105 tokens for five of them). Some models ignore
+// "required" on small talk and write a reply that does not end before the
+// model timeout. With the cap the call returns, and the agent searches for the
+// question itself.
+export const REQUIRED_CALL_MAX_TOKENS = 256;
 
 function numberFromEnv(raw: string | undefined): number | undefined {
   const n = raw ? Number(raw) : NaN;
@@ -111,6 +117,16 @@ function numberFromEnv(raw: string | undefined): number | undefined {
 }
 
 const clamp = (n: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, n));
+
+function isCompleteArguments(args: unknown): boolean {
+  if (typeof args !== "string") return args != null;
+  try {
+    JSON.parse(args);
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 /** Timeouts and limits, from the environment, clamped to safe ranges. */
 export function limitsFromEnv(env: Env) {
@@ -247,12 +263,13 @@ async function runChat(body: ChatRequest, env: Env, deps: HandlerDeps, hooks: Ch
   // The request for a tool_choice value, honouring the remembered fallbacks.
   // An endpoint that does not support a value must not break every chat:
   // "required" falls back to "auto", "none" to no tools at all.
+  const capFor = (toolChoice: string) => (toolChoice === "required" ? { maxTokens: REQUIRED_CALL_MAX_TOKENS } : {});
   const fallbackRequest = (wire: any[], tools: any[], toolChoice: string) =>
-    toolChoice === "none" ? { messages: wire } : { messages: wire, tools, toolChoice: "auto" };
+    toolChoice === "none" ? { messages: wire } : { messages: wire, tools, toolChoice: "auto", ...capFor(toolChoice) };
   const requestFor = (wire: any[], tools: any[], toolChoice: string) =>
     toolChoice !== "auto" && toolChoiceFallbacks.has(toolChoice)
       ? fallbackRequest(wire, tools, toolChoice)
-      : { messages: wire, tools, toolChoice };
+      : { messages: wire, tools, toolChoice, ...capFor(toolChoice) };
 
   // One streamed call. Text goes to onText as it arrives; tool calls are
   // collected from the deltas. Text that arrives after a tool call is not
@@ -330,7 +347,7 @@ async function runChat(body: ChatRequest, env: Env, deps: HandlerDeps, hooks: Ch
       r = await fallback();
     } else {
       try {
-        r = await run({ messages: wire, tools, toolChoice });
+        r = await run({ messages: wire, tools, toolChoice, ...capFor(toolChoice) });
       } catch (e) {
         if (toolChoice === "auto" || !rejectsToolChoice(e)) throw e;
         toolChoiceFallbacks.add(toolChoice);
@@ -339,9 +356,14 @@ async function runChat(body: ChatRequest, env: Env, deps: HandlerDeps, hooks: Ch
       }
     }
     const choice = r.choices?.[0]?.message;
+    // A call cut by the length cap can end inside a tool call's arguments.
+    // Sending that call back makes the next request fail, so drop it.
+    const cut = r.choices?.[0]?.finishReason === "length";
     return {
       content: textOf(choice?.content),
-      tool_calls: (choice?.toolCalls ?? []).map((t: any) => ({ id: t.id, function: { name: t.function.name, arguments: t.function.arguments } })),
+      tool_calls: (choice?.toolCalls ?? [])
+        .filter((t: any) => !cut || isCompleteArguments(t.function?.arguments))
+        .map((t: any) => ({ id: t.id, function: { name: t.function.name, arguments: t.function.arguments } })),
     };
   };
 

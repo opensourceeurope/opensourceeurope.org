@@ -9,7 +9,11 @@ Every answer is grounded in at least one search. The first model call requires
 a tool call (`tool_choice: "required"`). If the model answers anyway (some
 providers, such as Ollama, ignore `tool_choice`), the function drops that text
 and searches for the visitor's question itself. Every round-1 search counts as automatic, even when the model chose the query,
-because it was forced to search. When the answer has no `[n]` markers and no
+because it was forced to search. The first call is capped at 256 tokens
+(`REQUIRED_CALL_MAX_TOKENS`). Without the cap, `mistral-medium-3.5-128b` on
+Scaleway can ignore `"required"` on small talk and write a reply that does not
+end before the model timeout. When the cap cuts a tool call short, the function
+drops that call. When the answer has no `[n]` markers and no
 later search ran, no sources are shown. `CHAT_SEARCH_FIRST=false` turns this off.
 
 If the endpoint rejects a `tool_choice` value with a 4xx (a 400 or a 422 that
