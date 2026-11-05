@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { z } from 'astro/zod';
 import { makeSectionSchema } from '../../src/lib/sections';
 import { headingParts } from '../../src/lib/heading';
-import { inlineParts } from '../../src/lib/inline';
+import { inlineParts, linkParts } from '../../src/lib/inline';
 import { resolveShared } from '../../src/lib/shared';
 import type { Section } from '../../src/lib/sections';
 
@@ -208,6 +208,24 @@ describe('inlineParts', () => {
   it('leaves plain text and stray markers alone', () => {
     expect(texts('No markup * here')).toEqual(['text:No markup * here']);
     expect(texts('<b>x</b>')).toEqual(['text:<b>x</b>']);
+  });
+});
+
+describe('linkParts', () => {
+  const texts = (t: string) => linkParts(t).map((p) => `${p.kind}:${p.text}`);
+
+  it('links bare URLs and keeps brackets and trailing punctuation outside', () => {
+    expect(texts('You need uv (https://docs.astral.sh/uv/), see https://ollama.com.')).toEqual([
+      'text:You need uv (',
+      'link:https://docs.astral.sh/uv/',
+      'text:), see ',
+      'link:https://ollama.com',
+      'text:.',
+    ]);
+  });
+
+  it('leaves text without URLs alone', () => {
+    expect(texts('No link here')).toEqual(['text:No link here']);
   });
 });
 
