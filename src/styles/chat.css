@@ -3,9 +3,13 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
+  /* Chat type is set for reading and replying, smaller than the page's
+     marketing body size, which grows to 18px on wide screens. */
+  --chat-text: 15px;
+  --chat-leading: 24px;
   color: var(--color-text);
-  font-size: var(--text-body);
-  line-height: var(--leading-body-text);
+  font-size: var(--chat-text);
+  line-height: var(--chat-leading);
 }
 .chat__no-js {
   margin: 0;
@@ -127,8 +131,7 @@ html:not(.js) .chat__app {
 }
 .chat__composer:has(.chat__input:focus) {
   border-color: var(--color-accent);
-  outline: 3px solid var(--color-focus);
-  outline-offset: 0;
+  box-shadow: 0 0 0 1px var(--color-accent);
 }
 .chat__input {
   flex: 1;
@@ -139,7 +142,7 @@ html:not(.js) .chat__app {
   background: transparent;
   color: var(--color-text);
   font: inherit;
-  line-height: var(--leading-body-text);
+  line-height: var(--chat-leading);
   resize: none;
 }
 .chat__input:focus {
@@ -214,25 +217,30 @@ html:not(.js) .chat__app {
   flex-direction: column;
   gap: var(--space-1);
 }
+.chat .msg + .msg {
+  margin-top: var(--space-2);
+}
 .chat .msg--user {
   align-items: flex-end;
 }
+/* Who speaks is read out by screen readers; on screen the side says it. */
 .chat .msg__role {
-  color: var(--color-text-muted);
-  font-size: var(--text-xs);
-  line-height: var(--leading-xs);
-  font-weight: var(--weight-bold);
-  text-transform: uppercase;
-  letter-spacing: var(--tracking-label);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
+/* Answers are plain text on the panel, the question is the only bubble. */
 .chat .msg__bubble {
   max-width: 100%;
-  padding: var(--space-3) var(--space-4);
-  border-radius: var(--radius-card);
-  background: var(--color-white-8);
   overflow-wrap: anywhere;
 }
 .chat .msg--user .msg__bubble {
+  max-width: 85%;
+  padding: var(--space-2) var(--space-4);
+  border-radius: 18px 18px 4px 18px;
   background: var(--color-white-16);
   white-space: pre-wrap;
 }
@@ -248,13 +256,34 @@ html:not(.js) .chat__app {
   line-height: var(--leading-sm);
 }
 .chat .msg__bubble--error {
-  border: 1px solid var(--color-brand-orange);
+  padding-left: var(--space-3);
+  border-left: 2px solid var(--color-brand-orange);
+  color: var(--color-text-muted);
 }
 .chat .msg__bubble--md > :first-child {
   margin-top: 0;
 }
 .chat .msg__bubble--md > :last-child {
   margin-bottom: 0;
+}
+/* Headings in an answer stay at chat scale, not the page's heading sizes. */
+.chat .msg__bubble--md :is(h1, h2, h3, h4, h5, h6) {
+  margin: var(--space-4) 0 var(--space-1);
+  font-size: var(--chat-text);
+  line-height: var(--chat-leading);
+  font-weight: var(--weight-bold);
+}
+.chat .msg__bubble--md :is(p, ul, ol, pre, blockquote) {
+  margin: 0 0 var(--space-3);
+}
+.chat .msg__bubble--md :is(ul, ol) {
+  padding-left: var(--space-5);
+}
+.chat .msg__bubble--md li + li {
+  margin-top: var(--space-1);
+}
+.chat .msg__bubble--md code {
+  font-size: 0.9em;
 }
 .chat .msg__bubble--md a {
   color: var(--color-accent);
@@ -318,9 +347,7 @@ html:not(.js) .chat__app {
   display: inline-flex;
   gap: var(--space-3);
   align-items: center;
-  padding: var(--space-3) var(--space-4);
-  border-radius: var(--radius-card);
-  background: var(--color-white-8);
+  padding-block: var(--space-1);
 }
 .chat .loader__dots {
   display: inline-flex;
