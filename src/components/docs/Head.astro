@@ -1,0 +1,13 @@
+---
+// Starlight's head plus the site's JSON-LD, so docs pages carry the same
+// organisation and website data as the rest of the site.
+import Default from '@astrojs/starlight/components/Head.astro';
+import { organizationJsonLd, websiteJsonLd } from '../../lib/seo';
+import { loadSettings } from '../../lib/site';
+
+const { seo } = await loadSettings();
+const jsonLd = [organizationJsonLd(Astro.site!, seo), websiteJsonLd(Astro.site!, seo)];
+---
+
+<Default />
+{jsonLd.map((data) => <script is:inline type="application/ld+json" set:html={JSON.stringify(data)} />)}

@@ -12,7 +12,9 @@
         "http://localhost:4321/contact/",
         "http://localhost:4321/ask/",
         "http://localhost:4321/privacy-policy/",
-        "http://localhost:4321/term-conditions/"
+        "http://localhost:4321/term-conditions/",
+        "http://localhost:4321/docs/",
+        "http://localhost:4321/docs/how-it-works/expenses/"
       ],
       "numberOfRuns": 3,
       "startServerCommand": "npm run preview -- --port 4321",

@@ -1,0 +1,73 @@
+# Settings of the documentation at /docs/. astro.config.mjs and the docs
+# header read this file through src/lib/docs-settings.mjs.
+title: OSE docs
+# The link in the header that leads back to the main site, and the other header links.
+header_links:
+  - label: Main site
+    href: /
+  - label: Ask AI
+    href: /ask/
+apply_label: Submit a project
+# The sidebar, in reading order, like GitBook's table of contents.
+# An entry is one of:
+#   - page: docs/<path>             a page; the sidebar shows its title
+#   - label: ... / link: /docs/...  a link with its own label
+#   - label: ... / items: [...]     a group of entries
+# Every page under src/content/docs/docs/ must appear here once. A unit test checks it.
+sidebar:
+  - page: docs
+  - label: Getting started
+    items:
+      - label: How to apply
+        items:
+          - page: docs/getting-started/how-to-apply
+          - page: docs/getting-started/how-to-apply/eligibility
+          - page: docs/getting-started/how-to-apply/application-questions
+  - label: How it works
+    items:
+      - page: docs/how-it-works/basics
+      - label: Receive funds
+        items:
+          - page: docs/how-it-works/financial-contributions-how-to-donate
+          - page: docs/how-it-works/financial-contributions-how-to-donate/wire-transfer-instructions-via-open-collective-platform
+          - page: docs/how-it-works/financial-contributions-how-to-donate/applying-for-grants
+          - page: docs/how-it-works/financial-contributions-how-to-donate/fundraising-tools-and-resources
+          - page: docs/how-it-works/financial-contributions-how-to-donate/setting-up-github-sponsors
+          - page: docs/how-it-works/financial-contributions-how-to-donate/contributions-in-cryptocurrencies
+          - page: docs/how-it-works/financial-contributions-how-to-donate/refunds
+      - label: Expenses
+        items:
+          - page: docs/how-it-works/expenses
+          - page: docs/how-it-works/expenses/invoices-or-reimbursements
+          - page: docs/how-it-works/expenses/request-a-grant-for-nonprofits-only
+          - page: docs/how-it-works/expenses/expenses-and-getting-paid-faqs
+          - label: The Partnership
+            items:
+              - page: docs/how-it-works/expenses/the-partnership
+              - page: docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-oce
+  - label: Guides
+    items:
+      - page: docs/guides/deciding-on-how-to-use-your-money
+  - label: FAQ
+    items:
+      - page: docs/faq/general-faqs
+      - page: docs/faq/fiscal-hosting-faqs
+      - page: docs/faq/expense-faqs
+      - page: docs/faq/contributions-faq
+  - label: About
+    items:
+      - page: docs/about/contact-us
+      - page: docs/about/safeguarding-policy
+      - page: docs/about/mission-vision-and-impact-areas
+      - page: docs/about/risk-and-compliance-aspects
+      - page: docs/about/community-guidelines
+      - page: docs/about/terminology
+  - label: What we offer
+    items:
+      - page: docs/what-we-offer
+      - page: docs/what-we-offer/umbrella-organisation
+      - page: docs/what-we-offer/the-open-collective-platform
+      - page: docs/what-we-offer/equivalency-determination-certificate
+      - page: docs/what-we-offer/tax-deductible-giving-for-us-donors
+  - page: docs/about-open-source-europe
+  - page: docs/terms-of-service

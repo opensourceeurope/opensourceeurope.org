@@ -47,6 +47,10 @@
     {
       "diff": "Ask AI",
       "note": "MN-057: the main navigation links to the Ask page"
+    },
+    {
+      "diff": "Docs",
+      "note": "MN-059: the main navigation links to the docs"
     }
   ],
   "/": [

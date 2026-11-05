@@ -1,0 +1,12 @@
+---
+// Starlight's sidebar without SidebarPersister, which keeps state in
+// sessionStorage. The site stores nothing but the consent choice.
+import MobileMenuFooter from '@astrojs/starlight/components/MobileMenuFooter.astro';
+import SidebarSublist from '@astrojs/starlight/components/SidebarSublist.astro';
+
+const { sidebar } = Astro.locals.starlightRoute;
+---
+
+<SidebarSublist sublist={sidebar} />
+
+<div class="md:sl-hidden"><MobileMenuFooter /></div>

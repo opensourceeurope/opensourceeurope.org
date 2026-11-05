@@ -4,7 +4,7 @@ Instructions for coding agents working on opensourceeurope.org. Humans can read 
 
 ## Stack
 
-Astro (static output, TypeScript strict), content in `src/content/`, a Scaleway Serverless Function for the contact form under `functions/`, hosting on Scaleway Object Storage. The repository also holds the OSE knowledge base: an OpenCrane index in `.opencrane/` served as an MCP server (`ose-knowledge-mcp` on PyPI), a Claude plugin in `plugins/ose-knowledge/`, the agent persona in `agent/`, a chat function in `functions/chat/` (its own `package.json`, Node 22) and the chat UI on the site (`/ask/` and the Ask panel). Target Node 22. Every workflow reads the exact version from `.node-version`, because `node-version: 22` takes whatever the runner has cached, and some runner images cache a version older than Astro accepts. This file and `docs/` are the authority for how the site and the knowledge base are built.
+Astro (static output, TypeScript strict), content in `src/content/`, the documentation at `/docs/` built by Starlight from Markdown in `src/content/docs/`, a Scaleway Serverless Function for the contact form under `functions/`, hosting on Scaleway Object Storage. The repository also holds the OSE knowledge base: an OpenCrane index in `.opencrane/` served as an MCP server (`ose-knowledge-mcp` on PyPI), a Claude plugin in `plugins/ose-knowledge/`, the agent persona in `agent/`, a chat function in `functions/chat/` (its own `package.json`, Node 22) and the chat UI on the site (`/ask/` and the Ask panel). Target Node 22. Every workflow reads the exact version from `.node-version`, because `node-version: 22` takes whatever the runner has cached, and some runner images cache a version older than Astro accepts. This file and `docs/` are the authority for how the site and the knowledge base are built.
 
 ## Commands
 
@@ -85,6 +85,16 @@ Do not quietly undo these.
 - **The weekly refresh only commits content changes.** It commits as `fix:`, so release-please rolls the new content into the release pull request. It never deploys. Do not wire deploys back into it.
 - **The chat function is in `functions/chat/`, with its own `package.json`.** Its tests run with `npm test --prefix functions/chat` after `npm ci --prefix functions/chat` and `npm run build --prefix functions/chat`. The build bundles the persona that the tests import, so a fresh clone fails without it.
 
+## Documentation
+
+Do not quietly undo these.
+
+- **The docs moved from GitBook.** The pages in `src/content/docs/docs/` replace `https://docs.opencollective.com/open-source-europe` and are now the source. Edit them here, not in GitBook. `docs/migration-notes.md` lists what changed in the move (MN-059 to MN-060).
+- **Starlight changes two site-wide settings, and `astro.config.mjs` restores them.** Starlight sets `scopedStyleStrategy: 'where'` and turns on `prefetch` for the whole site. With `'where'`, the site's component styles lose to the global grid rules and the services rows stack. The `keepSiteDefaults` integration runs after Starlight and sets them back. Keep it after `starlight()` in the integrations list.
+- **The docs store nothing in the browser.** Starlight keeps the theme in `localStorage` and the sidebar state in `sessionStorage`. The overrides in `src/components/docs/` (`ThemeProvider`, `ThemeSelect`, `Sidebar`) and the `noSidebarStorage` Vite plugin in `astro.config.mjs` remove both. The docs have one dark theme, like the site. Do not use `syncKey` on Starlight tabs, because it also writes to `localStorage`.
+- **Every docs page is a tested route.** `tests/e2e/routes.ts` reads the sidebar from `docs.yaml`, so the quality and accessibility checks run on every page in the sidebar. `tests/unit/docs-content.test.ts` fails on a page missing from the sidebar, a missing description, an empty alt text, an empty link or a heading that starts with an emoji.
+- **The Ask chat still reads GitBook.** `.opencrane/config.yaml` fetches the GitBook `llms-full.txt`. Switching it to these files is a separate change: it needs the docs released first, so the citation links resolve, and a regenerated index.
+
 ## Releases
 
 Releases are cut by release-please. Do not tag by hand and do not bump a version by hand. The site, the MCP package on PyPI, the MCP container and the chat function release together under one `vX.Y.Z` tag.
@@ -108,7 +118,6 @@ To change a version, land a conventional commit.
 ## Planned
 
 - A blog at `/blog/` with an RSS feed at `/rss.xml`.
-- Starlight documentation at `/docs/`.
 - Pages built at build time from APIs.
 
 ## Editing content
@@ -132,5 +141,6 @@ Where each page lives:
 - The 404 page: `src/content/pages/404.yaml`.
 - Contact, including the form labels and the messages it shows: `src/content/pages/contact.yaml`. The interest options there must match `INTEREST_OPTIONS` in `functions/contact/src/fields.ts`. Change both together, and redeploy the function. A unit test fails when they differ.
 - Ask page (`/ask/`): `src/content/pages/ask.yaml`. The chat texts are under `chat` in `src/content/settings/site.yaml`.
+- Documentation (`/docs/`): one Markdown file per page in `src/content/docs/docs/`. The sidebar, the docs header title and its links are in `src/content/settings/docs.yaml`. The skill in `.claude/skills/docs-authoring/` covers page format, preview and checks.
 - Header, footer, navigation, the consent banner text, the site name and the default share image: `src/content/settings/site.yaml`.
 - Uploaded images: `src/assets/uploads/` and `public/app/uploads/`. Theme images, such as backgrounds: `src/assets/theme/`.
