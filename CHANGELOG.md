@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.1](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.7.0...v0.7.1) (2026-11-05)
+
+
+### Bug Fixes
+
+* name the uv prerequisite and the terminal install for the ose-knowledge plugin ([#12](https://github.com/opensourceeurope/opensourceeurope.org/issues/12)) ([8f136e8](https://github.com/opensourceeurope/opensourceeurope.org/commit/8f136e86c708f50b7e89dd62fd17517f6deea1bb))
+
 ## [0.7.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.6.0...v0.7.0) (2026-11-05)
 
 
