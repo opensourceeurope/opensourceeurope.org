@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ose-knowledge",
+  "version": "0.6.0",
+  "description": "Open Source Europe documentation for AI agents. Bundles the ose-knowledge MCP server (search_docs over the OSE handbook and internal operations docs) and the ask-about-ose skill.",
+  "license": "MIT",
+  "keywords": [
+    "open-source-europe",
+    "fiscal-hosting",
+    "mcp"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Open Source Europe Knowledge Base",
+        "shortDescription": "Answer questions about Open Source Europe from its docs",
+        "capabilities": [
+          "Read"
+        ]
+      }
+    }
+  }
+}

@@ -57,10 +57,11 @@ test('shows every section', async ({ page }, info) => {
   await expect(page.getByRole('heading', { name: 'Use it in your own tools — or run it locally' })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Sovereign by design' })).toBeVisible();
   const snippets = page.locator('.snippets__code');
-  await expect(snippets).toHaveCount(3);
+  await expect(snippets).toHaveCount(4);
   await expect(snippets.nth(0)).toContainText('ose-knowledge-mcp==');
   await expect(snippets.nth(1)).toContainText('/plugin marketplace add opensourceeurope/ose-ai');
-  await expect(snippets.nth(2)).toContainText('git clone https://github.com/opensourceeurope/opensourceeurope.org.git');
+  await expect(snippets.nth(2)).toContainText('codex plugin marketplace add opensourceeurope/ose-ai');
+  await expect(snippets.nth(3)).toContainText('git clone https://github.com/opensourceeurope/opensourceeurope.org.git');
   const texts = await snippets.evaluateAll((pres) =>
     pres.map((pre) => [pre.textContent, pre.querySelector('code')?.textContent]),
   );

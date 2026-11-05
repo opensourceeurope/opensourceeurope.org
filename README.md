@@ -28,7 +28,7 @@ Copy `.env.example` to `.env` first. `PUBLIC_CONTACT_ENDPOINT` and `PUBLIC_CHAT_
 
 ## Knowledge base
 
-The repository also holds the OSE knowledge base. It indexes the OSE handbook and internal operations docs and answers questions about them with cited sources. It is built with [OpenCrane](https://github.com/derberg/OpenCrane). There are three ways to use it: the MCP server, the Claude plugin and the chat. The chat runs on the site at `/ask/`, and a button on every page opens it in a panel. https://ask.opensourceeurope.org redirects to `/ask/`.
+The repository also holds the OSE knowledge base. It indexes the OSE handbook and internal operations docs and answers questions about them with cited sources. It is built with [OpenCrane](https://github.com/derberg/OpenCrane). There are three ways to use it: the MCP server, the plugin for Claude Code and Codex, and the chat. The chat runs on the site at `/ask/`, and a button on every page opens it in a panel. https://ask.opensourceeurope.org redirects to `/ask/`.
 
 Where the parts live:
 
@@ -36,7 +36,7 @@ Where the parts live:
 |---|---|
 | Index inputs and the committed index | `.opencrane/` |
 | MCP server image and scripts | `.opencrane/`, `scripts/knowledge/` |
-| Claude plugin | `plugins/ose-knowledge/` |
+| Plugin for Claude Code and Codex | `plugins/ose-knowledge/` |
 | Agent persona (source of the plugin copy) | `agent/ose-researcher.md` |
 | Chat function | `functions/chat/` |
 | The `/ask/` page | `src/pages/ask.astro` |
@@ -73,6 +73,16 @@ The plugin adds the MCP server, an `ose-researcher` agent and an `ask-about-ose`
 /plugin marketplace add opensourceeurope/ose-ai
 /plugin install ose-knowledge@ose-ai
 ```
+
+### Use it as a Codex plugin
+
+The same plugin installs in Codex with the MCP server and the `ask-about-ose` skill. Codex doesn't load the `ose-researcher` agent, so the skill calls `search_docs` directly there.
+
+```bash
+codex plugin marketplace add opensourceeurope/ose-ai
+```
+
+Then run `/plugins` in Codex, install `ose-knowledge`, and start a new session.
 
 ### Run the chat locally
 
