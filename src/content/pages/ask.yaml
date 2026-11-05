@@ -49,11 +49,11 @@ sections:
         code: |-
           /plugin marketplace add opensourceeurope/ose-ai
           /plugin install ose-knowledge@ose-ai
-        hint: More than the MCP server. The plugin also ships an ose-researcher subagent tuned to query the knowledge RAG efficiently and return concise, cited answers.
+        hint: You need uv (https://docs.astral.sh/uv/), because the MCP server starts with uvx. The plugin ships more than the MCP server. It also ships an ose-researcher subagent tuned to query the knowledge RAG efficiently and return concise, cited answers.
       - title: Codex plugin
         code: |-
           codex plugin marketplace add opensourceeurope/ose-ai
-        hint: Then run /plugins in Codex, install ose-knowledge, and start a new session. You get the MCP server and the ask-about-ose skill.
+        hint: You need uv (https://docs.astral.sh/uv/), because the MCP server starts with uvx. After this command, run /plugins in Codex and install ose-knowledge, or run codex plugin add ose-knowledge@ose-ai in the terminal. Then start a new session. You get the MCP server and the ask-about-ose skill.
       - title: Run this chat locally with Ollama
         code: |-
           git clone https://github.com/opensourceeurope/opensourceeurope.org.git
