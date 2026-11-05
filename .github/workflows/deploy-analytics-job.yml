@@ -1,24 +1,24 @@
 name: Deploy analytics export job to Scaleway
 
-# Builds the analytics/ image and pushes it to the Scaleway registry, then (if the
-# job definition already exists) points that job definition at the new image. The
-# job itself runs ON SCALEWAY, in the EU region, on a cron — it pulls the chat
-# analytics shared with consent from Cockpit and writes them to a private bucket. Building the image in
-# GitHub (US runners) is fine: the image carries no analytics data; only the job,
-# running in the EU, ever touches the logs.
+# Builds the analytics/ image, pushes it to the Scaleway registry and deploys the
+# analytics export job. The job runs on Scaleway in the EU region, on a cron. It reads
+# the chat analytics that visitors shared with consent from Cockpit and writes them to
+# a private bucket. The image holds only the script, so building it on GitHub runners
+# in the US moves no analytics data out of the EU.
 #
-# This workflow CREATES the job definition on its first run (image + cron + env +
-# the Scaleway S3 keys), and only rolls the image forward on later runs. It does
-# NOT set COCKPIT_TOKEN — that is added once by hand in the console, so the log
-# path stays EU-only and the token never enters GitHub.
+# The job reads two secrets from Scaleway Secret Manager at run time:
+#   SCW_SECRET_KEY  from ose-analytics-export-scw-secret-key
+#   COCKPIT_TOKEN   from ose-analytics-export-cockpit-token
+# Their values never enter GitHub. SCW_ACCESS_KEY on the job is the access key of the
+# IAM application ose-analytics-export, which can only write objects in the project.
+# The CI deploy key never goes into the job.
 #
-# One-time setup by the maintainer:
-#   1. Create a PRIVATE bucket, e.g. opensourceeurope-analytics (region pl-waw).
-#   2. Create a Cockpit token with logs read access; note its secret + the Loki URL.
-#   3. Set repo variables:  ANALYTICS_BUCKET=<bucket>,  OSE_ANALYTICS_LOKI_URL=<url>.
-#   4. Let this workflow run (push to analytics/**). It creates the job.
-#   5. In the console, add a COCKPIT_TOKEN env var to the 'ose-analytics-export'
-#      job, then start a run. Done — subsequent pushes just refresh the image.
+# The first run creates the job definition: image, cron, CPU limit, the plain env vars
+# and the two secret references. Later runs change only the image and the CPU limit,
+# so they keep the env vars and the secret references on the job.
+#
+# Create the IAM application, its key, the Cockpit token and the two secrets once,
+# before the first run. analytics/README.md lists the commands.
 
 on:
   workflow_dispatch: {}
@@ -90,41 +90,66 @@ jobs:
           REGION: ${{ vars.SCW_REGION }}
           LOKI_URL: ${{ vars.OSE_ANALYTICS_LOKI_URL }}
           ANALYTICS_BUCKET: ${{ vars.ANALYTICS_BUCKET }}
-          # The job needs Scaleway S3 keys to upload to the bucket. COCKPIT_TOKEN is
-          # NOT set here — it's added once by hand in the console (kept out of GitHub
-          # so the log path stays EU-only). The first run fails without it; add it, rerun.
-          JOB_SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
-          JOB_SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
+          # Access key ID of the ose-analytics-export IAM application. An access key ID
+          # is not a secret: the matching secret key stays in Secret Manager.
+          JOB_ACCESS_KEY: ${{ vars.ANALYTICS_EXPORT_ACCESS_KEY }}
         run: |
           set -euo pipefail
           NAME=ose-analytics-export
-          [ -n "$LOKI_URL" ] || { echo "::error::repo variable OSE_ANALYTICS_LOKI_URL is not set"; exit 1; }
-          [ -n "$ANALYTICS_BUCKET" ] || { echo "::error::repo variable ANALYTICS_BUCKET is not set"; exit 1; }
+          SECRET_KEY_SECRET=ose-analytics-export-scw-secret-key
+          COCKPIT_TOKEN_SECRET=ose-analytics-export-cockpit-token
 
           # Keep this at 500 mCPU or more. At 70 mCPU, TLS handshakes and the Python aws CLI
           # are so slow that a run passes the 300 s job timeout before its uploads finish.
           CPU_LIMIT=500
 
-          # Idempotent by name: create on first run; later runs update only the image
-          # and the CPU limit. The update must NOT touch environment-variables, or it
-          # would wipe the hand-added COCKPIT_TOKEN on every redeploy.
           ID="$(scw jobs definition list region="$REGION" -o json \
             | jq -r --arg n "$NAME" '.[] | select(.name==$n) | .id' | head -n1)"
 
-          if [ -z "$ID" ]; then
-            echo "Creating job definition $NAME"
-            scw jobs definition create region="$REGION" \
-              name="$NAME" cpu-limit="$CPU_LIMIT" memory-limit=128 local-storage-capacity=1000 job-timeout=300s \
-              image-uri="$IMAGE" \
-              cron-schedule.schedule="0 4 */3 * *" cron-schedule.timezone="Europe/Warsaw" \
-              environment-variables.LOKI_URL="$LOKI_URL" \
-              environment-variables.ANALYTICS_BUCKET="$ANALYTICS_BUCKET" \
-              environment-variables.SCW_REGION="$REGION" \
-              environment-variables.SCW_ACCESS_KEY="$JOB_SCW_ACCESS_KEY" \
-              environment-variables.SCW_SECRET_KEY="$JOB_SCW_SECRET_KEY"
-            echo "::notice::Job 'ose-analytics-export' created. Add a COCKPIT_TOKEN env var"
-            echo "::notice::to it in the Scaleway console (Serverless Jobs), then start a run."
-          else
+          if [ -n "$ID" ]; then
+            # Do not pass environment-variables here. An update that sets them replaces
+            # the whole set on the job.
             echo "Rolling image forward on existing job definition $ID"
             scw jobs definition update "$ID" region="$REGION" image-uri="$IMAGE" cpu-limit="$CPU_LIMIT"
+            exit 0
           fi
+
+          [ -n "$LOKI_URL" ] || { echo "::error::repo variable OSE_ANALYTICS_LOKI_URL is not set"; exit 1; }
+          [ -n "$ANALYTICS_BUCKET" ] || { echo "::error::repo variable ANALYTICS_BUCKET is not set"; exit 1; }
+          [ -n "$JOB_ACCESS_KEY" ] || { echo "::error::repo variable ANALYTICS_EXPORT_ACCESS_KEY is not set. Set it to the access key ID of the ose-analytics-export IAM application (see analytics/README.md)."; exit 1; }
+
+          # Look up both secrets before creating anything, so a missing secret leaves no
+          # half-configured job behind.
+          secret_id() {
+            scw secret secret list region="$REGION" project-id="$SCW_DEFAULT_PROJECT_ID" name="$1" -o json \
+              | jq -r --arg n "$1" '[.[] | select(.name==$n)][0].id // empty'
+          }
+          SECRET_KEY_ID="$(secret_id "$SECRET_KEY_SECRET")"
+          COCKPIT_TOKEN_ID="$(secret_id "$COCKPIT_TOKEN_SECRET")"
+          missing=""
+          [ -n "$SECRET_KEY_ID" ] || missing="$missing $SECRET_KEY_SECRET"
+          [ -n "$COCKPIT_TOKEN_ID" ] || missing="$missing $COCKPIT_TOKEN_SECRET"
+          if [ -n "$missing" ]; then
+            echo "::error::Secret Manager in $REGION has no secret named:$missing. Create it as described in analytics/README.md, then run this workflow again."
+            exit 1
+          fi
+
+          echo "Creating job definition $NAME"
+          ID="$(scw jobs definition create region="$REGION" -o json \
+            name="$NAME" cpu-limit="$CPU_LIMIT" memory-limit=128 local-storage-capacity=1000 job-timeout=300s \
+            image-uri="$IMAGE" \
+            cron-schedule.schedule="0 4 */3 * *" cron-schedule.timezone="Europe/Warsaw" \
+            environment-variables.LOKI_URL="$LOKI_URL" \
+            environment-variables.ANALYTICS_BUCKET="$ANALYTICS_BUCKET" \
+            environment-variables.SCW_REGION="$REGION" \
+            environment-variables.SCW_ACCESS_KEY="$JOB_ACCESS_KEY" \
+            | jq -r '.id')"
+
+          echo "Attaching the Secret Manager references to job definition $ID"
+          if ! scw jobs secret create job-definition-id="$ID" region="$REGION" \
+            secrets.0.secret-manager-id="$SECRET_KEY_ID" secrets.0.secret-manager-version=latest secrets.0.env-var-name=SCW_SECRET_KEY \
+            secrets.1.secret-manager-id="$COCKPIT_TOKEN_ID" secrets.1.secret-manager-version=latest secrets.1.env-var-name=COCKPIT_TOKEN; then
+            echo "::error::Job definition $ID exists but has no secret references. Later runs only update the image, so attach them by hand with the scw jobs secret create command in analytics/README.md."
+            exit 1
+          fi
+          echo "::notice::Job definition $NAME created with its secret references. Start a run in the Scaleway console to check it."
