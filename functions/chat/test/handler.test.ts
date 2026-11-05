@@ -18,7 +18,7 @@ vi.mock("@mistralai/mistralai", () => ({
   },
 }));
 
-import { handleChat, toMistralMessages, stripTrailingSourceList, resetToolChoiceFallbacks } from "../src/handler.js";
+import { handleChat, toMistralMessages, stripTrailingSourceList, resetToolChoiceFallbacks, REQUIRED_CALL_MAX_TOKENS } from "../src/handler.js";
 import { ChatFailure } from "../src/errors.js";
 
 describe("toMistralMessages (Mistral API wire format)", () => {
@@ -418,6 +418,80 @@ describe("tool choice on the wire", () => {
     const { openSearch } = fakeSession();
     await handleChat({ messages: [{ role: "user", content: "hi" }] }, ENV, { openSearch });
     expect(captured.complete.mock.calls.every((c: any[]) => c[0].toolChoice === "required")).toBe(true);
+  });
+
+  // Regression: on small talk the Scaleway model ignores "required", writes a
+  // reply and does not stop before the 25 s model timeout.
+  it("caps the length of the required call only", async () => {
+    captured.complete = vi
+      .fn()
+      .mockResolvedValueOnce(toolReply("t1"))
+      .mockResolvedValueOnce(textReply("Final."));
+    const { openSearch } = fakeSession();
+    await handleChat({ messages: [{ role: "user", content: "hi" }] }, { ...ENV, MAX_TOOL_ROUNDS: "1" }, { openSearch });
+    expect(captured.complete.mock.calls[0][0].maxTokens).toBe(REQUIRED_CALL_MAX_TOKENS);
+    expect(captured.complete.mock.calls[1][0]).not.toHaveProperty("maxTokens");
+  });
+
+  it("keeps the cap when required falls back to auto", async () => {
+    vi.spyOn(console, "warn").mockImplementation(() => {});
+    captured.complete = vi
+      .fn()
+      .mockRejectedValueOnce(err400('{"detail":"Invalid tool_choice value: required"}'))
+      .mockResolvedValueOnce(toolReply("t1"))
+      .mockResolvedValueOnce(textReply("Answer [1]."));
+    const { openSearch } = fakeSession();
+    await handleChat({ messages: [{ role: "user", content: "hi" }] }, ENV, { openSearch });
+    expect(captured.complete.mock.calls[1][0].toolChoice).toBe("auto");
+    expect(captured.complete.mock.calls[1][0].maxTokens).toBe(REQUIRED_CALL_MAX_TOKENS);
+  });
+
+  it("searches for the question when the capped call returns text", async () => {
+    captured.complete = vi
+      .fn()
+      .mockResolvedValueOnce({ choices: [{ finishReason: "length", message: { content: "Yes, it is! OSE", toolCalls: null } }] })
+      .mockResolvedValueOnce(textReply("Final."));
+    const { session, openSearch } = fakeSession();
+    const out: any = await handleChat({ messages: [{ role: "user", content: "that is so cool" }] }, { ...ENV, MAX_TOOL_ROUNDS: "1" }, { openSearch });
+    expect(out.json.answer).toBe("Final.");
+    expect(session.search).toHaveBeenCalledWith("that is so cool");
+  });
+
+  it("drops a tool call the cap cut short", async () => {
+    captured.complete = vi
+      .fn()
+      .mockResolvedValueOnce({
+        choices: [{
+          finishReason: "length",
+          message: {
+            content: "",
+            toolCalls: [
+              { id: "t1", function: { name: "search_docs", arguments: '{"query":"OSE fees"}' } },
+              { id: "t2", function: { name: "search_docs", arguments: '{"' } },
+            ],
+          },
+        }],
+      })
+      .mockResolvedValueOnce(textReply("Final."));
+    const { session, openSearch } = fakeSession();
+    await handleChat({ messages: [{ role: "user", content: "fees?" }] }, { ...ENV, MAX_TOOL_ROUNDS: "1" }, { openSearch });
+    expect(session.search).toHaveBeenCalledTimes(1);
+    expect(session.search).toHaveBeenCalledWith("OSE fees");
+    const sent = captured.complete.mock.calls[1][0].messages.find((m: any) => m.role === "assistant");
+    expect(sent.toolCalls.map((t: any) => t.id)).toEqual(["t1"]);
+  });
+
+  it("searches for the question when the cap cut the only tool call", async () => {
+    captured.complete = vi
+      .fn()
+      .mockResolvedValueOnce({
+        choices: [{ finishReason: "length", message: { content: "", toolCalls: [{ id: "t1", function: { name: "search_docs", arguments: '{"que' } }] } }],
+      })
+      .mockResolvedValueOnce(textReply("Final."));
+    const { session, openSearch } = fakeSession();
+    const out: any = await handleChat({ messages: [{ role: "user", content: "fees?" }] }, { ...ENV, MAX_TOOL_ROUNDS: "1" }, { openSearch });
+    expect(out.status).toBe(200);
+    expect(session.search).toHaveBeenCalledWith("fees?");
   });
 
   it("does not fall back on a 400 about something else", async () => {
