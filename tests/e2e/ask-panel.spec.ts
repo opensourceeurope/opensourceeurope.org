@@ -435,7 +435,8 @@ test.describe('ask panel without JavaScript', () => {
 
   test('the button is a link to /ask/', async ({ page }) => {
     await page.goto('/about/');
-    await expect(page.getByRole('link', { name: 'Ask', exact: true })).toHaveAttribute('href', '/ask/');
+    await expect(button(page)).toHaveAccessibleName('Ask AI');
+    await expect(button(page)).toHaveAttribute('href', '/ask/');
     await expect(page.locator('[data-ask-hint]')).toBeHidden();
     await expect(button(page)).not.toHaveAttribute('aria-keyshortcuts', /.*/);
   });

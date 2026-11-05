@@ -43,6 +43,10 @@
     {
       "diff": "home@opensourceeurope.org",
       "note": "MN-049: one contact email on every page"
+    },
+    {
+      "diff": "Ask AI",
+      "note": "MN-057: the main navigation links to the Ask page"
     }
   ],
   "/": [
@@ -85,7 +89,7 @@
       "note": "MN-053: the chat section and the lines that mention the chat"
     },
     {
-      "diff": "The Ask page and the \"Ask\" panel on every other page let you put a question to a chat assistant. Your browser contacts the chat function only when you send a question. When you send one, your browser sends the conversation so far, and a yes or no for your analytics choice in the privacy settings banner, to the chat function, a serverless container on Scaleway. The function asks an AI model from Mistral AI, which runs on Scaleway's generative AI service in the European Union, to write the answer. To find the answer, the function also sends search phrases, which the model derives from your question, to the OSE documentation search server (the MCP server), which also runs on Scaleway in the European Union. Your IP address and a description of your browser reach the function with the request.",
+      "diff": "The Ask page and the \"Ask AI\" panel on every other page let you put a question to a chat assistant. Your browser contacts the chat function only when you send a question. When you send one, your browser sends the conversation so far, and a yes or no for your analytics choice in the privacy settings banner, to the chat function, a serverless container on Scaleway. The function asks an AI model from Mistral AI, which runs on Scaleway's generative AI service in the European Union, to write the answer. To find the answer, the function also sends search phrases, which the model derives from your question, to the OSE documentation search server (the MCP server), which also runs on Scaleway in the European Union. Your IP address and a description of your browser reach the function with the request.",
       "note": "MN-053: the chat section and the lines that mention the chat"
     },
     {

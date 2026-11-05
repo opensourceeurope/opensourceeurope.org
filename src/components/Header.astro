@@ -1,4 +1,5 @@
 ---
+import AiIcon from './AiIcon.astro';
 import MobileMenu from './MobileMenu.astro';
 import type { loadSettings } from '../lib/site';
 
@@ -27,6 +28,7 @@ const ariaCurrent = (href: string) =>
           nav.map((item) => (
             <li>
               <a class="site-nav__link" href={item.href} aria-current={ariaCurrent(item.href)}>
+                {item.icon === 'ai' && <AiIcon class="site-nav__icon" />}
                 <span>{item.label}</span>
               </a>
             </li>
@@ -119,6 +121,15 @@ const ariaCurrent = (href: string) =>
     transform: scaleX(0);
     transform-origin: left;
     transition: transform var(--duration-base) var(--ease-css);
+  }
+  .site-nav__link:has(.site-nav__icon) {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+  }
+  .site-nav__icon {
+    flex: none;
+    color: var(--color-brand-cyan);
   }
   .site-nav__link:hover::after {
     transform: scaleX(1);

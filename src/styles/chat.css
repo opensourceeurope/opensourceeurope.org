@@ -178,7 +178,7 @@ html:not(.js) .chat__app {
   cursor: not-allowed;
 }
 
-/* Small print under the field: whether questions are shared, then the note. */
+/* Small print under the field: the local-run line, whether questions are shared, then the note. */
 .chat__meta {
   display: flex;
   flex-direction: column;
@@ -190,6 +190,9 @@ html:not(.js) .chat__app {
   color: var(--color-text-muted);
   font-size: var(--text-xs);
   line-height: var(--leading-xs);
+}
+.chat__local {
+  color: var(--color-text);
 }
 .chat__meta-link {
   padding: 0;

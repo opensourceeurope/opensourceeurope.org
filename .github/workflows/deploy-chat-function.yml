@@ -12,7 +12,7 @@ name: Deploy chat function to Scaleway
 #     MISTRAL_MODEL / MAX_TOOL_ROUNDS.
 # Inference runs on Scaleway Generative APIs (EU): set the repo variables
 #   MISTRAL_BASE_URL=https://api.scaleway.ai and
-#   MISTRAL_MODEL=mistral-small-3.2-24b-instruct-2506, with MISTRAL_API_KEY (secret) as
+#   MISTRAL_MODEL=mistral-medium-3.5-128b, with MISTRAL_API_KEY (secret) as
 #   your Scaleway API key. Leaving MISTRAL_BASE_URL unset falls back to Mistral's own API.
 # Optional repo variable: CHAT_SEARCH_FIRST=false turns off the automatic first search
 #   (on by default; see functions/chat/README.md).

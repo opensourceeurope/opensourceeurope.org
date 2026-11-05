@@ -7,7 +7,8 @@ import { controlledStream, frame } from './sse-helpers';
 
 const texts: ChatTexts = {
   title: 't', intro: 'i', placeholder: 'p', input_label: 'il', send_label: 's', suggestions_label: 'sl',
-  suggestions: [], sharing_on: 'Shared', sharing_off: 'Not shared', sharing_settings: 'Change', small_model_note_short: 'ns',
+  suggestions: [], sharing_on: 'Shared', sharing_off: 'Not shared', sharing_settings: 'Change', demo_note: 'ns',
+  local_note: 'ln', local_link: { label: 'll', href: '/l/' },
   memory_note: 'm', sources_label: 'Sources', you_label: 'You', assistant_label: 'OSE', loading: 'Loading',
   loading_long: 'Still', error: 'Something failed',
   status_searching_start: 'Searching the docs…', status_searching: 'Searching: {query}…', status_writing: 'Writing…', status_ready: 'Answer ready',

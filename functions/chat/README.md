@@ -1,7 +1,7 @@
 # OSE chat function
 
-Stateless agent: Mistral Small tool-calling over the OSE MCP `search_docs`. The hosted
-deployment runs `mistral-small-3.2-24b-instruct-2506` on Scaleway Generative APIs (EU);
+Stateless agent: Mistral tool-calling over the OSE MCP `search_docs`. The hosted
+deployment runs `mistral-medium-3.5-128b` on Scaleway Generative APIs (EU);
 the provider is just an OpenAI-compatible endpoint, so it also runs against Mistral's own
 API or a local Ollama unchanged.
 
@@ -87,7 +87,7 @@ All configuration is via environment variables (see `.env.example`):
 | Var | Required | Default | Notes |
 | --- | --- | --- | --- |
 | `MISTRAL_API_KEY` | yes | — | Inference API key (Scaleway key for the hosted deployment; Mistral La Plateforme or Ollama otherwise); keep secret. |
-| `MISTRAL_MODEL` | no | `mistral-small-latest` | Model id — `mistral-small-3.2-24b-instruct-2506` on Scaleway. Keep the small model to control spend. |
+| `MISTRAL_MODEL` | no | `mistral-small-latest` | Model id. The hosted chat sets `mistral-medium-3.5-128b` on Scaleway. A smaller model costs less per call. |
 | `MISTRAL_BASE_URL` | no | `https://api.mistral.ai` | Point at any OpenAI-compatible endpoint: `https://api.scaleway.ai` (Scaleway, EU), a local Ollama (see below), or unset for Mistral's own API. The SDK appends `/v1/chat/completions`. |
 | `OSE_MCP_URL` | yes | — | MCP Streamable HTTP endpoint. `http://localhost:8000/mcp` local; `https://<endpoint>/http` deployed. |
 | `ALLOWED_ORIGINS` | no | `*` | Comma-separated origin allowlist, **enforced server-side** (403 when Origin is missing or not listed) in addition to CORS headers. `*` disables the check — local dev only; always set the site origins in prod. The deploy builds it from the `CHAT_S3_BUCKET` bucket URL plus the `CHAT_EXTRA_ORIGINS` repository variable. |

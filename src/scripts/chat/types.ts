@@ -28,7 +28,9 @@ export interface ChatTexts {
   sharing_on: string;
   sharing_off: string;
   sharing_settings: string;
-  small_model_note_short: string;
+  local_note: string;
+  local_link: { label: string; href: string };
+  demo_note: string;
   memory_note: string;
   sources_label: string;
   you_label: string;
