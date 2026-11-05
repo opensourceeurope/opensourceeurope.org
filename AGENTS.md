@@ -38,6 +38,7 @@ Troubleshooting:
 - `npx playwright test` starts its own contact function servers on ports 8081 and 8082. Stop any `npm run dev:function` first.
 - In a worktree under `.worktrees/`, the build can fail with `Tsconfig not found astro/tsconfigs/strict`. The primary checkout's own `tsconfig.json` sits above the worktree, with no `node_modules` beside it. The same commit builds in a clone outside the repository folder.
 - Outside CI, `npm run test:e2e` reuses any server that already answers on port 4321, even a preview of another worktree with an older build. Stop that preview first with `npx astro preview stop` in its folder.
+- From an agent session, `npm run test:e2e` can stop with `Process from config.webServer exited early`. With the agent variables set, `astro preview` moves to the background, and Playwright reads that as a stopped server. Run it as `env -u AI_AGENT -u CLAUDECODE -u CLAUDE_CODE_ENTRYPOINT npm run test:e2e`.
 
 ## Worktree rule
 
