@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.9.1](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.9.0...v0.9.1) (2026-11-05)
+
+
+### Bug Fixes
+
+* answer chat questions that need a second search on Scaleway ([#25](https://github.com/opensourceeurope/opensourceeurope.org/issues/25)) ([57b0f3a](https://github.com/opensourceeurope/opensourceeurope.org/commit/57b0f3ac12e2884e039f3aa1e20aaeb8a08cbab9))
+* link URLs in the setup notes on /ask/ and show the setup boxes in a 2x2 grid ([#26](https://github.com/opensourceeurope/opensourceeurope.org/issues/26)) ([671bf25](https://github.com/opensourceeurope/opensourceeurope.org/commit/671bf250863cbda94c0a3cd561e8b0e356ff59f3))
+* make the Ask chat read like a chat ([#29](https://github.com/opensourceeurope/opensourceeurope.org/issues/29)) ([36ca707](https://github.com/opensourceeurope/opensourceeurope.org/commit/36ca7075e807b9b9d9b9682c0f08302730b592dc))
+* stop the chat from copying a forged prefix, and tighten its rules ([#28](https://github.com/opensourceeurope/opensourceeurope.org/issues/28)) ([083aac5](https://github.com/opensourceeurope/opensourceeurope.org/commit/083aac5033328ce9678be8559a927008468b7a61))
+
 ## [0.9.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.8.0...v0.9.0) (2026-11-05)
 
 
