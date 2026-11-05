@@ -4,7 +4,7 @@ The source of the [Open Source Europe](https://opensourceeurope.org) website. It
 
 ## Commands
 
-Copy `.env.example` to `.env` first. `PUBLIC_CONTACT_ENDPOINT` and `PUBLIC_CHAT_ENDPOINT` are required and have no default. `.env` is gitignored. Node 22 or later.
+Copy `.env.example` to `.env` first. `PUBLIC_CONTACT_ENDPOINT` and `PUBLIC_CHAT_ENDPOINT` are required and have no default. `.env` is gitignored. Node 22.23.4 or later, the version Astro requires. CI uses the exact version in `.node-version`.
 
 | Command | What it does |
 |---|---|
