@@ -5,7 +5,7 @@ background: { src: ../../assets/theme/webp/bg-hero-w-home.webp, alt: "", decorat
 seo:
   title: Privacy Policy | Open Source Europe
   description: How the Open Source Europe website handles your personal data. It sets no cookies, runs no tracking scripts, and loads nothing from other websites.
-updated: 2026-11-04
+updated: 2026-11-05
 sections:
   - type: shared
     ref: cta-host
@@ -15,7 +15,7 @@ sections:
 
 This website sets no cookies, runs no tracking scripts, and loads nothing from other websites. It handles three kinds of personal data. The first is what you type into the contact form. The second is what you type into the Ask chat, if you use it. The third is the technical data that every web server receives when your browser asks for a page.
 
-Last updated: 4 November 2026.
+Last updated: 5 November 2026.
 
 ## Who is responsible for your data
 
@@ -50,17 +50,17 @@ OSE deletes your message 12 months after its last exchange with you. To have it 
 
 ## Ask chat
 
-The [Ask page](/ask/) and the "Ask" panel on every other page let you put a question to a chat assistant. Your browser contacts the chat function only when you send a question. When you send one, your browser sends the conversation so far, and a yes or no for your analytics choice in the privacy settings banner, to the chat function, a serverless container on Scaleway. The function asks Mistral Small, an AI model that runs on Scaleway's generative AI service in the European Union, to write the answer. To find the answer, the function also sends search phrases, which the model derives from your question, to the OSE documentation search server (the MCP server), which also runs on Scaleway in the European Union. Your IP address and a description of your browser reach the function with the request.
+The [Ask page](/ask/) and the "Ask" panel on every other page let you put a question to a chat assistant. Your browser contacts the chat function only when you send a question. When you send one, your browser sends the conversation so far, and a yes or no for your analytics choice in the privacy settings banner, to the chat function, a serverless container on Scaleway. The function asks an AI model from Mistral AI, which runs on Scaleway's generative AI service in the European Union, to write the answer. To find the answer, the function also sends search phrases, which the model derives from your question, to the OSE documentation search server (the MCP server), which also runs on Scaleway in the European Union. Your IP address and a description of your browser reach the function with the request.
 
 The conversation lives only in your browser's memory. It ends when you open another page or close the tab. The function does not store it, and the website does not write it to your browser storage.
 
-Nothing is shared by default. Sharing happens only after you accept analytics in the privacy settings banner. Then the function logs to Scaleway Cockpit: the text of your question (its first 500 characters), the number of calls to the AI model needed for the answer, whether the documentation answered the question, and a short version label for the assistant's instructions. Cockpit adds the time. The version label lets OSE link changes in answer quality to changes in those instructions. It is the same for every visitor and is not personal data. The log line holds no IP address and no earlier messages. Cockpit keeps the log lines for seven days. Every few days, an export job copies them to a private Scaleway bucket in the European Union. The copies stay there until OSE deletes them. OSE reads them to find gaps in its documentation. If you reject analytics or make no choice, nothing from your conversation is logged. You can change your choice at any time with the Privacy settings link at the bottom of each page.
+Nothing is shared by default. Sharing happens only after you accept analytics in the privacy settings banner. Then the function logs to Scaleway Cockpit: the text of your question (its first 500 characters), the number of calls to the AI model needed for the answer, whether the documentation answered the question, and a short version label for the assistant's instructions. Cockpit adds the time. The version label lets OSE link changes in answer quality to changes in those instructions. It is the same for every visitor and is not personal data. The log line holds no IP address and no earlier messages. Cockpit keeps the log lines for seven days. Every few days, an export job copies them to a private Scaleway bucket in the European Union. OSE deletes the copies 12 months after they were logged. OSE reads them to find gaps in its documentation. If you reject analytics or make no choice, nothing from your conversation is logged. You can change your choice at any time with the Privacy settings link at the bottom of each page.
 
 The legal basis for the chat is OSE's legitimate interest in answering your question, under Article 6(1)(f) GDPR. The legal basis for logging your question is your consent, under Article 6(1)(a) GDPR. Reject analytics through the Privacy settings link at any time to stop the logging. To have a logged question deleted, write to [home@opensourceeurope.org](mailto:home@opensourceeurope.org). Because the log holds no name, IP address or other identifier, OSE can find a question only if you quote its text.
 
 ## Cookies and browser storage
 
-This website sets no cookies and runs no tracking scripts. It stores one thing in your browser: your choice in the consent banner, kept in localStorage under the key "ose-consent". This value never leaves your browser. To remove it, clear the site data for opensourceeurope.org in your browser settings.
+This website sets no cookies and runs no tracking scripts. It stores one thing in your browser: your choice in the consent banner, kept in localStorage under the key "ose-consent". The value itself stays in your browser. Only when you send a question in the Ask chat does your browser tell the chat function yes or no for analytics, as the "Ask chat" section describes. To remove it, clear the site data for opensourceeurope.org in your browser settings.
 
 ## Fonts, images, and scripts
 
