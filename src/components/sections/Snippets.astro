@@ -2,6 +2,7 @@
 import Eyebrow from '../Eyebrow.astro';
 import Heading from '../Heading.astro';
 import { loadSettings } from '../../lib/site';
+import { linkParts } from '../../lib/inline';
 import type { SectionOf } from '../../lib/sections';
 
 interface Props {
@@ -40,7 +41,11 @@ const uid = section.id ?? 'snippets';
             </div>
             <!-- prettier-ignore -->
             <pre class="snippets__code" tabindex="0" role="region" aria-label={item.title}><code id={`${uid}-code-${i}`} class="snippets__source">{item.code}</code></pre>
-            {item.hint && <p class="snippets__hint">{item.hint}</p>}
+            {item.hint && (
+              <p class="snippets__hint">
+                {linkParts(item.hint).map((part) => (part.kind === 'link' ? <a href={part.text}>{part.text}</a> : part.text))}
+              </p>
+            )}
           </li>
         ))
       }
@@ -125,6 +130,7 @@ const uid = section.id ?? 'snippets';
     outline-offset: 2px;
   }
   .snippets__hint {
+    overflow-wrap: anywhere;
     margin: var(--space-3) 0 0;
     color: var(--color-text);
     font-size: var(--text-body);
@@ -138,7 +144,8 @@ const uid = section.id ?? 'snippets';
     .snippets__list {
       grid-template-columns: 1fr 1fr;
     }
-    .snippets__item:last-child {
+    /* Only an odd last box spans both columns, so four boxes form a 2x2 grid. */
+    .snippets__item:last-child:nth-child(odd) {
       grid-column: 1 / -1;
     }
   }
