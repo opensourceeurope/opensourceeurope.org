@@ -59,7 +59,7 @@ chat:
   resize_label: Resize the chat panel
   how_it_works:
     label: How this works
-    href: /ask/
+    href: /ask/#sovereignty
   shortcut_mac: ⌘K
   shortcut_other: Ctrl K
 
