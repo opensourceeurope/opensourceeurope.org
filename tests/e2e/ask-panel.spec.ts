@@ -181,6 +181,68 @@ test.describe('ask panel', () => {
     await expect(dialog(page)).toBeHidden();
   });
 
+  test('widens when its left edge is dragged, and keeps the page visible', async ({ page }, info) => {
+    test.skip(info.project.name !== 'desktop', 'desktop width only');
+    await page.goto('/about/');
+    await button(page).click();
+    const panel = page.locator('dialog.ask-panel__dialog');
+    const handle = dialog(page).getByRole('separator', { name: 'Resize the chat panel' });
+    await expect(handle).toBeVisible();
+    // Measure the handle only once the panel has slid in.
+    await panel.evaluate((el) => Promise.all(el.getAnimations().map((x) => x.finished)));
+    expect((await panel.boundingBox())!.width).toBe(440);
+    const h = (await handle.boundingBox())!;
+    const [x, y] = [h.x + h.width / 2, h.y + h.height / 2];
+    await page.mouse.move(x, y);
+    await page.mouse.down();
+    await page.mouse.move(x - 300, y, { steps: 5 });
+    await page.mouse.up();
+    await expect(dialog(page)).toBeVisible();
+    expect(Math.round((await panel.boundingBox())!.width)).toBe(740);
+    // Dragged past the left edge, the panel stops 96px short of it.
+    await page.mouse.move(x - 300, y);
+    await page.mouse.down();
+    await page.mouse.move(0, y, { steps: 5 });
+    await page.mouse.up();
+    expect(Math.round((await panel.boundingBox())!.x)).toBe(96);
+    await expect(handle).toHaveAttribute('aria-valuenow', '100');
+    // The width stays for the next open on the same page.
+    await page.keyboard.press('Escape');
+    await button(page).click();
+    await panel.evaluate((el) => Promise.all(el.getAnimations().map((x) => x.finished)));
+    expect(Math.round((await panel.boundingBox())!.x)).toBe(96);
+    await handle.dblclick();
+    expect((await panel.boundingBox())!.width).toBe(440);
+  });
+
+  test('resizes with the arrow keys on the handle', async ({ page }, info) => {
+    test.skip(info.project.name !== 'desktop', 'desktop width only');
+    await page.goto('/about/');
+    await button(page).click();
+    const panel = page.locator('dialog.ask-panel__dialog');
+    const handle = dialog(page).getByRole('separator', { name: 'Resize the chat panel' });
+    await expect(handle).toHaveAttribute('aria-valuenow', '0');
+    await handle.focus();
+    await page.keyboard.press('ArrowLeft');
+    await page.keyboard.press('ArrowLeft');
+    expect((await panel.boundingBox())!.width).toBe(520);
+    await page.keyboard.press('ArrowRight');
+    expect((await panel.boundingBox())!.width).toBe(480);
+    await page.keyboard.press('End');
+    await expect(handle).toHaveAttribute('aria-valuenow', '100');
+    await page.keyboard.press('Home');
+    expect((await panel.boundingBox())!.width).toBe(440);
+    await expect(dialog(page)).toBeVisible();
+  });
+
+  test('has no resize handle on a phone', async ({ page }, info) => {
+    test.skip(info.project.name !== 'mobile', 'phone width only');
+    await page.goto('/about/');
+    await button(page).click();
+    await expect(dialog(page)).toBeVisible();
+    await expect(page.locator('[data-ask-resize]')).toBeHidden();
+  });
+
   test('has no axe violations with the panel open', async ({ page }) => {
     await page.goto('/about/');
     await button(page).click();

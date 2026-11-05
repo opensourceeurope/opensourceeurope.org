@@ -28,6 +28,78 @@ function addStyles(href: string): Promise<void> {
 
 const loadChatStyles = (): Promise<unknown> => Promise.all([addStyles(chatCssUrl), addStyles(panelCssUrl)]);
 
+// Keep in step with the width rule in ask-panel.css.
+const PANEL_MIN = 440; // the default width, and the narrowest
+const PAGE_KEPT = 96; // the page width that always stays visible left of the panel
+const KEY_STEP = 40;
+
+/**
+ * Lets the visitor widen the panel by dragging its left edge, or with the arrow keys on the
+ * handle. Double-click resets the width. The width lasts until the page changes: the only
+ * browser storage the site uses is the consent choice. CSS hides the handle on narrow screens.
+ * Returns a function that updates the handle's value; call it after the panel opens.
+ */
+export function wireResize(d: HTMLDialogElement): () => void {
+  const handle = d.querySelector<HTMLElement>('[data-ask-resize]');
+  if (!handle) return () => undefined;
+  const max = (): number => Math.max(PANEL_MIN, document.documentElement.clientWidth - PAGE_KEPT);
+  const clamp = (w: number): number => Math.round(Math.min(max(), Math.max(PANEL_MIN, w)));
+  // The handle reports how far the panel is between its narrowest and widest, in percent.
+  const report = (): void => {
+    const range = max() - PANEL_MIN;
+    const now = range > 0 ? ((clamp(d.getBoundingClientRect().width) - PANEL_MIN) / range) * 100 : 0;
+    handle.setAttribute('aria-valuenow', String(Math.round(now)));
+  };
+  const set = (w: number): void => {
+    d.style.setProperty('--ask-panel-width', `${clamp(w)}px`);
+    report();
+  };
+
+  let startX = 0;
+  let startWidth = 0;
+  handle.addEventListener('pointerdown', (event) => {
+    if (!event.isPrimary || event.button !== 0) return;
+    event.preventDefault();
+    startX = event.clientX;
+    startWidth = d.getBoundingClientRect().width;
+    handle.setPointerCapture(event.pointerId);
+    d.dataset.resizing = '';
+  });
+  handle.addEventListener('pointermove', (event) => {
+    if (!handle.hasPointerCapture(event.pointerId)) return;
+    set(startWidth + startX - event.clientX);
+  });
+  const stop = (event: PointerEvent): void => {
+    if (handle.hasPointerCapture(event.pointerId)) handle.releasePointerCapture(event.pointerId);
+    delete d.dataset.resizing;
+  };
+  handle.addEventListener('pointerup', stop);
+  handle.addEventListener('pointercancel', stop);
+  handle.addEventListener('dblclick', () => set(PANEL_MIN));
+
+  handle.addEventListener('keydown', (event) => {
+    const width = d.getBoundingClientRect().width;
+    const next: Record<string, number> = {
+      ArrowLeft: width + KEY_STEP,
+      ArrowUp: width + KEY_STEP,
+      ArrowRight: width - KEY_STEP,
+      ArrowDown: width - KEY_STEP,
+      Home: PANEL_MIN,
+      End: max(),
+    };
+    const to = next[event.key];
+    if (to === undefined || event.altKey || event.ctrlKey || event.metaKey) return;
+    event.preventDefault();
+    set(to);
+  });
+
+  window.addEventListener('resize', () => {
+    if (d.open) report();
+  });
+  // Called on each open, when the panel has its size.
+  return report;
+}
+
 export function initAskPanel(): void {
   const root = document.querySelector<HTMLElement>('[data-ask-panel]');
   if (!root) return;
@@ -73,7 +145,9 @@ export function initAskPanel(): void {
 
   // Where the focus was when the shortcut opened the panel. A click on the button leaves it null.
   let returnTo: HTMLElement | null = null;
+  let reportWidth = (): void => undefined;
   const wire = (d: HTMLDialogElement): void => {
+    reportWidth = wireResize(d);
     d.querySelector('[data-ask-close]')?.addEventListener('click', () => d.close());
     // Close on a click outside the panel's box only. A click on its padding also targets the dialog.
     d.addEventListener('click', (event) => {
@@ -122,7 +196,10 @@ export function initAskPanel(): void {
       return;
     }
     if (!dialog) return;
-    if (!dialog.open) dialog.showModal();
+    if (!dialog.open) {
+      dialog.showModal();
+      reportWidth();
+    }
     dialog.querySelector<HTMLTextAreaElement>('[data-chat-input]')?.focus();
   };
 

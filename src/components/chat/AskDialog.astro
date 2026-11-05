@@ -9,6 +9,19 @@ const { texts } = Astro.props;
 ---
 
 <dialog class="ask-panel__dialog" aria-labelledby="ask-panel-title">
+  <!-- Drag or arrow keys widen the panel on wider screens. CSS hides it on narrow ones, where the panel fills the screen. -->
+  <div
+    class="ask-panel__resize"
+    role="separator"
+    aria-orientation="vertical"
+    aria-label={texts.resize_label}
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow="0"
+    tabindex="0"
+    data-ask-resize
+  >
+  </div>
   <div class="ask-panel__head">
     <h2 class="ask-panel__title" id="ask-panel-title">{texts.title}</h2>
     <button type="button" class="ask-panel__close" aria-label={texts.close_label} data-ask-close>

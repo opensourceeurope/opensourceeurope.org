@@ -119,6 +119,8 @@ const settings = defineCollection({
             no_js: z.string().min(1),
             open_label: z.string().min(1),
             close_label: z.string().min(1),
+            // The drag handle on the panel's left edge, read by screen readers.
+            resize_label: z.string().min(1),
             how_it_works: link,
             shortcut_mac: z.string().min(1),
             shortcut_other: z.string().min(1),
