@@ -69,6 +69,8 @@ The version is pinned on purpose, so you always get a known build. A release scr
 
 The plugin adds the MCP server, an `ose-researcher` agent and an `ask-about-ose` skill. The skill sends OSE questions to the agent. You can also call it as `/ose-knowledge:ask-about-ose`.
 
+The MCP server starts with `uvx`, so install [uv](https://docs.astral.sh/uv/) before you install the plugin.
+
 ```
 /plugin marketplace add opensourceeurope/ose-ai
 /plugin install ose-knowledge@ose-ai
@@ -78,11 +80,13 @@ The plugin adds the MCP server, an `ose-researcher` agent and an `ask-about-ose`
 
 The same plugin installs in Codex with the MCP server and the `ask-about-ose` skill. Codex doesn't load the `ose-researcher` agent, so the skill calls `search_docs` directly there.
 
+The MCP server starts with `uvx`, so install [uv](https://docs.astral.sh/uv/) before you install the plugin.
+
 ```bash
 codex plugin marketplace add opensourceeurope/ose-ai
 ```
 
-Then run `/plugins` in Codex, install `ose-knowledge`, and start a new session.
+Then run `/plugins` in Codex, install `ose-knowledge`, and start a new session. To install from the terminal instead, run `codex plugin add ose-knowledge@ose-ai` and start a new session.
 
 ### Run the chat locally
 
