@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.6.0...v0.7.0) (2026-11-05)
+
+
+### Features
+
+* make the ose-knowledge plugin installable in Codex ([#7](https://github.com/opensourceeurope/opensourceeurope.org/issues/7)) ([9672d4d](https://github.com/opensourceeurope/opensourceeurope.org/commit/9672d4dec255a9f78a7c6c134fb529e9179c1bfe))
+
 ## [0.6.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.5.2...v0.6.0) (2026-11-04)
 
 
