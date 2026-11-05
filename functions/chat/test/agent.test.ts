@@ -235,3 +235,24 @@ describe("runAgent search failures", () => {
     expect(r.autoSearchOnly).toBe(true);
   });
 });
+
+describe("runAgent question note", () => {
+  it("adds the note to the question the model sees, not to the automatic search", async () => {
+    const search = vi.fn(async () => ({ text: "Result", citations: [] }));
+    const mistralChat = vi
+      .fn()
+      .mockResolvedValueOnce({ content: "", tool_calls: [] }) // ignores "required": the agent searches itself
+      .mockResolvedValueOnce({ content: "Answer.", tool_calls: [] });
+    const userMessages = [
+      { role: "user" as const, content: "hi" },
+      { role: "assistant" as const, content: "Hello." },
+      { role: "user" as const, content: "how do I join?" },
+    ];
+    await runAgent({ persona: "P", userMessages, mistralChat, search, questionNote: "NOTE" });
+    expect(search).toHaveBeenCalledWith("how do I join?");
+    const [messages] = mistralChat.mock.calls[0];
+    expect(messages[3]).toEqual({ role: "user", content: "how do I join?\n\nNOTE" });
+    expect(messages[1].content).toBe("hi");
+    expect(userMessages[2].content).toBe("how do I join?");
+  });
+});
