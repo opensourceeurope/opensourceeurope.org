@@ -33,23 +33,10 @@ export function writeConsent(value: Consent): void {
   document.dispatchEvent(new CustomEvent(CONSENT_EVENT, { detail: value }));
 }
 
-let injected = false;
-
-/** Adds the analytics script once. Does nothing without a script or without consent. */
-function injectAnalytics(src: string | undefined): void {
-  if (!src || injected || readConsent() !== 'granted') return;
-  injected = true;
-  const el = document.createElement('script');
-  el.src = src;
-  el.async = true;
-  document.head.append(el);
-}
-
 /** Wires the banner: shows it without a stored choice, handles the buttons, the settings view and `[data-consent-open]`. */
 export function initConsent(): void {
   const banner = document.querySelector<HTMLElement>('[data-consent]');
   if (!banner) return;
-  const analyticsSrc = banner.dataset.analyticsSrc || undefined;
   const main = banner.querySelector<HTMLElement>('[data-consent-main]')!;
   const settings = banner.querySelector<HTMLElement>('[data-consent-settings]')!;
   const toggle = banner.querySelector<HTMLInputElement>('[data-consent-toggle]')!;
@@ -78,7 +65,6 @@ export function initConsent(): void {
   };
   const choose = (value: Consent) => {
     writeConsent(value);
-    injectAnalytics(analyticsSrc);
     close();
   };
 
@@ -98,5 +84,4 @@ export function initConsent(): void {
   });
 
   if (readConsent() === null) open(false);
-  else injectAnalytics(analyticsSrc);
 }
