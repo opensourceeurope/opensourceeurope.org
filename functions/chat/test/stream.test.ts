@@ -333,6 +333,20 @@ describe("handleChatStream", () => {
     expect(frames.filter((f) => f.event === "delta")).toEqual([{ event: "delta", data: { text: "Plain answer." } }]);
   });
 
+  // Scaleway's mistral-medium-3.5 streams tool-call pieces with a null id and
+  // no function name, which the SDK's chunk schema rejects with a ZodError.
+  it("falls back once when a stream chunk fails the SDK's schema", async () => {
+    mock.complete = vi.fn().mockResolvedValueOnce(toolReply("t1")).mockResolvedValueOnce(textReply("Plain answer."));
+    mock.stream = vi.fn(async () => ({
+      async *[Symbol.asyncIterator]() {
+        throw Object.assign(new Error("Expected string, received null"), { name: "ZodError" });
+      },
+    }));
+    const frames = await runStream(Q, { openSearch: fakeSession().openSearch });
+    expect(frames.at(-1)?.event).toBe("done");
+    expect(frames.filter((f) => f.event === "delta")).toEqual([{ event: "delta", data: { text: "Plain answer." } }]);
+  });
+
   it("stops waiting for a slow search when the client leaves", async () => {
     const abort = new AbortController();
     mock.complete = vi.fn(async () => toolReply("t1"));

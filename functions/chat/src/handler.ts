@@ -165,7 +165,9 @@ interface ChatHooks {
 
 // Errors of the streaming request itself, not of the model API: a response
 // that is no event stream, or one the SDK cannot parse. A normal call may work.
-const STREAM_ERROR_NAMES = new Set(["SDKValidationError", "ResponseValidationError", "SyntaxError"]);
+// The SDK throws a bare ZodError for a chunk that fails its schema, such as the
+// tool-call pieces with a null id that Scaleway's mistral-medium-3.5 streams.
+const STREAM_ERROR_NAMES = new Set(["SDKValidationError", "ResponseValidationError", "SyntaxError", "ZodError"]);
 function isStreamSpecific(e: unknown): boolean {
   const err = e as { name?: unknown; statusCode?: unknown; body?: unknown; message?: unknown };
   if (typeof err?.name === "string" && STREAM_ERROR_NAMES.has(err.name)) return true;
