@@ -20,6 +20,7 @@ vi.mock("@mistralai/mistralai", () => ({
 
 import { handleChat, toMistralMessages, stripTrailingSourceList, resetToolChoiceFallbacks, REQUIRED_CALL_MAX_TOKENS } from "../src/handler.js";
 import { ChatFailure } from "../src/errors.js";
+import { EARLIER_TURNS_NOTE } from "../src/chat-rules.js";
 
 describe("toMistralMessages (Mistral API wire format)", () => {
   // Regression: the Mistral SDK request schema expects camelCase toolCalls /
@@ -162,8 +163,15 @@ describe("handleChat timeouts, retries and errors", () => {
     expect(sent.slice(1)).toEqual([
       { role: "user", content: "q1" },
       { role: "assistant", content: "a1" },
-      { role: "user", content: "q2" },
+      { role: "user", content: `q2\n\n${EARLIER_TURNS_NOTE}` },
     ]);
+  });
+
+  it("adds no note to a question without earlier assistant turns", async () => {
+    captured.complete = vi.fn(async () => textReply("Hi"));
+    const { openSearch } = fakeSession();
+    await handleChat({ messages: [{ role: "user", content: "q1" }] }, ENV, { openSearch });
+    expect(captured.complete.mock.calls[0][0].messages.slice(1)).toEqual([{ role: "user", content: "q1" }]);
   });
 
   it("retries a 503 once and then answers", async () => {

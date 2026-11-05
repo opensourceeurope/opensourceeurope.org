@@ -195,7 +195,7 @@ Run these steps once. They add the page-view counts to a job definition that alr
 1. Print the Loki URL of the `fr-par` logs data source:
 
    ```bash
-   scw cockpit data-source list region=fr-par origin=scaleway type=logs -o json | jq -r '.[0].url'
+   scw cockpit data-source list region=fr-par origin=scaleway types.0=logs -o json | jq -r '.[0].url'
    ```
 
 2. Create a `fr-par` Cockpit token, and store its secret key in Secret Manager in `pl-waw`. Replace `{SECRET_ID}` with the ID that `scw secret secret create` prints.

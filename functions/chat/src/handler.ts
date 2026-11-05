@@ -6,12 +6,13 @@ import { prepareHistory } from "./history.js";
 import { extractFollowups, extractUnanswered, keepCitedSources, unlinkForeignUrls } from "./sources.js";
 import { createDeltaFilter, createSseWriter, type SseEventName } from "./stream.js";
 import { PERSONA } from "./persona.generated.js";
-import { buildSystemPrompt, promptVersion } from "./chat-rules.js";
+import { EARLIER_TURNS_NOTE, buildSystemPrompt, promptVersion } from "./chat-rules.js";
 
 // The full system prompt: the shared persona plus the chat-only rules.
 export const SYSTEM_PROMPT = buildSystemPrompt(PERSONA);
-// Computed once at startup; logged with opt-in analytics.
-export const PROMPT_VERSION = promptVersion(SYSTEM_PROMPT);
+// Computed once at startup from every text the model gets besides the
+// conversation; logged with opt-in analytics.
+export const PROMPT_VERSION = promptVersion(SYSTEM_PROMPT + EARLIER_TURNS_NOTE);
 
 export interface ChatRequest { messages: ChatMessage[]; analyticsOptIn?: boolean; }
 export interface Env { MISTRAL_API_KEY: string; MISTRAL_MODEL?: string; MISTRAL_BASE_URL?: string; OSE_MCP_URL: string; MAX_TOOL_ROUNDS?: string;
@@ -165,7 +166,9 @@ interface ChatHooks {
 
 // Errors of the streaming request itself, not of the model API: a response
 // that is no event stream, or one the SDK cannot parse. A normal call may work.
-const STREAM_ERROR_NAMES = new Set(["SDKValidationError", "ResponseValidationError", "SyntaxError"]);
+// The SDK throws a bare ZodError for a chunk that fails its schema, such as the
+// tool-call pieces with a null id that Scaleway's mistral-medium-3.5 streams.
+const STREAM_ERROR_NAMES = new Set(["SDKValidationError", "ResponseValidationError", "SyntaxError", "ZodError"]);
 function isStreamSpecific(e: unknown): boolean {
   const err = e as { name?: unknown; statusCode?: unknown; body?: unknown; message?: unknown };
   if (typeof err?.name === "string" && STREAM_ERROR_NAMES.has(err.name)) return true;
@@ -382,6 +385,7 @@ async function runChat(body: ChatRequest, env: Env, deps: HandlerDeps, hooks: Ch
     result = await runAgent({
       persona: SYSTEM_PROMPT,
       userMessages: history,
+      questionNote: history.some((m) => m.role === "assistant") ? EARLIER_TURNS_NOTE : undefined,
       mistralChat,
       search: async (q) => {
         // The search has no signal of its own: stop waiting when the client leaves.
