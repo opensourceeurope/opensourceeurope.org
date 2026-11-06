@@ -126,4 +126,4 @@ Add the `Generated-by:` line to the pull request if an agent helped, and never a
 
 ## The Ask chat
 
-The Ask chat answers from a knowledge index in `.opencrane/`. Until that index reads these Markdown files, a docs change here does not reach the chat. See `docs/knowledge/knowledge-pipeline.md`.
+The Ask chat answers from a knowledge index in `.opencrane/`, built from these Markdown files. The weekly refresh exports the docs again and rebuilds the index, so a docs change reaches the chat with the first release after the next refresh. To ship it with the change, follow `docs/knowledge/knowledge-pipeline.md` in the pull request and commit the results.

@@ -6,10 +6,12 @@ embeds them, and indexes them into Milvus Lite for the `search_docs` MCP tool.
 
 ## Sources
 
-Both are public `llms-full.txt`:
+The index has two `llmstxt` sources:
 
-- open-source-europe — https://docs.opencollective.com/open-source-europe
-- oc-europe-internal-doc — https://docs.opencollective.com/oc-europe-internal-doc
+- `open-source-europe`: the docs at `/docs/`, read from the Markdown in `src/content/docs/docs/`. `scripts/knowledge/docs-to-llms.py` exports the pages, in sidebar order, to `.opencrane/docs-export/open-source-europe/llms-full.txt` and a companion `llms.txt`, and `fetch` copies both into `.opencrane/llmstxt/open-source-europe/`. Answers cite `https://opensourceeurope.org/docs/...`. The export folder is not committed, so run the script before every `fetch`.
+- `oc-europe-internal-doc`: the internal Open Collective Europe space, downloaded from https://docs.opencollective.com/oc-europe-internal-doc/llms-full.txt.
+
+A change to a docs page reaches the chat with the next weekly refresh, which exports the docs again. To ship it sooner, run the pipeline below in the pull request and commit the results.
 
 ## Rebuild the index locally
 
@@ -26,6 +28,7 @@ extra — docling/PyGithub/tiktoken live there, kept out of the serve-only base 
 `fetch` needs a non-empty `GITHUB_TOKEN` even for llmstxt-only sources:
 
 ```bash
+uv run --no-project --python 3.12 --with pyyaml==6.0.2 python scripts/knowledge/docs-to-llms.py
 OC="opencrane[pipeline]@$(cat .opencrane/opencrane-version)"
 GITHUB_TOKEN=x uvx -c .opencrane/constraints.txt "$OC" fetch
 uvx -c .opencrane/constraints.txt "$OC" llms
@@ -37,6 +40,7 @@ uvx -c .opencrane/constraints.txt "$OC" index
 Or run the whole pipeline at once:
 
 ```bash
+uv run --no-project --python 3.12 --with pyyaml==6.0.2 python scripts/knowledge/docs-to-llms.py
 GITHUB_TOKEN=x uvx -c .opencrane/constraints.txt "opencrane[pipeline]@$(cat .opencrane/opencrane-version)" build
 ```
 

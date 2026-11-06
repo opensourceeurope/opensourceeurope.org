@@ -1,4 +1,34 @@
-# Welcome to Open Source Europe
+# Open Source Europe documentation
+
+Practical guidance for joining OSE, receiving funds and managing your Collective.
+
+**New to OSE?** [Start your application](https://opensourceeurope.org/docs/getting-started/how-to-apply/). **Already accepted?** [Follow your first steps](https://opensourceeurope.org/docs/how-it-works/basics/).
+
+## Choose your task
+
+- [Join OSE](https://opensourceeurope.org/docs/getting-started/how-to-apply/): Check whether hosting fits your project and prepare your application.
+- [Run your Collective](https://opensourceeurope.org/docs/how-it-works/basics/): Start after acceptance, manage your budget and keep your contacts up to date.
+- [Receive funds](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/): Choose a donation route, receive a grant or connect GitHub Sponsors.
+- [Pay and get reimbursed](https://opensourceeurope.org/docs/how-it-works/expenses/): Choose an invoice or reimbursement and prepare your payment request.
+- [Fees and hosting rules](https://opensourceeurope.org/docs/faq/general-faqs/): Understand hosting costs and find answers about your arrangement with OSE.
+- [Get help](https://opensourceeurope.org/docs/about/contact-us/): Find the right contact for a question, a payment issue or a sensitive concern.
+
+## Common tasks
+
+* [Check project eligibility](https://opensourceeurope.org/docs/getting-started/how-to-apply/eligibility/)
+* [Review hosting fees](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost)
+* [Choose invoice or reimbursement](https://opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/)
+* [Apply for a grant](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/applying-for-grants/)
+* [Connect GitHub Sponsors](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/setting-up-github-sponsors/)
+* [Arrange U.S. donations](https://opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/)
+* [Make an outgoing grant or donation](https://opensourceeurope.org/docs/how-it-works/expenses/request-a-grant-for-nonprofits-only/)
+* [Move or close a Collective](https://opensourceeurope.org/docs/faq/fiscal-hosting-faqs/)
+
+## Understand OSE
+
+Read [what OSE offers](https://opensourceeurope.org/docs/what-we-offer/), explore [budget decisions](https://opensourceeurope.org/docs/guides/deciding-on-how-to-use-your-money/), or consult the [payment FAQ](https://opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/).
+
+For a safeguarding concern, go directly to the [safeguarding policy and contacts](https://opensourceeurope.org/docs/about/safeguarding-policy/).
 
 Open Source Europe is a Belgian Association (ASBL/vzw) with a tech platform that enables over 400 open source groups to raise and spend more than 1 million euros annually, all in full transparency.
 
@@ -43,438 +73,40 @@ We offer professional assistance in:
 * [Contact us](mailto:oce@opencollective.com)
 
 
-# About Open Source Europe
-
-Open Source Europe is a Belgian Association that fiscally hosts over 400 initiatives and partners with philanthropic institutions to support global regranting.
-
-***
-
-### Service Overview
-
-Unlike traditional non-profits, Open Source Europe (OSE) combines a legal structure with a dedicated digital infrastructure to enable:
-
-* **Fiscal hosting for open source projects:** We provide a legal umbrella for developers, maintainers, and communities, allowing them to operate without creating their own legal entity.
-* **Grant distribution and fund management:** We manage funds for foundations and companies seeking to support critical open source projects across Europe and beyond.
-* **Radical transparency:** Using the Open Collective platform, all financial activity is publicly visible, fostering trust and accountability within the community.
-
-***
-
-### Legal and Operational Framework
-
-OSE is a registered Belgian non-profit association (ASBL/vzw).
-
-It operates through the Open Collective platform, which allows hosted projects to manage budgets, receive funds, and process expenses in real-time.
-
-***
-
-### Who We Serve
-
-* **Project Maintainers:** Open source projects without their own legal structure.
-* **Funders and Corporates:** International companies looking for a trusted intermediary to support open source in Europe.
-* **Developer Networks:** Communities seeking fiscal and operational support for their collective activities.
-
-***
-
-### How to Work With Us
-
-* **For Projects:** Apply for fiscal hosting to start receiving donations and grants legally.
-* **For Funders:** Support projects and manage your contributions transparently through our hosted funds.
-* **For Organizations:** Manage large-scale distributions efficiently without complex international structures.
-
-***
-
-### OSE vs Open Collective
-
-While we work closely together, Open Source Europe and Open Collective are distinct entities:
-
-1. **Open Source Europe:** An independent, Belgian-based non-profit association (ASBL/vzw) that provides fiscal hosting and fund management services.
-2. **Open Collective:** The open-source software platform we use to deliver these services. The technology is developed and maintained by the **Open Finance Consortium**, a collective effort dedicated to building transparent financial infrastructure for the commons.
-
-> **In short:**
->
-> * **OSE** is the legal and fiscal host.
-> * **Open Collective** is the open-source technology platform.
-
-***
-
-[Contact the team](mailto:oce@opencollective.com)
-
-
-# What We Offer
-
-Open Source Europe provides the legal and financial infrastructure that open source projects need to thrive. Our services are designed to let you focus on your code, not on paperwork.
-
-We offer one core service: **fiscal hosting**, which bundles everything you need to operate professionally.
-
-***
-
-### Core Infrastructure
-
-#### A Legal Home for Your Project
-
-Operate under our Belgian non-profit association (ASBL/vzw). This allows your project to receive funds, manage contracts, and act as a single legal entity without the complexity and overhead of creating your own.
-
-#### Transparent Financial Tools
-
-Use the Open Collective platform to manage your budget, receive donations, and pay contributors and expenses with full transparency. Your community and backers can see every transaction in real-time, building trust and accountability.
-
-#### Access to Grants and Funding
-
-Many foundations and companies want to fund the open source ecosystem but find it difficult to support unincorporated groups. We act as a trusted intermediary, making your project eligible to receive grants from these larger institutional funders.
-
-***
-
-### Why Choose Fiscal Hosting?
-
-This structure is ideal for open source projects seeking to focus on their mission without the administrative burden of formal incorporation. It provides:
-
-* **Instant Legitimacy:** High-level compliance for corporate sponsors.
-* **Reduced Overhead:** No need for dedicated accounting or legal teams.
-* **Collective Power:** Join an ecosystem of over 400 projects sharing the same robust infrastructure.
-
-***
-
-### Get Started
-
-Ready to join a supportive community of open source projects building the future of software?
-
-* [Apply for hosting](https://opencollective.com/europe/apply)
-* [Join our Discord](https://discord.gg/Na7BpVcm)
-* [Contact the team](mailto:oce@opencollective.com)
-
-
-# Umbrella organisation
-
-Open Source Europe (OSE) provides a shared legal and financial framework for open source projects, developer networks, and software communities.
-
-### Collective Infrastructure
-
-As an umbrella organisation, OSE acts as the fiscal host for over 400 initiatives. Each project operates independently on the Open Collective platform with its own public page and transparent budget, while benefiting from the legal standing of a professional Belgian non-profit (ASBL/vzw).
-
-This structure allows communities to manage funds, hire contributors, and receive grants without the overhead of maintaining their own legal entity.
-
-***
-
-### Key Benefits
-
-* **Simplified Legal Framework:** Skip the complexity of non-profit incorporation, bank account openings, and statutory bookkeeping.
-* **Grant Eligibility:** Access funding from foundations, corporations, and public authorities that require a registered non-profit intermediary.
-* **Professional Back-office:** We handle the administrative heavy lifting, including expense processing, bookkeeping, and annual financial reporting.
-* **Radical Transparency:** Every transaction is logged in real-time, building immediate trust with your backers and contributors.
-* **Ecosystem Access:** Join a network of like-minded maintainers and projects within the European open source landscape.
-
-***
-
-{% hint style="success" %}
-
-### Responsibilities and Alignment
-
-To maintain the integrity of the umbrella, hosted projects must adhere to three core principles:
-
-1. **Mission Alignment:** Projects must actively support the development or sustainability of open source software.
-2. **Non-Profit Compliance:** As an ASBL/vzw, projects must operate within the limits of Belgian law, focusing on community benefit rather than purely commercial for-profit activities.
-3. **Operational Transparency:** All financial activities must be conducted through the Open Collective platform to ensure public accountability.
-   {% endhint %}
-
-***
-
-### Use Cases We Support
-
-* **Open Source Libraries:** A legal home for critical libraries to receive corporate and individual donations.
-* **Project Ecosystems:** A unified structure for a suite of related tools managed by a distributed community.
-* **Tech Communities:** Regional developer groups or meetups managing funds for events, travel stipends, and venues.
-
-***
-
-[Apply to join the umbrella](https://opencollective.com/europe/apply)
-
-
-# The Open Collective Platform
-
-A shared tool for managing contributions, expenses, and grants with full transparency.
-
-#### **A transparent financial and community management tool**
-
-Open Collective is a digital platform that enables hosted initiatives and philanthropic partners to raise, manage, and distribute funds with full transparency. Each group or fund hosted by Open Collective Europe receives its own public page, equipped with tools to:
-
-* Collect financial contributions: Accept donations via credit card, PayPal, or bank transfer, and manage grants.
-* Manage expenses and disbursements: Submit, approve, and reimburse expenses directly through the platform.
-* Display a transparent budget: All income and expenditures are visible in real-time, enhancing trust and accountability.
-* Engage with the community: Post updates, host events, and share progress with supporters.
-
-This integrated approach simplifies financial administration and fosters a collaborative environment for your initiative or fund.
-
-### Support for Philanthropic Regranting
-
-Beyond grassroots initiatives, the platform is also a powerful tool for foundations and funders. Through Open Collective, OCE can set up dedicated online funds to:
-
-* Receive donations or grants earmarked for specific causes or regions
-* Disburse grants to multiple projects (including informal or unincorporated groups) in a streamlined, transparent manner
-* Enable funders and the public to track how resources are used
-
-Each fund has its own profile page, budget, and update feed, just like a Collective. This makes it easy for regranting partners to communicate their goals, track disbursements, and meet reporting obligations with minimal overhead.
-
-### Why transparency matters
-
-Transparency is a cornerstone of the Open Collective platform. By making financial information publicly accessible, initiatives and funders can:
-
-* Build credibility: Demonstrate responsible fund management to donors and stakeholders
-* Simplify reporting: Funders can directly monitor how their resources are allocated
-* Enhance collaboration: Encourage trust and coordination between grantees and grantmakers
-
-Financial transactions are public, but personal details like names and email addresses are only visible to authorized admins.
-
-### Key Features
-
-* Real-time budget tracking
-* Integrated expense and payout tools
-* Custom donation tiers and fundraising campaigns
-* Event management tools
-* Automated monthly financial summaries
-* Public updates and communication channels
-
-
-# Equivalency Determination Certificate
-
-### What is it?
-
-An Equivalency Determination (ED) Certificate is a formal recognition issued by a U.S. intermediary organization (such as NGOsource) stating that a non-U.S. organization is the equivalent of a U.S. public charity in terms of structure, purpose, and operations.
-
-Thanks to our ED Certificate, U.S.-based private foundations and institutional funders can donate to Open Collective Europe without having to conduct their own equivalency vetting process. This saves time, money, and administrative work on both sides.
-
-It allows OCE to:
-
-* Receive grants from U.S. foundations that require ED verification
-* Provide documentation and compliance assurance to U.S.-based funders
-* Facilitate cross-border grantmaking in a secure and trusted manner
-
-### Important clarification
-
-Having an ED certificate does not automatically make donations from U.S. individuals tax-deductible.
-
-For that, we partner with Myriad USA, which can issue tax receipts to U.S. donors for eligible initiatives.
-
-
-# Tax-Deductible Giving for U.S. Donors
-
-### For U.S.-Based Donors Only
-
-Open Collective Europe (OCE) partners with Myriad USA, a U.S.-based intermediary that enables American donors and foundations to support international initiatives while receiving U.S. tax deductions.
-
-Thanks to this partnership, donations from U.S.-based individuals and foundations to eligible initiatives hosted by OCE can be tax-deductible.
-
-What this means
-
-* Individual U.S. donors can receive tax receipts via Myriad USA for their contributions.
-* U.S. foundations and grantmakers can support hosted initiatives through a trusted and compliant channel, without requiring their own Equivalency Determination (ED) process.
-* This benefit applies only to donors based in the United States.
-
-[Contact us](mailto:oce@opencollective.com) for more info
-
-{% hint style="warning" %}
-**Important Notes**
-
-* We do not offer tax deductibility for donations made from within Europe or other regions at this time.
-* Hosted initiatives may mention this feature in their international fundraising campaigns targeted at U.S.-based supporters.
-* For one time important donation, please follow the instructions [here](https://myriadusa.org/waystogive/) with the reference American Friends of Open Collective Europe and the name of the project.
-  {% endhint %}
-
-
-# Terms of Service
-
-{% hint style="danger" %}
-The summary below highlights the key points of our Terms of Service, to help you understand the main commitments and responsibilities when joining Open Collective Europe.
-
-👉 For the full legal version of our Terms of Service, please refer to the official document available [here](https://docs.google.com/document/d/e/2PACX-1vS2jTb55T-kXHDPLNWVg4xUuMGmediT9VBqwsNpdQA8geRpcPsyYvfPggwJ6iZaPw/pub).
-{% endhint %}
-
-### Summary: What you agree to by joining OCE
-
-* **You stay in control**: OCE manages a fund on your behalf, but the money belongs to your initiative. OCE is not the owner of the contributions.
-* **You are legally and fiscally independent**: Your initiative is not a legal extension of OCE. You are responsible for your own activities, including local tax and legal compliance.
-* **Transparency is mandatory**: All income and expenses must be tracked publicly through your Open Collective page.
-* **Funds must serve a charitable mission**: Contributions can only be used to support your initiative’s stated purpose, in line with OCE’s values and Belgian nonprofit law.
-* **Termination is possible**: Either party can end the agreement with 30 days' notice. Remaining funds must be redirected to a charitable purpose.
-
-***
-
-## Legal Agreement
-
-These are the basic Terms of Service of Open Collective Europe (“the Foundation”). This Agreement enters into effect (“Effective Date”) upon acceptance of this Agreement when creating an initiative (“the Initiative”) and requesting to make use of Open Collective’s platform and services.
-
-***
-
-### Recitals
-
-Open Collective Europe is a Public Benefit Foundation (Stichting van Openbaar Nut / Fondation d’Utilité Publique), incorporated under the laws of Belgium. It allows groups—such as an Initiative—to raise and manage funds transparently for specific projects or movements without needing to incorporate a legal entity.
-
-A restricted fund (the "Fund") will be created to receive donations on behalf of the Initiative. OCE acts solely as an intermediary and does not own the contributions received. Funds are disbursed to support the Initiative's purpose, minus administrative fees and expenses.
-
-***
-
-### Terms of Agreement
-
-The Agreement starts from the Effective Date and continues unless terminated (see section “Termination”).
-
-***
-
-### Relationship & Process
-
-#### Intermediary Role
-
-* The Foundation manages the Fund on behalf of the Initiative.
-* OCE never assumes ownership of the funds.
-* The relationship is **indirect representation** (middellijke vertegenwoordiging / représentation indirecte).
-
-#### Legal Separation
-
-* The Initiative cannot act legally on behalf of OCE.
-* It cannot use OCE’s tax identification number.
-* Any required tax ID must be acquired separately by the Initiative.
-
-#### Protocols
-
-* The Foundation follows internal “Protocols” that may be updated with 30 days’ notice.
-* If updates affect your rights, you will be notified.
-
-#### Soliciting Contributions
-
-* You may raise funds, but must notify OCE at least 60 days in advance of any public fundraising campaign.
-* A signed Mandate Agreement is required before fundraising begins.
-
-#### Agreements with Third Parties
-
-* Initiatives cannot bind the Foundation to any third-party agreement (e.g., vendors, donors) without prior written approval.
-
-***
-
-### Intellectual Property
-
-The Initiative retains full ownership of its intellectual property. Nothing submitted to OCE is transferred unless explicitly agreed otherwise.
-
-***
-
-### Use of the Fund
-
-* All contributions belong to the Initiative.
-* Disbursements must be requested via the platform with proper documentation.
-* The Foundation retains full control over financial administration and may deduct fees directly.
-
-***
-
-### Charitable Use
-
-All funds must support the Initiative’s mission and comply with the Foundation’s charitable purpose.
-
-Prohibited uses:
-
-* Political campaigning
-* Illegal activities
-* Private inurement or personal benefit
-
-***
-
-### Termination
-
-Either party may terminate the agreement with 30 days’ written notice.
-
-If funds remain in the Initiative’s account:
-
-* Valid expenses may still be reimbursed.
-* You may name a nonprofit “Successor” organization to transfer funds to.
-* If no successor is named, OCE may redistribute funds to another eligible purpose.
-
-***
-
-### Notices
-
-All communications must be sent to:
-
-Open Collective Europe Foundation\
-Avenue Louise 500, Boîte 205, 1050 Brussels, BELGIUM\
-Email: <oce@opencollective.com>
-
-***
-
-### Miscellaneous
-
-#### Severability
-
-If a clause is invalid, the rest of the agreement remains enforceable.
-
-#### No Waiver
-
-Not enforcing a right immediately doesn’t mean waiving that right.
-
-#### Transfer of Rights
-
-Rights and obligations cannot be transferred without written consent.
-
-***
-
-### Protocols (Exhibit A)
-
-#### Eligibility Criteria
-
-* **Non-profit**: Must have a charitable mission. Commercial activities are allowed if profits support the mission.
-* **Apolitical**: No partisan campaigning or fundraising.
-* **Secular**: Must not promote a religious movement. Educational or think-tank projects may be accepted case-by-case.
-
-#### Initiative’s Obligations
-
-* Use contributions only for declared purposes.
-* Maintain a public, transparent ledger via the platform.
-
-#### Fees & Expenses
-
-* **8%** on donations via the platform (e.g. PayPal, Stripe).
-* **10%** on direct bank transfers and grants.
-* Interest earned on funds is retained by OCE.
-* Additional expenses (e.g. payment processing fees) are charged to the Initiative.
-
-#### Platform
-
-Each Initiative gets a dedicated page on [Open Collective](https://opencollective.com/oce-foundation) showing income and expenses transparently.
-
-#### Disbursements
-
-* Submit invoices/receipts via the platform.
-* Expenses must be approved in advance and aligned with the mission.
-* Reimbursements can be made through PayPal, Wise, or other approved methods.
-
-#### Funds Outside the Platform
-
-If donations or expenses occur outside the platform, they must be reported immediately to OCE. Manual entries can be added to reflect them.
-
-#### Reporting
-
-OCE provides monthly reports summarizing transactions and fund activity.
-
-
 # How to apply
 
-### Join Open Collective Europe in just a few steps
+Use this guide to prepare and submit a hosting application, then understand OSE's review.
 
-Applying to be hosted by Open Collective Europe (OCE) is straightforward and typically takes only a few minutes. Once accepted, you can begin receiving contributions and managing your initiative transparently through the Open Collective platform.
+## Start here
+
+1. Read the [eligibility criteria](https://opensourceeurope.org/docs/getting-started/how-to-apply/eligibility/), [hosting fees](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost) and [application questions](https://opensourceeurope.org/docs/getting-started/how-to-apply/application-questions/).
+2. Prepare your project details and at least one administrator; two are recommended.
+3. Follow the **Application Process** below, then complete the supplementary form supplied by OSE.
+
+**What happens next:** OSE aims to give a first response within seven business days after receiving the completed supplementary form. This is a response target, not an acceptance deadline. After acceptance, continue with [your first steps](https://opensourceeurope.org/docs/how-it-works/basics/).
+
+## Join Open Source Europe in just a few steps
+
+Applying to be hosted by Open Source Europe (OSE) is straightforward and typically takes only a few minutes. Once accepted, you can begin receiving contributions and managing your initiative transparently through the Open Collective platform.
 
 ***
 
-### Before You Apply
+## Before You Apply
 
 Ensure that your initiative meets the following criteria:
 
-* **Alignment with OCE's mission and impact areas**: Your activities should be charitable and aimed at benefiting the public.
-* **Minimum of two administrators**: Your collective must have at least two admins with real names.
-* **No separate legal entity**: Your initiative should not have its own legal existence/entity separate from OCE.
+* **Alignment with OSE's mission and impact areas**: Your activities should be charitable and aimed at benefiting the public.
+* **Administrators**: One administrator is sufficient; two are recommended for shared management and continuity. Use real names.
+* **No separate legal entity**: Your initiative should not have its own legal existence/entity separate from OSE.
 * **Global scope**: Your initiative can be based anywhere in the world, not just in Europe.
 
-Additionally, familiarize yourself with our [Terms of Cooperation](https://docs.opencollective.com/oceurope/getting-started/terms-and-conditions) and [Community Guidelines](https://docs.opencollective.com/help/about/community-guidelines).
+Additionally, familiarize yourself with our [Terms of Cooperation](https://opensourceeurope.org/docs/terms-of-service/) and [Community Guidelines](https://opensourceeurope.org/docs/about/community-guidelines/).
 
 ***
 
-### Application Process
+## Application Process
 
-1. **Start the Application**: Visit the [Open Collective Europe profile](https://opencollective.com/europe) and click on "Apply".
+1. **Start the Application**: Visit the [Open Source Europe profile](https://opencollective.com/europe) and click on "Apply".
 2. **Choose Your Collective Type**:
    * **New Collective**: If you're new to the Open Collective platform, select "Create New Collective".
    * **Existing Collective**: If you already have a collective, choose it from the list.
@@ -484,68 +116,69 @@ Additionally, familiarize yourself with our [Terms of Cooperation](https://docs.
    * Collective name
    * Website and/or social media links
    * Brief description of your collective's activities
-   * Explanation of how your collective furthers OCE's mission impact areas
-4. **Add Administrators**: Ensure that at least two community members are added as admins.
+   * Explanation of how your collective furthers OSE's mission impact areas
+4. **Add Administrators**: Add at least one administrator. Two are recommended for shared management and continuity.
 5. **Submit the Application**: Review your information, accept the terms of service, and submit your application.
 
 *Note*: All information entered can be edited later, so don't worry about making it perfect.
 
 ***
 
-### After Submission
+## After Submission
 
-* **Review Process**: We aim to respond to applications within **seven business days**.
-* **Additional Information**: If we have questions about your application, we may reach out to schedule a chat or request additional materials.
-* **Acceptance**: If your initiative is accepted, you'll receive an email notification. Be sure to check your spam folder, as our emails sometimes end up there.
-* **Start Operating**: Once accepted, you can set up your initiative's Open Collective page and begin accepting contributions.
+The team provides a supplementary application form to complete the review; do not rely on an automatic email being sent.
+
+We aim to provide a first response within seven business days of receiving your completed supplementary form. Review may take longer if we need more information. This is not a guarantee of acceptance or completion within seven days.
+
+Once accepted, you can begin receiving contributions. We offer an optional welcome call after acceptance; it does not block contributions. The welcome email includes documentation and an invitation to book a call. After a call, the team sends a recap and useful links.
 
 ***
 
-### Transitioning from Another Fiscal Host
+## Transitioning from Another Fiscal Host
 
 If you're moving from another fiscal host:
 
 * **Using Open Collective Platform**: The transition is relatively simple.
-* **Not Using Open Collective Platform**: The process will depend on your current organization's requirements. Generally, they can transfer your funds to OCE, and you can get up and running quickly.
+* **Not Using Open Collective Platform**: The process will depend on your current organization's requirements. Generally, they can transfer your funds to OSE, and you can get up and running quickly.
 
-*Important*: Communicate your plans to both OCE and your current fiscal host before applying to ensure a smooth transition.
+*Important*: Communicate your plans to both OSE and your current fiscal host before applying to ensure a smooth transition.
 
 ***
 
-### Need Assistance?
+## Need Assistance?
 
 If you have any questions or need help with the application process, feel free to [contact us](mailto:oce@opencollective.com).
 
 
 # Eligibility
 
-### Who Can Apply to Be Hosted by Open Collective Europe?
+## Who Can Apply to Be Hosted by Open Source Europe?
 
-Open Collective Europe (OCE) welcomes initiatives from around the world that align with our mission and values. Whether you're a grassroots movement, a community project, or an open-source endeavor, if your activities aim to create a positive social impact, you're encouraged to apply.
+Open Source Europe (OSE) welcomes initiatives from around the world that align with our mission and values. OSE supports open source projects and communities. Your application should explain how your activities contribute to open source.
 
 ***
 
-### ✅ Eligibility Criteria
+## Eligibility Criteria
 
-To be eligible for fiscal hosting by OCE, your initiative must:
+To be eligible for fiscal hosting by OSE, your initiative must:
 
-* **Align with OCE's mission and impact areas**: Your activities should be charitable and aimed at benefiting the public.
-* **Be non-profit in nature**: While you can charge membership fees or organize paid activities, profits should not be distributed to members.
-* **Lack a separate legal entity**: Initiatives with their own legal status (e.g., registered NGOs) are not eligible. However, such entities can launch a Fund with OCE for specific programs.
-* **Have at least two administrators**: Your collective must have a minimum of two team members with real names to manage the collective.
+* **Align with OSE's mission and impact areas**: Your activities should be charitable and aimed at benefiting the public.
+* **Be non-profit in nature**: Profits must not be distributed to members. For the types of contributions accepted through OSE, including the rules on membership benefits and other counterparty benefits, see [Contributions FAQ](https://opensourceeurope.org/docs/faq/contributions-faq/).
+* **Lack a separate legal entity**: Initiatives with their own legal status (e.g., registered NGOs) are not eligible. However, such entities can launch a Fund with OSE for specific programs.
+* **Have at least one administrator**: One administrator is sufficient; two are recommended for shared management and continuity. Administrators use real names.
 * **Maintain appropriate content standards**: Content promoting violence, hate speech, pornography, or any other material deemed inappropriate or offensive is not permitted.
 
 ***
 
-### 🌍 Global Reach
+## Global Reach
 
-While based in Europe, OCE supports initiatives globally. Your project's location does not restrict your eligibility, provided you meet the criteria outlined above.
+While based in Europe, OSE supports initiatives globally. Your project's location does not restrict your eligibility, provided you meet the criteria outlined above.
 
 ***
 
-### ❌ Not Required
+## Not Required
 
-OCE aims to lower barriers for impactful initiatives. Therefore, we do **not** require:
+OSE aims to lower barriers for impactful initiatives. Therefore, we do **not** require:
 
 * Application fees
 * A minimum budget balance
@@ -555,40 +188,44 @@ OCE aims to lower barriers for impactful initiatives. Therefore, we do **not** r
 
 ***
 
-### 📄 Important Considerations
+## Important Considerations
 
-* **Fund Management**: Funds raised under OCE's umbrella become part of the foundation's structure. If you decide to leave OCE or close your account, remaining funds must be disbursed to the community or transferred to other associations.
-* **Compliance**: OCE assesses potential compliance risks associated with initiatives, including alignment with legal frameworks and avoidance of activities that could be linked to terrorism or extremism financing.
+* **Fund Management**: The association administers funds on behalf of your initiative under the hosting agreement. For a move to another host or a closure, contact OSE to agree how outstanding expenses and the remaining balance will be handled under the applicable agreement and funding restrictions.
+* **Compliance**: OSE assesses potential compliance risks associated with initiatives, including alignment with legal frameworks and avoidance of activities that could be linked to terrorism or extremism financing.
 
 ***
 
-### 📥 Ready to Apply?
+## Ready to Apply?
 
-If your initiative meets the above criteria and you're ready to proceed, follow our [How to Apply](https://docs.opencollective.com/oceurope/getting-started/how-to-apply) guide to begin your application.
+If your initiative meets the above criteria and you're ready to proceed, follow our [How to Apply](https://opensourceeurope.org/docs/getting-started/how-to-apply/) guide to begin your application.
 
 For any questions or further clarification, feel free to [contact us](mailto:oce@opencollective.com).
+
+## Affiliation with another organisation
+
+OSE does not accept simultaneous fiscal hosting with another host. A technical or community affiliation with another organisation may be accepted after review; affiliation alone does not mean fiscal hosting.
 
 
 # Application Questions
 
-### Prepare Your Answers Before Applying
+## Prepare Your Answers Before Applying
 
-To streamline your application process with Open Collective Europe (OCE), it’s beneficial to prepare answers to the following questions in advance. This preparation will help you articulate your initiative’s purpose and ensure a smooth application experience.
+To streamline your application process with Open Source Europe (OSE), it’s beneficial to prepare answers to the following questions in advance. This preparation will help you articulate your initiative’s purpose and ensure a smooth application experience.
 
 ***
 
-### Required Information
+## Required Information
 
-* **Location:** Specify the city and country where your initiative is primarily based. While OCE hosts initiatives globally, understanding your location helps us provide better support.
+* **Location:** Specify the city and country where your initiative is primarily based. While OSE hosts initiatives globally, understanding your location helps us provide better support.
 * **Your Name and Email Address:** Provide your full name and a valid email address for correspondence.
 * **Collective Name:** Choose a unique and descriptive name for your collective.
 * **Website and/or Social Media Links:** Share links that showcase your initiative’s activities and online presence.
 * **Unique URL:** You’ll have the opportunity to select a unique URL for your collective’s page on the Open Collective platform.
-* **Administrators:** Ensure your collective has at least two administrators with real names. Administrators have full permissions to manage the collective’s settings and finances.
+* **Administrators:** One administrator is sufficient; two are recommended for shared management and continuity. Use real names. Administrators have full permissions to manage the collective’s settings and finances.
 
 ***
 
-### Application Questions
+## Application Questions
 
 Please prepare concise answers (approximately 250 characters) to the following questions:
 
@@ -597,46 +234,57 @@ Please prepare concise answers (approximately 250 characters) to the following q
 3. **Fundraising Goals:** What is your target fundraising amount?
 4. **Funding Sources:** Who do you anticipate will fund your initiative?
 5. **Collective Activities:** Briefly describe what your collective does.
-6. **Mission Alignment:** Explain how your collective furthers one or more of OCE’s mission impact areas.
+6. **Mission Alignment:** Explain how your collective furthers one or more of OSE’s mission impact areas.
 
 ***
 
-### Tips for a Successful Application
+## Tips for a Successful Application
 
 * **Be Concise:** Keep your answers clear and to the point.
-* **Highlight Impact:** Emphasize how your initiative contributes to the public good and aligns with OCE’s mission.
+* **Highlight Impact:** Emphasize how your initiative contributes to the public good and aligns with OSE’s mission.
 * **Provide Evidence:** Include links to your work, such as project websites, social media pages, or articles, to support your application.
 * **Review Before Submission:** Double-check your responses for clarity and completeness before submitting your application.
 
 ***
 
-### Need Assistance?
+## Need Assistance?
 
 If you have any questions or need help with the application process, feel free to [contact us](mailto:oce@opencollective.com).
 
 
 # Basics
 
-### 🎉 Welcome to Open Collective Europe!
+This is your starting point after OSE accepts your Collective. Work through the essentials, then use the relevant guide for each transaction.
 
-Once your application to be hosted by Open Collective Europe (OCE) is approved, you can immediately start managing your Collective on the Open Collective platform. Welcome aboard!
+## Your first steps
+
+1. **Check your public profile and contacts.** Use the platform's [Quick Start Guide](https://docs.opencollective.com/help/collectives/quick-start-guide). Keep administrator access and the main contact up to date, and notify OSE of changes.
+2. **Choose how to receive funds.** Start with [donations and funding routes](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/). You can receive contributions without waiting for the optional welcome call.
+3. **Agree how your Collective makes spending decisions.** Read [budget decisions](https://opensourceeurope.org/docs/guides/deciding-on-how-to-use-your-money/).
+4. **Prepare your first payment.** Use [Pay and get reimbursed](https://opensourceeurope.org/docs/how-it-works/expenses/); funds must be received and available before payment.
+5. **Keep the community informed.** Use Updates and review the responsibilities below.
+
+**Need OSE's agreement first?** Contact the team before a grant application naming OSE as recipient or signatory, a specific contract OSE would sign, or a proposed commercial arrangement. Details follow below.
+
+## Welcome to Open Source Europe!
+
+Once your application to be hosted by Open Source Europe (OSE) is approved, you can immediately start managing your Collective on the Open Collective platform. Welcome aboard!
 
 ***
 
-### ✅ Top 5 Things to Remember
+## Top 5 Things to Remember
 
-1. **Contracts and Agreements**: Contact us at <oce@opencollective.com> if you need to sign any contracts or agreements, or have questions about services or policies.
-2. **Official Documentation**: For all necessary paperwork that may be required in grant applications, refer to our [Official Info and Docs](https://docs.opencollective.com/oceurope/official-info-and-docs).
-3. **Community Updates**: Use the **Updates** feature to post general, mid-year, and annual updates or action alerts to your donor community. We require at least one update per year.
-4. **Submitting Expenses**: FAQs about how to submit expenses (i.e., get paid or spend money) are available [here](https://docs.opencollective.com/help/expenses-and-getting-paid/submitting-expenses).
-5. **Donations Only – Not-for-Profit Model:**\
-   As an unincorporated initiative on OCE, you're set up to receive **donations and grants** in support of your work. Just a heads-up: it's not possible to sell products or services or operate commercially through the platform — we're here to help you thrive as a community-driven, non-profit project!
+1. **Contracts and agreements**: Discuss and obtain acceptance before any arrangement requires OSE to sign a specific contract.
+2. **Grant applications**: If OSE will be named as recipient or signatory, contact the team before submission so it can review and accept its role and commitments.
+3. **Community updates**: Use the Updates feature to keep your community informed. Publish at least one update per year.
+4. **Expenses**: Follow the [expense guide](https://opensourceeurope.org/docs/how-it-works/expenses/) for documents, review and payment.
+5. **Contributions**: OSE primarily supports donations and grants. Before committing to sales, invoiced services or contributions with promised benefits, contact OSE to discuss whether the arrangement can be supported and under what conditions. Do this before making commitments or receiving payment; acceptance is not guaranteed.
 
 ***
 
-### 💡 Understanding Open Collective
+## Understanding Open Collective
 
-**Open Collective** is the platform that OCE operates on. It provides tools for transparent budgeting, customizing a Collective profile, setting up tiers and goals, and more.
+**Open Collective** is the platform that OSE operates on. It provides tools for transparent budgeting, customizing a Collective profile, setting up tiers and goals, and more.
 
 For an overview of using the Open Collective platform, check out its [documentation](https://docs.opencollective.com/help/about/documentation). It has a wealth of information about the features at your disposal.
 
@@ -644,41 +292,435 @@ Their [Quick Start Guide](https://docs.opencollective.com/help/collectives/quick
 
 ***
 
-### 💰 Budget Management of Your Collective
+## Budget Management of Your Collective
 
 Both receiving funds and submitting expenses are straightforward procedures. You will find the details on both in the respective pages of these docs. Feel free to share them with the contributors and members of your Collective.
 
-Being fiscally hosted by OCE means joining a community of hundreds of initiatives that share the same tools to manage their independent projects. It requires minimal attention, but still some attention, to function properly.
+Being fiscally hosted by OSE means joining a community of hundreds of initiatives that share the same tools to manage their independent projects. It requires minimal attention, but still some attention, to function properly.
 
 Please familiarize yourself with the guidelines on [donations](https://docs.opencollective.com/help/collectives/raising-money) and [expenses](https://docs.opencollective.com/help/expenses-and-getting-paid/submitting-expenses), and feel free to contact us if you have any questions or doubts at <oce@opencollective.com>.
 
 ***
 
-### 📌 Important Notes
+## Important Notes
 
-* **Tax Obligations**: You’re responsible for understanding and fulfilling all of your tax obligations. If you’re not sure whether you need to charge or pay tax, we encourage you to consult a tax professional to better understand your tax obligations. OCE can’t provide tax advice.
-* **Terms & Conditions**: Please review our [Terms & Conditions](https://docs.opencollective.com/oceurope/getting-started/our-terms-and-conditions) for detailed information about your responsibilities and our policies.
+* **Tax Obligations**: You’re responsible for understanding and fulfilling all of your tax obligations. If you’re not sure whether you need to charge or pay tax, we encourage you to consult a tax professional to better understand your tax obligations. OSE can’t provide tax advice.
+* **Terms & Conditions**: Please review our [Terms & Conditions](https://opensourceeurope.org/docs/terms-of-service/) for detailed information about your responsibilities and our policies.
 
 ***
 
-### 📬 Need Assistance?
+## Need Assistance?
 
 If you have any questions or need help, feel free to [contact us](mailto:oce@opencollective.com).
+
+## Keeping your contacts up to date
+
+When administrators or the main contact change, update access on Open Collective and notify OSE so the team can maintain continuity of support.
+
+## Optional welcome call
+
+After acceptance, OSE offers an optional welcome call. Contributions can start without waiting for the call. See [How to apply](https://opensourceeurope.org/docs/getting-started/how-to-apply/).
+
+
+# Financial Contributions – How to Donate
+
+Helpful guides for Donors and Financial Contributors
+
+Choose the route that matches the donor or funding arrangement. For an ordinary contribution, start on the Collective's Open Collective page; card, PayPal and bank transfer options are described below.
+
+## Find the right route
+
+| What you want to do                    | Guide                                                                                                                                                           |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Donate by bank transfer                | [Bank transfer instructions](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/wire-transfer-instructions-via-open-collective-platform/) |
+| Apply for or receive a grant           | [Grant applications](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/applying-for-grants/)                                             |
+| Receive GitHub sponsorships            | [Connect GitHub Sponsors](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/setting-up-github-sponsors/)                                 |
+| Arrange tax-deductible U.S. giving     | [U.S. donation routes](https://opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/)                                                              |
+| Receive a crypto donation              | [Crypto donations through Every.org](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/contributions-in-cryptocurrencies/)               |
+| Consider another crowdfunding platform | [Fundraising tools and external platforms](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/fundraising-tools-and-resources/)           |
+| Request a donation refund              | [Refund requests](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/refunds/)                                                            |
+
+Before choosing a route, check the [current hosting fees](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost). Contact OSE before configuring an external collection or promising goods, services or other benefits in return for funding.
+
+## Why Donate via Open Source Europe?
+
+Open Source Europe (OSE) enables donors to support impactful Collectives transparently and securely. Hosted Collectives don't need their own bank account or legal entity — OSE receives and manages funds on their behalf. Donors can also choose to be publicly acknowledged on the Collective’s profile.
+
+***
+
+## Accepted Payment Methods
+
+You can make a contribution through:
+
+* **Credit or Debit Card**
+* **PayPal**
+* **Bank Transfer** (SEPA or international)
+
+> **Note**: When making a bank transfer, please include the name of the Collective and your order number in the payment reference. If not possible, contact us at <oce@opencollective.com> with your transaction details to ensure proper attribution.
+
+***
+
+## Information Required
+
+When donating, you may be asked for:
+
+* Your **full name**
+* Your **email address**
+* Your **organization name** (if applicable)
+* Your **payment method details**
+
+***
+
+## Bank Transfer Instructions
+
+If you'd like to contribute via bank transfer, follow the step-by-step guide here:\
+👉 [Wire Transfer Instructions](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/wire-transfer-instructions-via-open-collective-platform/)
+
+***
+
+## Tax-Deductible Giving
+
+U.S. donors can use the established Myriad → OCEF → OSE route for tax-deductible giving, subject to applicable tax rules. Contact OSE before payment to organise the appropriate route. See [U.S. giving](https://opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/).
+
+***
+
+## Need Help?
+
+If you’re unsure which method to use or want to verify your transaction, don’t hesitate to reach out:\
+📧 <oce@opencollective.com>
+
+## Hosting fees
+
+See the [current OSE fee reference](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost).
+
+
+# Wire Transfer Instructions via Open Collective Platform
+
+Please note that all funds have this option available.
+
+## Overview
+
+If you prefer to contribute to a Collective via bank transfer, Open Source Europe (OSE) provides a straightforward process to facilitate this.
+
+***
+
+## Step-by-Step Guide
+
+1. **Initiate the Donation Process**
+   * Navigate to the Collective's page you wish to support.
+   * Click on the **“Contribute”** button.
+   * Select **“Bank Transfer”** as your payment method.
+2. **Receive Transfer Instructions**
+   * After confirming your contribution, you'll receive an email containing:
+     * OSE's bank account details.
+     * A unique **Order Number** associated with your contribution.
+3. **Complete the Bank Transfer**
+   * Initiate the transfer from your bank, ensuring you:
+     * Use the **exact bank details** provided.
+     * Include the **Order Number** and the **Collective's name** in the payment reference.
+
+> **Important**: Omitting the Order Number or Collective's name may delay the allocation of your funds.
+
+1. **Processing Time**
+   * Allow **up to seven business days from the date you send the bank transfer** for the contribution to appear in the Collective's budget. This is an indicative timeframe, not a guarantee. If it has not appeared after this period, contact OSE using the details below.
+   * Once the hosting team has confirmed receipt and allocated the transfer to your Collective, the contribution will appear in its budget.
+
+***
+
+## Visual Guide
+
+[Image: The Open Collective thank-you page after a contribution, with a pending notice and payment instructions that give the amount, IBAN, BIC and order reference for the bank transfer]
+
+[Image: The confirmation email, with the bank transfer instructions: amount, IBAN, BIC, order reference and recipient address]
+
+*Example of the confirmation screen displaying bank transfer details.*
+
+***
+
+## Troubleshooting
+
+* **Didn't Receive the Instruction Email?**
+  * Check your spam or junk folder.
+  * If not found, contact us at <oce@opencollective.com>
+* **Funds Not Reflected After Seven Business Days from Sending?**
+
+  * Ensure the payment reference included the correct Order Number and Collective's name.
+  * Provide us with:
+    * The **transaction receipt**.
+    * The **amount sent**.
+    * The **date of transfer**.
+    * The **sender's name**.
+
+  Send this information to <oce@opencollective.com> for assistance.
+
+## Hosting fees
+
+See the [current OSE fee reference](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost).
+
+
+# Applying for Grants
+
+Use this guide when a funder may support your Collective through OSE. Your Collective leads the application and project; OSE reviews its own role and commitments.
+
+## The grant journey
+
+1. **Before submitting:** check the funder's requirements and contact OSE. If the application names OSE as recipient or signatory, OSE must review and accept that role before submission.
+2. **If awarded:** share the grant agreement and arrange the necessary agreements and payment instructions with OSE.
+3. **When funds arrive:** use the Collective budget in line with the funding conditions. A promised grant is not an available balance.
+4. **During the project:** prepare activity reports and project monitoring. OSE provides accounting information it holds and validates what engages OSE.
+
+The detailed agreement, communication and reporting requirements follow below. See also [hosting fees](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost) and [spending the grant budget](https://opensourceeurope.org/docs/how-it-works/expenses/).
+
+## Overview
+
+Open Source Europe (OSE) enables hosted Collectives to receive grants from institutional and philanthropic funders, both in Europe and internationally. Our team helps you prepare the arrangements for receiving and managing the grant.
+
+> **Important**: If a grant application names OSE as recipient or signatory, contact OSE **before submission** so the team can review and accept its role and commitments.
+
+***
+
+## Initial Steps
+
+1. **Contact OSE early**
+
+   Email <oce@opencollective.com> to let us know about the grant opportunity. We'll help assess whether it's compatible with fiscal hosting through OSE.
+2. **Check funder requirements**
+
+   Not all funders allow grants to be awarded to fiscally sponsored initiatives. Be sure to confirm with them whether a hosted structure is accepted.
+3. **For U.S. funders**
+
+   Contact the OSE team to arrange the documentation required by your funder. See [Equivalency Determination Certificate](https://opensourceeurope.org/docs/what-we-offer/equivalency-determination-certificate/).
+
+***
+
+## Grant Agreements & Receiving Funds
+
+1. **Grant Agreement**
+
+   The funder will provide a grant agreement. This must be signed by the confirmed recipient entity.\
+   Please share the agreement with us via <oce@opencollective.com>, or have the funder reach out to us directly.
+2. **Mandate Agreement**
+
+   Your initiative will also need to sign a Mandate Agreement with OSE.\
+   This formalizes the arrangement and must be signed by two members of your initiative.
+3. **Bank Transfer**
+
+   The OSE team will provide the appropriate bank transfer instructions for the agreed grant arrangement.
+4. **Allocation on the Platform**
+
+   Once the grant is received, the funds will appear on your Collective’s Open Collective page as available balance.
+
+***
+
+## Funder Communication
+
+* **Acknowledgments**
+
+  You can publicly recognize funders on your Collective page. Their name will appear in your list of contributors unless they choose to remain anonymous.
+* **Updates**
+
+  Keep your funders informed by posting regular updates through the Open Collective platform.
+* **Ongoing Communication**
+
+  Any requests or messages from funders sent to OSE will be forwarded to your initiative for follow-up.
+
+***
+
+## Grant Reporting
+
+The Collective prepares activity reports and project monitoring. OSE provides the accounting information it holds and validates statements or commitments that engage OSE. Follow the reporting requirements and deadlines of the grant agreement.
+
+***
+
+## Need Help?
+
+The Collective leads its own fundraising. OSE may occasionally share opportunities or make introductions, according to its capacity; it does not promise a structured fundraising service or funding success. For questions about receiving and administering a grant, contact <oce@opencollective.com>.
+
+## Hosting fees
+
+See the [current OSE fee reference](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost).
+
+
+# Fundraising Tools & Resources
+
+More ways to raise funds
+
+Open Collective includes crowdfunding tools and is the usual way to raise funds for an OSE Collective.
+
+## External platforms
+
+External platforms such as Patreon, Ko-fi and GoFundMe are considered case by case. Contact OSE before configuring a campaign to receive funds through OSE. The team checks payout arrangements, available records and any promised benefits before confirming whether the setup can be accepted. Do not assume that choosing an organisation with a similar name will route donations to your OSE Collective.
+
+## Supported routes
+
+* [GitHub Sponsors](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/setting-up-github-sponsors/)
+* [U.S. tax-deductible donations](https://opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/)
+* [Cryptocurrency donations](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/contributions-in-cryptocurrencies/)
+
+## Fundraising support
+
+The Collective leads its fundraising. OSE may occasionally share opportunities or make introductions, according to its capacity, without guaranteeing funding or providing a standard fundraising service.
+
+For an unidentified incoming payment, [contact OSE](https://opensourceeurope.org/docs/about/contact-us/) with its reference so the team can investigate its allocation. This is distinct from the handling of inactive Collectives’ balances.
+
+
+# Setting up GitHub Sponsors
+
+Guide to connecting GitHub Sponsors for Organizations to your Collective
+
+## Choose your starting point
+
+* **New organisation profile:** follow [First activation](#first-activation-for-a-github-organisation). Have your OSE-hosted Collective URL ready and use an organisation owner account with two-factor authentication.
+* **Already sponsored through another host:** start with [Already using GitHub Sponsors?](#already-using-github-sponsors). Moving on Open Collective does not move your Sponsors setup automatically.
+* **Personal GitHub account:** discuss the arrangement with OSE; the activation steps below are for organisations.
+
+**Expected outcome:** a project Sponsors profile using OSE's fiscal-host route, subject to GitHub review. If the host label or payout setup is unclear, contact OSE before continuing.
+
+Use GitHub Sponsors for your project with OSE as fiscal host and your Collective on Open Collective as the destination for its budget.
+
+## First activation for a GitHub organisation
+
+1. Your project needs a Collective hosted by OSE. The person configuring Sponsors must be an owner of the project’s GitHub organisation and have two-factor authentication enabled.
+2. Visit [GitHub Sponsors](https://github.com/sponsors), choose **Get sponsored**, and select the project’s own GitHub organisation.
+3. Select **This organization is using a fiscal host**, then select the host entry corresponding to OSE. If the label is unclear, contact OSE before continuing; the public GitHub guide may still use the earlier name Open Collective Europe.
+4. In **Fiscal host project profile URL**, enter your Collective’s Open Collective URL, for example `https://opencollective.com/your-project`. Do not enter OSE’s GitHub organisation URL in this field.
+5. Complete the project profile and request GitHub approval. Activation depends on GitHub’s review; no approval deadline is promised.
+
+OSE’s GitHub organisation is [opensourceeurope](https://github.com/opensourceeurope). You configure sponsorship for your own project through the fiscal-host route; do not set up your own Stripe account for that route. If you encounter an unexpected payout setup step, contact OSE.
+
+GitHub also supports personal sponsored accounts. This guide describes organisation setup; discuss a personal-account case with OSE.
+
+## Already using GitHub Sponsors?
+
+Contact OSE to organise a change from another fiscal host. Moving your Collective on Open Collective does **not** automatically update its GitHub Sponsors host. OSE accompanies the process and coordinates with GitHub where necessary. Do not assume the migration is complete until the GitHub setup has been confirmed.
+
+## Fees and sponsorship benefits
+
+See the [current OSE fee reference](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost). GitHub’s own fees are separate; consult its [current fee guidance](https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes).
+
+If you plan to promise goods, services or other benefits to sponsors, contact OSE before commitment or receipt of payment. GitHub’s tier features do not automatically make an arrangement acceptable to OSE.
+
+## Official instructions
+
+* [Using a fiscal host](https://docs.github.com/en/sponsors/receiving-sponsorships-through-github-sponsors/using-a-fiscal-host-to-receive-github-sponsors-payouts)
+* [Setting up Sponsors for an organisation](https://docs.github.com/en/sponsors/receiving-sponsorships-through-github-sponsors/setting-up-github-sponsors-for-your-organization)
+
+Questions: <oce@opencollective.com>.
+
+
+# Contributions in cryptocurrencies
+
+OSE Collectives can receive cryptocurrency donations through the established route:
+
+**Every.org → Myriad USA → Open Collective Europe Foundation (OCEF) → OSE → the Collective’s budget on Open Collective.**
+
+## Set up the donation page
+
+Contact OSE first at <oce@opencollective.com>. The team creates and hosts an Every.org page for your Collective and provides the applicable instructions, documents, fees and transfer information. Every.org is the required starting point for this cryptocurrency route.
+
+## Receive and transfer funds
+
+Cryptocurrency is converted into conventional currency before it is allocated to the Collective. OSE does not pay cryptocurrency out to the Collective.
+
+The Collective may ask OSE at any time to transfer the funds received on Every.org to its Open Collective budget. The team handles the intermediary steps. A request at any time does not mean an immediate payout; no fixed twice-yearly transfer schedule applies.
+
+## Fees
+
+See the [current OSE fee reference](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost). Contact OSE for the applicable processing, conversion and intermediary costs before sending funds. Do not assume a combined fee or transfer date.
+
+
+# Refunds
+
+Can I refund a donation or get a refund for one I have made?
+
+## Can I request a refund for a donation?
+
+Yes, under certain conditions. Open Source Europe (OSE) can process refunds for contributions made via credit card, bank transfer, or PayPal.
+
+### Refund Timeframes
+
+* **Credit Card or Bank Transfer**: Refunds can be requested within **90 days** of the contribution date.
+* **PayPal**: Refunds can be requested within **60 days** of the contribution date.
+
+> **Important**: Refunds are only issued to the original payment method. For card payments processed through Stripe, Stripe and the card issuer handle the routing of the refund, including where the original card has expired or been replaced. OSE reviews the request and initiates an approved refund; it does not control the bank's handling of the funds.
+
+***
+
+## How to Request a Refund
+
+Contact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <oce@opencollective.com>. A request does not guarantee a refund. Include the following details:
+
+* **URL of the donation** (e.g., `https://opencollective.com/europe/contributions/528520`)
+* **Date and amount** of the transaction
+* **Reason** for the refund request
+
+> **Note**: After reviewing the request, OSE may decline a refund if the contribution was authorized and the funds have already been used to support the Collective's activities.
+
+***
+
+## Refund Processing Times
+
+OSE first reviews the refund request. If approved, OSE initiates the refund. The time it takes for the funds to reach you then depends on the payment method, payment provider and bank. No fixed processing or receipt date is guaranteed.
+
+These processing steps are separate from the request deadlines above: 90 days for card or bank-transfer contributions and 60 days for PayPal.
+
+***
+
+## Additional Information
+
+* Refunds are only processed to the **original payment method**.
+* The handling of an expired card or closed account depends on the payment provider and bank; it is not an automatic reason for OSE to declare a refund impossible.
+* For contributions made via **manual bank transfer**, the administrators forward the request to OSE to discuss refund options; contact OSE directly if they do not respond.
+
+***
+
+## Need Assistance?
+
+For any questions or further assistance regarding refunds, please contact us at <oce@opencollective.com>.
 
 
 # Expenses
 
-### 📌 Overview
+Prepare a payment from your Collective's budget. Start by choosing the situation that matches your request.
 
-Managing expenses with Open Collective Europe (OCE) is designed to be transparent and straightforward. Whether you're reimbursing a team member or paying a service provider, the process ensures accountability and compliance with fiscal regulations.
+## Choose your payment
+
+| Your situation                                             | Where to start                                                                                                                  |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| You have already paid for something for the Collective     | [Prepare a reimbursement](https://opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/#prepare-a-reimbursement)      |
+| A supplier needs to be paid for goods or services          | [Prepare an invoice](https://opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/#prepare-an-invoice)                |
+| The payment is a donation or grant to another organisation | [Ask OSE about an outgoing grant or donation](https://opensourceeurope.org/docs/how-it-works/expenses/request-a-grant-for-nonprofits-only/) |
+
+## Before you submit
+
+* Have the invoice or receipt and the details needed for payment ready. A bank statement alone is insufficient for reimbursement.
+* Check that the necessary funds have been received and are available.
+* For supplier invoices, use the Collective's name or the person who placed the order; do not use OSE's legal name or VAT number.
+* If eligibility is unclear, ask OSE before spending. A specific contract signed by OSE requires advance agreement.
+
+**Ready?** Go to [Submission Process](#submission-process). **Already submitted?** Read [Approval Workflow](#approval-workflow), or use the expense comments for routine follow-up. Send sensitive information privately.
+
+**Payment target:** seven business days once the expense is complete and approved and funds are available; bank processing time is additional. This is not a guaranteed receipt date.
+
+## Overview
+
+Managing expenses with Open Source Europe (OSE) is designed to be transparent and straightforward. Whether you're reimbursing a team member or paying a service provider, the process ensures accountability and compliance with fiscal regulations.
 
 ***
 
-### 🧾 Types of Expenses
+## Before spending and requesting reimbursement
+
+OSE does not require systematic advance approval for ordinary expenses. If eligibility is unclear, contact the team before spending. Reimbursement remains subject to review. Any arrangement requiring a specific contract signed by OSE must be discussed and accepted in advance.
+
+If someone cannot advance the cost, direct payment to the supplier on a compliant invoice is possible. OSE does not provide advances to individuals.
+
+***
+
+## Types of Expenses
 
 There are two primary types of expenses you can submit:
 
-#### 1. **Reimbursements**
+### 1. **Reimbursements**
 
 Used when someone has paid out-of-pocket for goods or services on behalf of the Collective.
 
@@ -688,11 +730,9 @@ Used when someone has paid out-of-pocket for goods or services on behalf of the 
   * Description of items or services
   * Amount paid
 
-{% hint style="warning" %}
-**Note**: Order confirmations, proforma invoices, or bank statements are not valid receipts. Learn more: [How to Submit a Reimbursement](https://docs.opencollective.com/help/expenses-and-getting-paid/reimbursement)
-{% endhint %}
+> **Note**: Order confirmations, proforma invoices, or bank statements are not valid receipts. Learn more: [How to Submit a Reimbursement](https://docs.opencollective.com/help/expenses-and-getting-paid/reimbursement)
 
-#### 2. **Invoices**
+### 2. **Invoices**
 
 Used when paying individuals or organizations for services rendered.
 
@@ -701,15 +741,27 @@ Used when paying individuals or organizations for services rendered.
   * Service provider's full details (name, address, tax ID)
   * Detailed description of services
   * Applicable tax rate and amount
-  * Invoice addressed to the Collective or one of its administrators
+  * Invoice addressed to the Collective or the person who placed the order
 
-{% hint style="danger" %}
-**Important**: Invoices must not reference Open Collective Europe directly. They should be addressed to the Collective or its admins. Learn more: [How to Submit an Invoice](https://docs.opencollective.com/help/expenses-and-getting-paid/invoices)
-{% endhint %}
+> **Important**: Invoices must be addressed to the Collective or the person who placed the order. OSE acts only as the payer for these purchases. Collectives must not use OSE’s legal name or VAT number to have invoices issued. Learn more: [How to Submit an Invoice](https://docs.opencollective.com/help/expenses-and-getting-paid/invoices)
 
 ***
 
-### ✅ Submission Process
+## Supporting documents and timing of submission
+
+Without an invoice or receipt, OSE refuses reimbursement; a bank statement alone is insufficient. For durable equipment, the usual supporting documents are required; OSE does not systematically require an additional inventory. Specific funding or agreement requirements still apply.
+
+There is no general fixed deadline for submitting a reimbursement, but deadlines attached to a funding agreement or closure must be respected. Expenses incurred before the Collective was accepted by OSE may be reimbursed after review of their connection to the project, documents and funding conditions, provided funds are available.
+
+***
+
+## Paying service providers
+
+Collectives can pay service providers against a compliant invoice, including through a workers’ cooperative. Agree the work, price and dates with the Collective and submit the invoice through Open Collective for review. OSE does not provide a standard employment or payroll service. Any arrangement requiring OSE to sign a specific contract must be discussed and accepted beforehand.
+
+***
+
+## Submission Process
 
 1. Go to your Collective's page and click **“Submit Expense”**
 2. Choose the expense type: **Reimbursement** or **Invoice**
@@ -717,63 +769,69 @@ Used when paying individuals or organizations for services rendered.
 4. Select a payout method (e.g., PayPal, Wise/bank transfer)
 5. Submit for approval
 
-{% hint style="info" %}
-**Processing Time**: Most expenses are reviewed and paid within 7 business days.
-{% endhint %}
+> **Processing Time**: We aim to initiate payment within seven business days once the expense is complete and approved and the necessary funds have been received and are available. Bank processing time is additional. This is a target, not a guaranteed date of receipt.
 
 ***
 
-### 🔄 Approval Workflow
+## Approval Workflow
 
-OCE uses a two-step approval process:
+Expenses are reviewed by the Collective and OSE. If the sole administrator requests their own reimbursement, OSE can check the supporting documents and pay without a second approver on the Collective side.
 
-1. **Admin Review**: One of your Collective's admins approves the expense.
-2. **OCE Finance Review**: Our team checks for legal and fiscal compliance.
-
-{% hint style="warning" %}
-**Note**: Incomplete or non-compliant expenses may be rejected.
-{% endhint %}
+OSE checks the documents before payment. Incomplete or non-compliant expenses may be rejected. A promised donation or grant is not an available balance: funds must be received and available before payment.
 
 ***
 
-### 💳 Payment Methods
+## Payment Methods
 
 Supported payout options:
 
 * **PayPal** (must be active and verified)
 * **Bank Transfer via Wise** (international bank details required)
 
-{% hint style="danger" %}
-**Caution**: Ensure that payout details match the expense documentation to avoid delays.
-{% endhint %}
+> **Caution**: Ensure that payout details match the expense documentation to avoid delays.
 
 ***
 
-### 📘 Learn More
-
-* [Overview: How to Submit Expenses](https://docs.opencollective.com/help/expenses-and-getting-paid/submitting-expenses)
-* [Expenses in the Ledger – Open Collective Docs](https://docs.opencollective.com/open-collective-docs/product/ledger/expenses-in-the-ledger)
-
-***
-
-### 🛡️ Compliance and Best Practices
+## Compliance and Best Practices
 
 * **Transparency**: All expenses are publicly visible to ensure accountability.
 * **Accuracy**: Double-check amounts, details, and receipts before submitting.
-* **Communication**: Use the comment section on each expense to clarify anything if needed.
+* **Communication**: Use expense comments for routine questions and follow-up. Contact OSE privately for sensitive information; do not put sensitive documents or bank details in comments.
 
-{% hint style="info" %}
-**Need help?** Email us at <oce@opencollective.com>
-{% endhint %}
+> **Need help?** Email us at <oce@opencollective.com>
+
+***
+
+## Learn More
+
+* [Overview: How to Submit Expenses](https://docs.opencollective.com/help/expenses-and-getting-paid/submitting-expenses)
+* [Expenses in the Ledger – Open Collective Docs](https://docs.opencollective.com/open-collective-docs/product/ledger/expenses-in-the-ledger)
+* [Expenses and getting paid: frequently asked questions](https://opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/)
+* [Outgoing grants and donations](https://opensourceeurope.org/docs/how-it-works/expenses/request-a-grant-for-nonprofits-only/)
 
 
 # Invoices or Reimbursements?
 
-### 💡 Understanding the Difference
+Choose the request type before submitting an expense. Use **Reimbursement** if you have already paid; use **Invoice** when a supplier is requesting payment for goods or services.
+
+## Submit your request
+
+1. Choose the matching document checklist below: **Invoice** or **Reimbursement**.
+2. Open your Collective on Open Collective and choose **Submit Expense**.
+3. Select the type, complete the details, attach the supporting document and choose the payout method.
+4. Submit for Collective and OSE review. Follow the [approval and payment guidance](https://opensourceeurope.org/docs/how-it-works/expenses/#approval-workflow).
+
+**Someone cannot advance the cost?** Direct payment to the supplier on a compliant invoice is possible. OSE does not provide advances to individuals. Payment is subject to review and available funds.
+
+For a donation or grant to another organisation, use the [outgoing grants guide](https://opensourceeurope.org/docs/how-it-works/expenses/request-a-grant-for-nonprofits-only/) instead of treating it as a supplier invoice.
+
+## Understanding the Difference
 
 When submitting expenses to your Collective, it's essential to choose the correct type:
 
-#### 1. **Invoice**
+## Prepare an invoice
+
+### 1. **Invoice**
 
 Use this when you're requesting payment for services rendered or goods provided.
 
@@ -784,15 +842,15 @@ Use this when you're requesting payment for services rendered or goods provided.
   * Full identification (name, address, tax/company number)
   * Detailed description of the service or goods
   * Applicable tax rate and amount. If the tax rate is zero, please provide a legal reference for the exemption directly on the invoice (e.g., VAT exemption according to the article YY of the law XX).
-  * Invoice addressed to the Collective (including one of the Admins and their legal address)
+  * Invoice addressed to the Collective or the person who placed the order, with the appropriate recipient details
 
-{% hint style="danger" %}
-**Important**: Invoices must **not** be addressed to Open Collective Europe. They must be addressed to your Collective or an individual admin.
-{% endhint %}
+> **Important**: Invoices must be addressed to the Collective or the person who placed the order. OSE acts only as the payer for these purchases. Collectives must not use OSE’s legal name or VAT number to have invoices issued.
 
 ***
 
-#### 2. **Reimbursement**
+## Prepare a reimbursement
+
+### 2. **Reimbursement**
 
 Use this when you've paid out-of-pocket on behalf of the Collective and seek reimbursement.
 
@@ -804,23 +862,19 @@ Use this when you've paid out-of-pocket on behalf of the Collective and seek rei
   * Description of items or services
   * Amount paid
 
-{% hint style="info" %}
-Order confirmations, proforma invoices, bank or PayPal statements are not valid receipts.
-{% endhint %}
+> **Note:** Order confirmations, proforma invoices, bank or PayPal statements are not valid receipts.
 
 ***
 
-### 📝 Special Cases
+## Special Cases
 
 * **Partial Reimbursements**: If you're requesting reimbursement for only part of a receipt, highlight the relevant items directly on the document.
 
-{% hint style="success" %}
-If the breakdown isn’t obvious (e.g., a percentage or a split), please attach a signed and dated note explaining the amount being claimed and what it covers.
-{% endhint %}
+> **Tip:** If the breakdown isn’t obvious (e.g., a percentage or a split), please attach a signed and dated note explaining the amount being claimed and what it covers.
 
 ***
 
-### 📚 Learn More
+## Learn More
 
 For more detailed explanations and tutorials, refer to:
 
@@ -829,20 +883,26 @@ For more detailed explanations and tutorials, refer to:
 
 ***
 
-### 📬 Need Help?
+## Need Help?
 
 If you have any questions, feel free to [contact us](mailto:oce@opencollective.com). We're happy to help.
+
+## Documents and review
+
+Without an invoice or receipt, reimbursement is refused. A bank statement alone is insufficient. See [Expenses](https://opensourceeurope.org/docs/how-it-works/expenses/) for the rules on prior spending, submission timing, available funds and payment targets.
 
 
 # Request a Grant (for Nonprofits Only)
 
 In addition to submitting an expense or invoice, the Open Collective platform also includes the option to “Request a Grant.”
 
+Collectives may also request approval for donations to identified nonprofit organisations. That permission is distinct from access to the specific “Request a Grant” feature described below. OSE reviews the beneficiary, purpose and funding conditions before accepting an outgoing grant or donation.
+
 This feature is **not available to all collectives** and must follow specific conditions:
 
 ***
 
-#### Who can use “Request a Grant”?
+## Who can use “Request a Grant”?
 
 * **Only projects hosted as Funds** (not standard Collectives)
 * The applicant must be a **nonprofit or equivalent structure** (e.g. foundation, ASBL, charity, NGO)
@@ -850,7 +910,7 @@ This feature is **not available to all collectives** and must follow specific co
 
 ***
 
-#### Requirements for submitting a Grant Request
+## Requirements for submitting a Grant Request
 
 When a nonprofit uses the “Request a Grant” feature, they must include:
 
@@ -865,9 +925,9 @@ When a nonprofit uses the “Request a Grant” feature, they must include:
 
 ***
 
-#### Internal review process
+## Internal review process
 
-All grant requests are reviewed manually by the OCE team.\
+All grant requests are reviewed manually by the OSE team.\
 If accepted, the funds are transferred directly to the nonprofit's official bank account, and the transaction is recorded transparently on the fund page.
 
 For any questions about this feature, contact the finance or legal coordinator.
@@ -875,98 +935,102 @@ For any questions about this feature, contact the finance or legal coordinator.
 
 # Expenses & Getting Paid – FAQs
 
-### 💰 How does paying people work?
+For the steps from planning a purchase to payment, start with the [expense guide](https://opensourceeurope.org/docs/how-it-works/expenses/). This page answers specific payment questions.
 
-When someone wants to be paid, they submit an expense through your Collective's page. After approval by a Collective admin and by OCE, the person can be reimbursed via PayPal or bank transfer (we use Wise for bank payouts).
+## How does paying people work?
 
-{% hint style="info" %}
-**Note**: Expenses are publicly visible for transparency. However, personal details such as names, emails, and addresses are only visible to the submitter and Collective administrators.
-{% endhint %}
+Submit an expense through the Collective’s page. Expenses are reviewed by the Collective and OSE. If the sole administrator requests their own reimbursement, OSE can check the supporting documents and pay without a second approver on the Collective side.
+
+We aim to initiate payment within seven business days once the expense is complete and approved and the necessary funds have been received and are available. Bank processing time is additional. This is a target, not a guaranteed date of receipt.
 
 ***
 
-### 🧾 How do I get paid / reimbursed / receive my grant money?
+## How do I get paid / reimbursed / receive my grant money?
 
 Go to your initiative's page and click **“Submit Expense”**. You’ll need to log in (or create an account), then upload a valid receipt or invoice.
 
-{% hint style="info" %}
-[How to submit an expense – Open Collective Docs](https://docs.opencollective.com/help/expenses-and-getting-paid/submitting-expenses)
-{% endhint %}
+> **Note:** [How to submit an expense – Open Collective Docs](https://docs.opencollective.com/help/expenses-and-getting-paid/submitting-expenses)
 
 ***
 
-### 🧾 Invoice or Reimbursement – which one do I need?
+## Invoice or Reimbursement – which one do I need?
 
 * **Reimbursement**: Use this when you've paid out-of-pocket. A receipt is required (must include vendor name, address, and tax ID). Order confirmations are not valid receipts.
 * **Invoice**: Use this when you're requesting payment for services. A formal invoice is required, including contact details, tax info, and description of services.
 
-{% hint style="info" %}
-[Invoices vs. Reimbursements – OCE Docs](https://docs.opencollective.com/oceurope/how-it-works/expenses/invoices-or-reimbursements)
-{% endhint %}
+> **Note:** [Invoices vs. Reimbursements – OSE Docs](https://opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/)
 
 ***
 
-### 🎁 Can I donate part of my Collective’s budget to a charity?
+## Can we pay people for their time?
 
-Yes. The beneficiary charity must submit an expense on your Collective's page and provide the following documents:
+Collectives can pay service providers against a compliant invoice, including through a workers’ cooperative. Agree the work, price and dates with the Collective and submit the invoice through Open Collective for review. OSE does not provide a standard employment or payroll service. Any arrangement requiring OSE to sign a specific contract must be discussed and accepted beforehand.
+
+## Which documents are needed?
+
+Invoices must be addressed to the Collective or the person who placed the order. OSE acts only as the payer for these purchases. Collectives must not use OSE’s legal name or VAT number to have invoices issued.
+
+Reimbursements require an invoice or receipt. A bank statement alone is insufficient. See the [expense guide](https://opensourceeurope.org/docs/how-it-works/expenses/) and [Invoices or Reimbursements?](https://opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/).
+
+***
+
+## Can I donate part of my Collective’s budget to a charity?
+
+Ordinary external donations may be made to identified nonprofit organisations after OSE has reviewed and approved the beneficiary, purpose and funding conditions. Contact OSE before committing or requesting payment. Other recipient types require a specific assessment, without any promise of acceptance. Once OSE has confirmed the arrangement, the beneficiary submits the request with the following documents:
 
 * A donation request letter signed by one of their administrators, stating the amount and purpose of the donation
 * Their incorporation document
 * Their bank identification details
 
-{% hint style="danger" %}
-Donations must be unconditional (no exchange of services). If a donation is made in exchange for something, it becomes a taxable payment.
-{% endhint %}
+> **Danger:** A donation is distinct from payment for goods or services. It may still carry restrictions on use and reporting obligations. If a benefit or service is promised in return, discuss the arrangement with OSE before proceeding.
 
 ***
 
-### 🔒 Are receipts and invoices public?
+## Are receipts and invoices public?
 
-Only general information (amount, description, purpose) is public. Uploaded documents (invoices, receipts) are private — visible only to the Collective’s admins and OCE staff.
+Only general information (amount, description, purpose) is public. Uploaded documents (invoices, receipts) are private — visible only to the Collective’s admins and OSE staff.
 
 ***
 
-### 📬 Need help?
+## Need help?
 
-If you need assistance with expenses or payments, just email us at <oce@opencollective.com>.
+Use the comments on the expense for routine questions and follow-up. For sensitive information, contact OSE privately at <oce@opencollective.com>.
 
 
 # The Partnership
 
-### 🧾 Legal Relationship: Indirect Representation
+## Legal Relationship: Indirect Representation
 
-The relationship between your Collective and Open Collective Europe (OCE) is one of **indirect representation** (*représentation indirecte* / *middellijke vertegenwoordiging*).
+The relationship between your Collective and Open Source Europe (OSE) is one of **indirect representation** (*représentation indirecte* / *middellijke vertegenwoordiging*).
 
 This means:
 
 * Your Collective remains fully responsible for its own activities, including legal and tax compliance.
-* OCE acts as a fiscal host and intermediary, not as the legal representative or owner of your funds or operations.
+* OSE acts as a fiscal host and intermediary, not as the legal representative or owner of your funds or operations.
 
-{% hint style="danger" %}
-**Important**: Your Collective **must not** use OCE's tax identification number (e.g. VAT number) for invoicing or registration purposes. If you need a tax number, you are responsible for obtaining your own in accordance with local law.
-{% endhint %}
+> **Important**: Your Collective **must not** use OSE's tax identification number (e.g. VAT number) for invoicing or registration purposes. If you need a tax number, you are responsible for obtaining your own in accordance with local law.
 
 ***
 
-### 📄 Invoicing Guidelines
+## Invoicing Guidelines
 
 To stay compliant with our hosting terms:
 
-* Invoices must be addressed to **your Collective or one of its administrators** — never to Open Collective Europe.
+* Invoices must be addressed to the Collective or the person who placed the order. OSE acts only as the payer for these purchases. Collectives must not use OSE’s legal name or VAT number to have invoices issued.
 * Third parties must treat your Collective as an unincorporated group or individual for VAT purposes.
 * If VAT does not apply, the invoice must cite the relevant VAT exemption article.
 
-{% hint style="danger" %}
-&#x20;If an invoice is wrongly addressed to OCE, it must be canceled and replaced. Repeated errors may lead to the end of your fiscal hosting agreement.
-{% endhint %}
+> **Danger:** If an invoice is wrongly addressed to OSE, it must be canceled and replaced. Repeated errors may lead to the end of your fiscal hosting agreement.
 
 ***
 
-### 🎁 Donations from Your Collective
+## Donations from Your Collective
 
-Your Collective can donate to another nonprofit — as long as the donation is not made in exchange for services (which would be a taxable transaction).
+Ordinary external donations may be made to identified nonprofit organisations after OSE has reviewed and approved the beneficiary, purpose and funding conditions. Contact OSE before committing or requesting payment. Other recipient types require a specific assessment, without any promise of acceptance.
 
-To process a donation:
+Before passing on funds received under a grant agreement or for a restricted purpose, OSE checks whether the transfer is permitted and which obligations continue to apply. Any required funder approval must be obtained. A transfer does not automatically release OSE from its responsibilities under the original funding agreement.
+
+After OSE has approved the arrangement:
 
 1. Ask the recipient to submit an expense via your Collective's page.
 2. Include:
@@ -974,73 +1038,61 @@ To process a donation:
    * A **copy of their incorporation document**.
    * Their **bank identification document**.
 
-{% hint style="danger" %}
-Donations to for-profit companies are not allowed. If a counterpart (e.g. visibility or services) is involved, a proper invoice is required instead.
-{% endhint %}
+> **Danger:** The ordinary external donation route is for identified nonprofit organisations. Other cases require specific assessment and are not automatically accepted. A payment in exchange for goods, services or visibility is not treated as an ordinary donation; contact OSE before making that commitment.
 
 ***
 
-### 💡 VAT & Nonprofit Status
+## VAT & Nonprofit Status
 
-Collectives hosted by OCE are not legal entities and **must pay VAT** on purchases:
+Collectives hosted by OSE are not legal entities and **must pay VAT** on purchases:
 
 * VAT must be listed on invoices (unless an exemption applies).
 * The **reverse charge mechanism does not apply** to Collectives — only registered businesses can use it.
 
-{% hint style="info" %}
-[Read more: VAT in Europe and how it works in OCE](https://docs.opencollective.com/oceurope/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-oce)
-{% endhint %}
+> **Note:** [Read more: VAT in Europe and how it works in OSE](https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-oce/)
 
 ***
 
-### 📬 Questions?
+## Questions?
 
 Email us any time at <oce@opencollective.com>. We're happy to help!
 
 
 # VAT in Europe and How It Works in OCE
 
-### 🧾 General Principles
+## General Principles
 
 Collectives hosted by Open Collective Europe (OCE) are unincorporated initiatives primarily funded through donations. As such, they are **not eligible for VAT refunds** and must **always pay VAT** on goods and services purchased.
 
 VAT (Value Added Tax) is a general consumption tax that applies to most goods and services within the European Union. Even if your Collective is not a registered entity, VAT is still due on your expenses.
 
-{% hint style="info" %}
-Learn more: [VAT explained – European Commission](https://taxation-customs.ec.europa.eu/vat_en)
-{% endhint %}
+> **Note:** Learn more: [VAT explained – European Commission](https://taxation-customs.ec.europa.eu/vat_en)
 
 ***
 
-### 🇧🇪 VAT Within the Same Country
+## VAT Within the Same Country
 
 Invoices issued within your country (e.g. Belgium) must include VAT unless the supplier is legally exempt.
 
 OCE itself is **not VAT-exempt**, so if it issues an invoice (e.g. for services), VAT will be applied based on the applicable Belgian rate.
 
-{% hint style="info" %}
-Belgian VAT details: [Finance Belgium](https://finance.belgium.be/en)
-{% endhint %}
+> **Note:** Belgian VAT details: [Finance Belgium](https://finance.belgium.be/en)
 
 ***
 
-### 🌍 Cross-Border VAT and Reverse Charge
+## Cross-Border VAT and Reverse Charge
 
 The **reverse charge mechanism** lets VAT-registered businesses handle cross-border VAT internally (by declaring both output and input VAT).
 
 However, this mechanism **only applies between two VAT-registered businesses**. Because OCE-hosted Collectives are **not legal entities**, they cannot apply the reverse charge mechanism.
 
-{% hint style="danger" %}
-This means you **must pay VAT** on cross-border invoices from EU-based suppliers — just like any individual or unregistered group.
-{% endhint %}
+> **Danger:** This means you **must pay VAT** on cross-border invoices from EU-based suppliers — just like any individual or unregistered group.
 
-{% hint style="info" %}
-Learn more: [EU VAT rules – Your Europe](https://europa.eu/youreurope/business/taxation/vat/vat-rules-rates/index_en.htm)
-{% endhint %}
+> **Note:** Learn more: [EU VAT rules – Your Europe](https://europa.eu/youreurope/business/taxation/vat/vat-rules-rates/index_en.htm)
 
 ***
 
-### 🧮 Summary
+## Summary
 
 * Collectives **must pay VAT** on all eligible purchases, whether national or cross-border.
 * **Reverse charge rules do not apply**.
@@ -1048,399 +1100,515 @@ Learn more: [EU VAT rules – Your Europe](https://europa.eu/youreurope/business
 
 ***
 
-### 📬 Questions?
+## Questions?
 
 Still unsure about VAT or invoicing rules? Email us at <oce@opencollective.com> — we're happy to help!
 
 
-# Financial Contributions – How to Donate
+# Deciding on How to Use Your Money
 
-Helpful guides for Donors and Financial Contributors
+How to use funds for your initiative on OSE
 
-### 🤝 Why Donate via Open Collective Europe?
+This guide is based on an Open Source Collective workshop led by Sumana Harihareswara of Changeset Consulting in January 2022. It focused on helping Open Collective-hosted open-source software projects decide how to use the money they have already raised. We adapted it for user cases seen on OSE, with all examples in EUR.
 
-Open Collective Europe (OCE) enables donors to support impactful Collectives transparently and securely. Hosted Collectives don't need their own bank account or legal entity — OCE receives and manages funds on their behalf. Donors can also choose to be publicly acknowledged on the Collective’s profile.
+## Why You Should (or Shouldn't) Spend Your Money
 
-***
+### Reasons to Spend
 
-### 💳 Accepted Payment Methods
+* **Advancing your project:** Use funds to complete tasks, chores, and infrastructure improvements that are difficult to achieve with volunteer labour alone.
+* **Attracting more donors:** Spending money demonstrates to donors that you use their contributions effectively.
+* **Experimenting and learning:** Spending money on pilot projects or services can help you explore new approaches and increase flexibility.
+* **Boosting morale:** Small investments in merchandise (stickers, awards, t-shirts) can improve contributor retention and team morale.
 
-You can make a contribution through:
+Generally, spending less than 10% of your saved funds or making a one-time expenditure of less than 20% of your stable recurring monthly income should be manageable without extensive decision-making.
 
-* **Credit or Debit Card**
-* **PayPal**
-* **Bank Transfer** (SEPA or international)
+### **Reasons to Save:**
 
-{% hint style="info" %}
-**Note**: When making a bank transfer, please include the name of the Collective and your order number in the payment reference. If not possible, contact us at <oce@opencollective.com> with your transaction details to ensure proper attribution.
-{% endhint %}
+* **Specific Activities:** Save up for significant expenditures like contractor engagements.
+* **Self-Insurance:** Keep funds to cover potential risks, such as unexpected hosting costs or legal expenses.
+* **Budgeting:** Develop a budget to delineate funds for self-insurance and future activities, ensuring you have a clear picture of available spending.
 
-***
+## Driver and Supporter/Protector Activities
 
-### 📄 Information Required
+**Drivers:** Activities that directly advance your mission (e.g., software development).
 
-When donating, you may be asked for:
+**Supporters:** Infrastructural activities and purchases that support drivers (e.g., organising conferences, buying laptops).
 
-* Your **full name**
-* Your **email address**
-* Your **organization name** (if applicable)
-* Your **payment method details**
+**Protectors:** Activities or expenses that reduce risks (e.g., legal fees, code of conduct workshops).
 
-***
+For instance, in this diagram...
 
-### 🏦 Bank Transfer Instructions
+[Image: Diagram of money and resources flowing into a project from creators, individual users, platforms and organisational users, and out to platforms and services, labour, convenings and travel, equipment and supplies, and outgoing donations and grants]
 
-If you'd like to contribute via bank transfer, follow the step-by-step guide here:\
-👉 [Wire Transfer Instructions](https://docs.opencollective.com/oceurope/how-it-works/financial-contributions-how-to-donate/wire-transfer-instructions-via-open-collective-platform)
+*Money and Resources, shown by those that go into a project and then what comes out of it*
 
-***
+...labor for software development is a driver, because writing the software directly advances the mission of making and improving the open source project. An example of a supporter activity: organizing a conference where the contributors can meet to improve and speed up their work. An example of a supporter purchase: buying a new laptop for a contributor to use.
 
-### 🧾 Tax-Deductible Giving
+## Advancing Your Goals and Roadmap
 
-In some cases, donations can be tax-deductible — especially if you're a **U.S.-based donor**. Learn more about eligibility and our partnership with Myriad USA:\
-👉 [Tax-Deductible Donations for U.S. Donors](https://docs.opencollective.com/oceurope/what-we-offer/tax-deductible-donations)
+Consider what's on your roadmap and how you can spend to support it.
 
-***
+If you lack explicit project goals or a written roadmap, you can still invest in the following:
 
-### 📬 Need Help?
+* **Consultants:** Pay for help in creating a roadmap.
+* **Hardware Upgrades:** Improve your team's development environment.
+* **Mentorship Programs:** Sponsor and mentor interns to build capacity.
+* **Volunteer contributions:** Organise volunteers around your activity and reimburse them according to the legislation in their country of residence
 
-If you’re unsure which method to use or want to verify your transaction, don’t hesitate to reach out:\
-📧 <oce@opencollective.com>
+If you have a roadmap, pay new contractors or for services to relieve existing volunteers of repetitive tasks.
 
+### Specific Spending Examples
 
-# Wire Transfer Instructions via Open Collective Platform
+* Independent contractors
+* Volunteer reimbursements
+* Professional education and tools
+* Meet up travel expenses
+* Logo design and merchandise
+* Co-working space
+* Virtual assistant services
 
-Please note that all funds have this option available.‌
+### Hiring Contractors
 
-### 💡 Overview
+You can hire collaborators for your collective as contractors. You can decide on who you will be hiring informally or through a public job posting process. Please see [here for the possibilities of invoicing](https://opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/).
 
-If you prefer to contribute to a Collective via bank transfer, Open Collective Europe (OCE) provides a straightforward process to facilitate this.
+### Using Bounties Cautiously
 
-***
+Patch bounty programs can incentivise specific development work but may lead to competitive rather than collaborative behaviour. Use bounties for tasks that volunteers are not inclined or skilled to do.
 
-### 📝 Step-by-Step Guide
+## Decision-Making and Governance
 
-1. **Initiate the Donation Process**
-   * Navigate to the Collective's page you wish to support.
-   * Click on the **“Contribute”** button.
-   * Select **“Bank Transfer”** as your payment method.
-2. **Receive Transfer Instructions**
-   * After confirming your contribution, you'll receive an email containing:
-     * OCE's bank account details.
-     * A unique **Order Number** associated with your contribution.
-3. **Complete the Bank Transfer**
-   * Initiate the transfer from your bank, ensuring you:
-     * Use the **exact bank details** provided.
-     * Include the **Order Number** and the **Collective's name** in the payment reference.
+Per Open Collective's expense documentation:
 
-{% hint style="danger" %}
-**Important**: Omitting the Order Number or Collective's name may delay the allocation of your funds.
-{% endhint %}
+> **Note:** "The decision is up to you as a project. Some projects are informal, and any Core Contributor can approve any expense. Others have a formal decision-making or budgeting process, or only pay expenses for specific things. We advise you to have a discussion with your collaborators and agree on guidelines for approving expenses."
 
-1. **Processing Time**
-   * Bank transfers typically take **up to 7 working days** to reflect in the Collective's budget.
-   * Once received, the Collective's admin will mark the contribution as **“Paid”**, and the funds will appear on the Collective's page. [oai\_citation\_attribution:1‡Welcome | Open Collective Docs](https://docs.opencollective.com/oceurope/how-it-works/financial-contributions-how-to-donate/wire-transfer-instructions-via-open-collective-platform?utm_source=chatgpt.com)
+Please also review the documentation on [budget](https://docs.opencollective.com/help/collectives/budget) and [expense policies](https://docs.opencollective.com/help/collectives/collective-settings/expense-policy) as well as ["ten ways to make decisions about money"](https://blog.opencollective.com/ten-ways-to-make-decisions-about-money/).
 
-***
+* **Common Concerns:**
 
-### 📸 Visual Guide
+  * Legal or tax implications: Open Source Europe cannot advise you on your members' or collaborators' legal or fiscal obligations. We recommend contacting a legal or fiscal specialist in their country of residence. For general guidance, please use this documentation or contact us at <oce@opencollective.com>
+  * Disagreements: Act in good faith and empower group decisions. Clear policies and consistent practices help a lot in this process.
 
-<figure><img src="/files/BS9iyxPXQtKtoPdHMCZ3" alt=""><figcaption></figcaption></figure>
+  People will have reasonable concerns about what you spent, and why and how you spent it, and you're not sure how to preempt or respond to those concerns. You have two major options:
 
-<figure><img src="/files/MJSoHw8J4SkA5xeuJeBa" alt=""><figcaption><p><em>Example of the confirmation screen displaying bank transfer details.</em></p></figcaption></figure>
+  * *Intense up-front transparency*: invest in publishing details about the decisions transparently. Give contributors and spectators advance notice of possible expenditures, make it clear who has the power to decide, and offer a public comment period before approval. Do this consistently, and use Open Collective's tools to leave the records up for future inspection. This is relatively easy if you are managing all the expenses via Open Collective invoices.
+  * *Post-decision accountability*: don't offer a pre-decision public comment period, but run an explicit private comment period among the decision markers, and offer accountability for past expenses such that anyone who wants to can ask for details on particular expenditure choices. This allows you to make more decisions privately, and gives you the option of providing some details privately in response to questions, but keep in mind that your payees or people you answer may publish details on their own.
 
-***
+## OSE’s role in conflicts
 
-### 🛠 Troubleshooting
-
-* **Didn't Receive the Instruction Email?**
-  * Check your spam or junk folder.
-  * If not found, contact us at <oce@opencollective.com>
-* **Funds Not Reflected After 7 Days?**
-
-  * Ensure the payment reference included the correct Order Number and Collective's name.
-  * Provide us with:
-    * The **transaction receipt**.
-    * The **amount sent**.
-    * The **date of transfer**.
-    * The **sender's name**.
-
-  Send this information to <oce@opencollective.com> for assistance.
+Collectives manage their internal conflicts. OSE intervenes if a situation affects funds or hosting conditions, without promising mediation. For suspected misuse of funds or concerns involving administrators, contact OSE privately without having to go through those administrators.
 
 
-# Applying for Grants
+# General FAQs
 
-### 🎯 Overview
+## What can I do with an Open Source Europe account?
 
-Open Collective Europe (OCE) enables hosted Collectives to receive grants from institutional and philanthropic funders, both in Europe and internationally. OCE acts as the legal recipient of the grant and manages the funds on your behalf.
+By joining Open Source Europe, your initiative can:
 
-{% hint style="danger" %}
-**Important**: Please contact us **as early as possible** when you're considering applying for a grant.
-{% endhint %}
+* Collect recurring or one-off donations
+* Apply for subsidies or grants
+* Pay invoices and reimburse expenses
+* Offer full budget transparency to your community
+* Operate without creating your own legal entity
+* Pay service providers on compliant invoices, including through workers’ cooperatives; reimburse eligible volunteer expenses
 
 ***
 
-### 📝 Initial Steps
+## What am I not allowed to do?
 
-1. **Contact OCE early**
+To stay compliant with our legal and charitable framework, you **may not**:
 
-   Email <oce@opencollective.com> to let us know about the grant opportunity. We'll help assess whether it's compatible with fiscal hosting through OCE.
-2. **Check funder requirements**
-
-   Not all funders allow grants to be awarded to fiscally sponsored initiatives. Be sure to confirm with them whether a hosted structure is accepted.
-3. **For U.S. funders**
-
-   Let them know that OCE has an Equivalency Determination, making it eligible to receive grants from U.S.-based private foundations.
-
-***
-
-### 📄 Grant Agreements & Receiving Funds
-
-1. **Grant Agreement**
-
-   The funder will provide a grant agreement. This must be signed by OCE as the legal recipient.\
-   Please share the agreement with us via <oce@opencollective.com>, or have the funder reach out to us directly.
-2. **Mandate Agreement**
-
-   Your initiative will also need to sign a Mandate Agreement with OCE.\
-   This formalizes the arrangement and must be signed by two members of your initiative.
-3. **Bank Transfer**
-
-   OCE will provide its banking details to the funder so they can transfer the grant directly.
-4. **Allocation on the Platform**
-
-   Once the grant is received, the funds will appear on your Collective’s Open Collective page as available balance.
+* Issue invoices or sign documents in the name of OSE. Any specific contract requiring OSE’s signature must be discussed and accepted beforehand; do not use OSE’s legal name or VAT number to have supplier invoices issued for your Collective
+* Use funds to influence legislation or politics (lobbying)
+* Support or engage in illegal activity
+* Use funds for personal profit
+* Have another fiscal host at the same time. Technical or community affiliations may be accepted after review
+* Spend funds on purposes outside your initiative’s mission — if you do, they must be reimbursed
 
 ***
 
-### 💬 Funder Communication
+## Why should I use Open Collective?
 
-* **Acknowledgments**
+Open Source Europe uses the **Open Collective platform** to simplify and bring transparency to financial management.
 
-  You can publicly recognize funders on your Collective page. Their name will appear in your list of contributors unless they choose to remain anonymous.
-* **Updates**
+Benefits include:
 
-  Keep your funders informed by posting regular updates through the Open Collective platform.
-* **Ongoing Communication**
+* Easy collection of **recurring or one-off contributions**
+* Simple spending: submit a receipt/invoice → approve → paid
+* Automatic and public **budget tracking**
+* Shared financial visibility = stronger collaboration and trust
 
-  Any requests or messages from funders sent to OCE will be forwarded to your initiative for follow-up.
-
-***
-
-### 📊 Grant Reporting
-
-1. **Reporting Requirements**
-
-   Some funders will request interim or final reports. You're responsible for meeting their deadlines and submitting reports as needed.
-2. **Using the Platform**
-
-   You can post reports as public updates on your page, which is also a great way to keep your community engaged.
-3. **If the funder contacts OCE**
-
-   Since OCE is the legal recipient of the grant, funders may send reporting requests to us. We'll pass those along to you.
+> We believe transparency makes communities more resilient and democratic.
 
 ***
 
-### 📬 Need Help?
+## How is Open Source Europe different?
 
-If you have questions about the process or want help preparing a grant application, email us at <oce@opencollective.com>.
+Here’s what makes us special:
 
-
-# Fundraising Tools & Resources
-
-More ways to raise funds
-
-## Third-Party Tools
-
-Please note: The platforms listed below are not integrated with fiscal hosting and do not automatically indicate which Collective a donation is intended for.
-
-If you choose to raise funds through these platforms and would like them allocated to your Collective, you must notify us in advance.
-
-{% hint style="danger" %}
-Unclaimed or unassigned funds will be placed in a holding fund for up to two years. If they remain unclaimed after this period, they may be reallocated to Open Collective Europe’s general operating budget.
-{% endhint %}
-
-{% tabs %}
-{% tab title="Facebook/Instagram" %}
-
-* [Facebook Fundraiser](https://www.facebook.com/fund/Open-Collective-Foundation-100612854999717/)/Instagram Live Donations
-  * Contact us when you start a new fundraiser so that we can get the raised funds correctly allocated to your account
-  * :exclamation: Due to Facebook's disbursement schedule, there could be a \~1 month delay in disbursement of raised funds to your initiative after the Facebook fundraiser has ended
-    {% endtab %}
-
-{% tab title="GoFundMe" %}
-
-* [GoFundMe](https://www.gofundme.com/start/charity-fundraising) Charity Fundraising
-  * Select OpenCollective as the beneficiary in order for your donors to receive tax-deductible status \[recommended],&#x20;
-  * or you collect them on your own behalf, and transfer them to your initiative as one lump sum. \[non-tax-deductible status for your donors]
-    {% endtab %}
-
-{% tab title="Other" %}
-Contact us in order receive our bank details and credit your collective with the money you collected on another crowdfunding platform. Please note that there will be no tax deductibility option in this case.
-{% endtab %}
-{% endtabs %}
-
-{% hint style="info" %}
-If you'd like assistance setting any of these up, please feel free to [email us](mailto:%20info@opencollective.brussels)
-{% endhint %}
-
-
-# Setting up GitHub Sponsors
-
-Guide to connecting GitHub Sponsors for Organizations to your Collective
-
-Open Collective Europe projects can use Open Collective to receive GitHub Sponsors funds by following these steps:
-
-* Confirm that you have a **GitHub organization** (not an individual user account). You can create a GitHub organization by following [this guide](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/creating-a-new-organization-from-scratch).
-* [Create a Collective](https://opencollective.com/europe/apply) for your open source project if you don't already have one. You will need to use OC Europe as your fiscal host. &#x20;
-
-{% hint style="warning" %}
-*Organisations on Open Collective are not the same as Organisations on GitHub. You must create a Collective in order to manage your project's finances on Open Collective.*
-{% endhint %}
-
-* Visit [github.com/sponsors](http://github.com/sponsors) and sign your GitHub organization up for the Sponsors waitlist:\
-  &#x20; \
-  ✔️ Select: "This organization is using a fiscal host" and select *Open Collective Europe* from the menu.  \
-  \
-  ✔️ Add your Collective's URL to the 'Fiscal host project profile URL' box for example: <https://opencollective.com/babel>&#x20;
-
-![](/files/2HFbcgipZ4zshaeHkxVD)
-
-Click Join Waitlist. GitHub staff will review your application, and you'll be notified when you can proceed to the next step.&#x20;
-
-{% hint style="info" %}
-OC Europe acts as your legal and financial home. You do not need to enter your own Stripe account  or business information. \
-\
-If you reach this step please contact <support@opencollective.com> and we will amend your application with GitHub.&#x20;
-{% endhint %}
-
-## Frequently Asked Questions
-
-### What fees will be charged?
-
-The standard OC Europe fees apply to funds raised via GitHub Sponsors: 10%. GitHub does not charge a fee.
-
-### Should I create an Organization or a Collective?
-
-Confusingly, GitHub and Open Collective use the word "organization" to mean two different things.
-
-* **On GitHub, you need to create an Organization** to use Sponsors for your project.
-* **On Open Collective, you need to create a Collective** for your project (Organizations on Open Collective are a different profile type, for companies who sponsors open source projects, i.e. designed for paying money out, not accepting money like Collectives).
-
-
-# Contributions in cryptocurrencies
-
-### 💡 Overview
-
-Open Collective Europe (OCE), in partnership with Every.org and Myriad USA, can accept cryptocurrency donations on behalf of eligible hosted Collectives. These donations are converted into fiat currency before being allocated to your Collective's balance.
+* Designed for collaborative communities — not just for campaigns or individuals
+* Open source + built-in transparency (no hidden ledgers)
+* We provide **fiscal hosting** as a service using a nonprofit legal framework
+* Based in Europe, but globally connected
 
 ***
 
-### ✅ Eligibility Requirements
+## How much does it cost?
 
-To accept cryptocurrency donations, your Collective must:
+The current OSE hosting fees are:
 
-* Have a minimum balance of **€2,000**.
-* Not engage in the sale of goods or services.
-* Have at least **two administrators**.
-* Sign a specific **Mandate Agreement** with OCE.
+| Contribution type                                                 | OSE fee |
+| ----------------------------------------------------------------- | ------- |
+| Ordinary online crowdfunding donations by card (Stripe) or PayPal | 8%      |
+| Incoming bank transfers                                           | 10%     |
+| Grants and public subsidies                                       | 10%     |
+| Tax-deductible donations through the supported intermediary route | 10%     |
+| GitHub Sponsors                                                   | 10%     |
 
-{% hint style="info" %}
-To apply, contact us at <oce@opencollective.com>.
-{% endhint %}
+For ordinary card and PayPal donations, the 8% OSE hosting fee is calculated on the donation amount before payment processing fees are deducted. For example, a €20 donation incurs a €1.60 OSE hosting fee. Payment processing fees are separate and also reduce the amount available to the Collective; their amount may vary.
 
-***
+Currency conversion services or intermediaries may have additional costs. Contact OSE to confirm the costs applicable to a specific route. The calculation base for other routes is not specified here; no combined fee rate is stated.
 
-### 🔄 Donation Process
-
-1. **Fundraising Setup**
-   * OCE will assist in setting up a fundraising page through Every.org.
-2. **Donation Receipt**
-   * Donations made in cryptocurrency are received by Every.org and converted into fiat currency.
-3. **Fund Allocation**
-   * Converted funds are transferred to OCE and then allocated to your Collective's balance on the Open Collective platform.
-
-{% hint style="info" %}
-**Note**: Transfers from Every.org to OCE occur **twice per year**.
-{% endhint %}
+These are the current rates; no fee reduction is introduced by this guidance.
 
 ***
 
-### 💰 Fees and Costs
+## Can we get a discount?
 
-* **OCE Fee**: 10% of the net amount received after conversion.
-* **Processing Fees**: Variable, depending on the cryptocurrency and transaction specifics.
+We’re often asked for fee reductions — and we truly understand why.\
+Many initiatives bring in funds already raised, and we know how tight nonprofit budgets can be.
 
-{% hint style="info" %}
-Detailed fee information will be provided upon request.
-{% endhint %}
+However, our **standard fees are already kept as low as possible** to cover the real costs of:
 
-***
+* Legal & administrative management
+* Risk and compliance
+* Payments, reports, and support over time
 
-### ⚠️ Important Considerations
-
-* Your Collective will receive **only fiat currency**; OCE does not distribute cryptocurrency directly.
-* Ensure that your fundraising activities comply with OCE's guidelines and the terms of the Mandate Agreement.
+> **Caution:** Outside of specific exceptional cases (like COVID-19 or Ukrainian relief), we cannot offer fee waivers or discounts.
 
 ***
 
-### 📬 Need Assistance?
+## What if I want to become my own fiscal host someday?
 
-For questions or to initiate the setup process, please contact us at <oce@opencollective.com>.
+No problem! You're welcome to use Open Source Europe as your fiscal host for as long as you need and remain eligible.
 
-
-# Refunds
-
-Can I refund a donation or get a refund for one I have made?
-
-### 🔄 Can I request a refund for a donation?
-
-Yes, under certain conditions. Open Collective Europe (OCE) can process refunds for contributions made via credit card, bank transfer, or PayPal.
-
-#### ⏳ Refund Timeframes
-
-* **Credit Card or Bank Transfer**: Refunds can be requested within **90 days** of the contribution date.
-* **PayPal**: Refunds can be requested within **60 days** of the contribution date.
-
-{% hint style="danger" %}
-**Important**: Refunds are only issued to the original payment method. If the original account is closed or the card has expired, we cannot process the refund.
-{% endhint %}
+* You can request to end fiscal hosting under the notice and remaining-balance provisions of your [hosting agreement](https://opensourceeurope.org/docs/terms-of-service/).
+* If you plan to transition into managing your own structure, we can help you prepare.
+* The [Open Collective platform](https://opencollective.com/) also supports organizations that wish to become fiscal hosts themselves.
 
 ***
 
-### 📝 How to Request a Refund
+## How long does it take to get started?
 
-To initiate a refund, please email <oce@opencollective.com> with the following details:
+* The **application process only takes a few minutes**.
+* We might reach out with a few follow-up questions.
+* Once your application is accepted, you can **start receiving donations right away**.
 
-* **URL of the donation** (e.g., `https://opencollective.com/europe/contributions/528520`)
-* **Date and amount** of the transaction
-* **Reason** for the refund request
-
-{% hint style="danger" %}
-**Note**: If the contribution was authorized and the funds have already been used to support the Collective's activities, OCE reserves the right to deny the refund request.&#x20;
-{% endhint %}
+> **Note:** Completing the application and being accepted are separate steps. See [How to apply](https://opensourceeurope.org/docs/getting-started/how-to-apply/) for the review process and indicative response time. Additional information may be required before acceptance.
 
 ***
 
-### 💳 Refund Processing Times
+## Is there a minimum required budget?
 
-* **Credit Card**: 1–3 business days to process; may take 1–2 billing cycles to appear on your statement.
-* **Bank Transfer via Stripe**: 7–10 business days to process.
-* **PayPal**: Typically processed within a few business days.
+Nope! There is **no minimum balance** required to be hosted by OSE.
+
+Since our fees are taken as a percentage of incoming contributions, you can start small and grow as your initiative develops.
+
+## Paying collaborators
+
+Collectives can pay service providers against a compliant invoice, including through a workers’ cooperative. Agree the work, price and dates with the Collective and submit the invoice through Open Collective for review. OSE does not provide a standard employment or payroll service. Any arrangement requiring OSE to sign a specific contract must be discussed and accepted beforehand.
+
+## Discounts and nonprofit benefits
+
+OSE may support a request or provide an attestation on a case-by-case basis. Hosting does not automatically qualify a Collective for every nonprofit discount or benefit. Each supplier sets its own eligibility criteria; OSE cannot guarantee acceptance.
+
+
+# Fiscal Hosting FAQs
+
+## What is a Fiscal Host?
+
+A **Fiscal Host** is an organization that holds funds on behalf of Collectives, allowing them to operate financially without needing to establish a legal entity.
+
+This arrangement — also called fiscal sponsorship — allows your Collective to:
+
+* Receive and manage donations and grants
+* Provide donation confirmations and administer grants
+* Handle taxes, bookkeeping, and legal compliance
+* Pay expenses approved by your Collective admins
+
+The Open Collective platform provides all the tools to manage these flows transparently.
 
 ***
 
-### 📌 Additional Information
+## How do I add a Fiscal Host to my Collective?
 
-* Refunds are only processed to the **original payment method**.
-* If the original payment method is no longer active, we cannot issue a refund.
-* For contributions made via **manual bank transfer**, please contact OCE directly to discuss refund options.
+If your Collective does not yet have a Fiscal Host, you can add one by:
+
+1. Going to your Collective page
+2. Clicking on **“Apply to Fiscal Host”**
+3. Choosing the appropriate Host (such as Open Source Europe)
+
+> **Note:** Learn how: [Add a Fiscal Host](https://docs.opencollective.com/help/collectives/add-fiscal-host)
 
 ***
 
-### 📬 Need Assistance?
+## More Info
 
-For any questions or further assistance regarding refunds, please contact us at <oce@opencollective.com>.
+See [How to apply](https://opensourceeurope.org/docs/getting-started/how-to-apply/) and our [Terms of Service](https://opensourceeurope.org/docs/terms-of-service/) for hosting with OSE.
+
+## Moving to another fiscal host
+
+Contact OSE before leaving to coordinate with the new host, settle outstanding expenses and check the conditions for transferring the balance. Transfers remain subject to the hosting agreement and restrictions on the funds. A change on Open Collective does not automatically change your GitHub Sponsors setup.
+
+## Closing a Collective voluntarily
+
+If the Collective stops operating without moving to another host, settle outstanding expenses first. The Collective proposes a destination for the remaining balance consistent with its purpose; OSE reviews and approves it according to the funding conditions.
+
+## Inactive Collectives
+
+For prolonged inactivity, OSE contacts the administrators and sends reminders, stating a response deadline and the consequences of no reply. Without a response, OSE may end hosting, stop recurring contributions and reallocate the balance to its general fund or a similar project, under the applicable agreement and funding restrictions. There is no universal six-month timeline. This process is separate from unidentified incoming payments.
+
+
+# Expense FAQs
+
+The detailed answers are maintained in [Expenses & Getting Paid – FAQs](https://opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/). Use the links below to go directly to your question.
+
+## What does the approval process look like for expenses?
+
+See [approval and payment timing](https://opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/#how-does-paying-people-work).
+
+## Can we pay people for their time?
+
+See [paying service providers](https://opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/#can-we-pay-people-for-their-time).
+
+## Which documents are needed?
+
+See [supporting documents and invoice details](https://opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/#which-documents-are-needed).
+
+For a step-by-step walkthrough, read the [expense guide](https://opensourceeurope.org/docs/how-it-works/expenses/).
+
+
+# Contributions FAQ
+
+Questions about contributing to our hosted collectives
+
+## **How do I cancel recurring donations/subscriptions/payments?**
+
+See our instructions on how to cancel recurring or ongoing donations, subscriptions, payments, etc., [here](https://docs.opencollective.com/help/financial-contributors/payments#change-the-amount-payment-method-or-cancel-an-existing-contribution).
+
+## **What if a contributor wants their contribution to be anonymous?**
+
+Contributors can make an anonymous payment by choosing [incognito](https://docs.opencollective.com/help/financial-contributors/payments#profile) when picking a profile to pay from. If the contributor contributes as a [guest](https://docs.opencollective.com/help/financial-contributors/payments#contributing-as-a-guest), then the given name will still show up, the contributor then just won’t have to log in to make the payment. All Open Collective users can also [differentiate](https://opencollective.com/opencollective/updates/new-legal-and-display-name-settings) a public display name from their private legal name.
+
+## **What if a financial contributor is unable or not comfortable with submitting their credit card information online?**
+
+If a donor is not comfortable with online credit card transactions, they can send the funds via PayPal or bank transfer.
+
+## **Someone said they sent my collective money but I don’t see it in my account! Help?**
+
+**\~or\~**
+
+## **I sent in money but I don't see my donation on the collective's page?!**
+
+[Contact us!](https://opensourceeurope.org/docs/about/contact-us/)
+
+We often receive money in our bank account without any indication of where it should go. (This is why it's so important to include the order# in the bank transfer). We always do a thorough research to identify the right collective, but sometimes it is not possible.
+
+At the end of the month, we move the unidentified funds to a [holding fund](https://opencollective.com/oce-holding-fund).
+
+We keep the money there until we can identify who it is intended for and then we transfer it.
+
+Write to us on <oce@opencollective.com> or send us a message via[ Slack](http://slack.opencollective.com/) or [Discord](https://discord.gg/uCnzytpNr6). We will ask you to send us screenshots/receipts that include the expected amount, the collective name, and the sender/any info about the bank transfer, so that we can send the funds to their happy home.
+
+## **What if a financial contributor requests an invoice before making the donation?**
+
+OSE can confirm receipt of a donation, but a donation confirmation is not a sales or VAT invoice. OSE primarily supports donations and grants. Before committing to sales, invoiced services or contributions with promised benefits, contact OSE to discuss whether the arrangement can be supported and under what conditions. Do this before making commitments or receiving payment; acceptance is not guaranteed.
+
+## **Can we use outside fundraising platforms to fundraise for our collective?**
+
+Open Collective already includes crowdfunding tools and is the usual option. External platforms such as Patreon, Ko-fi or GoFundMe are considered case by case. Contact OSE before setting up a campaign to receive funds through OSE. The team checks payout arrangements, supporting records and any promised benefits; compatibility and acceptance are not automatic.
+
+See [GitHub Sponsors](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/setting-up-github-sponsors/) for that specific route.
+
+## Can we receive earned income (i.e., non-donations)?
+
+OSE primarily supports donations and grants. Before committing to sales, invoiced services or contributions with promised benefits, contact OSE to discuss whether the arrangement can be supported and under what conditions. Do this before making commitments or receiving payment; acceptance is not guaranteed.
+
+## **Can we offer financial contributors something in return for their donation?**
+
+Tiers can suggest contribution amounts. If you intend to promise goods, services, advertising, access or another benefit, contact OSE before committing or receiving funds. The team will examine whether the arrangement can be supported; acceptance is not guaranteed. Optional donor acknowledgment that is not promised as part of a tier remains possible.
+
+## **Can my group offer memberships/accept membership fees?**
+
+Symbolic supporter membership confers no rights or benefits. Any proposed membership with benefits must be discussed with OSE before commitment or collection; acceptance is not automatic.
+
+## Can my collective donate to another hosted collective?
+
+Transfers to another hosted Collective are distinct from ordinary external donations. Obtain OSE’s prior approval of the recipient, purpose and funding conditions before proceeding. Collectives[ can give to other collectives](https://docs.opencollective.com/help/financial-contributors/collective-to-collective) hosted by Open Source Europe. (If you want to give to a collective with another fiscal host there are[ some extra steps](https://docs.opencollective.com/help/financial-contributors/collective-to-collective#across-different-fiscal-hosts).)
+
+## U.S. tax-deductible donations
+
+The established Myriad → OCEF → OSE route supports U.S. tax-deductible giving, subject to applicable tax rules. Contact OSE before payment to organise the appropriate route. See [U.S. giving](https://opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/).
+
+## Donation refunds
+
+Contact the Collective administrators first; they forward the request to OSE. If they do not respond, contact OSE directly. Contact does not guarantee a refund. See [Refunds](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/refunds/).
+
+
+# Contact Us
+
+## Choose the right contact
+
+| You need help with                                             | What to do                                                                                              |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| A submitted expense                                            | Use its comments on Open Collective for routine questions; send sensitive information privately to OSE. |
+| Hosting, a funding arrangement or another OSE question         | Email <oce@opencollective.com>.                                                                         |
+| Suspected misuse of funds or an issue involving administrators | Contact OSE directly in private; you do not need to go through those administrators.                    |
+| A safeguarding concern                                         | Use the [safeguarding contacts and procedure](https://opensourceeurope.org/docs/about/safeguarding-policy/).        |
+| A technical problem with Open Collective                       | Use [platform support](https://opencollective.com/help).                                                |
+
+For general inquiries, OSE aims to respond within seven business days, without a guaranteed response time. This target does not replace the specific application, payment or safeguarding guidance.
+
+### Learning & Reading
+
+🔍 Use the search at the top of the page to find detailed information about specific topics
+
+💬 Join our [Discord](https://discord.gg/Wkfjzkfn) to get in touch with the entire Open Collective community (& join in the #opensource channel)
+
+🌱 Read the latest [Updates from OSE](https://opencollective.com/europe/updates) on our page and on the[ Open Collective Blog](https://blog.opencollective.com)
+
+Follow us on [Twitter](https://twitter.com/OC_Europe), [Instagram](https://www.instagram.com/oc_europe/), [YouTube](https://www.youtube.com/c/OpenCollective), [Facebook](https://www.facebook.com/OpenCollect) and [LinkedIn](https://www.linkedin.com/company/open-collective-europe/).
+
+### Talking to a Person
+
+> **Note:** Our small but mighty team is here to help you Monday to Friday across multiple time zones. We aim to respond to general inquiries within seven business days. This is a target, not a guaranteed response time.
+
+💌 Email any OSE-specific questions to <oce@opencollective.com>
+
+🎟 Request platform support [here](https://opencollective.com/help)
+
+💬 Join our [Discord](https://discord.gg/Wkfjzkfn) to get in touch with the entire Open Collective community (& join in the #opensource channel)
+
+### Reporting an Issue
+
+👩‍💻 [Open Collective](https://github.com/opencollective) on GitHub to file an issue or see what we are working on
+
+> ***We’re transparent!*** View our [budget ](https://opencollective.com/europe)and check out our [blog](https://blog.opencollective.com/)!
+
+## Expense follow-up and sensitive concerns
+
+Use comments on the expense for routine questions about a submitted expense. Contact OSE privately for sensitive information.
+
+For suspected misuse of funds or a problem involving Collective administrators, contact the OSE team directly in private at <oce@opencollective.com>. You do not need to go through the administrators concerned.
+
+## Internal conflicts
+
+Collectives manage their own internal conflicts. OSE intervenes when the situation affects funds or hosting conditions; it does not promise mediation.
+
+
+# Safeguarding Policy
+
+## Introduction
+
+Open Collective Europe (OCE) is committed to creating a safe and inclusive environment for all staff, volunteers, partners, and beneficiaries. This policy outlines our commitment to safeguarding and sets out procedures for reporting and responding to concerns.
+
+***
+
+## What is Safeguarding?
+
+Safeguarding refers to the actions we take to protect people, especially children and vulnerable adults, from harm. This includes protection from:
+
+* Abuse (physical, sexual, emotional, neglect)
+* Exploitation
+* Neglect
+* Discrimination
+* Bullying
+
+***
+
+## Our Commitment
+
+OCE is committed to:
+
+* Promoting a culture of safety and well-being for everyone involved in our activities.
+* Sharing safeguarding guidance with staff and volunteers, including how to report concerns and their role in protecting people.
+* Providing clear procedures for reporting concerns.
+* Taking all concerns seriously and having the safeguarding leads review them to determine appropriate next steps.
+* Supporting anyone who has been affected by safeguarding incidents.
+
+***
+
+## Who is Vulnerable?
+
+While safeguarding applies to everyone, some individuals may be more vulnerable to harm. This includes:
+
+* Children
+* People with disabilities
+* Older adults
+* People who are dependent on others
+
+***
+
+## Reporting Concerns
+
+Anyone who has a concern about the safety or well-being of someone involved in OCE activities should report it immediately, regardless of whether they are sure about the nature of the concern.
+
+Contact the safeguarding leads listed below to report a concern. OSE does not provide a continuously staffed reporting service or guarantee a response time.
+
+***
+
+## How to Report a Concern
+
+Concerns can be reported to:
+
+* **Safeguarding Leads**:
+  * Ivan Cukeric: <ivan@opencollective.com>
+  * Jean-François De Hertogh: <jf@opencollective.com>
+
+If a concern involves one of the safeguarding leads, contact the other lead directly, provided they are not also involved.
+
+Reports can be made in person, by email, or in writing. Information is shared only with those who need it to handle the concern or where disclosure is required by law. Absolute confidentiality cannot be promised.
+
+***
+
+## What Happens When a Concern is Reported?
+
+All reported concerns are taken seriously. The safeguarding leads review each report and determine appropriate next steps, including referral to external services or relevant authorities where necessary. OSE does not systematically conduct an internal investigation.
+
+Depending on the circumstances, appropriate action may include:
+
+* Referral to relevant authorities
+* Disciplinary action
+* Support for the person who raised the concern or the person at risk
+
+***
+
+## Confidentiality
+
+OSE limits the sharing of information about safeguarding concerns to those who need it to handle the concern or where disclosure is required by law. Absolute confidentiality cannot be promised.
+
+***
+
+## Support
+
+OSE listens to people affected by safeguarding incidents and directs them towards appropriate support services. OSE does not organise or fund psychological counselling.
+
+***
+
+## Training
+
+OSE shares safeguarding guidance with staff and volunteers, including how to respond to and report concerns. OSE does not currently provide systematic safeguarding training.
+
+***
+
+## Review
+
+This policy will be reviewed regularly to ensure it remains effective.
+
+***
+
+## Need Assistance?
+
+For any questions about this policy or safeguarding in general, please contact the Safeguarding Lead at <oce@opencollective.com>.
 
 
 # Mission, Vision & Impact areas
@@ -1474,13 +1642,13 @@ We are based in Europe but offer fiscal hosting to initiatives around the world.
 
 Open Collective Europe: Grant Eligibility and Risk Assessment Policy
 
-### 🧭 Introduction
+## Introduction
 
 Open Collective Europe (OCE) is committed to supporting initiatives that promote positive social change and a more just world. This policy outlines the criteria used to assess the eligibility of grant proposals and identify potential compliance risks associated with terrorism/extremism financing.
 
 ***
 
-### ✅ Grant Eligibility Criteria
+## Grant Eligibility Criteria
 
 OCE prioritizes proposals from initiatives that:
 
@@ -1490,7 +1658,7 @@ OCE prioritizes proposals from initiatives that:
 
 ***
 
-### 🔍 Compliance Risk Assessment
+## Compliance Risk Assessment
 
 OCE assesses potential compliance risks associated with grant proposals using the following factors (in order of importance):
 
@@ -1501,13 +1669,13 @@ OCE assesses potential compliance risks associated with grant proposals using th
 
 ***
 
-### 🌍 Contextual Considerations
+## Contextual Considerations
 
 OCE recognizes the importance of context when evaluating proposals. Due diligence is conducted to understand the specific circumstances and actions of the initiative.
 
 ***
 
-### 📚 Information Sources
+## Information Sources
 
 To assess grant proposals, OCE utilizes various information sources, including (in order of importance):&#x20;
 
@@ -1518,160 +1686,52 @@ To assess grant proposals, OCE utilizes various information sources, including (
 
 ***
 
-### 🚫 Limited Veto Power
+## Limited Veto Power
 
 OCE reserves the right to propose a veto of a grant proposal if a high compliance risk is identified based on the criteria outlined above. A clear and documented justification will be provided, outlining the specific concerns.
 
 ***
 
-### 📢 Appeals Process
+## Appeals Process
 
 Initiatives have the right to appeal a veto decision. The appeals process will be clearly communicated to all applicants.
 
 ***
 
-### 🔄 Policy Review and Revision
+## Policy Review and Revision
 
 This policy is reviewed and revised periodically to ensure its effectiveness and alignment with best practices.
 
 ***
 
-### 🧩 Conclusion
+## Conclusion
 
 OCE is committed to balancing the prevention of terrorism financing with the support of legitimate initiatives working towards positive social change. This policy serves as a framework to achieve this objective.
 
 ***
 
-### 📬 Need Assistance?
+## Need Assistance?
 
 For questions or further information regarding risk and compliance aspects, please contact us at <oce@opencollective.com>.
 
 
-# Safeguarding Policy
-
-### 🧭 Introduction
-
-Open Collective Europe (OCE) is committed to creating a safe and inclusive environment for all staff, volunteers, partners, and beneficiaries. This policy outlines our commitment to safeguarding and sets out procedures for reporting and responding to concerns.
-
-***
-
-### 🧒 What is Safeguarding?
-
-Safeguarding refers to the actions we take to protect people, especially children and vulnerable adults, from harm. This includes protection from:
-
-* Abuse (physical, sexual, emotional, neglect)
-* Exploitation
-* Neglect
-* Discrimination
-* Bullying
-
-***
-
-### 🤝 Our Commitment
-
-OCE is committed to:
-
-* Promoting a culture of safety and well-being for everyone involved in our activities.
-* Ensuring all staff and volunteers are trained to understand safeguarding and their role in reporting concerns.
-* Providing clear procedures for reporting concerns.
-* Taking all concerns seriously and investigating them thoroughly.
-* Supporting anyone who has been affected by safeguarding incidents.
-
-***
-
-### 👥 Who is Vulnerable?
-
-While safeguarding applies to everyone, some individuals may be more vulnerable to harm. This includes:
-
-* Children
-* People with disabilities
-* Older adults
-* People who are dependent on others
-
-***
-
-### 📣 Reporting Concerns
-
-Anyone who has a concern about the safety or well-being of someone involved in OCE activities should report it immediately, regardless of whether they are sure about the nature of the concern.
-
-Our support team is always available and swift to answer any concerns. Reach out to <oce@opencollective.com>.
-
-***
-
-### 📝 How to Report a Concern
-
-Concerns can be reported to:
-
-* **Safeguarding Leads**:
-  * Ivan Cukeric: <ivan@opencollective.com>
-  * Jean-François De Hertogh: <jf@opencollective.com>
-
-Reports can be made in person, by email, or in writing. All reports will be treated confidentially.
-
-***
-
-### 🔍 What Happens When a Concern is Reported?
-
-All reported concerns will be taken seriously and investigated thoroughly. The nature of the investigation will depend on the specific circumstances of the case.
-
-Following an investigation, appropriate action will be taken, which may include:&#x20;
-
-* Referral to relevant authorities
-* Disciplinary action
-* Support for the person who raised the concern or the person at risk
-
-***
-
-### 🔒 Confidentiality
-
-OCE will endeavor to keep the identities of those involved in safeguarding concerns confidential wherever possible. However, this may not be possible in all cases, such as where a crime has been reported.
-
-***
-
-### 💬 Support
-
-OCE will provide support to anyone who has been affected by a safeguarding incident. This may include emotional support, access to counseling services, or practical assistance.
-
-***
-
-### 🎓 Training
-
-All staff and volunteers will receive training on safeguarding procedures. This training will cover:&#x20;
-
-* Recognizing signs and symptoms of abuse and neglect
-* How to report concerns
-* Their role in safeguarding
-
-***
-
-### 🔄 Review
-
-This policy will be reviewed regularly to ensure it remains effective.
-
-***
-
-### 📬 Need Assistance?
-
-For any questions about this policy or safeguarding in general, please contact the Safeguarding Lead at <oce@opencollective.com>.
-
-
 # Community guidelines
 
-These community guidelines reflects the values and commitments of Open Source Europe and aims to create a positive and productive community for all involved.
+These community guidelines reflect the values and commitments of Open Source Europe and aims to create a positive and productive community for all involved.
 
-### 🧭 Introduction
+## Introduction
 
 OSE is committed to maintaining a respectful, inclusive, and supportive environment for all its members, participants, and stakeholders. These community guidelines outline our expectations regarding behavior and interactions within our community.
 
 ***
 
-### 📌 Scope
+## Scope
 
-These community guidelines applie to all individuals participating in OSE activities, including members, partners, volunteers, and attendees at OSE events.
+These community guidelines apply to all individuals participating in OSE activities, including members, partners, volunteers, and attendees at OSE events.
 
 ***
 
-### 🌟 Core Principles
+## Core Principles
 
 * **Transparency**: Operate with transparency and integrity. Ensure that financial activities, decision-making processes, and communications are open and accessible.
 * **Respect and Dignity**: Treat everyone with respect and dignity. Harassment, discrimination, or exclusionary behavior of any kind will not be tolerated.
@@ -1679,7 +1739,7 @@ These community guidelines applie to all individuals participating in OSE activi
 
 ***
 
-### ✅ Expected Behavior
+## Expected Behavior
 
 * **Collaboration**: Foster a spirit of collaboration and mutual support. Engage constructively and be open to diverse perspectives.
 * **Communication**: Communicate respectfully and professionally. Avoid offensive, inflammatory, or inappropriate language.
@@ -1687,7 +1747,7 @@ These community guidelines applie to all individuals participating in OSE activi
 
 ***
 
-### 🚫 Unacceptable Behavior
+## Unacceptable Behavior
 
 * **Harassment**: Any form of harassment, including but not limited to sexual harassment, bullying, or intimidation.
 * **Discrimination**: Discriminatory comments or actions based on personal characteristics or beliefs.
@@ -1695,7 +1755,7 @@ These community guidelines applie to all individuals participating in OSE activi
 
 ***
 
-### 📣 Reporting and Enforcement
+## Reporting and Enforcement
 
 * **Reporting**: If you witness or experience behavior that violates these community guidelines, report it to the designated contact person immediately.
 * **Investigation**: Reports will be taken seriously and investigated promptly and fairly.
@@ -1703,19 +1763,19 @@ These community guidelines applie to all individuals participating in OSE activi
 
 ***
 
-### 🛡️ Safeguarding
+## Safeguarding
 
-OSE is committed to safeguarding the well-being of all participants. Refer to our [Safeguarding Policy](https://docs.opencollective.com/oceurope/about-1/safeguarding-policy) for detailed information on our safeguarding practices.
+OSE is committed to safeguarding the well-being of all participants. Refer to our [Safeguarding Policy](https://opensourceeurope.org/docs/about/safeguarding-policy/) for detailed information on our safeguarding practices.
 
 ***
 
-### 🔄 Continuous Improvement
+## Continuous Improvement
 
 We are dedicated to continually improving our policies and practices. Feedback and suggestions for enhancing this Code of Conduct are welcome and can be submitted to our team.
 
 ***
 
-### 📬 Contact Information
+## Contact Information
 
 For questions, concerns, or to report a violation of this Code of Conduct, please contact us at <oce@opencollective.com>.
 
@@ -1724,20 +1784,20 @@ For questions, concerns, or to report a violation of this Code of Conduct, pleas
 
 We have developed some terminology to describe processes within the Open Collective ecosystem. Please use these terms when creating issues or support requests, instead of user —everyone is a user!
 
-### 🧍 Individuals
+## Individuals
 
 Everyone interacting with the Open Collective platform is considered an individual. Individuals can assume various roles within the ecosystem:
 
 * **Contributor**: Someone who provides support to an initiative, either financially or through other means.
 * **Organizer**: An individual who creates or manages an initiative.
 
-### 💰 Financial Contributors
+## Financial Contributors
 
-#### 🏢 Organizational Financial Contributor
+### Organizational Financial Contributor
 
 A company or organization that supports an initiative financially, often at a higher tier. These contributors, commonly referred to as sponsors, may seek benefits such as brand exposure, community goodwill, or tangible perks.
 
-#### 🙋 Individual Financial Contributor
+### Individual Financial Contributor
 
 An individual who supports an initiative financially, either through one-time or recurring contributions. They may discover initiatives via:
 
@@ -1745,21 +1805,21 @@ An individual who supports an initiative financially, either through one-time or
 * Direct links to a Collective
 * Organizer's page
 
-#### 🧾 Expense Submitter
+### Expense Submitter
 
 An individual who requests payment from an initiative's budget using the expense function. This could be for reimbursement of purchases made on behalf of the initiative or compensation for completed work.
 
-### 🤝 Non-Financial Contributors
+## Non-Financial Contributors
 
-#### 🛠️ Organizer
+### Organizer
 
 An individual who creates or works on an initiative. After consultation with our team, organizers will determine if they are creating a 'Fund' or a 'Collective'.
 
-#### 🌟 Core Contributor
+### Core Contributor
 
 Individuals who are major contributors and represent the Collective on its page as part of the team.
 
-#### 🧑‍💼 Collective Admin
+### Collective Admin
 
 A type of Core Contributor with additional permissions, allowing them to:
 
@@ -1771,420 +1831,288 @@ A type of Core Contributor with additional permissions, allowing them to:
 
 Core Contributors aim to make their communities financially sustainable, utilizing tools like tiers, goals, and social media sharing. They focus on managing and growing their communities by creating events and sending updates.
 
-#### 🎟️ Event Attendee
+### Event Attendee
 
 Individuals who register to attend a Collective's event, often arriving through direct links provided by event organizers.
 
-### 🏛️ Initiatives
+## Initiatives
 
 Initiatives are accounts for projects or groups hosted by Open Collective Europe. An initiative can be either a Collective or a Fund. During the application process, our team will assist in determining the appropriate account type for your project.
 
-#### 🧑‍🤝‍🧑 Collective
+### Collective
 
 A Collective represents a project or group with a mission or purpose, raising and spending funds transparently to achieve their goals.
 
-### 🧾 Fiscal Hosts
+## Fiscal Hosts
 
 A Fiscal Host, or Sponsor, is a type of Organization that enables Collectives to transact financially without needing to legally incorporate. The Fiscal Host holds a Collective’s funds in their bank account and can generate invoices and receipts for Financial Contributors. Think of a Fiscal Host as an umbrella organization for the Collectives it supports.
 
-***
 
-For more detailed information, please refer to the [Terminology page](https://docs.opencollective.com/oceurope/about-1/terminology).
+# What We Offer
 
+Open Source Europe provides the legal and financial infrastructure that open source projects need to thrive. Our services are designed to let you focus on your code, not on paperwork.
 
-# Contact Us
-
-#### Learning & Reading
-
-🔍 Use the Search Bar in the upper right corner to find detailed information about specific topics
-
-💬 Join our [Discord](https://discord.gg/Wkfjzkfn) to get in touch with the entire Open Collective community (& join in the #opensource channel)
-
-🌱 Read the latest [Updates from OCE](https://opencollective.com/europe/updates) on our page and on the[ Open Collective Blog](https://blog.opencollective.com)
-
-:bird:Follow us on [Twitter](https://twitter.com/OC_Europe), [Instagram](https://www.instagram.com/oc_europe/),[ Youtube](https://www.youtube.com/c/OpenCollective), and[ ](https://www.facebook.com/OpenCollect)[Linkedin](https://www.linkedin.com/company/open-collective-europe/)
-
-#### Talking to a Person
-
-{% hint style="info" %}
-Our small but mighty team is here to help you Monday to Friday across multiple time zones. We aim to respond to inquiries within three business days.
-{% endhint %}
-
-💌 Email any OCE-specific questions to <oce@opencollective.com>
-
-🎟  Request platform support [here](https://opencollective.com/help)&#x20;
-
-💬 Join our [Discord](https://discord.gg/Wkfjzkfn) to get in touch with the entire Open Collective community (& join in the #opensource channel)
-
-#### Reporting an Issue
-
-👩‍💻 [Open Collective](https://github.com/opencollective) on GitHub to file an issue or see what we are working on
-
-{% hint style="success" %}
-***We’re transparent!***  View our [budget ](https://opencollective.com/europe)and check out our [blog](https://blog.opencollective.com/)!
-{% endhint %}
-
-
-# General FAQs
-
-### What can I do with an Open Source Europe account?
-
-By joining Open Source Europe, your initiative can:
-
-* Collect recurring or one-off donations
-* Apply for subsidies or grants
-* Pay invoices and reimburse expenses
-* Offer full budget transparency to your community
-* Operate without creating your own legal entity
-* Engage collaborators: freelancers (via Smart), volunteers, or employees
+We offer one core service: **fiscal hosting**, which bundles everything you need to operate professionally.
 
 ***
 
-### What am I not allowed to do?
+## Core Infrastructure
 
-To stay compliant with our legal and charitable framework, you **may not**:
+### A Legal Home for Your Project
 
-* Issue invoices or sign documents in the name of OSE
-* Use funds to influence legislation or politics (lobbying)
-* Support or engage in illegal activity
-* Use funds for personal profit
-* Hold project funds in another account or have another fiscal sponsor at the same time (if incorporated)
-* Spend funds on purposes outside your initiative’s mission — if you do, they must be reimbursed
+Operate under our Belgian non-profit association (ASBL/vzw). This allows your project to receive funds, manage contracts, and act as a single legal entity without the complexity and overhead of creating your own.
 
-***
+### Transparent Financial Tools
 
-### Why should I use Open Collective?
+Use the Open Collective platform to manage your budget, receive donations, and pay contributors and expenses with full transparency. Your community and backers can see every transaction in real-time, building trust and accountability.
 
-Open Collective Europe uses the **Open Collective platform** to simplify and bring transparency to financial management.
+### Access to Grants and Funding
 
-Benefits include:
-
-* Easy collection of **recurring or one-off contributions**
-* Simple spending: submit a receipt/invoice → approve → paid
-* Automatic and public **budget tracking**
-* Shared financial visibility = stronger collaboration and trust
-
-> We believe transparency makes communities more resilient and democratic.
+Many foundations and companies want to fund the open source ecosystem but find it difficult to support unincorporated groups. We act as a trusted intermediary, making your project eligible to receive grants from these larger institutional funders.
 
 ***
 
-### How is Open Source Europe different?
+## Why Choose Fiscal Hosting?
 
-Here’s what makes us special:
+This structure is ideal for open source projects seeking to focus on their mission without the administrative burden of formal incorporation. It provides:
 
-* Designed for collaborative communities — not just for campaigns or individuals
-* Open source + built-in transparency (no hidden ledgers)
-* We provide **fiscal hosting** as a service using a nonprofit legal framework
-* Based in Europe, but globally connected
-
-***
-
-### How much does it cost?
-
-Open Collective Europe charges a standard **administrative fee**:
-
-* **8%** for most contributions (plus card processing fees)
-  * 1.5% + €0.25 for European cards
-  * 2.5% + €0.25 for non-European cards
-* **10%** if your Collective:
-  * Receives a **grant**
-  * Receives a **tax-deductible donation**
-  * Receives a **public subsidy**
-  * Receives a **manual bank transfer**
-
-{% hint style="info" %}
-Part of this fee goes to support the Open Collective platform (which we use to operate our fiscal hosting).
-{% endhint %}
+* **Instant Legitimacy:** High-level compliance for corporate sponsors.
+* **Reduced Overhead:** No need for dedicated accounting or legal teams.
+* **Collective Power:** Join an ecosystem of over 400 projects sharing the same robust infrastructure.
 
 ***
 
-### Can we get a discount?
+## Get Started
 
-We’re often asked for fee reductions — and we truly understand why.\
-Many initiatives bring in funds already raised, and we know how tight nonprofit budgets can be.
+Ready to join a supportive community of open source projects building the future of software?
 
-However, our **standard fees are already kept as low as possible** to cover the real costs of:
+* [Apply for hosting](https://opencollective.com/europe/apply)
+* [Join our Discord](https://discord.gg/Na7BpVcm)
+* [Contact the team](mailto:oce@opencollective.com)
 
-* Legal & administrative management
-* Risk and compliance
-* Payments, reports, and support over time
 
-{% hint style="warning" %}
-Outside of specific exceptional cases (like COVID-19 or Ukrainian relief), we cannot offer fee waivers or discounts.
-{% endhint %}
+# Umbrella organisation
 
-***
+Open Source Europe (OSE) provides a shared legal and financial framework for open source projects, developer networks, and software communities.
 
-### Fee Comparison Chart:
+## Collective Infrastructure
 
-| Fiscal Host                                                 | Hosted Collectives   | Fee                                |
-| ----------------------------------------------------------- | -------------------- | ---------------------------------- |
-| Open Source Collective                                      | Open source projects | 10%                                |
-| [Open Collective Europe](https://opencollective.com/europe) | EU-based Collectives | 8-10%                              |
-| [Women Who Code](https://opencollective.com/wwcodeinc)      | Local chapters       | 10%                                |
-| Community Partners                                          | US-based projects    | 9-12% + minimum balance/annual fee |
-| Charitable Allies                                           |                      | 1-25%                              |
+As an umbrella organisation, OSE acts as the fiscal host for over 400 initiatives. Each project operates independently on the Open Collective platform with its own public page and transparent budget, while benefiting from the legal standing of a professional Belgian non-profit (ASBL/vzw).
 
-### What if I want to become my own fiscal host someday?
-
-No problem! You're welcome to use Open Collective Europe as your fiscal host for as long as you need and remain eligible.
-
-* You can cancel fiscal hosting at any time.
-* If you plan to transition into managing your own structure, we can help you prepare.
-* The [Open Collective platform](https://opencollective.com/) also supports organizations that wish to become fiscal hosts themselves.
+This structure allows communities to manage funds, pay service providers on compliant invoices, and receive grants without the overhead of maintaining their own legal entity.
 
 ***
 
-### How long does it take to get started?
+## Key Benefits
 
-* The **application process only takes a few minutes**.
-* We might reach out with a few follow-up questions.
-* Once your application is accepted, you can **start receiving donations right away**.
-
-{% hint style="info" %}
-The entire setup — from applying to receiving your first contribution — can take **as little as 30 minutes**, and up to **2 business days**.
-{% endhint %}
+* **Simplified Legal Framework:** Skip the complexity of non-profit incorporation, bank account openings, and statutory bookkeeping.
+* **Grant Eligibility:** Access funding from foundations, corporations, and public authorities that require a registered non-profit intermediary.
+* **Professional Back-office:** We handle the administrative heavy lifting, including expense processing, bookkeeping, and annual financial reporting.
+* **Radical Transparency:** Every transaction is logged in real-time, building immediate trust with your backers and contributors.
+* **Ecosystem Access:** Join a network of like-minded maintainers and projects within the European open source landscape.
 
 ***
 
-### Is there a minimum required budget?
-
-Nope! There is **no minimum balance** required to be hosted by OCE.
-
-Since our fees are taken as a percentage of incoming contributions, you can start small and grow as your initiative develops.
-
-
-# Fiscal Hosting FAQs
-
-### What is a Fiscal Host?
-
-A **Fiscal Host** is an organization that holds funds on behalf of Collectives, allowing them to operate financially without needing to establish a legal entity.
-
-This arrangement — also called fiscal sponsorship — allows your Collective to:
-
-* Receive and manage donations and grants
-* Provide donation confirmations and administer grants
-* Handle taxes, bookkeeping, and legal compliance
-* Pay expenses approved by your Collective admins
-
-The Open Collective platform provides all the tools to manage these flows transparently.
+> **Tip:** ## Responsibilities and Alignment
+>
+> To maintain the integrity of the umbrella, hosted projects must adhere to three core principles:
+>
+> 1. **Mission Alignment:** Projects must actively support the development or sustainability of open source software.
+> 2. **Non-Profit Compliance:** As an ASBL/vzw, projects must operate within the limits of Belgian law, focusing on community benefit rather than purely commercial for-profit activities.
+> 3. **Operational Transparency:** All financial activities must be conducted through the Open Collective platform to ensure public accountability.
 
 ***
 
-### How do I add a Fiscal Host to my Collective?
+## Use Cases We Support
 
-If your Collective does not yet have a Fiscal Host, you can add one by:
-
-1. Going to your Collective page
-2. Clicking on **“Apply to Fiscal Host”**
-3. Choosing the appropriate Host (such as Open Collective Europe)
-
-{% hint style="info" %}
-Learn how: [Add a Fiscal Host](https://docs.opencollective.com/help/collectives/add-fiscal-host)
-{% endhint %}
+* **Open Source Libraries:** A legal home for critical libraries to receive corporate and individual donations.
+* **Project Ecosystems:** A unified structure for a suite of related tools managed by a distributed community.
+* **Tech Communities:** Regional developer groups or meetups managing funds for events, travel stipends, and venues.
 
 ***
 
-### Examples of Fiscal Hosts
+[Apply to join the umbrella](https://opencollective.com/europe/apply)
 
-Here are a few examples of Fiscal Hosts, each with their own region, focus area, and fees:
 
-| Fiscal Host            | Hosted Collectives   | Fee   |
-| ---------------------- | -------------------- | ----- |
-| Open Source Collective | Open source projects | 5%    |
-| Open Collective Europe | EU-based collectives | 8–10% |
-| Social Change Nest     | UK-based collectives | 5–7%  |
-| Women Who Code         | Local chapters       | 0%    |
-| Operation Code         | Veterans' programs   | 30%   |
+# The Open Collective Platform
+
+A shared tool for managing contributions, expenses, and grants with full transparency.
+
+## A transparent financial and community management tool
+
+Open Collective is a digital platform that enables hosted initiatives and philanthropic partners to raise, manage, and distribute funds with full transparency. Each group or fund hosted by Open Source Europe receives its own public page, equipped with tools to:
+
+* Collect financial contributions: Accept donations via credit card, PayPal, or bank transfer, and manage grants.
+* Manage expenses and disbursements: Submit, approve, and reimburse expenses directly through the platform.
+* Display a transparent budget: All income and expenditures are visible in real-time, enhancing trust and accountability.
+* Engage with the community: Post updates, host events, and share progress with supporters.
+
+This integrated approach simplifies financial administration and fosters a collaborative environment for your initiative or fund.
+
+## Support for Philanthropic Regranting
+
+Beyond grassroots initiatives, the platform is also a powerful tool for foundations and funders. Through Open Collective, OSE can set up dedicated online funds to:
+
+* Receive donations or grants earmarked for specific causes or regions
+* Disburse grants to multiple projects (including informal or unincorporated groups) in a streamlined, transparent manner
+* Enable funders and the public to track how resources are used
+
+Each fund has its own profile page, budget, and update feed, just like a Collective. This makes it easy for regranting partners to communicate their goals, track disbursements, and meet reporting obligations with minimal overhead.
+
+## Why transparency matters
+
+Transparency is a cornerstone of the Open Collective platform. By making financial information publicly accessible, initiatives and funders can:
+
+* Build credibility: Demonstrate responsible fund management to donors and stakeholders
+* Simplify reporting: Funders can directly monitor how their resources are allocated
+* Enhance collaboration: Encourage trust and coordination between grantees and grantmakers
+
+Financial transactions are public, but personal details like names and email addresses are only visible to authorized admins.
+
+## Key Features
+
+* Real-time budget tracking
+* Integrated expense and payout tools
+* Custom donation tiers and fundraising campaigns
+* Event management tools
+* Automated monthly financial summaries
+* Public updates and communication channels
+
+
+# Equivalency Determination Certificate
+
+## Grants from U.S. foundations
+
+Open Source Europe helps hosted projects receive grants from U.S. foundations through an Equivalency Determination (ED) arrangement.
+
+Contact the OSE team before applying. We coordinate with the funder, provide the relevant documentation and arrange for the grant to reach your project.
+
+## Preparing a grant application
+
+Contact <oce@opencollective.com> early, with:
+
+* The funder's name and the project to be supported.
+* The proposed amount, purpose and application deadline.
+* Any eligibility requirements or draft grant agreement.
+
+The team will provide the current ED documentation and confirm the details to use in the grant agreement. An ED does not guarantee that a particular funder or grant programme will accept an application.
+
+## Donations from individuals
+
+An ED is distinct from the route for U.S. tax-deductible donations through Myriad USA. See [Tax-Deductible Giving for U.S. Donors](https://opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/).
+
+## Documentation for the funder
+
+The ED used for this arrangement is held by Open Collective Europe Foundation. Where this route is used, it receives the grant and transfers it to OSE for your project. The OSE team coordinates these steps.
+
+
+# Tax-Deductible Giving for U.S. Donors
+
+## An established route for U.S. giving
+
+U.S. individuals and businesses can support OSE Collectives through **Myriad USA → Open Collective Europe Foundation (OCEF) → OSE**. This established arrangement enables U.S. tax-deductible donations within the limits of applicable tax rules. The donor’s actual deduction depends on their circumstances.
+
+## Choose the appropriate donation route
+
+Contact OSE at <oce@opencollective.com> before payment with the name of the Collective to support. The team organises the route, reference, documents, applicable costs and transfer arrangements.
+
+* **Regular fundraising from U.S. donors:** an Every.org page organised with OSE is the preferred option. Funds follow Every.org → Myriad → OCEF → OSE.
+* **A larger donation:** the donor gives directly to Myriad, without Every.org, then funds follow Myriad → OCEF → OSE. Ask the team for the correct instructions; no universal amount threshold is specified here.
+
+A donation through the ordinary Open Collective checkout does not automatically use this arrangement. Confirm which organisation will issue the donation documentation for the selected route.
+
+The [current OSE hosting fees](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost) apply. The team will confirm any additional costs associated with the route.
+
+## Other cases
+
+If the tax-deductible route for your circumstances has not already been confirmed, contact OSE before giving to check the available route and documents. OSE does not guarantee an individual tax benefit.
+
+Cryptocurrency donations have a specific mandatory Every.org starting point: see [Cryptocurrency contributions](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/contributions-in-cryptocurrencies/).
+
+For grants from U.S. foundations, see [Equivalency Determination Certificate](https://opensourceeurope.org/docs/what-we-offer/equivalency-determination-certificate/).
+
+Further information: [Myriad FAQ](https://myriadusa.org/about/faqs/) and [ways to give](https://myriadusa.org/waystogive/).
+
+
+# About Open Source Europe
+
+Open Source Europe is a Belgian Association that fiscally hosts over 400 initiatives and partners with philanthropic institutions to support global regranting.
 
 ***
 
-### More Info
+## Service Overview
 
-For full details on how fiscal hosting works, see:\
-👉 [Fiscal Hosting FAQs](https://docs.opencollective.com/oceurope/faq/fiscal-hosting-faqs)
+Unlike traditional non-profits, Open Source Europe (OSE) combines a legal structure with a dedicated digital infrastructure to enable:
 
-
-# Expense FAQs
-
-### What does the approval process look like for expenses?
-
-Once an expense is submitted, it must be approved by a Collective admin. Approved expenses are then paid out by Open Collective Europe within seven days from approval (usually on Tuesdays).
-
-If there are any issues with the payment or expected delays, an OC Europe admin will comment below the expense, and you will receive an email notification. Please note that comments are private to admins and payees.
-
-Generally, approved expenses take less than a week to be paid out and to reach your account, but it could take longer if there are issues or if the payment processor experiences delays.
+* **Fiscal hosting for open source projects:** We provide a legal umbrella for developers, maintainers, and communities, allowing them to operate without creating their own legal entity.
+* **Grant distribution and fund management:** We manage funds for foundations and companies seeking to support critical open source projects across Europe and beyond.
+* **Radical transparency:** Using the Open Collective platform, all financial activity is publicly visible, fostering trust and accountability within the community.
 
 ***
 
-### Can we pay people for their time?
+## How hosting works
 
-Yes! Any registered independent contractor can invoice a Collective using the standard invoicing procedure in their country of residence.
+OSE provides a Belgian nonprofit home for open source projects. We use the Open Collective platform to manage budgets, receive contributions and process expenses transparently.
 
-If that's not possible, we recommend invoicing through a **workers' cooperative**. Workers' cooperatives provide an invoicing tool that allows you to negotiate with your client (the Collective or one of the Collective's admins) all aspects of your mission (tasks, price, dates, etc.). You negotiate these aspects with your Collective and use the Open Collective platform to process the payment. Then, you declare that assignment through their website before starting to work. Just upload your invoice to your Collective once this process is done.
-
-[Smart](https://smartbe.be) is one of the largest workers' cooperatives in Europe. They offer an invoicing tool in Belgium, France, Germany, Spain, Italy, The Netherlands, and Sweden.
-
-We realize that this procedure can seem complicated. We invite you to contact us directly with any questions you may have on this subject.
+See our [Terms of Service](https://opensourceeurope.org/docs/terms-of-service/) for the hosting agreement.
 
 ***
 
-### Do you offer payroll and employment services?
+## Who We Serve
 
-No, we don't. However, if you use an **Employer of Record (EoR)** third-party service, such as [Remote](https://remote.com), you can reimburse their invoices through your Collective. Bear in mind that an EoR service has to be contracted outside of Open Collective Europe through an incorporated entity. Please make sure to review their website, pricing, and documentation. Feel free to contact us if your Collective requires our support on the matter.
+* **Project Maintainers:** Open source projects without their own legal structure.
+* **Funders and Corporates:** International companies looking for a trusted intermediary to support open source in Europe.
+* **Developer Networks:** Communities seeking fiscal and operational support for their collective activities.
 
-{% hint style="danger" %}
-Please note that Open Collective Europe cannot contract any EoR service on behalf of your Collective.
-{% endhint %}
+***
 
+## How to Work With Us
 
-# Contributions FAQ
+* **For Projects:** Apply for fiscal hosting to start receiving donations and grants legally.
+* **For Funders:** Support projects and manage your contributions transparently through our hosted funds.
+* **For Organizations:** Manage large-scale distributions efficiently without complex international structures.
 
-Questions about contributing to our hosted collectives
+***
 
-### **How do I cancel recurring donations/subscriptions/payments?**
+[Contact the team](mailto:oce@opencollective.com)
 
-See our instructions on how to cancel recurring or ongoing donations, subscriptions, payments, etc., [here](https://docs.opencollective.com/help/financial-contributors/payments#change-the-amount-payment-method-or-cancel-an-existing-contribution).
+***
 
-### **What if a contributor wants their contribution to be anonymous?**
+## A little history
 
-Contributors can make an anonymous payment by choosing [incognito](https://docs.opencollective.com/help/financial-contributors/payments#profile) when picking a profile to pay from. If the contributor contributes as a [guest](https://docs.opencollective.com/help/financial-contributors/payments#contributing-as-a-guest), then the given name will still show up, the contributor then just won’t have to log in to make the payment. All Open Collective users can also [differentiate](https://opencollective.com/opencollective/updates/new-legal-and-display-name-settings) a public display name from their private legal name.
+Open Source Europe grew out of Open Collective Europe's fiscal hosting work. As that work developed, OSE became the home for open source projects and communities, while Open Collective Europe Foundation developed its wider philanthropic activities. Our hosting agreement still uses the association's name, Open Collective Europe ASBL/vzw.
 
-### **What if a financial contributor is unable or not comfortable with submitting their credit card information online?**
+Today, OSE focuses on helping open source communities receive funding, pay contributors and manage their projects transparently.
 
-If a donor is not comfortable with online credit card transactions, they can send the funds via PayPal or bank transfer.
 
-### **Someone said they sent my collective money but I don’t see it in my account! Help?**
+# Terms of Service
 
-**\~or\~**
+## Hosting agreement
 
-### **I sent in money but I don't see my donation on the collective's page?!**
+Hosting with Open Source Europe is governed by the association's Terms of Hosting.
 
-[Contact us!](https://docs.opencollective.com/oceurope/about-1/contact-us)
+The [Terms of Hosting for the association](https://docs.google.com/document/d/15Wkvfn5ou-is_eUjautjDv4JZ-tiY2-c/edit) are the reference document for this hosting relationship. [Contact the team](mailto:oce@opencollective.com) to obtain the applicable version and any additional agreement relevant to your project.
 
-We often receive money in our bank account without any indication of where it should go. (This is why it's so important to include the order# in the bank transfer). We always do a thorough research to identify the right collective, but sometimes it is not possible.
+## Main responsibilities
 
-At the end of the month, we move the unidentified funds to a [holding fund](https://opencollective.com/oce-holding-fund).
+This overview explains the main points of the association's Terms of Hosting. It does not replace or amend the agreement.
 
-We keep the money there until we can identify who it is intended for and then we transfer it.
+* Your initiative remains responsible for its activities and related obligations. Hosting does not make the initiative a legal extension of the association.
+* The association receives and administers funds on the initiative's behalf through an indirect representation relationship.
+* The initiative retains its intellectual property unless a separate agreement provides otherwise.
+* The initiative cannot bind the association to an agreement with a third party without prior written approval.
+* Contributions and expenses must be recorded transparently on the platform. Expense requests require supporting documents and review.
+* Funds must support the initiative's stated purpose. The initiative must keep its description up to date and publish updates at least annually.
+* Administrative fees and directly related processing expenses are deducted according to the applicable agreement.
 
-Write to us on <oce@opencollective.com> or send us a message via[ Slack](http://slack.opencollective.com/) or [Discord](https://discord.gg/uCnzytpNr6). We will ask you to send us screenshots/receipts that include the expected amount, the collective name, and the sender/any info about the bank transfer, so that we can send the funds to their happy home.
+## Starting, changing or ending the arrangement
 
-### **What if a financial contributor requests an invoice before making the donation?**
+Contact the team before entering into grant agreements, making commitments on behalf of the association, or changing your project's activities.
 
-OSE can provide confirmation that a donation was received, but not a sales or VAT invoice. If a contributor requires an invoice in exchange for goods, services, visibility, or another benefit, OSE cannot accept the payment.
+The Terms of Hosting provide for termination with **30 days' written notice**. Valid outstanding expenses and any remaining balance are handled under the agreement's termination provisions. A remaining balance is not automatically available for distribution to individual administrators.
 
-### **Can we use outside fundraising platforms to fundraise for our collective?**
+For current guidance on contributions, see [Contributions FAQ](https://opensourceeurope.org/docs/faq/contributions-faq/). If your planned activity raises a question about the scope of the hosting agreement, contact the team before proceeding.
 
-We recommend using Open Collective as much as possible so that you can manage your budget in one place, but you may use other platforms to raise funds for your community.
+## Contact
 
-At this time, we cannot accept direct payments from third-party platforms like Patreon, GoFundMe, Kofi, etc. You would need to move this money into OCE manually. Reach out to us at <oce@opencollective.com> with any questions on how to do this.
-
-If you’re interested in taking advantage of our partnership with GitHub Sponsors, [please see our guide to connecting Sponsors](https://docs.opencollective.com/oceurope/how-it-works/financial-contributions-how-to-donate/setting-up-github-sponsors) with your collective.
-
-### Can we receive earned income (i.e., non-donations)?
-
-OSE accepts only donations and grants. It does not accept earned income or payments made in exchange for goods or services.
-
-### **Can we offer financial contributors something in return for their donation?**
-
-Donation [tiers](https://docs.opencollective.com/help/collectives/collective-settings/tiers-goals#tiers) may suggest different contribution amounts, but they cannot include promised goods, services, advertising, promotional visibility, access, or other benefits. Optional donor acknowledgment that is not promised as part of a tier is permitted.
-
-### **Can my group offer memberships/accept membership fees?**
-
-Supporter membership is a symbolic community designation and confers no rights or benefits.
-
-### Can my collective donate to another hosted collective?
-
-Collectives[ can easily give to other collectives](https://docs.opencollective.com/help/financial-contributors/collective-to-collective) hosted by Open Collective Europe. (If you want to give to a collective with another fiscal host there are[ some extra steps](https://docs.opencollective.com/help/financial-contributors/collective-to-collective#across-different-fiscal-hosts).)
-
-
-# Deciding on How to Use Your Money
-
-How to use funds for your initiative on OCE
-
-This guide is based on an Open Source Collective workshop led by Sumana Harihareswara of Changeset Consulting in January 2022. It focused on helping Open Collective-hosted open-source software projects decide how to use the money they have already raised. We adapted it for user cases seen on OCE, with all examples in EUR.
-
-### Why You Should (or Shouldn't) Spend Your Money
-
-#### Reasons to Spend
-
-* **Advancing your project:** Use funds to complete tasks, chores, and infrastructure improvements that are difficult to achieve with volunteer labour alone.
-* **Attracting more donors:** Spending money demonstrates to donors that you use their contributions effectively.
-* **Experimenting and learning:** Spending money on pilot projects or services can help you explore new approaches and increase flexibility.
-* **Boosting morale:** Small investments in merchandise (stickers, awards, t-shirts) can improve contributor retention and team morale.
-
-Generally, spending less than 10% of your saved funds or making a one-time expenditure of less than 20% of your stable recurring monthly income should be manageable without extensive decision-making.
-
-#### **Reasons to Save:**
-
-* **Specific Activities:** Save up for significant expenditures like contractor engagements.
-* **Self-Insurance:** Keep funds to cover potential risks, such as unexpected hosting costs or legal expenses.
-* **Budgeting:** Develop a budget to delineate funds for self-insurance and future activities, ensuring you have a clear picture of available spending.
-
-### Driver and Supporter/Protector Activities
-
-**Drivers:** Activities that directly advance your mission (e.g., software development).
-
-**Supporters:** Infrastructural activities and purchases that support drivers (e.g., organising conferences, buying laptops).
-
-**Protectors:** Activities or expenses that reduce risks (e.g., legal fees, code of conduct workshops).
-
-For instance, in this diagram...
-
-<figure><img src="/files/eG0VVbTG1O0OtbgntQ5N" alt=""><figcaption><p>Money and Resources, shown by those that go into a project and then what comes out of it</p></figcaption></figure>
-
-...labor for software development is a driver, because writing the software directly advances the mission of making and improving the open source project. An example of a supporter activity: organizing a conference where the contributors can meet to improve and speed up their work. An example of a supporter purchase: buying a new laptop for a contributor to use.
-
-### Advancing Your Goals and Roadmap
-
-Consider what's on your roadmap and how you can spend to support it.
-
-If you lack explicit project goals or a written roadmap, you can still invest in the following:
-
-* **Consultants:** Pay for help in creating a roadmap.
-* **Hardware Upgrades:** Improve your team's development environment.
-* **Mentorship Programs:** Sponsor and mentor interns to build capacity.
-* **Volunteer contributions:** Organise volunteers around your activity and reimburse them according to the legislation in their country of residence
-
-If you have a roadmap, pay new contractors or for services to relieve existing volunteers of repetitive tasks.
-
-#### Specific Spending Examples
-
-* Independent contractors
-* Volunteer reimbursements
-* Professional education and tools
-* Meet up travel expenses
-* Logo design and merchandise
-* Co-working space
-* Virtual assistant services
-
-#### Hiring Contractors
-
-You can hire collaborators for your collective as contractors. You can decide on who you will be hiring informally or through a public job posting process. Please see [here for the possibilities of invoicing](https://docs.opencollective.com/oceurope/how-it-works/expenses/invoices-or-reimbursements).
-
-#### Using Bounties Cautiously
-
-Patch bounty programs can incentivise specific development work but may lead to competitive rather than collaborative behaviour. Use bounties for tasks that volunteers are not inclined or skilled to do.
-
-### Decision-Making and Governance
-
-Per Open Collective's expense documentation:
-
-{% hint style="info" %}
-"The decision is up to you as a project. Some projects are informal, and any Core Contributor can approve any expense. Others have a formal decision-making or budgeting process, or only pay expenses for specific things. We advise you to have a discussion with your collaborators and agree on guidelines for approving expenses."
-{% endhint %}
-
-Please also review the documentation on [budget](https://docs.opencollective.com/help/collectives/budget) and [expense policies](https://docs.opencollective.com/help/collectives/collective-settings/expense-policy) as well as ["ten ways to make decisions about money"](https://blog.opencollective.com/ten-ways-to-make-decisions-about-money/).
-
-* **Common Concerns:**
-
-  * Legal or tax implications: Open Collective Europe cannot advise you on your members' or collaborators' legal or fiscal obligations. We recommend contacting a legal or fiscal specialist in their country of residence. For general guidance, please use this documentation or contact us at <oce@opencollective.com>
-  * Disagreements: Act in good faith and empower group decisions. Clear policies and consistent practices help a lot in this process.&#x20;
-
-  People will have reasonable concerns about what you spent, and why and how you spent it, and you're not sure how to preempt or respond to those concerns. You have two major options:
-
-  * *Intense up-front transparency*: invest in publishing details about the decisions transparently. Give contributors and spectators advance notice of possible expenditures, make it clear who has the power to decide, and offer a public comment period before approval. Do this consistently, and use Open Collective's tools to leave the records up for future inspection. This is relatively easy if you are managing all the expenses via Open Collective invoices.
-  * *Post-decision accountability*: don't offer a pre-decision public comment period, but run an explicit private comment period among the decision markers, and offer accountability for past expenses such that anyone who wants to can ask for details on particular expenditure choices. This allows you to make more decisions privately, and gives you the option of providing some details privately in response to questions, but keep in mind that your payees or people you answer may publish details on their own.
-
-
+<oce@opencollective.com>

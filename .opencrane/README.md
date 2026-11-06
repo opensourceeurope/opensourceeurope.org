@@ -22,7 +22,8 @@ This directory contains OpenCrane configuration and generated data files.
 # 1. Add documentation sources interactively
 opencrane add
 
-# 2. Build the full pipeline (fetch → llms → chunk → embed → index)
+# 2. Export the OSE docs, then build the full pipeline (fetch → llms → chunk → embed → index)
+uv run --no-project --python 3.12 --with pyyaml==6.0.2 python scripts/knowledge/docs-to-llms.py
 opencrane build
 
 # 3. Start the MCP server (auto-indexes into Milvus Lite)
