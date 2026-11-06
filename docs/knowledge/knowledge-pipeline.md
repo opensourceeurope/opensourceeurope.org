@@ -8,7 +8,7 @@ embeds them, and indexes them into Milvus Lite for the `search_docs` MCP tool.
 
 The index has two `llmstxt` sources:
 
-- `open-source-europe`: the docs at `/docs/`, read from the Markdown in `src/content/docs/docs/`. `scripts/knowledge/docs-to-llms.py` exports the pages, in sidebar order, to `.opencrane/docs-export/open-source-europe/llms-full.txt` and a companion `llms.txt`, and `fetch` copies both into `.opencrane/llmstxt/open-source-europe/`. Answers cite `https://opensourceeurope.org/docs/...`. The export folder is not committed, so run the script before every `fetch`.
+- `open-source-europe`: the docs at `/docs/`, a local source that the `llms` step reads straight from `src/content/docs/docs/`. `markdown_extensions` in `.opencrane/config.yaml` makes it read the `.mdx` home page too, `trailing_slash` makes page URLs end with `/` like the site's, and the preprocessors in `.opencrane/extensions.py` turn Starlight asides, MDX imports and link cards into plain Markdown. Answers cite `https://opensourceeurope.org/docs/...`. `fetch` skips this source.
 - `oc-europe-internal-doc`: the internal Open Collective Europe space, downloaded from https://docs.opencollective.com/oc-europe-internal-doc/llms-full.txt.
 
 A docs change that merges to `main` starts the refresh workflow, which exports the docs again, rebuilds the index and opens a pull request that merges itself. The chat answers from the change with the release that includes that pull request.
@@ -16,7 +16,7 @@ A docs change that merges to `main` starts the refresh workflow, which exports t
 ## Rebuild the index locally
 
 opencrane is **version-locked** in [`.opencrane/opencrane-version`](../../.opencrane/opencrane-version)
-(currently `0.35.0`) — CI and `scripts/knowledge/ensure-index.sh` invoke exactly that version via `uvx`,
+(currently `0.36.0`) — CI and `scripts/knowledge/ensure-index.sh` invoke exactly that version via `uvx`,
 never the latest PyPI release, so the index is reproducible. To move to a new opencrane, edit
 that one file and regenerate the index (`./scripts/knowledge/ensure-index.sh`) in the same PR. Pin your
 local commands to the same version so they match CI:
@@ -28,7 +28,6 @@ extra — docling/PyGithub/tiktoken live there, kept out of the serve-only base 
 `fetch` needs a non-empty `GITHUB_TOKEN` even for llmstxt-only sources:
 
 ```bash
-uv run --no-project --python 3.12 --with pyyaml==6.0.2 python scripts/knowledge/docs-to-llms.py
 OC="opencrane[pipeline]@$(cat .opencrane/opencrane-version)"
 GITHUB_TOKEN=x uvx -c .opencrane/constraints.txt "$OC" fetch
 uvx -c .opencrane/constraints.txt "$OC" llms
@@ -40,7 +39,6 @@ uvx -c .opencrane/constraints.txt "$OC" index
 Or run the whole pipeline at once:
 
 ```bash
-uv run --no-project --python 3.12 --with pyyaml==6.0.2 python scripts/knowledge/docs-to-llms.py
 GITHUB_TOKEN=x uvx -c .opencrane/constraints.txt "opencrane[pipeline]@$(cat .opencrane/opencrane-version)" build
 ```
 
@@ -73,7 +71,7 @@ release copies each line into the published package's dependencies with
 `scripts/knowledge/cap-pack-deps.sh`. `knowledge-ci.yml` fails when an opencrane install skips
 it. To raise the cap, serve with `uvx --with 'transformers==<new version>'` in place of `-c`, run
 `tests/knowledge/smoke_http.py`, and edit the file once the search returns sources. The pinned
-opencrane 0.35.0 caps `transformers<5.17` itself too, so for now the file is a second guard.
+opencrane 0.36.0 caps `transformers<5.17` itself too, so for now the file is a second guard.
 It can go once a test shows it is redundant, together with the `knowledge-ci.yml` guard,
 the cap step of `cap-pack-deps.sh`, the Dockerfile `-c` and the line in `AGENTS.md`. Packages
 published before this change (0.5.2 and older) carry no cap in their metadata.

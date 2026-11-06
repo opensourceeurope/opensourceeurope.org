@@ -126,4 +126,6 @@ Add the `Generated-by:` line to the pull request if an agent helped, and never a
 
 ## The Ask chat
 
-The Ask chat answers from a knowledge index in `.opencrane/`, built from these Markdown files. When a docs change merges to `main`, the refresh workflow (`refresh.yml`) exports the docs, rebuilds the index and opens a pull request that merges itself. The chat answers from the change with the release that includes that pull request. You do not need to rebuild the index in your own pull request.
+The Ask chat answers from a knowledge index in `.opencrane/`, built from these Markdown files. When a docs change merges to `main`, the refresh workflow (`refresh.yml`) reads the docs, rebuilds the index and opens a pull request that merges itself. The chat answers from the change with the release that includes that pull request. You do not need to rebuild the index in your own pull request.
+
+The index reads the Markdown as text, so `.opencrane/extensions.py` rewrites the Starlight syntax first: callouts, MDX imports and link cards. If you use another Starlight component, such as tabs, add a rule for it there, or the chat searches the raw markup.
