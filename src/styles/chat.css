@@ -120,6 +120,15 @@ html:not(.js) .chat__app {
 .chat__form {
   margin: 0;
 }
+/* The spam trap, as in the contact form. Off screen rather than display: none,
+   so form-filling bots still see it. */
+.chat__honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 .chat__composer {
   display: flex;
   align-items: flex-end;

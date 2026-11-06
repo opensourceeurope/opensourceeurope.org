@@ -110,6 +110,15 @@ describe('streamChat', () => {
     expect(reply).toMatchObject({ answer: 'Hello [1]', citations: [{ n: 1, url: 'https://a.example/' }] });
     const init = (f as unknown as ReturnType<typeof vi.fn>).mock.calls[0][1] as RequestInit;
     expect((init.headers as Record<string, string>).accept).toBe('text/event-stream');
+    expect(JSON.parse(init.body as string)).not.toHaveProperty('website');
+  });
+
+  it('sends the honeypot value only when it is filled', async () => {
+    const { streamChat } = await import('../../../src/scripts/chat/client');
+    const f = vi.fn(async () => new Response(JSON.stringify({ error: 'bad_request' }), { status: 400 })) as unknown as typeof fetch;
+    await expect(streamChat('x', messages, false, { website: 'bot' }, f)).rejects.toMatchObject({ code: 'bad_status' });
+    const init = (f as unknown as ReturnType<typeof vi.fn>).mock.calls[0][1] as RequestInit;
+    expect(JSON.parse(init.body as string)).toMatchObject({ website: 'bot' });
   });
 
   it('falls back to JSON when the response is not an event stream', async () => {

@@ -22,6 +22,7 @@ export interface ChatTexts {
   intro: string;
   placeholder: string;
   input_label: string;
+  honeypot_label: string;
   send_label: string;
   suggestions_label: string;
   suggestions: string[];

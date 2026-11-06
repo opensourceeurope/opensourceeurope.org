@@ -90,6 +90,7 @@ const settings = defineCollection({
             intro: z.string().min(1),
             placeholder: z.string().min(1),
             input_label: z.string().min(1),
+            honeypot_label: z.string().min(1),
             send_label: z.string().min(1),
             suggestions_label: z.string().min(1),
             suggestions: z.array(z.string().min(1)).min(1),
