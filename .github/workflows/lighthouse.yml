@@ -1,6 +1,6 @@
-# Lighthouse budgets on every enabled route, desktop and mobile. The budgets are
-# in lighthouserc.desktop.json and lighthouserc.mobile.json. @lhci/cli is the
-# version pinned in package-lock.json.
+# Lighthouse budgets on every enabled route, desktop and mobile. The budgets and
+# the routes are in lighthouserc.desktop.json and lighthouserc.mobile.json.
+# @lhci/cli is the version pinned in package-lock.json.
 name: lighthouse
 
 on:
@@ -16,16 +16,60 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Mobile and desktop run on separate runners. Two audits on one runner share its
-  # CPU, and that lowers the performance scores the budgets check.
-  audit:
-    name: lighthouse (${{ matrix.form }})
+  # A pull request that touches only files the pages cannot depend on skips the
+  # build and the audits. The list below is of paths to skip, so a new folder
+  # is audited until someone adds it here. A push to main always runs.
+  changes:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-    strategy:
-      fail-fast: false
-      matrix:
-        form: [mobile, desktop]
+    timeout-minutes: 5
+    outputs:
+      site: ${{ steps.diff.outputs.site }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        if: github.event_name == 'pull_request'
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - id: diff
+        env:
+          EVENT: ${{ github.event_name }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          if [ "$EVENT" != pull_request ]; then
+            echo "site=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          # A failed diff stops the step here, so it never reads as "nothing changed".
+          files=$(git diff --name-only "$BASE...$HEAD")
+          site=false
+          while IFS= read -r file; do
+            [ -n "$file" ] || continue
+            case "$file" in
+              .opencrane/*|agent/*|plugins/*|functions/chat/*|analytics/*) ;;
+              docs/*|tests/*|scripts/knowledge/*|.claude/*|.githooks/*) ;;
+              .github/workflows/lighthouse.yml) site=true ;;
+              .github/*) ;;
+              *.md) case "$file" in */*) site=true ;; esac ;;
+              *) site=true ;;
+            esac
+            if [ "$site" = true ]; then
+              echo "Audit needed, changed: $file"
+              break
+            fi
+          done <<< "$files"
+          echo "site=$site" >> "$GITHUB_OUTPUT"
+
+  # One build for all the audits. The image cache holds the optimized images
+  # Astro writes to node_modules/.astro/assets, which take almost two minutes
+  # to generate from scratch. Astro names each cached image by a hash of its
+  # source and options, so a cache from an older commit cannot serve a stale image.
+  build:
+    needs: changes
+    if: needs.changes.outputs.site == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -38,27 +82,87 @@ jobs:
 
       - run: npm ci
 
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: node_modules/.astro/assets
+          key: astro-assets-${{ runner.os }}-${{ hashFiles('src/assets/**', 'public/app/uploads/**', 'package-lock.json') }}
+          restore-keys: astro-assets-${{ runner.os }}-
+
       - name: Build the site
         env:
           PUBLIC_CONTACT_ENDPOINT: http://localhost:8081
           PUBLIC_CHAT_ENDPOINT: http://localhost:8080
         run: npm run build
 
-      - name: Lighthouse, ${{ matrix.form }}
-        run: npx lhci autorun --config=lighthouserc.${{ matrix.form }}.json
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: dist
+          path: dist/
+          retention-days: 1
+          if-no-files-found: error
+
+  # Each form factor runs on two runners, each auditing half the routes. Audits
+  # that share a runner share its CPU, and that lowers the performance scores
+  # the budgets check.
+  audit:
+    name: lighthouse (${{ matrix.form }}, ${{ matrix.half }})
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        form: [mobile, desktop]
+        half: [first, second]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .node-version
+          cache: npm
+
+      - run: npm ci
+
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: dist
+          path: dist/
+
+      - name: Select this runner's routes
+        env:
+          FORM: ${{ matrix.form }}
+          HALF: ${{ matrix.half }}
+        run: |
+          jq --arg half "$HALF" '.ci.collect.url |= (
+            (length / 2 | ceil) as $mid
+            | if $half == "first" then .[:$mid] else .[$mid:] end
+          )' "lighthouserc.$FORM.json" > "$RUNNER_TEMP/lighthouserc.json"
+          jq -r '.ci.collect.url[]' "$RUNNER_TEMP/lighthouserc.json"
+
+      - name: Lighthouse, ${{ matrix.form }}, ${{ matrix.half }} half
+        run: npx lhci autorun --config="$RUNNER_TEMP/lighthouserc.json"
 
   # Branch protection on main requires a check named lighthouse. The matrix jobs
-  # report as lighthouse (mobile) and lighthouse (desktop), so this job carries
-  # the required name and fails unless both audits succeeded.
+  # report under other names, so this job carries the required name. It passes
+  # when the audits were skipped because no page could have changed, and
+  # otherwise only when the build and every audit succeeded.
   lighthouse:
-    needs: audit
+    needs: [changes, build, audit]
     if: always()
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Require both audits to pass
+      - name: Require the audits to pass
         env:
-          RESULT: ${{ needs.audit.result }}
+          CHANGES: ${{ needs.changes.result }}
+          SITE: ${{ needs.changes.outputs.site }}
+          BUILD: ${{ needs.build.result }}
+          AUDIT: ${{ needs.audit.result }}
         run: |
-          echo "Lighthouse audits: $RESULT"
-          [ "$RESULT" = success ]
+          echo "changes: $CHANGES, site: $SITE, build: $BUILD, audits: $AUDIT"
+          [ "$CHANGES" = success ] || exit 1
+          [ "$SITE" = true ] || { echo "No page could have changed; audits skipped."; exit 0; }
+          [ "$BUILD" = success ] && [ "$AUDIT" = success ]
