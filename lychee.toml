@@ -13,4 +13,7 @@ exclude = [
   # opencollective.com and its subdomains answer 403 to some GitHub runners,
   # so the check fails on some runs for links that work in a browser.
   '^https://([a-z0-9-]+\.)*opencollective\.com/',
+  # Google Docs and Myriad USA reject automated clients but work in a browser.
+  '^https://docs\.google\.com/',
+  '^https://myriadusa\.org/',
 ]

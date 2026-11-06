@@ -6,5 +6,5 @@
 # transformers 5.17.0 removed PreTrainedModel.get_extended_attention_mask, which the
 # remote code of nomic-ai/nomic-embed-text-v1.5 calls, so every search fails.
 # 5.16.1 is the newest release that works.
-# opencrane 0.35.0 declares the same cap; this file stays as a second guard.
+# opencrane 0.36.0 declares the same cap; this file stays as a second guard.
 transformers<5.17

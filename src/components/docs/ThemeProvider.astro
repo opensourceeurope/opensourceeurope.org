@@ -1,0 +1,8 @@
+---
+// The site has one dark theme. Starlight's provider reads and writes the
+// theme in localStorage, which the site does not use, so this one only sets it.
+---
+
+<script is:inline>
+  document.documentElement.dataset.theme = 'dark';
+</script>

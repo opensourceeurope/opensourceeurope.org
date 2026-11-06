@@ -80,6 +80,8 @@ nav:
     href: /how-to-join/
   - label: Contact
     href: /contact/
+  - label: Docs
+    href: /docs/
   - label: Ask AI
     href: /ask/
     icon: ai

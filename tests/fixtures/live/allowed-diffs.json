@@ -47,6 +47,10 @@
     {
       "diff": "Ask AI",
       "note": "MN-057: the main navigation links to the Ask page"
+    },
+    {
+      "diff": "Docs",
+      "note": "MN-060: the main navigation links to the docs"
     }
   ],
   "/": [
@@ -677,6 +681,14 @@
     {
       "diff": "Apply on Open Collective in minutes. After you apply, OSE emails you a short form for the rest of your project details.",
       "note": "MN-052: applications go through Open Collective"
+    },
+    {
+      "diff": "Gitbook documentation",
+      "note": "MN-062: the docs cards link to the OSE docs at /docs/"
+    },
+    {
+      "diff": "OSE documentation",
+      "note": "MN-062: the docs cards link to the OSE docs at /docs/"
     }
   ],
   "/how-to-join/": [
@@ -705,6 +717,14 @@
     {
       "diff": "Ask about fiscal hosting for your open source project, about a project OSE already hosts, or about a partnership. Use the form, or write to home@opensourceeurope.org.",
       "note": "MN-051: the contact intro replaces placeholder text"
+    },
+    {
+      "diff": "Access a complete guide on GitBook designed to help you set up, manage, and grow your collective with clarity and ease.",
+      "note": "MN-062: the docs cards link to the OSE docs at /docs/"
+    },
+    {
+      "diff": "Access a complete guide designed to help you set up, manage, and grow your collective with clarity and ease.",
+      "note": "MN-062: the docs cards link to the OSE docs at /docs/"
     }
   ]
 }

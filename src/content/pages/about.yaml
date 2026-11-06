@@ -139,11 +139,11 @@ sections:
     items:
       - icon: { src: ../../assets/uploads/2025/11/Icon-gitbook-documentation.png, alt: "", decorative: true }
         heading:
-          text: Gitbook documentation
+          text: OSE documentation
           highlight: documentation
         cta:
           label: Read documentation
-          href: https://docs.opencollective.com/oceurope
+          href: /docs/
           variant: text
       - icon: { src: ../../assets/uploads/2025/11/Icon-ready-to-use-templates.png, alt: "", decorative: true }
         heading:
