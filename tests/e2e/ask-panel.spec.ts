@@ -83,6 +83,16 @@ test.describe('ask panel', () => {
     await expect(button(page)).toBeFocused();
   });
 
+  test('has the honeypot, out of reach', async ({ page }) => {
+    await page.goto('/about/');
+    await button(page).click();
+    await expect(dialog(page)).toBeVisible();
+    const honeypot = dialog(page).locator('input[name="website"]');
+    await expect(honeypot).toHaveAttribute('tabindex', '-1');
+    await expect(honeypot).toHaveAttribute('aria-hidden', 'true');
+    await expect(honeypot).not.toBeInViewport();
+  });
+
   test('streams an answer in the panel', async ({ page }) => {
     await mockChatStream(
       page,

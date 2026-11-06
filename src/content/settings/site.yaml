@@ -22,6 +22,7 @@ chat:
   intro: A public assistant that searches the official OSE documentation and answers with sources you can verify. Fiscal hosting, onboarding, policies, processes. Ask in your own words.
   placeholder: Ask about OSE…
   input_label: Your question
+  honeypot_label: Leave this field empty
   send_label: Send question
   suggestions_label: Try
   suggestions:

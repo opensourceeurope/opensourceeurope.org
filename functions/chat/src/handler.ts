@@ -14,7 +14,15 @@ export const SYSTEM_PROMPT = buildSystemPrompt(PERSONA);
 // conversation; logged with opt-in analytics.
 export const PROMPT_VERSION = promptVersion(SYSTEM_PROMPT + EARLIER_TURNS_NOTE);
 
-export interface ChatRequest { messages: ChatMessage[]; analyticsOptIn?: boolean; }
+export interface ChatRequest { messages: ChatMessage[]; analyticsOptIn?: boolean;
+  /** The chat form's hidden honeypot field. Only a bot fills it in. */
+  website?: unknown; }
+
+/** True when the request filled in the honeypot field, as the contact form checks it. */
+export function isHoneypotFilled(body: unknown): boolean {
+  const website = (body as { website?: unknown } | null | undefined)?.website;
+  return typeof website === "string" ? website.trim() !== "" : website !== undefined && website !== null;
+}
 export interface Env { MISTRAL_API_KEY: string; MISTRAL_MODEL?: string; MISTRAL_BASE_URL?: string; OSE_MCP_URL: string; MAX_TOOL_ROUNDS?: string;
   /** Overrides for slow local models. Production uses the defaults. */
   CHAT_MODEL_TIMEOUT_MS?: string; CHAT_SEARCH_TIMEOUT_MS?: string; CHAT_BUDGET_MS?: string;
@@ -227,6 +235,8 @@ export function handleChat(body: ChatRequest, env: Env, deps: HandlerDeps = {}):
 }
 
 async function runChat(body: ChatRequest, env: Env, deps: HandlerDeps, hooks: ChatHooks): Promise<ChatResponse> {
+  // A filled honeypot is a bot: answer before any search or model call, so it costs nothing.
+  if (isHoneypotFilled(body)) return errorResponse("bad_request");
   const history = prepareHistory(body?.messages);
   if (!history) return errorResponse("bad_request");
   const question = history[history.length - 1].content;

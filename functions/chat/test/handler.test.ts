@@ -18,7 +18,7 @@ vi.mock("@mistralai/mistralai", () => ({
   },
 }));
 
-import { handleChat, toMistralMessages, stripTrailingSourceList, resetToolChoiceFallbacks, REQUIRED_CALL_MAX_TOKENS } from "../src/handler.js";
+import { handleChat, isHoneypotFilled, toMistralMessages, stripTrailingSourceList, resetToolChoiceFallbacks, REQUIRED_CALL_MAX_TOKENS } from "../src/handler.js";
 import { ChatFailure } from "../src/errors.js";
 import { EARLIER_TURNS_NOTE } from "../src/chat-rules.js";
 
@@ -64,6 +64,26 @@ describe("handleChat validation", () => {
   it("rejects a body without messages", async () => {
     expect((await handleChat(null as any, {} as any)).status).toBe(400);
     expect((await handleChat({ messages: "x" } as any, {} as any)).status).toBe(400);
+  });
+
+  it("rejects a filled honeypot before any model call", async () => {
+    const out = await handleChat({ messages: [{ role: "user", content: "hi" }], website: "http://spam.example" } as any, {} as any);
+    expect(out).toEqual({ status: 400, json: { error: "bad_request" } });
+  });
+});
+
+describe("isHoneypotFilled", () => {
+  it("is false for a missing, null or blank field", () => {
+    expect(isHoneypotFilled({})).toBe(false);
+    expect(isHoneypotFilled({ website: null })).toBe(false);
+    expect(isHoneypotFilled({ website: "  " })).toBe(false);
+    expect(isHoneypotFilled(null)).toBe(false);
+  });
+
+  it("is true for text or any other value", () => {
+    expect(isHoneypotFilled({ website: "x" })).toBe(true);
+    expect(isHoneypotFilled({ website: 1 })).toBe(true);
+    expect(isHoneypotFilled({ website: {} })).toBe(true);
   });
 });
 

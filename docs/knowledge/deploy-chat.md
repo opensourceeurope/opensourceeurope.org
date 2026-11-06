@@ -43,6 +43,12 @@ who may call it matters:
   a determined attacker can still call the endpoint directly. The hard backstop is
   platform-level: Scaleway free-tier/account limits bound total spend, and you can add
   rate-limiting in front of the function (gateway/CDN/WAF) if abuse appears.
+- **Honeypot field.** The chat form (on `/ask/` and in the panel) has a hidden `website`
+  field, like the contact form. People never see it. The browser sends it only when
+  something filled it, and the function answers such a request with `400 bad_request`
+  before any search or model call, so it costs nothing. It catches bots that fill in
+  the form. A script that posts to the function directly skips the form, so this check
+  does not stop it.
 
 There is **no custom rate-limiting** in the function itself. The spend controls you have:
 

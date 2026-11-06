@@ -132,6 +132,8 @@ export interface StreamHandlers {
   onStatus?: (status: ChatStatus) => void;
   onDelta?: (text: string) => void;
   signal?: AbortSignal;
+  /** The value of the hidden honeypot field. Sent only when something filled it. */
+  website?: string;
 }
 
 const isAbort = (e: unknown): boolean => !!e && typeof e === 'object' && (e as { name?: unknown }).name === 'AbortError';
@@ -155,7 +157,9 @@ export async function streamChat(
     res = await fetchFn(endpoint, {
       method: 'POST',
       headers: { 'content-type': 'application/json', accept: 'text/event-stream' },
-      body: JSON.stringify({ messages, analyticsOptIn }),
+      body: JSON.stringify(
+        handlers.website ? { messages, analyticsOptIn, website: handlers.website } : { messages, analyticsOptIn },
+      ),
       signal: handlers.signal,
     });
   } catch (e) {

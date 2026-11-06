@@ -68,6 +68,8 @@ export function mountChat(
   const input = need<HTMLTextAreaElement>(root, '[data-chat-input]');
   const sendBtn = need<HTMLButtonElement>(root, '[data-chat-send]');
   const sharingText = root.querySelector<HTMLElement>('[data-chat-sharing-text]');
+  // The hidden spam trap. People never see it, so only a bot fills it in.
+  const honeypot = root.querySelector<HTMLInputElement>('[data-chat-honeypot]');
   let statusEl = root.querySelector<HTMLElement>('[data-chat-status]');
   if (!statusEl) {
     statusEl = el('p', 'visually-hidden');
@@ -303,6 +305,7 @@ export function mountChat(
       sharedTurn = sharing();
       const reply = await streamChat(endpoint, conversation.slice(), sharedTurn, {
         signal: controller.signal,
+        website: honeypot?.value.trim() || undefined,
         onStream: () => loader?.keep(),
         onStatus: (status) => {
           // A new status means the text so far was not the answer.

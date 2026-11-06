@@ -63,6 +63,10 @@ const uid = `chat-${variant}`;
           </svg>
         </button>
       </div>
+      <div class="chat__honeypot" aria-hidden="true">
+        <label for={`${uid}-website`}>{texts.honeypot_label}</label>
+        <input id={`${uid}-website`} name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" data-chat-honeypot />
+      </div>
     </form>
     <div class="chat__meta">
       <p class="chat__note chat__local">

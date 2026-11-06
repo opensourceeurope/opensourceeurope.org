@@ -1,5 +1,5 @@
 import { createServer } from "node:http";
-import { handleChat, handleChatStream, PROMPT_VERSION, type Env } from "./handler.js";
+import { handleChat, handleChatStream, isHoneypotFilled, PROMPT_VERSION, type Env } from "./handler.js";
 import { wantsEventStream } from "./stream.js";
 import { isOriginAllowed } from "./origin.js";
 import { handleSummary, isSummaryRequest } from "./summary.js";
@@ -61,6 +61,12 @@ const server = createServer((req, res) => {
     try {
       body = JSON.parse(data || "{}");
     } catch {
+      res.writeHead(400, { "content-type": "application/json" });
+      res.end(JSON.stringify({ error: "bad_request" }));
+      return;
+    }
+    // The honeypot is filled: a bot. A plain 400, before the event stream starts.
+    if (isHoneypotFilled(body)) {
       res.writeHead(400, { "content-type": "application/json" });
       res.end(JSON.stringify({ error: "bad_request" }));
       return;

@@ -6,7 +6,7 @@ import type { ChatTexts } from '../../../src/scripts/chat/types';
 import { controlledStream, frame } from './sse-helpers';
 
 const texts: ChatTexts = {
-  title: 't', intro: 'i', placeholder: 'p', input_label: 'il', send_label: 's', suggestions_label: 'sl',
+  title: 't', intro: 'i', placeholder: 'p', input_label: 'il', honeypot_label: 'hl', send_label: 's', suggestions_label: 'sl',
   suggestions: [], sharing_on: 'Shared', sharing_off: 'Not shared', sharing_settings: 'Change', demo_note: 'ns',
   local_note: 'ln', local_link: { label: 'll', href: '/l/' },
   memory_note: 'm', sources_label: 'Sources', you_label: 'You', assistant_label: 'OSE', loading: 'Loading',
