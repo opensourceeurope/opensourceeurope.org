@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.2](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.9.1...v0.9.2) (2026-11-06)
+
+
+### Bug Fixes
+
+* load Manrope as one variable font subset to Latin ([#30](https://github.com/opensourceeurope/opensourceeurope.org/issues/30)) ([dcee4ca](https://github.com/opensourceeurope/opensourceeurope.org/commit/dcee4ca5eadcf607a7c4081a3ba8aa157b2059e6))
+
 ## [0.9.1](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.9.0...v0.9.1) (2026-11-05)
 
 
