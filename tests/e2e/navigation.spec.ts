@@ -5,7 +5,8 @@ import { ROUTES } from './routes';
 
 const settings = parse(readFileSync('src/content/settings/site.yaml', 'utf8'));
 const MOBILE = { width: 390, height: 844 };
-const enabled = ROUTES.filter((r) => r.enabled && r.status === 200);
+// Docs pages have the docs header, without the site navigation.
+const enabled = ROUTES.filter((r) => r.enabled && r.status === 200 && !r.docs);
 
 test('every nav link resolves to a route or the apply URL', () => {
   const paths = new Set(ROUTES.map((r) => r.path));

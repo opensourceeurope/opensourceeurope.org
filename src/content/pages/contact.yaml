@@ -96,7 +96,7 @@ sections:
         show: large
     heading:
       text: Everything you need in one guide
-    body: Access a complete guide on GitBook designed to help you set up, manage, and grow your collective with clarity and ease.
+    body: Access a complete guide designed to help you set up, manage, and grow your collective with clarity and ease.
     ctas:
       - label: read the guide
-        href: https://docs.opencollective.com/oceurope
+        href: /docs/

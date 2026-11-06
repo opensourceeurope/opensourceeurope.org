@@ -2,56 +2,63 @@
 
 ## OC Europe - Internal doc
 
-- [The Foundation](https://docs.opencollective.com/oc-europe-internal-doc/the-foundation.md)
-- [Meet the Open Collective Europe Team](https://docs.opencollective.com/oc-europe-internal-doc/the-foundation/meet-the-open-collective-europe-team.md)
-- [Executive Director (JF)](https://docs.opencollective.com/oc-europe-internal-doc/the-foundation/meet-the-open-collective-europe-team/executive-director-jf.md)
-- [Financial Operations & Platform Specialist (Ivan)](https://docs.opencollective.com/oc-europe-internal-doc/the-foundation/meet-the-open-collective-europe-team/financial-operations-and-platform-specialist-ivan.md)
-- [Strategic Projects & Operations Lead (Laura)](https://docs.opencollective.com/oc-europe-internal-doc/the-foundation/meet-the-open-collective-europe-team/strategic-projects-and-operations-lead-laura.md)
-- [Tools & Platforms Used at OCE](https://docs.opencollective.com/oc-europe-internal-doc/tools-and-platforms-used-at-oce.md): Core tools and platforms used by the Open Collective Europe Foundation
-- [AI Usage Policy](https://docs.opencollective.com/oc-europe-internal-doc/tools-and-platforms-used-at-oce/ai-usage-policy.md)
-- [Key Links & Meeting Rhythms](https://docs.opencollective.com/oc-europe-internal-doc/tools-and-platforms-used-at-oce/key-links-and-meeting-rhythms.md): This page centralizes key links and the recurring internal routines that structure collaboration within Open Collective Europe Foundation.
-- [Email Filters – Suggested Setup](https://docs.opencollective.com/oc-europe-internal-doc/tools-and-platforms-used-at-oce/email-filters-suggested-setup.md)
-- [Due Diligence Procedures](https://docs.opencollective.com/oc-europe-internal-doc/due-diligence-procedures.md)
-- [Due Diligence for Unregistered Groups](https://docs.opencollective.com/oc-europe-internal-doc/due-diligence-procedures/due-diligence-for-unregistered-groups.md)
-- [Risk and Compliance](https://docs.opencollective.com/oc-europe-internal-doc/risk-and-compliance.md)
-- [Financial and Legal Operational Procedures](https://docs.opencollective.com/oc-europe-internal-doc/risk-and-compliance/financial-and-legal-operational-procedures.md)
-- [Handling Non-Registered Organizations](https://docs.opencollective.com/oc-europe-internal-doc/risk-and-compliance/handling-non-registered-organizations.md)
-- [Creation and Sending of Mandate Agreements](https://docs.opencollective.com/oc-europe-internal-doc/risk-and-compliance/handling-non-registered-organizations/creation-and-sending-of-mandate-agreements.md)
-- [Brand](https://docs.opencollective.com/oc-europe-internal-doc/brand.md)
-- [Grantmaking Procedures](https://docs.opencollective.com/oc-europe-internal-doc/grantmaking-procedures.md)
-- [Receiving Funds from the U.S.](https://docs.opencollective.com/oc-europe-internal-doc/grantmaking-procedures/receiving-funds-from-the-u.s..md)
-- [Myriad USA](https://docs.opencollective.com/oc-europe-internal-doc/grantmaking-procedures/receiving-funds-from-the-u.s./myriad-usa.md)
-- [Receiving Funds from Europe](https://docs.opencollective.com/oc-europe-internal-doc/grantmaking-procedures/receiving-funds-from-europe.md)
-- [Support Ops](https://docs.opencollective.com/oc-europe-internal-doc/support-ops.md)
-- [Support Best Practices](https://docs.opencollective.com/oc-europe-internal-doc/support-ops/support-best-practices.md)
-- [Operational Checklist – Mandatory Before Action](https://docs.opencollective.com/oc-europe-internal-doc/support-ops/operational-checklist-mandatory-before-action.md)
-- [Application Review](https://docs.opencollective.com/oc-europe-internal-doc/support-ops/application-review.md)
-- [No Politics on the Platform](https://docs.opencollective.com/oc-europe-internal-doc/support-ops/application-review/no-politics-on-the-platform.md)
-- [The Onboarding Call](https://docs.opencollective.com/oc-europe-internal-doc/support-ops/the-onboarding-call.md)
-- [Freezing Collectives](https://docs.opencollective.com/oc-europe-internal-doc/support-ops/freezing-collectives.md)
-- [Virtual Cards](https://docs.opencollective.com/oc-europe-internal-doc/support-ops/virtual-cards.md): Internal policy for virtual cards used by Open Collective Europe.
-- [Google Workspace & Drive Structure](https://docs.opencollective.com/oc-europe-internal-doc/support-ops/google-workspace-and-drive-structure.md)
-- [OCE – Periodic Cleanup](https://docs.opencollective.com/oc-europe-internal-doc/support-ops/oce-periodic-cleanup.md)
-- [Financial Operations – Introduction](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction.md)
-- [Financial Ops Task Overview](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/financial-ops-task-overview.md)
-- [Bank Transfers for the Collectives](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/bank-transfers-for-the-collectives.md): This page outlines how we manage incoming bank transfers on behalf of collectives hosted by Open Collective Europe. These may include donations, grants, sponsorships, or payments for services.
-- [Payment processing and disbursements](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/payment-processing-and-disbursements.md)
-- [GitHub Sponsors Payments](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/github-sponsors-payments.md)
-- [Payroll Expense Processing](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/payroll-expense-processing.md): This page outlines how payroll-related expenses are handled internally at Open Collective Europe Foundation.
-- [Reconciliation Process](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/reconciliation-process.md)
-- [Unclaimed or Unreconciliable Funds](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/reconciliation-process/unclaimed-or-unreconciliable-funds.md)
-- [Refunds & Disputes](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/refunds-and-disputes.md)
-- [PayPal Disputes](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/refunds-and-disputes/paypal-disputes.md)
-- [Stripe Disputes](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/refunds-and-disputes/stripe-disputes.md)
-- [Stripe Bank Debit in Case of Refunds](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/refunds-and-disputes/stripe-bank-debit-in-case-of-refunds.md)
-- [Bank Accounts Management](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/bank-accounts-management.md)
-- [Quarterly Accounting](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/quarterly-accounting.md)
-- [Human Resources – Introduction](https://docs.opencollective.com/oc-europe-internal-doc/human-resources-introduction.md)
-- [Travel & Reimbursements](https://docs.opencollective.com/oc-europe-internal-doc/human-resources-introduction/travel-and-reimbursements.md)
-- [HR Reports & Resources](https://docs.opencollective.com/oc-europe-internal-doc/human-resources-introduction/hr-reports-and-resources.md)
-- [Code of Conduct](https://docs.opencollective.com/oc-europe-internal-doc/human-resources-introduction/code-of-conduct.md)
-- [Recruitment Procedures for Safeguarding Commitment](https://docs.opencollective.com/oc-europe-internal-doc/human-resources-introduction/recruitment-procedures-for-safeguarding-commitment.md)
-- [Detailed Guidance for Staff on Responding to Safeguarding Issues](https://docs.opencollective.com/oc-europe-internal-doc/human-resources-introduction/detailed-guidance-for-staff-on-responding-to-safeguarding-issues.md)
-- [Project management](https://docs.opencollective.com/oc-europe-internal-doc/project-management.md): This page outlines the core responsibilities and workflows for Project Management within Open Collective Europe.
-- [Project Tier Matrix](https://docs.opencollective.com/oc-europe-internal-doc/project-management/project-tier-matrix.md)
-- [GSF](https://docs.opencollective.com/oc-europe-internal-doc/project-management/gsf.md)
+- [OCE internal handbook](https://docs.opencollective.com/oc-europe-internal-doc/the-foundation.md): Find the right workflow, responsibility and reference.
+- [Forms of support and administrative contributions](https://docs.opencollective.com/oc-europe-internal-doc/the-foundation/forms-of-support-and-administrative-contributions.md): Choose the support arrangement, define its scope and apply the administrative contribution.
+- [Support collectives](https://docs.opencollective.com/oc-europe-internal-doc/support-ops.md): Find the workflow and keep a clear next action for the person asking.
+- [Handle a support request](https://docs.opencollective.com/oc-europe-internal-doc/support-ops/support-best-practices.md): Take ownership of a request, find the right answer and follow it through in Freshdesk.
+- [Check before an operational action](https://docs.opencollective.com/oc-europe-internal-doc/support-ops/operational-checklist-mandatory-before-action.md): A short control point before a payment, agreement or consequential instruction.
+- [Review an application](https://docs.opencollective.com/oc-europe-internal-doc/support-ops/application-review.md): Track the application from first information to a recorded decision.
+- [Run an onboarding conversation](https://docs.opencollective.com/oc-europe-internal-doc/support-ops/the-onboarding-call.md): Help the collective understand its next steps and confirm the practical arrangement.
+- [Review freezing and closure](https://docs.opencollective.com/oc-europe-internal-doc/support-ops/freezing-collectives.md): Separate a temporary protective action from final treatment of funds.
+- [Review an initiative](https://docs.opencollective.com/oc-europe-internal-doc/support-ops/due-diligence-procedures.md): Document mission, structure, people and funding before a decision.
+- [Review an informal or unregistered group](https://docs.opencollective.com/oc-europe-internal-doc/support-ops/due-diligence-for-unregistered-groups.md): Adapt the evidence to the group while keeping its people and funds accountable.
+- [Manage the grant lifecycle](https://docs.opencollective.com/oc-europe-internal-doc/grantmaking-procedures.md): Take a grant from announcement to evidenced receipt, delivery and closure.
+- [Choose a U.S. funding route](https://docs.opencollective.com/oc-europe-internal-doc/grantmaking-procedures/receiving-funds-from-the-u.s..md): Distinguish direct foundation grants from the Myriad donation route.
+- [Receive European funding](https://docs.opencollective.com/oc-europe-internal-doc/grantmaking-procedures/receiving-funds-from-europe.md): Check the funder’s conditions and the applicable legal arrangement.
+- [Prepare a mandate agreement](https://docs.opencollective.com/oc-europe-internal-doc/grantmaking-procedures/creation-and-sending-of-mandate-agreements.md): Use the correct approved template, verify authority and retain the signed record.
+- [Coordinate Myriad USA](https://docs.opencollective.com/oc-europe-internal-doc/grantmaking-procedures/myriad-usa.md): Track the grant request, allocation and reporting as one cycle.
+- [Coordinate projects and funds](https://docs.opencollective.com/oc-europe-internal-doc/grantmaking-procedures/project-management.md): Maintain a clear route from the agreed purpose to delivery and reporting.
+- [Route projects by complexity](https://docs.opencollective.com/oc-europe-internal-doc/grantmaking-procedures/project-tier-matrix.md): Separate routine execution, complex coordination and material decisions.
+- [Administer the Global Statelessness Fund](https://docs.opencollective.com/oc-europe-internal-doc/grantmaking-procedures/gsf.md): Coordinate programme delivery while retaining a defensible payment and reporting trail.
+- [Finance workflows](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction.md): Connect execution, evidence and financial control.
+- [Accounting tools and working arrangements](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/accounting-tools-and-working-arrangements.md)
+- [Plan the finance cycle](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/financial-ops-task-overview.md): Keep recurring work visible without maintaining conflicting calendars.
+- [Match incoming bank transfers](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/bank-transfers-for-the-collectives.md): Record the actual receipt against the correct entity, currency and collective.
+- [Process outgoing payments](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/payment-processing-and-disbursements.md): Review the request, execute once and verify the final record.
+- [Allocate GitHub Sponsors receipts](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/github-sponsors-payments.md): Use the payout report and distinguish the OSE route from OCEF.
+- [Process payroll and meal vouchers](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/payroll-expense-processing.md): Process monthly salaries and meal vouchers by the 25th and retain the supporting records.
+- [Reconcile bank, platform and accounting records](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/reconciliation-process.md): Explain every difference and retain evidence of the review.
+- [Handle refunds and disputes](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/refunds-and-disputes.md): Verify the original transaction, authority and provider status before acting.
+- [Banking, access and continuity](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/bank-accounts-management.md): Verify accounts and authority in the restricted inventory before acting.
+- [Prepare quarterly accounting records](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/quarterly-accounting.md): Assemble period evidence and obtain the financial review before closure.
+- [Respond to a PayPal dispute](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/paypal-disputes.md): Work from the live provider case and retain the evidence submitted.
+- [Respond to a Stripe dispute](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/stripe-disputes.md): Coordinate the platform case and track the financial outcome.
+- [Investigate a Stripe bank debit](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/stripe-bank-debit-in-case-of-refunds.md): Match a debit to its provider event before classifying it.
+- [Hold and investigate unidentified funds](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/unclaimed-or-unreconciliable-funds.md): Keep received money traceable while its destination remains unresolved.
+- [Use internal virtual cards](https://docs.opencollective.com/oc-europe-internal-doc/financial-operations-introduction/virtual-cards.md): Authorisation, use, evidence and follow-up for OCE payment cards.
+- [Risk and escalation](https://docs.opencollective.com/oc-europe-internal-doc/risk-and-compliance.md): Describe the actual concern, protect the evidence and obtain the right decision.
+- [Legal and financial process map](https://docs.opencollective.com/oc-europe-internal-doc/risk-and-compliance/financial-and-legal-operational-procedures.md): Use one detailed procedure for each workflow.
+- [Informal groups: process reference](https://docs.opencollective.com/oc-europe-internal-doc/risk-and-compliance/handling-non-registered-organizations.md): The review and agreement routes are maintained in one place.
+- [Environmental commitments](https://docs.opencollective.com/oc-europe-internal-doc/risk-and-compliance/environmental-policy.md): Practical measures for OCE operations and relevant grant activities.
+- [Review advocacy and political activity](https://docs.opencollective.com/oc-europe-internal-doc/risk-and-compliance/no-politics-on-the-platform.md): Use a case-specific legal review where the boundary is unclear.
+- [Team and responsibilities](https://docs.opencollective.com/oc-europe-internal-doc/meet-the-open-collective-europe-team.md): Reference for team roles, decisions and day-to-day guidance.
+- [JF — executive direction](https://docs.opencollective.com/oc-europe-internal-doc/meet-the-open-collective-europe-team/executive-director-jf.md): Strategy, governance and decisions on material commitments.
+- [Ivan — financial and platform operations](https://docs.opencollective.com/oc-europe-internal-doc/meet-the-open-collective-europe-team/financial-operations-and-platform-specialist-ivan.md): Execute routine work with complete evidence and clear escalation.
+- [Laura — projects and operational coordination](https://docs.opencollective.com/oc-europe-internal-doc/meet-the-open-collective-europe-team/strategic-projects-and-operations-lead-laura.md): Turn fund and partnership commitments into workable processes.
+- [OCE operational RACI](https://docs.opencollective.com/oc-europe-internal-doc/meet-the-open-collective-europe-team/raci-operationnelle.md)
+- [Ask ChatGPT an operational question](https://docs.opencollective.com/oc-europe-internal-doc/meet-the-open-collective-europe-team/question-chatgpt.md)
+- [CFO — budget and internal financial control](https://docs.opencollective.com/oc-europe-internal-doc/meet-the-open-collective-europe-team/cfo-budget-and-financial-control.md)
+- [Saïd — accounting work](https://docs.opencollective.com/oc-europe-internal-doc/meet-the-open-collective-europe-team/accountant-said.md)
+- [Tools and records](https://docs.opencollective.com/oc-europe-internal-doc/tools-and-platforms-used-at-oce.md): Find the working system without confusing a conversation with an approved rule.
+- [Documentation and pending decisions](https://docs.opencollective.com/oc-europe-internal-doc/tools-and-platforms-used-at-oce/brand.md): Maintain clear guidance without turning draft policies into adopted rules.
+- [Use AI responsibly](https://docs.opencollective.com/oc-europe-internal-doc/tools-and-platforms-used-at-oce/ai-usage-policy.md): Challenge reasoning, minimise data and verify outputs before relying on them.
+- [Key references and working rhythm](https://docs.opencollective.com/oc-europe-internal-doc/tools-and-platforms-used-at-oce/key-links-and-meeting-rhythms.md): Use current invitations and live records, not an invented weekly timetable.
+- [Organise your email](https://docs.opencollective.com/oc-europe-internal-doc/tools-and-platforms-used-at-oce/email-filters-suggested-setup.md): Optional filters that preserve visibility of work needing action.
+- [Organise Drive records](https://docs.opencollective.com/oc-europe-internal-doc/tools-and-platforms-used-at-oce/google-workspace-and-drive-structure.md): Keep one reliable evidence trail with appropriate access.
+- [Review operational records](https://docs.opencollective.com/oc-europe-internal-doc/tools-and-platforms-used-at-oce/oce-periodic-cleanup.md): A recurring check for open work, outdated guidance and access gaps.
+- [People and safeguarding](https://docs.opencollective.com/oc-europe-internal-doc/human-resources-introduction.md): Working arrangements, respectful collaboration and the response to concerns.
+- [Travel and reimbursement records](https://docs.opencollective.com/oc-europe-internal-doc/human-resources-introduction/travel-and-reimbursements.md): Document approved travel and work-related expenses.
+- [Maintain HR records](https://docs.opencollective.com/oc-europe-internal-doc/human-resources-introduction/hr-reports-and-resources.md): Keep employment evidence restricted, current and separate from general guidance.
+- [Team code of conduct](https://docs.opencollective.com/oc-europe-internal-doc/human-resources-introduction/code-of-conduct.md): Respect, accountability, consent and care in working relationships.
+- [Safeguarding in recruitment](https://docs.opencollective.com/oc-europe-internal-doc/human-resources-introduction/recruitment-procedures-for-safeguarding-commitment.md): Include conduct and safeguarding checks in recruitment and onboarding.
+- [Respond to a safeguarding concern](https://docs.opencollective.com/oc-europe-internal-doc/human-resources-introduction/detailed-guidance-for-staff-on-responding-to-safeguarding-issues.md): Listen, assess immediate safety, record facts and escalate privately.

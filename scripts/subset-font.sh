@@ -2,7 +2,7 @@
 # Rebuilds the Manrope files in public/fonts/manrope/ from the Manrope variable font in
 # google/fonts. Each file holds every weight. The browser downloads latin-ext only for a
 # page that uses one of its characters. Keep the ranges in step with unicode-range in
-# src/styles/base.css. Needs uv.
+# src/styles/fonts.css. Needs uv.
 set -euo pipefail
 
 COMMIT=b31870aff700ab7a1d74fa0c6887d95beb9e0037

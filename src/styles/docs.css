@@ -1,0 +1,125 @@
+/*
+ * OSE theme for the Starlight docs at /docs/. Maps Starlight's variables to the
+ * site's tokens (src/styles/tokens.css). The docs have one dark theme, like the
+ * site. Unlayered rules here win over Starlight's layered styles.
+ */
+@import './fonts.css';
+/* The site's tokens, for the consent banner, which the docs share with the site. */
+@import './tokens.css';
+
+:root,
+::backdrop {
+  --sl-font: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Surfaces: --color-bg #0a242b and --color-surface #0e282f from the site. */
+  --sl-color-black: #0a242b;
+  --sl-color-gray-6: #0e282f;
+  --sl-color-gray-5: #1d3940;
+  --sl-color-gray-4: #4c6469;
+  --sl-color-gray-3: #8fa3a7;
+  --sl-color-gray-2: #c9d6d8;
+  --sl-color-gray-1: #eaf1f2;
+  --sl-color-white: #ffffff;
+
+  /* Accent: the brand cyan --color-accent #9fe7f5. */
+  --sl-color-accent-low: #123a44;
+  --sl-color-accent: #419ebd;
+  --sl-color-accent-high: #9fe7f5;
+  --sl-color-text-accent: var(--sl-color-accent-high);
+  --sl-color-text-invert: #0a242b;
+  --sl-color-bg-accent: var(--sl-color-accent-high);
+
+  /* Callouts use the brand yellow and orange instead of Starlight's defaults. */
+  --sl-hue-orange: 40;
+  --sl-color-orange: #f7ad1a;
+  --sl-color-orange-high: #fde3ad;
+  --sl-color-red-high: #ffc2cf;
+  /* Note callouts in the brand blue. */
+  --sl-color-blue-low: #123a44;
+  --sl-color-blue: #419ebd;
+  --sl-color-blue-high: #9fe7f5;
+
+  --sl-color-bg-nav: var(--sl-color-black);
+  --sl-color-bg-sidebar: var(--sl-color-black);
+  --sl-color-hairline-light: rgb(255 255 255 / 16%);
+  --sl-color-hairline: rgb(255 255 255 / 8%);
+  --sl-color-backdrop-overlay: rgb(10 36 43 / 80%);
+
+  --sl-nav-height: 4.5rem;
+}
+
+/* Brand gradient line under the header, as on the main site's buttons. */
+header.header {
+  border-bottom: 0;
+  box-shadow: inset 0 -2px 0 0 transparent;
+  background:
+    linear-gradient(135deg, #419ebd 10%, #9fe7f5 25%, #f7ad1a 75%, #f27f0c 100%) bottom / 100% 2px no-repeat,
+    var(--sl-color-bg-nav);
+}
+
+.sl-markdown-content h1,
+.sl-markdown-content h2,
+.sl-markdown-content h3,
+h1#_top {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Links in the text: cyan and underlined, so they stand apart from the text. */
+.sl-markdown-content a:not(:where(.not-content *)) {
+  color: var(--sl-color-text-accent);
+  text-underline-offset: 0.2em;
+}
+
+/* Current page in the sidebar: dark text on the brand cyan. */
+.sidebar-content a[aria-current='page'],
+.sidebar-content a[aria-current='page']:hover,
+.sidebar-content a[aria-current='page']:focus {
+  background-color: var(--sl-color-accent-high);
+  color: var(--sl-color-text-invert);
+}
+
+/* Sidebar group labels: the site's uppercase label style. */
+.sidebar-content .group-label .large {
+  font-size: var(--sl-text-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sl-color-white);
+}
+
+/* Cards: the site's surface and border. */
+.sl-link-card,
+.card {
+  background-color: var(--sl-color-gray-6);
+  border-color: var(--sl-color-hairline-light);
+  border-radius: 1rem;
+}
+.sl-link-card:hover {
+  border-color: var(--sl-color-accent-high);
+}
+
+:focus-visible {
+  outline: 2px solid #9fe7f5;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/*
+ * The search button's accessible name is "Search". The ⌘K hint beside it is
+ * visible text that is not part of that name (axe label-content-name-mismatch,
+ * WCAG 2.5.3), so it is hidden. The shortcut still works.
+ */
+site-search button[data-open-modal] kbd {
+  /* Starlight shows the hint with an inline style once its script runs. */
+  display: none !important;
+}

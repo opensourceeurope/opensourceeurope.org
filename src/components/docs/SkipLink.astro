@@ -1,0 +1,13 @@
+---
+// The site's consent banner first in the body, as on the rest of the site, so
+// the "Privacy settings" button in the docs footer can open it. Then Starlight's
+// skip link.
+import Default from '@astrojs/starlight/components/SkipLink.astro';
+import ConsentBanner from '../ConsentBanner.astro';
+import { loadSettings } from '../../lib/site';
+
+const { consent } = await loadSettings();
+---
+
+<ConsentBanner consent={consent} />
+<Default />
