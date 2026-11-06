@@ -121,7 +121,7 @@ Add branch protection on `main` after the first push. It requires these checks:
 - `e2e` (Playwright and the accessibility scan, the second job of `ci.yml`)
 - `validate` (the job of `knowledge-ci.yml`)
 - `commitlint`
-- `lighthouse`
+- `lighthouse` (the gate job of `lighthouse.yml`; it passes without auditing when a pull request changes no file the pages depend on)
 - `links`
 - the pull request body check (`check`, from `check-pr-body.yml`)
 
