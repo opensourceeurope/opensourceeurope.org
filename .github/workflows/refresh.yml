@@ -3,6 +3,15 @@ name: Weekly knowledge refresh
 on:
   schedule:
     - cron: "0 3 * * 6"   # Saturdays 03:00 UTC
+  # A merged docs change rebuilds the index straight away, so the Ask chat
+  # answers from it with the next release instead of after Saturday's run.
+  # The refresh PR only touches .opencrane/, so it does not trigger this again.
+  push:
+    branches: [main]
+    paths:
+      - src/content/docs/**
+      - src/content/settings/docs.yaml
+      - scripts/knowledge/docs-to-llms.py
   workflow_dispatch:
     inputs:
       force_reindex:

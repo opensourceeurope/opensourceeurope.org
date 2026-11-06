@@ -126,4 +126,4 @@ Add the `Generated-by:` line to the pull request if an agent helped, and never a
 
 ## The Ask chat
 
-The Ask chat answers from a knowledge index in `.opencrane/`, built from these Markdown files. The weekly refresh exports the docs again and rebuilds the index, so a docs change reaches the chat with the first release after the next refresh. To ship it with the change, follow `docs/knowledge/knowledge-pipeline.md` in the pull request and commit the results.
+The Ask chat answers from a knowledge index in `.opencrane/`, built from these Markdown files. When a docs change merges to `main`, the refresh workflow (`refresh.yml`) exports the docs, rebuilds the index and opens a pull request that merges itself. The chat answers from the change with the release that includes that pull request. You do not need to rebuild the index in your own pull request.

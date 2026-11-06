@@ -11,7 +11,7 @@ The index has two `llmstxt` sources:
 - `open-source-europe`: the docs at `/docs/`, read from the Markdown in `src/content/docs/docs/`. `scripts/knowledge/docs-to-llms.py` exports the pages, in sidebar order, to `.opencrane/docs-export/open-source-europe/llms-full.txt` and a companion `llms.txt`, and `fetch` copies both into `.opencrane/llmstxt/open-source-europe/`. Answers cite `https://opensourceeurope.org/docs/...`. The export folder is not committed, so run the script before every `fetch`.
 - `oc-europe-internal-doc`: the internal Open Collective Europe space, downloaded from https://docs.opencollective.com/oc-europe-internal-doc/llms-full.txt.
 
-A change to a docs page reaches the chat with the next weekly refresh, which exports the docs again. To ship it sooner, run the pipeline below in the pull request and commit the results.
+A docs change that merges to `main` starts the refresh workflow, which exports the docs again, rebuilds the index and opens a pull request that merges itself. The chat answers from the change with the release that includes that pull request.
 
 ## Rebuild the index locally
 
