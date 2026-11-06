@@ -28,7 +28,7 @@ Open Source Europe (OSE) enables hosted Collectives to receive grants from insti
 
 1. **Contact OSE early**
 
-   Email <oce@opencollective.com> to let us know about the grant opportunity. We'll help assess whether it's compatible with fiscal hosting through OSE.
+   Email <home@opensourceeurope.org> to let us know about the grant opportunity. We'll help assess whether it's compatible with fiscal hosting through OSE.
 2. **Check funder requirements**
 
    Not all funders allow grants to be awarded to fiscally sponsored initiatives. Be sure to confirm with them whether a hosted structure is accepted.
@@ -43,7 +43,7 @@ Open Source Europe (OSE) enables hosted Collectives to receive grants from insti
 1. **Grant Agreement**
 
    The funder will provide a grant agreement. This must be signed by the confirmed recipient entity.\
-   Please share the agreement with us via <oce@opencollective.com>, or have the funder reach out to us directly.
+   Please share the agreement with us via <home@opensourceeurope.org>, or have the funder reach out to us directly.
 2. **Mandate Agreement**
 
    Your initiative will also need to sign a Mandate Agreement with OSE.\
@@ -79,7 +79,7 @@ The Collective prepares activity reports and project monitoring. OSE provides th
 
 ## Need Help?
 
-The Collective leads its own fundraising. OSE may occasionally share opportunities or make introductions, according to its capacity; it does not promise a structured fundraising service or funding success. For questions about receiving and administering a grant, contact <oce@opencollective.com>.
+The Collective leads its own fundraising. OSE may occasionally share opportunities or make introductions, according to its capacity; it does not promise a structured fundraising service or funding success. For questions about receiving and administering a grant, contact <home@opensourceeurope.org>.
 
 ## Hosting fees
 

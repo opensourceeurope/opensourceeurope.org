@@ -31,7 +31,7 @@ At the end of the month, we move the unidentified funds to a [holding fund](http
 
 We keep the money there until we can identify who it is intended for and then we transfer it.
 
-Write to us on <oce@opencollective.com> or send us a message via[ Slack](http://slack.opencollective.com/) or [Discord](https://discord.gg/uCnzytpNr6). We will ask you to send us screenshots/receipts that include the expected amount, the collective name, and the sender/any info about the bank transfer, so that we can send the funds to their happy home.
+Write to us on <home@opensourceeurope.org> or send us a message via[ Slack](http://slack.opencollective.com/) or [Discord](https://discord.gg/uCnzytpNr6). We will ask you to send us screenshots/receipts that include the expected amount, the collective name, and the sender/any info about the bank transfer, so that we can send the funds to their happy home.
 
 ## **What if a financial contributor requests an invoice before making the donation?**
 

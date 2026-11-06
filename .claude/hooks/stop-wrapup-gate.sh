@@ -71,7 +71,7 @@ reason="WRAP-UP GATE (fires once, then lets you finish). You changed files this 
 Changed since the last check:
 $(printf '%s\n' "$changed" | head -20)
 
-Read the docs against the real diff, not from memory. Where drift is likely here: the \"Editing content\" section of AGENTS.md (where each page's content lives, the preview and PR steps); docs/deployment.md (environment variables, repository variables, the deploy flow); docs/migration-notes.md (a row for every deliberate difference from the live site); and the AI policy (no agent Co-authored-by trailer, Generated-by: in the PR).
+Read the docs against the real diff, not from memory. Where drift is likely here: the \"Editing content\" section of AGENTS.md (where each page's content lives, the preview and PR steps); docs/deployment.md (environment variables, repository variables, the deploy flow); and the AI policy (no agent Co-authored-by trailer, Generated-by: in the PR).
 
 Also ask once: did anything this session make a hook, a skill, a CI workflow or an AGENTS.md rule wrong, incomplete or missing? Fix it now if so.
 

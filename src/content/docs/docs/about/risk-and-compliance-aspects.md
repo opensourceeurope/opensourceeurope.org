@@ -1,13 +1,13 @@
 ---
 title: "Risk and Compliance aspects"
-description: "Open Collective Europe: Grant Eligibility and Risk Assessment Policy"
+description: "Open Source Europe: Grant Eligibility and Risk Assessment Policy"
 ---
 
-Open Collective Europe: Grant Eligibility and Risk Assessment Policy
+Open Source Europe: Grant Eligibility and Risk Assessment Policy
 
 ## Introduction
 
-Open Collective Europe (OCE) is committed to supporting initiatives that promote positive social change and a more just world. This policy outlines the criteria used to assess the eligibility of grant proposals and identify potential compliance risks associated with terrorism/extremism financing.
+Open Source Europe (OSE) is committed to supporting initiatives that promote positive social change and a more just world. This policy outlines the criteria used to assess the eligibility of grant proposals and identify potential compliance risks associated with terrorism/extremism financing.
 
 ***
 
@@ -75,4 +75,4 @@ OCE is committed to balancing the prevention of terrorism financing with the sup
 
 ## Need Assistance?
 
-For questions or further information regarding risk and compliance aspects, please contact us at <oce@opencollective.com>.
+For questions or further information regarding risk and compliance aspects, please contact us at <home@opensourceeurope.org>.

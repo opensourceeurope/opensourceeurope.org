@@ -22,7 +22,7 @@ Yes, under certain conditions. Open Source Europe (OSE) can process refunds for 
 
 ## How to Request a Refund
 
-Contact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <oce@opencollective.com>. A request does not guarantee a refund. Include the following details:
+Contact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <home@opensourceeurope.org>. A request does not guarantee a refund. Include the following details:
 
 * **URL of the donation** (e.g., `https://opencollective.com/europe/contributions/528520`)
 * **Date and amount** of the transaction
@@ -52,4 +52,4 @@ These processing steps are separate from the request deadlines above: 90 days fo
 
 ## Need Assistance?
 
-For any questions or further assistance regarding refunds, please contact us at <oce@opencollective.com>.
+For any questions or further assistance regarding refunds, please contact us at <home@opensourceeurope.org>.

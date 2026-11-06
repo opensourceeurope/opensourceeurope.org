@@ -50,7 +50,7 @@ If you prefer to contribute to a Collective via bank transfer, Open Source Europ
 
 * **Didn't Receive the Instruction Email?**
   * Check your spam or junk folder.
-  * If not found, contact us at <oce@opencollective.com>
+  * If not found, contact us at <home@opensourceeurope.org>
 * **Funds Not Reflected After Seven Business Days from Sending?**
 
   * Ensure the payment reference included the correct Order Number and Collective's name.
@@ -60,7 +60,7 @@ If you prefer to contribute to a Collective via bank transfer, Open Source Europ
     * The **date of transfer**.
     * The **sender's name**.
 
-  Send this information to <oce@opencollective.com> for assistance.
+  Send this information to <home@opensourceeurope.org> for assistance.
 
 ## Hosting fees
 

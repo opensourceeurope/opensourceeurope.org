@@ -42,7 +42,7 @@ sidebar:
           - label: The Partnership
             items:
               - page: docs/how-it-works/expenses/the-partnership
-              - page: docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-oce
+              - page: docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-ose
   - label: Guides
     items:
       - page: docs/guides/deciding-on-how-to-use-your-money

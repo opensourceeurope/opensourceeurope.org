@@ -68,4 +68,4 @@ Only general information (amount, description, purpose) is public. Uploaded docu
 
 ## Need help?
 
-Use the comments on the expense for routine questions and follow-up. For sensitive information, contact OSE privately at <oce@opencollective.com>.
+Use the comments on the expense for routine questions and follow-up. For sensitive information, contact OSE privately at <home@opensourceeurope.org>.

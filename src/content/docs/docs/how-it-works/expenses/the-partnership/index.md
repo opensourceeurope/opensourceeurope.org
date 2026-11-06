@@ -60,11 +60,11 @@ Collectives hosted by OSE are not legal entities and **must pay VAT** on purchas
 * The **reverse charge mechanism does not apply** to Collectives — only registered businesses can use it.
 
 :::note
-[Read more: VAT in Europe and how it works in OSE](/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-oce/)
+[Read more: VAT in Europe and how it works in OSE](/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-ose/)
 :::
 
 ***
 
 ## Questions?
 
-Email us any time at <oce@opencollective.com>. We're happy to help!
+Email us any time at <home@opensourceeurope.org>. We're happy to help!

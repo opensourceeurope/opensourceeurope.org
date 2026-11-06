@@ -9,7 +9,7 @@ OSE Collectives can receive cryptocurrency donations through the established rou
 
 ## Set up the donation page
 
-Contact OSE first at <oce@opencollective.com>. The team creates and hosts an Every.org page for your Collective and provides the applicable instructions, documents, fees and transfer information. Every.org is the required starting point for this cryptocurrency route.
+Contact OSE first at <home@opensourceeurope.org>. The team creates and hosts an Every.org page for your Collective and provides the applicable instructions, documents, fees and transfer information. Every.org is the required starting point for this cryptocurrency route.
 
 ## Receive and transfer funds
 
