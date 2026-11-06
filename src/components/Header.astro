@@ -6,9 +6,12 @@ import type { loadSettings } from '../lib/site';
 interface Props {
   settings: Awaited<ReturnType<typeof loadSettings>>;
   currentPath: string;
+  // Stays in place while the page scrolls, instead of hiding on the way down.
+  // The docs use it, because their sidebars are fixed below the header.
+  pinned?: boolean;
 }
 
-const { settings, currentPath } = Astro.props;
+const { settings, currentPath, pinned = false } = Astro.props;
 const { ui, nav, apply_url } = settings;
 // The exact page is "page". A section page, such as a single service under
 // /services/, marks its section link "true".
@@ -16,7 +19,7 @@ const ariaCurrent = (href: string) =>
   href === currentPath ? 'page' : href !== '/' && currentPath.startsWith(href) ? 'true' : undefined;
 ---
 
-<header class="site-header" data-site-header>
+<header class="site-header" data-site-header data-pinned={pinned ? '' : undefined}>
   <div class="site-header__bar">
     <a class="site-header__logo" href="/">
       <img src={ui.logo.src} alt={ui.logo.alt} width={ui.logo.width} height={ui.logo.height} />

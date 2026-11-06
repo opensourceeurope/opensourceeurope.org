@@ -45,16 +45,118 @@
   --sl-color-hairline: rgb(255 255 255 / 8%);
   --sl-color-backdrop-overlay: rgb(10 36 43 / 80%);
 
-  --sl-nav-height: 4.5rem;
+  /* The site header's height, 64 px and 78 px from 768 px up. */
+  --sl-nav-height: var(--header-height);
+
+  /*
+   * Three columns inside the site's grid: the sidebar starts where the header
+   * logo starts and the table of contents ends where the apply button ends.
+   * The text column takes the space between them, up to a readable width.
+   */
+  --sl-content-width: 46rem;
+  --ose-docs-nav: 16rem;
+  --ose-docs-toc: 13rem;
 }
 
-/* Brand gradient line under the header, as on the main site's buttons. */
+/* Starlight's header frame holds the site header (Header.astro), which sets its own look. */
 header.header {
-  border-bottom: 0;
-  box-shadow: inset 0 -2px 0 0 transparent;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+/*
+ * The glow at the top of the page, from the hero background of the other pages
+ * (SkipLink.astro sets --docs-glow). The header is transparent over it until the
+ * page scrolls, and it fades into the page colour below the title.
+ */
+.docs-glow {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: -1;
+  height: 26rem;
   background:
-    linear-gradient(135deg, #419ebd 10%, #9fe7f5 25%, #f7ad1a 75%, #f27f0c 100%) bottom / 100% 2px no-repeat,
-    var(--sl-color-bg-nav);
+    linear-gradient(to bottom, rgb(10 36 43 / 25%), var(--sl-color-black)),
+    var(--docs-glow) center top / cover no-repeat;
+  pointer-events: none;
+}
+body {
+  position: relative;
+  isolation: isolate;
+}
+
+@media (min-width: 50rem) {
+  /* Transparent, so the glow shows behind the top of the sidebar. */
+  :root {
+    --sl-color-bg-sidebar: transparent;
+  }
+  .docs-search {
+    background: none;
+  }
+  :root {
+    --sl-sidebar-width: calc(var(--grid-gutter) + var(--ose-docs-nav));
+  }
+  .sidebar-pane {
+    border-inline-end: 1px solid var(--sl-color-hairline);
+  }
+  .sidebar-content {
+    padding-inline: var(--grid-gutter) 1.25rem;
+  }
+}
+
+@media (min-width: 72rem) {
+  .right-sidebar-container,
+  .right-sidebar {
+    width: calc(var(--ose-docs-toc) + var(--grid-gutter));
+  }
+  .right-sidebar-container {
+    margin-inline-start: 0;
+  }
+  .right-sidebar {
+    border-inline-start: 0;
+  }
+  .right-sidebar-panel {
+    padding-inline: 1.5rem var(--grid-gutter);
+  }
+  .right-sidebar-panel .sl-container {
+    width: auto;
+    max-width: none;
+  }
+  [data-has-sidebar][data-has-toc] .main-pane {
+    width: calc(100% - var(--ose-docs-toc) - var(--grid-gutter));
+  }
+  .content-panel .sl-container {
+    margin-inline: auto;
+  }
+}
+
+/* Search at the top of the sidebar, as a full-width field at every size. It stays in view while the sidebar scrolls. */
+.docs-search {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin-top: -1rem;
+  padding-block: 1rem 0.25rem;
+  background: var(--sl-color-bg-sidebar);
+}
+.docs-search button[data-open-modal] {
+  display: flex;
+  width: 100%;
+  max-width: none;
+  height: 2.75rem;
+  padding-inline: 1rem;
+  border: 1px solid var(--sl-color-hairline-light);
+  border-radius: 999px;
+  background: var(--sl-color-gray-6);
+  color: var(--sl-color-gray-2);
+  font-size: var(--sl-text-sm);
+}
+.docs-search button[data-open-modal]:hover {
+  border-color: var(--sl-color-accent-high);
+  color: var(--sl-color-white);
+}
+.docs-search button[data-open-modal] > span {
+  display: block;
 }
 
 .sl-markdown-content h1,
@@ -117,7 +219,8 @@ h1#_top {
 /*
  * The search button's accessible name is "Search". The ⌘K hint beside it is
  * visible text that is not part of that name (axe label-content-name-mismatch,
- * WCAG 2.5.3), so it is hidden. The shortcut still works.
+ * WCAG 2.5.3), so it is hidden. On the docs ⌘K opens the Ask panel, as on the
+ * rest of the site (SkipLink.astro).
  */
 site-search button[data-open-modal] kbd {
   /* Starlight shows the hint with an inline style once its script runs. */

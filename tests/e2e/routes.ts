@@ -4,7 +4,7 @@ import { parseDocsSettings, sidebarPages } from '../../src/lib/docs-settings.mjs
 export type Route = { path: string; enabled: boolean; status: 200 | 404;
   // false: the live site has no such page, so the parity and drift checks skip it.
   live?: boolean;
-  // true: a Starlight docs page, with the docs header instead of the site header.
+  // true: a Starlight docs page, built by Starlight around the site header.
   docs?: boolean;
 };
 

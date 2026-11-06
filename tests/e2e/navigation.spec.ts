@@ -5,8 +5,7 @@ import { ROUTES } from './routes';
 
 const settings = parse(readFileSync('src/content/settings/site.yaml', 'utf8'));
 const MOBILE = { width: 390, height: 844 };
-// Docs pages have the docs header, without the site navigation.
-const enabled = ROUTES.filter((r) => r.enabled && r.status === 200 && !r.docs);
+const enabled = ROUTES.filter((r) => r.enabled && r.status === 200);
 
 test('every nav link resolves to a route or the apply URL', () => {
   const paths = new Set(ROUTES.map((r) => r.path));
@@ -131,4 +130,12 @@ test('reduced motion removes the header and panel transitions', async ({ page },
     .first()
     .evaluate((el) => getComputedStyle(el, '::after').transitionDuration);
   expect(after.split(',').every((d) => parseFloat(d) === 0)).toBe(true);
+});
+
+test('docs pages use the site header, with search in the sidebar', async ({ page }) => {
+  await page.goto('/docs/how-it-works/basics/');
+  await expect(page.locator('[data-site-header]')).toHaveCount(1);
+  await expect(page.locator('.site-nav a[href="/docs/"]')).toHaveAttribute('aria-current', 'true');
+  await expect(page.locator('#starlight__sidebar .docs-search site-search')).toHaveCount(1);
+  await expect(page.locator('header.header site-search')).toHaveCount(0);
 });
