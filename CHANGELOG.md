@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.9.2...v0.10.0) (2026-11-06)
+
+
+### Features
+
+* add the OSE documentation at /docs/, moved from GitBook ([#32](https://github.com/opensourceeurope/opensourceeurope.org/issues/32)) ([6a18d8f](https://github.com/opensourceeurope/opensourceeurope.org/commit/6a18d8f2d6d52f49685a14e86936d77f6a8af507))
+
 ## [0.9.2](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.9.1...v0.9.2) (2026-11-06)
 
 
