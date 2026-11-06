@@ -76,6 +76,12 @@ function lastQuestion(messages: ChatMessage[]): string {
   return (last?.content ?? "").slice(0, 300);
 }
 
+function withNote(messages: ChatMessage[], note: string | undefined): ChatMessage[] {
+  const last = messages[messages.length - 1];
+  if (!note || last?.role !== "user") return messages;
+  return [...messages.slice(0, -1), { ...last, content: `${last.content}\n\n${note}` }];
+}
+
 function dedupeByUrl(citations: Citation[]): Citation[] {
   const seen = new Set<string>();
   return citations.filter((c) => (c.url && !seen.has(c.url) ? (seen.add(c.url), true) : false));
@@ -123,6 +129,8 @@ export async function runAgent(opts: {
   stream?: boolean;
   /** Aborts the loop between steps, for example when the client disconnects. */
   signal?: AbortSignal;
+  /** Added to the last user message the model sees. The automatic search uses the question without it. */
+  questionNote?: string;
 }): Promise<AgentResult> {
   const { persona, userMessages, mistralChat, search } = opts;
   const maxRounds = opts.maxRounds ?? 4;
@@ -130,7 +138,7 @@ export async function runAgent(opts: {
   const reserve = opts.searchReserveMs ?? DEFAULT_SEARCH_RESERVE_MS;
   const emit = opts.onEvent ?? (() => {});
   const searchFirst = opts.searchFirst ?? true;
-  const messages: any[] = [{ role: "system", content: persona }, ...userMessages];
+  const messages: any[] = [{ role: "system", content: persona }, ...withNote(userMessages, opts.questionNote)];
   const citations: Citation[] = [];
   let autoSearches = 0;
   let modelSearches = 0;

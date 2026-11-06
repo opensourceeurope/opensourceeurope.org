@@ -55,10 +55,8 @@ export default defineConfig({
       head: [
         { tag: 'link', attrs: { rel: 'icon', href: '/app/uploads/2026/01/cropped-ose-192x192.png', sizes: '192x192' } },
         { tag: 'link', attrs: { rel: 'apple-touch-icon', href: '/app/uploads/2026/01/cropped-ose-180x180.png' } },
-        ...['Regular', 'SemiBold'].map((weight) => ({
-          tag: 'link',
-          attrs: { rel: 'preload', href: `/fonts/manrope/Manrope-${weight}.woff2`, as: 'font', type: 'font/woff2', crossorigin: true },
-        })),
+        // The Latin subset of the Manrope variable font, preloaded as on the rest of the site.
+        { tag: 'link', attrs: { rel: 'preload', href: '/fonts/manrope/Manrope-latin.woff2', as: 'font', type: 'font/woff2', crossorigin: true } },
       ],
       components: {
         Head: './src/components/docs/Head.astro',

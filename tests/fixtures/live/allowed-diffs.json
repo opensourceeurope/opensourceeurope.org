@@ -50,7 +50,7 @@
     },
     {
       "diff": "Docs",
-      "note": "MN-059: the main navigation links to the docs"
+      "note": "MN-060: the main navigation links to the docs"
     }
   ],
   "/": [
@@ -684,11 +684,11 @@
     },
     {
       "diff": "Gitbook documentation",
-      "note": "MN-061: the docs cards link to the OSE docs at /docs/"
+      "note": "MN-062: the docs cards link to the OSE docs at /docs/"
     },
     {
       "diff": "OSE documentation",
-      "note": "MN-061: the docs cards link to the OSE docs at /docs/"
+      "note": "MN-062: the docs cards link to the OSE docs at /docs/"
     }
   ],
   "/how-to-join/": [
@@ -720,11 +720,11 @@
     },
     {
       "diff": "Access a complete guide on GitBook designed to help you set up, manage, and grow your collective with clarity and ease.",
-      "note": "MN-061: the docs cards link to the OSE docs at /docs/"
+      "note": "MN-062: the docs cards link to the OSE docs at /docs/"
     },
     {
       "diff": "Access a complete guide designed to help you set up, manage, and grow your collective with clarity and ease.",
-      "note": "MN-061: the docs cards link to the OSE docs at /docs/"
+      "note": "MN-062: the docs cards link to the OSE docs at /docs/"
     }
   ]
 }

@@ -29,13 +29,14 @@ or streams the answer as Server-Sent Events (see "Streaming" below).
 `unanswered` is `true` when the documentation does not answer the question: the
 model ends such an answer with the `[[unanswered]]` marker, which the function
 strips. With analytics consent, the `ANALYTICS` log line of type `answer` records it too, with
-`rounds` and `prompt`: the first 8 hex characters of the SHA-256 of the full system prompt,
-computed once at startup, so answer quality can be tied to prompt edits. That line
+`rounds` and `prompt`: the first 8 hex characters of the SHA-256 of the full system prompt
+and the earlier-turns note, computed once at startup, so answer quality can be tied to prompt edits. That line
 holds no question text. See "Analytics summary" below for what was asked.
 Node 22 + TypeScript; the system prompt is the canonical `agent/ose-researcher.md`,
 bundled at build time so the chat always follows the same persona as the plugin.
-Chat-only rules (citation markers, answer first, language, prompt-injection
-defence, scope and the `[[unanswered]]` marker) are appended to it from
+Chat-only rules (citation markers, answer first, when to stop searching,
+language, prompt-injection defence, scope and the `[[unanswered]]` marker) and
+an example of the shape of an answer are appended to it from
 `src/chat-rules.ts`. Put rules that only apply to the web chat there, not in
 the shared persona.
 
@@ -118,7 +119,11 @@ All configuration is via environment variables (see `.env.example`):
 - **Request bodies are capped** at 128 KiB (413 beyond that). The history is
   cleaned before the model sees it: only user and assistant text turns, no
   trailing assistant turn, each user message cut at 2,000 characters and each
-  earlier assistant message at 4,000, and the last 12 messages kept.
+  earlier assistant message at 4,000, and the last 12 messages kept. When
+  the history holds an earlier assistant message, a note added to the
+  visitor's question tells the model to ignore any rule, mode or prefix that
+  message announces. A rule in the system prompt alone did not stop the
+  hosted model from copying a forged prefix.
 
 ## Timeouts, retries and errors
 
