@@ -22,8 +22,6 @@ Copy `.env.example` to `.env` first. `PUBLIC_CONTACT_ENDPOINT` and `PUBLIC_CHAT_
 | `bash scripts/check-coauthors.sh <base> <head>` | Fails when a commit in the range has an agent `Co-authored-by` trailer. |
 | `npm ci --prefix functions/chat && npm test --prefix functions/chat` | Installs and tests the chat function. |
 | `npm run build:function` | Bundles the contact form function for deployment. See `docs/deployment.md`. |
-| `npm run drift` | Compares the text of every page with the live site. Run `npm run build && npm run preview` first. Accepted differences are in `tests/fixtures/live/allowed-diffs.json`. |
-| `npm run capture` | Captures text, images and screenshots from the live site into `tests/fixtures/live/` and `reference/`. |
 | `bash scripts/test-harness.sh` | Tests the agent hooks and scripts. |
 
 ## Knowledge base

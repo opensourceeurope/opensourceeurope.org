@@ -25,8 +25,6 @@ npm ci --prefix functions/chat && npm run build --prefix functions/chat && npm t
 scripts/knowledge/sync-agent.sh [--check]   # copies agent/ose-researcher.md into the plugin
 scripts/knowledge/ensure-index.sh [--check] # regenerates or checks the committed index
 scripts/knowledge/run-local.sh [--fresh]    # runs MCP server, chat function and page locally, needs uv and Ollama
-npm run drift      # text comparison with the live site; needs the preview running
-npm run capture    # captures text, images and screenshots from the live site
 npx lhci autorun --config=lighthouserc.mobile.json   # Lighthouse budgets (also lighthouserc.desktop.json); build first
 bash scripts/check-coauthors.sh <base> <head>   # agent co-author trailer check
 bash scripts/test-harness.sh   # agent harness tests
@@ -65,7 +63,6 @@ Before you hand off a change, these must pass (the commands are under Commands a
 - The canonical origin is `https://opensourceeurope.org`, set once as Astro `site`. Routes end with a slash.
 - Image paths under `/app/uploads/` and the favicon paths stay as they are.
 - Page text, links, image references and SEO fields live in `src/content/`, never in components.
-- Every deliberate difference from the live site gets a row in `docs/migration-notes.md`.
 - Code is MIT, OSE content is CC-BY-4.0, Manrope is OFL-1.1, and third-party logos stay their owners' trademarks.
 - GitHub Actions are pinned to commit SHAs with a version comment, and installed tools to versions (skill `github-actions-supply-chain-pinning`).
 
@@ -89,7 +86,7 @@ Do not quietly undo these.
 
 Do not quietly undo these.
 
-- **The docs moved from GitBook.** The pages in `src/content/docs/docs/` replace `https://docs.opencollective.com/open-source-europe` and are now the source. Edit them here, not in GitBook. `docs/migration-notes.md` lists what changed in the move (MN-060 to MN-062).
+- **The docs moved from GitBook.** The pages in `src/content/docs/docs/` replace `https://docs.opencollective.com/open-source-europe` and are now the source. Edit them here, not in GitBook.
 - **Starlight changes two site-wide settings, and `astro.config.mjs` restores them.** Starlight sets `scopedStyleStrategy: 'where'` and turns on `prefetch` for the whole site. With `'where'`, the site's component styles lose to the global grid rules and the services rows stack. The `keepSiteDefaults` integration runs after Starlight, turns prefetch off and sets the strategy to `'class'`, which has the site's old specificity. Do not use `'attribute'`: Starlight's styles for child components such as its icons then match nothing. Keep the integration after `starlight()` in the integrations list.
 - **The docs store nothing in the browser.** Starlight keeps the theme in `localStorage` and the sidebar state in `sessionStorage`. The overrides in `src/components/docs/` (`ThemeProvider`, `ThemeSelect`, `Sidebar`) and the `noSidebarStorage` Vite plugin in `astro.config.mjs` remove both. The docs have one dark theme, like the site. Do not use `syncKey` on Starlight tabs, because it also writes to `localStorage`.
 - **Docs pages share the site's consent banner and legal links.** `src/components/docs/SkipLink.astro` renders the consent banner first in the body, and `Footer.astro` adds the legal links from `footer.legal` in `site.yaml`, so the "Privacy settings" button that the privacy policy promises is on every page. `Head.astro` adds the `js` class, the default share image and the JSON-LD.

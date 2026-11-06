@@ -4,47 +4,45 @@ This document lists every animated or interactive effect on the live WordPress s
 
 The values come from Playwright scripts run against the live site on 27 October 2026 in Chromium at 60 frames per second, at 1440 × 900 and 390 × 844, with spot checks at 768, 1023, 1024, 1279 and 1280 px wide. The scripts scrolled, hovered and clicked, and sampled `getComputedStyle()` and inline styles on every animation frame. Times and distances are measured, not read from the theme's code. A value marked "about" varied by a frame or two between runs.
 
-`npm run capture` writes screenshots of every scroll-driven section at 0, 25, 50, 75 and 100 % of its scroll range to `reference/screens/<page>-<width>-pin1-<percent>.png`. Open them next to this document when you build E2, E9 and E10.
-
 ## Effects at a glance
 
 The following table lists each effect with its trigger, its timing and the planned fallbacks. The sections after the table give the full measurements.
 
 | Id | Effect | Pages | Trigger | Timing and easing | Below 1024 px | Reduced motion | Without JavaScript |
 |---|---|---|---|---|---|---|---|
-| E1 | Highlighted words in headings grow letter by letter, with a bar behind them | Every page except the legal pages | The word enters the viewport, once | Letters: 0.5 s each, 0.05 s apart, start after 0.38 s, `cubic-bezier(0.37, 0, 0.63, 1)`. Bar: 0.7 s, `ease` | Same | Letters and bar shown in their final state | Letters and bar shown in their final state |
-| E2 | Pinned section with round images that grow into one large circle, then step cards that slide over it | Home | Scroll, pinned for three viewport heights | Linear, follows the scroll with about 1 s of smoothing | Same, with mobile sizes | Static final layout, not pinned | Static final layout, not pinned |
-| E3 | Logo marquee in "No ecosystem grows alone" | Home | Runs from page load, never stops | 30 px/s to the left | 15 px/s at 768 px and narrower | Does not move; logos wrap into rows | Does not move; logos wrap into rows |
-| E4 | Project card carousel in "Trusted by hundreds of open source projects across Europe" | Home | Previous and next zones, dots, drag | 0.6 s `ease` per card, 0.3 s from a dot | One card, dots instead of arrows | Cards jump without the slide | Cards in a horizontally scrollable row |
-| E5 | Soft glow that follows the pointer inside buttons and step cards, and the arrow circle in E4 | Every page | Pointer over the element | Moves 18 % (buttons) or about 15 % (cards) of the remaining distance per frame | Not shown on touch | Glow stays still under the pointer, or is not shown | Not shown |
-| E6 | Scroll reveals | None found | Not applicable | Not applicable | Not applicable | Not applicable | Not applicable |
-| E7 | Header turns solid when the page scrolls, hides on scroll down, returns on scroll up | Every page | Scroll position and direction | Slide: 0.5 s, `cubic-bezier(0.4, 0, 0.2, 1)`. Background: instant | Same | Header hides and returns without the slide | Header stays at the top of the page |
-| E8 | Decorative glyphs `<_`, `()`, `_` and `<` in headings | Every page except the legal pages | None, static text | None | Same | Same | Same |
-| E9 | Pinned "Our values" section that scrolls its cards sideways | About | Scroll, pinned for the width of the card row | Linear, about 1 s of smoothing | Same, longer pin | Cards in a horizontally scrollable row, not pinned | Cards in a horizontally scrollable row, not pinned |
-| E10 | Pinned "How it works" section where four numbered cards stack on top of each other | The three service pages | Scroll, pinned for 1500 px | Three steps, `cubic-bezier(0.165, 0.84, 0.44, 1)` in each step, about 1 s of smoothing | Earlier cards move up instead of down | Cards listed one after another, not pinned | Cards listed one after another, not pinned |
-| E11 | FAQ answers open and close | Home, How to join, Contact, the three service pages | Click on a question | 0.3 s, `cubic-bezier(0.4, 0, 0.2, 1)` | Same | Answer opens without the height animation | Answers open with `<details>` |
-| E12 | Mobile menu panel slides down | Every page, below 1280 px | Click on the menu button | 0.3 s, `cubic-bezier(0.4, 0, 0.2, 1)` | This is the mobile behavior | Panel opens without the slide | Menu reachable without the script (`Header.astro`) |
-| E13 | Link underlines, button halo and card image zoom on hover | Every page | Pointer over a link or card | 0.3 s `ease` for underlines, 0.3 s and 0.5 s `cubic-bezier(0.4, 0, 0.2, 1)` for the rest | Not shown on touch | State changes without the transition | Works, CSS only |
+| E1 | Highlighted words in headings grow letter by letter, with a bar behind them | Every page except the legal pages | The word enters the viewport, once | Letters: 0.5 s each, 0.05 s apart, start after 0.38 s, `cubic-bezier(0.37, 0, 0.63, 1)`. Bar: 0.7 s, `ease` | Same | Letters and bar shown in their final state |
+| E2 | Pinned section with round images that grow into one large circle, then step cards that slide over it | Home | Scroll, pinned for three viewport heights | Linear, follows the scroll with about 1 s of smoothing | Same, with mobile sizes | Static final layout, not pinned |
+| E3 | Logo marquee in "No ecosystem grows alone" | Home | Runs from page load, never stops | 30 px/s to the left | 15 px/s at 768 px and narrower | Does not move; logos wrap into rows |
+| E4 | Project card carousel in "Trusted by hundreds of open source projects across Europe" | Home | Previous and next zones, dots, drag | 0.6 s `ease` per card, 0.3 s from a dot | One card, dots instead of arrows | Cards jump without the slide |
+| E5 | Soft glow that follows the pointer inside buttons and step cards, and the arrow circle in E4 | Every page | Pointer over the element | Moves 18 % (buttons) or about 15 % (cards) of the remaining distance per frame | Not shown on touch | Glow stays still under the pointer, or is not shown |
+| E6 | Scroll reveals | None found | Not applicable | Not applicable | Not applicable | Not applicable |
+| E7 | Header turns solid when the page scrolls, hides on scroll down, returns on scroll up | Every page | Scroll position and direction | Slide: 0.5 s, `cubic-bezier(0.4, 0, 0.2, 1)`. Background: instant | Same | Header hides and returns without the slide |
+| E8 | Decorative glyphs `<_`, `()`, `_` and `<` in headings | Every page except the legal pages | None, static text | None | Same | Same |
+| E9 | Pinned "Our values" section that scrolls its cards sideways | About | Scroll, pinned for the width of the card row | Linear, about 1 s of smoothing | Same, longer pin | Cards in a horizontally scrollable row, not pinned |
+| E10 | Pinned "How it works" section where four numbered cards stack on top of each other | The three service pages | Scroll, pinned for 1500 px | Three steps, `cubic-bezier(0.165, 0.84, 0.44, 1)` in each step, about 1 s of smoothing | Earlier cards move up instead of down | Cards listed one after another, not pinned |
+| E11 | FAQ answers open and close | Home, How to join, Contact, the three service pages | Click on a question | 0.3 s, `cubic-bezier(0.4, 0, 0.2, 1)` | Same | Answer opens without the height animation |
+| E12 | Mobile menu panel slides down | Every page, below 1280 px | Click on the menu button | 0.3 s, `cubic-bezier(0.4, 0, 0.2, 1)` | This is the mobile behavior | Panel opens without the slide |
+| E13 | Link underlines, button halo and card image zoom on hover | Every page | Pointer over a link or card | 0.3 s `ease` for underlines, 0.3 s and 0.5 s `cubic-bezier(0.4, 0, 0.2, 1)` for the rest | Not shown on touch | State changes without the transition |
 
 ## Status in the rebuild
 
-The following table lists the state of each effect in the rebuild. "Done" means the effect matches the measurements in this document. A migration note id marks a deliberate difference, which `docs/migration-notes.md` describes. MN-032 covers reduced motion for every effect.
+The following table lists the state of each effect in the rebuild. "Done" means the effect matches the measurements in this document.
 
-| Id | Status | Where | Migration notes |
-|---|---|---|---|
-| E1 | Done | `src/components/Heading.astro`, `src/scripts/motion/chars.ts` | MN-031 |
-| E2 | Logged: the circles match, the "Getting started" block scrolls in the page flow | `src/components/motion/PinCircle.astro`, `src/scripts/motion/pin-circle.ts` | MN-028 |
-| E3 | Done, with a pause button | `src/components/motion/Marquee.astro`, `src/scripts/motion/marquee.ts` | MN-029 |
-| E4 | Logged: buttons instead of click zones, native scrolling instead of mouse drag | `src/components/motion/Carousel.astro`, `src/scripts/motion/cards-carousel.ts` | MN-030 |
-| E5 | Done: the glow in buttons and step cards | `src/components/motion/Cursor.astro`, `src/scripts/motion/cursor.ts` | None |
-| E6 | Not applicable: the live site has no scroll reveals, so the rebuild adds none | None | None |
-| E7 | Done | `src/scripts/header-scroll.ts` | None |
-| E8 | Done, with one glyph per heading | `src/components/Heading.astro` | MN-014, MN-015, MN-020 |
-| E9 | Done | `src/components/motion/PinRow.astro`, `src/scripts/motion/pin-row.ts` | MN-018 |
-| E10 | Done | `src/components/motion/StackCards.astro`, `src/scripts/motion/stack-cards.ts` | None |
-| E11 | Done, with `<details>`. The height animation runs only in browsers that support `::details-content` and `interpolate-size`. Other browsers open the answer without it | `src/components/sections/Faq.astro` | MN-011 |
-| E12 | Done, with the panel below the header bar | `src/components/MobileMenu.astro`, `src/scripts/mobile-menu.ts` | MN-007, MN-008 |
-| E13 | Done | `src/components/Cta.astro`, `src/components/Header.astro`, `src/components/Footer.astro` | None |
+| Id | Status | Where |
+|---|---|---|
+| E1 | Done | `src/components/Heading.astro`, `src/scripts/motion/chars.ts` |
+| E2 | Differs: the circles match, the "Getting started" block scrolls in the page flow | `src/components/motion/PinCircle.astro`, `src/scripts/motion/pin-circle.ts` |
+| E3 | Done, with a pause button | `src/components/motion/Marquee.astro`, `src/scripts/motion/marquee.ts` |
+| E4 | Differs: buttons instead of click zones, native scrolling instead of mouse drag | `src/components/motion/Carousel.astro`, `src/scripts/motion/cards-carousel.ts` |
+| E5 | Done: the glow in buttons and step cards | `src/components/motion/Cursor.astro`, `src/scripts/motion/cursor.ts` |
+| E6 | Not applicable: the live site has no scroll reveals, so the rebuild adds none | None |
+| E7 | Done | `src/scripts/header-scroll.ts` |
+| E8 | Done, with one glyph per heading | `src/components/Heading.astro` |
+| E9 | Done | `src/components/motion/PinRow.astro`, `src/scripts/motion/pin-row.ts` |
+| E10 | Done | `src/components/motion/StackCards.astro`, `src/scripts/motion/stack-cards.ts` |
+| E11 | Done, with `<details>`. The height animation runs only in browsers that support `::details-content` and `interpolate-size`. Other browsers open the answer without it | `src/components/sections/Faq.astro` |
+| E12 | Done, with the panel below the header bar | `src/components/MobileMenu.astro`, `src/scripts/mobile-menu.ts` |
+| E13 | Done | `src/components/Cta.astro`, `src/components/Header.astro`, `src/components/Footer.astro` |
 
 ## E1: highlighted words
 
@@ -136,7 +134,7 @@ Run these effects only under `(pointer: fine)`. Under reduced motion, place the 
 
 ## E6: scroll reveals
 
-No scroll reveal exists on the live site. A scan of every route at 1440 px recorded every class and inline style change while the page scrolled in 300 px steps. The only changes came from E1, E2, E3, E7, E9 and E10. No element fades in or slides in, and `document.getAnimations()` returns no running animation after page load. Do not add reveal animations. If a reveal is added later, log it in `docs/migration-notes.md` as a difference.
+No scroll reveal exists on the live site. A scan of every route at 1440 px recorded every class and inline style change while the page scrolled in 300 px steps. The only changes came from E1, E2, E3, E7, E9 and E10. No element fades in or slides in, and `document.getAnimations()` returns no running animation after page load. Do not add reveal animations.
 
 ## E7: header on scroll
 
@@ -161,7 +159,7 @@ Most section headings carry plain-text glyphs. They have the same color, size an
 - `()` ends some headings, for example "Getting started with OSE is quick and simple()" and "Technical Resources & Guidance()".
 - `_` or `<` replaces a space in three headings: "What makes<this _possible", "Open<source is_public infrastructures" and "Fiscal_hosting()".
 
-The rebuild renders each glyph as an `aria-hidden` element, so screen readers and the drift check read the words alone. The section schema in `src/lib/sections.ts` offers `decor` values for a glyph at the end of a heading. The three headings with a glyph between words need a way to place a glyph inside the text.
+The rebuild renders each glyph as an `aria-hidden` element, so screen readers read the words alone. The section schema in `src/lib/sections.ts` offers `decor` values for a glyph at the end of a heading. The three headings with a glyph between words need a way to place a glyph inside the text.
 
 ## E9: sideways scroll on the about page
 
