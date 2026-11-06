@@ -129,7 +129,7 @@ Supported payout options:
 * **Communication**: Use expense comments for routine questions and follow-up. Contact OSE privately for sensitive information; do not put sensitive documents or bank details in comments.
 
 :::note
-**Need help?** Email us at <oce@opencollective.com>
+**Need help?** Email us at <home@opensourceeurope.org>
 :::
 
 ***

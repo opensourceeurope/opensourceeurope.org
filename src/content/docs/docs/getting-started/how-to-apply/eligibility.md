@@ -50,7 +50,7 @@ OSE aims to lower barriers for impactful initiatives. Therefore, we do **not** r
 
 If your initiative meets the above criteria and you're ready to proceed, follow our [How to Apply](/docs/getting-started/how-to-apply/) guide to begin your application.
 
-For any questions or further clarification, feel free to [contact us](mailto:oce@opencollective.com).
+For any questions or further clarification, feel free to [contact us](mailto:home@opensourceeurope.org).
 
 ## Affiliation with another organisation
 

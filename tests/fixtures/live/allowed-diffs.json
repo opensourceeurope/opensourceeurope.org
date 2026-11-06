@@ -689,6 +689,14 @@
     {
       "diff": "OSE documentation",
       "note": "MN-062: the docs cards link to the OSE docs at /docs/"
+    },
+    {
+      "diff": "Head of Operations at Open Collective Europe",
+      "note": "MN-063: the site uses the Open Source Europe name"
+    },
+    {
+      "diff": "Head of Operations at Open Source Europe",
+      "note": "MN-063: the site uses the Open Source Europe name"
     }
   ],
   "/how-to-join/": [

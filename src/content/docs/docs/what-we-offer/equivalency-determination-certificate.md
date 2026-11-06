@@ -11,7 +11,7 @@ Contact the OSE team before applying. We coordinate with the funder, provide the
 
 ## Preparing a grant application
 
-Contact <oce@opencollective.com> early, with:
+Contact <home@opensourceeurope.org> early, with:
 
 * The funder's name and the project to be supported.
 * The proposed amount, purpose and application deadline.

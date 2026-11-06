@@ -75,4 +75,4 @@ If you're moving from another fiscal host:
 
 ## Need Assistance?
 
-If you have any questions or need help with the application process, feel free to [contact us](mailto:oce@opencollective.com).
+If you have any questions or need help with the application process, feel free to [contact us](mailto:home@opensourceeurope.org).
