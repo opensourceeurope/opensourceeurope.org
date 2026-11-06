@@ -3,11 +3,13 @@ title: "Refunds"
 description: "Can I refund a donation or get a refund for one I have made?"
 ---
 
-### Can I request a refund for a donation?
+Can I refund a donation or get a refund for one I have made?
+
+## Can I request a refund for a donation?
 
 Yes, under certain conditions. Open Source Europe (OSE) can process refunds for contributions made via credit card, bank transfer, or PayPal.
 
-#### Refund Timeframes
+### Refund Timeframes
 
 * **Credit Card or Bank Transfer**: Refunds can be requested within **90 days** of the contribution date.
 * **PayPal**: Refunds can be requested within **60 days** of the contribution date.
@@ -18,7 +20,7 @@ Yes, under certain conditions. Open Source Europe (OSE) can process refunds for 
 
 ***
 
-### How to Request a Refund
+## How to Request a Refund
 
 Contact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <oce@opencollective.com>. A request does not guarantee a refund. Include the following details:
 
@@ -32,7 +34,7 @@ Contact the Collective administrators first; they forward your request to OSE. I
 
 ***
 
-### Refund Processing Times
+## Refund Processing Times
 
 OSE first reviews the refund request. If approved, OSE initiates the refund. The time it takes for the funds to reach you then depends on the payment method, payment provider and bank. No fixed processing or receipt date is guaranteed.
 
@@ -40,7 +42,7 @@ These processing steps are separate from the request deadlines above: 90 days fo
 
 ***
 
-### Additional Information
+## Additional Information
 
 * Refunds are only processed to the **original payment method**.
 * The handling of an expired card or closed account depends on the payment provider and bank; it is not an automatic reason for OSE to declare a refund impossible.
@@ -48,6 +50,6 @@ These processing steps are separate from the request deadlines above: 90 days fo
 
 ***
 
-### Need Assistance?
+## Need Assistance?
 
 For any questions or further assistance regarding refunds, please contact us at <oce@opencollective.com>.

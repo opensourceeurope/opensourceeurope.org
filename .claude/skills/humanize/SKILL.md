@@ -7,7 +7,7 @@ description: Use to make drafted text read like a person wrote it instead of an 
 
 Rewrites drafted text to remove the signs of AI writing, then reports what it changed. The docs-authoring skill runs it over every new sentence in the OSE docs.
 
-This is an adapted copy of the humanize skill in the Cennso `ai-docs` project. That version defers several tells to the Cennso writing guidelines. This one states those rules itself, because OSE has no separate style guide.
+The skill states all its rules itself, because OSE has no separate style guide.
 
 Read `references/tells.md` before every run. It lists the tells, how to detect each one, and a before and after example.
 

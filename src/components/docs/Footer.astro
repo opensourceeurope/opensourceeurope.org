@@ -1,0 +1,69 @@
+---
+// Starlight's footer (edit link, last updated, previous and next), then the
+// site's legal links. "Privacy settings" opens the consent banner, as in the
+// site footer. Texts come from `footer` in src/content/settings/site.yaml.
+import Default from '@astrojs/starlight/components/Footer.astro';
+import { loadSettings } from '../../lib/site';
+
+const { footer, ui } = await loadSettings();
+---
+
+<Default />
+<nav class="docs-legal" aria-label={ui.footer_nav_label}>
+  <ul>
+    {
+      footer.legal.map((item) => (
+        <li data-js-only={item.action === 'cookie-settings' ? '' : undefined}>
+          {item.action === 'cookie-settings' ? (
+            <button type="button" data-consent-open>
+              {item.label}
+            </button>
+          ) : (
+            <a href={item.href}>{item.label}</a>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+  <p>{footer.copyright}</p>
+</nav>
+
+<style>
+  .docs-legal {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--sl-color-hairline-light);
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-3);
+  }
+  .docs-legal ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    margin: 0 0 0.75rem;
+    padding: 0;
+    list-style: none;
+  }
+  .docs-legal a,
+  .docs-legal button {
+    color: var(--sl-color-gray-2);
+    font: inherit;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  .docs-legal a:hover,
+  .docs-legal button:hover {
+    color: var(--sl-color-white);
+  }
+  .docs-legal p {
+    margin: 0;
+  }
+  /* The button needs the consent script, so it shows only with JavaScript, as in the site footer. */
+  :global(html:not(.js)) .docs-legal [data-js-only] {
+    display: none;
+  }
+</style>

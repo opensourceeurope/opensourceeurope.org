@@ -3,6 +3,8 @@ title: "Mission, Vision & Impact areas"
 description: "It all comes back to resilience"
 ---
 
+It all comes back to resilience
+
 ## Mission
 
 Open Collective Europe has set out to achieve the sustainability of the social and solidarity economy as well as open source technologies. Our mission is to enable initiatives to raise and spend money transparently under a common umbrella nonprofit.

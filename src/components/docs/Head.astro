@@ -1,13 +1,21 @@
 ---
-// Starlight's head plus the site's JSON-LD, so docs pages carry the same
-// organisation and website data as the rest of the site.
+// Starlight's head plus what the rest of the site has: the `js` class, the
+// default share image and the organisation and website JSON-LD.
 import Default from '@astrojs/starlight/components/Head.astro';
 import { organizationJsonLd, websiteJsonLd } from '../../lib/seo';
 import { loadSettings } from '../../lib/site';
 
 const { seo } = await loadSettings();
 const jsonLd = [organizationJsonLd(Astro.site!, seo), websiteJsonLd(Astro.site!, seo)];
+// Starlight sets no share image, so docs pages use the site's default.
+const ogImage = new URL(seo.default_og_image, Astro.site!).href;
 ---
 
+<script is:inline>
+  // As on the rest of the site: marks that scripts run, for the consent button in the footer.
+  document.documentElement.classList.add('js');
+</script>
 <Default />
+<meta property="og:image" content={ogImage} />
+<meta name="twitter:image" content={ogImage} />
 {jsonLd.map((data) => <script is:inline type="application/ld+json" set:html={JSON.stringify(data)} />)}

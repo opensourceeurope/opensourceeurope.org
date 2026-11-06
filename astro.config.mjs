@@ -21,13 +21,16 @@ const noSidebarStorage = {
 // Starlight sets scopedStyleStrategy to 'where' and turns on prefetch for every
 // link, for the whole site. With 'where', the site's component styles lose
 // specificity and layouts break (the services rows stack). This integration runs
-// after Starlight and restores Astro's defaults. Starlight's own styles sit in
-// cascade layers, so they do not depend on 'where'.
+// after Starlight, turns prefetch off and uses 'class'. 'class' has the same
+// specificity as Astro's default 'attribute', but Astro also passes the scope
+// class to child components such as Starlight's <Icon>. With 'attribute', the
+// Starlight rules that style those children match nothing: the sidebar carets
+// stop turning and the mobile menu button shows both of its icons.
 const keepSiteDefaults = {
   name: 'ose:keep-site-defaults',
   hooks: {
     'astro:config:setup': ({ updateConfig }) => {
-      updateConfig({ scopedStyleStrategy: 'attribute', prefetch: false });
+      updateConfig({ scopedStyleStrategy: 'class', prefetch: false });
     },
   },
 };
@@ -64,6 +67,8 @@ export default defineConfig({
         ThemeProvider: './src/components/docs/ThemeProvider.astro',
         ThemeSelect: './src/components/docs/ThemeSelect.astro',
         Sidebar: './src/components/docs/Sidebar.astro',
+        SkipLink: './src/components/docs/SkipLink.astro',
+        Footer: './src/components/docs/Footer.astro',
       },
     }),
     keepSiteDefaults,

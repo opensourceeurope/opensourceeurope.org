@@ -3,13 +3,13 @@ title: "Application Questions"
 description: "To streamline your application process with Open Source Europe (OSE), it’s beneficial to prepare answers to the following questions in advance."
 ---
 
-### Prepare Your Answers Before Applying
+## Prepare Your Answers Before Applying
 
 To streamline your application process with Open Source Europe (OSE), it’s beneficial to prepare answers to the following questions in advance. This preparation will help you articulate your initiative’s purpose and ensure a smooth application experience.
 
 ***
 
-### Required Information
+## Required Information
 
 * **Location:** Specify the city and country where your initiative is primarily based. While OSE hosts initiatives globally, understanding your location helps us provide better support.
 * **Your Name and Email Address:** Provide your full name and a valid email address for correspondence.
@@ -20,7 +20,7 @@ To streamline your application process with Open Source Europe (OSE), it’s ben
 
 ***
 
-### Application Questions
+## Application Questions
 
 Please prepare concise answers (approximately 250 characters) to the following questions:
 
@@ -33,7 +33,7 @@ Please prepare concise answers (approximately 250 characters) to the following q
 
 ***
 
-### Tips for a Successful Application
+## Tips for a Successful Application
 
 * **Be Concise:** Keep your answers clear and to the point.
 * **Highlight Impact:** Emphasize how your initiative contributes to the public good and aligns with OSE’s mission.
@@ -42,6 +42,6 @@ Please prepare concise answers (approximately 250 characters) to the following q
 
 ***
 
-### Need Assistance?
+## Need Assistance?
 
 If you have any questions or need help with the application process, feel free to [contact us](mailto:oce@opencollective.com).

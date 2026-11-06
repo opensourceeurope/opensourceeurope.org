@@ -3,13 +3,15 @@ title: "Request a Grant (for Nonprofits Only)"
 description: "In addition to submitting an expense or invoice, the Open Collective platform also includes the option to “Request a Grant.”"
 ---
 
+In addition to submitting an expense or invoice, the Open Collective platform also includes the option to “Request a Grant.”
+
 Collectives may also request approval for donations to identified nonprofit organisations. That permission is distinct from access to the specific “Request a Grant” feature described below. OSE reviews the beneficiary, purpose and funding conditions before accepting an outgoing grant or donation.
 
 This feature is **not available to all collectives** and must follow specific conditions:
 
 ***
 
-#### Who can use “Request a Grant”?
+## Who can use “Request a Grant”?
 
 * **Only projects hosted as Funds** (not standard Collectives)
 * The applicant must be a **nonprofit or equivalent structure** (e.g. foundation, ASBL, charity, NGO)
@@ -17,7 +19,7 @@ This feature is **not available to all collectives** and must follow specific co
 
 ***
 
-#### Requirements for submitting a Grant Request
+## Requirements for submitting a Grant Request
 
 When a nonprofit uses the “Request a Grant” feature, they must include:
 
@@ -32,7 +34,7 @@ When a nonprofit uses the “Request a Grant” feature, they must include:
 
 ***
 
-#### Internal review process
+## Internal review process
 
 All grant requests are reviewed manually by the OSE team.\
 If accepted, the funds are transferred directly to the nonprofit's official bank account, and the transaction is recorded transparently on the fund page.

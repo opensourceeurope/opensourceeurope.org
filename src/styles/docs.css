@@ -4,6 +4,8 @@
  * site. Unlayered rules here win over Starlight's layered styles.
  */
 @import './fonts.css';
+/* The site's tokens, for the consent banner, which the docs share with the site. */
+@import './tokens.css';
 
 :root,
 ::backdrop {
@@ -32,6 +34,10 @@
   --sl-color-orange: #f7ad1a;
   --sl-color-orange-high: #fde3ad;
   --sl-color-red-high: #ffc2cf;
+  /* Note callouts in the brand blue. */
+  --sl-color-blue-low: #123a44;
+  --sl-color-blue: #419ebd;
+  --sl-color-blue-high: #9fe7f5;
 
   --sl-color-bg-nav: var(--sl-color-black);
   --sl-color-bg-sidebar: var(--sl-color-black);

@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { parse } from 'yaml';
@@ -20,6 +20,12 @@ function frontmatter(text: string) {
   const match = text.match(/^---\n([\s\S]*?)\n---\n/);
   return match ? parse(match[1]) : {};
 }
+
+// The file a /docs/ URL path is built from, if any.
+const fileFor = (urlPath: string) => {
+  const base = join(ROOT, urlPath.replace(/^\/|\/$/g, ''));
+  return ['.md', '.mdx', '/index.md', '/index.mdx'].map((ext) => base + ext).find((f) => existsSync(f));
+};
 
 describe('docs sidebar', () => {
   it('lists every docs page exactly once', () => {
@@ -43,8 +49,33 @@ describe.each(files)('%s', (file) => {
     expect(body).not.toMatch(/\{%/);
     expect(body).not.toMatch(/<figure|<img\b/);
     expect(body).not.toMatch(/docs\.opencollective\.com\/open-source-europe/);
-    // Internal links point at /docs/ pages, not at .md files.
-    expect(body).not.toMatch(/\]\(\/[^)]*\.md(#[^)]*)?\)/);
+    // Internal links point at /docs/ pages, not at .md files, absolute or relative.
+    expect(body).not.toMatch(/\]\((?!https?:)[^)\s]*\.mdx?(#[^)]*)?\)/);
+  });
+
+  it('has a file name Starlight keeps as its URL', () => {
+    // Starlight lower-cases slugs and drops dots, so such a name would not match its sidebar entry.
+    for (const part of relative(join(ROOT, 'docs'), file).replace(/\.mdx?$/, '').split('/')) {
+      expect(part).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
+    }
+  });
+
+  it('links only to docs pages that exist', () => {
+    for (const [, href] of body.matchAll(/\]\((\/docs\/[^)#\s]*)/g)) expect(fileFor(href), href).toBeDefined();
+    for (const [, href] of body.matchAll(/href="(\/docs\/[^"#]*)/g)) expect(fileFor(href), href).toBeDefined();
+  });
+
+  it('starts its headings at ## and skips no level', () => {
+    const levels = body
+      .replace(/```[\s\S]*?```/g, '')
+      .split('\n')
+      .filter((l) => /^#{1,6} /.test(l))
+      .map((l) => l.indexOf(' '));
+    let previous = 1;
+    for (const level of levels) {
+      expect(level, `h${level} after h${previous}`).toBeLessThanOrEqual(previous + 1);
+      previous = level;
+    }
   });
 
   it('gives every link some text', () => {

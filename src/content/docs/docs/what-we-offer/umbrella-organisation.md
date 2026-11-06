@@ -3,7 +3,9 @@ title: "Umbrella organisation"
 description: "Open Source Europe (OSE) provides a shared legal and financial framework for open source projects, developer networks, and software communities."
 ---
 
-### Collective Infrastructure
+Open Source Europe (OSE) provides a shared legal and financial framework for open source projects, developer networks, and software communities.
+
+## Collective Infrastructure
 
 As an umbrella organisation, OSE acts as the fiscal host for over 400 initiatives. Each project operates independently on the Open Collective platform with its own public page and transparent budget, while benefiting from the legal standing of a professional Belgian non-profit (ASBL/vzw).
 
@@ -11,7 +13,7 @@ This structure allows communities to manage funds, pay service providers on comp
 
 ***
 
-### Key Benefits
+## Key Benefits
 
 * **Simplified Legal Framework:** Skip the complexity of non-profit incorporation, bank account openings, and statutory bookkeeping.
 * **Grant Eligibility:** Access funding from foundations, corporations, and public authorities that require a registered non-profit intermediary.
@@ -22,7 +24,7 @@ This structure allows communities to manage funds, pay service providers on comp
 ***
 
 :::tip
-### Responsibilities and Alignment
+## Responsibilities and Alignment
 
 To maintain the integrity of the umbrella, hosted projects must adhere to three core principles:
 
@@ -33,7 +35,7 @@ To maintain the integrity of the umbrella, hosted projects must adhere to three 
 
 ***
 
-### Use Cases We Support
+## Use Cases We Support
 
 * **Open Source Libraries:** A legal home for critical libraries to receive corporate and individual donations.
 * **Project Ecosystems:** A unified structure for a suite of related tools managed by a distributed community.

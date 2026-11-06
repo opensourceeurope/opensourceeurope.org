@@ -3,7 +3,7 @@ title: "General FAQs"
 description: "What your initiative can do with Open Source Europe, what it costs, and how long it takes to get started."
 ---
 
-### What can I do with an Open Source Europe account?
+## What can I do with an Open Source Europe account?
 
 By joining Open Source Europe, your initiative can:
 
@@ -16,7 +16,7 @@ By joining Open Source Europe, your initiative can:
 
 ***
 
-### What am I not allowed to do?
+## What am I not allowed to do?
 
 To stay compliant with our legal and charitable framework, you **may not**:
 
@@ -29,7 +29,7 @@ To stay compliant with our legal and charitable framework, you **may not**:
 
 ***
 
-### Why should I use Open Collective?
+## Why should I use Open Collective?
 
 Open Source Europe uses the **Open Collective platform** to simplify and bring transparency to financial management.
 
@@ -44,7 +44,7 @@ Benefits include:
 
 ***
 
-### How is Open Source Europe different?
+## How is Open Source Europe different?
 
 Here’s what makes us special:
 
@@ -55,7 +55,7 @@ Here’s what makes us special:
 
 ***
 
-### How much does it cost?
+## How much does it cost?
 
 The current OSE hosting fees are:
 
@@ -75,7 +75,7 @@ These are the current rates; no fee reduction is introduced by this guidance.
 
 ***
 
-### Can we get a discount?
+## Can we get a discount?
 
 We’re often asked for fee reductions — and we truly understand why.\
 Many initiatives bring in funds already raised, and we know how tight nonprofit budgets can be.
@@ -92,7 +92,7 @@ Outside of specific exceptional cases (like COVID-19 or Ukrainian relief), we ca
 
 ***
 
-### What if I want to become my own fiscal host someday?
+## What if I want to become my own fiscal host someday?
 
 No problem! You're welcome to use Open Source Europe as your fiscal host for as long as you need and remain eligible.
 
@@ -102,7 +102,7 @@ No problem! You're welcome to use Open Source Europe as your fiscal host for as 
 
 ***
 
-### How long does it take to get started?
+## How long does it take to get started?
 
 * The **application process only takes a few minutes**.
 * We might reach out with a few follow-up questions.
@@ -114,16 +114,16 @@ Completing the application and being accepted are separate steps. See [How to ap
 
 ***
 
-### Is there a minimum required budget?
+## Is there a minimum required budget?
 
 Nope! There is **no minimum balance** required to be hosted by OSE.
 
 Since our fees are taken as a percentage of incoming contributions, you can start small and grow as your initiative develops.
 
-### Paying collaborators
+## Paying collaborators
 
 Collectives can pay service providers against a compliant invoice, including through a workers’ cooperative. Agree the work, price and dates with the Collective and submit the invoice through Open Collective for review. OSE does not provide a standard employment or payroll service. Any arrangement requiring OSE to sign a specific contract must be discussed and accepted beforehand.
 
-### Discounts and nonprofit benefits
+## Discounts and nonprofit benefits
 
 OSE may support a request or provide an attestation on a case-by-case basis. Hosting does not automatically qualify a Collective for every nonprofit discount or benefit. Each supplier sets its own eligibility criteria; OSE cannot guarantee acceptance.

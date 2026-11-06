@@ -3,15 +3,15 @@ title: "Wire Transfer Instructions via Open Collective Platform"
 description: "Please note that all funds have this option available."
 ---
 
-‌
+Please note that all funds have this option available.
 
-### Overview
+## Overview
 
 If you prefer to contribute to a Collective via bank transfer, Open Source Europe (OSE) provides a straightforward process to facilitate this.
 
 ***
 
-### Step-by-Step Guide
+## Step-by-Step Guide
 
 1. **Initiate the Donation Process**
    * Navigate to the Collective's page you wish to support.
@@ -36,7 +36,7 @@ If you prefer to contribute to a Collective via bank transfer, Open Source Europ
 
 ***
 
-### Visual Guide
+## Visual Guide
 
 ![The Open Collective thank-you page after a contribution, with a pending notice and payment instructions that give the amount, IBAN, BIC and order reference for the bank transfer](./wire-transfer-instructions-via-open-collective-platform-1.png)
 
@@ -46,7 +46,7 @@ If you prefer to contribute to a Collective via bank transfer, Open Source Europ
 
 ***
 
-### Troubleshooting
+## Troubleshooting
 
 * **Didn't Receive the Instruction Email?**
   * Check your spam or junk folder.
@@ -62,6 +62,6 @@ If you prefer to contribute to a Collective via bank transfer, Open Source Europ
 
   Send this information to <oce@opencollective.com> for assistance.
 
-### Hosting fees
+## Hosting fees
 
 See the [current OSE fee reference](/docs/faq/general-faqs/#how-much-does-it-cost).

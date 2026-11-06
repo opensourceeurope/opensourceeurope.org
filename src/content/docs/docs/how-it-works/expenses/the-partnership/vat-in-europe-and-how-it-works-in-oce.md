@@ -3,7 +3,7 @@ title: "VAT in Europe and How It Works in OCE"
 description: "Collectives hosted by Open Collective Europe (OCE) are unincorporated initiatives primarily funded through donations."
 ---
 
-### General Principles
+## General Principles
 
 Collectives hosted by Open Collective Europe (OCE) are unincorporated initiatives primarily funded through donations. As such, they are **not eligible for VAT refunds** and must **always pay VAT** on goods and services purchased.
 
@@ -15,7 +15,7 @@ Learn more: [VAT explained – European Commission](https://taxation-customs.ec.
 
 ***
 
-### VAT Within the Same Country
+## VAT Within the Same Country
 
 Invoices issued within your country (e.g. Belgium) must include VAT unless the supplier is legally exempt.
 
@@ -27,7 +27,7 @@ Belgian VAT details: [Finance Belgium](https://finance.belgium.be/en)
 
 ***
 
-### Cross-Border VAT and Reverse Charge
+## Cross-Border VAT and Reverse Charge
 
 The **reverse charge mechanism** lets VAT-registered businesses handle cross-border VAT internally (by declaring both output and input VAT).
 
@@ -43,7 +43,7 @@ Learn more: [EU VAT rules – Your Europe](https://europa.eu/youreurope/business
 
 ***
 
-### Summary
+## Summary
 
 * Collectives **must pay VAT** on all eligible purchases, whether national or cross-border.
 * **Reverse charge rules do not apply**.
@@ -51,6 +51,6 @@ Learn more: [EU VAT rules – Your Europe](https://europa.eu/youreurope/business
 
 ***
 
-### Questions?
+## Questions?
 
 Still unsure about VAT or invoicing rules? Email us at <oce@opencollective.com> — we're happy to help!

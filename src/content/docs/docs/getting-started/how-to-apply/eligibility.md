@@ -3,13 +3,13 @@ title: "Eligibility"
 description: "Open Source Europe (OSE) welcomes initiatives from around the world that align with our mission and values."
 ---
 
-### Who Can Apply to Be Hosted by Open Source Europe?
+## Who Can Apply to Be Hosted by Open Source Europe?
 
 Open Source Europe (OSE) welcomes initiatives from around the world that align with our mission and values. OSE supports open source projects and communities. Your application should explain how your activities contribute to open source.
 
 ***
 
-### Eligibility Criteria
+## Eligibility Criteria
 
 To be eligible for fiscal hosting by OSE, your initiative must:
 
@@ -21,13 +21,13 @@ To be eligible for fiscal hosting by OSE, your initiative must:
 
 ***
 
-### Global Reach
+## Global Reach
 
 While based in Europe, OSE supports initiatives globally. Your project's location does not restrict your eligibility, provided you meet the criteria outlined above.
 
 ***
 
-### Not Required
+## Not Required
 
 OSE aims to lower barriers for impactful initiatives. Therefore, we do **not** require:
 
@@ -39,19 +39,19 @@ OSE aims to lower barriers for impactful initiatives. Therefore, we do **not** r
 
 ***
 
-### Important Considerations
+## Important Considerations
 
 * **Fund Management**: The association administers funds on behalf of your initiative under the hosting agreement. For a move to another host or a closure, contact OSE to agree how outstanding expenses and the remaining balance will be handled under the applicable agreement and funding restrictions.
 * **Compliance**: OSE assesses potential compliance risks associated with initiatives, including alignment with legal frameworks and avoidance of activities that could be linked to terrorism or extremism financing.
 
 ***
 
-### Ready to Apply?
+## Ready to Apply?
 
 If your initiative meets the above criteria and you're ready to proceed, follow our [How to Apply](/docs/getting-started/how-to-apply/) guide to begin your application.
 
 For any questions or further clarification, feel free to [contact us](mailto:oce@opencollective.com).
 
-### Affiliation with another organisation
+## Affiliation with another organisation
 
 OSE does not accept simultaneous fiscal hosting with another host. A technical or community affiliation with another organisation may be accepted after review; affiliation alone does not mean fiscal hosting.

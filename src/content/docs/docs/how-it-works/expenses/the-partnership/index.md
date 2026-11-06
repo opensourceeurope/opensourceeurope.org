@@ -3,7 +3,7 @@ title: "The Partnership"
 description: "The relationship between your Collective and Open Source Europe (OSE) is one of indirect representation (représentation indirecte / middellijke…"
 ---
 
-### Legal Relationship: Indirect Representation
+## Legal Relationship: Indirect Representation
 
 The relationship between your Collective and Open Source Europe (OSE) is one of **indirect representation** (*représentation indirecte* / *middellijke vertegenwoordiging*).
 
@@ -18,7 +18,7 @@ This means:
 
 ***
 
-### Invoicing Guidelines
+## Invoicing Guidelines
 
 To stay compliant with our hosting terms:
 
@@ -32,7 +32,7 @@ If an invoice is wrongly addressed to OSE, it must be canceled and replaced. Rep
 
 ***
 
-### Donations from Your Collective
+## Donations from Your Collective
 
 Ordinary external donations may be made to identified nonprofit organisations after OSE has reviewed and approved the beneficiary, purpose and funding conditions. Contact OSE before committing or requesting payment. Other recipient types require a specific assessment, without any promise of acceptance.
 
@@ -52,7 +52,7 @@ The ordinary external donation route is for identified nonprofit organisations. 
 
 ***
 
-### VAT & Nonprofit Status
+## VAT & Nonprofit Status
 
 Collectives hosted by OSE are not legal entities and **must pay VAT** on purchases:
 
@@ -65,6 +65,6 @@ Collectives hosted by OSE are not legal entities and **must pay VAT** on purchas
 
 ***
 
-### Questions?
+## Questions?
 
 Email us any time at <oce@opencollective.com>. We're happy to help!

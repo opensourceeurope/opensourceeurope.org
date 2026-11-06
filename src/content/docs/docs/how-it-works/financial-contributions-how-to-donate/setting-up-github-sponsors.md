@@ -3,6 +3,8 @@ title: "Setting up GitHub Sponsors"
 description: "Guide to connecting GitHub Sponsors for Organizations to your Collective"
 ---
 
+Guide to connecting GitHub Sponsors for Organizations to your Collective
+
 ## Choose your starting point
 
 * **New organisation profile:** follow [First activation](#first-activation-for-a-github-organisation). Have your OSE-hosted Collective URL ready and use an organisation owner account with two-factor authentication.

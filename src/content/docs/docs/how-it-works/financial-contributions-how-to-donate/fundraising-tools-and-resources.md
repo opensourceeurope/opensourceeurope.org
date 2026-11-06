@@ -3,6 +3,8 @@ title: "Fundraising Tools & Resources"
 description: "More ways to raise funds"
 ---
 
+More ways to raise funds
+
 Open Collective includes crowdfunding tools and is the usual way to raise funds for an OSE Collective.
 
 ## External platforms

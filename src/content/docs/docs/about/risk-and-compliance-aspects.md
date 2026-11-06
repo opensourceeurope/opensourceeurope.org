@@ -3,13 +3,15 @@ title: "Risk and Compliance aspects"
 description: "Open Collective Europe: Grant Eligibility and Risk Assessment Policy"
 ---
 
-### Introduction
+Open Collective Europe: Grant Eligibility and Risk Assessment Policy
+
+## Introduction
 
 Open Collective Europe (OCE) is committed to supporting initiatives that promote positive social change and a more just world. This policy outlines the criteria used to assess the eligibility of grant proposals and identify potential compliance risks associated with terrorism/extremism financing.
 
 ***
 
-### Grant Eligibility Criteria
+## Grant Eligibility Criteria
 
 OCE prioritizes proposals from initiatives that:
 
@@ -19,7 +21,7 @@ OCE prioritizes proposals from initiatives that:
 
 ***
 
-### Compliance Risk Assessment
+## Compliance Risk Assessment
 
 OCE assesses potential compliance risks associated with grant proposals using the following factors (in order of importance):
 
@@ -30,13 +32,13 @@ OCE assesses potential compliance risks associated with grant proposals using th
 
 ***
 
-### Contextual Considerations
+## Contextual Considerations
 
 OCE recognizes the importance of context when evaluating proposals. Due diligence is conducted to understand the specific circumstances and actions of the initiative.
 
 ***
 
-### Information Sources
+## Information Sources
 
 To assess grant proposals, OCE utilizes various information sources, including (in order of importance):&#x20;
 
@@ -47,30 +49,30 @@ To assess grant proposals, OCE utilizes various information sources, including (
 
 ***
 
-### Limited Veto Power
+## Limited Veto Power
 
 OCE reserves the right to propose a veto of a grant proposal if a high compliance risk is identified based on the criteria outlined above. A clear and documented justification will be provided, outlining the specific concerns.
 
 ***
 
-### Appeals Process
+## Appeals Process
 
 Initiatives have the right to appeal a veto decision. The appeals process will be clearly communicated to all applicants.
 
 ***
 
-### Policy Review and Revision
+## Policy Review and Revision
 
 This policy is reviewed and revised periodically to ensure its effectiveness and alignment with best practices.
 
 ***
 
-### Conclusion
+## Conclusion
 
 OCE is committed to balancing the prevention of terrorism financing with the support of legitimate initiatives working towards positive social change. This policy serves as a framework to achieve this objective.
 
 ***
 
-### Need Assistance?
+## Need Assistance?
 
 For questions or further information regarding risk and compliance aspects, please contact us at <oce@opencollective.com>.

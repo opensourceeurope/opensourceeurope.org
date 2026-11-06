@@ -3,6 +3,8 @@ title: "Financial Contributions – How to Donate"
 description: "Helpful guides for Donors and Financial Contributors"
 ---
 
+Helpful guides for Donors and Financial Contributors
+
 Choose the route that matches the donor or funding arrangement. For an ordinary contribution, start on the Collective's Open Collective page; card, PayPal and bank transfer options are described below.
 
 ## Find the right route

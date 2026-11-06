@@ -5,11 +5,11 @@ import { loadSettings } from '../../lib/site';
 import { parseDocsSettings } from '../../lib/docs-settings.mjs';
 import docsYaml from '../../content/settings/docs.yaml?raw';
 
-const { apply_url, ui } = await loadSettings();
+const { apply_url } = await loadSettings();
 const docs = parseDocsSettings(docsYaml);
 ---
 
-<nav class="docs-links" aria-label={ui.nav_label}>
+<nav class="docs-links" aria-label={docs.header_nav_label}>
   {
     docs.header_links.map((link) => (
       <a class="docs-links__link" href={link.href}>

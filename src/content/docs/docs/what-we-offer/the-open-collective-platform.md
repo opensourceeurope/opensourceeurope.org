@@ -3,7 +3,9 @@ title: "The Open Collective Platform"
 description: "A shared tool for managing contributions, expenses, and grants with full transparency."
 ---
 
-#### **A transparent financial and community management tool**
+A shared tool for managing contributions, expenses, and grants with full transparency.
+
+## A transparent financial and community management tool
 
 Open Collective is a digital platform that enables hosted initiatives and philanthropic partners to raise, manage, and distribute funds with full transparency. Each group or fund hosted by Open Source Europe receives its own public page, equipped with tools to:
 
@@ -14,7 +16,7 @@ Open Collective is a digital platform that enables hosted initiatives and philan
 
 This integrated approach simplifies financial administration and fosters a collaborative environment for your initiative or fund.
 
-### Support for Philanthropic Regranting
+## Support for Philanthropic Regranting
 
 Beyond grassroots initiatives, the platform is also a powerful tool for foundations and funders. Through Open Collective, OSE can set up dedicated online funds to:
 
@@ -24,7 +26,7 @@ Beyond grassroots initiatives, the platform is also a powerful tool for foundati
 
 Each fund has its own profile page, budget, and update feed, just like a Collective. This makes it easy for regranting partners to communicate their goals, track disbursements, and meet reporting obligations with minimal overhead.
 
-### Why transparency matters
+## Why transparency matters
 
 Transparency is a cornerstone of the Open Collective platform. By making financial information publicly accessible, initiatives and funders can:
 
@@ -34,7 +36,7 @@ Transparency is a cornerstone of the Open Collective platform. By making financi
 
 Financial transactions are public, but personal details like names and email addresses are only visible to authorized admins.
 
-### Key Features
+## Key Features
 
 * Real-time budget tracking
 * Integrated expense and payout tools

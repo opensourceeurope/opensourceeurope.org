@@ -6,7 +6,7 @@ import { parse } from 'yaml';
 /**
  * @typedef {{ label: string; href: string }} Link
  * @typedef {{ page: string } | { label: string; link: string } | { label: string; items: SidebarEntry[] }} SidebarEntry
- * @typedef {{ title: string; header_links: Link[]; apply_label: string; sidebar: SidebarEntry[] }} DocsSettings
+ * @typedef {{ title: string; header_nav_label: string; header_links: Link[]; apply_label: string; sidebar: SidebarEntry[] }} DocsSettings
  */
 
 /** @param {any} entry @param {string} where */
@@ -23,7 +23,7 @@ function checkEntry(entry, where) {
  */
 export function parseDocsSettings(text) {
   const data = parse(text);
-  for (const key of ['title', 'apply_label']) {
+  for (const key of ['title', 'apply_label', 'header_nav_label']) {
     if (typeof data?.[key] !== 'string' || !data[key]) throw new Error(`docs.yaml: ${key} is required`);
   }
   if (!Array.isArray(data.sidebar)) throw new Error('docs.yaml: sidebar is required');

@@ -38,7 +38,9 @@ Follow these steps for a new page or a change to an existing one:
    ---
    ```
 
-   The title becomes the page's only `<h1>`, so the body starts at `##`.
+   The title becomes the page's only `<h1>`. The description goes only into search results and link previews, and the page does not show it. If the page should open with that sentence, write it as the first paragraph too.
+
+   Name the file in lower case with hyphens, such as `setting-up-github-sponsors.md`. Starlight lower-cases URLs and drops dots, so another name gives a URL that differs from the file name.
 3. Add a new page to `sidebar` in `docs.yaml`, in reading order. An entry is `- page: docs/<path>`, which shows the page title, or a group with `label` and `items`. The unit test fails if a page is missing from the sidebar or listed twice.
 4. When you move or rename a page, search for links to its old path in `src/content/docs/` and update them. Add a row to `docs/migration-notes.md` if the page came from the old GitBook site, because external links to it break.
 5. Run the humanize skill (`.claude/skills/humanize/`) over every sentence you wrote, before you show it.
@@ -75,6 +77,7 @@ The docs support GitHub Markdown and the following Starlight additions:
 - Link to another docs page with its absolute path and a trailing slash: `[Refunds](/docs/how-it-works/financial-contributions-how-to-donate/refunds/)`. Never link to a `.md` file.
 - A heading's anchor is its text in lower case with spaces turned into hyphens: `## Submission process` is `#submission-process`.
 - Do not start a heading with an emoji. The anchor then starts with a hyphen and links to it break. The unit test checks this.
+- Start the body at `##` and do not skip a level: a `####` comes after a `###`, never straight after a `##`. Starlight's "On this page" list shows only `##` and `###`.
 - Write headings in sentence case: "How to apply", not "How To Apply".
 
 ## Images
@@ -103,7 +106,7 @@ The person sees the page as it will look on the site. Stop the server when you a
 Run the docs unit test, the type check and the build:
 
 ```bash
-npx vitest run tests/unit/docs-content.test.ts   # frontmatter, sidebar, links, images, headings
+npx vitest run tests/unit/docs-content.test.ts   # frontmatter, sidebar, file names, links to docs pages, images, heading levels
 npm run check && npm run build
 ```
 

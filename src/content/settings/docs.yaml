@@ -1,6 +1,8 @@
 # Settings of the documentation at /docs/. astro.config.mjs and the docs
 # header read this file through src/lib/docs-settings.mjs.
 title: OSE docs
+# The accessible name of the header links, distinct from the sidebar's "Main".
+header_nav_label: Site
 # The link in the header that leads back to the main site, and the other header links.
 header_links:
   - label: Main site

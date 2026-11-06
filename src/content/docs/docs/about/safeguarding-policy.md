@@ -3,13 +3,13 @@ title: "Safeguarding Policy"
 description: "Open Collective Europe (OCE) is committed to creating a safe and inclusive environment for all staff, volunteers, partners, and beneficiaries."
 ---
 
-### Introduction
+## Introduction
 
 Open Collective Europe (OCE) is committed to creating a safe and inclusive environment for all staff, volunteers, partners, and beneficiaries. This policy outlines our commitment to safeguarding and sets out procedures for reporting and responding to concerns.
 
 ***
 
-### What is Safeguarding?
+## What is Safeguarding?
 
 Safeguarding refers to the actions we take to protect people, especially children and vulnerable adults, from harm. This includes protection from:
 
@@ -21,7 +21,7 @@ Safeguarding refers to the actions we take to protect people, especially childre
 
 ***
 
-### Our Commitment
+## Our Commitment
 
 OCE is committed to:
 
@@ -33,7 +33,7 @@ OCE is committed to:
 
 ***
 
-### Who is Vulnerable?
+## Who is Vulnerable?
 
 While safeguarding applies to everyone, some individuals may be more vulnerable to harm. This includes:
 
@@ -44,7 +44,7 @@ While safeguarding applies to everyone, some individuals may be more vulnerable 
 
 ***
 
-### Reporting Concerns
+## Reporting Concerns
 
 Anyone who has a concern about the safety or well-being of someone involved in OCE activities should report it immediately, regardless of whether they are sure about the nature of the concern.
 
@@ -52,7 +52,7 @@ Contact the safeguarding leads listed below to report a concern. OSE does not pr
 
 ***
 
-### How to Report a Concern
+## How to Report a Concern
 
 Concerns can be reported to:
 
@@ -66,7 +66,7 @@ Reports can be made in person, by email, or in writing. Information is shared on
 
 ***
 
-### What Happens When a Concern is Reported?
+## What Happens When a Concern is Reported?
 
 All reported concerns are taken seriously. The safeguarding leads review each report and determine appropriate next steps, including referral to external services or relevant authorities where necessary. OSE does not systematically conduct an internal investigation.
 
@@ -78,30 +78,30 @@ Depending on the circumstances, appropriate action may include:
 
 ***
 
-### Confidentiality
+## Confidentiality
 
 OSE limits the sharing of information about safeguarding concerns to those who need it to handle the concern or where disclosure is required by law. Absolute confidentiality cannot be promised.
 
 ***
 
-### Support
+## Support
 
 OSE listens to people affected by safeguarding incidents and directs them towards appropriate support services. OSE does not organise or fund psychological counselling.
 
 ***
 
-### Training
+## Training
 
 OSE shares safeguarding guidance with staff and volunteers, including how to respond to and report concerns. OSE does not currently provide systematic safeguarding training.
 
 ***
 
-### Review
+## Review
 
 This policy will be reviewed regularly to ensure it remains effective.
 
 ***
 
-### Need Assistance?
+## Need Assistance?
 
 For any questions about this policy or safeguarding in general, please contact the Safeguarding Lead at <oce@opencollective.com>.

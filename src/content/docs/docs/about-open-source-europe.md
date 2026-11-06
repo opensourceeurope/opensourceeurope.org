@@ -3,9 +3,11 @@ title: "About Open Source Europe"
 description: "Open Source Europe is a Belgian Association that fiscally hosts over 400 initiatives and partners with philanthropic institutions to support global regranting."
 ---
 
+Open Source Europe is a Belgian Association that fiscally hosts over 400 initiatives and partners with philanthropic institutions to support global regranting.
+
 ***
 
-### Service Overview
+## Service Overview
 
 Unlike traditional non-profits, Open Source Europe (OSE) combines a legal structure with a dedicated digital infrastructure to enable:
 
@@ -15,7 +17,7 @@ Unlike traditional non-profits, Open Source Europe (OSE) combines a legal struct
 
 ***
 
-### How hosting works
+## How hosting works
 
 OSE provides a Belgian nonprofit home for open source projects. We use the Open Collective platform to manage budgets, receive contributions and process expenses transparently.
 
@@ -23,7 +25,7 @@ See our [Terms of Service](/docs/terms-of-service/) for the hosting agreement.
 
 ***
 
-### Who We Serve
+## Who We Serve
 
 * **Project Maintainers:** Open source projects without their own legal structure.
 * **Funders and Corporates:** International companies looking for a trusted intermediary to support open source in Europe.
@@ -31,7 +33,7 @@ See our [Terms of Service](/docs/terms-of-service/) for the hosting agreement.
 
 ***
 
-### How to Work With Us
+## How to Work With Us
 
 * **For Projects:** Apply for fiscal hosting to start receiving donations and grants legally.
 * **For Funders:** Support projects and manage your contributions transparently through our hosted funds.
@@ -43,7 +45,7 @@ See our [Terms of Service](/docs/terms-of-service/) for the hosting agreement.
 
 ***
 
-### A little history
+## A little history
 
 Open Source Europe grew out of Open Collective Europe's fiscal hosting work. As that work developed, OSE became the home for open source projects and communities, while Open Collective Europe Foundation developed its wider philanthropic activities. Our hosting agreement still uses the association's name, Open Collective Europe ASBL/vzw.
 
