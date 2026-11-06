@@ -1,12 +1,11 @@
 // Parses src/content/settings/docs.yaml. Plain JavaScript, because
-// astro.config.mjs imports it before Vite runs. The config reads the file from
-// disk; components import it with `?raw`, so the bundle carries the text.
+// astro.config.mjs imports it before Vite runs. Components import the file
+// with `?raw`, so the bundle carries the text.
 import { parse } from 'yaml';
 
 /**
- * @typedef {{ label: string; href: string }} Link
  * @typedef {{ page: string } | { label: string; link: string } | { label: string; items: SidebarEntry[] }} SidebarEntry
- * @typedef {{ title: string; header_nav_label: string; header_links: Link[]; apply_label: string; sidebar: SidebarEntry[] }} DocsSettings
+ * @typedef {{ title: string; menu_label: string; sidebar: SidebarEntry[] }} DocsSettings
  */
 
 /** @param {any} entry @param {string} where */
@@ -23,14 +22,11 @@ function checkEntry(entry, where) {
  */
 export function parseDocsSettings(text) {
   const data = parse(text);
-  for (const key of ['title', 'apply_label', 'header_nav_label']) {
+  for (const key of ['title', 'menu_label']) {
     if (typeof data?.[key] !== 'string' || !data[key]) throw new Error(`docs.yaml: ${key} is required`);
   }
   if (!Array.isArray(data.sidebar)) throw new Error('docs.yaml: sidebar is required');
   data.sidebar.forEach((entry, i) => checkEntry(entry, `[${i}]`));
-  for (const link of data.header_links ?? []) {
-    if (!link.label || !link.href) throw new Error('docs.yaml: every header link needs a label and an href');
-  }
   return data;
 }
 

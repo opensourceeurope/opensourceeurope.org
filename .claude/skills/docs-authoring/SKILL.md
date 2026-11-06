@@ -18,7 +18,7 @@ The following table lists the files that make up the docs:
 | Pages | `src/content/docs/docs/`. The path is the URL: `src/content/docs/docs/faq/general-faqs.md` is `/docs/faq/general-faqs/` |
 | A page with child pages | `index.md` in a folder: `how-it-works/expenses/index.md` is `/docs/how-it-works/expenses/` |
 | Sidebar order and group names | `src/content/settings/docs.yaml`, under `sidebar` |
-| Header title, header links, apply button label | `src/content/settings/docs.yaml` |
+| Page title suffix, "Contents" button label (small screens) | `src/content/settings/docs.yaml` |
 | Images | Next to the page that shows them |
 | Theme | `src/styles/docs.css`. Component overrides are in `src/components/docs/` |
 

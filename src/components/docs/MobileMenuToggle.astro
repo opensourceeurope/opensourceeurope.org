@@ -1,0 +1,59 @@
+---
+// Opens the docs sidebar on small screens. Starlight's toggle is a round icon
+// button in the header's corner, where the site menu button is. This one has a
+// visible label and sits beside the site menu button, in the site's style.
+import { Icon } from '@astrojs/starlight/components';
+import { parseDocsSettings } from '../../lib/docs-settings.mjs';
+import docsYaml from '../../content/settings/docs.yaml?raw';
+
+const docs = parseDocsSettings(docsYaml);
+---
+
+<button popovertarget="starlight__sidebar" class="docs-menu-button sl-flex md:sl-hidden print:hidden">
+  <Icon name="bars" class="open-menu" />
+  <Icon name="close" class="close-menu" />
+  <span>{docs.menu_label}</span>
+</button>
+
+<style>
+  .docs-menu-button {
+    position: fixed;
+    /* Centred in the header, left of the 40 px site menu button. */
+    top: calc((var(--header-height) - 40px) / 2);
+    inset-inline-end: calc(var(--grid-gutter) + 40px + var(--space-2));
+    z-index: var(--sl-z-index-navbar);
+    align-items: center;
+    gap: var(--space-1);
+    height: 40px;
+    padding-inline: 14px 16px;
+    border: 0;
+    border-radius: var(--radius-pill);
+    background: var(--color-white-8);
+    color: var(--color-text);
+    font: inherit;
+    font-size: var(--text-label);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .docs-menu-button:has(~ :popover-open) {
+    background: var(--color-brand-cyan);
+    color: var(--color-bg);
+  }
+  .docs-menu-button:has(~ :popover-open) .open-menu,
+  .docs-menu-button:not(:has(~ :popover-open)) .close-menu {
+    display: none;
+  }
+</style>
+
+<style is:global>
+  body:has(#starlight__sidebar:popover-open) {
+    overflow: hidden;
+  }
+  @media (min-width: 50rem) {
+    body:has(#starlight__sidebar:popover-open) {
+      overflow: auto;
+    }
+  }
+</style>

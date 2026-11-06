@@ -1,13 +1,31 @@
 ---
-// The site's consent banner first in the body, as on the rest of the site, so
-// the "Privacy settings" button in the docs footer can open it. Then Starlight's
-// skip link.
+// The first things in the body: the site's consent banner, as on the rest of
+// the site, so the "Privacy settings" button in the docs footer can open it.
+// Then the Ask AI panel, as on every other page, and the glow behind the top
+// of the page, the background of the other pages' heroes, set as --docs-glow
+// for docs.css. Then Starlight's skip link.
+import { getImage } from 'astro:assets';
 import Default from '@astrojs/starlight/components/SkipLink.astro';
 import ConsentBanner from '../ConsentBanner.astro';
+import AskPanel from '../chat/AskPanel.astro';
+import glow from '../../assets/theme/webp/bg-hero-w-home.webp';
 import { loadSettings } from '../../lib/site';
 
-const { consent } = await loadSettings();
+const settings = await loadSettings();
+const glowImage = await getImage({ src: glow, width: 1684, format: 'webp' });
 ---
 
-<ConsentBanner consent={consent} />
+<ConsentBanner consent={settings.consent} />
+<AskPanel settings={settings} />
+<div class="docs-glow" style={`--docs-glow: url('${glowImage.src}')`} aria-hidden="true"></div>
 <Default />
+
+<script>
+  // Ctrl+K and Cmd+K open the Ask panel, as on every other page. Starlight's
+  // search listens for the same keys on window, so the event stops at the
+  // document, where the panel listens. Search opens from the sidebar.
+  document.addEventListener('keydown', (event) => {
+    if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') event.stopPropagation();
+  });
+  document.querySelector('site-search button[data-open-modal]')?.removeAttribute('aria-keyshortcuts');
+</script>

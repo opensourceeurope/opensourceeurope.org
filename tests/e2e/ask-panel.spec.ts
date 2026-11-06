@@ -83,6 +83,16 @@ test.describe('ask panel', () => {
     await expect(button(page)).toBeFocused();
   });
 
+  test('is on docs pages, where Ctrl+K opens it and not the search', async ({ page }) => {
+    await page.goto('/docs/how-it-works/basics/', { waitUntil: 'load' });
+    await expect(button(page)).toBeVisible();
+    await expect(page.locator('[data-ask-panel][data-ready]')).toHaveCount(1);
+    await page.keyboard.press('Control+k');
+    await expect(dialog(page)).toBeVisible();
+    await expect(page.locator('site-search dialog')).not.toHaveAttribute('open', '');
+    await expect(page.locator('site-search button[data-open-modal]')).not.toHaveAttribute('aria-keyshortcuts', /./);
+  });
+
   test('has the honeypot, out of reach', async ({ page }) => {
     await page.goto('/about/');
     await button(page).click();

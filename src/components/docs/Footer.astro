@@ -62,6 +62,10 @@ const { footer, ui } = await loadSettings();
   .docs-legal p {
     margin: 0;
   }
+  /* Room for the Ask AI button, which floats over the bottom right corner. */
+  .docs-legal {
+    margin-bottom: 72px;
+  }
   /* The button needs the consent script, so it shows only with JavaScript, as in the site footer. */
   :global(html:not(.js)) .docs-legal [data-js-only] {
     display: none;
