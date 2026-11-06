@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { parseDocsSettings, sidebarPages } from '../../src/lib/docs-settings.mjs';
 
 export type Route = { path: string; enabled: boolean; status: 200 | 404;
-  // true: a Starlight docs page, with the docs header instead of the site header.
+  // true: a Starlight docs page, built by Starlight around the site header.
   docs?: boolean;
 };
 

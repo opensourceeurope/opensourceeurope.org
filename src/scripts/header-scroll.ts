@@ -5,6 +5,8 @@ const SHOW_AFTER_UP = 600;
 export function initHeaderScroll(): void {
   const header = document.querySelector<HTMLElement>('[data-site-header]');
   if (!header) return;
+  // A pinned header (the docs) turns solid but never hides.
+  const pinned = header.hasAttribute('data-pinned');
 
   let lastY = window.scrollY;
   let upDistance = 0;
@@ -18,7 +20,7 @@ export function initHeaderScroll(): void {
     header.classList.toggle('is-solid', y > 0);
 
     const menuOpen = header.classList.contains('is-open');
-    if (y === 0 || menuOpen) {
+    if (pinned || y === 0 || menuOpen) {
       upDistance = 0;
       header.classList.remove('is-hidden');
     } else if (delta > 0) {
