@@ -29473,9 +29473,9 @@
     "token_count": 23
   },
   {
-    "chunk_id": "41b37b20ce1c79d2ff4c889ae66bbcca93c6ef77fff13d6a40c2c1fc47a7e2b5",
+    "chunk_id": "62365acee347ee2ea51ca39a9f749f681a5cf1ead1f28edb153771c11077668a",
     "chunk_type": "prose",
-    "content": "## General Principles\n\nCollectives hosted by Open Collective Europe (OCE) are unincorporated initiatives primarily funded through donations. As such, they are **not eligible for VAT refunds** and must **always pay VAT** on goods and services purchased.\n\nVAT (Value Added Tax) is a general consumption tax that applies to most goods and services within the European Union. Even if your Collective is not a registered entity, VAT is still due on your expenses.\n\n> **Note:** Learn more: [VAT explained – European Commission](https://taxation-customs.ec.europa.eu/vat_en)\n\n***",
+    "content": "## General Principles\n\nCollectives hosted by Open Collective Europe (OCE) are unincorporated initiatives primarily funded through donations. As such, they are **not eligible for VAT refunds** and must **always pay VAT** on goods and services purchased.\n\nVAT (Value Added Tax) is a general consumption tax that applies to most goods and services within the European Union. Even if your Collective is not a registered entity, VAT is still due on your expenses.\n\n> **Note:** Learn more: [VAT explained – European Commission](https://taxation-customs.ec.europa.eu/taxation-1/value-added-tax-vat_en)\n\n***",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "VAT in Europe and How It Works in OCE > General Principles",
@@ -29490,7 +29490,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 123
+    "token_count": 131
   },
   {
     "chunk_id": "cb733afcc1920ef9629626c5f1809bd03970937abaaaa56957e7e4388e86944d",
@@ -29504,7 +29504,7 @@
       "next_chunk_id": "57d7cdfa85b1b4dffdcc839c1af735a2c3b2e1372f20d5afcde43dac87782390",
       "parent_chunk_id": null,
       "position": 2,
-      "prev_chunk_id": "41b37b20ce1c79d2ff4c889ae66bbcca93c6ef77fff13d6a40c2c1fc47a7e2b5",
+      "prev_chunk_id": "62365acee347ee2ea51ca39a9f749f681a5cf1ead1f28edb153771c11077668a",
       "section_anchor": "vat-within-the-same-country",
       "source_url": "https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-oce/"
     },

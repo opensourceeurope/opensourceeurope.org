@@ -1470,7 +1470,7 @@ Collectives hosted by Open Collective Europe (OCE) are unincorporated initiative
 
 VAT (Value Added Tax) is a general consumption tax that applies to most goods and services within the European Union. Even if your Collective is not a registered entity, VAT is still due on your expenses.
 
-> **Note:** Learn more: [VAT explained – European Commission](https://taxation-customs.ec.europa.eu/vat_en)
+> **Note:** Learn more: [VAT explained – European Commission](https://taxation-customs.ec.europa.eu/taxation-1/value-added-tax-vat_en)
 
 ***
 
