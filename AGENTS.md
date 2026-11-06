@@ -23,6 +23,7 @@ npm run test:e2e   # Playwright (builds and previews the site)
 npm run licences   # licence check of installed packages, site and functions/chat
 npm ci --prefix functions/chat && npm run build --prefix functions/chat && npm test --prefix functions/chat   # chat function tests
 scripts/knowledge/sync-agent.sh [--check]   # copies agent/ose-researcher.md into the plugin
+uv run --no-project --python 3.12 --with pyyaml==6.0.2 python scripts/knowledge/docs-to-llms.py   # exports the docs for opencrane fetch
 scripts/knowledge/ensure-index.sh [--check] # regenerates or checks the committed index
 scripts/knowledge/run-local.sh [--fresh]    # runs MCP server, chat function and page locally, needs uv and Ollama
 npm run drift      # text comparison with the live site; needs the preview running
