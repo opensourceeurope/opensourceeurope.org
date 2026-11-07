@@ -1,6 +1,11 @@
 # Lighthouse budgets on every enabled route, desktop and mobile. The budgets and
 # the routes are in lighthouserc.desktop.json and lighthouserc.mobile.json.
 # @lhci/cli is the version pinned in package-lock.json.
+#
+# Every budget is a score of 1, with one exception: /services/ on mobile needs
+# 0.99. Its service images start to download before the hero paints, and the
+# Lighthouse throttling model counts them in the largest contentful paint, so
+# the page scored 0.99 on about half the runners.
 name: lighthouse
 
 on:
