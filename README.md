@@ -48,7 +48,7 @@ Where the parts live:
 The server starts with `uvx`, so install [uv](https://docs.astral.sh/uv/) first. Then add the server to any MCP client (Claude Code, Cursor, Claude Desktop and others):
 
 ```bash
-claude mcp add ose-knowledge -- uvx ose-knowledge-mcp==0.11.0
+claude mcp add ose-knowledge -- uvx ose-knowledge-mcp==0.11.1
 ```
 
 Or put this in the client's config:
@@ -56,7 +56,7 @@ Or put this in the client's config:
 ```json
 {
   "mcpServers": {
-    "ose-knowledge": { "type": "stdio", "command": "uvx", "args": ["ose-knowledge-mcp==0.11.0"] }
+    "ose-knowledge": { "type": "stdio", "command": "uvx", "args": ["ose-knowledge-mcp==0.11.1"] }
   }
 }
 ```
