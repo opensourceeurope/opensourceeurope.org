@@ -5494,7 +5494,7 @@
       "breadcrumb_path": "Deciding on How to Use Your Money > Decision-Making and Governance",
       "depth": 0,
       "doc_order": 27,
-      "list_id": "96b367dc512ebf5c",
+      "list_id": "fefc36dd65146e1f",
       "list_style": "unordered",
       "parent_chunk_id": "e23664ca2e6fc8b55ad1e8acd0d24b3eef231cb161ddaa37645509da618bfa4d",
       "parent_item_id": null,
@@ -5510,15 +5510,15 @@
     "token_count": 61
   },
   {
-    "chunk_id": "e691e684a46ffb037fafde4c6b421ee7afa0d8f7abba1113018198124bb2322c",
+    "chunk_id": "3e73aca4c77114503cf131809ce2edfd5032ed5b65dfea2f00fde37105f5b0f7",
     "chunk_type": "list_item",
-    "content": "# Deciding on How to Use Your Money > Decision-Making and Governance\n**Common Concerns:**\nLegal or tax implications: Open Source Europe cannot advise you on your members' or collaborators' legal or fiscal obligations. We recommend contacting a legal or fiscal specialist in their country of residence. For general guidance, please use this documentation or contact us at <oce@opencollective.com>",
+    "content": "# Deciding on How to Use Your Money > Decision-Making and Governance\n**Common Concerns:**\nLegal or tax implications: Open Source Europe cannot advise you on your members' or collaborators' legal or fiscal obligations. We recommend contacting a legal or fiscal specialist in their country of residence. For general guidance, please use this documentation or contact us at <home@opensourceeurope.org>",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Deciding on How to Use Your Money > Decision-Making and Governance",
       "depth": 1,
       "doc_order": 28,
-      "list_id": "2492ae3fe4daa870",
+      "list_id": "1e74b5d0f1e94064",
       "list_style": "unordered",
       "parent_chunk_id": "e23664ca2e6fc8b55ad1e8acd0d24b3eef231cb161ddaa37645509da618bfa4d",
       "parent_item_id": "d15f80e4e9bece85c9335c4604f4743c23ed356aa997c65abea99484a43eea76",
@@ -5539,7 +5539,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 80
+    "token_count": 79
   },
   {
     "chunk_id": "ea2cc69087d6ccced71237695c412be170236dfcfba936104fe38257602290c2",
@@ -5550,14 +5550,14 @@
       "breadcrumb_path": "Deciding on How to Use Your Money > Decision-Making and Governance",
       "depth": 1,
       "doc_order": 29,
-      "list_id": "2492ae3fe4daa870",
+      "list_id": "1e74b5d0f1e94064",
       "list_style": "unordered",
       "parent_chunk_id": "e23664ca2e6fc8b55ad1e8acd0d24b3eef231cb161ddaa37645509da618bfa4d",
       "parent_item_id": "d15f80e4e9bece85c9335c4604f4743c23ed356aa997c65abea99484a43eea76",
       "position": 2,
       "section_anchor": "decision-making-and-governance",
       "sibling_ids": [
-        "e691e684a46ffb037fafde4c6b421ee7afa0d8f7abba1113018198124bb2322c",
+        "3e73aca4c77114503cf131809ce2edfd5032ed5b65dfea2f00fde37105f5b0f7",
         "4fa95b53b85867e02fc753f9b874eca6fce8eea95f46e248afe8e67ac4bfe150",
         "ee2c6b4fd6ed42bfb521dd3fb462fe3823e16a4a3706c2531406a2c0b323bd2e"
       ],
@@ -5582,14 +5582,14 @@
       "breadcrumb_path": "Deciding on How to Use Your Money > Decision-Making and Governance",
       "depth": 1,
       "doc_order": 30,
-      "list_id": "2492ae3fe4daa870",
+      "list_id": "1e74b5d0f1e94064",
       "list_style": "unordered",
       "parent_chunk_id": "e23664ca2e6fc8b55ad1e8acd0d24b3eef231cb161ddaa37645509da618bfa4d",
       "parent_item_id": "d15f80e4e9bece85c9335c4604f4743c23ed356aa997c65abea99484a43eea76",
       "position": 3,
       "section_anchor": "decision-making-and-governance",
       "sibling_ids": [
-        "e691e684a46ffb037fafde4c6b421ee7afa0d8f7abba1113018198124bb2322c",
+        "3e73aca4c77114503cf131809ce2edfd5032ed5b65dfea2f00fde37105f5b0f7",
         "ea2cc69087d6ccced71237695c412be170236dfcfba936104fe38257602290c2",
         "ee2c6b4fd6ed42bfb521dd3fb462fe3823e16a4a3706c2531406a2c0b323bd2e"
       ],
@@ -5614,14 +5614,14 @@
       "breadcrumb_path": "Deciding on How to Use Your Money > Decision-Making and Governance",
       "depth": 1,
       "doc_order": 31,
-      "list_id": "2492ae3fe4daa870",
+      "list_id": "1e74b5d0f1e94064",
       "list_style": "unordered",
       "parent_chunk_id": "e23664ca2e6fc8b55ad1e8acd0d24b3eef231cb161ddaa37645509da618bfa4d",
       "parent_item_id": "d15f80e4e9bece85c9335c4604f4743c23ed356aa997c65abea99484a43eea76",
       "position": 4,
       "section_anchor": "decision-making-and-governance",
       "sibling_ids": [
-        "e691e684a46ffb037fafde4c6b421ee7afa0d8f7abba1113018198124bb2322c",
+        "3e73aca4c77114503cf131809ce2edfd5032ed5b65dfea2f00fde37105f5b0f7",
         "ea2cc69087d6ccced71237695c412be170236dfcfba936104fe38257602290c2",
         "4fa95b53b85867e02fc753f9b874eca6fce8eea95f46e248afe8e67ac4bfe150"
       ],
@@ -8427,29 +8427,29 @@
     "token_count": 49
   },
   {
-    "chunk_id": "2ac04b2566df0849c94fb156f71efbe7f546ead7d065ab73a061bbdcb620026e",
+    "chunk_id": "b4be3ab147dd1b087290ace6a5e950b733b4ae3138c0b934af1ca2ef04048e07",
     "chunk_type": "list_item",
-    "content": "# VAT in Europe and How It Works in OCE > Summary\nCollectives **must pay VAT** on all eligible purchases, whether national or cross-border.",
+    "content": "# VAT in Europe and How It Works in OSE > Summary\nCollectives **must pay VAT** on all eligible purchases, whether national or cross-border.",
     "line_start": null,
     "metadata": {
-      "breadcrumb_path": "VAT in Europe and How It Works in OCE > Summary",
+      "breadcrumb_path": "VAT in Europe and How It Works in OSE > Summary",
       "depth": 0,
       "doc_order": 4,
-      "list_id": "cb2dd5afc01ef3b7",
+      "list_id": "4493156c6b608aae",
       "list_style": "unordered",
-      "parent_chunk_id": "57d7cdfa85b1b4dffdcc839c1af735a2c3b2e1372f20d5afcde43dac87782390",
+      "parent_chunk_id": "c44a181a3e6f1a2d8d12e9a35c8b4f166c741d8b807ad78829579ac9d691dbab",
       "parent_item_id": null,
       "position": 1,
       "section_anchor": "summary",
       "sibling_ids": [
-        "b0181340723324d78f5d5fbf0efb477c9ec6d15a2f50b71a60ec434cd6ef8ac8",
-        "f79bcb6b595bdd6abbf1a1678dbfbaa32cadc4fa1f575aaabfc8f2aba435e4cd"
+        "8c4cdbdf01c7101ed2f4b9ad3121ac5410eb16ecb177eae139d70c11bb3ffd3f",
+        "f779fc04390ea3a9c5bfb50b3f1327e7c021ae8a8e97158908aa2706fbc30dcb"
       ],
       "sibling_previews": [
         "**Reverse charge rules do not…",
         "If an invoice omits VAT but y…"
       ],
-      "source_url": "https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-oce/",
+      "source_url": "https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-ose/",
       "total_siblings": 3
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
@@ -8457,29 +8457,29 @@
     "token_count": 32
   },
   {
-    "chunk_id": "b0181340723324d78f5d5fbf0efb477c9ec6d15a2f50b71a60ec434cd6ef8ac8",
+    "chunk_id": "8c4cdbdf01c7101ed2f4b9ad3121ac5410eb16ecb177eae139d70c11bb3ffd3f",
     "chunk_type": "list_item",
-    "content": "# VAT in Europe and How It Works in OCE > Summary\n**Reverse charge rules do not apply**.",
+    "content": "# VAT in Europe and How It Works in OSE > Summary\n**Reverse charge rules do not apply**.",
     "line_start": null,
     "metadata": {
-      "breadcrumb_path": "VAT in Europe and How It Works in OCE > Summary",
+      "breadcrumb_path": "VAT in Europe and How It Works in OSE > Summary",
       "depth": 0,
       "doc_order": 5,
-      "list_id": "cb2dd5afc01ef3b7",
+      "list_id": "4493156c6b608aae",
       "list_style": "unordered",
-      "parent_chunk_id": "57d7cdfa85b1b4dffdcc839c1af735a2c3b2e1372f20d5afcde43dac87782390",
+      "parent_chunk_id": "c44a181a3e6f1a2d8d12e9a35c8b4f166c741d8b807ad78829579ac9d691dbab",
       "parent_item_id": null,
       "position": 2,
       "section_anchor": "summary",
       "sibling_ids": [
-        "2ac04b2566df0849c94fb156f71efbe7f546ead7d065ab73a061bbdcb620026e",
-        "f79bcb6b595bdd6abbf1a1678dbfbaa32cadc4fa1f575aaabfc8f2aba435e4cd"
+        "b4be3ab147dd1b087290ace6a5e950b733b4ae3138c0b934af1ca2ef04048e07",
+        "f779fc04390ea3a9c5bfb50b3f1327e7c021ae8a8e97158908aa2706fbc30dcb"
       ],
       "sibling_previews": [
         "Collectives **must pay VAT** …",
         "If an invoice omits VAT but y…"
       ],
-      "source_url": "https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-oce/",
+      "source_url": "https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-ose/",
       "total_siblings": 3
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
@@ -8487,29 +8487,29 @@
     "token_count": 23
   },
   {
-    "chunk_id": "f79bcb6b595bdd6abbf1a1678dbfbaa32cadc4fa1f575aaabfc8f2aba435e4cd",
+    "chunk_id": "f779fc04390ea3a9c5bfb50b3f1327e7c021ae8a8e97158908aa2706fbc30dcb",
     "chunk_type": "list_item",
-    "content": "# VAT in Europe and How It Works in OCE > Summary\nIf an invoice omits VAT but you are not VAT-registered, ask the vendor to correct it — or justify the exemption clearly.",
+    "content": "# VAT in Europe and How It Works in OSE > Summary\nIf an invoice omits VAT but you are not VAT-registered, ask the vendor to correct it — or justify the exemption clearly.",
     "line_start": null,
     "metadata": {
-      "breadcrumb_path": "VAT in Europe and How It Works in OCE > Summary",
+      "breadcrumb_path": "VAT in Europe and How It Works in OSE > Summary",
       "depth": 0,
       "doc_order": 6,
-      "list_id": "cb2dd5afc01ef3b7",
+      "list_id": "4493156c6b608aae",
       "list_style": "unordered",
-      "parent_chunk_id": "57d7cdfa85b1b4dffdcc839c1af735a2c3b2e1372f20d5afcde43dac87782390",
+      "parent_chunk_id": "c44a181a3e6f1a2d8d12e9a35c8b4f166c741d8b807ad78829579ac9d691dbab",
       "parent_item_id": null,
       "position": 3,
       "section_anchor": "summary",
       "sibling_ids": [
-        "2ac04b2566df0849c94fb156f71efbe7f546ead7d065ab73a061bbdcb620026e",
-        "b0181340723324d78f5d5fbf0efb477c9ec6d15a2f50b71a60ec434cd6ef8ac8"
+        "b4be3ab147dd1b087290ace6a5e950b733b4ae3138c0b934af1ca2ef04048e07",
+        "8c4cdbdf01c7101ed2f4b9ad3121ac5410eb16ecb177eae139d70c11bb3ffd3f"
       ],
       "sibling_previews": [
         "Collectives **must pay VAT** …",
         "**Reverse charge rules do not…"
       ],
-      "source_url": "https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-oce/",
+      "source_url": "https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-ose/",
       "total_siblings": 3
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
@@ -8645,15 +8645,15 @@
     "token_count": 37
   },
   {
-    "chunk_id": "24b9190f37585b9eb5623bb6a567cb1f1d2909819ab53b690eec5d66faddfc0b",
+    "chunk_id": "4e02389d5a17eca0012261e3a69217e8df0398a130b0af915feca42661d7f208",
     "chunk_type": "list_item",
-    "content": "# Applying for Grants > Initial Steps\n1. **Contact OSE early**\n\n   Email <oce@opencollective.com> to let us know about the grant opportunity. We'll help assess whether it's compatible with fiscal hosting through OSE.",
+    "content": "# Applying for Grants > Initial Steps\n1. **Contact OSE early**\n\n   Email <home@opensourceeurope.org> to let us know about the grant opportunity. We'll help assess whether it's compatible with fiscal hosting through OSE.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Applying for Grants > Initial Steps",
       "depth": 0,
       "doc_order": 8,
-      "list_id": "d7e66e022cf686f5",
+      "list_id": "c3dc7b6ae1850018",
       "list_style": "ordered",
       "parent_chunk_id": "da593b70ab87d47ce8cde1afac255068894889f32cf6fbc0c5bf1816e44495cf",
       "parent_item_id": null,
@@ -8672,7 +8672,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 51
+    "token_count": 50
   },
   {
     "chunk_id": "890602de9aad0df1a5b13c01a18d966e79cb125d75995c993323db4c8cb00503",
@@ -8683,14 +8683,14 @@
       "breadcrumb_path": "Applying for Grants > Initial Steps",
       "depth": 0,
       "doc_order": 9,
-      "list_id": "d7e66e022cf686f5",
+      "list_id": "c3dc7b6ae1850018",
       "list_style": "ordered",
       "parent_chunk_id": "da593b70ab87d47ce8cde1afac255068894889f32cf6fbc0c5bf1816e44495cf",
       "parent_item_id": null,
       "position": 2,
       "section_anchor": "initial-steps",
       "sibling_ids": [
-        "24b9190f37585b9eb5623bb6a567cb1f1d2909819ab53b690eec5d66faddfc0b",
+        "4e02389d5a17eca0012261e3a69217e8df0398a130b0af915feca42661d7f208",
         "f978a5f4a71c29793fae0127229bee884626254bd96d21b0f1e2643fa47690b6"
       ],
       "sibling_previews": [
@@ -8713,14 +8713,14 @@
       "breadcrumb_path": "Applying for Grants > Initial Steps",
       "depth": 0,
       "doc_order": 10,
-      "list_id": "d7e66e022cf686f5",
+      "list_id": "c3dc7b6ae1850018",
       "list_style": "ordered",
       "parent_chunk_id": "da593b70ab87d47ce8cde1afac255068894889f32cf6fbc0c5bf1816e44495cf",
       "parent_item_id": null,
       "position": 3,
       "section_anchor": "initial-steps",
       "sibling_ids": [
-        "24b9190f37585b9eb5623bb6a567cb1f1d2909819ab53b690eec5d66faddfc0b",
+        "4e02389d5a17eca0012261e3a69217e8df0398a130b0af915feca42661d7f208",
         "890602de9aad0df1a5b13c01a18d966e79cb125d75995c993323db4c8cb00503"
       ],
       "sibling_previews": [
@@ -8735,15 +8735,15 @@
     "token_count": 65
   },
   {
-    "chunk_id": "d4aca2147708783eac0e011f91bc6cce5690d0d7e2fc9c5a32d19eb8fe402c0a",
+    "chunk_id": "2c2345bbb6c78c9dccae0062b32ca294ce8644c367f1952be170175536304917",
     "chunk_type": "list_item",
-    "content": "# Applying for Grants > Grant Agreements & Receiving Funds\n1. **Grant Agreement**\n\n   The funder will provide a grant agreement. This must be signed by the confirmed recipient entity.\\\n   Please share the agreement with us via <oce@opencollective.com>, or have the funder reach out to us directly.",
+    "content": "# Applying for Grants > Grant Agreements & Receiving Funds\n1. **Grant Agreement**\n\n   The funder will provide a grant agreement. This must be signed by the confirmed recipient entity.\\\n   Please share the agreement with us via <home@opensourceeurope.org>, or have the funder reach out to us directly.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Applying for Grants > Grant Agreements & Receiving Funds",
       "depth": 0,
       "doc_order": 11,
-      "list_id": "200b9bd796e9141e",
+      "list_id": "454fc5a2691cd6e5",
       "list_style": "ordered",
       "parent_chunk_id": "da593b70ab87d47ce8cde1afac255068894889f32cf6fbc0c5bf1816e44495cf",
       "parent_item_id": null,
@@ -8764,7 +8764,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 68
+    "token_count": 67
   },
   {
     "chunk_id": "31eef3e4c5999d229e90c87ee9297540ae1e2d1360cf5e3e76771d1da986a4e7",
@@ -8775,14 +8775,14 @@
       "breadcrumb_path": "Applying for Grants > Grant Agreements & Receiving Funds",
       "depth": 0,
       "doc_order": 12,
-      "list_id": "200b9bd796e9141e",
+      "list_id": "454fc5a2691cd6e5",
       "list_style": "ordered",
       "parent_chunk_id": "da593b70ab87d47ce8cde1afac255068894889f32cf6fbc0c5bf1816e44495cf",
       "parent_item_id": null,
       "position": 2,
       "section_anchor": "grant-agreements-receiving-funds",
       "sibling_ids": [
-        "d4aca2147708783eac0e011f91bc6cce5690d0d7e2fc9c5a32d19eb8fe402c0a",
+        "2c2345bbb6c78c9dccae0062b32ca294ce8644c367f1952be170175536304917",
         "24054bbda990ee43bcf071bd13513e2490e2dd040ac09a582138d17e9b4fd9e4",
         "dcee284d6ab36e9722c211523c7549d1abc109172eed66fe3051cb7dfc7a26ad"
       ],
@@ -8807,14 +8807,14 @@
       "breadcrumb_path": "Applying for Grants > Grant Agreements & Receiving Funds",
       "depth": 0,
       "doc_order": 13,
-      "list_id": "200b9bd796e9141e",
+      "list_id": "454fc5a2691cd6e5",
       "list_style": "ordered",
       "parent_chunk_id": "da593b70ab87d47ce8cde1afac255068894889f32cf6fbc0c5bf1816e44495cf",
       "parent_item_id": null,
       "position": 3,
       "section_anchor": "grant-agreements-receiving-funds",
       "sibling_ids": [
-        "d4aca2147708783eac0e011f91bc6cce5690d0d7e2fc9c5a32d19eb8fe402c0a",
+        "2c2345bbb6c78c9dccae0062b32ca294ce8644c367f1952be170175536304917",
         "31eef3e4c5999d229e90c87ee9297540ae1e2d1360cf5e3e76771d1da986a4e7",
         "dcee284d6ab36e9722c211523c7549d1abc109172eed66fe3051cb7dfc7a26ad"
       ],
@@ -8839,14 +8839,14 @@
       "breadcrumb_path": "Applying for Grants > Grant Agreements & Receiving Funds",
       "depth": 0,
       "doc_order": 14,
-      "list_id": "200b9bd796e9141e",
+      "list_id": "454fc5a2691cd6e5",
       "list_style": "ordered",
       "parent_chunk_id": "da593b70ab87d47ce8cde1afac255068894889f32cf6fbc0c5bf1816e44495cf",
       "parent_item_id": null,
       "position": 4,
       "section_anchor": "grant-agreements-receiving-funds",
       "sibling_ids": [
-        "d4aca2147708783eac0e011f91bc6cce5690d0d7e2fc9c5a32d19eb8fe402c0a",
+        "2c2345bbb6c78c9dccae0062b32ca294ce8644c367f1952be170175536304917",
         "31eef3e4c5999d229e90c87ee9297540ae1e2d1360cf5e3e76771d1da986a4e7",
         "24054bbda990ee43bcf071bd13513e2490e2dd040ac09a582138d17e9b4fd9e4"
       ],
@@ -9324,24 +9324,24 @@
     "token_count": 38
   },
   {
-    "chunk_id": "1fe0ddccce1d5faca62d8ee04f7fcdabffda445e66e01a352f3819b45f59e879",
+    "chunk_id": "5852b698d1ec0774e47cb125deb5f4c2e4afd8ee1e7c92af3fea2262ef166aa5",
     "chunk_type": "list_item",
-    "content": "# Refunds > How to Request a Refund\nContact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <oce@opencollective.com>. A request does not guarantee a refund. Include the following details:\n**URL of the donation** (e.g., `https://opencollective.com/europe/contributions/528520`)",
+    "content": "# Refunds > How to Request a Refund\nContact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <home@opensourceeurope.org>. A request does not guarantee a refund. Include the following details:\n**URL of the donation** (e.g., `https://opencollective.com/europe/contributions/528520`)",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Refunds > How to Request a Refund",
       "depth": 0,
       "doc_order": 7,
-      "list_caption": "Contact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <oce@opencollective.com>. A request does not guarantee a refund. Include the following details:",
+      "list_caption": "Contact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <home@opensourceeurope.org>. A request does not guarantee a refund. Include the following details:",
       "list_id": "26a8feb8cebc5327",
       "list_style": "unordered",
-      "parent_chunk_id": "d085840f66993d112d95abc8047aef3363844747dd1d50f99d74b0200b7d8b90",
+      "parent_chunk_id": "09e1e09cf53a184038e648cb94be600a9faf52cd6671e56f8028136dff0a0c3c",
       "parent_item_id": null,
       "position": 1,
       "section_anchor": "how-to-request-a-refund",
       "sibling_ids": [
-        "45730c99b4facf88235196406c4c98264bc649b7877202a975032c903ffb38ab",
-        "3b495cbc20fc95071be1d85691f01c8d422d53fc42f50ff2fc10a32c01a4a5ec"
+        "09a807418b687787b401e2c3b56290ce1923c32871877efb2abc42455220b5dc",
+        "14b1c26446dcc58a1785a35c9f34b5ed4d3df323920d081ee6947bb3f5ec5867"
       ],
       "sibling_previews": [
         "**Date and amount** of the tr…",
@@ -9352,27 +9352,27 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 86
+    "token_count": 85
   },
   {
-    "chunk_id": "45730c99b4facf88235196406c4c98264bc649b7877202a975032c903ffb38ab",
+    "chunk_id": "09a807418b687787b401e2c3b56290ce1923c32871877efb2abc42455220b5dc",
     "chunk_type": "list_item",
-    "content": "# Refunds > How to Request a Refund\nContact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <oce@opencollective.com>. A request does not guarantee a refund. Include the following details:\n**Date and amount** of the transaction",
+    "content": "# Refunds > How to Request a Refund\nContact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <home@opensourceeurope.org>. A request does not guarantee a refund. Include the following details:\n**Date and amount** of the transaction",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Refunds > How to Request a Refund",
       "depth": 0,
       "doc_order": 8,
-      "list_caption": "Contact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <oce@opencollective.com>. A request does not guarantee a refund. Include the following details:",
+      "list_caption": "Contact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <home@opensourceeurope.org>. A request does not guarantee a refund. Include the following details:",
       "list_id": "26a8feb8cebc5327",
       "list_style": "unordered",
-      "parent_chunk_id": "d085840f66993d112d95abc8047aef3363844747dd1d50f99d74b0200b7d8b90",
+      "parent_chunk_id": "09e1e09cf53a184038e648cb94be600a9faf52cd6671e56f8028136dff0a0c3c",
       "parent_item_id": null,
       "position": 2,
       "section_anchor": "how-to-request-a-refund",
       "sibling_ids": [
-        "1fe0ddccce1d5faca62d8ee04f7fcdabffda445e66e01a352f3819b45f59e879",
-        "3b495cbc20fc95071be1d85691f01c8d422d53fc42f50ff2fc10a32c01a4a5ec"
+        "5852b698d1ec0774e47cb125deb5f4c2e4afd8ee1e7c92af3fea2262ef166aa5",
+        "14b1c26446dcc58a1785a35c9f34b5ed4d3df323920d081ee6947bb3f5ec5867"
       ],
       "sibling_previews": [
         "**URL of the donation** (e.g.…",
@@ -9383,27 +9383,27 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 67
+    "token_count": 66
   },
   {
-    "chunk_id": "3b495cbc20fc95071be1d85691f01c8d422d53fc42f50ff2fc10a32c01a4a5ec",
+    "chunk_id": "14b1c26446dcc58a1785a35c9f34b5ed4d3df323920d081ee6947bb3f5ec5867",
     "chunk_type": "list_item",
-    "content": "# Refunds > How to Request a Refund\nContact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <oce@opencollective.com>. A request does not guarantee a refund. Include the following details:\n**Reason** for the refund request",
+    "content": "# Refunds > How to Request a Refund\nContact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <home@opensourceeurope.org>. A request does not guarantee a refund. Include the following details:\n**Reason** for the refund request",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Refunds > How to Request a Refund",
       "depth": 0,
       "doc_order": 9,
-      "list_caption": "Contact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <oce@opencollective.com>. A request does not guarantee a refund. Include the following details:",
+      "list_caption": "Contact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <home@opensourceeurope.org>. A request does not guarantee a refund. Include the following details:",
       "list_id": "26a8feb8cebc5327",
       "list_style": "unordered",
-      "parent_chunk_id": "d085840f66993d112d95abc8047aef3363844747dd1d50f99d74b0200b7d8b90",
+      "parent_chunk_id": "09e1e09cf53a184038e648cb94be600a9faf52cd6671e56f8028136dff0a0c3c",
       "parent_item_id": null,
       "position": 3,
       "section_anchor": "how-to-request-a-refund",
       "sibling_ids": [
-        "1fe0ddccce1d5faca62d8ee04f7fcdabffda445e66e01a352f3819b45f59e879",
-        "45730c99b4facf88235196406c4c98264bc649b7877202a975032c903ffb38ab"
+        "5852b698d1ec0774e47cb125deb5f4c2e4afd8ee1e7c92af3fea2262ef166aa5",
+        "09a807418b687787b401e2c3b56290ce1923c32871877efb2abc42455220b5dc"
       ],
       "sibling_previews": [
         "**URL of the donation** (e.g.…",
@@ -9414,7 +9414,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 66
+    "token_count": 65
   },
   {
     "chunk_id": "0b3997b1e753cfd393a5f0c1423adf09f2accf767d2aeb46dd8d8b60b185ae03",
@@ -9605,7 +9605,7 @@
       "breadcrumb_path": "Setting up GitHub Sponsors > First activation for a GitHub organisation",
       "depth": 0,
       "doc_order": 6,
-      "list_id": "7b9e7b8c2c2f4bf9",
+      "list_id": "376d82d22c7bc101",
       "list_style": "ordered",
       "parent_chunk_id": "caec32053ae899ee71315d9c4d341acd3007a5678173ec825928a8b653885398",
       "parent_item_id": null,
@@ -9613,7 +9613,7 @@
       "section_anchor": "first-activation-for-a-github-organisation",
       "sibling_ids": [
         "522cc7af19f10219355631919e28df33b1ba4a21d1aca4f58f02b7bef9155926",
-        "e19f84161780db1af356e64432a78a21564a0ad22b3a8d0cda05c86b0312942d",
+        "ad7b337c7d6bd25fde388da3117e1e46b49e9659467d96701896aea7fa3b7037",
         "0826ae9478cc255a3132199ccacfefab5a8b9cda5dcf21a4f1f4aab75f6aee79",
         "310e8f5f34537da63323cbade0a63e2d19ca8c62b2df8078521ba0bbb5ba2af1"
       ],
@@ -9639,7 +9639,7 @@
       "breadcrumb_path": "Setting up GitHub Sponsors > First activation for a GitHub organisation",
       "depth": 0,
       "doc_order": 7,
-      "list_id": "7b9e7b8c2c2f4bf9",
+      "list_id": "376d82d22c7bc101",
       "list_style": "ordered",
       "parent_chunk_id": "caec32053ae899ee71315d9c4d341acd3007a5678173ec825928a8b653885398",
       "parent_item_id": null,
@@ -9647,7 +9647,7 @@
       "section_anchor": "first-activation-for-a-github-organisation",
       "sibling_ids": [
         "49b9535b6b94ac11e1b9ead2df3b9bd43c8c148811efcdc0c016f62bc449c270",
-        "e19f84161780db1af356e64432a78a21564a0ad22b3a8d0cda05c86b0312942d",
+        "ad7b337c7d6bd25fde388da3117e1e46b49e9659467d96701896aea7fa3b7037",
         "0826ae9478cc255a3132199ccacfefab5a8b9cda5dcf21a4f1f4aab75f6aee79",
         "310e8f5f34537da63323cbade0a63e2d19ca8c62b2df8078521ba0bbb5ba2af1"
       ],
@@ -9665,15 +9665,15 @@
     "token_count": 43
   },
   {
-    "chunk_id": "e19f84161780db1af356e64432a78a21564a0ad22b3a8d0cda05c86b0312942d",
+    "chunk_id": "ad7b337c7d6bd25fde388da3117e1e46b49e9659467d96701896aea7fa3b7037",
     "chunk_type": "list_item",
-    "content": "# Setting up GitHub Sponsors > First activation for a GitHub organisation\n3. Select **This organization is using a fiscal host**, then select the host entry corresponding to OSE. If the label is unclear, contact OSE before continuing; the public GitHub guide may still use the earlier name Open Collective Europe.",
+    "content": "# Setting up GitHub Sponsors > First activation for a GitHub organisation\n3. Select **This organization is using a fiscal host**, then select the host entry corresponding to OSE. If the label is unclear, contact OSE before continuing. The public GitHub guide may still show an earlier name.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Setting up GitHub Sponsors > First activation for a GitHub organisation",
       "depth": 0,
       "doc_order": 8,
-      "list_id": "7b9e7b8c2c2f4bf9",
+      "list_id": "376d82d22c7bc101",
       "list_style": "ordered",
       "parent_chunk_id": "caec32053ae899ee71315d9c4d341acd3007a5678173ec825928a8b653885398",
       "parent_item_id": null,
@@ -9696,7 +9696,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 62
+    "token_count": 59
   },
   {
     "chunk_id": "0826ae9478cc255a3132199ccacfefab5a8b9cda5dcf21a4f1f4aab75f6aee79",
@@ -9707,7 +9707,7 @@
       "breadcrumb_path": "Setting up GitHub Sponsors > First activation for a GitHub organisation",
       "depth": 0,
       "doc_order": 9,
-      "list_id": "7b9e7b8c2c2f4bf9",
+      "list_id": "376d82d22c7bc101",
       "list_style": "ordered",
       "parent_chunk_id": "caec32053ae899ee71315d9c4d341acd3007a5678173ec825928a8b653885398",
       "parent_item_id": null,
@@ -9716,7 +9716,7 @@
       "sibling_ids": [
         "49b9535b6b94ac11e1b9ead2df3b9bd43c8c148811efcdc0c016f62bc449c270",
         "522cc7af19f10219355631919e28df33b1ba4a21d1aca4f58f02b7bef9155926",
-        "e19f84161780db1af356e64432a78a21564a0ad22b3a8d0cda05c86b0312942d",
+        "ad7b337c7d6bd25fde388da3117e1e46b49e9659467d96701896aea7fa3b7037",
         "310e8f5f34537da63323cbade0a63e2d19ca8c62b2df8078521ba0bbb5ba2af1"
       ],
       "sibling_previews": [
@@ -9741,7 +9741,7 @@
       "breadcrumb_path": "Setting up GitHub Sponsors > First activation for a GitHub organisation",
       "depth": 0,
       "doc_order": 10,
-      "list_id": "7b9e7b8c2c2f4bf9",
+      "list_id": "376d82d22c7bc101",
       "list_style": "ordered",
       "parent_chunk_id": "caec32053ae899ee71315d9c4d341acd3007a5678173ec825928a8b653885398",
       "parent_item_id": null,
@@ -9750,7 +9750,7 @@
       "sibling_ids": [
         "49b9535b6b94ac11e1b9ead2df3b9bd43c8c148811efcdc0c016f62bc449c270",
         "522cc7af19f10219355631919e28df33b1ba4a21d1aca4f58f02b7bef9155926",
-        "e19f84161780db1af356e64432a78a21564a0ad22b3a8d0cda05c86b0312942d",
+        "ad7b337c7d6bd25fde388da3117e1e46b49e9659467d96701896aea7fa3b7037",
         "0826ae9478cc255a3132199ccacfefab5a8b9cda5dcf21a4f1f4aab75f6aee79"
       ],
       "sibling_previews": [
@@ -10251,14 +10251,14 @@
       "breadcrumb_path": "Wire Transfer Instructions via Open Collective Platform > Troubleshooting",
       "depth": 0,
       "doc_order": 20,
-      "list_id": "fcda8a214199c743",
+      "list_id": "fc6bf1e6ddd080d7",
       "list_style": "unordered",
       "parent_chunk_id": "4339e9559769559a84a2e310267f863eb8cc1fc831f9fd22e5d0d2cf08b6c6b4",
       "parent_item_id": null,
       "position": 1,
       "section_anchor": "troubleshooting",
       "sibling_ids": [
-        "bf9429729b6b3a1ecc5590fa0ac35ef5531b5784962374815af90216fcfa9cc7"
+        "9a953b6a26384f83387c679b9886d20b8ec232cd154644df34522c07c3e64968"
       ],
       "sibling_previews": [
         "**Funds Not Reflected After S…"
@@ -10279,14 +10279,14 @@
       "breadcrumb_path": "Wire Transfer Instructions via Open Collective Platform > Troubleshooting",
       "depth": 1,
       "doc_order": 21,
-      "list_id": "eef06364354f9238",
+      "list_id": "cea686c4ad18a8be",
       "list_style": "unordered",
       "parent_chunk_id": "4339e9559769559a84a2e310267f863eb8cc1fc831f9fd22e5d0d2cf08b6c6b4",
       "parent_item_id": "8396d3d9c84bcabeca7175322ff2dbba3555b5a8a81772ca996deb3aea579381",
       "position": 1,
       "section_anchor": "troubleshooting",
       "sibling_ids": [
-        "d8dd271e5decaf4745213d1a5a7b1307471aa89088586de4a5664afda981a397"
+        "4c65ca53ad7556fb03847951d9706c5ec4b6fb94ba6ef9532db0b5391412213a"
       ],
       "sibling_previews": [
         "If not found, contact us at <…"
@@ -10299,15 +10299,15 @@
     "token_count": 29
   },
   {
-    "chunk_id": "d8dd271e5decaf4745213d1a5a7b1307471aa89088586de4a5664afda981a397",
+    "chunk_id": "4c65ca53ad7556fb03847951d9706c5ec4b6fb94ba6ef9532db0b5391412213a",
     "chunk_type": "list_item",
-    "content": "# Wire Transfer Instructions via Open Collective Platform > Troubleshooting\n**Didn't Receive the Instruction Email?**\nIf not found, contact us at <oce@opencollective.com>",
+    "content": "# Wire Transfer Instructions via Open Collective Platform > Troubleshooting\n**Didn't Receive the Instruction Email?**\nIf not found, contact us at <home@opensourceeurope.org>",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Wire Transfer Instructions via Open Collective Platform > Troubleshooting",
       "depth": 1,
       "doc_order": 22,
-      "list_id": "eef06364354f9238",
+      "list_id": "cea686c4ad18a8be",
       "list_style": "unordered",
       "parent_chunk_id": "4339e9559769559a84a2e310267f863eb8cc1fc831f9fd22e5d0d2cf08b6c6b4",
       "parent_item_id": "8396d3d9c84bcabeca7175322ff2dbba3555b5a8a81772ca996deb3aea579381",
@@ -10324,18 +10324,18 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 38
+    "token_count": 37
   },
   {
-    "chunk_id": "bf9429729b6b3a1ecc5590fa0ac35ef5531b5784962374815af90216fcfa9cc7",
+    "chunk_id": "9a953b6a26384f83387c679b9886d20b8ec232cd154644df34522c07c3e64968",
     "chunk_type": "list_item",
-    "content": "# Wire Transfer Instructions via Open Collective Platform > Troubleshooting\n**Funds Not Reflected After Seven Business Days from Sending?**\n\n  Send this information to <oce@opencollective.com> for assistance.",
+    "content": "# Wire Transfer Instructions via Open Collective Platform > Troubleshooting\n**Funds Not Reflected After Seven Business Days from Sending?**\n\n  Send this information to <home@opensourceeurope.org> for assistance.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Wire Transfer Instructions via Open Collective Platform > Troubleshooting",
       "depth": 0,
       "doc_order": 23,
-      "list_id": "fcda8a214199c743",
+      "list_id": "fc6bf1e6ddd080d7",
       "list_style": "unordered",
       "parent_chunk_id": "4339e9559769559a84a2e310267f863eb8cc1fc831f9fd22e5d0d2cf08b6c6b4",
       "parent_item_id": null,
@@ -10352,7 +10352,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 44
+    "token_count": 43
   },
   {
     "chunk_id": "24ddb763ba5fda39609c7c4c1b17a0317d7f04ddd936197b39eba9575296699a",
@@ -10363,10 +10363,10 @@
       "breadcrumb_path": "Wire Transfer Instructions via Open Collective Platform > Troubleshooting",
       "depth": 1,
       "doc_order": 24,
-      "list_id": "c826ffcde8f19ce0",
+      "list_id": "56d0e8821f407600",
       "list_style": "unordered",
       "parent_chunk_id": "4339e9559769559a84a2e310267f863eb8cc1fc831f9fd22e5d0d2cf08b6c6b4",
-      "parent_item_id": "bf9429729b6b3a1ecc5590fa0ac35ef5531b5784962374815af90216fcfa9cc7",
+      "parent_item_id": "9a953b6a26384f83387c679b9886d20b8ec232cd154644df34522c07c3e64968",
       "position": 1,
       "section_anchor": "troubleshooting",
       "sibling_ids": [
@@ -10391,10 +10391,10 @@
       "breadcrumb_path": "Wire Transfer Instructions via Open Collective Platform > Troubleshooting",
       "depth": 1,
       "doc_order": 25,
-      "list_id": "c826ffcde8f19ce0",
+      "list_id": "56d0e8821f407600",
       "list_style": "unordered",
       "parent_chunk_id": "4339e9559769559a84a2e310267f863eb8cc1fc831f9fd22e5d0d2cf08b6c6b4",
-      "parent_item_id": "bf9429729b6b3a1ecc5590fa0ac35ef5531b5784962374815af90216fcfa9cc7",
+      "parent_item_id": "9a953b6a26384f83387c679b9886d20b8ec232cd154644df34522c07c3e64968",
       "position": 2,
       "section_anchor": "troubleshooting",
       "sibling_ids": [
@@ -10419,7 +10419,7 @@
       "breadcrumb_path": "Wire Transfer Instructions via Open Collective Platform > Troubleshooting",
       "depth": 2,
       "doc_order": 26,
-      "list_id": "a6f18c154ced0cfc",
+      "list_id": "c47b5e0aca7c3509",
       "list_style": "unordered",
       "parent_chunk_id": "4339e9559769559a84a2e310267f863eb8cc1fc831f9fd22e5d0d2cf08b6c6b4",
       "parent_item_id": "61ea8e22651be2a0e002312f4f08b816694e7e8a01462cad1c325f6cbdec21c4",
@@ -10451,7 +10451,7 @@
       "breadcrumb_path": "Wire Transfer Instructions via Open Collective Platform > Troubleshooting",
       "depth": 2,
       "doc_order": 27,
-      "list_id": "a6f18c154ced0cfc",
+      "list_id": "c47b5e0aca7c3509",
       "list_style": "unordered",
       "parent_chunk_id": "4339e9559769559a84a2e310267f863eb8cc1fc831f9fd22e5d0d2cf08b6c6b4",
       "parent_item_id": "61ea8e22651be2a0e002312f4f08b816694e7e8a01462cad1c325f6cbdec21c4",
@@ -10483,7 +10483,7 @@
       "breadcrumb_path": "Wire Transfer Instructions via Open Collective Platform > Troubleshooting",
       "depth": 2,
       "doc_order": 28,
-      "list_id": "a6f18c154ced0cfc",
+      "list_id": "c47b5e0aca7c3509",
       "list_style": "unordered",
       "parent_chunk_id": "4339e9559769559a84a2e310267f863eb8cc1fc831f9fd22e5d0d2cf08b6c6b4",
       "parent_item_id": "61ea8e22651be2a0e002312f4f08b816694e7e8a01462cad1c325f6cbdec21c4",
@@ -10515,7 +10515,7 @@
       "breadcrumb_path": "Wire Transfer Instructions via Open Collective Platform > Troubleshooting",
       "depth": 2,
       "doc_order": 29,
-      "list_id": "a6f18c154ced0cfc",
+      "list_id": "c47b5e0aca7c3509",
       "list_style": "unordered",
       "parent_chunk_id": "4339e9559769559a84a2e310267f863eb8cc1fc831f9fd22e5d0d2cf08b6c6b4",
       "parent_item_id": "61ea8e22651be2a0e002312f4f08b816694e7e8a01462cad1c325f6cbdec21c4",
@@ -11362,7 +11362,7 @@
       "breadcrumb_path": "Open Source Europe documentation > Understand OSE > Get Started",
       "depth": 0,
       "doc_order": 30,
-      "list_id": "f5314d8d95737983",
+      "list_id": "eedb31dc6f78f7a5",
       "list_style": "unordered",
       "parent_chunk_id": "96a2486753e9c4bf803c21ea1fb17921a908b914d3910e5c9ac46a7b01045841",
       "parent_item_id": null,
@@ -11370,11 +11370,11 @@
       "section_anchor": "get-started",
       "sibling_ids": [
         "53911a0a3f25ff544d948862778527a32a98db977cc759c021846a6c9f3e1496",
-        "da53761dcb0723cca3dfb966eb0f795ba443550fea8ddd75586fe950cb3209aa"
+        "51e9816aa41bae7aa11772a5e8d677cd275d511608eb1a25c58d1825f858382d"
       ],
       "sibling_previews": [
         "[Join our Discord](https://di…",
-        "[Contact us](mailto:oce@openc…"
+        "[Contact us](mailto:home@open…"
       ],
       "source_url": "https://opensourceeurope.org/docs/",
       "total_siblings": 3
@@ -11392,7 +11392,7 @@
       "breadcrumb_path": "Open Source Europe documentation > Understand OSE > Get Started",
       "depth": 0,
       "doc_order": 31,
-      "list_id": "f5314d8d95737983",
+      "list_id": "eedb31dc6f78f7a5",
       "list_style": "unordered",
       "parent_chunk_id": "96a2486753e9c4bf803c21ea1fb17921a908b914d3910e5c9ac46a7b01045841",
       "parent_item_id": null,
@@ -11400,11 +11400,11 @@
       "section_anchor": "get-started",
       "sibling_ids": [
         "4a1371fa5f8b29380088394c92ba0b19b922c0c5fccff4af816b5d19f754ad90",
-        "da53761dcb0723cca3dfb966eb0f795ba443550fea8ddd75586fe950cb3209aa"
+        "51e9816aa41bae7aa11772a5e8d677cd275d511608eb1a25c58d1825f858382d"
       ],
       "sibling_previews": [
         "[Apply for hosting](https://o…",
-        "[Contact us](mailto:oce@openc…"
+        "[Contact us](mailto:home@open…"
       ],
       "source_url": "https://opensourceeurope.org/docs/",
       "total_siblings": 3
@@ -11414,15 +11414,15 @@
     "token_count": 30
   },
   {
-    "chunk_id": "da53761dcb0723cca3dfb966eb0f795ba443550fea8ddd75586fe950cb3209aa",
+    "chunk_id": "51e9816aa41bae7aa11772a5e8d677cd275d511608eb1a25c58d1825f858382d",
     "chunk_type": "list_item",
-    "content": "# Open Source Europe documentation > Understand OSE > Get Started\n[Contact us](mailto:oce@opencollective.com)",
+    "content": "# Open Source Europe documentation > Understand OSE > Get Started\n[Contact us](mailto:home@opensourceeurope.org)",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Open Source Europe documentation > Understand OSE > Get Started",
       "depth": 0,
       "doc_order": 32,
-      "list_id": "f5314d8d95737983",
+      "list_id": "eedb31dc6f78f7a5",
       "list_style": "unordered",
       "parent_chunk_id": "96a2486753e9c4bf803c21ea1fb17921a908b914d3910e5c9ac46a7b01045841",
       "parent_item_id": null,
@@ -11441,7 +11441,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 27
+    "token_count": 26
   },
   {
     "chunk_id": "f3a78319dbae25a1baaa627c28a18c34ed5d1db4a25f8a8af37285166480064f",
@@ -11710,24 +11710,24 @@
     "token_count": 24
   },
   {
-    "chunk_id": "8218cdae13ef62f2a42531ad229c58ad67703271d3823fc29176489af0c539f5",
+    "chunk_id": "ccb4adb3951b46d7cdf5aaeda3afaf0be7b138a073f8d8990862094a48ec90ee",
     "chunk_type": "list_item",
-    "content": "# Equivalency Determination Certificate > Preparing a grant application\nContact <oce@opencollective.com> early, with:\nThe funder's name and the project to be supported.",
+    "content": "# Equivalency Determination Certificate > Preparing a grant application\nContact <home@opensourceeurope.org> early, with:\nThe funder's name and the project to be supported.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Equivalency Determination Certificate > Preparing a grant application",
       "depth": 0,
       "doc_order": 3,
-      "list_caption": "Contact <oce@opencollective.com> early, with:",
+      "list_caption": "Contact <home@opensourceeurope.org> early, with:",
       "list_id": "420dd35ea3e1be26",
       "list_style": "unordered",
-      "parent_chunk_id": "f732cdcdfc82bca8580aa6243219a1bb4cfe6e70fccfba14e2155facfc2abfce",
+      "parent_chunk_id": "afa07f04f1e3e569bfed08139606ac723fc8501e7d261befc56a889e0375daf0",
       "parent_item_id": null,
       "position": 1,
       "section_anchor": "preparing-a-grant-application",
       "sibling_ids": [
-        "ececdb2d66798494be89a8546ed948cf1c9cceb1dbe951f013b891e0d3a3c071",
-        "ae70c098722997f501b9d45f5a045c9c94f691876d1da0c6e39e7c18ffc1fa4c"
+        "c92cb68deceb11b863c513cb57f7b7bd1cdd474e95f44c0f8e15a39003be16d7",
+        "c53ac26dee110e765bac50d0bd74eb53536d1a68d2f92e2fb98e5b69e3040e14"
       ],
       "sibling_previews": [
         "The proposed amount, purpose …",
@@ -11738,27 +11738,27 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 40
+    "token_count": 39
   },
   {
-    "chunk_id": "ececdb2d66798494be89a8546ed948cf1c9cceb1dbe951f013b891e0d3a3c071",
+    "chunk_id": "c92cb68deceb11b863c513cb57f7b7bd1cdd474e95f44c0f8e15a39003be16d7",
     "chunk_type": "list_item",
-    "content": "# Equivalency Determination Certificate > Preparing a grant application\nContact <oce@opencollective.com> early, with:\nThe proposed amount, purpose and application deadline.",
+    "content": "# Equivalency Determination Certificate > Preparing a grant application\nContact <home@opensourceeurope.org> early, with:\nThe proposed amount, purpose and application deadline.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Equivalency Determination Certificate > Preparing a grant application",
       "depth": 0,
       "doc_order": 4,
-      "list_caption": "Contact <oce@opencollective.com> early, with:",
+      "list_caption": "Contact <home@opensourceeurope.org> early, with:",
       "list_id": "420dd35ea3e1be26",
       "list_style": "unordered",
-      "parent_chunk_id": "f732cdcdfc82bca8580aa6243219a1bb4cfe6e70fccfba14e2155facfc2abfce",
+      "parent_chunk_id": "afa07f04f1e3e569bfed08139606ac723fc8501e7d261befc56a889e0375daf0",
       "parent_item_id": null,
       "position": 2,
       "section_anchor": "preparing-a-grant-application",
       "sibling_ids": [
-        "8218cdae13ef62f2a42531ad229c58ad67703271d3823fc29176489af0c539f5",
-        "ae70c098722997f501b9d45f5a045c9c94f691876d1da0c6e39e7c18ffc1fa4c"
+        "ccb4adb3951b46d7cdf5aaeda3afaf0be7b138a073f8d8990862094a48ec90ee",
+        "c53ac26dee110e765bac50d0bd74eb53536d1a68d2f92e2fb98e5b69e3040e14"
       ],
       "sibling_previews": [
         "The funder's name and the pro…",
@@ -11769,27 +11769,27 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 37
+    "token_count": 36
   },
   {
-    "chunk_id": "ae70c098722997f501b9d45f5a045c9c94f691876d1da0c6e39e7c18ffc1fa4c",
+    "chunk_id": "c53ac26dee110e765bac50d0bd74eb53536d1a68d2f92e2fb98e5b69e3040e14",
     "chunk_type": "list_item",
-    "content": "# Equivalency Determination Certificate > Preparing a grant application\nContact <oce@opencollective.com> early, with:\nAny eligibility requirements or draft grant agreement.",
+    "content": "# Equivalency Determination Certificate > Preparing a grant application\nContact <home@opensourceeurope.org> early, with:\nAny eligibility requirements or draft grant agreement.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Equivalency Determination Certificate > Preparing a grant application",
       "depth": 0,
       "doc_order": 5,
-      "list_caption": "Contact <oce@opencollective.com> early, with:",
+      "list_caption": "Contact <home@opensourceeurope.org> early, with:",
       "list_id": "420dd35ea3e1be26",
       "list_style": "unordered",
-      "parent_chunk_id": "f732cdcdfc82bca8580aa6243219a1bb4cfe6e70fccfba14e2155facfc2abfce",
+      "parent_chunk_id": "afa07f04f1e3e569bfed08139606ac723fc8501e7d261befc56a889e0375daf0",
       "parent_item_id": null,
       "position": 3,
       "section_anchor": "preparing-a-grant-application",
       "sibling_ids": [
-        "8218cdae13ef62f2a42531ad229c58ad67703271d3823fc29176489af0c539f5",
-        "ececdb2d66798494be89a8546ed948cf1c9cceb1dbe951f013b891e0d3a3c071"
+        "ccb4adb3951b46d7cdf5aaeda3afaf0be7b138a073f8d8990862094a48ec90ee",
+        "c92cb68deceb11b863c513cb57f7b7bd1cdd474e95f44c0f8e15a39003be16d7"
       ],
       "sibling_previews": [
         "The funder's name and the pro…",
@@ -11800,7 +11800,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 36
+    "token_count": 35
   },
   {
     "chunk_id": "ed01cdd4a3345acd32673f745bac85c0ea45bfb25ceeabd118035a9fda31d5b5",
@@ -11904,7 +11904,7 @@
       "breadcrumb_path": "What We Offer > Get Started",
       "depth": 0,
       "doc_order": 10,
-      "list_id": "500bcb63e119ddb5",
+      "list_id": "8ec2fbb40f6d4cb0",
       "list_style": "unordered",
       "parent_chunk_id": "dd4ee7ff684c2b8597725e75a5b283dcce5e117a9057e24fd9e678bd59600b57",
       "parent_item_id": null,
@@ -11912,11 +11912,11 @@
       "section_anchor": "get-started",
       "sibling_ids": [
         "9206b4ccfe7589dc2210e369788d79e8373bd23c395611ad10d3dbd10fd130ad",
-        "ab8894697136cd599aa6dfeb9c5e018f0ab3027552b475af8e8659ab0e47cd8b"
+        "d0eaa37821c04256dedc5b3a7dc349a435bb45d845bf6a2a508f05f23b27bbba"
       ],
       "sibling_previews": [
         "[Join our Discord](https://di…",
-        "[Contact the team](mailto:oce…"
+        "[Contact the team](mailto:hom…"
       ],
       "source_url": "https://opensourceeurope.org/docs/what-we-offer/",
       "total_siblings": 3
@@ -11934,7 +11934,7 @@
       "breadcrumb_path": "What We Offer > Get Started",
       "depth": 0,
       "doc_order": 11,
-      "list_id": "500bcb63e119ddb5",
+      "list_id": "8ec2fbb40f6d4cb0",
       "list_style": "unordered",
       "parent_chunk_id": "dd4ee7ff684c2b8597725e75a5b283dcce5e117a9057e24fd9e678bd59600b57",
       "parent_item_id": null,
@@ -11942,11 +11942,11 @@
       "section_anchor": "get-started",
       "sibling_ids": [
         "09c8acf54632727c52bcd981a53e75519dab4d215542eab2b4dc585b27263b8f",
-        "ab8894697136cd599aa6dfeb9c5e018f0ab3027552b475af8e8659ab0e47cd8b"
+        "d0eaa37821c04256dedc5b3a7dc349a435bb45d845bf6a2a508f05f23b27bbba"
       ],
       "sibling_previews": [
         "[Apply for hosting](https://o…",
-        "[Contact the team](mailto:oce…"
+        "[Contact the team](mailto:hom…"
       ],
       "source_url": "https://opensourceeurope.org/docs/what-we-offer/",
       "total_siblings": 3
@@ -11956,15 +11956,15 @@
     "token_count": 25
   },
   {
-    "chunk_id": "ab8894697136cd599aa6dfeb9c5e018f0ab3027552b475af8e8659ab0e47cd8b",
+    "chunk_id": "d0eaa37821c04256dedc5b3a7dc349a435bb45d845bf6a2a508f05f23b27bbba",
     "chunk_type": "list_item",
-    "content": "# What We Offer > Get Started\n[Contact the team](mailto:oce@opencollective.com)",
+    "content": "# What We Offer > Get Started\n[Contact the team](mailto:home@opensourceeurope.org)",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "What We Offer > Get Started",
       "depth": 0,
       "doc_order": 12,
-      "list_id": "500bcb63e119ddb5",
+      "list_id": "8ec2fbb40f6d4cb0",
       "list_style": "unordered",
       "parent_chunk_id": "dd4ee7ff684c2b8597725e75a5b283dcce5e117a9057e24fd9e678bd59600b57",
       "parent_item_id": null,
@@ -11983,7 +11983,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 23
+    "token_count": 22
   },
   {
     "chunk_id": "575871caf3e08cd7b9a688502d971fa3b1a8b966c4360e3b13a8cd4ff311d85e",
@@ -11996,7 +11996,7 @@
       "doc_order": 3,
       "list_id": "25a11e17b199bb21",
       "list_style": "unordered",
-      "parent_chunk_id": "dc04268d1820bd5ef684e15771d975874dc744aee0a432598769520ad62d3ddc",
+      "parent_chunk_id": "0292b764ac06dec24b761c14af3f29fb81869df9c808c8f844eb83ba0c55bfa0",
       "parent_item_id": null,
       "position": 1,
       "section_anchor": "choose-the-appropriate-donation-route",
@@ -12024,7 +12024,7 @@
       "doc_order": 4,
       "list_id": "25a11e17b199bb21",
       "list_style": "unordered",
-      "parent_chunk_id": "dc04268d1820bd5ef684e15771d975874dc744aee0a432598769520ad62d3ddc",
+      "parent_chunk_id": "0292b764ac06dec24b761c14af3f29fb81869df9c808c8f844eb83ba0c55bfa0",
       "parent_item_id": null,
       "position": 2,
       "section_anchor": "choose-the-appropriate-donation-route",
@@ -25880,7 +25880,7 @@
       "breadcrumb_path": "Community guidelines > Continuous Improvement",
       "doc_order": 17,
       "heading_path": "Community guidelines > Continuous Improvement",
-      "next_chunk_id": "f87d406349cbda91b865c131eef59cdc5d479d62906a4ae56772bf923e6b82d0",
+      "next_chunk_id": "191ce038c9f6068ece2053e2da177ef92d88052574103b65802ba1b78141dfdf",
       "parent_chunk_id": "5632e665bfd71b9e62c03a361d8725fdd5afeae430811430dffaab901c9dd48d",
       "position": 5,
       "prev_chunk_id": "b832337fe13a26abc8732f6c3950fc8030b88d47f789e5b903e3aa92af1573c4",
@@ -25892,9 +25892,9 @@
     "token_count": 35
   },
   {
-    "chunk_id": "f87d406349cbda91b865c131eef59cdc5d479d62906a4ae56772bf923e6b82d0",
+    "chunk_id": "191ce038c9f6068ece2053e2da177ef92d88052574103b65802ba1b78141dfdf",
     "chunk_type": "prose",
-    "content": "## Contact Information\n\nFor questions, concerns, or to report a violation of this Code of Conduct, please contact us at <oce@opencollective.com>.",
+    "content": "## Contact Information\n\nFor questions, concerns, or to report a violation of this Code of Conduct, please contact us at <home@opensourceeurope.org>.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Community guidelines > Contact Information",
@@ -25909,7 +25909,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 33
+    "token_count": 32
   },
   {
     "chunk_id": "e7940f583a9699072b8c3475a9db9e2a79edbd2168656d97ef230167de544f4d",
@@ -25939,7 +25939,7 @@
       "breadcrumb_path": "Contact Us > Learning & Reading",
       "doc_order": 7,
       "heading_path": "Contact Us > Choose the right contact > Learning & Reading",
-      "next_chunk_id": "f0f24704db26211b89925327d4df23471694802aa7e25a12b8aeeef59214f09d",
+      "next_chunk_id": "a3334f8857ec82c50cb025dac8df73fc3fcd0e0ade5003294690dcf510e6d701",
       "parent_chunk_id": null,
       "position": 2,
       "prev_chunk_id": "e7940f583a9699072b8c3475a9db9e2a79edbd2168656d97ef230167de544f4d",
@@ -25951,9 +25951,9 @@
     "token_count": 176
   },
   {
-    "chunk_id": "f0f24704db26211b89925327d4df23471694802aa7e25a12b8aeeef59214f09d",
+    "chunk_id": "a3334f8857ec82c50cb025dac8df73fc3fcd0e0ade5003294690dcf510e6d701",
     "chunk_type": "prose",
-    "content": "### Talking to a Person\n\n> **Note:** Our small but mighty team is here to help you Monday to Friday across multiple time zones. We aim to respond to general inquiries within seven business days. This is a target, not a guaranteed response time.\n\n💌 Email any OSE-specific questions to <oce@opencollective.com>\n\n🎟 Request platform support [here](https://opencollective.com/help)\n\n💬 Join our [Discord](https://discord.gg/Wkfjzkfn) to get in touch with the entire Open Collective community (& join in the #opensource channel)",
+    "content": "### Talking to a Person\n\n> **Note:** Our small but mighty team is here to help you Monday to Friday across multiple time zones. We aim to respond to general inquiries within seven business days. This is a target, not a guaranteed response time.\n\n💌 Email any OSE-specific questions to <home@opensourceeurope.org>\n\n🎟 Request platform support [here](https://opencollective.com/help)\n\n💬 Join our [Discord](https://discord.gg/Wkfjzkfn) to get in touch with the entire Open Collective community (& join in the #opensource channel)",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Contact Us > Talking to a Person",
@@ -25968,7 +25968,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 123
+    "token_count": 122
   },
   {
     "chunk_id": "def0483bff04c7ab9d7b482d4a25729b97a4b36c6048d2f7b4112dc62e2126af",
@@ -25979,10 +25979,10 @@
       "breadcrumb_path": "Contact Us > Reporting an Issue",
       "doc_order": 9,
       "heading_path": "Contact Us > Choose the right contact > Reporting an Issue",
-      "next_chunk_id": "ad2f66822b31574943c2af4de0172e16331b53509c46f8b4600ce9dbc396f226",
+      "next_chunk_id": "de19bf91bb86b1bbb3afbc6fcf124b842b6072538500f5bb1eaa53b56ccef9df",
       "parent_chunk_id": null,
       "position": 4,
-      "prev_chunk_id": "f0f24704db26211b89925327d4df23471694802aa7e25a12b8aeeef59214f09d",
+      "prev_chunk_id": "a3334f8857ec82c50cb025dac8df73fc3fcd0e0ade5003294690dcf510e6d701",
       "section_anchor": "reporting-an-issue",
       "source_url": "https://opensourceeurope.org/docs/about/contact-us/"
     },
@@ -25991,9 +25991,9 @@
     "token_count": 79
   },
   {
-    "chunk_id": "ad2f66822b31574943c2af4de0172e16331b53509c46f8b4600ce9dbc396f226",
+    "chunk_id": "de19bf91bb86b1bbb3afbc6fcf124b842b6072538500f5bb1eaa53b56ccef9df",
     "chunk_type": "prose",
-    "content": "## Expense follow-up and sensitive concerns\n\nUse comments on the expense for routine questions about a submitted expense. Contact OSE privately for sensitive information.\n\nFor suspected misuse of funds or a problem involving Collective administrators, contact the OSE team directly in private at <oce@opencollective.com>. You do not need to go through the administrators concerned.",
+    "content": "## Expense follow-up and sensitive concerns\n\nUse comments on the expense for routine questions about a submitted expense. Contact OSE privately for sensitive information.\n\nFor suspected misuse of funds or a problem involving Collective administrators, contact the OSE team directly in private at <home@opensourceeurope.org>. You do not need to go through the administrators concerned.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Contact Us > Expense follow-up and sensitive concerns",
@@ -26008,7 +26008,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 70
+    "token_count": 69
   },
   {
     "chunk_id": "eb93fbcd77d997d15b8419ce01aa5509867a97a7858856098685bd2e0108b5ea",
@@ -26022,7 +26022,7 @@
       "next_chunk_id": null,
       "parent_chunk_id": null,
       "position": 6,
-      "prev_chunk_id": "ad2f66822b31574943c2af4de0172e16331b53509c46f8b4600ce9dbc396f226",
+      "prev_chunk_id": "de19bf91bb86b1bbb3afbc6fcf124b842b6072538500f5bb1eaa53b56ccef9df",
       "section_anchor": "internal-conflicts",
       "source_url": "https://opensourceeurope.org/docs/about/contact-us/"
     },
@@ -26039,7 +26039,7 @@
       "breadcrumb_path": "Mission, Vision & Impact areas",
       "doc_order": 1,
       "heading_path": "Mission, Vision & Impact areas",
-      "next_chunk_id": "e4260af0ce49663d4f1884e2bb21dae4eae118f7cbfc19d51ffa89ef21758615",
+      "next_chunk_id": "f4646298287e0f6f29413d889a8b09000e0b2757f9a6c9f0894df3465e4a3cb1",
       "parent_chunk_id": null,
       "position": 1,
       "prev_chunk_id": null,
@@ -26050,9 +26050,9 @@
     "token_count": 14
   },
   {
-    "chunk_id": "e4260af0ce49663d4f1884e2bb21dae4eae118f7cbfc19d51ffa89ef21758615",
+    "chunk_id": "f4646298287e0f6f29413d889a8b09000e0b2757f9a6c9f0894df3465e4a3cb1",
     "chunk_type": "prose",
-    "content": "## Mission\n\nOpen Collective Europe has set out to achieve the sustainability of the social and solidarity economy as well as open source technologies. Our mission is to enable initiatives to raise and spend money transparently under a common umbrella nonprofit.\n\n*Open Collective is not a typical company. It is an ecosystem where a software company coexists with independent associations and foundations that we call 'hosts.' Open Collective Europe is blossoming as one of the first major fiscal hosts on the European continent. We host initiatives that share our values and work towards a better future. But what are those values? Our vision for a healthy and thriving world starts with resilience. Out of that central concern, we find six related areas where we want to make a difference.*",
+    "content": "## Mission\n\nOpen Source Europe has set out to achieve the sustainability of the social and solidarity economy as well as open source technologies. Our mission is to enable initiatives to raise and spend money transparently under a common umbrella nonprofit.\n\n*Open Collective is not a typical company. It is an ecosystem where a software company coexists with independent associations and foundations that we call 'hosts.' Open Source Europe is blossoming as one of the first major fiscal hosts on the European continent. We host initiatives that share our values and work towards a better future. But what are those values? Our vision for a healthy and thriving world starts with resilience. Out of that central concern, we find six related areas where we want to make a difference.*",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Mission, Vision & Impact areas > Mission",
@@ -26079,9 +26079,9 @@
       "doc_order": 3,
       "heading_path": "Mission, Vision & Impact areas > Mission > Resilient communities",
       "next_chunk_id": "79d1d54c98f5296bcafc165ba4d5fb2f55e7fde9beb182429c01c7e31b5cf3d4",
-      "parent_chunk_id": "e4260af0ce49663d4f1884e2bb21dae4eae118f7cbfc19d51ffa89ef21758615",
+      "parent_chunk_id": "f4646298287e0f6f29413d889a8b09000e0b2757f9a6c9f0894df3465e4a3cb1",
       "position": 3,
-      "prev_chunk_id": "e4260af0ce49663d4f1884e2bb21dae4eae118f7cbfc19d51ffa89ef21758615",
+      "prev_chunk_id": "f4646298287e0f6f29413d889a8b09000e0b2757f9a6c9f0894df3465e4a3cb1",
       "section_anchor": "resilient-communities",
       "source_url": "https://opensourceeurope.org/docs/about/mission-vision-and-impact-areas/"
     },
@@ -26099,7 +26099,7 @@
       "doc_order": 4,
       "heading_path": "Mission, Vision & Impact areas > Mission > Open innovation",
       "next_chunk_id": "b109e1aa22a33da0f5555199e1fe36be065998d31a902bbdc87829fec6bb3cb8",
-      "parent_chunk_id": "e4260af0ce49663d4f1884e2bb21dae4eae118f7cbfc19d51ffa89ef21758615",
+      "parent_chunk_id": "f4646298287e0f6f29413d889a8b09000e0b2757f9a6c9f0894df3465e4a3cb1",
       "position": 4,
       "prev_chunk_id": "c50d7a99d986c18bf59bd28d78a23dba318ef48082f5f57df278ae0abc877ac3",
       "section_anchor": "open-innovation",
@@ -26119,7 +26119,7 @@
       "doc_order": 5,
       "heading_path": "Mission, Vision & Impact areas > Mission > Commons stewardship",
       "next_chunk_id": "2b1fcf138686699fdc30882c2c45a2e9e8f751cb1bf092b430ec31cbb449f29b",
-      "parent_chunk_id": "e4260af0ce49663d4f1884e2bb21dae4eae118f7cbfc19d51ffa89ef21758615",
+      "parent_chunk_id": "f4646298287e0f6f29413d889a8b09000e0b2757f9a6c9f0894df3465e4a3cb1",
       "position": 5,
       "prev_chunk_id": "79d1d54c98f5296bcafc165ba4d5fb2f55e7fde9beb182429c01c7e31b5cf3d4",
       "section_anchor": "commons-stewardship",
@@ -26139,7 +26139,7 @@
       "doc_order": 6,
       "heading_path": "Mission, Vision & Impact areas > Mission > Fiscal hosting in Europe and beyond",
       "next_chunk_id": null,
-      "parent_chunk_id": "e4260af0ce49663d4f1884e2bb21dae4eae118f7cbfc19d51ffa89ef21758615",
+      "parent_chunk_id": "f4646298287e0f6f29413d889a8b09000e0b2757f9a6c9f0894df3465e4a3cb1",
       "position": 6,
       "prev_chunk_id": "b109e1aa22a33da0f5555199e1fe36be065998d31a902bbdc87829fec6bb3cb8",
       "section_anchor": "fiscal-hosting-in-europe-and-beyond",
@@ -26150,15 +26150,15 @@
     "token_count": 68
   },
   {
-    "chunk_id": "b546c1bfdcf8abcdf920321bc9dd83cf3ee3ef4a7d3d3306535534ae1dec22de",
+    "chunk_id": "c46c638de238b486718b03ed7a1bea4b181cfe42a9a7007d80f8d4368a140ca3",
     "chunk_type": "prose",
-    "content": "# Risk and Compliance aspects\n\nOpen Collective Europe: Grant Eligibility and Risk Assessment Policy",
+    "content": "# Risk and Compliance aspects\n\nOpen Source Europe: Grant Eligibility and Risk Assessment Policy",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Risk and Compliance aspects",
       "doc_order": 1,
       "heading_path": "Risk and Compliance aspects",
-      "next_chunk_id": "be2e8da5fc01097c36dbac5731fd9d59e3f6574d607df17a61f22c55e4019415",
+      "next_chunk_id": "36d031183f57c6b22240c38ef608a6c93e55e2d4db83c929f845e3480499678b",
       "parent_chunk_id": null,
       "position": 1,
       "prev_chunk_id": null,
@@ -26169,24 +26169,24 @@
     "token_count": 17
   },
   {
-    "chunk_id": "be2e8da5fc01097c36dbac5731fd9d59e3f6574d607df17a61f22c55e4019415",
+    "chunk_id": "36d031183f57c6b22240c38ef608a6c93e55e2d4db83c929f845e3480499678b",
     "chunk_type": "prose",
-    "content": "## Introduction\n\nOpen Collective Europe (OCE) is committed to supporting initiatives that promote positive social change and a more just world. This policy outlines the criteria used to assess the eligibility of grant proposals and identify potential compliance risks associated with terrorism/extremism financing.\n\n***",
+    "content": "## Introduction\n\nOpen Source Europe (OSE) is committed to supporting initiatives that promote positive social change and a more just world. This policy outlines the criteria used to assess the eligibility of grant proposals and identify potential compliance risks associated with terrorism/extremism financing.\n\n***",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Risk and Compliance aspects > Introduction",
       "doc_order": 2,
       "heading_path": "Risk and Compliance aspects > Introduction",
       "next_chunk_id": "f9635ed4559b07122ae35f7bf4491826c740e0f3de8395c583c6044c4194fbe1",
-      "parent_chunk_id": "b546c1bfdcf8abcdf920321bc9dd83cf3ee3ef4a7d3d3306535534ae1dec22de",
+      "parent_chunk_id": "c46c638de238b486718b03ed7a1bea4b181cfe42a9a7007d80f8d4368a140ca3",
       "position": 2,
-      "prev_chunk_id": "b546c1bfdcf8abcdf920321bc9dd83cf3ee3ef4a7d3d3306535534ae1dec22de",
+      "prev_chunk_id": "c46c638de238b486718b03ed7a1bea4b181cfe42a9a7007d80f8d4368a140ca3",
       "section_anchor": "introduction",
       "source_url": "https://opensourceeurope.org/docs/about/risk-and-compliance-aspects/"
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 53
+    "token_count": 52
   },
   {
     "chunk_id": "f9635ed4559b07122ae35f7bf4491826c740e0f3de8395c583c6044c4194fbe1",
@@ -26198,9 +26198,9 @@
       "doc_order": 3,
       "heading_path": "Risk and Compliance aspects > Grant Eligibility Criteria",
       "next_chunk_id": "1bbf71de0dc6610c3cc47d96a11e520c6c5e6b0851b26450534a286c32787e46",
-      "parent_chunk_id": "b546c1bfdcf8abcdf920321bc9dd83cf3ee3ef4a7d3d3306535534ae1dec22de",
+      "parent_chunk_id": "c46c638de238b486718b03ed7a1bea4b181cfe42a9a7007d80f8d4368a140ca3",
       "position": 3,
-      "prev_chunk_id": "be2e8da5fc01097c36dbac5731fd9d59e3f6574d607df17a61f22c55e4019415",
+      "prev_chunk_id": "36d031183f57c6b22240c38ef608a6c93e55e2d4db83c929f845e3480499678b",
       "section_anchor": "grant-eligibility-criteria",
       "source_url": "https://opensourceeurope.org/docs/about/risk-and-compliance-aspects/"
     },
@@ -26218,7 +26218,7 @@
       "doc_order": 7,
       "heading_path": "Risk and Compliance aspects > Compliance Risk Assessment",
       "next_chunk_id": "bca568a35db6b46e42deea3ad7515579bff215e8a4315313dadb9fbfebc78716",
-      "parent_chunk_id": "b546c1bfdcf8abcdf920321bc9dd83cf3ee3ef4a7d3d3306535534ae1dec22de",
+      "parent_chunk_id": "c46c638de238b486718b03ed7a1bea4b181cfe42a9a7007d80f8d4368a140ca3",
       "position": 4,
       "prev_chunk_id": "f9635ed4559b07122ae35f7bf4491826c740e0f3de8395c583c6044c4194fbe1",
       "section_anchor": "compliance-risk-assessment",
@@ -26238,7 +26238,7 @@
       "doc_order": 12,
       "heading_path": "Risk and Compliance aspects > Contextual Considerations",
       "next_chunk_id": "df896fff861aa464efcfbea6f962dfe6d06ce84ba3dbc4c4b8914b3e1bf47a74",
-      "parent_chunk_id": "b546c1bfdcf8abcdf920321bc9dd83cf3ee3ef4a7d3d3306535534ae1dec22de",
+      "parent_chunk_id": "c46c638de238b486718b03ed7a1bea4b181cfe42a9a7007d80f8d4368a140ca3",
       "position": 5,
       "prev_chunk_id": "1bbf71de0dc6610c3cc47d96a11e520c6c5e6b0851b26450534a286c32787e46",
       "section_anchor": "contextual-considerations",
@@ -26258,7 +26258,7 @@
       "doc_order": 13,
       "heading_path": "Risk and Compliance aspects > Information Sources",
       "next_chunk_id": "c76ac52b4b9e5782af92724c0a5171b31855963ae35ebc4273c858e5a6d2c8bf",
-      "parent_chunk_id": "b546c1bfdcf8abcdf920321bc9dd83cf3ee3ef4a7d3d3306535534ae1dec22de",
+      "parent_chunk_id": "c46c638de238b486718b03ed7a1bea4b181cfe42a9a7007d80f8d4368a140ca3",
       "position": 6,
       "prev_chunk_id": "bca568a35db6b46e42deea3ad7515579bff215e8a4315313dadb9fbfebc78716",
       "section_anchor": "information-sources",
@@ -26278,7 +26278,7 @@
       "doc_order": 18,
       "heading_path": "Risk and Compliance aspects > Limited Veto Power",
       "next_chunk_id": "3c69eb0d288f65668a358690ef59eeed16d858f554b486378bde9b4629015864",
-      "parent_chunk_id": "b546c1bfdcf8abcdf920321bc9dd83cf3ee3ef4a7d3d3306535534ae1dec22de",
+      "parent_chunk_id": "c46c638de238b486718b03ed7a1bea4b181cfe42a9a7007d80f8d4368a140ca3",
       "position": 7,
       "prev_chunk_id": "df896fff861aa464efcfbea6f962dfe6d06ce84ba3dbc4c4b8914b3e1bf47a74",
       "section_anchor": "limited-veto-power",
@@ -26298,7 +26298,7 @@
       "doc_order": 19,
       "heading_path": "Risk and Compliance aspects > Appeals Process",
       "next_chunk_id": "4a21d7a7e97c44ea2965314ac93a919cb61b4013e073640b4ab357d8eafa5dda",
-      "parent_chunk_id": "b546c1bfdcf8abcdf920321bc9dd83cf3ee3ef4a7d3d3306535534ae1dec22de",
+      "parent_chunk_id": "c46c638de238b486718b03ed7a1bea4b181cfe42a9a7007d80f8d4368a140ca3",
       "position": 8,
       "prev_chunk_id": "c76ac52b4b9e5782af92724c0a5171b31855963ae35ebc4273c858e5a6d2c8bf",
       "section_anchor": "appeals-process",
@@ -26318,7 +26318,7 @@
       "doc_order": 20,
       "heading_path": "Risk and Compliance aspects > Policy Review and Revision",
       "next_chunk_id": "64eab298e02b2bbd2686537d6db4d0851d62f9a7996ed090a538dff35eab1420",
-      "parent_chunk_id": "b546c1bfdcf8abcdf920321bc9dd83cf3ee3ef4a7d3d3306535534ae1dec22de",
+      "parent_chunk_id": "c46c638de238b486718b03ed7a1bea4b181cfe42a9a7007d80f8d4368a140ca3",
       "position": 9,
       "prev_chunk_id": "3c69eb0d288f65668a358690ef59eeed16d858f554b486378bde9b4629015864",
       "section_anchor": "policy-review-and-revision",
@@ -26337,8 +26337,8 @@
       "breadcrumb_path": "Risk and Compliance aspects > Conclusion",
       "doc_order": 21,
       "heading_path": "Risk and Compliance aspects > Conclusion",
-      "next_chunk_id": "68d4323f720c850f36d84b891750cf114c6c10a5c8c4526d7a0ff6482d45e569",
-      "parent_chunk_id": "b546c1bfdcf8abcdf920321bc9dd83cf3ee3ef4a7d3d3306535534ae1dec22de",
+      "next_chunk_id": "5d02204a926d52a6d30db7f9a183905724367f2eb802cda3e396cfe24bb5fd6d",
+      "parent_chunk_id": "c46c638de238b486718b03ed7a1bea4b181cfe42a9a7007d80f8d4368a140ca3",
       "position": 10,
       "prev_chunk_id": "4a21d7a7e97c44ea2965314ac93a919cb61b4013e073640b4ab357d8eafa5dda",
       "section_anchor": "conclusion",
@@ -26349,16 +26349,16 @@
     "token_count": 38
   },
   {
-    "chunk_id": "68d4323f720c850f36d84b891750cf114c6c10a5c8c4526d7a0ff6482d45e569",
+    "chunk_id": "5d02204a926d52a6d30db7f9a183905724367f2eb802cda3e396cfe24bb5fd6d",
     "chunk_type": "prose",
-    "content": "## Need Assistance?\n\nFor questions or further information regarding risk and compliance aspects, please contact us at <oce@opencollective.com>.",
+    "content": "## Need Assistance?\n\nFor questions or further information regarding risk and compliance aspects, please contact us at <home@opensourceeurope.org>.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Risk and Compliance aspects > Need Assistance?",
       "doc_order": 22,
       "heading_path": "Risk and Compliance aspects > Need Assistance?",
       "next_chunk_id": null,
-      "parent_chunk_id": "b546c1bfdcf8abcdf920321bc9dd83cf3ee3ef4a7d3d3306535534ae1dec22de",
+      "parent_chunk_id": "c46c638de238b486718b03ed7a1bea4b181cfe42a9a7007d80f8d4368a140ca3",
       "position": 11,
       "prev_chunk_id": "64eab298e02b2bbd2686537d6db4d0851d62f9a7996ed090a538dff35eab1420",
       "section_anchor": "need-assistance",
@@ -26366,12 +26366,12 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 28
+    "token_count": 27
   },
   {
-    "chunk_id": "7f3dce5ce90865f02b3cb04e2775a0a655606b024755bca47fa1aff6f23f844f",
+    "chunk_id": "c1ed1033dfd0e45d0610ceb8e03e1774d7f37841c0e855e9a6d2ab1b207cf8ed",
     "chunk_type": "prose",
-    "content": "## Introduction\n\nOpen Collective Europe (OCE) is committed to creating a safe and inclusive environment for all staff, volunteers, partners, and beneficiaries. This policy outlines our commitment to safeguarding and sets out procedures for reporting and responding to concerns.\n\n***",
+    "content": "## Introduction\n\nOpen Source Europe (OSE) is committed to creating a safe and inclusive environment for all staff, volunteers, partners, and beneficiaries. This policy outlines our commitment to safeguarding and sets out procedures for reporting and responding to concerns.\n\n***",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Safeguarding Policy > Introduction",
@@ -26386,7 +26386,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 50
+    "token_count": 49
   },
   {
     "chunk_id": "bc7dd8d4b49be3bee40ccfad8da3426e3f8d7942d8f9a1f442bdc18deee1b619",
@@ -26400,7 +26400,7 @@
       "next_chunk_id": "17c11529e9ccf2635819274ee733fad44cfe74c828b82410fe9278df7c54b7af",
       "parent_chunk_id": null,
       "position": 2,
-      "prev_chunk_id": "7f3dce5ce90865f02b3cb04e2775a0a655606b024755bca47fa1aff6f23f844f",
+      "prev_chunk_id": "c1ed1033dfd0e45d0610ceb8e03e1774d7f37841c0e855e9a6d2ab1b207cf8ed",
       "section_anchor": "what-is-safeguarding",
       "source_url": "https://opensourceeurope.org/docs/about/safeguarding-policy/"
     },
@@ -26596,7 +26596,7 @@
       "breadcrumb_path": "Safeguarding Policy > Review",
       "doc_order": 32,
       "heading_path": "Safeguarding Policy > Review",
-      "next_chunk_id": "7b2eaa5e29395e9cec7898375633fb79474b70fe18ac8acb09773ebdcfbc8311",
+      "next_chunk_id": "68ef66eac61b3ec135f7ebef833f344df6982dff9b88fe5013a992a10fc1c5e2",
       "parent_chunk_id": null,
       "position": 12,
       "prev_chunk_id": "d1b92817cbf328a662443f43bc372951ebf54b3dd303b83586e2b787a7be2791",
@@ -26608,9 +26608,9 @@
     "token_count": 16
   },
   {
-    "chunk_id": "7b2eaa5e29395e9cec7898375633fb79474b70fe18ac8acb09773ebdcfbc8311",
+    "chunk_id": "68ef66eac61b3ec135f7ebef833f344df6982dff9b88fe5013a992a10fc1c5e2",
     "chunk_type": "prose",
-    "content": "## Need Assistance?\n\nFor any questions about this policy or safeguarding in general, please contact the Safeguarding Lead at <oce@opencollective.com>.",
+    "content": "## Need Assistance?\n\nFor any questions about this policy or safeguarding in general, please contact the Safeguarding Lead at <home@opensourceeurope.org>.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Safeguarding Policy > Need Assistance?",
@@ -26625,7 +26625,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 33
+    "token_count": 32
   },
   {
     "chunk_id": "a0e415102c7078d8f9901ae8947f55d32dbeedbeee9c2ed5b353dca67da373bd",
@@ -26814,7 +26814,7 @@
       "breadcrumb_path": "Terminology > Event Attendee",
       "doc_order": 20,
       "heading_path": "Terminology > Non-Financial Contributors > Event Attendee",
-      "next_chunk_id": "dd0a6b8684092625889a46787f817b9f570e0397d5d05d6e70aaecbfcbece0cc",
+      "next_chunk_id": "c86de98b33a6d53bfab35e68b290da93e483049e2940cbc89240f1bea173f65c",
       "parent_chunk_id": "a0e415102c7078d8f9901ae8947f55d32dbeedbeee9c2ed5b353dca67da373bd",
       "position": 10,
       "prev_chunk_id": "4b785ef5779339a8fe3cc699b317da6e7fb27fa410a7dc39ed0b2fc0b72a578f",
@@ -26826,9 +26826,9 @@
     "token_count": 26
   },
   {
-    "chunk_id": "dd0a6b8684092625889a46787f817b9f570e0397d5d05d6e70aaecbfcbece0cc",
+    "chunk_id": "c86de98b33a6d53bfab35e68b290da93e483049e2940cbc89240f1bea173f65c",
     "chunk_type": "prose",
-    "content": "## Initiatives\n\nInitiatives are accounts for projects or groups hosted by Open Collective Europe. An initiative can be either a Collective or a Fund. During the application process, our team will assist in determining the appropriate account type for your project.",
+    "content": "## Initiatives\n\nInitiatives are accounts for projects or groups hosted by Open Source Europe. An initiative can be either a Collective or a Fund. During the application process, our team will assist in determining the appropriate account type for your project.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Terminology > Initiatives",
@@ -26855,9 +26855,9 @@
       "doc_order": 22,
       "heading_path": "Terminology > Initiatives > Collective",
       "next_chunk_id": "9d6dc26a6b7dec1a6c6ace006fab3a8bd344389a5e05e452ff5c9cb2faf8d9c1",
-      "parent_chunk_id": "dd0a6b8684092625889a46787f817b9f570e0397d5d05d6e70aaecbfcbece0cc",
+      "parent_chunk_id": "c86de98b33a6d53bfab35e68b290da93e483049e2940cbc89240f1bea173f65c",
       "position": 12,
-      "prev_chunk_id": "dd0a6b8684092625889a46787f817b9f570e0397d5d05d6e70aaecbfcbece0cc",
+      "prev_chunk_id": "c86de98b33a6d53bfab35e68b290da93e483049e2940cbc89240f1bea173f65c",
       "section_anchor": "collective",
       "source_url": "https://opensourceeurope.org/docs/about/terminology/"
     },
@@ -26933,7 +26933,7 @@
       "breadcrumb_path": "About Open Source Europe > How hosting works",
       "doc_order": 6,
       "heading_path": "About Open Source Europe > How hosting works",
-      "next_chunk_id": "74f620af8bd08dd46c3d573a0e921141bb28f0c7d0d32aafb6aa1da58faa2d10",
+      "next_chunk_id": "15e8dffb59f64614b95b7d0919ed6167ee651a9df444deb42113a4f5f00ca135",
       "parent_chunk_id": "60d85e94a3af3df61e4573849628fc23e04bff534b6f4bac89eabcc8c6318d04",
       "position": 3,
       "prev_chunk_id": "97ed0d48c150ae4ec11326b7a288aae0630e8c68cd5dfa77dda3c5ea60945c95",
@@ -26945,9 +26945,9 @@
     "token_count": 58
   },
   {
-    "chunk_id": "74f620af8bd08dd46c3d573a0e921141bb28f0c7d0d32aafb6aa1da58faa2d10",
+    "chunk_id": "15e8dffb59f64614b95b7d0919ed6167ee651a9df444deb42113a4f5f00ca135",
     "chunk_type": "prose",
-    "content": "***\n\n[Contact the team](mailto:oce@opencollective.com)\n\n***",
+    "content": "***\n\n[Contact the team](mailto:home@opensourceeurope.org)\n\n***",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "About Open Source Europe",
@@ -26961,7 +26961,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 17
+    "token_count": 16
   },
   {
     "chunk_id": "63c09e9b0ba06dffc1cac342b86f37fbdda420000ac7c580dd38088c04ff97ac",
@@ -26975,7 +26975,7 @@
       "next_chunk_id": null,
       "parent_chunk_id": "60d85e94a3af3df61e4573849628fc23e04bff534b6f4bac89eabcc8c6318d04",
       "position": 5,
-      "prev_chunk_id": "74f620af8bd08dd46c3d573a0e921141bb28f0c7d0d32aafb6aa1da58faa2d10",
+      "prev_chunk_id": "15e8dffb59f64614b95b7d0919ed6167ee651a9df444deb42113a4f5f00ca135",
       "section_anchor": "a-little-history",
       "source_url": "https://opensourceeurope.org/docs/about-open-source-europe/"
     },
@@ -27071,7 +27071,7 @@
       "breadcrumb_path": "Contributions FAQ > **Someone said they sent my collective money but I don’t see it in my account! Help?**",
       "doc_order": 5,
       "heading_path": "Contributions FAQ > **Someone said they sent my collective money but I don’t see it in my account! Help?**",
-      "next_chunk_id": "ea07f6f0c0372b0397eeadd6ae2ef2be0f8cd4641a460cf197b6dd09db84893f",
+      "next_chunk_id": "ee99e6d4e7eb6dcefbe146c573d7924eaf25b63dfd290ec0d8901f48b3e1c9a8",
       "parent_chunk_id": "cf29867747b001c457a0d5d9ba5ab8540f8147f6c1de314b7556c8f58894192a",
       "position": 5,
       "prev_chunk_id": "88b26755999c8ee4925b9b46bc25b345980cdc47f01f7dea2d5d7a8966aab5b2",
@@ -27083,9 +27083,9 @@
     "token_count": 29
   },
   {
-    "chunk_id": "ea07f6f0c0372b0397eeadd6ae2ef2be0f8cd4641a460cf197b6dd09db84893f",
+    "chunk_id": "ee99e6d4e7eb6dcefbe146c573d7924eaf25b63dfd290ec0d8901f48b3e1c9a8",
     "chunk_type": "prose",
-    "content": "## **I sent in money but I don't see my donation on the collective's page?!**\n\n[Contact us!](https://opensourceeurope.org/docs/about/contact-us/)\n\nWe often receive money in our bank account without any indication of where it should go. (This is why it's so important to include the order# in the bank transfer). We always do a thorough research to identify the right collective, but sometimes it is not possible.\n\nAt the end of the month, we move the unidentified funds to a [holding fund](https://opencollective.com/oce-holding-fund).\n\nWe keep the money there until we can identify who it is intended for and then we transfer it.\n\nWrite to us on <oce@opencollective.com> or send us a message via[ Slack](http://slack.opencollective.com/) or [Discord](https://discord.gg/uCnzytpNr6). We will ask you to send us screenshots/receipts that include the expected amount, the collective name, and the sender/any info about the bank transfer, so that we can send the funds to their happy home.",
+    "content": "## **I sent in money but I don't see my donation on the collective's page?!**\n\n[Contact us!](https://opensourceeurope.org/docs/about/contact-us/)\n\nWe often receive money in our bank account without any indication of where it should go. (This is why it's so important to include the order# in the bank transfer). We always do a thorough research to identify the right collective, but sometimes it is not possible.\n\nAt the end of the month, we move the unidentified funds to a [holding fund](https://opencollective.com/oce-holding-fund).\n\nWe keep the money there until we can identify who it is intended for and then we transfer it.\n\nWrite to us on <home@opensourceeurope.org> or send us a message via[ Slack](http://slack.opencollective.com/) or [Discord](https://discord.gg/uCnzytpNr6). We will ask you to send us screenshots/receipts that include the expected amount, the collective name, and the sender/any info about the bank transfer, so that we can send the funds to their happy home.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Contributions FAQ > **I sent in money but I don't see my donation on the collective's page?!**",
@@ -27100,7 +27100,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 235
+    "token_count": 234
   },
   {
     "chunk_id": "50c6c4c3d9d7da12546ae4faf8718682e02fc8ac89b57f54f5883cc11f92febe",
@@ -27114,7 +27114,7 @@
       "next_chunk_id": "87b4c8e98a908724f72b0f060a04b8700438a5bf6ac0fc0dd2846094f6c81434",
       "parent_chunk_id": "cf29867747b001c457a0d5d9ba5ab8540f8147f6c1de314b7556c8f58894192a",
       "position": 7,
-      "prev_chunk_id": "ea07f6f0c0372b0397eeadd6ae2ef2be0f8cd4641a460cf197b6dd09db84893f",
+      "prev_chunk_id": "ee99e6d4e7eb6dcefbe146c573d7924eaf25b63dfd290ec0d8901f48b3e1c9a8",
       "section_anchor": "what-if-a-financial-contributor-requests-an-invoice-before-making-the-donation",
       "source_url": "https://opensourceeurope.org/docs/faq/contributions-faq/"
     },
@@ -27804,7 +27804,7 @@
       "breadcrumb_path": "Application Questions > Application Questions",
       "doc_order": 8,
       "heading_path": "Application Questions > Application Questions",
-      "next_chunk_id": "ff86706bd5a30ca24b0c39c7c3e755925008caab1ef65c366b1aa277ef465443",
+      "next_chunk_id": "e0d273aebd7b565857d3a9f9611f0cccd64f9e3a78525cac6e4aa321865ae430",
       "parent_chunk_id": null,
       "position": 2,
       "prev_chunk_id": "a93c73342fb14e8adc867f8b4f920f0366421239c527a14b3e39bfdd949488b4",
@@ -27816,9 +27816,9 @@
     "token_count": 19
   },
   {
-    "chunk_id": "ff86706bd5a30ca24b0c39c7c3e755925008caab1ef65c366b1aa277ef465443",
+    "chunk_id": "e0d273aebd7b565857d3a9f9611f0cccd64f9e3a78525cac6e4aa321865ae430",
     "chunk_type": "prose",
-    "content": "## Need Assistance?\n\nIf you have any questions or need help with the application process, feel free to [contact us](mailto:oce@opencollective.com).",
+    "content": "## Need Assistance?\n\nIf you have any questions or need help with the application process, feel free to [contact us](mailto:home@opensourceeurope.org).",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Application Questions > Need Assistance?",
@@ -27833,7 +27833,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 34
+    "token_count": 33
   },
   {
     "chunk_id": "d79287f73316895066774a3390fd4d585cc743901cad9edbabf526aed97a4378",
@@ -27904,7 +27904,7 @@
       "breadcrumb_path": "Eligibility > Not Required",
       "doc_order": 9,
       "heading_path": "Eligibility > Not Required",
-      "next_chunk_id": "e8fee236501271e79b9c262ce2202f3d49508b8ed320c1e7f4c6e5d6b950074d",
+      "next_chunk_id": "011169bafa30d0e9036aad5e05032ff2c6cbf4c795ea63be89bfb37ebff982bd",
       "parent_chunk_id": null,
       "position": 4,
       "prev_chunk_id": "f0679ced8cccde9acf16f8663de0c42d85505ab39449c36d1cb3580ed7fb5908",
@@ -27916,9 +27916,9 @@
     "token_count": 22
   },
   {
-    "chunk_id": "e8fee236501271e79b9c262ce2202f3d49508b8ed320c1e7f4c6e5d6b950074d",
+    "chunk_id": "011169bafa30d0e9036aad5e05032ff2c6cbf4c795ea63be89bfb37ebff982bd",
     "chunk_type": "prose",
-    "content": "## Ready to Apply?\n\nIf your initiative meets the above criteria and you're ready to proceed, follow our [How to Apply](https://opensourceeurope.org/docs/getting-started/how-to-apply/) guide to begin your application.\n\nFor any questions or further clarification, feel free to [contact us](mailto:oce@opencollective.com).",
+    "content": "## Ready to Apply?\n\nIf your initiative meets the above criteria and you're ready to proceed, follow our [How to Apply](https://opensourceeurope.org/docs/getting-started/how-to-apply/) guide to begin your application.\n\nFor any questions or further clarification, feel free to [contact us](mailto:home@opensourceeurope.org).",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Eligibility > Ready to Apply?",
@@ -27933,7 +27933,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 72
+    "token_count": 71
   },
   {
     "chunk_id": "9a159600621a31ea993caf846ad96f63713489540021d59a6aa55afed3610d76",
@@ -27947,7 +27947,7 @@
       "next_chunk_id": null,
       "parent_chunk_id": null,
       "position": 6,
-      "prev_chunk_id": "e8fee236501271e79b9c262ce2202f3d49508b8ed320c1e7f4c6e5d6b950074d",
+      "prev_chunk_id": "011169bafa30d0e9036aad5e05032ff2c6cbf4c795ea63be89bfb37ebff982bd",
       "section_anchor": "affiliation-with-another-organisation",
       "source_url": "https://opensourceeurope.org/docs/getting-started/how-to-apply/eligibility/"
     },
@@ -28120,7 +28120,7 @@
       "breadcrumb_path": "How to apply",
       "doc_order": 31,
       "heading_path": "How to apply > Transitioning from Another Fiscal Host",
-      "next_chunk_id": "3920cbae1fa48f24142b520ec0053c9f0ae00bf3bfa7b3f08bc0614a35297f46",
+      "next_chunk_id": "7230f445cf4fa87f19083020d6bb57aa4ad457ab3f85b4a06f7c781829e568c5",
       "parent_chunk_id": "47d551701e4440df4f40084549fa6d735e5f35ed60ccccd446dd7899260eacca",
       "position": 9,
       "prev_chunk_id": "14c3f576c7b96f1d1075e029a3e6e54feacf8e74adb9b6e0bc51834bb09f30f5",
@@ -28131,9 +28131,9 @@
     "token_count": 25
   },
   {
-    "chunk_id": "3920cbae1fa48f24142b520ec0053c9f0ae00bf3bfa7b3f08bc0614a35297f46",
+    "chunk_id": "7230f445cf4fa87f19083020d6bb57aa4ad457ab3f85b4a06f7c781829e568c5",
     "chunk_type": "prose",
-    "content": "## Need Assistance?\n\nIf you have any questions or need help with the application process, feel free to [contact us](mailto:oce@opencollective.com).",
+    "content": "## Need Assistance?\n\nIf you have any questions or need help with the application process, feel free to [contact us](mailto:home@opensourceeurope.org).",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "How to apply > Need Assistance?",
@@ -28148,7 +28148,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 34
+    "token_count": 33
   },
   {
     "chunk_id": "588f2de7814aa450ca40edb46acced5ee933135888b6169a48346700d11c3d4d",
@@ -28394,7 +28394,7 @@
       "breadcrumb_path": "Basics > Understanding Open Collective",
       "doc_order": 14,
       "heading_path": "Basics > Understanding Open Collective",
-      "next_chunk_id": "9166dd6d08d7eb905db5d84d062316bb7aab755f3f6bccd9cb0933442c8608e4",
+      "next_chunk_id": "54a1df7c16d47ef1f98a081827e263e0fbbcce8e13a14c055098c2f44b47e2d2",
       "parent_chunk_id": "23e79dcc5cf456c9847ca96cbe43ca2ff08a134e8faf53fbfa0d92dde37f98bf",
       "position": 4,
       "prev_chunk_id": "93efa9b49546ce4c5521f2110b11e27a2f17b294af4f67e59d2f2b65adfdc6f0",
@@ -28406,15 +28406,15 @@
     "token_count": 113
   },
   {
-    "chunk_id": "9166dd6d08d7eb905db5d84d062316bb7aab755f3f6bccd9cb0933442c8608e4",
+    "chunk_id": "54a1df7c16d47ef1f98a081827e263e0fbbcce8e13a14c055098c2f44b47e2d2",
     "chunk_type": "prose",
-    "content": "## Budget Management of Your Collective\n\nBoth receiving funds and submitting expenses are straightforward procedures. You will find the details on both in the respective pages of these docs. Feel free to share them with the contributors and members of your Collective.\n\nBeing fiscally hosted by OSE means joining a community of hundreds of initiatives that share the same tools to manage their independent projects. It requires minimal attention, but still some attention, to function properly.\n\nPlease familiarize yourself with the guidelines on [donations](https://docs.opencollective.com/help/collectives/raising-money) and [expenses](https://docs.opencollective.com/help/expenses-and-getting-paid/submitting-expenses), and feel free to contact us if you have any questions or doubts at <oce@opencollective.com>.\n\n***",
+    "content": "## Budget Management of Your Collective\n\nBoth receiving funds and submitting expenses are straightforward procedures. You will find the details on both in the respective pages of these docs. Feel free to share them with the contributors and members of your Collective.\n\nBeing fiscally hosted by OSE means joining a community of hundreds of initiatives that share the same tools to manage their independent projects. It requires minimal attention, but still some attention, to function properly.\n\nPlease familiarize yourself with the guidelines on [donations](https://docs.opencollective.com/help/collectives/raising-money) and [expenses](https://docs.opencollective.com/help/expenses-and-getting-paid/submitting-expenses), and feel free to contact us if you have any questions or doubts at <home@opensourceeurope.org>.\n\n***",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Basics > Budget Management of Your Collective",
       "doc_order": 15,
       "heading_path": "Basics > Budget Management of Your Collective",
-      "next_chunk_id": "aea8a88438a910769423bcfacba288879ff38dda98ffa4387e21178b22b99952",
+      "next_chunk_id": "fcd4a2d7fc20e4ae35379445390590fe640243eab46fd8f2f80804b83b967fe5",
       "parent_chunk_id": "23e79dcc5cf456c9847ca96cbe43ca2ff08a134e8faf53fbfa0d92dde37f98bf",
       "position": 5,
       "prev_chunk_id": "03698edd3661a06668d951516f77556e7950f7114cdfca2dff0ba4c68264623b",
@@ -28423,12 +28423,12 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 164
+    "token_count": 163
   },
   {
-    "chunk_id": "aea8a88438a910769423bcfacba288879ff38dda98ffa4387e21178b22b99952",
+    "chunk_id": "fcd4a2d7fc20e4ae35379445390590fe640243eab46fd8f2f80804b83b967fe5",
     "chunk_type": "prose",
-    "content": "## Need Assistance?\n\nIf you have any questions or need help, feel free to [contact us](mailto:oce@opencollective.com).",
+    "content": "## Need Assistance?\n\nIf you have any questions or need help, feel free to [contact us](mailto:home@opensourceeurope.org).",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Basics > Need Assistance?",
@@ -28437,13 +28437,13 @@
       "next_chunk_id": "a19df3e19fa4c85ea27ba6416ba78447fd70f61cd404f8bcdadb12ca88ffbfbd",
       "parent_chunk_id": "23e79dcc5cf456c9847ca96cbe43ca2ff08a134e8faf53fbfa0d92dde37f98bf",
       "position": 6,
-      "prev_chunk_id": "9166dd6d08d7eb905db5d84d062316bb7aab755f3f6bccd9cb0933442c8608e4",
+      "prev_chunk_id": "54a1df7c16d47ef1f98a081827e263e0fbbcce8e13a14c055098c2f44b47e2d2",
       "section_anchor": "need-assistance",
       "source_url": "https://opensourceeurope.org/docs/how-it-works/basics/"
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 30
+    "token_count": 29
   },
   {
     "chunk_id": "a19df3e19fa4c85ea27ba6416ba78447fd70f61cd404f8bcdadb12ca88ffbfbd",
@@ -28457,7 +28457,7 @@
       "next_chunk_id": "18e7532c1303d3c3e1b3b58da2974dcb207b4baea704fe8a025adc7212d4740e",
       "parent_chunk_id": "23e79dcc5cf456c9847ca96cbe43ca2ff08a134e8faf53fbfa0d92dde37f98bf",
       "position": 7,
-      "prev_chunk_id": "aea8a88438a910769423bcfacba288879ff38dda98ffa4387e21178b22b99952",
+      "prev_chunk_id": "fcd4a2d7fc20e4ae35379445390590fe640243eab46fd8f2f80804b83b967fe5",
       "section_anchor": "keeping-your-contacts-up-to-date",
       "source_url": "https://opensourceeurope.org/docs/how-it-works/basics/"
     },
@@ -28651,7 +28651,7 @@
       "breadcrumb_path": "Expenses & Getting Paid – FAQs > Are receipts and invoices public?",
       "doc_order": 14,
       "heading_path": "Expenses & Getting Paid – FAQs > Are receipts and invoices public?",
-      "next_chunk_id": "7b5ee3e369463c081db353d76cb9a94ede329581c9ecec0307fc105c31f767c3",
+      "next_chunk_id": "ea8c54e799f0219a5006bb180f6fa9640dda70bf602d02e814db7c8b054de490",
       "parent_chunk_id": "f2ff44969c73388f81221f846db16905f348828bc8f749f13e01f4af5b7eb464",
       "position": 9,
       "prev_chunk_id": "e0e89005a60e6a4b7b89ee23afa973873944722def34fbe702f5458afad28bc5",
@@ -28663,9 +28663,9 @@
     "token_count": 43
   },
   {
-    "chunk_id": "7b5ee3e369463c081db353d76cb9a94ede329581c9ecec0307fc105c31f767c3",
+    "chunk_id": "ea8c54e799f0219a5006bb180f6fa9640dda70bf602d02e814db7c8b054de490",
     "chunk_type": "prose",
-    "content": "## Need help?\n\nUse the comments on the expense for routine questions and follow-up. For sensitive information, contact OSE privately at <oce@opencollective.com>.",
+    "content": "## Need help?\n\nUse the comments on the expense for routine questions and follow-up. For sensitive information, contact OSE privately at <home@opensourceeurope.org>.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Expenses & Getting Paid – FAQs > Need help?",
@@ -28680,7 +28680,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 35
+    "token_count": 34
   },
   {
     "chunk_id": "d0d1a43035206e26522b890763f1eb3148204b6dabbada2021efcfee16c4bef7",
@@ -28970,7 +28970,7 @@
       "breadcrumb_path": "Expenses",
       "doc_order": 40,
       "heading_path": "Expenses > Payment Methods",
-      "next_chunk_id": "0219bddbebcd43385a70f97f01028e337e6c5e2b6de0e8e2f308a0c62d6d3528",
+      "next_chunk_id": "687d67a1bc6e8e1d4bf6e37afd73f23b3f8878dfabfd8157773fd4c2135459f3",
       "parent_chunk_id": "d0d1a43035206e26522b890763f1eb3148204b6dabbada2021efcfee16c4bef7",
       "position": 15,
       "prev_chunk_id": "2f24175c6d30908b4e3236c8a5bfc6d60b2583dc3283e77fbf6ae04e1106e3b5",
@@ -28981,9 +28981,9 @@
     "token_count": 18
   },
   {
-    "chunk_id": "0219bddbebcd43385a70f97f01028e337e6c5e2b6de0e8e2f308a0c62d6d3528",
+    "chunk_id": "687d67a1bc6e8e1d4bf6e37afd73f23b3f8878dfabfd8157773fd4c2135459f3",
     "chunk_type": "prose",
-    "content": "> **Need help?** Email us at <oce@opencollective.com>\n\n***",
+    "content": "> **Need help?** Email us at <home@opensourceeurope.org>\n\n***",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Expenses",
@@ -28997,7 +28997,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 19
+    "token_count": 18
   },
   {
     "chunk_id": "1692a37132ea393ea4b616bb0ae808a7b3eb0286de7acaa4b74469192785390f",
@@ -29167,7 +29167,7 @@
       "breadcrumb_path": "Invoices or Reimbursements? > Learn More",
       "doc_order": 29,
       "heading_path": "Invoices or Reimbursements? > Learn More",
-      "next_chunk_id": "a6d7cf6295d31722e0e1de791387b7e8688ccfdd87c9159ac94e36cabed87e57",
+      "next_chunk_id": "75fd438f68a313f9b2c4fd23ccfd1aab0c08bb96c7c832aaf14c8d1f941582af",
       "parent_chunk_id": "1692a37132ea393ea4b616bb0ae808a7b3eb0286de7acaa4b74469192785390f",
       "position": 9,
       "prev_chunk_id": "07a156484c0839145fd6734f1850d77d149a136531ca49b23dda24f83acb6f88",
@@ -29179,9 +29179,9 @@
     "token_count": 14
   },
   {
-    "chunk_id": "a6d7cf6295d31722e0e1de791387b7e8688ccfdd87c9159ac94e36cabed87e57",
+    "chunk_id": "75fd438f68a313f9b2c4fd23ccfd1aab0c08bb96c7c832aaf14c8d1f941582af",
     "chunk_type": "prose",
-    "content": "## Need Help?\n\nIf you have any questions, feel free to [contact us](mailto:oce@opencollective.com). We're happy to help.",
+    "content": "## Need Help?\n\nIf you have any questions, feel free to [contact us](mailto:home@opensourceeurope.org). We're happy to help.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Invoices or Reimbursements? > Need Help?",
@@ -29196,7 +29196,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 33
+    "token_count": 32
   },
   {
     "chunk_id": "4209fa3f7fdc5ae6c520452c67f9660f72799c31197a3a38c179ee2fb9bfa6b9",
@@ -29210,7 +29210,7 @@
       "next_chunk_id": null,
       "parent_chunk_id": "1692a37132ea393ea4b616bb0ae808a7b3eb0286de7acaa4b74469192785390f",
       "position": 11,
-      "prev_chunk_id": "a6d7cf6295d31722e0e1de791387b7e8688ccfdd87c9159ac94e36cabed87e57",
+      "prev_chunk_id": "75fd438f68a313f9b2c4fd23ccfd1aab0c08bb96c7c832aaf14c8d1f941582af",
       "section_anchor": "documents-and-review",
       "source_url": "https://opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/"
     },
@@ -29422,7 +29422,7 @@
       "breadcrumb_path": "The Partnership > VAT & Nonprofit Status",
       "doc_order": 17,
       "heading_path": "The Partnership > VAT & Nonprofit Status",
-      "next_chunk_id": "ed88948e1332a1dec59461f8121f1d80a4062068be8a44d53305bd744e2e4a4c",
+      "next_chunk_id": "1e82dc52532bfe58156823c03e2e51b185e575821d89852d903c3b322df6f7f2",
       "parent_chunk_id": null,
       "position": 7,
       "prev_chunk_id": "02f5cc9f69a52e8c8cd739dcac9b69e58eef785653d9063f56aa60fa611d135c",
@@ -29434,15 +29434,15 @@
     "token_count": 26
   },
   {
-    "chunk_id": "ed88948e1332a1dec59461f8121f1d80a4062068be8a44d53305bd744e2e4a4c",
+    "chunk_id": "1e82dc52532bfe58156823c03e2e51b185e575821d89852d903c3b322df6f7f2",
     "chunk_type": "prose",
-    "content": "> **Note:** [Read more: VAT in Europe and how it works in OSE](https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-oce/)\n\n***",
+    "content": "> **Note:** [Read more: VAT in Europe and how it works in OSE](https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-ose/)\n\n***",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "The Partnership",
       "doc_order": 20,
       "heading_path": "The Partnership > VAT & Nonprofit Status",
-      "next_chunk_id": "56da9b11f39015a8cb19d14157fc4110fbc3725fbb88b1ed8d66fc102130ff3a",
+      "next_chunk_id": "d3e1f00367975bb56d75b3097a77f70ece73d9bb04a95f31c68c555099c4617a",
       "parent_chunk_id": null,
       "position": 8,
       "prev_chunk_id": "1d97c6b99d8c812ef750b26b6df0948f2e87ab907766322fe3fa166fe122e0ab",
@@ -29453,9 +29453,9 @@
     "token_count": 52
   },
   {
-    "chunk_id": "56da9b11f39015a8cb19d14157fc4110fbc3725fbb88b1ed8d66fc102130ff3a",
+    "chunk_id": "d3e1f00367975bb56d75b3097a77f70ece73d9bb04a95f31c68c555099c4617a",
     "chunk_type": "prose",
-    "content": "## Questions?\n\nEmail us any time at <oce@opencollective.com>. We're happy to help!",
+    "content": "## Questions?\n\nEmail us any time at <home@opensourceeurope.org>. We're happy to help!",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "The Partnership > Questions?",
@@ -29464,93 +29464,93 @@
       "next_chunk_id": null,
       "parent_chunk_id": null,
       "position": 9,
-      "prev_chunk_id": "ed88948e1332a1dec59461f8121f1d80a4062068be8a44d53305bd744e2e4a4c",
+      "prev_chunk_id": "1e82dc52532bfe58156823c03e2e51b185e575821d89852d903c3b322df6f7f2",
       "section_anchor": "questions",
       "source_url": "https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/"
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 23
+    "token_count": 22
   },
   {
-    "chunk_id": "62365acee347ee2ea51ca39a9f749f681a5cf1ead1f28edb153771c11077668a",
+    "chunk_id": "c3b963b6258b27dc68298ae15ca2a133e62c6d621a3b8860b3b93c9233f8e020",
     "chunk_type": "prose",
-    "content": "## General Principles\n\nCollectives hosted by Open Collective Europe (OCE) are unincorporated initiatives primarily funded through donations. As such, they are **not eligible for VAT refunds** and must **always pay VAT** on goods and services purchased.\n\nVAT (Value Added Tax) is a general consumption tax that applies to most goods and services within the European Union. Even if your Collective is not a registered entity, VAT is still due on your expenses.\n\n> **Note:** Learn more: [VAT explained – European Commission](https://taxation-customs.ec.europa.eu/taxation-1/value-added-tax-vat_en)\n\n***",
+    "content": "## General Principles\n\nCollectives hosted by Open Source Europe (OSE) are unincorporated initiatives primarily funded through donations. As such, they are **not eligible for VAT refunds** and must **always pay VAT** on goods and services purchased.\n\nVAT (Value Added Tax) is a general consumption tax that applies to most goods and services within the European Union. Even if your Collective is not a registered entity, VAT is still due on your expenses.\n\n> **Note:** Learn more: [VAT explained – European Commission](https://taxation-customs.ec.europa.eu/taxation-1/value-added-tax-vat_en)\n\n***",
     "line_start": null,
     "metadata": {
-      "breadcrumb_path": "VAT in Europe and How It Works in OCE > General Principles",
+      "breadcrumb_path": "VAT in Europe and How It Works in OSE > General Principles",
       "doc_order": 1,
-      "heading_path": "VAT in Europe and How It Works in OCE > General Principles",
-      "next_chunk_id": "cb733afcc1920ef9629626c5f1809bd03970937abaaaa56957e7e4388e86944d",
+      "heading_path": "VAT in Europe and How It Works in OSE > General Principles",
+      "next_chunk_id": "4c0ff9795cf4c1a806da0c03dd4efc4199e2c2ee9956f128bc00ba3d9b4b730c",
       "parent_chunk_id": null,
       "position": 1,
       "prev_chunk_id": null,
       "section_anchor": "general-principles",
-      "source_url": "https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-oce/"
+      "source_url": "https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-ose/"
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 131
+    "token_count": 130
   },
   {
-    "chunk_id": "cb733afcc1920ef9629626c5f1809bd03970937abaaaa56957e7e4388e86944d",
+    "chunk_id": "4c0ff9795cf4c1a806da0c03dd4efc4199e2c2ee9956f128bc00ba3d9b4b730c",
     "chunk_type": "prose",
     "content": "## VAT Within the Same Country\n\nInvoices issued within your country (e.g. Belgium) must include VAT unless the supplier is legally exempt.\n\nOCE itself is **not VAT-exempt**, so if it issues an invoice (e.g. for services), VAT will be applied based on the applicable Belgian rate.\n\n> **Note:** Belgian VAT details: [Finance Belgium](https://finance.belgium.be/en)\n\n***",
     "line_start": null,
     "metadata": {
-      "breadcrumb_path": "VAT in Europe and How It Works in OCE > VAT Within the Same Country",
+      "breadcrumb_path": "VAT in Europe and How It Works in OSE > VAT Within the Same Country",
       "doc_order": 2,
-      "heading_path": "VAT in Europe and How It Works in OCE > VAT Within the Same Country",
-      "next_chunk_id": "57d7cdfa85b1b4dffdcc839c1af735a2c3b2e1372f20d5afcde43dac87782390",
+      "heading_path": "VAT in Europe and How It Works in OSE > VAT Within the Same Country",
+      "next_chunk_id": "c44a181a3e6f1a2d8d12e9a35c8b4f166c741d8b807ad78829579ac9d691dbab",
       "parent_chunk_id": null,
       "position": 2,
-      "prev_chunk_id": "62365acee347ee2ea51ca39a9f749f681a5cf1ead1f28edb153771c11077668a",
+      "prev_chunk_id": "c3b963b6258b27dc68298ae15ca2a133e62c6d621a3b8860b3b93c9233f8e020",
       "section_anchor": "vat-within-the-same-country",
-      "source_url": "https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-oce/"
+      "source_url": "https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-ose/"
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
     "token_count": 84
   },
   {
-    "chunk_id": "57d7cdfa85b1b4dffdcc839c1af735a2c3b2e1372f20d5afcde43dac87782390",
+    "chunk_id": "c44a181a3e6f1a2d8d12e9a35c8b4f166c741d8b807ad78829579ac9d691dbab",
     "chunk_type": "prose",
     "content": "## Cross-Border VAT and Reverse Charge\n\nThe **reverse charge mechanism** lets VAT-registered businesses handle cross-border VAT internally (by declaring both output and input VAT).\n\nHowever, this mechanism **only applies between two VAT-registered businesses**. Because OCE-hosted Collectives are **not legal entities**, they cannot apply the reverse charge mechanism.\n\n> **Danger:** This means you **must pay VAT** on cross-border invoices from EU-based suppliers — just like any individual or unregistered group.\n\n> **Note:** Learn more: [EU VAT rules – Your Europe](https://europa.eu/youreurope/business/taxation/vat/vat-rules-rates/index_en.htm)\n\n***",
     "line_start": null,
     "metadata": {
-      "breadcrumb_path": "VAT in Europe and How It Works in OCE > Cross-Border VAT and Reverse Charge",
+      "breadcrumb_path": "VAT in Europe and How It Works in OSE > Cross-Border VAT and Reverse Charge",
       "doc_order": 3,
-      "heading_path": "VAT in Europe and How It Works in OCE > Cross-Border VAT and Reverse Charge",
-      "next_chunk_id": "2e803072f0a3b98483b5835fd330384ba0f60f584b25f48a34c5b30717da4800",
+      "heading_path": "VAT in Europe and How It Works in OSE > Cross-Border VAT and Reverse Charge",
+      "next_chunk_id": "3dd799969235197d6ce0714e3a1c8fd2891f906073146df38d7203fe7c00ce3b",
       "parent_chunk_id": null,
       "position": 3,
-      "prev_chunk_id": "cb733afcc1920ef9629626c5f1809bd03970937abaaaa56957e7e4388e86944d",
+      "prev_chunk_id": "4c0ff9795cf4c1a806da0c03dd4efc4199e2c2ee9956f128bc00ba3d9b4b730c",
       "section_anchor": "cross-border-vat-and-reverse-charge",
-      "source_url": "https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-oce/"
+      "source_url": "https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-ose/"
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
     "token_count": 141
   },
   {
-    "chunk_id": "2e803072f0a3b98483b5835fd330384ba0f60f584b25f48a34c5b30717da4800",
+    "chunk_id": "3dd799969235197d6ce0714e3a1c8fd2891f906073146df38d7203fe7c00ce3b",
     "chunk_type": "prose",
-    "content": "## Questions?\n\nStill unsure about VAT or invoicing rules? Email us at <oce@opencollective.com> — we're happy to help!",
+    "content": "## Questions?\n\nStill unsure about VAT or invoicing rules? Email us at <home@opensourceeurope.org> — we're happy to help!",
     "line_start": null,
     "metadata": {
-      "breadcrumb_path": "VAT in Europe and How It Works in OCE > Questions?",
+      "breadcrumb_path": "VAT in Europe and How It Works in OSE > Questions?",
       "doc_order": 7,
-      "heading_path": "VAT in Europe and How It Works in OCE > Questions?",
+      "heading_path": "VAT in Europe and How It Works in OSE > Questions?",
       "next_chunk_id": null,
       "parent_chunk_id": null,
       "position": 4,
-      "prev_chunk_id": "57d7cdfa85b1b4dffdcc839c1af735a2c3b2e1372f20d5afcde43dac87782390",
+      "prev_chunk_id": "c44a181a3e6f1a2d8d12e9a35c8b4f166c741d8b807ad78829579ac9d691dbab",
       "section_anchor": "questions",
-      "source_url": "https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-oce/"
+      "source_url": "https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-ose/"
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 31
+    "token_count": 30
   },
   {
     "chunk_id": "da593b70ab87d47ce8cde1afac255068894889f32cf6fbc0c5bf1816e44495cf",
@@ -29619,7 +29619,7 @@
       "breadcrumb_path": "Applying for Grants > Grant Reporting",
       "doc_order": 18,
       "heading_path": "Applying for Grants > Grant Reporting",
-      "next_chunk_id": "3623e574953d2a2c12ced93d82909363219ee42bee3fa32ed4427571389aa8e0",
+      "next_chunk_id": "144ba0b684f19a0391c8a25753cf1b54ca4c3f4debbac2931344bb37d8e051e4",
       "parent_chunk_id": "da593b70ab87d47ce8cde1afac255068894889f32cf6fbc0c5bf1816e44495cf",
       "position": 4,
       "prev_chunk_id": "3331b8701c9c7f09872969962801e2ccd151610bdc039b6135520829949c34eb",
@@ -29631,9 +29631,9 @@
     "token_count": 43
   },
   {
-    "chunk_id": "3623e574953d2a2c12ced93d82909363219ee42bee3fa32ed4427571389aa8e0",
+    "chunk_id": "144ba0b684f19a0391c8a25753cf1b54ca4c3f4debbac2931344bb37d8e051e4",
     "chunk_type": "prose",
-    "content": "## Need Help?\n\nThe Collective leads its own fundraising. OSE may occasionally share opportunities or make introductions, according to its capacity; it does not promise a structured fundraising service or funding success. For questions about receiving and administering a grant, contact <oce@opencollective.com>.",
+    "content": "## Need Help?\n\nThe Collective leads its own fundraising. OSE may occasionally share opportunities or make introductions, according to its capacity; it does not promise a structured fundraising service or funding success. For questions about receiving and administering a grant, contact <home@opensourceeurope.org>.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Applying for Grants > Need Help?",
@@ -29648,7 +29648,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 58
+    "token_count": 57
   },
   {
     "chunk_id": "76fbc3071d914354664e30140b81d5dea26e2a1510c46354799f001627d23e95",
@@ -29662,7 +29662,7 @@
       "next_chunk_id": null,
       "parent_chunk_id": "da593b70ab87d47ce8cde1afac255068894889f32cf6fbc0c5bf1816e44495cf",
       "position": 6,
-      "prev_chunk_id": "3623e574953d2a2c12ced93d82909363219ee42bee3fa32ed4427571389aa8e0",
+      "prev_chunk_id": "144ba0b684f19a0391c8a25753cf1b54ca4c3f4debbac2931344bb37d8e051e4",
       "section_anchor": "hosting-fees",
       "source_url": "https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/applying-for-grants/"
     },
@@ -29679,7 +29679,7 @@
       "breadcrumb_path": "Contributions in cryptocurrencies",
       "doc_order": 1,
       "heading_path": "Contributions in cryptocurrencies",
-      "next_chunk_id": "518dc5774166f1831cc918a36a9cf3a73884e5864744fa7cb945f216f62659c1",
+      "next_chunk_id": "50d2eb6e6eb6fae97c6193e32e19f51467511f6328a526389d7477e4a068eb2b",
       "parent_chunk_id": null,
       "position": 1,
       "prev_chunk_id": null,
@@ -29690,9 +29690,9 @@
     "token_count": 46
   },
   {
-    "chunk_id": "518dc5774166f1831cc918a36a9cf3a73884e5864744fa7cb945f216f62659c1",
+    "chunk_id": "50d2eb6e6eb6fae97c6193e32e19f51467511f6328a526389d7477e4a068eb2b",
     "chunk_type": "prose",
-    "content": "## Set up the donation page\n\nContact OSE first at <oce@opencollective.com>. The team creates and hosts an Every.org page for your Collective and provides the applicable instructions, documents, fees and transfer information. Every.org is the required starting point for this cryptocurrency route.",
+    "content": "## Set up the donation page\n\nContact OSE first at <home@opensourceeurope.org>. The team creates and hosts an Every.org page for your Collective and provides the applicable instructions, documents, fees and transfer information. Every.org is the required starting point for this cryptocurrency route.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Contributions in cryptocurrencies > Set up the donation page",
@@ -29707,7 +29707,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 58
+    "token_count": 57
   },
   {
     "chunk_id": "cf4ed701a0ab24378693652c91c7f2750d0a1909f851084fb055db67579003de",
@@ -29721,7 +29721,7 @@
       "next_chunk_id": "e27558463b5631bcf52063aabb193bce6ad7b1e22a835fd69688b5bcdde829b4",
       "parent_chunk_id": "a579b805fd9cd1e08b2b93d5e138a359e320c7e24527beb766a1db34a93a37c8",
       "position": 3,
-      "prev_chunk_id": "518dc5774166f1831cc918a36a9cf3a73884e5864744fa7cb945f216f62659c1",
+      "prev_chunk_id": "50d2eb6e6eb6fae97c6193e32e19f51467511f6328a526389d7477e4a068eb2b",
       "section_anchor": "receive-and-transfer-funds",
       "source_url": "https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/contributions-in-cryptocurrencies/"
     },
@@ -29875,7 +29875,7 @@
       "breadcrumb_path": "Financial Contributions – How to Donate > Accepted Payment Methods",
       "doc_order": 11,
       "heading_path": "Financial Contributions – How to Donate > Accepted Payment Methods",
-      "next_chunk_id": "bbd6828acc8e5d154456acfbc41e505849018e865ded13336457f42872c9f964",
+      "next_chunk_id": "71e548ca9bbede8c4f64ee9779b34aed67cce2e5c0c5229eaad04a16ad0115ba",
       "parent_chunk_id": "5c5d3601dca5eaa1b19660f83912c3b6b1c0aa34e194b7995c791215e5de16c9",
       "position": 4,
       "prev_chunk_id": "fef742fceebb7c761e411901e0873f58f2a04262566100db5e0de5ee62ae30ce",
@@ -29887,9 +29887,9 @@
     "token_count": 12
   },
   {
-    "chunk_id": "bbd6828acc8e5d154456acfbc41e505849018e865ded13336457f42872c9f964",
+    "chunk_id": "71e548ca9bbede8c4f64ee9779b34aed67cce2e5c0c5229eaad04a16ad0115ba",
     "chunk_type": "prose",
-    "content": "> **Note**: When making a bank transfer, please include the name of the Collective and your order number in the payment reference. If not possible, contact us at <oce@opencollective.com> with your transaction details to ensure proper attribution.\n\n***",
+    "content": "> **Note**: When making a bank transfer, please include the name of the Collective and your order number in the payment reference. If not possible, contact us at <home@opensourceeurope.org> with your transaction details to ensure proper attribution.\n\n***",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Financial Contributions – How to Donate",
@@ -29903,7 +29903,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 52
+    "token_count": 51
   },
   {
     "chunk_id": "88cb486e023be27993f4dda98e773fe84c626e7c8758c6e8008731aed2448128",
@@ -29917,7 +29917,7 @@
       "next_chunk_id": "cf4935d3f458cba67625df678f4c2b04eba6704f82c0473445b595d4b1a37cc9",
       "parent_chunk_id": "5c5d3601dca5eaa1b19660f83912c3b6b1c0aa34e194b7995c791215e5de16c9",
       "position": 6,
-      "prev_chunk_id": "bbd6828acc8e5d154456acfbc41e505849018e865ded13336457f42872c9f964",
+      "prev_chunk_id": "71e548ca9bbede8c4f64ee9779b34aed67cce2e5c0c5229eaad04a16ad0115ba",
       "section_anchor": "information-required",
       "source_url": "https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/"
     },
@@ -29954,7 +29954,7 @@
       "breadcrumb_path": "Financial Contributions – How to Donate > Tax-Deductible Giving",
       "doc_order": 22,
       "heading_path": "Financial Contributions – How to Donate > Tax-Deductible Giving",
-      "next_chunk_id": "252ff95cd30dbbb31bd09cb1d423578aa29a2d0a1d2e07f1bfad1a61173db997",
+      "next_chunk_id": "86e13815cb44634e94a8ebd5bd12d9e4fce2eadf757488ca6a6bbf8d5e41443b",
       "parent_chunk_id": "5c5d3601dca5eaa1b19660f83912c3b6b1c0aa34e194b7995c791215e5de16c9",
       "position": 8,
       "prev_chunk_id": "cf4935d3f458cba67625df678f4c2b04eba6704f82c0473445b595d4b1a37cc9",
@@ -29966,9 +29966,9 @@
     "token_count": 82
   },
   {
-    "chunk_id": "252ff95cd30dbbb31bd09cb1d423578aa29a2d0a1d2e07f1bfad1a61173db997",
+    "chunk_id": "86e13815cb44634e94a8ebd5bd12d9e4fce2eadf757488ca6a6bbf8d5e41443b",
     "chunk_type": "prose",
-    "content": "## Need Help?\n\nIf you’re unsure which method to use or want to verify your transaction, don’t hesitate to reach out:\\\n📧 <oce@opencollective.com>",
+    "content": "## Need Help?\n\nIf you’re unsure which method to use or want to verify your transaction, don’t hesitate to reach out:\\\n📧 <home@opensourceeurope.org>",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Financial Contributions – How to Donate > Need Help?",
@@ -29983,7 +29983,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 39
+    "token_count": 38
   },
   {
     "chunk_id": "adfce74d1cf25ee2ac99092bd4c7a89a29d8dc1960f58949b4ca09d95ed9f903",
@@ -29997,7 +29997,7 @@
       "next_chunk_id": null,
       "parent_chunk_id": "5c5d3601dca5eaa1b19660f83912c3b6b1c0aa34e194b7995c791215e5de16c9",
       "position": 10,
-      "prev_chunk_id": "252ff95cd30dbbb31bd09cb1d423578aa29a2d0a1d2e07f1bfad1a61173db997",
+      "prev_chunk_id": "86e13815cb44634e94a8ebd5bd12d9e4fce2eadf757488ca6a6bbf8d5e41443b",
       "section_anchor": "hosting-fees",
       "source_url": "https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/"
     },
@@ -30053,7 +30053,7 @@
       "breadcrumb_path": "Refunds",
       "doc_order": 5,
       "heading_path": "Refunds > Can I request a refund for a donation? > Refund Timeframes",
-      "next_chunk_id": "d085840f66993d112d95abc8047aef3363844747dd1d50f99d74b0200b7d8b90",
+      "next_chunk_id": "09e1e09cf53a184038e648cb94be600a9faf52cd6671e56f8028136dff0a0c3c",
       "parent_chunk_id": "ff25c93dcbd19d6422c9334d3a624135c0dbf2b20116d3891be93c0158bfcc32",
       "position": 3,
       "prev_chunk_id": "ff25c93dcbd19d6422c9334d3a624135c0dbf2b20116d3891be93c0158bfcc32",
@@ -30064,9 +30064,9 @@
     "token_count": 70
   },
   {
-    "chunk_id": "d085840f66993d112d95abc8047aef3363844747dd1d50f99d74b0200b7d8b90",
+    "chunk_id": "09e1e09cf53a184038e648cb94be600a9faf52cd6671e56f8028136dff0a0c3c",
     "chunk_type": "prose",
-    "content": "## How to Request a Refund\n\nContact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <oce@opencollective.com>. A request does not guarantee a refund. Include the following details:",
+    "content": "## How to Request a Refund\n\nContact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <home@opensourceeurope.org>. A request does not guarantee a refund. Include the following details:",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Refunds > How to Request a Refund",
@@ -30081,7 +30081,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 56
+    "token_count": 55
   },
   {
     "chunk_id": "02932fd5bb6fc48a0d925ccb0cc7e329a2891941c37df1b483a1038d9efd6bc9",
@@ -30095,7 +30095,7 @@
       "next_chunk_id": "f2e4dace70575af7adc445c5b1e3453b5af87850b0a54acb8f9940de757eb864",
       "parent_chunk_id": "42308c5118141084804109a36479c197286a93ecbb0d2bf0a652232df7b4a69a",
       "position": 5,
-      "prev_chunk_id": "d085840f66993d112d95abc8047aef3363844747dd1d50f99d74b0200b7d8b90",
+      "prev_chunk_id": "09e1e09cf53a184038e648cb94be600a9faf52cd6671e56f8028136dff0a0c3c",
       "source_url": "https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/refunds/"
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
@@ -30111,7 +30111,7 @@
       "breadcrumb_path": "Refunds > Refund Processing Times",
       "doc_order": 11,
       "heading_path": "Refunds > Refund Processing Times",
-      "next_chunk_id": "7c12b69df94f80c720bf332a40ab171d35d78c3746f8db5579a6ecd302d02353",
+      "next_chunk_id": "e840fef5dd72e8ddaecf34587d4cc42f53a041cca6b5af3f04867ea8fd8b7fd1",
       "parent_chunk_id": "42308c5118141084804109a36479c197286a93ecbb0d2bf0a652232df7b4a69a",
       "position": 6,
       "prev_chunk_id": "02932fd5bb6fc48a0d925ccb0cc7e329a2891941c37df1b483a1038d9efd6bc9",
@@ -30123,9 +30123,9 @@
     "token_count": 82
   },
   {
-    "chunk_id": "7c12b69df94f80c720bf332a40ab171d35d78c3746f8db5579a6ecd302d02353",
+    "chunk_id": "e840fef5dd72e8ddaecf34587d4cc42f53a041cca6b5af3f04867ea8fd8b7fd1",
     "chunk_type": "prose",
-    "content": "## Need Assistance?\n\nFor any questions or further assistance regarding refunds, please contact us at <oce@opencollective.com>.",
+    "content": "## Need Assistance?\n\nFor any questions or further assistance regarding refunds, please contact us at <home@opensourceeurope.org>.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Refunds > Need Assistance?",
@@ -30140,7 +30140,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 26
+    "token_count": 25
   },
   {
     "chunk_id": "caec32053ae899ee71315d9c4d341acd3007a5678173ec825928a8b653885398",
@@ -30228,7 +30228,7 @@
       "breadcrumb_path": "Setting up GitHub Sponsors > Fees and sponsorship benefits",
       "doc_order": 13,
       "heading_path": "Setting up GitHub Sponsors > Fees and sponsorship benefits",
-      "next_chunk_id": "7e46331d698fa20526d64f05ec0eb6b714edeb16e5c74272f5e3f2901c07bcfc",
+      "next_chunk_id": "6be7f09ed7045355cd38a14af80b081a4d8b7a83df25fd90085d7e98fb79dce0",
       "parent_chunk_id": "caec32053ae899ee71315d9c4d341acd3007a5678173ec825928a8b653885398",
       "position": 5,
       "prev_chunk_id": "8049711aed8a57550be68e3551db4f0be7912eab366983eeebf4e43e083be2a2",
@@ -30240,9 +30240,9 @@
     "token_count": 115
   },
   {
-    "chunk_id": "7e46331d698fa20526d64f05ec0eb6b714edeb16e5c74272f5e3f2901c07bcfc",
+    "chunk_id": "6be7f09ed7045355cd38a14af80b081a4d8b7a83df25fd90085d7e98fb79dce0",
     "chunk_type": "prose",
-    "content": "Questions: <oce@opencollective.com>.",
+    "content": "Questions: <home@opensourceeurope.org>.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Setting up GitHub Sponsors",
@@ -30256,7 +30256,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 11
+    "token_count": 10
   },
   {
     "chunk_id": "4339e9559769559a84a2e310267f863eb8cc1fc831f9fd22e5d0d2cf08b6c6b4",
@@ -30475,9 +30475,9 @@
     "token_count": 15
   },
   {
-    "chunk_id": "2705b410b03b544c63d51ad836e8eeac2df9c63429731514e96ad26ff6875168",
+    "chunk_id": "ece0ab16085314dbe91d8e5e41773efbbf47fd3bc8f40a1f267fd7348cbfdb2b",
     "chunk_type": "prose",
-    "content": "## Hosting agreement\n\nHosting with Open Source Europe is governed by the association's Terms of Hosting.\n\nThe [Terms of Hosting for the association](https://docs.google.com/document/d/15Wkvfn5ou-is_eUjautjDv4JZ-tiY2-c/edit) are the reference document for this hosting relationship. [Contact the team](mailto:oce@opencollective.com) to obtain the applicable version and any additional agreement relevant to your project.",
+    "content": "## Hosting agreement\n\nHosting with Open Source Europe is governed by the association's Terms of Hosting.\n\nThe [Terms of Hosting for the association](https://docs.google.com/document/d/15Wkvfn5ou-is_eUjautjDv4JZ-tiY2-c/edit) are the reference document for this hosting relationship. [Contact the team](mailto:home@opensourceeurope.org) to obtain the applicable version and any additional agreement relevant to your project.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Terms of Service > Hosting agreement",
@@ -30492,7 +30492,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 98
+    "token_count": 97
   },
   {
     "chunk_id": "691ad4cb3b28deea70e305e8fe4396750ed50e391e1f88a7852e15dbf0aefb0e",
@@ -30506,7 +30506,7 @@
       "next_chunk_id": "676f3db85727e0c4d3fc1226e70b435518f5e65fde3fa836b5e850598dbb72f7",
       "parent_chunk_id": null,
       "position": 2,
-      "prev_chunk_id": "2705b410b03b544c63d51ad836e8eeac2df9c63429731514e96ad26ff6875168",
+      "prev_chunk_id": "ece0ab16085314dbe91d8e5e41773efbbf47fd3bc8f40a1f267fd7348cbfdb2b",
       "section_anchor": "main-responsibilities",
       "source_url": "https://opensourceeurope.org/docs/terms-of-service/"
     },
@@ -30523,7 +30523,7 @@
       "breadcrumb_path": "Terms of Service > Starting, changing or ending the arrangement",
       "doc_order": 10,
       "heading_path": "Terms of Service > Starting, changing or ending the arrangement",
-      "next_chunk_id": "5bc64de61bfae5fad776cb8ecf8318353cfba2f80cc2dff72a6cfd64f3ff9938",
+      "next_chunk_id": "f1256cd356ea58c09463c0b59cf63708ebfb7e8520813b1d8e1cca7272e46286",
       "parent_chunk_id": null,
       "position": 3,
       "prev_chunk_id": "691ad4cb3b28deea70e305e8fe4396750ed50e391e1f88a7852e15dbf0aefb0e",
@@ -30535,9 +30535,9 @@
     "token_count": 127
   },
   {
-    "chunk_id": "5bc64de61bfae5fad776cb8ecf8318353cfba2f80cc2dff72a6cfd64f3ff9938",
+    "chunk_id": "f1256cd356ea58c09463c0b59cf63708ebfb7e8520813b1d8e1cca7272e46286",
     "chunk_type": "prose",
-    "content": "## Contact\n\n<oce@opencollective.com>",
+    "content": "## Contact\n\n<home@opensourceeurope.org>",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Terms of Service > Contact",
@@ -30552,7 +30552,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 12
+    "token_count": 11
   },
   {
     "chunk_id": "ff510ab2557be93799c06e9184e3ee0dc35d8859be9faa4681726c675099a144",
@@ -30563,7 +30563,7 @@
       "breadcrumb_path": "Equivalency Determination Certificate > Grants from U.S. foundations",
       "doc_order": 1,
       "heading_path": "Equivalency Determination Certificate > Grants from U.S. foundations",
-      "next_chunk_id": "f732cdcdfc82bca8580aa6243219a1bb4cfe6e70fccfba14e2155facfc2abfce",
+      "next_chunk_id": "afa07f04f1e3e569bfed08139606ac723fc8501e7d261befc56a889e0375daf0",
       "parent_chunk_id": null,
       "position": 1,
       "prev_chunk_id": null,
@@ -30575,9 +30575,9 @@
     "token_count": 62
   },
   {
-    "chunk_id": "f732cdcdfc82bca8580aa6243219a1bb4cfe6e70fccfba14e2155facfc2abfce",
+    "chunk_id": "afa07f04f1e3e569bfed08139606ac723fc8501e7d261befc56a889e0375daf0",
     "chunk_type": "prose",
-    "content": "## Preparing a grant application\n\nContact <oce@opencollective.com> early, with:",
+    "content": "## Preparing a grant application\n\nContact <home@opensourceeurope.org> early, with:",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Equivalency Determination Certificate > Preparing a grant application",
@@ -30592,7 +30592,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 21
+    "token_count": 20
   },
   {
     "chunk_id": "f5213596223817ffd36557fe4d5d69521c98689371e13e032fb4157240cc4066",
@@ -30606,7 +30606,7 @@
       "next_chunk_id": "6da1baf1a6b6791ab115ca05eff7bd0205e197d3ff01a5575da222c51e9fdba1",
       "parent_chunk_id": null,
       "position": 3,
-      "prev_chunk_id": "f732cdcdfc82bca8580aa6243219a1bb4cfe6e70fccfba14e2155facfc2abfce",
+      "prev_chunk_id": "afa07f04f1e3e569bfed08139606ac723fc8501e7d261befc56a889e0375daf0",
       "source_url": "https://opensourceeurope.org/docs/what-we-offer/equivalency-determination-certificate/"
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
@@ -30781,7 +30781,7 @@
       "breadcrumb_path": "Tax-Deductible Giving for U.S. Donors > An established route for U.S. giving",
       "doc_order": 1,
       "heading_path": "Tax-Deductible Giving for U.S. Donors > An established route for U.S. giving",
-      "next_chunk_id": "dc04268d1820bd5ef684e15771d975874dc744aee0a432598769520ad62d3ddc",
+      "next_chunk_id": "0292b764ac06dec24b761c14af3f29fb81869df9c808c8f844eb83ba0c55bfa0",
       "parent_chunk_id": null,
       "position": 1,
       "prev_chunk_id": null,
@@ -30793,9 +30793,9 @@
     "token_count": 71
   },
   {
-    "chunk_id": "dc04268d1820bd5ef684e15771d975874dc744aee0a432598769520ad62d3ddc",
+    "chunk_id": "0292b764ac06dec24b761c14af3f29fb81869df9c808c8f844eb83ba0c55bfa0",
     "chunk_type": "prose",
-    "content": "## Choose the appropriate donation route\n\nContact OSE at <oce@opencollective.com> before payment with the name of the Collective to support. The team organises the route, reference, documents, applicable costs and transfer arrangements.",
+    "content": "## Choose the appropriate donation route\n\nContact OSE at <home@opensourceeurope.org> before payment with the name of the Collective to support. The team organises the route, reference, documents, applicable costs and transfer arrangements.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Tax-Deductible Giving for U.S. Donors > Choose the appropriate donation route",
@@ -30810,7 +30810,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 48
+    "token_count": 47
   },
   {
     "chunk_id": "8f5cc4f1c46cb15fdd233988d2913188633757bc4740933991f884f51c45b6e0",
@@ -30824,7 +30824,7 @@
       "next_chunk_id": "44ae65dd859cd235e514b6273bc9fe6e3041afde2cee70f38b02f4f9c6e33578",
       "parent_chunk_id": null,
       "position": 3,
-      "prev_chunk_id": "dc04268d1820bd5ef684e15771d975874dc744aee0a432598769520ad62d3ddc",
+      "prev_chunk_id": "0292b764ac06dec24b761c14af3f29fb81869df9c808c8f844eb83ba0c55bfa0",
       "source_url": "https://opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/"
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
@@ -36693,7 +36693,7 @@
       "row_key": "A submitted expense",
       "section_anchor": "choose-the-right-contact",
       "sibling_ids": [
-        "25ec3d884bf94574d541c81d67b58f3526cf76a3a0b69ba72248fe90917aafd2",
+        "6a55b3c02619b529f9cec90c5341877ab84645ff72860a65419849b6521484c2",
         "3447a89ba59227dbd36729191bb577b12f652167a161aff2de172d390aab61e6",
         "cb66813115522a36a8e2e1f7adb1b8646ade2ea970ed7ab2cbc2a3e29b49ca87",
         "87b25f811271d0843ed0307096e2eccb35d9482f98534ef8d8ec0e3a8f5accf0"
@@ -36705,7 +36705,7 @@
         "A technical problem with Open…"
       ],
       "source_url": "https://opensourceeurope.org/docs/about/contact-us/",
-      "table_id": "d9bb904a9e4db904",
+      "table_id": "ac6b3fc08b309018",
       "total_rows": 5
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
@@ -36713,9 +36713,9 @@
     "token_count": 40
   },
   {
-    "chunk_id": "25ec3d884bf94574d541c81d67b58f3526cf76a3a0b69ba72248fe90917aafd2",
+    "chunk_id": "6a55b3c02619b529f9cec90c5341877ab84645ff72860a65419849b6521484c2",
     "chunk_type": "table_row",
-    "content": "# Contact Us > Choose the right contact\nYou need help with: Hosting, a funding arrangement or another OSE question.\nWhat to do: Email <oce@opencollective.com>.",
+    "content": "# Contact Us > Choose the right contact\nYou need help with: Hosting, a funding arrangement or another OSE question.\nWhat to do: Email <home@opensourceeurope.org>.",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Contact Us > Choose the right contact",
@@ -36741,12 +36741,12 @@
         "A technical problem with Open…"
       ],
       "source_url": "https://opensourceeurope.org/docs/about/contact-us/",
-      "table_id": "d9bb904a9e4db904",
+      "table_id": "ac6b3fc08b309018",
       "total_rows": 5
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 39
+    "token_count": 38
   },
   {
     "chunk_id": "3447a89ba59227dbd36729191bb577b12f652167a161aff2de172d390aab61e6",
@@ -36766,7 +36766,7 @@
       "section_anchor": "choose-the-right-contact",
       "sibling_ids": [
         "e2c9a19fab3196804f0662d5392af2ff69a1a0f3092b1cdec89fb7f6d1bfa77a",
-        "25ec3d884bf94574d541c81d67b58f3526cf76a3a0b69ba72248fe90917aafd2",
+        "6a55b3c02619b529f9cec90c5341877ab84645ff72860a65419849b6521484c2",
         "cb66813115522a36a8e2e1f7adb1b8646ade2ea970ed7ab2cbc2a3e29b49ca87",
         "87b25f811271d0843ed0307096e2eccb35d9482f98534ef8d8ec0e3a8f5accf0"
       ],
@@ -36777,7 +36777,7 @@
         "A technical problem with Open…"
       ],
       "source_url": "https://opensourceeurope.org/docs/about/contact-us/",
-      "table_id": "d9bb904a9e4db904",
+      "table_id": "ac6b3fc08b309018",
       "total_rows": 5
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
@@ -36802,7 +36802,7 @@
       "section_anchor": "choose-the-right-contact",
       "sibling_ids": [
         "e2c9a19fab3196804f0662d5392af2ff69a1a0f3092b1cdec89fb7f6d1bfa77a",
-        "25ec3d884bf94574d541c81d67b58f3526cf76a3a0b69ba72248fe90917aafd2",
+        "6a55b3c02619b529f9cec90c5341877ab84645ff72860a65419849b6521484c2",
         "3447a89ba59227dbd36729191bb577b12f652167a161aff2de172d390aab61e6",
         "87b25f811271d0843ed0307096e2eccb35d9482f98534ef8d8ec0e3a8f5accf0"
       ],
@@ -36813,7 +36813,7 @@
         "A technical problem with Open…"
       ],
       "source_url": "https://opensourceeurope.org/docs/about/contact-us/",
-      "table_id": "d9bb904a9e4db904",
+      "table_id": "ac6b3fc08b309018",
       "total_rows": 5
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
@@ -36838,7 +36838,7 @@
       "section_anchor": "choose-the-right-contact",
       "sibling_ids": [
         "e2c9a19fab3196804f0662d5392af2ff69a1a0f3092b1cdec89fb7f6d1bfa77a",
-        "25ec3d884bf94574d541c81d67b58f3526cf76a3a0b69ba72248fe90917aafd2",
+        "6a55b3c02619b529f9cec90c5341877ab84645ff72860a65419849b6521484c2",
         "3447a89ba59227dbd36729191bb577b12f652167a161aff2de172d390aab61e6",
         "cb66813115522a36a8e2e1f7adb1b8646ade2ea970ed7ab2cbc2a3e29b49ca87"
       ],
@@ -36849,7 +36849,7 @@
         "A safeguarding concern"
       ],
       "source_url": "https://opensourceeurope.org/docs/about/contact-us/",
-      "table_id": "d9bb904a9e4db904",
+      "table_id": "ac6b3fc08b309018",
       "total_rows": 5
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
