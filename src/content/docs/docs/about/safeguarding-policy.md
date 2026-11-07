@@ -1,11 +1,11 @@
 ---
 title: "Safeguarding Policy"
-description: "Open Collective Europe (OCE) is committed to creating a safe and inclusive environment for all staff, volunteers, partners, and beneficiaries."
+description: "Open Source Europe (OSE) is committed to creating a safe and inclusive environment for all staff, volunteers, partners, and beneficiaries."
 ---
 
 ## Introduction
 
-Open Collective Europe (OCE) is committed to creating a safe and inclusive environment for all staff, volunteers, partners, and beneficiaries. This policy outlines our commitment to safeguarding and sets out procedures for reporting and responding to concerns.
+Open Source Europe (OSE) is committed to creating a safe and inclusive environment for all staff, volunteers, partners, and beneficiaries. This policy outlines our commitment to safeguarding and sets out procedures for reporting and responding to concerns.
 
 ***
 
@@ -104,4 +104,4 @@ This policy will be reviewed regularly to ensure it remains effective.
 
 ## Need Assistance?
 
-For any questions about this policy or safeguarding in general, please contact the Safeguarding Lead at <oce@opencollective.com>.
+For any questions about this policy or safeguarding in general, please contact the Safeguarding Lead at <home@opensourceeurope.org>.

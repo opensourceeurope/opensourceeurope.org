@@ -9,7 +9,7 @@ U.S. individuals and businesses can support OSE Collectives through **Myriad USA
 
 ## Choose the appropriate donation route
 
-Contact OSE at <oce@opencollective.com> before payment with the name of the Collective to support. The team organises the route, reference, documents, applicable costs and transfer arrangements.
+Contact OSE at <home@opensourceeurope.org> before payment with the name of the Collective to support. The team organises the route, reference, documents, applicable costs and transfer arrangements.
 
 * **Regular fundraising from U.S. donors:** an Every.org page organised with OSE is the preferred option. Funds follow Every.org → Myriad → OCEF → OSE.
 * **A larger donation:** the donor gives directly to Myriad, without Every.org, then funds follow Myriad → OCEF → OSE. Ask the team for the correct instructions; no universal amount threshold is specified here.

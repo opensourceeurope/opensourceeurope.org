@@ -58,7 +58,7 @@ Individuals who register to attend a Collective's event, often arriving through 
 
 ## Initiatives
 
-Initiatives are accounts for projects or groups hosted by Open Collective Europe. An initiative can be either a Collective or a Fund. During the application process, our team will assist in determining the appropriate account type for your project.
+Initiatives are accounts for projects or groups hosted by Open Source Europe. An initiative can be either a Collective or a Fund. During the application process, our team will assist in determining the appropriate account type for your project.
 
 ### Collective
 

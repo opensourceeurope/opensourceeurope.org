@@ -8,7 +8,7 @@ description: "For general inquiries, OSE aims to respond within seven business d
 | You need help with                                             | What to do                                                                                              |
 | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | A submitted expense                                            | Use its comments on Open Collective for routine questions; send sensitive information privately to OSE. |
-| Hosting, a funding arrangement or another OSE question         | Email <oce@opencollective.com>.                                                                         |
+| Hosting, a funding arrangement or another OSE question         | Email <home@opensourceeurope.org>.                                                                         |
 | Suspected misuse of funds or an issue involving administrators | Contact OSE directly in private; you do not need to go through those administrators.                    |
 | A safeguarding concern                                         | Use the [safeguarding contacts and procedure](/docs/about/safeguarding-policy/).        |
 | A technical problem with Open Collective                       | Use [platform support](https://opencollective.com/help).                                                |
@@ -31,7 +31,7 @@ Follow us on [Twitter](https://twitter.com/OC_Europe), [Instagram](https://www.i
 Our small but mighty team is here to help you Monday to Friday across multiple time zones. We aim to respond to general inquiries within seven business days. This is a target, not a guaranteed response time.
 :::
 
-💌 Email any OSE-specific questions to <oce@opencollective.com>
+💌 Email any OSE-specific questions to <home@opensourceeurope.org>
 
 🎟 Request platform support [here](https://opencollective.com/help)
 
@@ -49,7 +49,7 @@ Our small but mighty team is here to help you Monday to Friday across multiple t
 
 Use comments on the expense for routine questions about a submitted expense. Contact OSE privately for sensitive information.
 
-For suspected misuse of funds or a problem involving Collective administrators, contact the OSE team directly in private at <oce@opencollective.com>. You do not need to go through the administrators concerned.
+For suspected misuse of funds or a problem involving Collective administrators, contact the OSE team directly in private at <home@opensourceeurope.org>. You do not need to go through the administrators concerned.
 
 ## Internal conflicts
 
