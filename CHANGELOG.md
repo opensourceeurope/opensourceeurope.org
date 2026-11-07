@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.11.1](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.11.0...v0.11.1) (2026-11-07)
+
+
+### Bug Fixes
+
+* **knowledge:** weekly OSE knowledge refresh ([#41](https://github.com/opensourceeurope/opensourceeurope.org/issues/41)) ([d22f639](https://github.com/opensourceeurope/opensourceeurope.org/commit/d22f639cb7e302fcb61da830d6ecaf71e65e10f2))
+* use the OSE name and home@opensourceeurope.org, and drop the live-site comparison ([#37](https://github.com/opensourceeurope/opensourceeurope.org/issues/37)) ([a5829f8](https://github.com/opensourceeurope/opensourceeurope.org/commit/a5829f8649a51e80f56d510afc58c6289c487a34))
+
 ## [0.11.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.10.0...v0.11.0) (2026-11-06)
 
 
