@@ -1,0 +1,12 @@
+---
+// The site header, the same as on every other page. Starlight's own header
+// (title, search, links) is replaced: search sits at the top of the sidebar.
+// `pinned` keeps the header in place, because the docs sidebars are fixed
+// below it.
+import SiteHeader from '../Header.astro';
+import { loadSettings } from '../../lib/site';
+
+const settings = await loadSettings();
+---
+
+<SiteHeader settings={settings} currentPath={Astro.url.pathname} pinned />

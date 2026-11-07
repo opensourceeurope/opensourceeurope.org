@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.11.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.10.0...v0.11.0) (2026-11-06)
+
+
+### Features
+
+* add a honeypot field to the Ask chat ([#33](https://github.com/opensourceeurope/opensourceeurope.org/issues/33)) ([a8fd98d](https://github.com/opensourceeurope/opensourceeurope.org/commit/a8fd98d5583e4c3cea794b7a8bb65170df12ca81))
+
+
+### Bug Fixes
+
+* **docs:** use the site header, search in the sidebar and the Ask panel on /docs/ ([#38](https://github.com/opensourceeurope/opensourceeurope.org/issues/38)) ([3fbe80d](https://github.com/opensourceeurope/opensourceeurope.org/commit/3fbe80d62561ab0403726cae6fcbe55056b1a952))
+* **knowledge:** weekly OSE knowledge refresh ([#35](https://github.com/opensourceeurope/opensourceeurope.org/issues/35)) ([9369a0f](https://github.com/opensourceeurope/opensourceeurope.org/commit/9369a0fb42374133c678578caa9737031b8b5965))
+
 ## [0.10.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.9.2...v0.10.0) (2026-11-06)
 
 

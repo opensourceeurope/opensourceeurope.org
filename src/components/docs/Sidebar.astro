@@ -1,12 +1,16 @@
 ---
-// Starlight's sidebar without SidebarPersister, which keeps state in
-// sessionStorage. The site stores nothing but the consent choice.
+// Starlight's sidebar with the search at its top. It leaves out the link to the
+// docs home, because the "Docs" link in the site header leads there, and
+// SidebarPersister, which keeps state in sessionStorage. The site stores
+// nothing but the consent choice.
 import MobileMenuFooter from '@astrojs/starlight/components/MobileMenuFooter.astro';
+import Search from '@astrojs/starlight/components/Search.astro';
 import SidebarSublist from '@astrojs/starlight/components/SidebarSublist.astro';
 
-const { sidebar } = Astro.locals.starlightRoute;
+const sidebar = Astro.locals.starlightRoute.sidebar.filter((entry) => !(entry.type === 'link' && entry.href === '/docs/'));
 ---
 
+<div class="docs-search print:hidden"><Search /></div>
 <SidebarSublist sublist={sidebar} />
 
 <div class="md:sl-hidden"><MobileMenuFooter /></div>

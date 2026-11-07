@@ -1,21 +1,17 @@
-# Settings of the documentation at /docs/. astro.config.mjs and the docs
-# header read this file through src/lib/docs-settings.mjs.
+# Settings of the documentation at /docs/. astro.config.mjs reads this file
+# through src/lib/docs-settings.mjs. The header is the site header, from site.yaml.
+# The page title suffix, as in "Basics | OSE docs".
 title: OSE docs
-# The accessible name of the header links, distinct from the sidebar's "Main".
-header_nav_label: Site
-# The link in the header that leads back to the main site, and the other header links.
-header_links:
-  - label: Main site
-    href: /
-  - label: Ask AI
-    href: /ask/
-apply_label: Submit a project
+# The button that opens the docs sidebar on small screens, beside the site menu button.
+menu_label: Contents
 # The sidebar, in reading order, like GitBook's table of contents.
 # An entry is one of:
 #   - page: docs/<path>             a page; the sidebar shows its title
 #   - label: ... / link: /docs/...  a link with its own label
 #   - label: ... / items: [...]     a group of entries
 # Every page under src/content/docs/docs/ must appear here once. A unit test checks it.
+# The sidebar does not show the docs home (page: docs): the "Docs" link in the
+# site header leads there.
 sidebar:
   - page: docs
   - label: Getting started
@@ -46,7 +42,7 @@ sidebar:
           - label: The Partnership
             items:
               - page: docs/how-it-works/expenses/the-partnership
-              - page: docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-oce
+              - page: docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-ose
   - label: Guides
     items:
       - page: docs/guides/deciding-on-how-to-use-your-money

@@ -7,7 +7,7 @@ description: "Hosting with Open Source Europe is governed by the association's T
 
 Hosting with Open Source Europe is governed by the association's Terms of Hosting.
 
-The [Terms of Hosting for the association](https://docs.google.com/document/d/15Wkvfn5ou-is_eUjautjDv4JZ-tiY2-c/edit) are the reference document for this hosting relationship. [Contact the team](mailto:oce@opencollective.com) to obtain the applicable version and any additional agreement relevant to your project.
+The [Terms of Hosting for the association](https://docs.google.com/document/d/15Wkvfn5ou-is_eUjautjDv4JZ-tiY2-c/edit) are the reference document for this hosting relationship. [Contact the team](mailto:home@opensourceeurope.org) to obtain the applicable version and any additional agreement relevant to your project.
 
 ## Main responsibilities
 
@@ -31,4 +31,4 @@ For current guidance on contributions, see [Contributions FAQ](/docs/faq/contrib
 
 ## Contact
 
-<oce@opencollective.com>
+<home@opensourceeurope.org>

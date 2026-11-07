@@ -83,7 +83,7 @@ Please also review the documentation on [budget](https://docs.opencollective.com
 
 * **Common Concerns:**
 
-  * Legal or tax implications: Open Source Europe cannot advise you on your members' or collaborators' legal or fiscal obligations. We recommend contacting a legal or fiscal specialist in their country of residence. For general guidance, please use this documentation or contact us at <oce@opencollective.com>
+  * Legal or tax implications: Open Source Europe cannot advise you on your members' or collaborators' legal or fiscal obligations. We recommend contacting a legal or fiscal specialist in their country of residence. For general guidance, please use this documentation or contact us at <home@opensourceeurope.org>
   * Disagreements: Act in good faith and empower group decisions. Clear policies and consistent practices help a lot in this process.
 
   People will have reasonable concerns about what you spent, and why and how you spent it, and you're not sure how to preempt or respond to those concerns. You have two major options:

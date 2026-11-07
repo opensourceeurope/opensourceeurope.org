@@ -1,11 +1,11 @@
 ---
-title: "VAT in Europe and How It Works in OCE"
-description: "Collectives hosted by Open Collective Europe (OCE) are unincorporated initiatives primarily funded through donations."
+title: "VAT in Europe and How It Works in OSE"
+description: "Collectives hosted by Open Source Europe (OSE) are unincorporated initiatives primarily funded through donations."
 ---
 
 ## General Principles
 
-Collectives hosted by Open Collective Europe (OCE) are unincorporated initiatives primarily funded through donations. As such, they are **not eligible for VAT refunds** and must **always pay VAT** on goods and services purchased.
+Collectives hosted by Open Source Europe (OSE) are unincorporated initiatives primarily funded through donations. As such, they are **not eligible for VAT refunds** and must **always pay VAT** on goods and services purchased.
 
 VAT (Value Added Tax) is a general consumption tax that applies to most goods and services within the European Union. Even if your Collective is not a registered entity, VAT is still due on your expenses.
 
@@ -53,4 +53,4 @@ Learn more: [EU VAT rules – Your Europe](https://europa.eu/youreurope/business
 
 ## Questions?
 
-Still unsure about VAT or invoicing rules? Email us at <oce@opencollective.com> — we're happy to help!
+Still unsure about VAT or invoicing rules? Email us at <home@opensourceeurope.org> — we're happy to help!

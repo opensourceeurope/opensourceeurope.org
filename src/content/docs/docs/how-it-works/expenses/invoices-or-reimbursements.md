@@ -82,7 +82,7 @@ For more detailed explanations and tutorials, refer to:
 
 ## Need Help?
 
-If you have any questions, feel free to [contact us](mailto:oce@opencollective.com). We're happy to help.
+If you have any questions, feel free to [contact us](mailto:home@opensourceeurope.org). We're happy to help.
 
 ## Documents and review
 

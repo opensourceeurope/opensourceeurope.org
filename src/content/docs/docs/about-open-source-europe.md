@@ -41,7 +41,7 @@ See our [Terms of Service](/docs/terms-of-service/) for the hosting agreement.
 
 ***
 
-[Contact the team](mailto:oce@opencollective.com)
+[Contact the team](mailto:home@opensourceeurope.org)
 
 ***
 

@@ -18,7 +18,7 @@ The following table lists the files that make up the docs:
 | Pages | `src/content/docs/docs/`. The path is the URL: `src/content/docs/docs/faq/general-faqs.md` is `/docs/faq/general-faqs/` |
 | A page with child pages | `index.md` in a folder: `how-it-works/expenses/index.md` is `/docs/how-it-works/expenses/` |
 | Sidebar order and group names | `src/content/settings/docs.yaml`, under `sidebar` |
-| Header title, header links, apply button label | `src/content/settings/docs.yaml` |
+| Page title suffix, "Contents" button label (small screens) | `src/content/settings/docs.yaml` |
 | Images | Next to the page that shows them |
 | Theme | `src/styles/docs.css`. Component overrides are in `src/components/docs/` |
 
@@ -42,7 +42,7 @@ Follow these steps for a new page or a change to an existing one:
 
    Name the file in lower case with hyphens, such as `setting-up-github-sponsors.md`. Starlight lower-cases URLs and drops dots, so another name gives a URL that differs from the file name.
 3. Add a new page to `sidebar` in `docs.yaml`, in reading order. An entry is `- page: docs/<path>`, which shows the page title, or a group with `label` and `items`. The unit test fails if a page is missing from the sidebar or listed twice.
-4. When you move or rename a page, search for links to its old path in `src/content/docs/` and update them. Add a row to `docs/migration-notes.md` if the page came from the old GitBook site, because external links to it break.
+4. When you move or rename a page, search for links to its old path in `src/content/docs/` and update them.. External links to the old path break, so say so in the pull request.
 5. Run the humanize skill (`.claude/skills/humanize/`) over every sentence you wrote, before you show it.
 
 The page then appears in the sidebar and passes the unit test in `tests/unit/docs-content.test.ts`.

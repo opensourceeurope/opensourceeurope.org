@@ -36,7 +36,7 @@ You can make a contribution through:
 * **Bank Transfer** (SEPA or international)
 
 :::note
-**Note**: When making a bank transfer, please include the name of the Collective and your order number in the payment reference. If not possible, contact us at <oce@opencollective.com> with your transaction details to ensure proper attribution.
+**Note**: When making a bank transfer, please include the name of the Collective and your order number in the payment reference. If not possible, contact us at <home@opensourceeurope.org> with your transaction details to ensure proper attribution.
 :::
 
 ***
@@ -68,7 +68,7 @@ U.S. donors can use the established Myriad → OCEF → OSE route for tax-deduct
 ## Need Help?
 
 If you’re unsure which method to use or want to verify your transaction, don’t hesitate to reach out:\
-📧 <oce@opencollective.com>
+📧 <home@opensourceeurope.org>
 
 ## Hosting fees
 

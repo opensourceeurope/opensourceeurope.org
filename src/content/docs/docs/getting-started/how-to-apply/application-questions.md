@@ -44,4 +44,4 @@ Please prepare concise answers (approximately 250 characters) to the following q
 
 ## Need Assistance?
 
-If you have any questions or need help with the application process, feel free to [contact us](mailto:oce@opencollective.com).
+If you have any questions or need help with the application process, feel free to [contact us](mailto:home@opensourceeurope.org).

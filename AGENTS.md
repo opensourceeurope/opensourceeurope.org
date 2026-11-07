@@ -25,8 +25,6 @@ npm ci --prefix functions/chat && npm run build --prefix functions/chat && npm t
 scripts/knowledge/sync-agent.sh [--check]   # copies agent/ose-researcher.md into the plugin
 scripts/knowledge/ensure-index.sh [--check] # regenerates or checks the committed index
 scripts/knowledge/run-local.sh [--fresh]    # runs MCP server, chat function and page locally, needs uv and Ollama
-npm run drift      # text comparison with the live site; needs the preview running
-npm run capture    # captures text, images and screenshots from the live site
 npx lhci autorun --config=lighthouserc.mobile.json   # Lighthouse budgets (also lighthouserc.desktop.json); build first
 bash scripts/check-coauthors.sh <base> <head>   # agent co-author trailer check
 bash scripts/test-harness.sh   # agent harness tests
@@ -65,7 +63,6 @@ Before you hand off a change, these must pass (the commands are under Commands a
 - The canonical origin is `https://opensourceeurope.org`, set once as Astro `site`. Routes end with a slash.
 - Image paths under `/app/uploads/` and the favicon paths stay as they are.
 - Page text, links, image references and SEO fields live in `src/content/`, never in components.
-- Every deliberate difference from the live site gets a row in `docs/migration-notes.md`.
 - Code is MIT, OSE content is CC-BY-4.0, Manrope is OFL-1.1, and third-party logos stay their owners' trademarks.
 - GitHub Actions are pinned to commit SHAs with a version comment, and installed tools to versions (skill `github-actions-supply-chain-pinning`).
 
@@ -89,10 +86,10 @@ Do not quietly undo these.
 
 Do not quietly undo these.
 
-- **The docs moved from GitBook.** The pages in `src/content/docs/docs/` replace `https://docs.opencollective.com/open-source-europe` and are now the source. Edit them here, not in GitBook. `docs/migration-notes.md` lists what changed in the move (MN-060 to MN-062).
+- **The docs moved from GitBook.** The pages in `src/content/docs/docs/` replace `https://docs.opencollective.com/open-source-europe` and are now the source. Edit them here, not in GitBook.
 - **Starlight changes two site-wide settings, and `astro.config.mjs` restores them.** Starlight sets `scopedStyleStrategy: 'where'` and turns on `prefetch` for the whole site. With `'where'`, the site's component styles lose to the global grid rules and the services rows stack. The `keepSiteDefaults` integration runs after Starlight, turns prefetch off and sets the strategy to `'class'`, which has the site's old specificity. Do not use `'attribute'`: Starlight's styles for child components such as its icons then match nothing. Keep the integration after `starlight()` in the integrations list.
 - **The docs store nothing in the browser.** Starlight keeps the theme in `localStorage` and the sidebar state in `sessionStorage`. The overrides in `src/components/docs/` (`ThemeProvider`, `ThemeSelect`, `Sidebar`) and the `noSidebarStorage` Vite plugin in `astro.config.mjs` remove both. The docs have one dark theme, like the site. Do not use `syncKey` on Starlight tabs, because it also writes to `localStorage`.
-- **Docs pages share the site's consent banner and legal links.** `src/components/docs/SkipLink.astro` renders the consent banner first in the body, and `Footer.astro` adds the legal links from `footer.legal` in `site.yaml`, so the "Privacy settings" button that the privacy policy promises is on every page. `Head.astro` adds the `js` class, the default share image and the JSON-LD.
+- **Docs pages share the site's consent banner and legal links.** `src/components/docs/SkipLink.astro` renders the consent banner first in the body, then the Ask AI panel (⌘K opens it, not Starlight's search), and `Footer.astro` adds the legal links from `footer.legal` in `site.yaml`, so the "Privacy settings" button that the privacy policy promises is on every page. `Head.astro` adds the `js` class, the default share image and the JSON-LD.
 - **Every docs page is a tested route.** `tests/e2e/routes.ts` reads the sidebar from `docs.yaml`, so the quality and accessibility checks run on every page in the sidebar. `tests/unit/docs-content.test.ts` fails on a page missing from the sidebar, a missing description, an empty alt text, an empty link, a link to a docs page that does not exist, a link to a `.md` file, a file name that is not lower case with hyphens, a heading that starts with an emoji, and a body that does not start at `##` or skips a heading level.
 - **Deploys fetch the full git history.** The docs show each page's "Last updated" date from git, so `deploy-site.yml` checks out with `fetch-depth: 0`. A shallow clone gives every page the date of the release commit.
 - **The Ask chat reads these files.** The `open-source-europe` source in `.opencrane/config.yaml` is a local source: the `llms` step reads `src/content/docs/docs/` directly, `.md` and `.mdx` alike, and the preprocessors in `.opencrane/extensions.py` turn the Starlight syntax (asides, MDX imports, link cards) into plain Markdown. When you add Starlight syntax to a page, add a rule there too. `refresh.yml` rebuilds the index every Saturday and on every push to `main` that changes the docs or `extensions.py`. Answers cite `https://opensourceeurope.org/docs/...`. Only the internal Open Collective Europe space still comes from GitBook. See `docs/knowledge/knowledge-pipeline.md`.
@@ -143,6 +140,6 @@ Where each page lives:
 - The 404 page: `src/content/pages/404.yaml`.
 - Contact, including the form labels and the messages it shows: `src/content/pages/contact.yaml`. The interest options there must match `INTEREST_OPTIONS` in `functions/contact/src/fields.ts`. Change both together, and redeploy the function. A unit test fails when they differ.
 - Ask page (`/ask/`): `src/content/pages/ask.yaml`. The chat texts are under `chat` in `src/content/settings/site.yaml`.
-- Documentation (`/docs/`): one Markdown file per page in `src/content/docs/docs/`. The sidebar, the docs header title and its links are in `src/content/settings/docs.yaml`. The skill in `.claude/skills/docs-authoring/` covers page format, preview and checks.
+- Documentation (`/docs/`): one Markdown file per page in `src/content/docs/docs/`. The sidebar, the page title suffix and the "Contents" button label are in `src/content/settings/docs.yaml`. The docs use the site header from `site.yaml`. The skill in `.claude/skills/docs-authoring/` covers page format, preview and checks.
 - Header, footer, navigation, the consent banner text, the site name and the default share image: `src/content/settings/site.yaml`.
 - Uploaded images: `src/assets/uploads/` and `public/app/uploads/`. Theme images, such as backgrounds: `src/assets/theme/`.

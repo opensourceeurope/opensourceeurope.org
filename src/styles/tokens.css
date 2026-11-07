@@ -1,7 +1,6 @@
 /*
- * Design tokens, measured on https://opensourceeurope.org with `npm run capture`
- * (computed styles in reference/styles/*.json, at 390 and 1440 px wide, plus
- * spot checks at 768, 1023, 1024, 1279, 1280 and 1920 px).
+ * Design tokens, measured on the earlier WordPress site at 390 and 1440 px wide,
+ * plus spot checks at 768, 1023, 1024, 1279, 1280 and 1920 px.
  *
  * Mobile values are the default. The `lg` block below holds the values from
  * 1024 px up, the width where the live site switches its type scale.
@@ -31,7 +30,7 @@
   --color-highlight: rgb(255 255 255 / 14%);
   --color-card-fade: #0f282e; /* bottom fade over step card images */
   --color-faq-icon: #f27f0c;
-  --color-input-border: #6b7779; /* form field borders, 3:1 against --color-bg (MN-036) */
+  --color-input-border: #6b7779; /* form field borders, 3:1 against --color-bg */
   --color-brand-blue: #419ebd;
   --color-brand-cyan: #9fe7f5;
   --color-brand-yellow: #f7ad1a;

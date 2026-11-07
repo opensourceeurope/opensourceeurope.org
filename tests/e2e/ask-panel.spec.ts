@@ -1,11 +1,5 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Locator, type Page } from '@playwright/test';
-import { readFileSync } from 'node:fs';
-import { allowedFor, diffPage, type AllowedDiffs } from '../../scripts/live/drift';
-import { extractPage, type LivePage } from '../../scripts/live/extract';
-import { ROUTES } from './routes';
-
-const allowed = JSON.parse(readFileSync('tests/fixtures/live/allowed-diffs.json', 'utf8')) as AllowedDiffs;
 
 const CHAT_URL = 'http://localhost:8090/chat';
 const CONSENT = JSON.stringify({ v: 1, analytics: 'denied' });
@@ -81,6 +75,16 @@ test.describe('ask panel', () => {
     await page.keyboard.press('Escape');
     await expect(dialog(page)).toBeHidden();
     await expect(button(page)).toBeFocused();
+  });
+
+  test('is on docs pages, where Ctrl+K opens it and not the search', async ({ page }) => {
+    await page.goto('/docs/how-it-works/basics/', { waitUntil: 'load' });
+    await expect(button(page)).toBeVisible();
+    await expect(page.locator('[data-ask-panel][data-ready]')).toHaveCount(1);
+    await page.keyboard.press('Control+k');
+    await expect(dialog(page)).toBeVisible();
+    await expect(page.locator('site-search dialog')).not.toHaveAttribute('open', '');
+    await expect(page.locator('site-search button[data-open-modal]')).not.toHaveAttribute('aria-keyshortcuts', /./);
   });
 
   test('has the honeypot, out of reach', async ({ page }) => {
@@ -370,20 +374,6 @@ test.describe('ask panel', () => {
     const links = await page.locator('footer a').all();
     expect(links.length).toBeGreaterThan(0);
     for (const link of links) expect(await overlaps(button(page), link)).toBe(false);
-  });
-
-  // The panel carries data-ask-panel, which the extractor ignores like the consent banner.
-  // parity.spec.ts runs the same comparison for every route; this one checks the panel adds no text to it.
-  test('keeps the parity text unchanged', async ({ request }, info) => {
-    test.skip(info.project.name !== 'desktop', 'HTML comparison, runs once');
-    for (const route of ROUTES.filter((r) => r.enabled && r.status === 200 && r.live !== false)) {
-      const slug = route.path === '/' ? 'home' : route.path.replace(/^\/|\/$/g, '').replace(/\//g, '--');
-      const live = JSON.parse(readFileSync(`tests/fixtures/live/${slug}.json`, 'utf8')) as LivePage;
-      const html = await (await request.get(route.path)).text();
-      expect(html).toContain('data-ask-panel');
-      const local = extractPage(html, route.path);
-      expect(diffPage(live, local, allowedFor(allowed, route.path)), route.path).toEqual([]);
-    }
   });
 
   for (const key of ['Control+K', 'Meta+K']) {

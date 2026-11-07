@@ -41,4 +41,4 @@ Ready to join a supportive community of open source projects building the future
 
 * [Apply for hosting](https://opencollective.com/europe/apply)
 * [Join our Discord](https://discord.gg/Na7BpVcm)
-* [Contact the team](mailto:oce@opencollective.com)
+* [Contact the team](mailto:home@opensourceeurope.org)

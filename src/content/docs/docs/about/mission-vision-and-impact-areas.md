@@ -7,9 +7,9 @@ It all comes back to resilience
 
 ## Mission
 
-Open Collective Europe has set out to achieve the sustainability of the social and solidarity economy as well as open source technologies. Our mission is to enable initiatives to raise and spend money transparently under a common umbrella nonprofit.
+Open Source Europe has set out to achieve the sustainability of the social and solidarity economy as well as open source technologies. Our mission is to enable initiatives to raise and spend money transparently under a common umbrella nonprofit.
 
-*Open Collective is not a typical company. It is an ecosystem where a software company coexists with independent associations and foundations that we call 'hosts.' Open Collective Europe is blossoming as one of the first major fiscal hosts on the European continent. We host initiatives that share our values and work towards a better future. But what are those values? Our vision for a healthy and thriving world starts with resilience. Out of that central concern, we find six related areas where we want to make a difference.*
+*Open Collective is not a typical company. It is an ecosystem where a software company coexists with independent associations and foundations that we call 'hosts.' Open Source Europe is blossoming as one of the first major fiscal hosts on the European continent. We host initiatives that share our values and work towards a better future. But what are those values? Our vision for a healthy and thriving world starts with resilience. Out of that central concern, we find six related areas where we want to make a difference.*
 
 ### Resilient communities
 

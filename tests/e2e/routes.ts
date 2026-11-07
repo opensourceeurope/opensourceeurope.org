@@ -2,9 +2,7 @@ import { readFileSync } from 'node:fs';
 import { parseDocsSettings, sidebarPages } from '../../src/lib/docs-settings.mjs';
 
 export type Route = { path: string; enabled: boolean; status: 200 | 404;
-  // false: the live site has no such page, so the parity and drift checks skip it.
-  live?: boolean;
-  // true: a Starlight docs page, with the docs header instead of the site header.
+  // true: a Starlight docs page, built by Starlight around the site header.
   docs?: boolean;
 };
 
@@ -14,7 +12,6 @@ const DOCS_ROUTES: Route[] = sidebarPages(docsSettings.sidebar).map((slug) => ({
   path: `/${slug}/`,
   enabled: true,
   status: 200,
-  live: false,
   docs: true,
 }));
 
@@ -28,7 +25,7 @@ export const ROUTES: Route[] = [
   { path: '/services/admin-financial-support/', enabled: true, status: 200 },
   { path: '/how-to-join/', enabled: true, status: 200 },
   { path: '/contact/', enabled: true, status: 200 },
-  { path: '/ask/', enabled: true, status: 200, live: false },
+  { path: '/ask/', enabled: true, status: 200 },
   { path: '/privacy-policy/', enabled: true, status: 200 },
   { path: '/term-conditions/', enabled: true, status: 200 },
   { path: '/does-not-exist/', enabled: true, status: 404 },

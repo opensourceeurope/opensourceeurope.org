@@ -63,4 +63,4 @@ We are dedicated to continually improving our policies and practices. Feedback a
 
 ## Contact Information
 
-For questions, concerns, or to report a violation of this Code of Conduct, please contact us at <oce@opencollective.com>.
+For questions, concerns, or to report a violation of this Code of Conduct, please contact us at <home@opensourceeurope.org>.

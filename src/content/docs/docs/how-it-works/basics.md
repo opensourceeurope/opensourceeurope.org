@@ -47,7 +47,7 @@ Both receiving funds and submitting expenses are straightforward procedures. You
 
 Being fiscally hosted by OSE means joining a community of hundreds of initiatives that share the same tools to manage their independent projects. It requires minimal attention, but still some attention, to function properly.
 
-Please familiarize yourself with the guidelines on [donations](https://docs.opencollective.com/help/collectives/raising-money) and [expenses](https://docs.opencollective.com/help/expenses-and-getting-paid/submitting-expenses), and feel free to contact us if you have any questions or doubts at <oce@opencollective.com>.
+Please familiarize yourself with the guidelines on [donations](https://docs.opencollective.com/help/collectives/raising-money) and [expenses](https://docs.opencollective.com/help/expenses-and-getting-paid/submitting-expenses), and feel free to contact us if you have any questions or doubts at <home@opensourceeurope.org>.
 
 ***
 
@@ -60,7 +60,7 @@ Please familiarize yourself with the guidelines on [donations](https://docs.open
 
 ## Need Assistance?
 
-If you have any questions or need help, feel free to [contact us](mailto:oce@opencollective.com).
+If you have any questions or need help, feel free to [contact us](mailto:home@opensourceeurope.org).
 
 ## Keeping your contacts up to date
 
