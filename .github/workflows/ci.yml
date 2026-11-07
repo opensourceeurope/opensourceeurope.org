@@ -73,6 +73,15 @@ jobs:
 
       - run: npm ci
 
+      # Restores the optimized images Astro writes to node_modules/.astro/assets,
+      # so the build does not spend two minutes generating them again. It comes
+      # after npm ci, which deletes node_modules.
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: node_modules/.astro/assets
+          key: astro-assets-${{ runner.os }}-${{ hashFiles('src/assets/**', 'public/app/uploads/**', 'package-lock.json') }}
+          restore-keys: astro-assets-${{ runner.os }}-
+
       - run: npx playwright install --with-deps chromium
 
       - run: npm run test:e2e
