@@ -100,6 +100,7 @@ Releases are cut by release-please. Do not tag by hand and do not bump a version
 
 - Conventional commits on `main` drive the version: `fix:` is a patch, `feat:` is a minor, `feat!:` or a `BREAKING CHANGE:` footer is a major.
 - `docs:`, `chore:`, `ci:`, `refactor:` and `test:` commits do not cause a release.
+- Use `fix:` or `feat:` only when the pull request changes the documentation (`src/content/docs/`), the knowledge base the chat answers from (`.opencrane/`, `agent/`) or the MCP server (`plugins/ose-knowledge/`). A pull request that changes only the site UI, its pages, components or styles, takes `chore:`. It goes live with the next release.
 - `commitlint` fails a pull request whose commits are not conventional, because a wrong type silently skips the release.
 - release-please keeps one release pull request open. It merges itself once CI is green, then the tag is created and the release workflow publishes to PyPI and deploys. To hold a release, mark that pull request as draft or turn off its auto-merge.
 - Deploys happen only on a release. There is no preview environment for a pull request. Review the diff and CI.
@@ -127,7 +128,7 @@ The site text is in `src/content/`, one file per page or section. Open the file 
 2. Run `npm run dev` and check the page in the browser.
 3. Commit on the topic branch and open a pull request. Add the `Generated-by:` line if an agent helped.
 
-A change goes live only with a release. Use a `fix:` or `feat:` commit for a change to site text. A `docs:`, `chore:`, `ci:`, `refactor:` or `test:` commit does not cause a release, so its change stays unpublished until the next release. The release pull request merges itself when CI passes. See Releases above.
+A change goes live only with a release. A change to site text is a UI change, so use a `chore:` commit. It does not cause a release and stays unpublished until a documentation, knowledge base or MCP change cuts the next one. Use `fix:` or `feat:` only for those three. The release pull request merges itself when CI passes. See Releases above.
 
 Where each page lives:
 
