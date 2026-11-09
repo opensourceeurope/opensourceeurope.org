@@ -33,7 +33,7 @@ const server = createServer((req, res) => {
   // itself never blocks a request, it only limits what cross-origin JS can
   // read. Note: non-browser clients can forge the Origin header, so this stops
   // all browser-based abuse and casual scripts; platform-level rate limiting
-  // remains the backstop against determined direct callers (see docs/knowledge/deploy-chat.md).
+  // remains the backstop against determined direct callers (see dev-guide/knowledge/deploy-chat.md).
   if (!isOriginAllowed(origin, allowed)) {
     res.writeHead(403, { "content-type": "application/json" });
     res.end(JSON.stringify({ error: "origin_not_allowed" }));

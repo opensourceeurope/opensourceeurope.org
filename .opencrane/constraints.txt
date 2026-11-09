@@ -1,7 +1,7 @@
 # Version caps for dependencies that opencrane leaves unpinned. Every opencrane install
 # (uvx --constraints in scripts/knowledge/ and the workflows, pip -c in the Dockerfile)
 # reads this file, and the release copies each line into the published package's
-# dependencies. See "Dependency caps" in docs/knowledge/knowledge-pipeline.md.
+# dependencies. See "Dependency caps" in dev-guide/knowledge/knowledge-pipeline.md.
 #
 # transformers 5.17.0 removed PreTrainedModel.get_extended_attention_mask, which the
 # remote code of nomic-ai/nomic-embed-text-v1.5 calls, so every search fails.

@@ -20,7 +20,7 @@
 #   - plugins/ose-knowledge/.mcp.json   (the uvx arg pin, Claude Code)
 #   - plugins/ose-knowledge/mcp.json    (the same pin, Agent Plugins format for Codex)
 #   - src/content/pages/ask.yaml        (the "MCP config" snippet pin)
-#   - src/content/docs/docs/guides/ask-ose-from-your-ai-tools.md  (the uvx + JSON config pins on the docs page)
+#   - docs/guides/ask-ose-from-your-ai-tools.md  (the uvx + JSON config pins on the docs page)
 #
 # Usage: ./scripts/knowledge/sync-mcp-version.sh              (reads version from the manifest)
 #        ./scripts/knowledge/sync-mcp-version.sh 0.2.0        (override — handy for manual runs/tests)
@@ -68,7 +68,7 @@ sync_file() {
 sync_file "plugins/ose-knowledge/.mcp.json"
 sync_file "plugins/ose-knowledge/mcp.json"
 sync_file "src/content/pages/ask.yaml"
-sync_file "src/content/docs/docs/guides/ask-ose-from-your-ai-tools.md"
+sync_file "docs/guides/ask-ose-from-your-ai-tools.md"
 
 if [ "$changed" -eq 0 ]; then
   echo "sync-mcp-version: nothing to change (version $VERSION)"

@@ -53,7 +53,7 @@ jobs:
             [ -n "$file" ] || continue
             case "$file" in
               .opencrane/*|agent/*|plugins/*|functions/chat/*|analytics/*) ;;
-              docs/*|tests/*|scripts/knowledge/*|.claude/*|.githooks/*) ;;
+              dev-guide/*|tests/*|scripts/knowledge/*|.claude/*|.githooks/*) ;;
               .github/workflows/lighthouse.yml) site=true ;;
               .github/*) ;;
               *.md) case "$file" in */*) site=true ;; esac ;;

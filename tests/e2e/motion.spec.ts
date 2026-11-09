@@ -1,6 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 
-// Motion effects from docs/animations.md (E1–E5, E9, E10). Each effect has a
+// Motion effects from dev-guide/animations.md (E1–E5, E9, E10). Each effect has a
 // settled state that shows without JavaScript and under reduced motion.
 
 const PAGES = ['/', '/about/'];

@@ -1,7 +1,7 @@
 const HIDE_AFTER = 108;
 const SHOW_AFTER_UP = 600;
 
-/** Header behaviour from docs/animations.md E7: solid below the top, hides on scroll down, returns after 600 px up. */
+/** Header behaviour from dev-guide/animations.md E7: solid below the top, hides on scroll down, returns after 600 px up. */
 export function initHeaderScroll(): void {
   const header = document.querySelector<HTMLElement>('[data-site-header]');
   if (!header) return;

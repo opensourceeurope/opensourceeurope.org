@@ -9,7 +9,7 @@ menu_label: Contents
 #   - page: docs/<path>             a page; the sidebar shows its title
 #   - label: ... / link: /docs/...  a link with its own label
 #   - label: ... / items: [...]     a group of entries
-# Every page under src/content/docs/docs/ must appear here once. A unit test checks it.
+# Every page under docs/ must appear here once. A unit test checks it.
 # The sidebar does not show the docs home (page: docs): the "Docs" link in the
 # site header leads there.
 sidebar:

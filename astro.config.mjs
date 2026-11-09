@@ -3,6 +3,7 @@ import sitemap from '@astrojs/sitemap';
 import starlight from '@astrojs/starlight';
 import { readFileSync } from 'node:fs';
 import { parseDocsSettings, starlightSidebar } from './src/lib/docs-settings.mjs';
+import { docsGitInfo } from './src/lib/docs-git-dates.mjs';
 
 const docs = parseDocsSettings(readFileSync(new URL('./src/content/settings/docs.yaml', import.meta.url), 'utf8'));
 
@@ -72,7 +73,7 @@ export default defineConfig({
     }),
     keepSiteDefaults,
   ],
-  vite: { plugins: [noSidebarStorage] },
+  vite: { plugins: [noSidebarStorage, docsGitInfo] },
   env: {
     schema: {
       PUBLIC_CONTACT_ENDPOINT: envField.string({ context: 'client', access: 'public', url: true }),

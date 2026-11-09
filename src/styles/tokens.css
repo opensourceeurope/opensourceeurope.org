@@ -117,7 +117,7 @@
   --button-height-header: 44px; /* "submit a project" in the header */
   --button-pad-x: 24px;
 
-  /* Motion, as observed (see docs/animations.md) */
+  /* Motion, as observed (see dev-guide/animations.md) */
   --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
   --ease-css: ease;
   --ease-in-out-sine: cubic-bezier(0.37, 0, 0.63, 1);

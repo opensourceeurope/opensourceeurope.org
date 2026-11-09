@@ -1,6 +1,6 @@
 ---
 name: docs-authoring
-description: Use when adding, editing, moving or reviewing a page of the OSE documentation at /docs/, which means any file under src/content/docs/ or src/content/settings/docs.yaml. Covers where pages live, the sidebar, callouts and cards, images, links, the local preview, the checks to run and the commit type that publishes the change.
+description: Use when adding, editing, moving or reviewing a page of the OSE documentation at /docs/, which means any file under docs/ or src/content/settings/docs.yaml. Covers where pages live, the sidebar, callouts and cards, images, links, the local preview, the checks to run and the commit type that publishes the change.
 ---
 
 # Docs authoring
@@ -15,8 +15,8 @@ The following table lists the files that make up the docs:
 
 | What | Where |
 |---|---|
-| Pages | `src/content/docs/docs/`. The path is the URL: `src/content/docs/docs/faq/general-faqs.md` is `/docs/faq/general-faqs/` |
-| A page with child pages | `index.md` in a folder: `how-it-works/expenses/index.md` is `/docs/how-it-works/expenses/` |
+| Pages | `docs/`. The path is the URL: `docs/faq/general-faqs.md` is `/docs/faq/general-faqs/` |
+| A page with child pages | `index.md` in a folder: `docs/how-it-works/expenses/index.md` is `/docs/how-it-works/expenses/` |
 | Sidebar order and group names | `src/content/settings/docs.yaml`, under `sidebar` |
 | Page title suffix, "Contents" button label (small screens) | `src/content/settings/docs.yaml` |
 | Images | Next to the page that shows them |
@@ -42,7 +42,7 @@ Follow these steps for a new page or a change to an existing one:
 
    Name the file in lower case with hyphens, such as `setting-up-github-sponsors.md`. Starlight lower-cases URLs and drops dots, so another name gives a URL that differs from the file name.
 3. Add a new page to `sidebar` in `docs.yaml`, in reading order. An entry is `- page: docs/<path>`, which shows the page title, or a group with `label` and `items`. The unit test fails if a page is missing from the sidebar or listed twice.
-4. When you move or rename a page, search for links to its old path in `src/content/docs/` and update them.. External links to the old path break, so say so in the pull request.
+4. When you move or rename a page, search for links to its old path in `docs/` and update them. External links to the old path break, so say so in the pull request.
 5. Run the humanize skill (`.claude/skills/humanize/`) over every sentence you wrote, before you show it.
 
 The page then appears in the sidebar and passes the unit test in `tests/unit/docs-content.test.ts`.
@@ -120,7 +120,7 @@ Run the full quality gates from `AGENTS.md` when the change touches more than pa
 
 ## Commit so that the change goes live
 
-The docs go live only with a release. Use a `fix:` commit for a correction to a page and a `feat:` commit for a new page or section, for example `fix: correct the refund time frame in the docs`. A `docs:` commit does not cause a release, because in this repository `docs:` means the files under `docs/` that describe the code, not the published docs.
+The docs go live only with a release. Use a `fix:` commit for a correction to a page and a `feat:` commit for a new page or section, for example `fix: correct the refund time frame in the docs`. A `docs:` commit does not cause a release, because in this repository `docs:` means the guides under `dev-guide/` that describe the code, not the published docs.
 
 Add the `Generated-by:` line to the pull request if an agent helped, and never add an agent as a co-author.
 

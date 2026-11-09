@@ -4,10 +4,11 @@ markdown_extensions:
 extensions: extensions.py
 ignore_patterns:
 - devel
+- superpowers
 sources:
   open-source-europe:
     local: true
-    docs_path: src/content/docs/docs
+    docs_path: docs
     docs_url: https://opensourceeurope.org/docs
     trailing_slash: true
   oc-europe-internal-doc:
