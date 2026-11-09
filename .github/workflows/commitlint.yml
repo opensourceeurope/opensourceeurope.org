@@ -48,7 +48,7 @@ jobs:
               echo
               jq -r '.[] | select(.valid == false)
                 | "- **" + ((.message | split("\n")[0])) + "**\n"
-                  + ([.errors[]? | "    - " + (.message // (. | tostring))] | join("\n"))' results.json
+                  + ([.errors[]? | "    - " + (if type == "object" then (.message // tostring) else tostring end)] | join("\n"))' results.json
               echo
               echo "Reword the offending commit(s). Types: \`feat\` (minor), \`fix\` (patch), \`feat!\`/\`BREAKING CHANGE\` (major), plus \`docs\` \`chore\` \`ci\` \`refactor\` \`test\` \`perf\`."
             fi
