@@ -20,7 +20,11 @@ For another client, put this in the client's configuration:
 ```json
 {
   "mcpServers": {
-    "ose-knowledge": { "type": "stdio", "command": "uvx", "args": ["ose-knowledge-mcp==0.11.1"] }
+    "ose-knowledge": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["ose-knowledge-mcp==0.11.1"]
+    }
   }
 }
 ```
