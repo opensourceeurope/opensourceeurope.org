@@ -19,7 +19,7 @@ OSE aims to answer general questions within seven business days. This is a targe
 
 🔍 Use the search at the top of the page to find detailed information about specific topics
 
-💬 Join our [Discord](https://discord.gg/Wkfjzkfn) to talk with the whole Open Collective community, and join the #opensource channel
+💬 Join our [Discord](https://discord.gg/TmbRzFBqBa) to talk with the whole Open Collective community, and join the #opensource channel
 
 🌱 Read the latest [Updates from OSE](https://opencollective.com/europe/updates) on our page and on the [Open Collective Blog](https://blog.opencollective.com)
 
@@ -35,7 +35,7 @@ Our small team helps you Monday to Friday, across several time zones. We aim to 
 
 🎟 Request platform support [here](https://opencollective.com/help)
 
-💬 Join our [Discord](https://discord.gg/Wkfjzkfn) to talk with the whole Open Collective community, and join the #opensource channel
+💬 Join our [Discord](https://discord.gg/TmbRzFBqBa) to talk with the whole Open Collective community, and join the #opensource channel
 
 ### Reporting an Issue
 

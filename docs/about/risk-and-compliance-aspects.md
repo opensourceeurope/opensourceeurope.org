@@ -13,7 +13,7 @@ Open Source Europe (OSE) is committed to supporting initiatives that promote pos
 
 ## Grant Eligibility Criteria
 
-OCE prioritizes proposals from initiatives that:
+OSE prioritizes proposals from initiatives that:
 
 * Operate in accordance with the law.
 * Do not support or glorify terrorist groups.
@@ -23,7 +23,7 @@ OCE prioritizes proposals from initiatives that:
 
 ## Compliance Risk Assessment
 
-OCE assesses potential compliance risks associated with grant proposals using the following factors (in order of importance):
+OSE assesses potential compliance risks associated with grant proposals using the following factors (in order of importance):
 
 1. **Beneficiary Impact**: Can the initiative show that its work benefits its target communities?
 2. **Public Statements**: Does the initiative's public messaging avoid promoting violence or extremism?
@@ -34,13 +34,13 @@ OCE assesses potential compliance risks associated with grant proposals using th
 
 ## Contextual Considerations
 
-OCE takes context into account when it evaluates proposals. It carries out due diligence to understand the specific circumstances and actions of the initiative.
+OSE takes context into account when it evaluates proposals. It carries out due diligence to understand the specific circumstances and actions of the initiative.
 
 ***
 
 ## Information Sources
 
-To assess grant proposals, OCE uses different information sources, including (in order of importance):&#x20;
+To assess grant proposals, OSE uses different information sources, including (in order of importance):&#x20;
 
 * Initiative websites and reports.
 * Credible news sources and independent research organizations.
@@ -51,7 +51,7 @@ To assess grant proposals, OCE uses different information sources, including (in
 
 ## Limited Veto Power
 
-OCE reserves the right to propose a veto of a grant proposal if a high compliance risk is identified based on the criteria above. A clear and documented reason will be provided, which sets out the specific concerns.
+OSE reserves the right to propose a veto of a grant proposal if a high compliance risk is identified based on the criteria above. A clear and documented reason will be provided, which sets out the specific concerns.
 
 ***
 
@@ -69,7 +69,7 @@ This policy is reviewed and revised periodically, to make sure it stays effectiv
 
 ## Conclusion
 
-OCE is committed to balancing the prevention of terrorism financing with support for legitimate initiatives that work towards positive social change. This policy is the framework for that goal.
+OSE is committed to balancing the prevention of terrorism financing with support for legitimate initiatives that work towards positive social change. This policy is the framework for that goal.
 
 ***
 

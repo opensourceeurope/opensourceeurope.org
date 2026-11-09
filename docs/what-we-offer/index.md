@@ -40,5 +40,5 @@ This structure suits open source projects that want to focus on their mission wi
 To join our community of open source projects:
 
 * [Apply for hosting](https://opencollective.com/europe/apply)
-* [Join our Discord](https://discord.gg/Na7BpVcm)
+* [Join our Discord](https://discord.gg/TmbRzFBqBa)
 * [Contact the team](mailto:home@opensourceeurope.org)

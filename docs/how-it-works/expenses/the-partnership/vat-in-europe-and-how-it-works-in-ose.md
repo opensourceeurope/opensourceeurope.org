@@ -19,7 +19,7 @@ Learn more: [VAT explained – European Commission](https://taxation-customs.ec.
 
 Invoices issued within your country (e.g. Belgium) must include VAT unless the supplier is legally exempt.
 
-OCE itself is not VAT-exempt. If it issues an invoice, for example for services, VAT is applied at the applicable Belgian rate.
+Open Collective Europe (OCE), the association that runs OSE, is not VAT-exempt. If OCE issues an invoice, for example for services, VAT is applied at the applicable Belgian rate.
 
 :::note
 Belgian VAT details: [Finance Belgium](https://finance.belgium.be/en)
@@ -31,7 +31,7 @@ Belgian VAT details: [Finance Belgium](https://finance.belgium.be/en)
 
 The reverse charge mechanism lets VAT-registered businesses handle cross-border VAT internally: they declare both output and input VAT.
 
-However, this mechanism only applies between two VAT-registered businesses. OCE-hosted Collectives are not legal entities, so they cannot apply the reverse charge mechanism.
+However, this mechanism only applies between two VAT-registered businesses. Collectives hosted by OSE are not legal entities, so they cannot apply the reverse charge mechanism.
 
 :::danger
 This means you must pay VAT on cross-border invoices from EU-based suppliers, like any individual or unregistered group.

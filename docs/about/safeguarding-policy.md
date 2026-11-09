@@ -23,7 +23,7 @@ Safeguarding refers to the actions we take to protect people, especially childre
 
 ## Our Commitment
 
-OCE is committed to:
+OSE is committed to:
 
 * Promoting a culture of safety and well-being for everyone involved in our activities.
 * Sharing safeguarding guidance with staff and volunteers, including how to report concerns and their role in protecting people.
@@ -46,7 +46,7 @@ Safeguarding applies to everyone, but some people may be more vulnerable to harm
 
 ## Reporting Concerns
 
-Anyone who has a concern about the safety or well-being of someone involved in OCE activities should report it immediately. This applies even if they are not sure about the nature of the concern.
+Anyone who has a concern about the safety or well-being of someone involved in OSE activities should report it immediately. This applies even if they are not sure about the nature of the concern.
 
 Contact the safeguarding leads listed below to report a concern. OSE does not provide a continuously staffed reporting service or guarantee a response time.
 
