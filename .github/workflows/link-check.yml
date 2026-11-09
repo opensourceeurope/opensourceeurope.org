@@ -55,4 +55,4 @@ jobs:
             README.md
             DEVELOPMENT.md
             AGENTS.md
-            'docs/**/*.md'
+            'dev-guide/**/*.md'

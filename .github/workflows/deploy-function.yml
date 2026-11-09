@@ -1,5 +1,5 @@
 # Builds the contact function and deploys the zip to Scaleway Serverless Functions.
-# Setup, variables and secrets are listed in docs/deployment.md.
+# Setup, variables and secrets are listed in dev-guide/deployment.md.
 name: deploy function
 
 on:
@@ -52,7 +52,7 @@ jobs:
           missing=0
           for name in SCW_ACCESS_KEY SCW_SECRET_KEY SCW_DEFAULT_PROJECT_ID SCW_DEFAULT_ORGANIZATION_ID SCW_REGION SCW_FUNCTION_ID; do
             if [ -z "${!name}" ]; then
-              echo "::error::$name is not set. See docs/deployment.md."
+              echo "::error::$name is not set. See dev-guide/deployment.md."
               missing=1
             fi
           done

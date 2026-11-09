@@ -16,7 +16,7 @@ The following table lists the licence for each path:
 
 | Path | Licence |
 |---|---|
-| `src/content/**`, `src/assets/uploads/**`, `public/app/uploads/**`, `docs/**` including `docs/knowledge/**` | CC-BY-4.0 (`LICENSE-CONTENT`) |
+| `src/content/**`, `src/assets/uploads/**`, `public/app/uploads/**`, `docs/**`, `dev-guide/**` | CC-BY-4.0 (`LICENSE-CONTENT`) |
 | `.opencrane/llmstxt/**`, `.opencrane/chunks.json`, `.opencrane/milvus.db`, `.opencrane/embeddings.json` | CC-BY-4.0 (`LICENSE-CONTENT`) |
 | `agent/**`, `plugins/**` | MIT (`LICENSE`) |
 | `public/fonts/**` | OFL-1.1 |

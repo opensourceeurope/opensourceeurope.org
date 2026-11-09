@@ -230,7 +230,7 @@ The workflow fails fast with a clear message if a required value is missing.
    once at the end. In the browser, the status line under the question changes from
    "Searching the docs" to "Writing the answer" and the text appears piece by piece. If
    everything arrives at once, the platform buffers: the chat still works, so note it in
-   `docs/deployment.md` under "Known weaknesses".
+   `dev-guide/deployment.md` under "Known weaknesses".
 4. Confirm enforcement works: `curl -X POST <FUNCTION_URL> -H 'content-type:
    application/json' -d '{"messages":[{"role":"user","content":"hi"}]}'` (no Origin
    header) must return `403`. If it returns an answer, `ALLOWED_ORIGINS` is still `*`.

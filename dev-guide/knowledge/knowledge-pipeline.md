@@ -8,7 +8,7 @@ embeds them, and indexes them into Milvus Lite for the `search_docs` MCP tool.
 
 The index has two `llmstxt` sources:
 
-- `open-source-europe`: the docs at `/docs/`, a local source that the `llms` step reads straight from `src/content/docs/docs/`. `markdown_extensions` in `.opencrane/config.yaml` makes it read the `.mdx` home page too, `trailing_slash` makes page URLs end with `/` like the site's, and the preprocessors in `.opencrane/extensions.py` turn Starlight asides, MDX imports and link cards into plain Markdown. Answers cite `https://opensourceeurope.org/docs/...`. `fetch` skips this source.
+- `open-source-europe`: the docs at `/docs/`, a local source that the `llms` step reads straight from `docs/`. `markdown_extensions` in `.opencrane/config.yaml` makes it read the `.mdx` home page too, `trailing_slash` makes page URLs end with `/` like the site's, and the preprocessors in `.opencrane/extensions.py` turn Starlight asides, MDX imports and link cards into plain Markdown. Answers cite `https://opensourceeurope.org/docs/...`. `fetch` skips this source.
 - `oc-europe-internal-doc`: the internal Open Collective Europe space, downloaded from https://docs.opencollective.com/oc-europe-internal-doc/llms-full.txt.
 
 A docs change that merges to `main` starts the refresh workflow, which exports the docs again, rebuilds the index and opens a pull request that merges itself. The chat answers from the change with the release that includes that pull request.

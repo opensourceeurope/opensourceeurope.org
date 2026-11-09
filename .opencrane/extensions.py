@@ -1,7 +1,7 @@
 """OpenCrane extensions for the OSE knowledge base.
 
 The `open-source-europe` source reads the Starlight docs in
-src/content/docs/docs/ directly (see config.yaml). These preprocessors turn the
+docs/ directly (see config.yaml). These preprocessors turn the
 Starlight-only syntax into plain Markdown before the `llms` step builds
 llms-full.txt, so the chat searches text, not markup. OpenCrane runs them in
 order, after it reads the frontmatter and before it handles images and links.

@@ -4,9 +4,10 @@ import { describe, expect, it } from 'vitest';
 import { parse } from 'yaml';
 import { parseDocsSettings, sidebarPages } from '../../src/lib/docs-settings.mjs';
 
-const ROOT = 'src/content/docs';
+// The docs pages live in docs/ at the repository root, so paths are relative to the root.
+const ROOT = '.';
 const files = (readdirSync(join(ROOT, 'docs'), { recursive: true }) as string[])
-  .filter((f) => /\.mdx?$/.test(f))
+  .filter((f) => /\.mdx?$/.test(f) && !f.startsWith('superpowers/'))
   .map((f) => join(ROOT, 'docs', f));
 
 // The slug Starlight gives a file: its path without the extension, and

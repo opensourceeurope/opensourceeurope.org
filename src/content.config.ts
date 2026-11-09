@@ -1,7 +1,6 @@
 import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
-import { docsLoader } from '@astrojs/starlight/loaders';
 import { docsSchema } from '@astrojs/starlight/schema';
 import { Heading, makeImageSchema, makeSectionSchema } from './lib/sections';
 
@@ -179,7 +178,20 @@ const settings = defineCollection({
       .strict(),
 });
 
-// The documentation at /docs/, rendered by Starlight. Pages live in src/content/docs/docs/.
-const docs = defineCollection({ loader: docsLoader(), schema: docsSchema() });
+// The documentation at /docs/, rendered by Starlight. Pages live in docs/ at the repository root.
+// Starlight's docsLoader() only reads docs/, so a glob loader reads docs/ instead and
+// prefixes each id with docs/, which keeps the URLs under /docs/. docs/faq/index.md is /docs/faq/.
+const docs = defineCollection({
+  loader: glob({
+    base: './docs',
+    // docs/superpowers/ holds local agent plans that git ignores. They are not pages.
+    pattern: ['**/[^_]*.{md,mdx}', '!superpowers/**'],
+    generateId: ({ entry }) => {
+      const path = entry.replace(/\.mdx?$/, '').replace(/(^|\/)index$/, '');
+      return path ? `docs/${path}` : 'docs';
+    },
+  }),
+  schema: docsSchema(),
+});
 
 export const collections = { pages, services, legal, shared, settings, docs };

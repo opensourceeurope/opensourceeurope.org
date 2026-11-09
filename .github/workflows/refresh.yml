@@ -9,7 +9,7 @@ on:
   push:
     branches: [main]
     paths:
-      - src/content/docs/**
+      - docs/**
       - .opencrane/extensions.py
   workflow_dispatch:
     inputs:
@@ -46,7 +46,7 @@ jobs:
       # The RAG pipeline deps (docling/PyGithub/tiktoken) live in opencrane's optional
       # `[pipeline]` extra (kept out of the serve-only base so `uvx ose-knowledge-mcp`
       # stays slim); fetch and chunk need them, so the build steps request the extra.
-      # The OSE docs are a local source (src/content/docs/docs/) that the llms step reads
+      # The OSE docs are a local source (docs/) that the llms step reads
       # directly. fetch downloads only the internal Open Collective Europe space from GitBook.
       - name: Re-fetch sources and regenerate committed inputs
         env:
@@ -99,7 +99,7 @@ jobs:
             if ! gh pr view "$branch" --json state --jq .state 2>/dev/null | grep -q OPEN; then
               gh pr create --base main --head "$branch" \
                 --title "fix(knowledge): weekly OSE knowledge refresh" \
-                --body "Automated weekly refresh of the OSE knowledge base. The workflow read the OSE docs from src/content/docs/, fetched the internal GitBook space again and re-chunked both, then rebuilt the vector index only if the chunks changed. It rolls into the release PR on merge."
+                --body "Automated weekly refresh of the OSE knowledge base. The workflow read the OSE docs from docs/, fetched the internal GitBook space again and re-chunked both, then rebuilt the vector index only if the chunks changed. It rolls into the release PR on merge."
             fi
             # Keep shipping hands-off: auto-merge once the required checks (validate +
             # commitlint) are green. Squash so release-please detects the fix: and rolls it in.

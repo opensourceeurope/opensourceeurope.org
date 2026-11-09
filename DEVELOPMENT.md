@@ -25,7 +25,7 @@ The following table lists the commands and what each one does:
 | `npx lhci autorun --config=lighthouserc.mobile.json` | Lighthouse budgets on every route (use `lighthouserc.desktop.json` for desktop). Run `npm run build` first. |
 | `bash scripts/check-coauthors.sh <base> <head>` | Fails when a commit in the range has an agent `Co-authored-by` trailer. |
 | `npm ci --prefix functions/chat && npm test --prefix functions/chat` | Installs and tests the chat function. |
-| `npm run build:function` | Bundles the contact form function for deployment. See `docs/deployment.md`. |
+| `npm run build:function` | Bundles the contact form function for deployment. See `dev-guide/deployment.md`. |
 | `bash scripts/test-harness.sh` | Tests the agent hooks and scripts. |
 
 ## Knowledge base
@@ -45,7 +45,7 @@ The following table lists where each part lives:
 | The Ask panel fragment, fetched on first open | `src/pages/ask/panel.html.ts` |
 | Chat components | `src/components/chat/` |
 | Chat client scripts | `src/scripts/chat/` |
-| Docs | `docs/knowledge/` |
+| Docs | `dev-guide/knowledge/` |
 
 ### Run the chat locally
 
@@ -60,7 +60,24 @@ scripts/knowledge/run-local.sh # starts astro dev on 4321 and opens /ask/
 
 The first run builds the embeddings index, which takes a few minutes. Pass `--fresh` to rebuild it. For a hosted model or other settings, see `functions/chat/README.md`.
 
-More docs are in `docs/knowledge/`: `architecture.md`, `knowledge-pipeline.md`, `deploy-scaleway.md`, `deploy-chat.md`, `chat-cost.md` and `automation.md`.
+For the rest of the knowledge base guides, see [More guides](#more-guides).
+
+## More guides
+
+The longer guides for maintainers are in `dev-guide/`. The pages of the public documentation at `/docs/` are in `docs/`. To change them, see [Editing content](AGENTS.md#editing-content).
+
+The following table lists each guide in `dev-guide/`:
+
+| Guide | What it covers |
+|---|---|
+| [Deployment](dev-guide/deployment.md) | Hosting on Scaleway, the deploy workflows, variables and secrets |
+| [Animation inventory](dev-guide/animations.md) | Every animated or interactive effect and the values the site matches |
+| [Architecture](dev-guide/knowledge/architecture.md) | The MCP server and the public chat on top of it |
+| [Knowledge pipeline](dev-guide/knowledge/knowledge-pipeline.md) | How OpenCrane fetches, chunks and indexes the OSE docs |
+| [Deploying the MCP server](dev-guide/knowledge/deploy-scaleway.md) | The Scaleway Serverless Container that serves the MCP server |
+| [Deploying the chat](dev-guide/knowledge/deploy-chat.md) | The chat function and how it is deployed |
+| [Chat cost](dev-guide/knowledge/chat-cost.md) | What the public chat costs to run and how to measure it again |
+| [Automation](dev-guide/knowledge/automation.md) | The CI, refresh, release and deploy workflows |
 
 ## Troubleshooting
 

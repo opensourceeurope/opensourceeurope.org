@@ -26,7 +26,7 @@ Set these under Settings, Secrets and variables, Actions. The deploy workflows s
 | `SCW_FUNCTION_ID` | variable | `deploy-function.yml` | UUID of the function. It is shown in the console and by `scw function function list` |
 | `CHAT_FUNCTION_URL` | variable | `deploy-site.yml` | Public URL of the chat function. The site build reads it as `PUBLIC_CHAT_ENDPOINT` for `/ask/` and the panel. The site deploy stops when it is empty |
 
-The chat function and the MCP container have their own variables and secrets: `SCW_DEFAULT_PROJECT_ID`, `SCW_DEFAULT_ORGANIZATION_ID`, `MISTRAL_API_KEY`, `SCW_REGISTRY_NAMESPACE`, `SCW_CONTAINER_ID`, `SCW_FUNCTION_CONTAINER_ID`, `OSE_MCP_URL`, `CHAT_S3_BUCKET`, `CHAT_EXTRA_ORIGINS`, `MISTRAL_MODEL`, `MISTRAL_BASE_URL` and the optional `CHAT_SEARCH_FIRST`. [`docs/knowledge/deploy-chat.md`](knowledge/deploy-chat.md) and [`docs/knowledge/deploy-scaleway.md`](knowledge/deploy-scaleway.md) describe them. `release.yml` also needs the `RELEASE_TOKEN` secret.
+The chat function and the MCP container have their own variables and secrets: `SCW_DEFAULT_PROJECT_ID`, `SCW_DEFAULT_ORGANIZATION_ID`, `MISTRAL_API_KEY`, `SCW_REGISTRY_NAMESPACE`, `SCW_CONTAINER_ID`, `SCW_FUNCTION_CONTAINER_ID`, `OSE_MCP_URL`, `CHAT_S3_BUCKET`, `CHAT_EXTRA_ORIGINS`, `MISTRAL_MODEL`, `MISTRAL_BASE_URL` and the optional `CHAT_SEARCH_FIRST`. [`dev-guide/knowledge/deploy-chat.md`](knowledge/deploy-chat.md) and [`dev-guide/knowledge/deploy-scaleway.md`](knowledge/deploy-scaleway.md) describe them. `release.yml` also needs the `RELEASE_TOKEN` secret.
 
 ### Keep the Scaleway values at repository level
 

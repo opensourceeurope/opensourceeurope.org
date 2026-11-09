@@ -1,5 +1,5 @@
 # Builds the site and syncs dist/ to the Scaleway Object Storage bucket.
-# Setup, variables and secrets are listed in docs/deployment.md.
+# Setup, variables and secrets are listed in dev-guide/deployment.md.
 name: deploy site
 
 on:
@@ -54,7 +54,7 @@ jobs:
           missing=0
           for name in SCW_ACCESS_KEY SCW_SECRET_KEY SITE_S3_BUCKET SCW_REGION CONTACT_ENDPOINT CHAT_FUNCTION_URL; do
             if [ -z "${!name}" ]; then
-              echo "::error::$name is not set. See docs/deployment.md."
+              echo "::error::$name is not set. See dev-guide/deployment.md."
               missing=1
             fi
           done
@@ -105,4 +105,4 @@ jobs:
             --exclude "_astro/*" \
             --cache-control "public, max-age=300" \
             --delete
-          echo "Uploaded. Purge the Edge Services cache, see docs/deployment.md."
+          echo "Uploaded. Purge the Edge Services cache, see dev-guide/deployment.md."
