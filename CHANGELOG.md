@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.11.3...v0.12.0) (2026-11-09)
+
+
+### Features
+
+* **docs:** add a docs page for the AI tools set-up and move the dev guide out of the README ([#44](https://github.com/opensourceeurope/opensourceeurope.org/issues/44)) ([2f3d1c1](https://github.com/opensourceeurope/opensourceeurope.org/commit/2f3d1c1446d52539cc7b53f3ba88e6a35b5053e7))
+
 ## [0.11.3](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.11.2...v0.11.3) (2026-11-09)
 
 

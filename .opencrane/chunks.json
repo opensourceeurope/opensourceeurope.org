@@ -1,5 +1,67 @@
 [
   {
+    "chunk_id": "96b0873545e1bba1eefedc5e75916c4f31f028d7d2ccbd4e7e74b97d1f09b129",
+    "chunk_type": "code_snippet",
+    "content": "# Ask OSE from your AI tools > Use it as an MCP server\nAdd the server to any MCP client, such as Claude Code, Cursor or Claude Desktop. In Claude Code, run this command:\n\n```bash\nclaude mcp add ose-knowledge -- uvx ose-knowledge-mcp==0.11.3\n```",
+    "line_start": null,
+    "metadata": {
+      "breadcrumb_path": "Ask OSE from your AI tools > Use it as an MCP server",
+      "code_caption": "Add the server to any MCP client, such as Claude Code, Cursor or Claude Desktop. In Claude Code, run this command:",
+      "is_complete": true,
+      "language": "bash",
+      "source_url": "https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/"
+    },
+    "source_file": ".opencrane/llmstxt/llms-full.txt",
+    "source_name": "open-source-europe",
+    "token_count": 71
+  },
+  {
+    "chunk_id": "5bd3f1aa6c3e269d130fe4490245de083b3ceff1b302715dba64d4dd22a57730",
+    "chunk_type": "code_snippet",
+    "content": "# Ask OSE from your AI tools > Use it as an MCP server\nFor another client, put this in the client's configuration:\n\n```json\n{\n  \"mcpServers\": {\n    \"ose-knowledge\": {\n      \"type\": \"stdio\",\n      \"command\": \"uvx\",\n      \"args\": [\"ose-knowledge-mcp==0.11.3\"]\n    }\n  }\n}\n```",
+    "line_start": null,
+    "metadata": {
+      "breadcrumb_path": "Ask OSE from your AI tools > Use it as an MCP server",
+      "code_caption": "For another client, put this in the client's configuration:",
+      "is_complete": true,
+      "language": "json",
+      "source_url": "https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/"
+    },
+    "source_file": ".opencrane/llmstxt/llms-full.txt",
+    "source_name": "open-source-europe",
+    "token_count": 84
+  },
+  {
+    "chunk_id": "d1dbd7406d072149a10d1b75c5d946039ff36e856ef63c473ad7d8d011eb93c6",
+    "chunk_type": "code_snippet",
+    "content": "# Ask OSE from your AI tools > Use it as a Claude Code plugin\n\n```text\n/plugin marketplace add opensourceeurope/ose-ai\n/plugin install ose-knowledge@ose-ai\n```",
+    "line_start": null,
+    "metadata": {
+      "breadcrumb_path": "Ask OSE from your AI tools > Use it as a Claude Code plugin",
+      "is_complete": true,
+      "language": "text",
+      "source_url": "https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/"
+    },
+    "source_file": ".opencrane/llmstxt/llms-full.txt",
+    "source_name": "open-source-europe",
+    "token_count": 44
+  },
+  {
+    "chunk_id": "9f7ea5701dbd2a62f248df94ad79048c312147de74f11f3496e31dd19a150eda",
+    "chunk_type": "code_snippet",
+    "content": "# Ask OSE from your AI tools > Use it as a Codex plugin\n\n```bash\ncodex plugin marketplace add opensourceeurope/ose-ai\n```",
+    "line_start": null,
+    "metadata": {
+      "breadcrumb_path": "Ask OSE from your AI tools > Use it as a Codex plugin",
+      "is_complete": true,
+      "language": "bash",
+      "source_url": "https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/"
+    },
+    "source_file": ".opencrane/llmstxt/llms-full.txt",
+    "source_name": "open-source-europe",
+    "token_count": 35
+  },
+  {
     "chunk_id": "15009d3964714f2d2a630e3c7c1eded551f65181db87d7a6ffe938a1f576b799",
     "chunk_type": "list_item",
     "content": "# Community guidelines > Core Principles\n**Transparency**: Operate with transparency and integrity. Ensure that financial activities, decision-making processes, and communications are open and accessible.",
@@ -28149,6 +28211,142 @@
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
     "token_count": 33
+  },
+  {
+    "chunk_id": "f59f8982d22adb5cdf13e91d6b0a79b4301bf14649b560d84e4a46419ce4c5b7",
+    "chunk_type": "prose",
+    "content": "# Ask OSE from your AI tools\n\nThe OSE knowledge base searches these docs and answers questions about OSE with cited sources. You can ask it in the chat at Ask OSE (link removed: /ask/), or connect it to your own AI assistant. The knowledge base then runs on your own computer, so OSE does not see your questions.\n\nAll three ways start the knowledge base with `uvx`, so install [uv](https://docs.astral.sh/uv/) first.",
+    "line_start": null,
+    "metadata": {
+      "breadcrumb_path": "Ask OSE from your AI tools",
+      "doc_order": 1,
+      "heading_path": "Ask OSE from your AI tools",
+      "next_chunk_id": "cb960826fc9f101c4a7a56c23b2ee3d17987669306260afb0c2bc01ee8094c8c",
+      "parent_chunk_id": null,
+      "position": 1,
+      "prev_chunk_id": null,
+      "source_url": "https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/"
+    },
+    "source_file": ".opencrane/llmstxt/llms-full.txt",
+    "source_name": "open-source-europe",
+    "token_count": 102
+  },
+  {
+    "chunk_id": "cb960826fc9f101c4a7a56c23b2ee3d17987669306260afb0c2bc01ee8094c8c",
+    "chunk_type": "prose",
+    "content": "## Use it as an MCP server\n\nAdd the server to any MCP client, such as Claude Code, Cursor or Claude Desktop. In Claude Code, run this command:",
+    "line_start": null,
+    "metadata": {
+      "breadcrumb_path": "Ask OSE from your AI tools > Use it as an MCP server",
+      "doc_order": 2,
+      "heading_path": "Ask OSE from your AI tools > Use it as an MCP server",
+      "next_chunk_id": "1a5d350d06768b313f7f38e132e376031d4c56f78269e00cfdf26d9890251616",
+      "parent_chunk_id": "f59f8982d22adb5cdf13e91d6b0a79b4301bf14649b560d84e4a46419ce4c5b7",
+      "position": 2,
+      "prev_chunk_id": "f59f8982d22adb5cdf13e91d6b0a79b4301bf14649b560d84e4a46419ce4c5b7",
+      "section_anchor": "use-it-as-an-mcp-server",
+      "source_url": "https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/"
+    },
+    "source_file": ".opencrane/llmstxt/llms-full.txt",
+    "source_name": "open-source-europe",
+    "token_count": 34
+  },
+  {
+    "chunk_id": "1a5d350d06768b313f7f38e132e376031d4c56f78269e00cfdf26d9890251616",
+    "chunk_type": "prose",
+    "content": "For another client, put this in the client's configuration:",
+    "line_start": null,
+    "metadata": {
+      "breadcrumb_path": "Ask OSE from your AI tools",
+      "doc_order": 3,
+      "heading_path": "Ask OSE from your AI tools > Use it as an MCP server",
+      "next_chunk_id": "cbb3c5796754a3a6772ed850853cd3c73371d9a0d6b6985d4e9e939c586ff7ba",
+      "parent_chunk_id": "f59f8982d22adb5cdf13e91d6b0a79b4301bf14649b560d84e4a46419ce4c5b7",
+      "position": 3,
+      "prev_chunk_id": "cb960826fc9f101c4a7a56c23b2ee3d17987669306260afb0c2bc01ee8094c8c",
+      "source_url": "https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/"
+    },
+    "source_file": ".opencrane/llmstxt/llms-full.txt",
+    "source_name": "open-source-europe",
+    "token_count": 12
+  },
+  {
+    "chunk_id": "cbb3c5796754a3a6772ed850853cd3c73371d9a0d6b6985d4e9e939c586ff7ba",
+    "chunk_type": "prose",
+    "content": "The version is fixed, so you always get a known build. Each OSE release updates the version on this page.",
+    "line_start": null,
+    "metadata": {
+      "breadcrumb_path": "Ask OSE from your AI tools",
+      "doc_order": 4,
+      "heading_path": "Ask OSE from your AI tools > Use it as an MCP server",
+      "next_chunk_id": "98eccfb727346f104913acf29ff324bc724e1e15b182d526b1ee6a81cb20839d",
+      "parent_chunk_id": "f59f8982d22adb5cdf13e91d6b0a79b4301bf14649b560d84e4a46419ce4c5b7",
+      "position": 4,
+      "prev_chunk_id": "1a5d350d06768b313f7f38e132e376031d4c56f78269e00cfdf26d9890251616",
+      "source_url": "https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/"
+    },
+    "source_file": ".opencrane/llmstxt/llms-full.txt",
+    "source_name": "open-source-europe",
+    "token_count": 24
+  },
+  {
+    "chunk_id": "98eccfb727346f104913acf29ff324bc724e1e15b182d526b1ee6a81cb20839d",
+    "chunk_type": "prose",
+    "content": "## Use it as a Claude Code plugin\n\nThe plugin adds the MCP server, an `ose-researcher` agent and an `ask-about-ose` skill. The skill sends your OSE questions to the agent. You can also call the skill as `/ose-knowledge:ask-about-ose`.",
+    "line_start": null,
+    "metadata": {
+      "breadcrumb_path": "Ask OSE from your AI tools > Use it as a Claude Code plugin",
+      "doc_order": 5,
+      "heading_path": "Ask OSE from your AI tools > Use it as a Claude Code plugin",
+      "next_chunk_id": "8a7eeec9989c64e1abba139b7f45d2483048add2315423e14bb5927188f4ba1f",
+      "parent_chunk_id": "f59f8982d22adb5cdf13e91d6b0a79b4301bf14649b560d84e4a46419ce4c5b7",
+      "position": 5,
+      "prev_chunk_id": "cbb3c5796754a3a6772ed850853cd3c73371d9a0d6b6985d4e9e939c586ff7ba",
+      "section_anchor": "use-it-as-a-claude-code-plugin",
+      "source_url": "https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/"
+    },
+    "source_file": ".opencrane/llmstxt/llms-full.txt",
+    "source_name": "open-source-europe",
+    "token_count": 62
+  },
+  {
+    "chunk_id": "8a7eeec9989c64e1abba139b7f45d2483048add2315423e14bb5927188f4ba1f",
+    "chunk_type": "prose",
+    "content": "## Use it as a Codex plugin\n\nThe same plugin installs in Codex with the MCP server and the `ask-about-ose` skill. Codex does not load the `ose-researcher` agent, so the skill searches the knowledge base itself.",
+    "line_start": null,
+    "metadata": {
+      "breadcrumb_path": "Ask OSE from your AI tools > Use it as a Codex plugin",
+      "doc_order": 6,
+      "heading_path": "Ask OSE from your AI tools > Use it as a Codex plugin",
+      "next_chunk_id": "4baf81acdeb03a4a0f94def42a2695fe9b4e87140ecf2a68fc5c73248a040376",
+      "parent_chunk_id": "f59f8982d22adb5cdf13e91d6b0a79b4301bf14649b560d84e4a46419ce4c5b7",
+      "position": 6,
+      "prev_chunk_id": "98eccfb727346f104913acf29ff324bc724e1e15b182d526b1ee6a81cb20839d",
+      "section_anchor": "use-it-as-a-codex-plugin",
+      "source_url": "https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/"
+    },
+    "source_file": ".opencrane/llmstxt/llms-full.txt",
+    "source_name": "open-source-europe",
+    "token_count": 53
+  },
+  {
+    "chunk_id": "4baf81acdeb03a4a0f94def42a2695fe9b4e87140ecf2a68fc5c73248a040376",
+    "chunk_type": "prose",
+    "content": "Then run `/plugins` in Codex, install `ose-knowledge` and start a new session. To install from the terminal instead, run `codex plugin add ose-knowledge@ose-ai` and start a new session.",
+    "line_start": null,
+    "metadata": {
+      "breadcrumb_path": "Ask OSE from your AI tools",
+      "doc_order": 7,
+      "heading_path": "Ask OSE from your AI tools > Use it as a Codex plugin",
+      "next_chunk_id": null,
+      "parent_chunk_id": "f59f8982d22adb5cdf13e91d6b0a79b4301bf14649b560d84e4a46419ce4c5b7",
+      "position": 7,
+      "prev_chunk_id": "8a7eeec9989c64e1abba139b7f45d2483048add2315423e14bb5927188f4ba1f",
+      "source_url": "https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/"
+    },
+    "source_file": ".opencrane/llmstxt/llms-full.txt",
+    "source_name": "open-source-europe",
+    "token_count": 49
   },
   {
     "chunk_id": "588f2de7814aa450ca40edb46acced5ee933135888b6169a48346700d11c3d4d",
