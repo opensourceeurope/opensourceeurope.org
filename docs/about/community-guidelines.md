@@ -1,13 +1,13 @@
 ---
 title: "Community guidelines"
-description: "These community guidelines reflect the values and commitments of Open Source Europe and aims to create a positive and productive community for all involved."
+description: "These community guidelines reflect the values and commitments of Open Source Europe. They aim to create a positive and productive community for all involved."
 ---
 
-These community guidelines reflect the values and commitments of Open Source Europe and aims to create a positive and productive community for all involved.
+These community guidelines reflect the values and commitments of Open Source Europe. They aim to create a positive and productive community for all involved.
 
 ## Introduction
 
-OSE is committed to maintaining a respectful, inclusive, and supportive environment for all its members, participants, and stakeholders. These community guidelines outline our expectations regarding behavior and interactions within our community.
+OSE is committed to keeping a respectful, inclusive, and supportive environment for all its members, participants, and stakeholders. These community guidelines set out how we expect people to behave and interact in our community.
 
 ***
 
@@ -27,7 +27,7 @@ These community guidelines apply to all individuals participating in OSE activit
 
 ## Expected Behavior
 
-* **Collaboration**: Foster a spirit of collaboration and mutual support. Engage constructively and be open to diverse perspectives.
+* **Collaboration**: Work together and support each other. Take part constructively and be open to different points of view.
 * **Communication**: Communicate respectfully and professionally. Avoid offensive, inflammatory, or inappropriate language.
 * **Responsibility**: Take responsibility for your actions and their impact on others. Address conflicts or issues promptly and respectfully.
 
@@ -51,13 +51,13 @@ These community guidelines apply to all individuals participating in OSE activit
 
 ## Safeguarding
 
-OSE is committed to safeguarding the well-being of all participants. Refer to our [Safeguarding Policy](/docs/about/safeguarding-policy/) for detailed information on our safeguarding practices.
+OSE is committed to safeguarding the well-being of all participants. See our [Safeguarding Policy](/docs/about/safeguarding-policy/) for details of our safeguarding practices.
 
 ***
 
 ## Continuous Improvement
 
-We are dedicated to continually improving our policies and practices. Feedback and suggestions for enhancing this Code of Conduct are welcome and can be submitted to our team.
+We keep improving our policies and practices. We welcome feedback and suggestions to improve this Code of Conduct. You can send them to our team.
 
 ***
 

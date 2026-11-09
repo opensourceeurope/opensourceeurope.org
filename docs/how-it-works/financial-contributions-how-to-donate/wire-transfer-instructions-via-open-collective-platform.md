@@ -1,37 +1,37 @@
 ---
 title: "Wire Transfer Instructions via Open Collective Platform"
-description: "Please note that all funds have this option available."
+description: "This option is available for all funds."
 ---
 
-Please note that all funds have this option available.
+This option is available for all funds.
 
 ## Overview
 
-If you prefer to contribute to a Collective via bank transfer, Open Source Europe (OSE) provides a straightforward process to facilitate this.
+If you prefer to contribute to a Collective by bank transfer, Open Source Europe (OSE) has a simple process for this.
 
 ***
 
 ## Step-by-Step Guide
 
-1. **Initiate the Donation Process**
-   * Navigate to the Collective's page you wish to support.
-   * Click on the **“Contribute”** button.
+1. Start the donation
+   * Go to the page of the Collective you want to support.
+   * Click the **“Contribute”** button.
    * Select **“Bank Transfer”** as your payment method.
-2. **Receive Transfer Instructions**
-   * After confirming your contribution, you'll receive an email containing:
+2. Get the transfer instructions
+   * After you confirm your contribution, you'll get an email with:
      * OSE's bank account details.
-     * A unique **Order Number** associated with your contribution.
-3. **Complete the Bank Transfer**
-   * Initiate the transfer from your bank, ensuring you:
-     * Use the **exact bank details** provided.
+     * A unique **Order Number** for your contribution.
+3. Make the bank transfer
+   * Start the transfer from your bank, and make sure you:
+     * Use exactly the bank details provided.
      * Include the **Order Number** and the **Collective's name** in the payment reference.
 
 :::danger
-**Important**: Omitting the Order Number or Collective's name may delay the allocation of your funds.
+If you leave out the Order Number or the Collective's name, it may take longer to allocate your funds.
 :::
 
-1. **Processing Time**
-   * Allow **up to seven business days from the date you send the bank transfer** for the contribution to appear in the Collective's budget. This is an indicative timeframe, not a guarantee. If it has not appeared after this period, contact OSE using the details below.
+1. Processing time
+   * Allow up to seven business days from the date you send the bank transfer for the contribution to appear in the Collective's budget. This is an estimate, not a guarantee. If it has not appeared after this period, contact OSE using the details below.
    * Once the hosting team has confirmed receipt and allocated the transfer to your Collective, the contribution will appear in its budget.
 
 ***
@@ -48,19 +48,19 @@ If you prefer to contribute to a Collective via bank transfer, Open Source Europ
 
 ## Troubleshooting
 
-* **Didn't Receive the Instruction Email?**
+* Didn't get the instruction email?
   * Check your spam or junk folder.
-  * If not found, contact us at <home@opensourceeurope.org>
-* **Funds Not Reflected After Seven Business Days from Sending?**
+  * If it is not there, contact us at <home@opensourceeurope.org>.
+* Funds not in the budget seven business days after you sent them?
 
-  * Ensure the payment reference included the correct Order Number and Collective's name.
-  * Provide us with:
-    * The **transaction receipt**.
-    * The **amount sent**.
-    * The **date of transfer**.
-    * The **sender's name**.
+  * Check that the payment reference included the correct Order Number and Collective's name.
+  * Give us:
+    * The transaction receipt.
+    * The amount sent.
+    * The date of transfer.
+    * The sender's name.
 
-  Send this information to <home@opensourceeurope.org> for assistance.
+  Send this information to <home@opensourceeurope.org>, and we will help you.
 
 ## Hosting fees
 

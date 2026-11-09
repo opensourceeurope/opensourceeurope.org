@@ -21,8 +21,8 @@ The team will provide the current ED documentation and confirm the details to us
 
 ## Donations from individuals
 
-An ED is distinct from the route for U.S. tax-deductible donations through Myriad USA. See [Tax-Deductible Giving for U.S. Donors](/docs/what-we-offer/tax-deductible-giving-for-us-donors/).
+An ED is different from the route for U.S. tax-deductible donations through Myriad USA. See [Tax-Deductible Giving for U.S. Donors](/docs/what-we-offer/tax-deductible-giving-for-us-donors/).
 
 ## Documentation for the funder
 
-The ED used for this arrangement is held by Open Collective Europe Foundation. Where this route is used, it receives the grant and transfers it to OSE for your project. The OSE team coordinates these steps.
+The ED used for this arrangement is held by Open Collective Europe Foundation. When this route is used, the foundation receives the grant and transfers it to OSE for your project. The OSE team coordinates these steps.

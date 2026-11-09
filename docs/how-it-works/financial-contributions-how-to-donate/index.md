@@ -1,11 +1,11 @@
 ---
 title: "Financial Contributions – How to Donate"
-description: "Helpful guides for Donors and Financial Contributors"
+description: "Guides for donors and financial contributors"
 ---
 
-Helpful guides for Donors and Financial Contributors
+Guides for donors and financial contributors.
 
-Choose the route that matches the donor or funding arrangement. For an ordinary contribution, start on the Collective's Open Collective page; card, PayPal and bank transfer options are described below.
+Choose the route that matches the donor or funding arrangement. For an ordinary contribution, start on the Collective's Open Collective page. The card, PayPal and bank transfer options are described below.
 
 ## Find the right route
 
@@ -19,11 +19,11 @@ Choose the route that matches the donor or funding arrangement. For an ordinary 
 | Consider another crowdfunding platform | [Fundraising tools and external platforms](/docs/how-it-works/financial-contributions-how-to-donate/fundraising-tools-and-resources/)           |
 | Request a donation refund              | [Refund requests](/docs/how-it-works/financial-contributions-how-to-donate/refunds/)                                                            |
 
-Before choosing a route, check the [current hosting fees](/docs/faq/general-faqs/#how-much-does-it-cost). Contact OSE before configuring an external collection or promising goods, services or other benefits in return for funding.
+Before choosing a route, check the [current hosting fees](/docs/faq/general-faqs/#how-much-does-it-cost). Contact OSE before you set up an external collection or promise goods, services or other benefits in return for funding.
 
 ## Why Donate via Open Source Europe?
 
-Open Source Europe (OSE) enables donors to support impactful Collectives transparently and securely. Hosted Collectives don't need their own bank account or legal entity — OSE receives and manages funds on their behalf. Donors can also choose to be publicly acknowledged on the Collective’s profile.
+Through Open Source Europe (OSE), donors can support Collectives transparently and securely. Hosted Collectives don't need their own bank account or legal entity: OSE receives and manages the funds for them. Donors can also choose to be publicly acknowledged on the Collective’s profile.
 
 ***
 
@@ -31,12 +31,12 @@ Open Source Europe (OSE) enables donors to support impactful Collectives transpa
 
 You can make a contribution through:
 
-* **Credit or Debit Card**
-* **PayPal**
-* **Bank Transfer** (SEPA or international)
+* Credit or debit card
+* PayPal
+* Bank transfer (SEPA or international)
 
 :::note
-**Note**: When making a bank transfer, please include the name of the Collective and your order number in the payment reference. If not possible, contact us at <home@opensourceeurope.org> with your transaction details to ensure proper attribution.
+When you make a bank transfer, include the name of the Collective and your order number in the payment reference. If you cannot, contact us at <home@opensourceeurope.org> with your transaction details, so we can assign the payment correctly.
 :::
 
 ***
@@ -45,29 +45,29 @@ You can make a contribution through:
 
 When donating, you may be asked for:
 
-* Your **full name**
-* Your **email address**
-* Your **organization name** (if applicable)
-* Your **payment method details**
+* Your full name
+* Your email address
+* Your organization name (if applicable)
+* Your payment method details
 
 ***
 
 ## Bank Transfer Instructions
 
-If you'd like to contribute via bank transfer, follow the step-by-step guide here:\
+If you want to contribute by bank transfer, follow the step-by-step guide here:\
 👉 [Wire Transfer Instructions](/docs/how-it-works/financial-contributions-how-to-donate/wire-transfer-instructions-via-open-collective-platform/)
 
 ***
 
 ## Tax-Deductible Giving
 
-U.S. donors can use the established Myriad → OCEF → OSE route for tax-deductible giving, subject to applicable tax rules. Contact OSE before payment to organise the appropriate route. See [U.S. giving](/docs/what-we-offer/tax-deductible-giving-for-us-donors/).
+U.S. donors can use the established Myriad → OCEF → OSE route for tax-deductible giving, subject to applicable tax rules. Contact OSE before you pay, so that OSE can organise the right route. See [U.S. giving](/docs/what-we-offer/tax-deductible-giving-for-us-donors/).
 
 ***
 
 ## Need Help?
 
-If you’re unsure which method to use or want to verify your transaction, don’t hesitate to reach out:\
+If you’re not sure which method to use, or want to check your transaction, contact us:\
 📧 <home@opensourceeurope.org>
 
 ## Hosting fees

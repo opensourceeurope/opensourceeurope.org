@@ -15,52 +15,52 @@ Prepare a payment from your Collective's budget. Start by choosing the situation
 
 ## Before you submit
 
-* Have the invoice or receipt and the details needed for payment ready. A bank statement alone is insufficient for reimbursement.
-* Check that the necessary funds have been received and are available.
-* For supplier invoices, use the Collective's name or the person who placed the order; do not use OSE's legal name or VAT number.
-* If eligibility is unclear, ask OSE before spending. A specific contract signed by OSE requires advance agreement.
+* Have the invoice or receipt and the payment details ready. A bank statement alone is not enough for a reimbursement.
+* Check that the funds you need have been received and are available.
+* For supplier invoices, use the name of the Collective or of the person who placed the order. Do not use OSE's legal name or VAT number.
+* If you are not sure an expense is eligible, ask OSE before you spend. If OSE must sign a specific contract, agree this with OSE in advance.
 
-**Ready?** Go to [Submission Process](#submission-process). **Already submitted?** Read [Approval Workflow](#approval-workflow), or use the expense comments for routine follow-up. Send sensitive information privately.
+When you are ready, go to [Submission Process](#submission-process). If you have already submitted, read [Approval Workflow](#approval-workflow), or use the expense comments for routine follow-up. Send sensitive information privately.
 
-**Payment target:** seven business days once the expense is complete and approved and funds are available; bank processing time is additional. This is not a guaranteed receipt date.
+The payment target is seven business days once the expense is complete and approved and funds are available. Bank processing time comes on top of this. The target is not a guaranteed date of receipt.
 
 ## Overview
 
-Managing expenses with Open Source Europe (OSE) is designed to be transparent and straightforward. Whether you're reimbursing a team member or paying a service provider, the process ensures accountability and compliance with fiscal regulations.
+The expense process at Open Source Europe (OSE) is meant to be transparent and simple. You can use it to reimburse a team member or to pay a service provider. The process keeps spending accountable and in line with fiscal regulations.
 
 ***
 
 ## Before spending and requesting reimbursement
 
-OSE does not require systematic advance approval for ordinary expenses. If eligibility is unclear, contact the team before spending. Reimbursement remains subject to review. Any arrangement requiring a specific contract signed by OSE must be discussed and accepted in advance.
+OSE does not ask for advance approval of every ordinary expense. If you are not sure an expense is eligible, contact the team before you spend. OSE still reviews each reimbursement. Any arrangement that needs a specific contract signed by OSE must be discussed and accepted in advance.
 
-If someone cannot advance the cost, direct payment to the supplier on a compliant invoice is possible. OSE does not provide advances to individuals.
+If someone cannot pay the cost first, OSE can pay the supplier directly on a compliant invoice. OSE does not provide advances to individuals.
 
 ***
 
 ## Types of Expenses
 
-There are two primary types of expenses you can submit:
+You can submit two main types of expenses:
 
 ### 1. **Reimbursements**
 
-Used when someone has paid out-of-pocket for goods or services on behalf of the Collective.
+Use this when someone has paid for goods or services for the Collective with their own money.
 
-* **Required Documentation**: **Fiscal receipts**
+* Required documents: fiscal receipts that show:
   * Vendor's name, address and tax reference
   * Transaction date
   * Description of items or services
   * Amount paid
 
 :::caution
-**Note**: Order confirmations, proforma invoices, or bank statements are not valid receipts. Learn more: [How to Submit a Reimbursement](https://docs.opencollective.com/help/expenses-and-getting-paid/reimbursement)
+Order confirmations, proforma invoices, or bank statements are not valid receipts. Learn more: [How to Submit a Reimbursement](https://docs.opencollective.com/help/expenses-and-getting-paid/reimbursement)
 :::
 
 ### 2. **Invoices**
 
-Used when paying individuals or organizations for services rendered.
+Use this to pay people or organizations for services they provided.
 
-* **Required Documentation**:
+* Required documents:
   * Unique invoice number
   * Service provider's full details (name, address, tax ID)
   * Detailed description of services
@@ -68,22 +68,22 @@ Used when paying individuals or organizations for services rendered.
   * Invoice addressed to the Collective or the person who placed the order
 
 :::danger
-**Important**: Invoices must be addressed to the Collective or the person who placed the order. OSE acts only as the payer for these purchases. Collectives must not use OSE’s legal name or VAT number to have invoices issued. Learn more: [How to Submit an Invoice](https://docs.opencollective.com/help/expenses-and-getting-paid/invoices)
+Invoices must be addressed to the Collective or the person who placed the order. OSE acts only as the payer for these purchases. Collectives must not use OSE’s legal name or VAT number to have invoices issued. Learn more: [How to Submit an Invoice](https://docs.opencollective.com/help/expenses-and-getting-paid/invoices)
 :::
 
 ***
 
 ## Supporting documents and timing of submission
 
-Without an invoice or receipt, OSE refuses reimbursement; a bank statement alone is insufficient. For durable equipment, the usual supporting documents are required; OSE does not systematically require an additional inventory. Specific funding or agreement requirements still apply.
+OSE refuses reimbursement without an invoice or receipt. A bank statement alone is not enough. For durable equipment, the usual supporting documents are required. OSE does not ask for an extra inventory as a rule. Specific funding or agreement requirements still apply.
 
-There is no general fixed deadline for submitting a reimbursement, but deadlines attached to a funding agreement or closure must be respected. Expenses incurred before the Collective was accepted by OSE may be reimbursed after review of their connection to the project, documents and funding conditions, provided funds are available.
+There is no general fixed deadline to submit a reimbursement. Deadlines in a funding agreement or for a closure must still be respected. Expenses from before OSE accepted the Collective may be reimbursed. OSE first reviews their connection to the project, the documents and the funding conditions, and funds must be available.
 
 ***
 
 ## Paying service providers
 
-Collectives can pay service providers against a compliant invoice, including through a workers’ cooperative. Agree the work, price and dates with the Collective and submit the invoice through Open Collective for review. OSE does not provide a standard employment or payroll service. Any arrangement requiring OSE to sign a specific contract must be discussed and accepted beforehand.
+Collectives can pay service providers against a compliant invoice, including through a workers’ cooperative. Agree the work, price and dates with the Collective and submit the invoice through Open Collective for review. OSE does not provide a standard employment or payroll service. Any arrangement that requires OSE to sign a specific contract must be discussed and accepted beforehand.
 
 ***
 
@@ -92,18 +92,18 @@ Collectives can pay service providers against a compliant invoice, including thr
 1. Go to your Collective's page and click **“Submit Expense”**
 2. Choose the expense type: **Reimbursement** or **Invoice**
 3. Fill in the required details and upload documentation
-4. Select a payout method (e.g., PayPal, Wise/bank transfer)
+4. Select a payout method, such as PayPal or Wise/bank transfer
 5. Submit for approval
 
 :::note
-**Processing Time**: We aim to initiate payment within seven business days once the expense is complete and approved and the necessary funds have been received and are available. Bank processing time is additional. This is a target, not a guaranteed date of receipt.
+We aim to start the payment within seven business days. The expense must be complete and approved, and the funds must have been received and be available. Bank processing time comes on top of this. This is a target, not a guaranteed date of receipt.
 :::
 
 ***
 
 ## Approval Workflow
 
-Expenses are reviewed by the Collective and OSE. If the sole administrator requests their own reimbursement, OSE can check the supporting documents and pay without a second approver on the Collective side.
+The Collective and OSE review expenses. If the only administrator asks for their own reimbursement, OSE can check the supporting documents and pay without a second approver from the Collective.
 
 OSE checks the documents before payment. Incomplete or non-compliant expenses may be rejected. A promised donation or grant is not an available balance: funds must be received and available before payment.
 
@@ -117,19 +117,19 @@ Supported payout options:
 * **Bank Transfer via Wise** (international bank details required)
 
 :::danger
-**Caution**: Ensure that payout details match the expense documentation to avoid delays.
+Make sure the payout details match the expense documents, or the payment may be delayed.
 :::
 
 ***
 
 ## Compliance and Best Practices
 
-* **Transparency**: All expenses are publicly visible to ensure accountability.
-* **Accuracy**: Double-check amounts, details, and receipts before submitting.
-* **Communication**: Use expense comments for routine questions and follow-up. Contact OSE privately for sensitive information; do not put sensitive documents or bank details in comments.
+* All expenses are publicly visible, for accountability.
+* Double-check amounts, details and receipts before you submit.
+* Use expense comments for routine questions and follow-up. Contact OSE privately for sensitive information. Do not put sensitive documents or bank details in comments.
 
 :::note
-**Need help?** Email us at <home@opensourceeurope.org>
+For help, email us at <home@opensourceeurope.org>
 :::
 
 ***

@@ -5,30 +5,30 @@ description: "How to use funds for your initiative on OSE"
 
 How to use funds for your initiative on OSE
 
-This guide is based on an Open Source Collective workshop led by Sumana Harihareswara of Changeset Consulting in January 2022. It focused on helping Open Collective-hosted open-source software projects decide how to use the money they have already raised. We adapted it for user cases seen on OSE, with all examples in EUR.
+This guide is based on an Open Source Collective workshop led by Sumana Harihareswara of Changeset Consulting in January 2022. It helped open source software projects hosted on Open Collective decide how to use the money they had already raised. We adapted it to the cases we see on OSE, and all examples are in EUR.
 
 ## Why You Should (or Shouldn't) Spend Your Money
 
 ### Reasons to Spend
 
-* **Advancing your project:** Use funds to complete tasks, chores, and infrastructure improvements that are difficult to achieve with volunteer labour alone.
-* **Attracting more donors:** Spending money demonstrates to donors that you use their contributions effectively.
-* **Experimenting and learning:** Spending money on pilot projects or services can help you explore new approaches and increase flexibility.
-* **Boosting morale:** Small investments in merchandise (stickers, awards, t-shirts) can improve contributor retention and team morale.
+* Advance your project. Pay for tasks, chores and infrastructure improvements that are hard to do with volunteer labour alone.
+* Attract more donors. When you spend money, donors see that you use their contributions well.
+* Experiment and learn. Spending money on pilot projects or services can help you try new approaches and gives you more flexibility.
+* Boost morale. Small purchases of merchandise (stickers, awards, t-shirts) can help contributors stay and can improve team morale.
 
-Generally, spending less than 10% of your saved funds or making a one-time expenditure of less than 20% of your stable recurring monthly income should be manageable without extensive decision-making.
+In general, you can spend less than 10% of your saved funds without a long decision process. The same goes for a one-time expense of less than 20% of your stable recurring monthly income.
 
 ### **Reasons to Save:**
 
-* **Specific Activities:** Save up for significant expenditures like contractor engagements.
-* **Self-Insurance:** Keep funds to cover potential risks, such as unexpected hosting costs or legal expenses.
-* **Budgeting:** Develop a budget to delineate funds for self-insurance and future activities, ensuring you have a clear picture of available spending.
+* Specific activities. Save up for large expenses, such as hiring contractors.
+* Self-insurance. Keep funds to cover possible risks, such as unexpected hosting costs or legal expenses.
+* Budgeting. Make a budget that sets funds aside for self-insurance and for future activities. Then you know clearly how much you can spend.
 
 ## Driver and Supporter/Protector Activities
 
 **Drivers:** Activities that directly advance your mission (e.g., software development).
 
-**Supporters:** Infrastructural activities and purchases that support drivers (e.g., organising conferences, buying laptops).
+**Supporters:** Infrastructure activities and purchases that support drivers (e.g., organising conferences, buying laptops).
 
 **Protectors:** Activities or expenses that reduce risks (e.g., legal fees, code of conduct workshops).
 
@@ -44,14 +44,14 @@ For instance, in this diagram...
 
 Consider what's on your roadmap and how you can spend to support it.
 
-If you lack explicit project goals or a written roadmap, you can still invest in the following:
+If your project has no clear goals or written roadmap, you can still spend money on the following:
 
-* **Consultants:** Pay for help in creating a roadmap.
-* **Hardware Upgrades:** Improve your team's development environment.
-* **Mentorship Programs:** Sponsor and mentor interns to build capacity.
-* **Volunteer contributions:** Organise volunteers around your activity and reimburse them according to the legislation in their country of residence
+* Consultants who help you create a roadmap.
+* Hardware upgrades for your team's development environment.
+* Mentorship programs, where you sponsor and mentor interns to build capacity.
+* Volunteer contributions. Organise volunteers around your activity and reimburse them according to the law in their country of residence.
 
-If you have a roadmap, pay new contractors or for services to relieve existing volunteers of repetitive tasks.
+If you have a roadmap, pay new contractors or services to take repetitive tasks off your existing volunteers.
 
 ### Specific Spending Examples
 
@@ -65,32 +65,32 @@ If you have a roadmap, pay new contractors or for services to relieve existing v
 
 ### Hiring Contractors
 
-You can hire collaborators for your collective as contractors. You can decide on who you will be hiring informally or through a public job posting process. Please see [here for the possibilities of invoicing](/docs/how-it-works/expenses/invoices-or-reimbursements/).
+You can hire collaborators for your collective as contractors. You can choose who to hire informally or through a public job posting. See [the invoicing options](/docs/how-it-works/expenses/invoices-or-reimbursements/).
 
 ### Using Bounties Cautiously
 
-Patch bounty programs can incentivise specific development work but may lead to competitive rather than collaborative behaviour. Use bounties for tasks that volunteers are not inclined or skilled to do.
+Patch bounty programs can encourage specific development work. They may also make people compete instead of working together. Use bounties for tasks that volunteers do not want to do or do not have the skills for.
 
 ## Decision-Making and Governance
 
-Per Open Collective's expense documentation:
+Open Collective's expense documentation says:
 
 :::note
 "The decision is up to you as a project. Some projects are informal, and any Core Contributor can approve any expense. Others have a formal decision-making or budgeting process, or only pay expenses for specific things. We advise you to have a discussion with your collaborators and agree on guidelines for approving expenses."
 :::
 
-Please also review the documentation on [budget](https://docs.opencollective.com/help/collectives/budget) and [expense policies](https://docs.opencollective.com/help/collectives/collective-settings/expense-policy) as well as ["ten ways to make decisions about money"](https://blog.opencollective.com/ten-ways-to-make-decisions-about-money/).
+Also read the documentation on [budget](https://docs.opencollective.com/help/collectives/budget) and [expense policies](https://docs.opencollective.com/help/collectives/collective-settings/expense-policy), and ["ten ways to make decisions about money"](https://blog.opencollective.com/ten-ways-to-make-decisions-about-money/).
 
-* **Common Concerns:**
+* Common concerns:
 
-  * Legal or tax implications: Open Source Europe cannot advise you on your members' or collaborators' legal or fiscal obligations. We recommend contacting a legal or fiscal specialist in their country of residence. For general guidance, please use this documentation or contact us at <home@opensourceeurope.org>
-  * Disagreements: Act in good faith and empower group decisions. Clear policies and consistent practices help a lot in this process.
+  * Legal or tax questions: Open Source Europe cannot advise you on the legal or tax obligations of your members or collaborators. We recommend that you contact a legal or tax specialist in their country of residence. For general guidance, use this documentation or contact us at <home@opensourceeurope.org>.
+  * Disagreements: act in good faith and support decisions made by the group. Clear policies and consistent practices help a lot.
 
-  People will have reasonable concerns about what you spent, and why and how you spent it, and you're not sure how to preempt or respond to those concerns. You have two major options:
+  People will have reasonable concerns about what you spent, and why and how you spent it. If you are not sure how to prevent or answer those concerns, you have two main options:
 
-  * *Intense up-front transparency*: invest in publishing details about the decisions transparently. Give contributors and spectators advance notice of possible expenditures, make it clear who has the power to decide, and offer a public comment period before approval. Do this consistently, and use Open Collective's tools to leave the records up for future inspection. This is relatively easy if you are managing all the expenses via Open Collective invoices.
-  * *Post-decision accountability*: don't offer a pre-decision public comment period, but run an explicit private comment period among the decision markers, and offer accountability for past expenses such that anyone who wants to can ask for details on particular expenditure choices. This allows you to make more decisions privately, and gives you the option of providing some details privately in response to questions, but keep in mind that your payees or people you answer may publish details on their own.
+  * *Intense up-front transparency*: publish the details of your decisions openly. Tell contributors and observers about possible expenses in advance, make clear who decides, and offer a public comment period before approval. Do this every time, and use Open Collective's tools to keep the records available for later review. This is fairly easy if you manage all expenses through Open Collective invoices.
+  * *Post-decision accountability*: do not offer a public comment period before the decision. Instead, run a clear private comment period among the people who decide. Then answer for past expenses: anyone who wants to can ask for details about a specific expense. This lets you make more decisions privately, and you can give some details privately when people ask. Keep in mind that your payees, or the people you answer, may publish details on their own.
 
 ## OSE’s role in conflicts
 
-Collectives manage their internal conflicts. OSE intervenes if a situation affects funds or hosting conditions, without promising mediation. For suspected misuse of funds or concerns involving administrators, contact OSE privately without having to go through those administrators.
+Collectives manage their internal conflicts. OSE intervenes if a situation affects funds or hosting conditions, but does not promise mediation. If you suspect misuse of funds, or have concerns about administrators, contact OSE privately. You do not have to go through those administrators.

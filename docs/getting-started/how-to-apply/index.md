@@ -1,78 +1,78 @@
 ---
 title: "How to apply"
-description: "Use this guide to prepare and submit a hosting application, then understand OSE's review."
+description: "Use this guide to prepare and submit a hosting application, and to learn how OSE reviews it."
 ---
 
-Use this guide to prepare and submit a hosting application, then understand OSE's review.
+Use this guide to prepare and submit a hosting application, and to learn how OSE reviews it.
 
 ## Start here
 
 1. Read the [eligibility criteria](/docs/getting-started/how-to-apply/eligibility/), [hosting fees](/docs/faq/general-faqs/#how-much-does-it-cost) and [application questions](/docs/getting-started/how-to-apply/application-questions/).
-2. Prepare your project details and at least one administrator; two are recommended.
-3. Follow the **Application Process** below, then complete the supplementary form supplied by OSE.
+2. Prepare your project details and at least one administrator. We recommend two.
+3. Follow the application process below, then complete the supplementary form that OSE provides.
 
-**What happens next:** OSE aims to give a first response within seven business days after receiving the completed supplementary form. This is a response target, not an acceptance deadline. After acceptance, continue with [your first steps](/docs/how-it-works/basics/).
+Next, OSE aims to give a first response within seven business days after it receives the completed supplementary form. This is a target for the response, not a deadline for acceptance. After acceptance, continue with [your first steps](/docs/how-it-works/basics/).
 
 ## Join Open Source Europe in just a few steps
 
-Applying to be hosted by Open Source Europe (OSE) is straightforward and typically takes only a few minutes. Once accepted, you can begin receiving contributions and managing your initiative transparently through the Open Collective platform.
+Applying to be hosted by Open Source Europe (OSE) is simple and usually takes a few minutes. After OSE accepts you, you can receive contributions and manage your initiative in the open on the Open Collective platform.
 
 ***
 
 ## Before You Apply
 
-Ensure that your initiative meets the following criteria:
+Check that your initiative meets these criteria:
 
-* **Alignment with OSE's mission and impact areas**: Your activities should be charitable and aimed at benefiting the public.
-* **Administrators**: One administrator is sufficient; two are recommended for shared management and continuity. Use real names.
-* **No separate legal entity**: Your initiative should not have its own legal existence/entity separate from OSE.
-* **Global scope**: Your initiative can be based anywhere in the world, not just in Europe.
+* It aligns with OSE's mission and impact areas. Your activities should be charitable and aim to benefit the public.
+* It has at least one administrator. One is enough, and two are recommended for shared management and continuity. Use real names.
+* It has no legal entity of its own, separate from OSE.
+* It can be based anywhere in the world, not only in Europe.
 
-Additionally, familiarize yourself with our [Terms of Cooperation](/docs/terms-of-service/) and [Community Guidelines](/docs/about/community-guidelines/).
+Also read our [Terms of Cooperation](/docs/terms-of-service/) and [Community Guidelines](/docs/about/community-guidelines/).
 
 ***
 
 ## Application Process
 
-1. **Start the Application**: Visit the [Open Source Europe profile](https://opencollective.com/europe) and click on "Apply".
-2. **Choose Your Collective Type**:
-   * **New Collective**: If you're new to the Open Collective platform, select "Create New Collective".
-   * **Existing Collective**: If you already have a collective, choose it from the list.
-3. **Complete the Application Form**: Provide information about your initiative, including:
+1. Go to the [Open Source Europe profile](https://opencollective.com/europe) and click "Apply".
+2. Choose your collective type:
+   * If you are new to the Open Collective platform, select "Create New Collective".
+   * If you already have a collective, choose it from the list.
+3. Complete the application form. Give information about your initiative, including:
    * Location
    * Name and email address
    * Collective name
    * Website and/or social media links
    * Brief description of your collective's activities
    * Explanation of how your collective furthers OSE's mission impact areas
-4. **Add Administrators**: Add at least one administrator. Two are recommended for shared management and continuity.
-5. **Submit the Application**: Review your information, accept the terms of service, and submit your application.
+4. Add at least one administrator. Two are recommended for shared management and continuity.
+5. Review your information, accept the terms of service and submit your application.
 
-*Note*: All information entered can be edited later, so don't worry about making it perfect.
+You can edit all this information later, so it does not need to be perfect.
 
 ***
 
 ## After Submission
 
-The team provides a supplementary application form to complete the review; do not rely on an automatic email being sent.
+To complete the review, the team gives you a supplementary application form. Do not wait for an automatic email.
 
-We aim to provide a first response within seven business days of receiving your completed supplementary form. Review may take longer if we need more information. This is not a guarantee of acceptance or completion within seven days.
+We aim to give a first response within seven business days of receiving your completed supplementary form. The review may take longer if we need more information. This does not guarantee acceptance, or that the review ends within seven days.
 
-Once accepted, you can begin receiving contributions. We offer an optional welcome call after acceptance; it does not block contributions. The welcome email includes documentation and an invitation to book a call. After a call, the team sends a recap and useful links.
+After acceptance, you can start to receive contributions. We offer an optional welcome call after acceptance. You can receive contributions without it. The welcome email includes documentation and an invitation to book a call. After a call, the team sends a recap and useful links.
 
 ***
 
 ## Transitioning from Another Fiscal Host
 
-If you're moving from another fiscal host:
+If you are moving from another fiscal host:
 
-* **Using Open Collective Platform**: The transition is relatively simple.
-* **Not Using Open Collective Platform**: The process will depend on your current organization's requirements. Generally, they can transfer your funds to OSE, and you can get up and running quickly.
+* If you use the Open Collective platform, the move is fairly simple.
+* If you do not use the Open Collective platform, the process depends on what your current organization requires. Usually, they can transfer your funds to OSE, and you can start quickly.
 
-*Important*: Communicate your plans to both OSE and your current fiscal host before applying to ensure a smooth transition.
+Tell both OSE and your current fiscal host about your plans before you apply, so that the move goes smoothly.
 
 ***
 
 ## Need Assistance?
 
-If you have any questions or need help with the application process, feel free to [contact us](mailto:home@opensourceeurope.org).
+If you have questions or need help with the application process, [contact us](mailto:home@opensourceeurope.org).

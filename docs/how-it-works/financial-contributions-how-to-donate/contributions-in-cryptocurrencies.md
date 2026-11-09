@@ -5,7 +5,7 @@ description: "How OSE Collectives can receive cryptocurrency donations."
 
 OSE Collectives can receive cryptocurrency donations through the established route:
 
-**Every.org → Myriad USA → Open Collective Europe Foundation (OCEF) → OSE → the Collective’s budget on Open Collective.**
+Every.org → Myriad USA → Open Collective Europe Foundation (OCEF) → OSE → the Collective’s budget on Open Collective.
 
 ## Set up the donation page
 
@@ -15,7 +15,7 @@ Contact OSE first at <home@opensourceeurope.org>. The team creates and hosts an 
 
 Cryptocurrency is converted into conventional currency before it is allocated to the Collective. OSE does not pay cryptocurrency out to the Collective.
 
-The Collective may ask OSE at any time to transfer the funds received on Every.org to its Open Collective budget. The team handles the intermediary steps. A request at any time does not mean an immediate payout; no fixed twice-yearly transfer schedule applies.
+The Collective may ask OSE at any time to transfer the funds received on Every.org to its Open Collective budget. The team handles the intermediary steps. A request does not mean an immediate payout. No fixed twice-yearly transfer schedule applies.
 
 ## Fees
 

@@ -35,7 +35,7 @@ OCE is committed to:
 
 ## Who is Vulnerable?
 
-While safeguarding applies to everyone, some individuals may be more vulnerable to harm. This includes:
+Safeguarding applies to everyone, but some people may be more vulnerable to harm. This includes:
 
 * Children
 * People with disabilities
@@ -46,7 +46,7 @@ While safeguarding applies to everyone, some individuals may be more vulnerable 
 
 ## Reporting Concerns
 
-Anyone who has a concern about the safety or well-being of someone involved in OCE activities should report it immediately, regardless of whether they are sure about the nature of the concern.
+Anyone who has a concern about the safety or well-being of someone involved in OCE activities should report it immediately. This applies even if they are not sure about the nature of the concern.
 
 Contact the safeguarding leads listed below to report a concern. OSE does not provide a continuously staffed reporting service or guarantee a response time.
 
@@ -56,7 +56,7 @@ Contact the safeguarding leads listed below to report a concern. OSE does not pr
 
 Concerns can be reported to:
 
-* **Safeguarding Leads**:
+* Safeguarding leads:
   * Ivan Cukeric: <ivan@opencollective.com>
   * Jean-François De Hertogh: <jf@opencollective.com>
 
@@ -104,4 +104,4 @@ This policy will be reviewed regularly to ensure it remains effective.
 
 ## Need Assistance?
 
-For any questions about this policy or safeguarding in general, please contact the Safeguarding Lead at <home@opensourceeurope.org>.
+For any questions about this policy or safeguarding in general, please contact the safeguarding lead at <home@opensourceeurope.org>.

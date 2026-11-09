@@ -11,25 +11,25 @@ Yes, under certain conditions. Open Source Europe (OSE) can process refunds for 
 
 ### Refund Timeframes
 
-* **Credit Card or Bank Transfer**: Refunds can be requested within **90 days** of the contribution date.
-* **PayPal**: Refunds can be requested within **60 days** of the contribution date.
+* Credit card or bank transfer: Refunds can be requested within 90 days of the contribution date.
+* PayPal: Refunds can be requested within 60 days of the contribution date.
 
 :::danger
-**Important**: Refunds are only issued to the original payment method. For card payments processed through Stripe, Stripe and the card issuer handle the routing of the refund, including where the original card has expired or been replaced. OSE reviews the request and initiates an approved refund; it does not control the bank's handling of the funds.
+Refunds are only issued to the original payment method. For card payments processed through Stripe, Stripe and the card issuer route the refund, including when the original card has expired or been replaced. OSE reviews the request and starts an approved refund. It does not control how the bank handles the funds.
 :::
 
 ***
 
 ## How to Request a Refund
 
-Contact the Collective administrators first; they forward your request to OSE. If the administrators do not respond, contact OSE directly at <home@opensourceeurope.org>. A request does not guarantee a refund. Include the following details:
+Contact the Collective administrators first. They forward your request to OSE. If the administrators do not respond, contact OSE directly at <home@opensourceeurope.org>. A request does not guarantee a refund. Include the following details:
 
-* **URL of the donation** (e.g., `https://opencollective.com/europe/contributions/528520`)
-* **Date and amount** of the transaction
-* **Reason** for the refund request
+* URL of the donation (e.g., `https://opencollective.com/europe/contributions/528520`)
+* Date and amount of the transaction
+* Reason for the refund request
 
 :::danger
-**Note**: After reviewing the request, OSE may decline a refund if the contribution was authorized and the funds have already been used to support the Collective's activities.
+After reviewing the request, OSE may decline a refund if the contribution was authorized and the funds have already been used to support the Collective's activities.
 :::
 
 ***
@@ -44,12 +44,12 @@ These processing steps are separate from the request deadlines above: 90 days fo
 
 ## Additional Information
 
-* Refunds are only processed to the **original payment method**.
-* The handling of an expired card or closed account depends on the payment provider and bank; it is not an automatic reason for OSE to declare a refund impossible.
-* For contributions made via **manual bank transfer**, the administrators forward the request to OSE to discuss refund options; contact OSE directly if they do not respond.
+* Refunds are only processed to the original payment method.
+* The handling of an expired card or closed account depends on the payment provider and bank. It is not an automatic reason for OSE to declare a refund impossible.
+* For contributions made via manual bank transfer, the administrators forward the request to OSE to discuss refund options. Contact OSE directly if they do not respond.
 
 ***
 
 ## Need Assistance?
 
-For any questions or further assistance regarding refunds, please contact us at <home@opensourceeurope.org>.
+If you have questions about refunds or need more help, please contact us at <home@opensourceeurope.org>.

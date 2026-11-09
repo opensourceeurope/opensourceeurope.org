@@ -9,7 +9,7 @@ Open Collective includes crowdfunding tools and is the usual way to raise funds 
 
 ## External platforms
 
-External platforms such as Patreon, Ko-fi and GoFundMe are considered case by case. Contact OSE before configuring a campaign to receive funds through OSE. The team checks payout arrangements, available records and any promised benefits before confirming whether the setup can be accepted. Do not assume that choosing an organisation with a similar name will route donations to your OSE Collective.
+External platforms such as Patreon, Ko-fi and GoFundMe are considered case by case. Contact OSE before you set up a campaign to receive funds through OSE. The team checks payout arrangements, available records and any promised benefits. Then it confirms whether it can accept the setup. Do not assume that choosing an organisation with a similar name will send donations to your OSE Collective.
 
 ## Supported routes
 
@@ -19,6 +19,6 @@ External platforms such as Patreon, Ko-fi and GoFundMe are considered case by ca
 
 ## Fundraising support
 
-The Collective leads its fundraising. OSE may occasionally share opportunities or make introductions, according to its capacity, without guaranteeing funding or providing a standard fundraising service.
+The Collective leads its fundraising. OSE may occasionally share opportunities or make introductions when it has capacity. It does not guarantee funding or provide a standard fundraising service.
 
-For an unidentified incoming payment, [contact OSE](/docs/about/contact-us/) with its reference so the team can investigate its allocation. This is distinct from the handling of inactive Collectives’ balances.
+For an unidentified incoming payment, [contact OSE](/docs/about/contact-us/) with its reference, so the team can find out where it should go. This is separate from how OSE handles the balances of inactive Collectives.
