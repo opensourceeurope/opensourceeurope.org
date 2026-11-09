@@ -15,6 +15,7 @@
 - [Application Questions](https://opensourceeurope.org/docs/getting-started/how-to-apply/application-questions/)
 - [Eligibility](https://opensourceeurope.org/docs/getting-started/how-to-apply/eligibility/)
 - [How to apply](https://opensourceeurope.org/docs/getting-started/how-to-apply/)
+- [Ask OSE from your AI tools](https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/)
 - [Deciding on How to Use Your Money](https://opensourceeurope.org/docs/guides/deciding-on-how-to-use-your-money/)
 - [Basics](https://opensourceeurope.org/docs/how-it-works/basics/)
 - [Expenses & Getting Paid – FAQs](https://opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/)
