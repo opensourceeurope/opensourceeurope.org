@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.2](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.11.1...v0.11.2) (2026-11-09)
+
+
+### Bug Fixes
+
+* **docs:** link the apply call to the OSE apply page on Open Collective ([#47](https://github.com/opensourceeurope/opensourceeurope.org/issues/47)) ([2d60eac](https://github.com/opensourceeurope/opensourceeurope.org/commit/2d60eacb306b1b739a982b0f3a95c358d8bee6a7))
+
 ## [0.11.1](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.11.0...v0.11.1) (2026-11-07)
 
 
