@@ -86,7 +86,8 @@ const isExternal = (href: string) => /^https?:\/\//.test(href);
   .site-footer {
     position: relative;
     isolation: isolate;
-    padding-block: 44px;
+    /* --ask-room is set by the Ask panel, so the fixed button never covers the last row and the footer image runs to the page bottom. */
+    padding-block: 44px calc(44px + var(--ask-room, 0px));
     background: var(--color-bg);
     font-size: var(--text-base);
     line-height: 24px;
