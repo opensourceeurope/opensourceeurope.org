@@ -42,11 +42,11 @@ sections:
       src: ../../assets/uploads/2026/02/1516256287984.jpeg
       alt: ""
       decorative: true
-    # Four rows of nine round holders below the quote (E2).
+    # Four rows of nine round holders below the quote (E2). The logos are OSE-hosted projects with the most backers on Open Collective.
     circles:
       - - empty
         - ring
-        - { logo: { src: ../../assets/uploads/2025/11/mastodon-2.svg, alt: "", decorative: true } }
+        - { logo: { src: ../../assets/uploads/2026/11/fdroid.svg, alt: "", decorative: true } }
         - empty
         - empty
         - empty
@@ -60,24 +60,24 @@ sections:
         - empty
         - empty
         - empty
-        - ring
+        - { logo: { src: ../../assets/uploads/2026/11/tor.svg, alt: "", decorative: true } }
         - empty
       - - blue
         - { logo: { src: ../../assets/uploads/2025/11/manjaro-seeklogo-1.svg, alt: "", decorative: true } }
         - ring
-        - ring
+        - { logo: { src: ../../assets/uploads/2026/11/gpxstudio.svg, alt: "", decorative: true } }
         - { center: { src: ../../assets/theme/webp/bg-how-to.webp, alt: "", decorative: true } }
         - { logo: { src: ../../assets/uploads/2025/11/endeavouros-seeklogo.svg, alt: "", decorative: true } }
         - ring
-        - { logo: { src: ../../assets/uploads/2025/11/ghostery-svgrepo-com.svg, alt: "", decorative: true } }
+        - { logo: { src: ../../assets/uploads/2026/11/bazzite.svg, alt: "", decorative: true } }
         - ring
       - - white
         - ring
         - orange
-        - ring
+        - { logo: { src: ../../assets/uploads/2026/11/antennapod.svg, alt: "", decorative: true } }
         - white
         - ring
-        - ring
+        - { logo: { src: ../../assets/uploads/2026/11/xfce.svg, alt: "", decorative: true } }
         - white
         - white
 
