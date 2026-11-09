@@ -26,7 +26,7 @@ continuously; **shipping is release-gated** — deploys happen only when a relea
   [release-please](https://github.com/googleapis/release-please), which maintains a rolling
   **release PR** that bumps the version, regenerates `CHANGELOG.md`, and syncs the
   `ose-knowledge-mcp` version everywhere (`plugin.json`, `.mcp.json`, the `/ask/` page, and
-  the README quick-start — via `scripts/knowledge/sync-mcp-version.sh`, so the docs never promote a
+  the "Ask OSE from your AI tools" docs page, via `scripts/knowledge/sync-mcp-version.sh`, so the docs never promote a
   floating `latest`).
   `commitlint.yml` enforces the commit format. Needs the `RELEASE_TOKEN` secret so the release
   PR gets CI and the mcp-pin sync can push back onto it. **The release PR auto-merges**:

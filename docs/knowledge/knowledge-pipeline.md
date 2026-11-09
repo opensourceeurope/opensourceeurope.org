@@ -115,5 +115,5 @@ one-time setup, required GitHub secrets/variables, and the deploy workflow — i
 
 The knowledge base is also published to PyPI as a standalone MCP package (built with
 `opencrane pack`, refreshed weekly), so it can run locally via `uvx ose-knowledge-mcp`. See the
-repo [README](../../README.md#use-it-as-an-mcp-server--claude-plugin) for the client config, and
+docs page [Ask OSE from your AI tools](https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/) for the client config, and
 [`automation.md`](automation.md) for how the package is published on each release.
