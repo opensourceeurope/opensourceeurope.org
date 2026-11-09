@@ -65,6 +65,10 @@ describe.each(files)('%s', (file) => {
     for (const [, href] of body.matchAll(/href="(\/docs\/[^"#]*)/g)) expect(fileFor(href), href).toBeDefined();
   });
 
+  it('sends applications to the OSE apply page on Open Collective', () => {
+    expect(body).not.toMatch(/oceurope\.org\/apply|typeform\.com/);
+  });
+
   it('starts its headings at ## and skips no level', () => {
     const levels = body
       .replace(/```[\s\S]*?```/g, '')
