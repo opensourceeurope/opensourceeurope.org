@@ -53,5 +53,6 @@ jobs:
             --no-progress
             'dist/**/*.html'
             README.md
+            DEVELOPMENT.md
             AGENTS.md
             'docs/**/*.md'

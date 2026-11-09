@@ -55,7 +55,7 @@ changed=$(
 
 CODE='^(src/|functions/|public/|astro\.config|package\.json)'
 AUTOMATION='^(\.github/|\.claude/|\.githooks/|scripts/)'
-DOCS='^(docs/|README\.md|AGENTS\.md)'
+DOCS='^(docs/|README\.md|DEVELOPMENT\.md|AGENTS\.md)'
 
 code_changed=$(printf '%s\n' "$changed" | grep -E "$CODE" | grep -vE "$DOCS")
 docs_changed=$(printf '%s\n' "$changed" | grep -E "$DOCS")

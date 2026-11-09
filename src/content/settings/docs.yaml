@@ -46,6 +46,7 @@ sidebar:
   - label: Guides
     items:
       - page: docs/guides/deciding-on-how-to-use-your-money
+      - page: docs/guides/ask-ose-from-your-ai-tools
   - label: FAQ
     items:
       - page: docs/faq/general-faqs
