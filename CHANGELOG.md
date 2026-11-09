@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.2](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.12.1...v0.12.2) (2026-11-09)
+
+
+### Bug Fixes
+
+* **docs:** move the docs to docs/ and the maintainer guides to dev-guide/, and simplify their wording ([#53](https://github.com/opensourceeurope/opensourceeurope.org/issues/53)) ([06a996a](https://github.com/opensourceeurope/opensourceeurope.org/commit/06a996aa2839395c41713c7e5a74998c6cecb32f))
+
 ## [0.12.1](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.12.0...v0.12.1) (2026-11-09)
 
 
