@@ -7,17 +7,17 @@ works too as a legacy alias), with a health probe at `<endpoint>/health`.
 
 Deployment is automated by the `deploy` job in [`release.yml`](../../.github/workflows/release.yml):
 on every release it builds the image, pushes it to the Scaleway Container Registry, and rolls it out to an
-already-created serverless container. The same job is runnable on its own via `workflow_dispatch` (pass an
-already-published `version`) to redeploy without cutting a release. The one-time infrastructure below is
-created manually by a maintainer using the `scw` CLI; the workflow only updates the running container with
+already-created Serverless Container. You can also run the same job on its own via `workflow_dispatch` (pass an
+already-published `version`) to redeploy without cutting a release. A maintainer creates the one-time
+infrastructure below by hand with the `scw` CLI. The workflow only updates the running container with
 new images.
 
 ## One-time setup
 
 These steps are run once by a maintainer who has the Scaleway CLI configured
 (`scw init`, or `SCW_ACCESS_KEY` / `SCW_SECRET_KEY` / `SCW_DEFAULT_PROJECT_ID` exported).
-Pick a region (e.g. `pl-waw`) and reuse it everywhere — the registry endpoint and the container
-must live in the same region.
+Pick a region (e.g. `pl-waw`) and use it everywhere. The registry endpoint and the container
+must be in the same region.
 
 ```sh
 # 0. Choose a region and export it so the commands below pick it up.
@@ -48,10 +48,10 @@ scw container container create \
 
 Notes on the create flags:
 
-- `port=8000` — the container listens for MCP Streamable HTTP on this port.
-- `min-scale=0` — scale to zero when idle (no cost while unused; see the cold-start trade-off below).
-- `max-scale=2` — cap at two instances.
-- `memory-limit=2048` (MiB) — see the memory headroom note below.
+- `port=8000`: the container listens for MCP Streamable HTTP on this port.
+- `min-scale=0`: scale to zero when idle (no cost while unused; see the cold-start trade-off below).
+- `max-scale=2`: cap at two instances.
+- `memory-limit=2048` (MiB): see the memory headroom note below.
 - `cpu-limit=1000` (mvCPU = 1 vCPU).
 
 You can list IDs at any time:
@@ -80,15 +80,15 @@ Variables (Settings -> Secrets and variables -> Actions -> Variables):
 | --- | --- | --- |
 | `SCW_REGION` | Region for the registry and container. | `pl-waw` |
 | `SCW_REGISTRY_NAMESPACE` | Container Registry namespace name (from step 1). | `opensourceeurope` |
-| `SCW_CONTAINER_ID` | Serverless container ID (from step 3). | `11111111-2222-...` |
+| `SCW_CONTAINER_ID` | Serverless Container ID (from step 3). | `11111111-2222-...` |
 
 The registry login uses username `nologin` with `SCW_SECRET_KEY` as the password, which is the
 Scaleway-documented way to authenticate Docker against the Container Registry.
 
 ## Running a deploy
 
-The normal shipping path is **merging the release-please release PR** — that creates the
-GitHub Release, and the same `release.yml` run then deploys this job after the PyPI publish of
+Normally, you ship by merging the release-please release PR. That creates the
+GitHub Release. The same `release.yml` run then runs this deploy job after the PyPI publish of
 the `ose-knowledge-mcp` package, next to the chat function, the contact function and the site. You don't tag or publish a
 release by hand; release-please does it from conventional commits on `main` (see the
 "Releases" section of `AGENTS.md`). `workflow_dispatch` is still available for ad-hoc redeploys without
@@ -98,8 +98,8 @@ a release. To deploy manually from the GitHub UI:
 2. Select **Deploy MCP to Scaleway**.
 3. Click **Run workflow** and pick the branch to deploy.
 
-Each run builds the image from `.opencrane/Dockerfile`, pushes it tagged with both `latest` and the
-commit SHA, points the container at the SHA-tagged image, and deploys it with `--wait` so the job
+Each run builds the image from `.opencrane/Dockerfile` and pushes it tagged with both `latest` and the
+commit SHA. It then points the container at the SHA-tagged image and deploys it with `--wait`, so the job
 fails if the rollout does not become ready.
 
 After a successful deploy, the container endpoint (shown by `scw container container get <id>`) serves
@@ -107,14 +107,14 @@ the MCP server. Point an MCP client at `<endpoint>/http`.
 
 ## Resource notes
 
-- **Memory headroom.** The image embeds the RAG model and a Milvus Lite index, so `memory-limit=2048`
+- Memory headroom: the image embeds the RAG model and a Milvus Lite index, so `memory-limit=2048`
   is intentional headroom over the baseline footprint. If you see OOM restarts, raise the limit before
   lowering it.
-- **Cold starts (`min-scale=0`).** Scaling to zero means there is no cost while idle, but the first
-  request after an idle period pays a cold start: the container must be scheduled and the image pulled.
-- **Large image (~3.7 GB).** Because the image is large, a cold pull onto a fresh instance takes time.
+- Cold starts (`min-scale=0`): scaling to zero means there is no cost while idle. But the first
+  request after an idle period waits for a cold start: the container must be scheduled and the image pulled.
+- Large image (~3.7 GB): because the image is large, a cold pull onto a fresh instance takes time.
   If consistent low latency matters more than idle cost, set `min-scale=1` to keep one instance warm.
-- **MCP path.** Clients connect at `<endpoint>/mcp` (Streamable HTTP). Health checks hit
+- MCP path: clients connect at `<endpoint>/mcp` (Streamable HTTP). Health checks hit
   `<endpoint>/health`.
 
 ## Tool surface
