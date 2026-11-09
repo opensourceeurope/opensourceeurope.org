@@ -26118,7 +26118,7 @@
       "breadcrumb_path": "Mission, Vision & Impact areas > Commons stewardship",
       "doc_order": 5,
       "heading_path": "Mission, Vision & Impact areas > Mission > Commons stewardship",
-      "next_chunk_id": "2b1fcf138686699fdc30882c2c45a2e9e8f751cb1bf092b430ec31cbb449f29b",
+      "next_chunk_id": "9969f205f434b4d5d2e704544fa8578a2ec8b00be53ed2bfff0b1b4069f06277",
       "parent_chunk_id": "f4646298287e0f6f29413d889a8b09000e0b2757f9a6c9f0894df3465e4a3cb1",
       "position": 5,
       "prev_chunk_id": "79d1d54c98f5296bcafc165ba4d5fb2f55e7fde9beb182429c01c7e31b5cf3d4",
@@ -26130,9 +26130,9 @@
     "token_count": 206
   },
   {
-    "chunk_id": "2b1fcf138686699fdc30882c2c45a2e9e8f751cb1bf092b430ec31cbb449f29b",
+    "chunk_id": "9969f205f434b4d5d2e704544fa8578a2ec8b00be53ed2bfff0b1b4069f06277",
     "chunk_type": "prose",
-    "content": "### Fiscal hosting in Europe and beyond\n\nWe are based in Europe but offer fiscal hosting to initiatives around the world. If our vision speaks to you, get in touch. We are ready to host your collective today and would be excited to hear from you. [You can apply here.](https://www.oceurope.org/apply)",
+    "content": "### Fiscal hosting in Europe and beyond\n\nWe are based in Europe but offer fiscal hosting to initiatives around the world. If our vision speaks to you, get in touch. We are ready to host your collective today and would be excited to hear from you. [You can apply here.](https://opencollective.com/europe/apply)",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Mission, Vision & Impact areas > Fiscal hosting in Europe and beyond",
@@ -26147,7 +26147,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 68
+    "token_count": 70
   },
   {
     "chunk_id": "c46c638de238b486718b03ed7a1bea4b181cfe42a9a7007d80f8d4368a140ca3",
