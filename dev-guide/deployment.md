@@ -149,7 +149,7 @@ The cutover starts after the site is live from the new repository. Do these step
 
 1. Check the PyPI package, the hosted MCP server and the chat function after the first release. This was already done under "First release".
 2. Check that `/ask/` and the panel answer questions on opensourceeurope.org.
-3. Check that the redirect rule from ask.opensourceeurope.org to `https://opensourceeurope.org/ask/` (301) is on the shared Edge Services pipeline (see "Edge Services"), and add it if it is not. From the first site deploy, ask.opensourceeurope.org no longer shows the old chat, so add the rule early.
+3. Check that https://ask.opensourceeurope.org/ answers with a 301 to `https://opensourceeurope.org/ask/` (see "Ask subdomain").
 4. Open the pull request to `opensourceeurope/ose-ai` that changes the `ose-knowledge` plugin `url` to `opensourceeurope/opensourceeurope.org`.
 5. Once that pull request is merged, remove the old trusted publisher of `ose-knowledge-mcp` on pypi.org. Then archive `opensourceeurope/ose-knowledge-mcp`, after you add a note to its README that points to the new repository.
 
@@ -170,17 +170,30 @@ The site is served from the bucket `opensourceeurope-site` in `pl-waw`. Set both
 
    On Scaleway, a bucket policy replaces the default access. A principal the policy does not list loses access, so the deploy application must be in it, or the site deploy fails with "Access Denied".
 
-The bucket `ose-knowledge-chat` served the old standalone chat page, which was removed from this repository. Delete that bucket after launch, once the Edge Services pipeline points to `opensourceeurope-site`.
+The bucket `ose-knowledge-chat` served the old standalone chat page. It was deleted on 10 November 2026.
 
 ### Edge Services
 
-The site reuses the pipeline that serves ask.opensourceeurope.org today (`ose-knowledge-edge-for-https`). There is one pipeline, so no new one is needed.
+The site reuses the pipeline that served ask.opensourceeurope.org (`ose-knowledge-edge-for-https`). There is one pipeline, so no new one is needed. Its backend already points to the website endpoint of `opensourceeurope-site`.
 
-1. Change the pipeline's backend to the website endpoint of `opensourceeurope-site`.
-2. Add the site domain to the existing pipeline, with a TLS certificate.
-3. Add a redirect rule from the host ask.opensourceeurope.org to `https://opensourceeurope.org/ask/` with a 301.
-4. Once the backend points to the new bucket, ask.opensourceeurope.org no longer shows the old chat. Until the redirect rule is live, that host shows the site's home page.
-5. After each deploy, purge the pipeline cache from the console, or with `scw edge-services purge-request create`. Pages carry `max-age=300`, but Edge Services keeps its own copy until it is purged.
+1. Replace ask.opensourceeurope.org in the pipeline's DNS stage with the site domain, with a TLS certificate. Until then, the pipeline shows the warning `dns_cname_resolve`, because the `ask` record now points to the redirect function.
+2. After each deploy, purge the pipeline cache from the console, or with `scw edge-services purge-request create`. Pages carry `max-age=300`, but Edge Services keeps its own copy until it is purged.
+
+### Ask subdomain
+
+ask.opensourceeurope.org served the old standalone chat. It now answers every request with a 301 to `https://opensourceeurope.org/ask/`. Edge Services cannot redirect, because its route rules only forward to a backend, and Object Storage rejects both `RedirectAllRequestsTo` and `RoutingRules` with `NotImplemented`. So the redirect is the function `ask-redirect` in the namespace `opensourceeurope` in `pl-waw`, with these settings: runtime `node22`, handler `handler.handle`, 128 MB, at most 2 instances, a 10 second timeout and the HTTP option `redirected`. The `ask` CNAME at OVH points to the function's domain, and the function has the custom domain ask.opensourceeurope.org, so Scaleway issues its certificate.
+
+The function's whole code, in `handler.js`:
+
+```js
+export const handle = async () => ({
+  statusCode: 301,
+  headers: { Location: 'https://opensourceeurope.org/ask/', 'Cache-Control': 'public, max-age=86400' },
+  body: '',
+});
+```
+
+The runtime loads `handler.js` as an ES module, so use `export`, not `exports`. To change it, zip the file and run `scw function deploy namespace-id=<namespace-id> name=ask-redirect runtime=node22 zip-file=ask-redirect.zip region=pl-waw`.
 
 ### Function
 
@@ -283,7 +296,7 @@ These need an answer before launch.
 - Deploy leaves console variables alone: confirm with a real run that `scw function deploy` keeps the environment variables set in the console. The conclusion so far comes from reading the CLI source.
 - CLI authentication: confirm that the `scw` commands in the workflow work with only the access key, secret key and region. They may also need a project or organization ID.
 - Purge command: confirm the exact `scw edge-services purge-request create` arguments, or use the console, and decide whether to add the purge to the workflow.
-- Edge Services plan: settled. The site and ask.opensourceeurope.org share the one existing pipeline, so no second pipeline is needed.
+- Edge Services plan: settled. The site reuses the one existing pipeline, and ask.opensourceeurope.org redirects through its own function (see "Ask subdomain").
 
 - Content types: `aws s3 sync` guesses each `Content-Type` from the file extension with Python's `mimetypes`. After the first deploy, run `aws s3api head-object` on one `.avif` and one `.woff2` file. If either comes back as `binary/octet-stream`, add `--content-type` with `--exclude`/`--include` filters for those extensions to the sync step. The sync step already skips `llms.txt`, `llms-full.txt` and the Markdown copies of the docs pages (`docs*.md`), and a third pass uploads them with `charset=utf-8`.
 - Deploy gating: the site and contact function deploy jobs run only on `main` and use the GitHub environment `production`. GitHub creates the environment on the first run. Add a protection rule to it if you want a manual approval. Do not move the Scaleway secrets and variables out of the repository settings, because jobs without an environment need them (see "Keep the Scaleway values at repository level"). Require the checks listed under "Required checks" on `main`, so a red commit does not release.
