@@ -1,5 +1,5 @@
 ---
-title: "Request a Grant (for Nonprofits Only)"
+title: "Request a grant from an OSE Fund"
 description: "Besides expenses and invoices, the Open Collective platform also has a “Request a Grant” option."
 ---
 
@@ -13,9 +13,9 @@ This feature is not available to all collectives, and its use must follow specif
 
 ## Who can use “Request a Grant”?
 
-* Only projects hosted as Funds (not standard Collectives)
-* The applicant must be a nonprofit or equivalent structure (e.g. foundation, ASBL, charity, NGO)
-* Private individuals or informal collectives cannot use this option
+* This guide covers grant requests to OSE Funds. Whether a profile can receive grant requests depends on the expense types enabled for it. That alone does not make a request eligible. OSE confirms the right way to submit for the arrangement you agreed.
+* The ordinary OSE route is for identified nonprofit organisations, such as foundations, ASBLs, charities or NGOs. OSE must first review and agree to the beneficiary, purpose and funding conditions.
+* Other beneficiaries, including individuals or informal collectives, need a specific assessment by OSE, and OSE does not guarantee to accept them. Contact OSE before you go ahead. A feature being available on the platform does not by itself make a request eligible.
 
 ***
 
@@ -25,7 +25,7 @@ When a nonprofit uses the “Request a Grant” feature, they must include:
 
 1. A copy of their legal bylaws (*statuts*)
 2. A signed letter that officially requests the grant and sets out:
-   * The purpose and objectives of the requested funding
+   * The amount, purpose and objectives of the requested funding
    * How the funds will be used in line with the fund’s mission
    * The legal name and contact details of the nonprofit organization
 3. A bank account holder statement of the nonprofit
@@ -36,7 +36,9 @@ When a nonprofit uses the “Request a Grant” feature, they must include:
 
 ## Internal review process
 
-All grant requests are reviewed manually by the OSE team.\
-If accepted, the funds are transferred directly to the nonprofit's official bank account, and the transaction is recorded transparently on the fund page.
+Who selects the projects or beneficiaries depends on the programme. The selection roles are agreed with OSE when the Fund is set up. Selection does not replace OSE's review and agreement before payment.
 
-For any questions about this feature, contact the finance or legal coordinator.
+All grant requests are reviewed manually by the OSE team.\
+For an approved nonprofit grant, OSE transfers the funds directly to the nonprofit's official bank account. The transaction is recorded transparently on the fund page. For other beneficiaries, OSE must first confirm whether it can accept the arrangement, and which documents and payment arrangements it needs.
+
+For questions about an OSE Fund or about who can receive a grant, contact <home@opensourceeurope.org>.

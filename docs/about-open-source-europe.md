@@ -1,9 +1,9 @@
 ---
 title: "About Open Source Europe"
-description: "Open Source Europe is a Belgian association. It is the fiscal host for over 400 initiatives and works with philanthropic institutions to support regranting around the world."
+description: "Open Source Europe is a Belgian association. It is the fiscal host for open source initiatives and works with philanthropic institutions to support regranting around the world."
 ---
 
-Open Source Europe is a Belgian association. It is the fiscal host for over 400 initiatives and works with philanthropic institutions to support regranting around the world.
+Open Source Europe is a Belgian association. It is the fiscal host for open source initiatives and works with philanthropic institutions to support regranting around the world.
 
 ***
 

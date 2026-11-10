@@ -62,10 +62,10 @@ A donation is not the same as a payment for goods or services. It may still come
 
 ## Are receipts and invoices public?
 
-Only general information (amount, description, purpose) is public. Uploaded documents (invoices, receipts) are private. Only the Collective’s admins and OSE staff can see them.
+The public budget shows an expense’s title, amount and public display name. Do not put sensitive information in the title. Attached receipts, detailed descriptions and payment details are not shown publicly. Who can see them depends on the information and the platform permissions. Access is not limited to OSE staff. See [Open Collective’s reimbursement privacy guidance](https://documentation.opencollective.com/expenses-and-getting-paid/submitting-expenses/submitting-a-reimbursement) and [expense-submission guidance](https://documentation.opencollective.com/expenses-and-getting-paid/submitting-expenses).
 
 ***
 
 ## Need help?
 
-Use the comments on the expense for routine questions and follow-up. For sensitive information, contact OSE privately at <home@opensourceeurope.org>.
+Use the comments on the expense for routine questions and follow-up. Expense comments are not public. The expense submitter, the Collective’s administrators and the fiscal host’s administrators can see them. For sensitive information that the Collective’s administrators should not see, email OSE directly at <home@opensourceeurope.org>. See [Open Collective’s expense-comment guidance](https://documentation.opencollective.com/expenses-and-getting-paid/editing-an-expense).

@@ -54,10 +54,9 @@ The ordinary external donation route is for identified nonprofit organisations. 
 
 ## VAT & Nonprofit Status
 
-Collectives hosted by OSE are not legal entities and must pay VAT on purchases:
+For purchases by a Collective, invoices must be issued to the Collective or the person who placed the order. OSE acts only as the payer. Do not use OSE’s legal name or VAT number.
 
-* VAT must be listed on invoices (unless an exemption applies).
-* The reverse charge mechanism does not apply to Collectives. Only registered businesses can use it.
+VAT treatment depends on the specific transaction and the rules that apply to it. Do not assume one rule applies to every purchase. Ask the supplier or an accountant about exemptions, reverse charge or VAT recovery.
 
 :::note
 [Read more: VAT in Europe and how it works in OSE](/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-ose/)

@@ -60,7 +60,7 @@ If you leave out the Order Number or the Collective's name, it may take longer t
     * The date of transfer.
     * The sender's name.
 
-  Send this information to <home@opensourceeurope.org>, and we will help you.
+  Send this information and any supporting documents by email to <home@opensourceeurope.org>, and we will help you. Do not send them through Slack or Discord.
 
 ## Hosting fees
 

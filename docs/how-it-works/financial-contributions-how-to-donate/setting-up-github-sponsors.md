@@ -19,7 +19,7 @@ Use GitHub Sponsors for your project with OSE as fiscal host and your Collective
 
 1. Your project needs a Collective hosted by OSE. The person configuring Sponsors must be an owner of the project’s GitHub organisation and have two-factor authentication enabled.
 2. Visit [GitHub Sponsors](https://github.com/sponsors), choose **Get sponsored**, and select the project’s own GitHub organisation.
-3. Select **This organization is using a fiscal host**, then select the host entry for OSE. If the label is unclear, contact OSE before continuing. The public GitHub guide may still show an earlier name.
+3. Select **This organization is using a fiscal host**, then select the host entry for OSE. If the label is unclear, contact OSE before continuing. The public GitHub guide may still show the earlier name, Open Collective Europe.
 4. In **Fiscal host project profile URL**, enter your Collective’s Open Collective URL, for example `https://opencollective.com/your-project`. Do not enter OSE’s GitHub organisation URL in this field.
 5. Complete the project profile and request GitHub approval. Activation depends on GitHub’s review, and there is no promised date for approval.
 

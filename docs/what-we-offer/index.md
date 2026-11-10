@@ -31,7 +31,7 @@ This structure suits open source projects that want to focus on their mission wi
 
 * Immediate legitimacy, with high-level compliance for corporate sponsors.
 * Less overhead, with no need for your own accounting or legal teams.
-* A place in a group of over 400 projects that share the same infrastructure.
+* A place among open source projects that share the same infrastructure.
 
 ***
 

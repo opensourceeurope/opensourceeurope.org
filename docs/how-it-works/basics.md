@@ -8,7 +8,7 @@ This is your starting point after OSE accepts your Collective. Work through the 
 ## Your first steps
 
 1. Check your public profile and contacts. Use the platform's [Quick Start Guide](https://docs.opencollective.com/help/collectives/quick-start-guide). Keep administrator access and the main contact up to date, and notify OSE of changes.
-2. Choose how to receive funds. Start with [donations and funding routes](/docs/how-it-works/financial-contributions-how-to-donate/). You can receive contributions without waiting for the optional welcome call.
+2. Choose how to receive funds. Start with [donations and funding routes](/docs/how-it-works/financial-contributions-how-to-donate/). You can receive contributions without waiting for a welcome call.
 3. Agree how your Collective makes spending decisions. Read [budget decisions](/docs/guides/deciding-on-how-to-use-your-money/).
 4. Prepare your first payment. Use [Pay and get reimbursed](/docs/how-it-works/expenses/). Funds must be received and available before payment.
 5. Keep the community informed. Use Updates and review the responsibilities below.
@@ -25,7 +25,7 @@ Once your application to be hosted by Open Source Europe (OSE) is approved, you 
 
 1. Contracts and agreements: Before any arrangement requires OSE to sign a specific contract, discuss it with OSE and get its acceptance.
 2. Grant applications: If OSE will be named as recipient or signatory, contact the team before submission so it can review and accept its role and commitments.
-3. Community updates: Use the Updates feature to keep your community informed. Publish at least one update per year.
+3. Community updates: Use the Updates feature to keep your community informed. OSE recommends publishing at least one update per year. This is not a general hosting obligation. Reporting requirements in a funding arrangement or applicable agreement still apply.
 4. Expenses: Follow the [expense guide](/docs/how-it-works/expenses/) for documents, review and payment.
 5. Contributions: OSE mainly supports donations and grants. Before committing to sales, invoiced services or contributions with promised benefits, contact OSE to discuss whether the arrangement can be supported and under what conditions. Do this before making commitments or receiving payment. Acceptance is not guaranteed.
 
@@ -68,4 +68,4 @@ When administrators or the main contact change, update access on Open Collective
 
 ## Optional welcome call
 
-After acceptance, OSE offers an optional welcome call. Contributions can start without waiting for the call. See [How to apply](/docs/getting-started/how-to-apply/).
+Welcome calls happen only occasionally and are not a standard step. Contributions can start after acceptance without waiting for a call. See [How to apply](/docs/getting-started/how-to-apply/).

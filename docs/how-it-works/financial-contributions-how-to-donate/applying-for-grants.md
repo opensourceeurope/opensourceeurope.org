@@ -47,7 +47,7 @@ If a grant application names OSE as recipient or signatory, contact OSE before s
 2. Mandate Agreement
 
    Your initiative will also need to sign a Mandate Agreement with OSE.\
-   It makes the arrangement formal. Two members of your initiative must sign it.
+   It makes the arrangement formal. One signatory from your initiative is enough.
 3. Bank Transfer
 
    The OSE team will provide the right bank transfer instructions for the agreed grant arrangement.
