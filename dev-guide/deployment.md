@@ -278,7 +278,7 @@ Compare the listing with the files in a fresh `dist/_astro/` and delete only fil
 These need an answer before launch.
 
 - Directory URLs: check that `/about/` resolves to `/about/index.html` through Edge Services. The bucket website endpoint does this on its own. If the pipeline does not, add a rewrite or use the website endpoint as the origin.
-- Bare domain: `opensourceeurope.org` has its DNS at OVH, which does not allow an ALIAS or CNAME at the apex. Either move DNS to a provider with ALIAS records and keep `https://opensourceeurope.org` as the canonical address, or serve the site from `www` and change `site` in `astro.config.mjs`.
+- Bare domain: Edge Services serves only subdomains. Its docs say a root domain is not possible, so moving the DNS to a provider with ALIAS records does not help. Serve the site from `www`, change `site` in `astro.config.mjs`, and have something with a fixed IP and its own certificate answer `opensourceeurope.org` with a 301 to `https://www.opensourceeurope.org`, such as a Scaleway Load Balancer with a redirect rule.
 - SMTP port: confirm that the function can reach `smtp.protonmail.ch` on port 587. Scaleway blocks outbound port 25, but should allow 587. The contact form check in "First release" settles this.
 - Deploy leaves console variables alone: confirm with a real run that `scw function deploy` keeps the environment variables set in the console. The conclusion so far comes from reading the CLI source.
 - CLI authentication: confirm that the `scw` commands in the workflow work with only the access key, secret key and region. They may also need a project or organization ID.
@@ -296,7 +296,7 @@ These are added at OVH, where the DNS of `opensourceeurope.org` is. Fill in the 
 |---|---|---|
 | CNAME | `www` | The Edge Services pipeline endpoint |
 | TXT or CNAME | As the console shows | The TLS certificate validation record for the pipeline, if Edge Services asks for one |
-| ALIAS, or CNAME at the apex | `@` | Not possible at OVH. See "Bare domain" under Open checks |
+| A | `@` | The IP of whatever sends the 301 to `www`. Edge Services cannot serve the root domain. See "Bare domain" under Open checks |
 
 The contact form needs no email records. It sends through Proton, which the domain's SPF record already allows.
 
