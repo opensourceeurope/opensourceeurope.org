@@ -1,8 +1,8 @@
 [
   {
-    "chunk_id": "91df5e803f49190cc3cf2ee9465292c6ca696b02cc99daec63f078e49d81e650",
+    "chunk_id": "b3977b9619070f18785325db70831e38f1589542fd62ae2f541427ed0278b2e2",
     "chunk_type": "code_snippet",
-    "content": "# Ask OSE from your AI tools > Use it as an MCP server\nAdd the server to any MCP client, such as Claude Code, Cursor or Claude Desktop. In Claude Code, run this command:\n\n```bash\nclaude mcp add ose-knowledge -- uvx ose-knowledge-mcp==0.12.29\n```",
+    "content": "# Ask OSE from your AI tools > Use it as an MCP server\nAdd the server to any MCP client, such as Claude Code, Cursor or Claude Desktop. In Claude Code, run this command:\n\n```bash\nclaude mcp add ose-knowledge -- uvx ose-knowledge-mcp==0.12.30\n```",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Ask OSE from your AI tools > Use it as an MCP server",
@@ -16,9 +16,9 @@
     "token_count": 71
   },
   {
-    "chunk_id": "e6853755bc9f846f784ada007e0d5d61e3698cc6a6399959676d11b06eec6596",
+    "chunk_id": "e7009f97a91ea4d301249383441d0d15dfe5e2519be0ae51bb73021de24e9dc3",
     "chunk_type": "code_snippet",
-    "content": "# Ask OSE from your AI tools > Use it as an MCP server\nFor another client, put this in the client's configuration:\n\n```json\n{\n  \"mcpServers\": {\n    \"ose-knowledge\": {\n      \"type\": \"stdio\",\n      \"command\": \"uvx\",\n      \"args\": [\"ose-knowledge-mcp==0.12.29\"]\n    }\n  }\n}\n```",
+    "content": "# Ask OSE from your AI tools > Use it as an MCP server\nFor another client, put this in the client's configuration:\n\n```json\n{\n  \"mcpServers\": {\n    \"ose-knowledge\": {\n      \"type\": \"stdio\",\n      \"command\": \"uvx\",\n      \"args\": [\"ose-knowledge-mcp==0.12.30\"]\n    }\n  }\n}\n```",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Ask OSE from your AI tools > Use it as an MCP server",
