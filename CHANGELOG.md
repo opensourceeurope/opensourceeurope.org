@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.33](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.12.32...v0.12.33) (2026-11-10)
+
+
+### Bug Fixes
+
+* **docs:** align the docs with the consolidated OSE documentation ([#120](https://github.com/opensourceeurope/opensourceeurope.org/issues/120)) ([7b47761](https://github.com/opensourceeurope/opensourceeurope.org/commit/7b47761e698feec886cc67c27164b9a956ee6e7c))
+
 ## [0.12.32](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.12.31...v0.12.32) (2026-11-10)
 
 
