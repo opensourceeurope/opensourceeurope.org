@@ -18,12 +18,14 @@ This overview explains the main points of the association's Terms of Hosting. It
 * The initiative retains its intellectual property unless a separate agreement provides otherwise.
 * The initiative cannot bind the association to an agreement with a third party without prior written approval.
 * Contributions and expenses must be recorded transparently on the platform. Expense requests require supporting documents and review.
-* Funds must support the initiative's stated purpose. The initiative must keep its description up to date and publish updates at least annually.
+* Funds must support the initiative's stated purpose. The initiative must keep its description up to date.
 * Administrative fees and directly related processing expenses are deducted according to the applicable agreement.
+
+OSE recommends that you publish a public update on your Collective page at least once a year. This is not a general hosting obligation. Any specific reporting requirements in your applicable agreement or funding arrangement still apply.
 
 ## Starting, changing or ending the arrangement
 
-Contact the team before entering into grant agreements, making commitments on behalf of the association, or changing your project's activities.
+Contact the team before you enter into a grant agreement or make a commitment on behalf of the association. Also contact the team before a significant change to your project's mission or activities. Collectives manage routine adjustments themselves. Any specific approval requirements for contracts and funding arrangements still apply.
 
 The Terms of Hosting provide for termination with **30 days' written notice**. Valid outstanding expenses and any remaining balance are handled under the agreement's termination provisions. A remaining balance is not automatically available for distribution to individual administrators.
 

@@ -7,7 +7,7 @@ Open Source Europe: Grant Eligibility and Risk Assessment Policy
 
 ## Introduction
 
-Open Source Europe (OSE) is committed to supporting initiatives that promote positive social change and a more just world. This policy sets out the criteria we use to assess whether grant proposals are eligible. It also sets out how we find possible compliance risks linked to terrorism/extremism financing.
+Open Source Europe (OSE) is committed to supporting initiatives that promote positive social change and a more just world. This policy covers grants that a Collective wants to receive through OSE. OSE decides whether to support the proposed funding arrangement. If an application names OSE as recipient or signatory, contact the team before you submit it. OSE must first review and accept its role and commitments. The criteria below cover grant eligibility and possible compliance risks linked to terrorism or extremism financing.
 
 ***
 
@@ -23,12 +23,12 @@ OSE prioritizes proposals from initiatives that:
 
 ## Compliance Risk Assessment
 
-OSE assesses potential compliance risks associated with grant proposals using the following factors (in order of importance):
+OSE considers the following factors when it assesses potential compliance risks of a grant proposal. They are in no fixed order of importance:
 
-1. **Beneficiary Impact**: Can the initiative show that its work benefits its target communities?
-2. **Public Statements**: Does the initiative's public messaging avoid promoting violence or extremism?
-3. **Transparency**: Does the initiative publish financial statements and reports on its activities?
-4. **Legality**: Do the initiative's mission and activities comply with legal frameworks and international law?
+* Beneficiary impact: Can the initiative show that its work benefits its target communities?
+* Public statements: Does the initiative's public messaging avoid promoting violence or extremism?
+* Transparency: Does the initiative publish financial statements and reports on its activities?
+* Legality: Do the initiative's mission and activities comply with legal frameworks and international law?
 
 ***
 
@@ -40,7 +40,7 @@ OSE takes context into account when it evaluates proposals. It carries out due d
 
 ## Information Sources
 
-To assess grant proposals, OSE uses different information sources, including (in order of importance):&#x20;
+To assess grant proposals, OSE uses information sources that fit the circumstances of each case. It may use the following sources. They have no fixed ranking, and OSE does not have to check every source for every proposal:
 
 * Initiative websites and reports.
 * Credible news sources and independent research organizations.
@@ -49,15 +49,15 @@ To assess grant proposals, OSE uses different information sources, including (in
 
 ***
 
-## Limited Veto Power
+## OSE's decision to support a grant
 
-OSE reserves the right to propose a veto of a grant proposal if a high compliance risk is identified based on the criteria above. A clear and documented reason will be provided, which sets out the specific concerns.
+OSE may accept or decline to support a grant application, or to receive the proposed grant on behalf of a Collective. Do not assume that OSE accepts. The team explains the reasons for its decision to the Collective. It does not commit to a formal written report in every case.
 
 ***
 
-## Appeals Process
+## Requesting a review
 
-Initiatives have the right to appeal a veto decision. The appeals process will be clearly explained to all applicants.
+If OSE declines to support a proposed grant arrangement, the Collective may ask the team to review its decision. OSE does not have a formal appeals procedure.
 
 ***
 

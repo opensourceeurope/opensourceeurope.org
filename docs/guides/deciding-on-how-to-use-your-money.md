@@ -16,7 +16,7 @@ This guide is based on an Open Source Collective workshop led by Sumana Harihare
 * Experiment and learn. Spending money on pilot projects or services can help you try new approaches and gives you more flexibility.
 * Boost morale. Small purchases of merchandise (stickers, awards, t-shirts) can help contributors stay and can improve team morale.
 
-In general, you can spend less than 10% of your saved funds without a long decision process. The same goes for a one-time expense of less than 20% of your stable recurring monthly income.
+Agree together on rules for spending decisions that suit your Collective's budget. Make clear who can approve expenses and which decisions need a wider discussion. These internal rules do not replace OSE's expense checks or the conditions attached to your funding.
 
 ### **Reasons to Save:**
 
@@ -48,8 +48,7 @@ If your project has no clear goals or written roadmap, you can still spend money
 
 * Consultants who help you create a roadmap.
 * Hardware upgrades for your team's development environment.
-* Mentorship programs, where you sponsor and mentor interns to build capacity.
-* Volunteer contributions. Organise volunteers around your activity and reimburse them according to the law in their country of residence.
+* Volunteer contributions. Volunteers can ask for reimbursement of their actual expenses, with the required supporting documents. OSE may consider a separate volunteer allowance arrangement, but it must review and accept the arrangement beforehand. OSE does not accept it automatically.
 
 If you have a roadmap, pay new contractors or services to take repetitive tasks off your existing volunteers.
 
@@ -69,7 +68,7 @@ You can hire collaborators for your collective as contractors. You can choose wh
 
 ### Using Bounties Cautiously
 
-Patch bounty programs can encourage specific development work. They may also make people compete instead of working together. Use bounties for tasks that volunteers do not want to do or do not have the skills for.
+Patch bounty programs can encourage specific development work. They may also make people compete instead of working together. Use bounties for tasks that volunteers do not want to do or do not have the skills for. OSE treats bounty payments as payments for services: a compliant invoice is required, and the usual payment rules apply.
 
 ## Decision-Making and Governance
 

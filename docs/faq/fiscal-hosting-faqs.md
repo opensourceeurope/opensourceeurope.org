@@ -44,6 +44,8 @@ Contact OSE before you leave. You then coordinate with the new host, settle outs
 
 If the Collective stops operating without moving to another host, settle outstanding expenses first. The Collective then proposes where the remaining balance goes, in line with its purpose. OSE reviews and approves it according to the funding conditions.
 
+For equipment bought with the Collective's budget, the Collective proposes what should happen to it. OSE reviews the proposal and the funding conditions before anything is transferred or disposed of. This process does not decide who owns the equipment, and it does not add a general inventory requirement.
+
 ## Inactive Collectives
 
 When a Collective is inactive for a long time, OSE contacts the administrators and sends reminders. The reminders state a deadline to respond and what happens if there is no reply. If there is no response, OSE may end hosting, stop recurring contributions and reallocate the balance to its general fund or a similar project. This happens under the applicable agreement and funding restrictions. There is no universal six-month timeline. This process is separate from unidentified incoming payments.

@@ -5,7 +5,7 @@ description: "Open Source Europe (OSE) welcomes initiatives from around the worl
 
 ## Who Can Apply to Be Hosted by Open Source Europe?
 
-Open Source Europe (OSE) welcomes initiatives from around the world that align with our mission and values. OSE supports open source projects and communities. Your application should explain how your activities contribute to open source.
+Open Source Europe (OSE) welcomes initiatives from around the world that align with our mission and values. OSE supports open source projects and communities. Your application should explain how your activities contribute to open source. OSE can accept an initiative before it publishes its first code or other open resources. OSE first reviews the initiative and its commitments to openness.
 
 ***
 
@@ -15,15 +15,15 @@ To be eligible for fiscal hosting by OSE, your initiative must:
 
 * Align with OSE's mission and impact areas. Your activities should be charitable and aim to benefit the public.
 * Be non-profit. Profits must not be distributed to members. For the types of contributions accepted through OSE, including the rules on membership benefits and other counterparty benefits, see [Contributions FAQ](/docs/faq/contributions-faq/).
-* Have no separate legal entity. Initiatives with their own legal status, such as registered NGOs, are not eligible. Such entities can still launch a Fund with OSE for specific programs.
-* Have at least one administrator. One is enough, and two are recommended for shared management and continuity. Administrators use real names.
+* Have no separate legal entity, for ordinary fiscal hosting. Initiatives with their own legal status, such as registered NGOs, are not eligible for ordinary fiscal hosting. They can set up a Fund with OSE for a specific programme. OSE must first review and agree to the programme and how the Fund will operate. Contact OSE to discuss the arrangement. OSE does not accept it automatically.
+* Have at least one administrator. One is enough, and two are recommended for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed.
 * Keep to appropriate content standards. Content that promotes violence, hate speech, pornography, or any other material considered inappropriate or offensive is not permitted.
 
 ***
 
 ## Global Reach
 
-OSE is based in Europe, but it supports initiatives all over the world. Where your project is based does not affect your eligibility, as long as you meet the criteria above.
+OSE welcomes applications from around the world. The team assesses which hosting and payment arrangements are available for each application. A project's location alone does not guarantee that hosting or payments will be possible.
 
 ***
 
@@ -35,7 +35,7 @@ OSE aims to lower barriers for initiatives with impact, so we do not require:
 * A minimum budget balance
 * A minimum annual fundraising amount
 * A fixed duration of commitment
-* Complex reporting requirements (an annual update on your collective page is enough)
+* Complex reporting requirements as a general condition of hosting. OSE recommends an annual update on your Collective page. Reporting requirements in a specific funding arrangement or agreement still apply.
 
 ***
 

@@ -7,7 +7,7 @@ Open Source Europe (OSE) provides a shared legal and financial framework for ope
 
 ## Collective Infrastructure
 
-OSE is an umbrella organisation and the fiscal host for over 400 initiatives. Each project runs independently on the Open Collective platform, with its own public page and transparent budget. It also benefits from the legal standing of a professional Belgian non-profit (ASBL/vzw).
+OSE is an umbrella organisation and the fiscal host for open source initiatives. Each project runs independently on the Open Collective platform, with its own public page and transparent budget. It also benefits from the legal standing of a professional Belgian non-profit (ASBL/vzw).
 
 This structure allows communities to manage funds, pay service providers on compliant invoices, and receive grants without the work of running their own legal entity.
 

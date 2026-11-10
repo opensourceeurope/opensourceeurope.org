@@ -34,7 +34,7 @@ The expense process at Open Source Europe (OSE) is meant to be transparent and s
 
 OSE does not ask for advance approval of every ordinary expense. If you are not sure an expense is eligible, contact the team before you spend. OSE still reviews each reimbursement. Any arrangement that needs a specific contract signed by OSE must be discussed and accepted in advance.
 
-If someone cannot pay the cost first, OSE can pay the supplier directly on a compliant invoice. OSE does not provide advances to individuals.
+If someone cannot pay the cost first, OSE can pay the supplier directly on a compliant invoice. OSE does not provide advances to individuals. OSE may pay a supplier deposit before delivery or completion. It must first review and agree to the documents and conditions, and the funds must be available.
 
 ***
 
@@ -124,9 +124,9 @@ Make sure the payout details match the expense documents, or the payment may be 
 
 ## Compliance and Best Practices
 
-* All expenses are publicly visible, for accountability.
+* The public can see an expense's title, amount and public display name. Keep sensitive information out of the title. Supporting documents and payment details are not shown publicly.
 * Double-check amounts, details and receipts before you submit.
-* Use expense comments for routine questions and follow-up. Contact OSE privately for sensitive information. Do not put sensitive documents or bank details in comments.
+* Use expense comments for routine questions and follow-up. Comments are not public. The expense submitter, the Collective's administrators and the fiscal host's administrators can see them. For sensitive information that the Collective's administrators should not see, email <home@opensourceeurope.org> directly.
 
 :::note
 For help, email us at <home@opensourceeurope.org>

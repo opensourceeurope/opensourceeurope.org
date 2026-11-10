@@ -24,8 +24,8 @@ Applying to be hosted by Open Source Europe (OSE) is simple and usually takes a 
 Check that your initiative meets these criteria:
 
 * It aligns with OSE's mission and impact areas. Your activities should be charitable and aim to benefit the public.
-* It has at least one administrator. One is enough, and two are recommended for shared management and continuity. Use real names.
-* It has no legal entity of its own, separate from OSE.
+* It has at least one administrator. One is enough, and two are recommended for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed.
+* For ordinary fiscal hosting, it has no legal entity of its own. An existing legal entity can instead discuss a Fund for a specific programme with OSE. This depends on OSE's review and agreement on the programme and on how the Fund will operate.
 * It can be based anywhere in the world, not only in Europe.
 
 Also read our [Terms of Cooperation](/docs/terms-of-service/) and [Community Guidelines](/docs/about/community-guidelines/).
@@ -58,7 +58,7 @@ To complete the review, the team gives you a supplementary application form. Do 
 
 We aim to give a first response within seven business days of receiving your completed supplementary form. The review may take longer if we need more information. This does not guarantee acceptance, or that the review ends within seven days.
 
-After acceptance, you can start to receive contributions. We offer an optional welcome call after acceptance. You can receive contributions without it. The welcome email includes documentation and an invitation to book a call. After a call, the team sends a recap and useful links.
+After acceptance, you can start to receive contributions. Welcome calls happen only occasionally and are not a standard onboarding step. Contributions can start without waiting for a call.
 
 ***
 

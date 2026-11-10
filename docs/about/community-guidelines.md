@@ -44,7 +44,7 @@ These community guidelines apply to all individuals participating in OSE activit
 ## Reporting and Enforcement
 
 * **Reporting**: If you witness or experience behavior that violates these community guidelines, report it to the designated contact person immediately.
-* **Investigation**: Reports will be taken seriously and investigated promptly and fairly.
+* **Review and follow-up**: Reports are taken seriously and reviewed to decide the right next steps. OSE does not always run an internal investigation, and it does not guarantee a response time.
 * **Consequences**: Individuals who violate these community guidelines may face consequences, including warnings, expulsion from events, or removal from OSE activities.
 
 ***

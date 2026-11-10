@@ -16,7 +16,7 @@ Prepare your answers to the following questions before you apply to Open Source 
 * **Collective Name:** Choose a unique name for your collective that describes it.
 * **Website and/or Social Media Links:** Share links that show your initiative’s activities and online presence.
 * **Unique URL:** You can choose a unique URL for your collective’s page on the Open Collective platform.
-* **Administrators:** One administrator is enough, and two are recommended for shared management and continuity. Use real names. Administrators have full permissions to manage the collective’s settings and finances.
+* **Administrators:** One administrator is enough, and two are recommended for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed. Administrators have full permissions to manage the Collective’s settings and finances.
 
 ***
 

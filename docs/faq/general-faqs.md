@@ -69,7 +69,9 @@ The current OSE hosting fees are:
 
 For ordinary card and PayPal donations, the 8% OSE hosting fee is calculated on the donation amount before payment processing fees are deducted. For example, a €20 donation has a €1.60 OSE hosting fee. Payment processing fees are separate and also reduce the amount available to the Collective. Their amount may vary.
 
-Currency conversion services or intermediaries may have additional costs. Contact OSE to confirm the costs applicable to a specific route. This page does not say how the fee is calculated for other routes, and it gives no combined fee rate.
+The 10% OSE hosting fee applies to incoming bank transfers, grants and public subsidies, donations through Myriad → OCEF → OSE, and GitHub Sponsors. OSE calculates it on each amount it actually receives, after any fees deducted before the money reaches OSE.
+
+Currency conversion services or intermediaries may have additional costs. Contact OSE to confirm the costs applicable to a specific route. This page gives no combined fee rate.
 
 These are the current rates. This page does not introduce any fee reduction.
 
@@ -87,7 +89,7 @@ However, our standard fees are already kept as low as possible to cover the real
 * Payments, reports, and support over time
 
 :::caution
-Outside of specific exceptional cases (like COVID-19 or Ukrainian relief), we cannot offer fee waivers or discounts.
+Our standard hosting fees apply. OSE does not offer hosting fee discounts or waivers.
 :::
 
 ***

@@ -27,7 +27,7 @@ When you submit an expense to your Collective, choose the correct type.
 Use this to request payment for services or goods you have provided.
 
 * Submitted by freelancers, contractors or companies.
-* Used for payment for work completed or goods delivered.
+* Used for payment for goods or services. This includes a supplier deposit, but only after OSE has reviewed and agreed to the documents and conditions in advance, and the funds are available.
 * Needs a formal invoice that contains:
   * Unique invoice number
   * Full identification (name, address, tax/company number)
@@ -66,7 +66,7 @@ Order confirmations, proforma invoices, bank or PayPal statements are not valid 
 * Partial reimbursements: if you ask for reimbursement of only part of a receipt, highlight the relevant items on the document itself.
 
 :::tip
-If the breakdown is not obvious, such as a percentage or a split, attach a signed and dated note. The note explains the amount you claim and what it covers.
+If the breakdown is not obvious, such as a percentage or a split, explain the calculation clearly in your request and attach the supporting receipt. OSE may ask for clarification. A signed and dated note is not required as a rule.
 :::
 
 ***

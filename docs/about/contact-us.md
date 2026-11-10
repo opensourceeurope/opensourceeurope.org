@@ -47,7 +47,7 @@ We are transparent. View our [budget](https://opencollective.com/europe) and rea
 
 ## Expense follow-up and sensitive concerns
 
-Use comments on the expense for routine questions about a submitted expense. Contact OSE privately for sensitive information.
+Use comments on the expense for routine questions about a submitted expense. The comments are not public. The expense submitter, the Collective's administrators and the fiscal host's administrators can see them. Email <home@opensourceeurope.org> directly for sensitive information that the Collective's administrators should not see.
 
 For suspected misuse of funds or a problem involving Collective administrators, contact the OSE team directly in private at <home@opensourceeurope.org>. You do not need to go through the administrators concerned.
 

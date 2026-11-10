@@ -27,11 +27,18 @@ If a donor is not comfortable with online credit card transactions, they can sen
 
 We often receive money in our bank account without any sign of where it should go. This is why it is so important to include the order number in the bank transfer. We always search carefully for the right collective, but sometimes we cannot find it.
 
-At the end of the month, we move the unidentified funds to a [holding fund](https://opencollective.com/oce-holding-fund).
+OSE keeps unidentified funds pending until it can identify the intended Collective. Once the Collective is identified, the funds can be allocated to it. There is no fixed monthly transfer schedule for unidentified funds.
 
-We keep the money there until we can identify who it is intended for and then we transfer it.
+To follow up on a bank transfer, email <home@opensourceeurope.org> with these details:
 
-Write to us on <home@opensourceeurope.org> or send us a message on [Discord](https://discord.gg/TmbRzFBqBa). We will ask you for screenshots or receipts that show the expected amount, the collective name, and the sender or any other information about the bank transfer. With these, we can send the funds to the right collective.
+* The transfer receipt
+* The amount
+* The date
+* The sender's name
+* The intended Collective
+* The order number, if you have it
+
+Discord is a community space. Do not use it for bank transfer cases or supporting documents.
 
 ## **What if a financial contributor requests an invoice before making the donation?**
 
