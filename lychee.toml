@@ -16,4 +16,7 @@ exclude = [
   # Google Docs and Myriad USA reject automated clients but work in a browser.
   '^https://docs\.google\.com/',
   '^https://myriadusa\.org/',
+  # Belgian government sites time out from GitHub runners but load in a browser.
+  '^https://finance\.belgium\.be/',
+  '^https://(www\.)?dataprotectionauthority\.be/',
 ]
