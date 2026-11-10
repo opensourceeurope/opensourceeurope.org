@@ -14,7 +14,8 @@ name: Deploy analytics export job to Scaleway
 #   EDGE_COCKPIT_TOKEN  from ose-analytics-export-edge-cockpit-token, only when the
 #                       repository variable OSE_EDGE_LOKI_URL is set
 # Their values never enter GitHub. SCW_ACCESS_KEY on the job is the access key of the
-# IAM application ose-analytics-export, which can only write objects in the project.
+# IAM application ose-analytics-export, which can only write and delete objects in the
+# project.
 # The CI deploy key never goes into the job.
 #
 # The first run creates the job definition: image, cron, CPU limit, the plain env vars

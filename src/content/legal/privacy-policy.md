@@ -5,7 +5,7 @@ background: { src: ../../assets/theme/webp/bg-hero-w-home.webp, alt: "", decorat
 seo:
   title: Privacy Policy | Open Source Europe
   description: How the Open Source Europe website handles your personal data. It sets no cookies, runs no tracking scripts, and loads nothing from other websites.
-updated: 2026-11-05
+updated: 2026-11-10
 sections:
   - type: shared
     ref: cta-host
@@ -15,7 +15,7 @@ sections:
 
 This website sets no cookies, runs no tracking scripts, and loads nothing from other websites. It handles three kinds of personal data. The first is what you type into the contact form. The second is what you type into the Ask chat, if you use it. The third is the technical data that every web server receives when your browser asks for a page.
 
-Last updated: 5 November 2026.
+Last updated: 10 November 2026.
 
 ## Who is responsible for your data
 
@@ -32,7 +32,7 @@ Send any question about your personal data to this email address.
 
 Like any website, this website receives your IP address and a description of your browser with every page request. Scaleway, the hosting provider, needs your IP address to send the page back to you.
 
-Scaleway Edge Services also writes a log entry for each page request. The entry holds your IP address, the address of the page, the time and the country the request came from. It also holds technical details of the request, such as the status code and the encryption version. Scaleway Cockpit stores these logs in the European Union and deletes them after seven days. Every few days, a job counts the page views for each page and each day, and keeps only these totals. The totals hold no IP addresses and nothing else that identifies you. OSE uses them to see which pages people read. OSE does not use the logs to identify you or to build visitor profiles.
+Scaleway Edge Services also writes a log entry for each page request. The entry holds your IP address, the address of the page, the time and the country the request came from. It also holds technical details of the request, such as the status code and the encryption version. Scaleway Cockpit stores these logs in the European Union and deletes them after seven days. Every few days, a job counts the page views for each page and each day, and keeps only these totals. The totals hold no IP addresses and nothing else that identifies you. The job writes them to a private Scaleway bucket in the European Union, and OSE deletes them 12 months later. OSE uses them to see which pages people read. OSE does not use the logs to identify you or to build visitor profiles.
 
 The legal basis is OSE's legitimate interest in a working and secure website, and in knowing which pages people read, under Article 6(1)(f) of the General Data Protection Regulation (GDPR).
 
