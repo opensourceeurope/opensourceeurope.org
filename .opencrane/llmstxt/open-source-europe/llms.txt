@@ -21,7 +21,7 @@
 - [Expenses & Getting Paid – FAQs](https://opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/)
 - [Expenses](https://opensourceeurope.org/docs/how-it-works/expenses/)
 - [Invoices or Reimbursements?](https://opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/)
-- [Request a Grant (for Nonprofits Only)](https://opensourceeurope.org/docs/how-it-works/expenses/request-a-grant-for-nonprofits-only/)
+- [Request a grant from an OSE Fund](https://opensourceeurope.org/docs/how-it-works/expenses/request-a-grant-for-nonprofits-only/)
 - [The Partnership](https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/)
 - [VAT in Europe and How It Works in OSE](https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-ose/)
 - [Applying for Grants](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/applying-for-grants/)

@@ -41,7 +41,7 @@ These community guidelines apply to all individuals participating in OSE activit
 ## Reporting and Enforcement
 
 * **Reporting**: If you witness or experience behavior that violates these community guidelines, report it to the designated contact person immediately.
-* **Investigation**: Reports will be taken seriously and investigated promptly and fairly.
+* **Review and follow-up**: Reports are taken seriously and reviewed to decide the right next steps. OSE does not always run an internal investigation, and it does not guarantee a response time.
 * **Consequences**: Individuals who violate these community guidelines may face consequences, including warnings, expulsion from events, or removal from OSE activities.
 
 ***
@@ -107,7 +107,7 @@ Follow us on [Twitter](https://twitter.com/OC_Europe), [Instagram](https://www.i
 
 ## Expense follow-up and sensitive concerns
 
-Use comments on the expense for routine questions about a submitted expense. Contact OSE privately for sensitive information.
+Use comments on the expense for routine questions about a submitted expense. The comments are not public. The expense submitter, the Collective's administrators and the fiscal host's administrators can see them. Email <home@opensourceeurope.org> directly for sensitive information that the Collective's administrators should not see.
 
 For suspected misuse of funds or a problem involving Collective administrators, contact the OSE team directly in private at <home@opensourceeurope.org>. You do not need to go through the administrators concerned.
 
@@ -153,7 +153,7 @@ Open Source Europe: Grant Eligibility and Risk Assessment Policy
 
 ## Introduction
 
-Open Source Europe (OSE) is committed to supporting initiatives that promote positive social change and a more just world. This policy sets out the criteria we use to assess whether grant proposals are eligible. It also sets out how we find possible compliance risks linked to terrorism/extremism financing.
+Open Source Europe (OSE) is committed to supporting initiatives that promote positive social change and a more just world. This policy covers grants that a Collective wants to receive through OSE. OSE decides whether to support the proposed funding arrangement. If an application names OSE as recipient or signatory, contact the team before you submit it. OSE must first review and accept its role and commitments. The criteria below cover grant eligibility and possible compliance risks linked to terrorism or extremism financing.
 
 ***
 
@@ -169,12 +169,12 @@ OSE prioritizes proposals from initiatives that:
 
 ## Compliance Risk Assessment
 
-OSE assesses potential compliance risks associated with grant proposals using the following factors (in order of importance):
+OSE considers the following factors when it assesses potential compliance risks of a grant proposal. They are in no fixed order of importance:
 
-1. **Beneficiary Impact**: Can the initiative show that its work benefits its target communities?
-2. **Public Statements**: Does the initiative's public messaging avoid promoting violence or extremism?
-3. **Transparency**: Does the initiative publish financial statements and reports on its activities?
-4. **Legality**: Do the initiative's mission and activities comply with legal frameworks and international law?
+* Beneficiary impact: Can the initiative show that its work benefits its target communities?
+* Public statements: Does the initiative's public messaging avoid promoting violence or extremism?
+* Transparency: Does the initiative publish financial statements and reports on its activities?
+* Legality: Do the initiative's mission and activities comply with legal frameworks and international law?
 
 ***
 
@@ -186,7 +186,7 @@ OSE takes context into account when it evaluates proposals. It carries out due d
 
 ## Information Sources
 
-To assess grant proposals, OSE uses different information sources, including (in order of importance):&#x20;
+To assess grant proposals, OSE uses information sources that fit the circumstances of each case. It may use the following sources. They have no fixed ranking, and OSE does not have to check every source for every proposal:
 
 * Initiative websites and reports.
 * Credible news sources and independent research organizations.
@@ -195,15 +195,15 @@ To assess grant proposals, OSE uses different information sources, including (in
 
 ***
 
-## Limited Veto Power
+## OSE's decision to support a grant
 
-OSE reserves the right to propose a veto of a grant proposal if a high compliance risk is identified based on the criteria above. A clear and documented reason will be provided, which sets out the specific concerns.
+OSE may accept or decline to support a grant application, or to receive the proposed grant on behalf of a Collective. Do not assume that OSE accepts. The team explains the reasons for its decision to the Collective. It does not commit to a formal written report in every case.
 
 ***
 
-## Appeals Process
+## Requesting a review
 
-Initiatives have the right to appeal a veto decision. The appeals process will be clearly explained to all applicants.
+If OSE declines to support a proposed grant arrangement, the Collective may ask the team to review its decision. OSE does not have a formal appeals procedure.
 
 ***
 
@@ -406,7 +406,7 @@ A Fiscal Host, or Sponsor, is a type of Organization that lets Collectives handl
 
 # About Open Source Europe
 
-Open Source Europe is a Belgian association. It is the fiscal host for over 400 initiatives and works with philanthropic institutions to support regranting around the world.
+Open Source Europe is a Belgian association. It is the fiscal host for open source initiatives and works with philanthropic institutions to support regranting around the world.
 
 ***
 
@@ -483,11 +483,18 @@ If a donor is not comfortable with online credit card transactions, they can sen
 
 We often receive money in our bank account without any sign of where it should go. This is why it is so important to include the order number in the bank transfer. We always search carefully for the right collective, but sometimes we cannot find it.
 
-At the end of the month, we move the unidentified funds to a [holding fund](https://opencollective.com/oce-holding-fund).
+OSE keeps unidentified funds pending until it can identify the intended Collective. Once the Collective is identified, the funds can be allocated to it. There is no fixed monthly transfer schedule for unidentified funds.
 
-We keep the money there until we can identify who it is intended for and then we transfer it.
+To follow up on a bank transfer, email <home@opensourceeurope.org> with these details:
 
-Write to us on <home@opensourceeurope.org> or send us a message on [Discord](https://discord.gg/TmbRzFBqBa). We will ask you for screenshots or receipts that show the expected amount, the collective name, and the sender or any other information about the bank transfer. With these, we can send the funds to the right collective.
+* The transfer receipt
+* The amount
+* The date
+* The sender's name
+* The intended Collective
+* The order number, if you have it
+
+Discord is a community space. Do not use it for bank transfer cases or supporting documents.
 
 ## **What if a financial contributor requests an invoice before making the donation?**
 
@@ -588,6 +595,8 @@ Contact OSE before you leave. You then coordinate with the new host, settle outs
 
 If the Collective stops operating without moving to another host, settle outstanding expenses first. The Collective then proposes where the remaining balance goes, in line with its purpose. OSE reviews and approves it according to the funding conditions.
 
+For equipment bought with the Collective's budget, the Collective proposes what should happen to it. OSE reviews the proposal and the funding conditions before anything is transferred or disposed of. This process does not decide who owns the equipment, and it does not add a general inventory requirement.
+
 ## Inactive Collectives
 
 When a Collective is inactive for a long time, OSE contacts the administrators and sends reminders. The reminders state a deadline to respond and what happens if there is no reply. If there is no response, OSE may end hosting, stop recurring contributions and reallocate the balance to its general fund or a similar project. This happens under the applicable agreement and funding restrictions. There is no universal six-month timeline. This process is separate from unidentified incoming payments.
@@ -663,7 +672,9 @@ The current OSE hosting fees are:
 
 For ordinary card and PayPal donations, the 8% OSE hosting fee is calculated on the donation amount before payment processing fees are deducted. For example, a €20 donation has a €1.60 OSE hosting fee. Payment processing fees are separate and also reduce the amount available to the Collective. Their amount may vary.
 
-Currency conversion services or intermediaries may have additional costs. Contact OSE to confirm the costs applicable to a specific route. This page does not say how the fee is calculated for other routes, and it gives no combined fee rate.
+The 10% OSE hosting fee applies to incoming bank transfers, grants and public subsidies, donations through Myriad → OCEF → OSE, and GitHub Sponsors. OSE calculates it on each amount it actually receives, after any fees deducted before the money reaches OSE.
+
+Currency conversion services or intermediaries may have additional costs. Contact OSE to confirm the costs applicable to a specific route. This page gives no combined fee rate.
 
 These are the current rates. This page does not introduce any fee reduction.
 
@@ -680,7 +691,7 @@ However, our standard fees are already kept as low as possible to cover the real
 * Risk and compliance
 * Payments, reports, and support over time
 
-> **Caution:** Outside of specific exceptional cases (like COVID-19 or Ukrainian relief), we cannot offer fee waivers or discounts.
+> **Caution:** Our standard hosting fees apply. OSE does not offer hosting fee discounts or waivers.
 
 ***
 
@@ -736,7 +747,7 @@ Prepare your answers to the following questions before you apply to Open Source 
 * **Collective Name:** Choose a unique name for your collective that describes it.
 * **Website and/or Social Media Links:** Share links that show your initiative’s activities and online presence.
 * **Unique URL:** You can choose a unique URL for your collective’s page on the Open Collective platform.
-* **Administrators:** One administrator is enough, and two are recommended for shared management and continuity. Use real names. Administrators have full permissions to manage the collective’s settings and finances.
+* **Administrators:** One administrator is enough, and two are recommended for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed. Administrators have full permissions to manage the Collective’s settings and finances.
 
 ***
 
@@ -773,7 +784,7 @@ If you have questions or need help with the application process, [contact us](ma
 
 ## Who Can Apply to Be Hosted by Open Source Europe?
 
-Open Source Europe (OSE) welcomes initiatives from around the world that align with our mission and values. OSE supports open source projects and communities. Your application should explain how your activities contribute to open source.
+Open Source Europe (OSE) welcomes initiatives from around the world that align with our mission and values. OSE supports open source projects and communities. Your application should explain how your activities contribute to open source. OSE can accept an initiative before it publishes its first code or other open resources. OSE first reviews the initiative and its commitments to openness.
 
 ***
 
@@ -783,15 +794,15 @@ To be eligible for fiscal hosting by OSE, your initiative must:
 
 * Align with OSE's mission and impact areas. Your activities should be charitable and aim to benefit the public.
 * Be non-profit. Profits must not be distributed to members. For the types of contributions accepted through OSE, including the rules on membership benefits and other counterparty benefits, see [Contributions FAQ](https://opensourceeurope.org/docs/faq/contributions-faq/).
-* Have no separate legal entity. Initiatives with their own legal status, such as registered NGOs, are not eligible. Such entities can still launch a Fund with OSE for specific programs.
-* Have at least one administrator. One is enough, and two are recommended for shared management and continuity. Administrators use real names.
+* Have no separate legal entity, for ordinary fiscal hosting. Initiatives with their own legal status, such as registered NGOs, are not eligible for ordinary fiscal hosting. They can set up a Fund with OSE for a specific programme. OSE must first review and agree to the programme and how the Fund will operate. Contact OSE to discuss the arrangement. OSE does not accept it automatically.
+* Have at least one administrator. One is enough, and two are recommended for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed.
 * Keep to appropriate content standards. Content that promotes violence, hate speech, pornography, or any other material considered inappropriate or offensive is not permitted.
 
 ***
 
 ## Global Reach
 
-OSE is based in Europe, but it supports initiatives all over the world. Where your project is based does not affect your eligibility, as long as you meet the criteria above.
+OSE welcomes applications from around the world. The team assesses which hosting and payment arrangements are available for each application. A project's location alone does not guarantee that hosting or payments will be possible.
 
 ***
 
@@ -803,7 +814,7 @@ OSE aims to lower barriers for initiatives with impact, so we do not require:
 * A minimum budget balance
 * A minimum annual fundraising amount
 * A fixed duration of commitment
-* Complex reporting requirements (an annual update on your collective page is enough)
+* Complex reporting requirements as a general condition of hosting. OSE recommends an annual update on your Collective page. Reporting requirements in a specific funding arrangement or agreement still apply.
 
 ***
 
@@ -850,8 +861,8 @@ Applying to be hosted by Open Source Europe (OSE) is simple and usually takes a 
 Check that your initiative meets these criteria:
 
 * It aligns with OSE's mission and impact areas. Your activities should be charitable and aim to benefit the public.
-* It has at least one administrator. One is enough, and two are recommended for shared management and continuity. Use real names.
-* It has no legal entity of its own, separate from OSE.
+* It has at least one administrator. One is enough, and two are recommended for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed.
+* For ordinary fiscal hosting, it has no legal entity of its own. An existing legal entity can instead discuss a Fund for a specific programme with OSE. This depends on OSE's review and agreement on the programme and on how the Fund will operate.
 * It can be based anywhere in the world, not only in Europe.
 
 Also read our [Terms of Cooperation](https://opensourceeurope.org/docs/terms-of-service/) and [Community Guidelines](https://opensourceeurope.org/docs/about/community-guidelines/).
@@ -884,7 +895,7 @@ To complete the review, the team gives you a supplementary application form. Do 
 
 We aim to give a first response within seven business days of receiving your completed supplementary form. The review may take longer if we need more information. This does not guarantee acceptance, or that the review ends within seven days.
 
-After acceptance, you can start to receive contributions. We offer an optional welcome call after acceptance. You can receive contributions without it. The welcome email includes documentation and an invitation to book a call. After a call, the team sends a recap and useful links.
+After acceptance, you can start to receive contributions. Welcome calls happen only occasionally and are not a standard onboarding step. Contributions can start without waiting for a call.
 
 ***
 
@@ -917,7 +928,7 @@ All three ways start the knowledge base with `uvx`, so install [uv](https://docs
 Add the server to any MCP client, such as Claude Code, Cursor or Claude Desktop. In Claude Code, run this command:
 
 ```bash
-claude mcp add ose-knowledge -- uvx ose-knowledge-mcp==0.12.31
+claude mcp add ose-knowledge -- uvx ose-knowledge-mcp==0.12.33
 ```
 
 For another client, put this in the client's configuration:
@@ -928,7 +939,7 @@ For another client, put this in the client's configuration:
     "ose-knowledge": {
       "type": "stdio",
       "command": "uvx",
-      "args": ["ose-knowledge-mcp==0.12.31"]
+      "args": ["ose-knowledge-mcp==0.12.33"]
     }
   }
 }
@@ -973,7 +984,7 @@ This guide is based on an Open Source Collective workshop led by Sumana Harihare
 * Experiment and learn. Spending money on pilot projects or services can help you try new approaches and gives you more flexibility.
 * Boost morale. Small purchases of merchandise (stickers, awards, t-shirts) can help contributors stay and can improve team morale.
 
-In general, you can spend less than 10% of your saved funds without a long decision process. The same goes for a one-time expense of less than 20% of your stable recurring monthly income.
+Agree together on rules for spending decisions that suit your Collective's budget. Make clear who can approve expenses and which decisions need a wider discussion. These internal rules do not replace OSE's expense checks or the conditions attached to your funding.
 
 ### **Reasons to Save:**
 
@@ -1005,8 +1016,7 @@ If your project has no clear goals or written roadmap, you can still spend money
 
 * Consultants who help you create a roadmap.
 * Hardware upgrades for your team's development environment.
-* Mentorship programs, where you sponsor and mentor interns to build capacity.
-* Volunteer contributions. Organise volunteers around your activity and reimburse them according to the law in their country of residence.
+* Volunteer contributions. Volunteers can ask for reimbursement of their actual expenses, with the required supporting documents. OSE may consider a separate volunteer allowance arrangement, but it must review and accept the arrangement beforehand. OSE does not accept it automatically.
 
 If you have a roadmap, pay new contractors or services to take repetitive tasks off your existing volunteers.
 
@@ -1026,7 +1036,7 @@ You can hire collaborators for your collective as contractors. You can choose wh
 
 ### Using Bounties Cautiously
 
-Patch bounty programs can encourage specific development work. They may also make people compete instead of working together. Use bounties for tasks that volunteers do not want to do or do not have the skills for.
+Patch bounty programs can encourage specific development work. They may also make people compete instead of working together. Use bounties for tasks that volunteers do not want to do or do not have the skills for. OSE treats bounty payments as payments for services: a compliant invoice is required, and the usual payment rules apply.
 
 ## Decision-Making and Governance
 
@@ -1060,7 +1070,7 @@ This is your starting point after OSE accepts your Collective. Work through the 
 ## Your first steps
 
 1. Check your public profile and contacts. Use the platform's [Quick Start Guide](https://docs.opencollective.com/help/collectives/quick-start-guide). Keep administrator access and the main contact up to date, and notify OSE of changes.
-2. Choose how to receive funds. Start with [donations and funding routes](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/). You can receive contributions without waiting for the optional welcome call.
+2. Choose how to receive funds. Start with [donations and funding routes](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/). You can receive contributions without waiting for a welcome call.
 3. Agree how your Collective makes spending decisions. Read [budget decisions](https://opensourceeurope.org/docs/guides/deciding-on-how-to-use-your-money/).
 4. Prepare your first payment. Use [Pay and get reimbursed](https://opensourceeurope.org/docs/how-it-works/expenses/). Funds must be received and available before payment.
 5. Keep the community informed. Use Updates and review the responsibilities below.
@@ -1077,7 +1087,7 @@ Once your application to be hosted by Open Source Europe (OSE) is approved, you 
 
 1. Contracts and agreements: Before any arrangement requires OSE to sign a specific contract, discuss it with OSE and get its acceptance.
 2. Grant applications: If OSE will be named as recipient or signatory, contact the team before submission so it can review and accept its role and commitments.
-3. Community updates: Use the Updates feature to keep your community informed. Publish at least one update per year.
+3. Community updates: Use the Updates feature to keep your community informed. OSE recommends publishing at least one update per year. This is not a general hosting obligation. Reporting requirements in a funding arrangement or applicable agreement still apply.
 4. Expenses: Follow the [expense guide](https://opensourceeurope.org/docs/how-it-works/expenses/) for documents, review and payment.
 5. Contributions: OSE mainly supports donations and grants. Before committing to sales, invoiced services or contributions with promised benefits, contact OSE to discuss whether the arrangement can be supported and under what conditions. Do this before making commitments or receiving payment. Acceptance is not guaranteed.
 
@@ -1120,7 +1130,7 @@ When administrators or the main contact change, update access on Open Collective
 
 ## Optional welcome call
 
-After acceptance, OSE offers an optional welcome call. Contributions can start without waiting for the call. See [How to apply](https://opensourceeurope.org/docs/getting-started/how-to-apply/).
+Welcome calls happen only occasionally and are not a standard step. Contributions can start after acceptance without waiting for a call. See [How to apply](https://opensourceeurope.org/docs/getting-started/how-to-apply/).
 
 
 <!-- opencrane:page -->
@@ -1180,13 +1190,13 @@ Ordinary external donations may be made to identified nonprofit organisations af
 
 ## Are receipts and invoices public?
 
-Only general information (amount, description, purpose) is public. Uploaded documents (invoices, receipts) are private. Only the Collective’s admins and OSE staff can see them.
+The public budget shows an expense’s title, amount and public display name. Do not put sensitive information in the title. Attached receipts, detailed descriptions and payment details are not shown publicly. Who can see them depends on the information and the platform permissions. Access is not limited to OSE staff. See [Open Collective’s reimbursement privacy guidance](https://documentation.opencollective.com/expenses-and-getting-paid/submitting-expenses/submitting-a-reimbursement) and [expense-submission guidance](https://documentation.opencollective.com/expenses-and-getting-paid/submitting-expenses).
 
 ***
 
 ## Need help?
 
-Use the comments on the expense for routine questions and follow-up. For sensitive information, contact OSE privately at <home@opensourceeurope.org>.
+Use the comments on the expense for routine questions and follow-up. Expense comments are not public. The expense submitter, the Collective’s administrators and the fiscal host’s administrators can see them. For sensitive information that the Collective’s administrators should not see, email OSE directly at <home@opensourceeurope.org>. See [Open Collective’s expense-comment guidance](https://documentation.opencollective.com/expenses-and-getting-paid/editing-an-expense).
 
 
 <!-- opencrane:page -->
@@ -1224,7 +1234,7 @@ The expense process at Open Source Europe (OSE) is meant to be transparent and s
 
 OSE does not ask for advance approval of every ordinary expense. If you are not sure an expense is eligible, contact the team before you spend. OSE still reviews each reimbursement. Any arrangement that needs a specific contract signed by OSE must be discussed and accepted in advance.
 
-If someone cannot pay the cost first, OSE can pay the supplier directly on a compliant invoice. OSE does not provide advances to individuals.
+If someone cannot pay the cost first, OSE can pay the supplier directly on a compliant invoice. OSE does not provide advances to individuals. OSE may pay a supplier deposit before delivery or completion. It must first review and agree to the documents and conditions, and the funds must be available.
 
 ***
 
@@ -1306,9 +1316,9 @@ Supported payout options:
 
 ## Compliance and Best Practices
 
-* All expenses are publicly visible, for accountability.
+* The public can see an expense's title, amount and public display name. Keep sensitive information out of the title. Supporting documents and payment details are not shown publicly.
 * Double-check amounts, details and receipts before you submit.
-* Use expense comments for routine questions and follow-up. Contact OSE privately for sensitive information. Do not put sensitive documents or bank details in comments.
+* Use expense comments for routine questions and follow-up. Comments are not public. The expense submitter, the Collective's administrators and the fiscal host's administrators can see them. For sensitive information that the Collective's administrators should not see, email <home@opensourceeurope.org> directly.
 
 > **Note:** For help, email us at <home@opensourceeurope.org>
 
@@ -1350,7 +1360,7 @@ When you submit an expense to your Collective, choose the correct type.
 Use this to request payment for services or goods you have provided.
 
 * Submitted by freelancers, contractors or companies.
-* Used for payment for work completed or goods delivered.
+* Used for payment for goods or services. This includes a supplier deposit, but only after OSE has reviewed and agreed to the documents and conditions in advance, and the funds are available.
 * Needs a formal invoice that contains:
   * Unique invoice number
   * Full identification (name, address, tax/company number)
@@ -1384,7 +1394,7 @@ Use this when you have paid for something for the Collective with your own money
 
 * Partial reimbursements: if you ask for reimbursement of only part of a receipt, highlight the relevant items on the document itself.
 
-> **Tip:** If the breakdown is not obvious, such as a percentage or a split, attach a signed and dated note. The note explains the amount you claim and what it covers.
+> **Tip:** If the breakdown is not obvious, such as a percentage or a split, explain the calculation clearly in your request and attach the supporting receipt. OSE may ask for clarification. A signed and dated note is not required as a rule.
 
 ***
 
@@ -1408,7 +1418,7 @@ Reimbursement is refused without an invoice or receipt. A bank statement alone i
 
 <!-- opencrane:page -->
 
-# Request a Grant (for Nonprofits Only)
+# Request a grant from an OSE Fund
 
 Besides expenses and invoices, the Open Collective platform also has a “Request a Grant” option.
 
@@ -1420,9 +1430,9 @@ This feature is not available to all collectives, and its use must follow specif
 
 ## Who can use “Request a Grant”?
 
-* Only projects hosted as Funds (not standard Collectives)
-* The applicant must be a nonprofit or equivalent structure (e.g. foundation, ASBL, charity, NGO)
-* Private individuals or informal collectives cannot use this option
+* This guide covers grant requests to OSE Funds. Whether a profile can receive grant requests depends on the expense types enabled for it. That alone does not make a request eligible. OSE confirms the right way to submit for the arrangement you agreed.
+* The ordinary OSE route is for identified nonprofit organisations, such as foundations, ASBLs, charities or NGOs. OSE must first review and agree to the beneficiary, purpose and funding conditions.
+* Other beneficiaries, including individuals or informal collectives, need a specific assessment by OSE, and OSE does not guarantee to accept them. Contact OSE before you go ahead. A feature being available on the platform does not by itself make a request eligible.
 
 ***
 
@@ -1432,7 +1442,7 @@ When a nonprofit uses the “Request a Grant” feature, they must include:
 
 1. A copy of their legal bylaws (*statuts*)
 2. A signed letter that officially requests the grant and sets out:
-   * The purpose and objectives of the requested funding
+   * The amount, purpose and objectives of the requested funding
    * How the funds will be used in line with the fund’s mission
    * The legal name and contact details of the nonprofit organization
 3. A bank account holder statement of the nonprofit
@@ -1443,10 +1453,12 @@ When a nonprofit uses the “Request a Grant” feature, they must include:
 
 ## Internal review process
 
-All grant requests are reviewed manually by the OSE team.\
-If accepted, the funds are transferred directly to the nonprofit's official bank account, and the transaction is recorded transparently on the fund page.
+Who selects the projects or beneficiaries depends on the programme. The selection roles are agreed with OSE when the Fund is set up. Selection does not replace OSE's review and agreement before payment.
 
-For any questions about this feature, contact the finance or legal coordinator.
+All grant requests are reviewed manually by the OSE team.\
+For an approved nonprofit grant, OSE transfers the funds directly to the nonprofit's official bank account. The transaction is recorded transparently on the fund page. For other beneficiaries, OSE must first confirm whether it can accept the arrangement, and which documents and payment arrangements it needs.
+
+For questions about an OSE Fund or about who can receive a grant, contact <home@opensourceeurope.org>.
 
 
 <!-- opencrane:page -->
@@ -1498,10 +1510,9 @@ After OSE has approved the arrangement:
 
 ## VAT & Nonprofit Status
 
-Collectives hosted by OSE are not legal entities and must pay VAT on purchases:
+For purchases by a Collective, invoices must be issued to the Collective or the person who placed the order. OSE acts only as the payer. Do not use OSE’s legal name or VAT number.
 
-* VAT must be listed on invoices (unless an exemption applies).
-* The reverse charge mechanism does not apply to Collectives. Only registered businesses can use it.
+VAT treatment depends on the specific transaction and the rules that apply to it. Do not assume one rule applies to every purchase. Ask the supplier or an accountant about exemptions, reverse charge or VAT recovery.
 
 > **Note:** [Read more: VAT in Europe and how it works in OSE](https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-ose/)
 
@@ -1518,47 +1529,42 @@ Email us any time at <home@opensourceeurope.org>. We're happy to help!
 
 ## General Principles
 
-Collectives hosted by Open Source Europe (OSE) are unincorporated initiatives primarily funded through donations. So they are not eligible for VAT refunds, and they must always pay VAT on the goods and services they buy.
+For purchases made by a Collective, invoices must be issued to the Collective or the person who placed the order. OSE acts only as the payer. Do not use OSE’s legal name or VAT number to have these invoices issued. This page does not cover purchases that OSE contracts directly for its own needs.
 
-VAT (Value Added Tax) is a general consumption tax that applies to most goods and services within the European Union. Even if your Collective is not a registered entity, VAT is still due on your expenses.
-
-> **Note:** Learn more: [VAT explained – European Commission](https://taxation-customs.ec.europa.eu/taxation-1/value-added-tax-vat_en)
+VAT treatment depends on the transaction and the rules that apply to it. Hosting with OSE does not by itself decide whether VAT must be charged, whether an exemption applies, or whether VAT can be recovered.
 
 ***
 
 ## VAT Within the Same Country
 
-Invoices issued within your country (e.g. Belgium) must include VAT unless the supplier is legally exempt.
-
-Open Collective Europe (OCE), the association that runs OSE, is not VAT-exempt. If OCE issues an invoice, for example for services, VAT is applied at the applicable Belgian rate.
-
-> **Note:** Belgian VAT details: [Finance Belgium](https://finance.belgium.be/en)
+Ask the supplier to apply the VAT treatment that fits the purchase and the actual customer. If the VAT treatment on the invoice is unclear, ask the supplier to explain it or consult an accountant. Do not assume that every invoice without VAT is wrong.
 
 ***
 
 ## Cross-Border VAT and Reverse Charge
 
-The reverse charge mechanism lets VAT-registered businesses handle cross-border VAT internally: they declare both output and input VAT.
+Cross-border rules differ by transaction, by the status of the parties and by the countries involved. Being hosted by OSE does not mean that reverse charge always applies, and it does not mean that reverse charge can never apply.
 
-However, this mechanism only applies between two VAT-registered businesses. Collectives hosted by OSE are not legal entities, so they cannot apply the reverse charge mechanism.
+For a specific purchase, ask the supplier or an accountant to confirm the treatment that applies. Do not give OSE’s VAT number for the Collective’s purchase.
 
-> **Danger:** This means you must pay VAT on cross-border invoices from EU-based suppliers, like any individual or unregistered group.
+Official guidance:
 
-> **Note:** Learn more: [EU VAT rules – Your Europe](https://europa.eu/youreurope/business/taxation/vat/vat-rules-rates/index_en.htm)
+* [VAT rules and rates – Your Europe](https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm)
+* [Cross-border VAT – Your Europe](https://europa.eu/youreurope/business/finance-and-tax/vat/cross-border-vat/index_en.htm)
 
 ***
 
 ## Summary
 
-* Collectives must pay VAT on all eligible purchases, whether national or cross-border.
-* Reverse charge rules do not apply.
-* If an invoice leaves out VAT but you are not VAT-registered, ask the vendor to correct it. Otherwise, justify the exemption clearly.
+* Put the Collective’s name, or the name of the person who placed the order, on the invoice. Do not use OSE’s legal name or VAT number.
+* Ask the supplier or an accountant about VAT treatment, exemptions, reverse charge or recovery for the specific purchase.
+* Payment or reimbursement still depends on OSE’s document checks, the funding conditions and the funds available.
 
 ***
 
 ## Questions?
 
-If you are still unsure about VAT or invoicing rules, email us at <home@opensourceeurope.org>.
+For OSE’s requirements on submitting invoices and on payment, contact <home@opensourceeurope.org>. For the tax treatment of your own purchase or situation, consult the supplier or an accountant.
 
 
 <!-- opencrane:page -->
@@ -1607,7 +1613,7 @@ Open Source Europe (OSE) enables hosted Collectives to receive grants from insti
 2. Mandate Agreement
 
    Your initiative will also need to sign a Mandate Agreement with OSE.\
-   It makes the arrangement formal. Two members of your initiative must sign it.
+   It makes the arrangement formal. One signatory from your initiative is enough.
 3. Bank Transfer
 
    The OSE team will provide the right bank transfer instructions for the agreed grant arrangement.
@@ -1840,7 +1846,7 @@ Use GitHub Sponsors for your project with OSE as fiscal host and your Collective
 
 1. Your project needs a Collective hosted by OSE. The person configuring Sponsors must be an owner of the project’s GitHub organisation and have two-factor authentication enabled.
 2. Visit [GitHub Sponsors](https://github.com/sponsors), choose **Get sponsored**, and select the project’s own GitHub organisation.
-3. Select **This organization is using a fiscal host**, then select the host entry for OSE. If the label is unclear, contact OSE before continuing. The public GitHub guide may still show an earlier name.
+3. Select **This organization is using a fiscal host**, then select the host entry for OSE. If the label is unclear, contact OSE before continuing. The public GitHub guide may still show the earlier name, Open Collective Europe.
 4. In **Fiscal host project profile URL**, enter your Collective’s Open Collective URL, for example `https://opencollective.com/your-project`. Do not enter OSE’s GitHub organisation URL in this field.
 5. Complete the project profile and request GitHub approval. Activation depends on GitHub’s review, and there is no promised date for approval.
 
@@ -1925,7 +1931,7 @@ If you prefer to contribute to a Collective by bank transfer, Open Source Europe
     * The date of transfer.
     * The sender's name.
 
-  Send this information to <home@opensourceeurope.org>, and we will help you.
+  Send this information and any supporting documents by email to <home@opensourceeurope.org>, and we will help you. Do not send them through Slack or Discord.
 
 ## Hosting fees
 
@@ -1966,7 +1972,7 @@ Read [what OSE offers](https://opensourceeurope.org/docs/what-we-offer/), explor
 
 For a safeguarding concern, go directly to the [safeguarding policy and contacts](https://opensourceeurope.org/docs/about/safeguarding-policy/).
 
-Open Source Europe is a Belgian Association (ASBL/vzw). Its tech platform lets over 400 open source groups raise and spend more than 1 million euros a year, all in full transparency.
+Open Source Europe is a Belgian Association (ASBL/vzw). Its tech platform lets open source groups raise and spend funds, all in full transparency.
 
 ### Our Mission
 
@@ -2028,12 +2034,14 @@ This overview explains the main points of the association's Terms of Hosting. It
 * The initiative retains its intellectual property unless a separate agreement provides otherwise.
 * The initiative cannot bind the association to an agreement with a third party without prior written approval.
 * Contributions and expenses must be recorded transparently on the platform. Expense requests require supporting documents and review.
-* Funds must support the initiative's stated purpose. The initiative must keep its description up to date and publish updates at least annually.
+* Funds must support the initiative's stated purpose. The initiative must keep its description up to date.
 * Administrative fees and directly related processing expenses are deducted according to the applicable agreement.
+
+OSE recommends that you publish a public update on your Collective page at least once a year. This is not a general hosting obligation. Any specific reporting requirements in your applicable agreement or funding arrangement still apply.
 
 ## Starting, changing or ending the arrangement
 
-Contact the team before entering into grant agreements, making commitments on behalf of the association, or changing your project's activities.
+Contact the team before you enter into a grant agreement or make a commitment on behalf of the association. Also contact the team before a significant change to your project's mission or activities. Collectives manage routine adjustments themselves. Any specific approval requirements for contracts and funding arrangements still apply.
 
 The Terms of Hosting provide for termination with **30 days' written notice**. Valid outstanding expenses and any remaining balance are handled under the agreement's termination provisions. A remaining balance is not automatically available for distribution to individual administrators.
 
@@ -2105,7 +2113,7 @@ This structure suits open source projects that want to focus on their mission wi
 
 * Immediate legitimacy, with high-level compliance for corporate sponsors.
 * Less overhead, with no need for your own accounting or legal teams.
-* A place in a group of over 400 projects that share the same infrastructure.
+* A place among open source projects that share the same infrastructure.
 
 ***
 
@@ -2203,7 +2211,7 @@ Open Source Europe (OSE) provides a shared legal and financial framework for ope
 
 ## Collective Infrastructure
 
-OSE is an umbrella organisation and the fiscal host for over 400 initiatives. Each project runs independently on the Open Collective platform, with its own public page and transparent budget. It also benefits from the legal standing of a professional Belgian non-profit (ASBL/vzw).
+OSE is an umbrella organisation and the fiscal host for open source initiatives. Each project runs independently on the Open Collective platform, with its own public page and transparent budget. It also benefits from the legal standing of a professional Belgian non-profit (ASBL/vzw).
 
 This structure allows communities to manage funds, pay service providers on compliant invoices, and receive grants without the work of running their own legal entity.
 
