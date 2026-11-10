@@ -1,6 +1,6 @@
 # Analytics job
 
-The analytics job `ose-analytics-export` runs two steps: the chat analytics export, then the page-view counts. `run.sh` runs both. When one step fails, the other still runs, and the job run fails. The page-view counts are described in [Page-view counts](#page-view-counts).
+The analytics job `ose-analytics-export` runs three steps: the chat analytics export, the page-view counts, then the deletion of expired chat files. `run.sh` runs all three. When one step fails, the others still run, and the job run fails. The last two steps are described in [Page-view counts](#page-view-counts) and [Expired chat files](#expired-chat-files).
 
 For visitors who accepted analytics in the site's consent banner (the default
 is no sharing), the chat function logs `ANALYTICS {...}` lines: one per answer,
@@ -21,6 +21,7 @@ Scaleway Serverless Job  ─── runs inside Scaleway EU, never touches US inf
    3. write  analytics-YYYY-MM-DD.jsonl  +  analytics-YYYY-MM-DD.csv            │
    4. upload both to the private bucket                                         │
    5. count page views in the fr-par Cockpit, upload pageviews-YYYY-MM-DD.*     │
+   6. delete the analytics-* files whose oldest record is 12 months old         │
         └────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -117,6 +118,14 @@ The bucket lifecycle rule `expire-chat-analytics-12-months` has an empty prefix,
 
 Without `EDGE_LOKI_URL`, the step prints that it skipped the counts and the job run succeeds.
 
+## Expired chat files
+
+The privacy policy promises that OSE deletes the chat analytics 12 months after they were logged. `expire.sh` keeps that promise. It goes by the date in the file name, not by the date the file was written, because copying a file to another bucket gives the copy a new date. The files of the old bucket `ose-knowledge-analytics` were copied to `opensourceeurope-analytics` on 4 November 2026, so the lifecycle rule alone would keep the June 2026 files until November 2027.
+
+A file named `analytics-D` holds the records of the six days before D, and the job runs every three days. So the step deletes a file 356 days after D, and no record stays longer than 365 days. Each run sends the names of the 30 days before that to one `DeleteObjects` call. A file still goes when the job fails for up to a month. The job computes the names, so it needs to delete objects but not to read them. A name without a file counts as deleted.
+
+The lifecycle rule `expire-chat-analytics-12-months` stays as a second guard. It deletes every file 365 days after it was written.
+
 ## Job configuration
 
 The job definition `ose-analytics-export` runs `run.sh` at 500 mCPU in `pl-waw`. It gets these environment variables:
@@ -135,7 +144,7 @@ The job definition `ose-analytics-export` runs `run.sh` at 500 mCPU in `pl-waw`.
 
 A Cockpit token reads only the data sources of the region it was created in. A `pl-waw` token gets `403` from the `fr-par` Loki URL. The chat logs are in `pl-waw` and the Edge Services logs are in `fr-par`, so the job needs two tokens. Without `EDGE_COCKPIT_TOKEN`, `pageviews.sh` uses `COCKPIT_TOKEN`. That works only when the job and the chat function move to `fr-par`.
 
-The IAM application `ose-analytics-export` has one policy, with the `ObjectStorageObjectsWrite` permission set in the project. The job never gets the CI deploy key. The values of the two secrets stay in Secret Manager and never enter GitHub.
+The IAM application `ose-analytics-export` has two policies in the project: `ose-analytics-export-s3-write` with the `ObjectStorageObjectsWrite` permission set, and `ose-analytics-export-s3-delete` with `ObjectStorageObjectsDelete`. The job never gets the CI deploy key. The values of the two secrets stay in Secret Manager and never enter GitHub.
 
 `deploy-analytics-job.yml` creates the job definition on its first run, with the plain variables and the two secret references. Later runs change only the image and the CPU limit. To rotate a secret, add a new version to it in Secret Manager. The next run reads the new version.
 
@@ -144,11 +153,12 @@ The IAM application `ose-analytics-export` has one policy, with the `ObjectStora
 Run these steps once, before the first run of `deploy-analytics-job.yml`. Use the Scaleway CLI with a profile that can manage IAM, Cockpit and Secret Manager. Replace `{PROJECT_ID}` with the ID of the project.
 
 1. Create a private bucket in `pl-waw`, for example `opensourceeurope-analytics`.
-2. Create the IAM application and its policy. Replace `{APP_ID}` with the ID that the first command prints.
+2. Create the IAM application and its policies. Replace `{APP_ID}` with the ID that the first command prints.
 
    ```bash
    scw iam application create name=ose-analytics-export description="Analytics export job"
    scw iam policy create name=ose-analytics-export-s3-write application-id={APP_ID} rules.0.permission-set-names.0=ObjectStorageObjectsWrite rules.0.project-ids.0={PROJECT_ID}
+   scw iam policy create name=ose-analytics-export-s3-delete application-id={APP_ID} rules.0.permission-set-names.0=ObjectStorageObjectsDelete rules.0.project-ids.0={PROJECT_ID}
    ```
 
 3. Create an API key for the application, and store its secret key in Secret Manager. The commands write the secret key to a file that only you can read, and delete the file at the end. Replace `{SECRET_ID}` with the ID that `scw secret secret create` prints.
