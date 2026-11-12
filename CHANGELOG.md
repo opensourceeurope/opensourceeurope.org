@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.20](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.13.19...v0.13.20) (2026-11-12)
+
+
+### Bug Fixes
+
+* align the blog list with the docs, mention the humanize skill, release UI changes ([#266](https://github.com/opensourceeurope/opensourceeurope.org/issues/266)) ([b2a4e85](https://github.com/opensourceeurope/opensourceeurope.org/commit/b2a4e85075653025cb317f7690cf5198018219f7))
+
 ## [0.13.19](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.13.18...v0.13.19) (2026-11-12)
 
 
