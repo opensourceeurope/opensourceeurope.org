@@ -75,4 +75,25 @@ test.describe('site-wide quality', () => {
     }
     expect(locs.filter((loc) => loc.includes('404'))).toEqual([]);
   });
+
+  test('llms.txt lists every enabled page and llms-full.txt holds the docs text', async ({ request }, info) => {
+    test.skip(info.project.name !== 'desktop', 'checks two files once');
+    const index = await request.get('/llms.txt');
+    expect(index.status()).toBe(200);
+    const text = await index.text();
+    expect(text).toMatch(/^# Open Source Europe\n\n> \S/);
+    for (const route of ROUTES.filter((r) => r.enabled && r.status === 200)) {
+      expect(text).toContain(`](${ORIGIN}${route.path})`);
+    }
+    expect(text).toContain(`](${ORIGIN}/llms-full.txt)`);
+    expect(text).not.toContain('{version}');
+
+    const full = await request.get('/llms-full.txt');
+    expect(full.status()).toBe(200);
+    expect(await full.text()).toContain(`Source: ${ORIGIN}/docs/guides/ask-ose-from-your-ai-tools/`);
+
+    const markdown = await request.get('/docs/how-it-works/basics.md');
+    expect(markdown.status()).toBe(200);
+    expect((await markdown.text()).startsWith(`# Basics\n\nSource: ${ORIGIN}/docs/how-it-works/basics/\n`)).toBe(true);
+  });
 });

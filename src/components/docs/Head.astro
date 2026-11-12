@@ -1,14 +1,21 @@
 ---
 // Starlight's head plus what the rest of the site has: the `js` class, the
-// default share image and the organisation and website JSON-LD.
+// default share image, the organisation and website JSON-LD, and a link to the
+// Markdown copy of the page.
 import Default from '@astrojs/starlight/components/Head.astro';
 import { organizationJsonLd, websiteJsonLd } from '../../lib/seo';
 import { loadSettings } from '../../lib/site';
+import { markdownUrl } from '../../lib/llms';
+import { docsPages } from '../../lib/llms-content';
 
 const { seo } = await loadSettings();
 const jsonLd = [organizationJsonLd(Astro.site!, seo), websiteJsonLd(Astro.site!, seo)];
 // Starlight sets no share image, so docs pages use the site's default.
 const ogImage = new URL(seo.default_og_image, Astro.site!).href;
+// The Markdown copy of this page for AI tools. Every page in the sidebar has one.
+const pageUrl = new URL(Astro.url.pathname, Astro.site!).href;
+const hasCopy = (await docsPages(Astro.site!)).some((page) => new URL(page.url).pathname === Astro.url.pathname);
+const markdown = hasCopy ? markdownUrl(pageUrl) : undefined;
 ---
 
 <script is:inline>
@@ -18,4 +25,5 @@ const ogImage = new URL(seo.default_og_image, Astro.site!).href;
 <Default />
 <meta property="og:image" content={ogImage} />
 <meta name="twitter:image" content={ogImage} />
+{markdown && <link rel="alternate" type="text/markdown" href={markdown} />}
 {jsonLd.map((data) => <script is:inline type="application/ld+json" set:html={JSON.stringify(data)} />)}

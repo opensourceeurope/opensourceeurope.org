@@ -103,6 +103,23 @@ jobs:
           "$AWS_BIN" s3 sync dist/ "s3://${BUCKET}/" \
             --endpoint-url "$ENDPOINT" \
             --exclude "_astro/*" \
+            --exclude "llms.txt" \
+            --exclude "llms-full.txt" \
+            --exclude "docs*.md" \
+            --cache-control "public, max-age=300" \
+            --delete
+          # Pass 3: the files for AI tools. The CLI would send them without a charset,
+          # and some clients then read the UTF-8 text in another encoding.
+          "$AWS_BIN" s3 sync dist/ "s3://${BUCKET}/" \
+            --endpoint-url "$ENDPOINT" \
+            --exclude "*" --include "llms.txt" --include "llms-full.txt" \
+            --content-type "text/plain; charset=utf-8" \
+            --cache-control "public, max-age=300" \
+            --delete
+          "$AWS_BIN" s3 sync dist/ "s3://${BUCKET}/" \
+            --endpoint-url "$ENDPOINT" \
+            --exclude "*" --include "docs*.md" \
+            --content-type "text/markdown; charset=utf-8" \
             --cache-control "public, max-age=300" \
             --delete
           echo "Uploaded. Purge the Edge Services cache, see dev-guide/deployment.md."
