@@ -40,7 +40,7 @@ sections:
               "ose-knowledge": {
                 "type": "stdio",
                 "command": "uvx",
-                "args": ["ose-knowledge-mcp==0.13.12"]
+                "args": ["ose-knowledge-mcp==0.13.13"]
               }
             }
           }
