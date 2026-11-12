@@ -49,3 +49,13 @@ codex plugin marketplace add opensourceeurope/ose-ai
 ```
 
 Then run `/plugins` in Codex, install `ose-knowledge` and start a new session. To install from the terminal instead, run `codex plugin add ose-knowledge@ose-ai` and start a new session.
+
+## Give the docs to any AI tool
+
+An AI tool that reads web pages can also use the docs without the knowledge base. Point it at one of these files:
+
+- [llms.txt](https://opensourceeurope.org/llms.txt) lists the pages of the website and the docs, with a short description of each.
+- [llms-full.txt](https://opensourceeurope.org/llms-full.txt) holds the text of every docs page in one file, with the address of each page.
+- Each docs page also has a Markdown copy. Replace the slash at the end of its address with `.md`, as in [basics.md](https://opensourceeurope.org/docs/how-it-works/basics.md).
+
+Both files follow the [llms.txt format](https://llmstxt.org).

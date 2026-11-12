@@ -139,3 +139,34 @@ consent:
     description: If you accept, the chat shares with OSE what you ask, to improve the docs. When you close the chat or leave the page, OSE gets a short summary of what you asked and what the answer said, with personal data removed by an automated step. For each answer, OSE gets the number of calls to the AI model, whether the docs answered it, a version label of the assistant's instructions and the time. Nothing else is measured in your browser. If you reject, nothing is shared.
 
 apply_url: https://opencollective.com/europe/apply
+
+# The files for AI tools at /llms.txt and /llms-full.txt, in the format of https://llmstxt.org.
+# The website pages and the docs pages are listed from their own content, and each docs page
+# also gets a Markdown copy at /docs/<path>.md. {version} is
+# replaced with the release version from .release-please-manifest.json.
+llms:
+  summary: Open Source Europe (OSE) is a Belgian non-profit association. It is the fiscal host for open source projects in Europe, and it manages funds for foundations and companies that support open source.
+  details: |-
+    Projects that OSE hosts receive donations, pay expenses and apply for grants without a legal entity of their own. All their income and expenses are public on the Open Collective platform. To apply, use https://opencollective.com/europe/apply.
+
+    The documentation at https://opensourceeurope.org/docs/ answers questions about hosting, expenses, contributions and policies. https://opensourceeurope.org/llms-full.txt holds the text of every docs page in one file. Each docs page also has a Markdown copy: replace the slash at the end of its address with .md, as in https://opensourceeurope.org/docs/how-it-works/basics.md.
+  website_heading: Website
+  docs_heading: Documentation
+  tools_heading: Ask OSE from AI tools
+  tools:
+    - label: OSE knowledge MCP server
+      href: https://pypi.org/project/ose-knowledge-mcp/
+      description: "Searches the OSE docs and returns cited passages. It runs on your own computer, so OSE does not see your questions. Start it with `uvx ose-knowledge-mcp=={version}` in any MCP client."
+    - label: Claude Code and Codex plugin
+      href: https://github.com/opensourceeurope/ose-ai
+      description: "Adds the MCP server, an `ask-about-ose` skill and, in Claude Code, an `ose-researcher` agent. Install it with `/plugin marketplace add opensourceeurope/ose-ai` and `/plugin install ose-knowledge@ose-ai`."
+    - label: Setup guide for AI tools
+      href: https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/
+      description: How to connect the knowledge base to Claude Code, Codex, Cursor or Claude Desktop.
+    - label: Ask OSE chat
+      href: https://opensourceeurope.org/ask/
+      description: A public chat that answers from the OSE docs with sources. It runs on European infrastructure.
+  optional_heading: Optional
+  full_label: Full text of the docs
+  full_description: Every docs page in one Markdown file, with the address of each page.
+  source_label: "Source:"

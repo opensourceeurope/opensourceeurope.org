@@ -285,7 +285,7 @@ These need an answer before launch.
 - Purge command: confirm the exact `scw edge-services purge-request create` arguments, or use the console, and decide whether to add the purge to the workflow.
 - Edge Services plan: settled. The site and ask.opensourceeurope.org share the one existing pipeline, so no second pipeline is needed.
 
-- Content types: `aws s3 sync` guesses each `Content-Type` from the file extension with Python's `mimetypes`. After the first deploy, run `aws s3api head-object` on one `.avif` and one `.woff2` file. If either comes back as `binary/octet-stream`, add `--content-type` with `--exclude`/`--include` filters for those extensions to the sync step.
+- Content types: `aws s3 sync` guesses each `Content-Type` from the file extension with Python's `mimetypes`. After the first deploy, run `aws s3api head-object` on one `.avif` and one `.woff2` file. If either comes back as `binary/octet-stream`, add `--content-type` with `--exclude`/`--include` filters for those extensions to the sync step. The sync step already skips `llms.txt`, `llms-full.txt` and the Markdown copies of the docs pages (`docs*.md`), and a third pass uploads them with `charset=utf-8`.
 - Deploy gating: the site and contact function deploy jobs run only on `main` and use the GitHub environment `production`. GitHub creates the environment on the first run. Add a protection rule to it if you want a manual approval. Do not move the Scaleway secrets and variables out of the repository settings, because jobs without an environment need them (see "Keep the Scaleway values at repository level"). Require the checks listed under "Required checks" on `main`, so a red commit does not release.
 
 ## DNS records for the site

@@ -174,6 +174,22 @@ const settings = defineCollection({
           })
           .strict(),
         apply_url: z.url(),
+        // The files for AI tools at /llms.txt and /llms-full.txt. See src/lib/llms.ts.
+        llms: z
+          .object({
+            summary: z.string().min(1),
+            details: z.string().min(1),
+            website_heading: z.string().min(1),
+            docs_heading: z.string().min(1),
+            tools_heading: z.string().min(1),
+            tools: z.array(z.object({ label: z.string().min(1), href: z.url(), description: z.string().min(1) }).strict()).min(1),
+            optional_heading: z.string().min(1),
+            full_label: z.string().min(1),
+            full_description: z.string().min(1),
+            // Before the address of each page in the Markdown copies, as in "Source: https://...".
+            source_label: z.string().min(1),
+          })
+          .strict(),
       })
       .strict(),
 });
