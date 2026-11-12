@@ -8,7 +8,9 @@ The repository also holds the OSE knowledge base. It searches the OSE docs and i
 
 ## Contribute to the site
 
-To change page text, edit the file for that page in `src/content/`. The [Editing content](AGENTS.md#editing-content) section of AGENTS.md lists the file for each page. To build, test or release the site and the knowledge base, see [DEVELOPMENT.md](DEVELOPMENT.md).
+To change page text, edit the file for that page in `src/content/`. The [Editing content](AGENTS.md#editing-content) section of AGENTS.md lists the file for each page. Docs pages are in `docs/` and blog posts in `src/content/blog/`. To build, test or release the site and the knowledge base, see [DEVELOPMENT.md](DEVELOPMENT.md).
+
+For a small fix, use "Edit page" at the bottom of a docs page or blog post and edit the file on GitHub. For more, clone the repository and open it in Claude Code: it reads [AGENTS.md](AGENTS.md), and the [docs-authoring skill](.claude/skills/docs-authoring/SKILL.md) covers the page format, the preview, the checks and the commit type.
 
 ## Licences
 
@@ -30,6 +32,5 @@ Third-party logos in the logo sections belong to their owners and remain their t
 
 The following parts of the site are planned:
 
-- A blog at `/blog/` with an RSS feed at `/rss.xml`.
 - Pages built at build time from APIs.
 

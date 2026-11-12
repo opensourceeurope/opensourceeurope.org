@@ -5,7 +5,8 @@ import { parse } from 'yaml';
 
 /**
  * @typedef {{ page: string } | { label: string; link: string } | { label: string; items: SidebarEntry[] }} SidebarEntry
- * @typedef {{ title: string; menu_label: string; sidebar: SidebarEntry[] }} DocsSettings
+ * @typedef {{ label: string; manual_label: string; manual_text: string; ai_text: string; clone_command: string; more_label: string; more_href: string }} EditSettings
+ * @typedef {{ title: string; menu_label: string; edit: EditSettings; sidebar: SidebarEntry[] }} DocsSettings
  */
 
 /** @param {any} entry @param {string} where */
@@ -24,6 +25,9 @@ export function parseDocsSettings(text) {
   const data = parse(text);
   for (const key of ['title', 'menu_label']) {
     if (typeof data?.[key] !== 'string' || !data[key]) throw new Error(`docs.yaml: ${key} is required`);
+  }
+  for (const key of ['label', 'manual_label', 'manual_text', 'ai_text', 'clone_command', 'more_label', 'more_href']) {
+    if (typeof data.edit?.[key] !== 'string' || !data.edit[key]) throw new Error(`docs.yaml: edit.${key} is required`);
   }
   if (!Array.isArray(data.sidebar)) throw new Error('docs.yaml: sidebar is required');
   data.sidebar.forEach((entry, i) => checkEntry(entry, `[${i}]`));

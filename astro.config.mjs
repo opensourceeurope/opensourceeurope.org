@@ -69,6 +69,7 @@ export default defineConfig({
         MobileMenuToggle: './src/components/docs/MobileMenuToggle.astro',
         SkipLink: './src/components/docs/SkipLink.astro',
         Footer: './src/components/docs/Footer.astro',
+        EditLink: './src/components/docs/EditLink.astro',
       },
     }),
     keepSiteDefaults,

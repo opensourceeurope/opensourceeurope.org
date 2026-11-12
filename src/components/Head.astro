@@ -10,7 +10,7 @@ interface Props {
 
 const { seo } = Astro.props;
 const site = Astro.site!;
-const { seo: siteSeo } = await loadSettings();
+const { seo: siteSeo, blog } = await loadSettings();
 const canonical = new URL(Astro.url.pathname, site).href;
 const ogImage = new URL(seo.ogImage ?? siteSeo.default_og_image, site).href;
 const jsonLd = [organizationJsonLd(site, siteSeo), websiteJsonLd(site, siteSeo)];
@@ -36,6 +36,8 @@ const jsonLd = [organizationJsonLd(site, siteSeo), websiteJsonLd(site, siteSeo)]
 <link rel="icon" href="/app/uploads/2026/01/cropped-ose-32x32.png" sizes="32x32" />
 <link rel="icon" href="/app/uploads/2026/01/cropped-ose-192x192.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="/app/uploads/2026/01/cropped-ose-180x180.png" />
+
+<link rel="alternate" type="application/rss+xml" title={blog.title} href="/rss.xml" />
 
 <link rel="preload" href="/fonts/manrope/Manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
 

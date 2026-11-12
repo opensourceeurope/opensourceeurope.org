@@ -1,14 +1,15 @@
 ---
 // Starlight's head plus what the rest of the site has: the `js` class, the
-// default share image, the organisation and website JSON-LD, and a link to the
-// Markdown copy of the page.
+// default share image, the organisation and website JSON-LD, a link to the
+// Markdown copy of the page and a link to the blog's RSS feed. The blog pages
+// use this head too.
 import Default from '@astrojs/starlight/components/Head.astro';
 import { organizationJsonLd, websiteJsonLd } from '../../lib/seo';
 import { loadSettings } from '../../lib/site';
 import { markdownUrl } from '../../lib/llms';
 import { docsPages } from '../../lib/llms-content';
 
-const { seo } = await loadSettings();
+const { seo, blog } = await loadSettings();
 const jsonLd = [organizationJsonLd(Astro.site!, seo), websiteJsonLd(Astro.site!, seo)];
 // Starlight sets no share image, so docs pages use the site's default.
 const ogImage = new URL(seo.default_og_image, Astro.site!).href;
@@ -26,4 +27,5 @@ const markdown = hasCopy ? markdownUrl(pageUrl) : undefined;
 <meta property="og:image" content={ogImage} />
 <meta name="twitter:image" content={ogImage} />
 {markdown && <link rel="alternate" type="text/markdown" href={markdown} />}
+<link rel="alternate" type="application/rss+xml" title={blog.title} href="/rss.xml" />
 {jsonLd.map((data) => <script is:inline type="application/ld+json" set:html={JSON.stringify(data)} />)}

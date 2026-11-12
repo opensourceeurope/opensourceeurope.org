@@ -6,6 +6,7 @@ import manifest from '../../.release-please-manifest.json';
 import { parseDocsSettings, sidebarPages } from './docs-settings.mjs';
 import { docsMarkdown, fillVersion, pageTitle, type DocsPage, type LlmsLink, type LlmsSection } from './llms';
 import { loadSettings } from './site';
+import { loadPosts, postPath } from './blog';
 
 const VERSION: string = manifest['.'];
 
@@ -24,6 +25,21 @@ async function websiteLinks(site: URL, siteName: string): Promise<LlmsLink[]> {
   const services = (await getCollection('services')).flatMap((entry) => link(`/services/${entry.id}/`, entry.data.seo));
   const legal = (await getCollection('legal')).flatMap((entry) => link(`/${entry.id}/`, entry.data.seo));
   return [...pages, ...services, ...legal].sort((a, b) => a.url.localeCompare(b.url));
+}
+
+/** The blog page, every published post, newest first, and the RSS feed. */
+async function blogLinks(site: URL): Promise<LlmsLink[]> {
+  const { blog } = await loadSettings();
+  const posts = (await loadPosts()).map((post) => ({
+    title: post.data.title,
+    url: new URL(postPath(post), site).href,
+    description: post.data.description,
+  }));
+  return [
+    { title: blog.title, url: new URL('/blog/', site).href, description: blog.description },
+    ...posts,
+    { title: blog.rss_label, url: new URL('/rss.xml', site).href, description: blog.intro },
+  ];
 }
 
 let docsCache: Promise<DocsPage[]> | undefined;
@@ -50,6 +66,7 @@ export async function llmsSections(site: URL): Promise<LlmsSection[]> {
   return [
     { heading: llms.website_heading, links: await websiteLinks(site, seo.site_name) },
     { heading: llms.docs_heading, links: await docsPages(site) },
+    { heading: llms.blog_heading, links: await blogLinks(site) },
     {
       heading: llms.tools_heading,
       links: llms.tools.map((tool) => ({ title: tool.label, url: tool.href, description: fillVersion(tool.description, VERSION) })),
