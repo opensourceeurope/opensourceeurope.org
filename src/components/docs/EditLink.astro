@@ -1,0 +1,82 @@
+---
+// "Edit page" on docs pages and blog posts. Instead of going straight to
+// GitHub, it opens a short note with the two ways to change the page: in the
+// browser on GitHub, or in a clone with Claude Code, which reads the
+// repository's instructions and the docs-authoring skill. A <details> element,
+// so it works without JavaScript. Texts come from `edit` in docs.yaml.
+import { Icon } from '@astrojs/starlight/components';
+import { parseDocsSettings } from '../../lib/docs-settings.mjs';
+import docsYaml from '../../content/settings/docs.yaml?raw';
+
+const { edit } = parseDocsSettings(docsYaml);
+const { editUrl } = Astro.locals.starlightRoute;
+---
+
+{
+  editUrl && (
+    <details class="edit-page print:hidden">
+      <summary>
+        <Icon name="pencil" size="1.2em" />
+        {edit.label}
+      </summary>
+      <div class="edit-page__panel">
+        <p>
+          <a href={editUrl}>{edit.manual_label}</a>. {edit.manual_text}
+        </p>
+        <p>{edit.ai_text}</p>
+        <pre><code>{edit.clone_command}</code></pre>
+        <p>
+          <a href={edit.more_href}>{edit.more_label}</a>
+        </p>
+      </div>
+    </details>
+  )
+}
+
+<style>
+  .edit-page {
+    flex-basis: 100%;
+  }
+  summary {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: var(--sl-color-gray-3);
+    cursor: pointer;
+    list-style: none;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary:hover,
+  details[open] summary {
+    color: var(--sl-color-white);
+  }
+  .edit-page__panel {
+    margin-top: 0.75rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--sl-color-hairline-light);
+    border-radius: 1rem;
+    background: var(--sl-color-gray-6);
+    color: var(--sl-color-gray-2);
+  }
+  .edit-page__panel p {
+    margin: 0;
+  }
+  .edit-page__panel p + p,
+  .edit-page__panel pre + p {
+    margin-top: 0.75rem;
+  }
+  .edit-page__panel a {
+    color: var(--sl-color-text-accent);
+    text-underline-offset: 0.2em;
+  }
+  pre {
+    margin: 0.5rem 0 0;
+    padding: 0.5rem 0.75rem;
+    overflow-x: auto;
+    border-radius: 0.5rem;
+    background: var(--sl-color-black);
+    font-size: var(--sl-text-xs);
+  }
+</style>

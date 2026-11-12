@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { parseDocsSettings, sidebarPages } from '../../src/lib/docs-settings.mjs';
 
 export type Route = { path: string; enabled: boolean; status: 200 | 404;
@@ -15,6 +15,15 @@ const DOCS_ROUTES: Route[] = sidebarPages(docsSettings.sidebar).map((slug) => ({
   docs: true,
 }));
 
+// The blog list and every published post. Starlight builds them, as it builds the docs.
+const BLOG_ROUTES: Route[] = [
+  '/blog/',
+  ...readdirSync('src/content/blog')
+    .filter((f) => f.endsWith('.md'))
+    .filter((f) => !/^draft:\s*true\s*$/m.test(readFileSync(`src/content/blog/${f}`, 'utf8').split(/^---$/m)[1] ?? ''))
+    .map((f) => `/blog/${f.replace(/\.md$/, '')}/`),
+].map((path) => ({ path, enabled: true, status: 200, docs: true }));
+
 // Each page task enables its own routes. Disabled routes are skipped, not deleted.
 export const ROUTES: Route[] = [
   { path: '/', enabled: true, status: 200 },
@@ -30,4 +39,5 @@ export const ROUTES: Route[] = [
   { path: '/term-conditions/', enabled: true, status: 200 },
   { path: '/does-not-exist/', enabled: true, status: 404 },
   ...DOCS_ROUTES,
+  ...BLOG_ROUTES,
 ];

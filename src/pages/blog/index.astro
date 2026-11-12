@@ -1,0 +1,61 @@
+---
+// The list of blog posts, newest first. Built with Starlight, like the docs,
+// so the blog shares their layout, sidebar, footer and styles.
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { LinkCard } from '@astrojs/starlight/components';
+import { blogSidebar, loadPosts, postPath } from '../../lib/blog';
+import { formatDate, isoDate } from '../../lib/blog-format';
+import { loadSettings } from '../../lib/site';
+
+const { blog } = await loadSettings();
+const posts = await loadPosts();
+---
+
+<StarlightPage
+  frontmatter={{
+    title: blog.title,
+    description: blog.description,
+    head: [{ tag: 'title', content: blog.title }],
+    editUrl: false,
+    lastUpdated: false,
+    tableOfContents: false,
+    prev: false,
+    next: false,
+  }}
+  sidebar={blogSidebar(posts, blog)}
+  headings={[]}
+>
+  <p>{blog.intro} <a href="/rss.xml">{blog.rss_label}</a>.</p>
+  {
+    posts.length === 0 ? (
+      <p>{blog.empty}</p>
+    ) : (
+      <ul class="blog-list not-content">
+        {posts.map((post) => (
+          <li>
+            <time class="blog-list__date" datetime={isoDate(post.data.date)}>
+              {formatDate(post.data.date)}
+            </time>
+            <LinkCard title={post.data.title} description={post.data.description} href={postPath(post)} />
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</StarlightPage>
+
+<style>
+  .blog-list {
+    display: grid;
+    gap: 1.5rem;
+    margin: 2rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .blog-list__date {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-3);
+  }
+</style>

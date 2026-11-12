@@ -82,6 +82,8 @@ nav:
     href: /contact/
   - label: Docs
     href: /docs/
+  - label: Blog
+    href: /blog/
   - label: Ask AI
     href: /ask/
     icon: ai
@@ -97,6 +99,10 @@ footer:
           href: /services/
         - label: How to join
           href: /how-to-join/
+        - label: Blog
+          href: /blog/
+        - label: RSS feed
+          href: /rss.xml
         - label: Contact
           href: /contact/
     - title: Contact
@@ -152,6 +158,7 @@ llms:
     The documentation at https://opensourceeurope.org/docs/ answers questions about hosting, expenses, contributions and policies. https://opensourceeurope.org/llms-full.txt holds the text of every docs page in one file. Each docs page also has a Markdown copy: replace the slash at the end of its address with .md, as in https://opensourceeurope.org/docs/how-it-works/basics.md.
   website_heading: Website
   docs_heading: Documentation
+  blog_heading: Blog
   tools_heading: Ask OSE from AI tools
   tools:
     - label: OSE knowledge MCP server
@@ -170,3 +177,18 @@ llms:
   full_label: Full text of the docs
   full_description: Every docs page in one Markdown file, with the address of each page.
   source_label: "Source:"
+
+blog:
+  title: OSE blog
+  description: News from Open Source Europe for the open source projects we host, their maintainers and their funders.
+  title_suffix: OSE blog
+  intro: News from Open Source Europe for the projects we host, their maintainers and their funders. Follow it in any feed reader.
+  all_posts_label: All posts
+  posts_label: Posts
+  rss_label: RSS feed
+  empty: No posts yet.
+  byline: 'By {author}'
+  discuss:
+    heading: Discuss this post
+    intro: We would like to hear what you think. The discussion takes place on the Open Collective update about this post.
+    discussion_label: Comment on Open Collective

@@ -52,6 +52,27 @@ const legal = defineCollection({
       .strict(),
 });
 
+// Blog posts at /blog/<file name>/, newest first. The RSS feed at /rss.xml lists them too.
+const blog = defineCollection({
+  loader: glob({ pattern: '*.md', base: 'src/content/blog' }),
+  schema: z
+    .object({
+      title: z.string().min(1),
+      // Shown under the title in the post list, and used by search results, link previews and the feed.
+      description: z.string().min(1),
+      // The publication date. The list, the feed and the previous and next links follow it.
+      date: z.coerce.date(),
+      // Set when a post changes after publication. The post shows it as "Last updated".
+      updated: z.coerce.date().optional(),
+      author: z.string().min(1).optional(),
+      // The Open Collective update that announces the post. The post ends with a link to discuss it there.
+      discussion: z.url().optional(),
+      // A draft shows in `npm run dev` only. The build and the feed leave it out.
+      draft: z.boolean().default(false),
+    })
+    .strict(),
+});
+
 const shared = defineCollection({
   loader: glob({ pattern: '*.yaml', base: 'src/content/shared' }),
   schema: ({ image }) => makeSectionSchema(image),
@@ -181,6 +202,7 @@ const settings = defineCollection({
             details: z.string().min(1),
             website_heading: z.string().min(1),
             docs_heading: z.string().min(1),
+            blog_heading: z.string().min(1),
             tools_heading: z.string().min(1),
             tools: z.array(z.object({ label: z.string().min(1), href: z.url(), description: z.string().min(1) }).strict()).min(1),
             optional_heading: z.string().min(1),
@@ -188,6 +210,31 @@ const settings = defineCollection({
             full_description: z.string().min(1),
             // Before the address of each page in the Markdown copies, as in "Source: https://...".
             source_label: z.string().min(1),
+          })
+          .strict(),
+        // Texts of the blog at /blog/ and of its RSS feed.
+        blog: z
+          .object({
+            title: z.string().min(1),
+            description: z.string().min(1),
+            // The page title suffix of a post, as in "Join us in Paris | OSE blog".
+            title_suffix: z.string().min(1),
+            intro: z.string().min(1),
+            all_posts_label: z.string().min(1),
+            posts_label: z.string().min(1),
+            rss_label: z.string().min(1),
+            empty: z.string().min(1),
+            // {author} is replaced with the author's name.
+            byline: z.string().includes('{author}'),
+            // The section at the end of a post that has a `discussion` link.
+            discuss: z
+              .object({
+                heading: z.string().min(1),
+                intro: z.string().min(1),
+                // The link to the post's `discussion` URL, the Open Collective update about it.
+                discussion_label: z.string().min(1),
+              })
+              .strict(),
           })
           .strict(),
       })
@@ -210,4 +257,4 @@ const docs = defineCollection({
   schema: docsSchema(),
 });
 
-export const collections = { pages, services, legal, shared, settings, docs };
+export const collections = { pages, services, legal, blog, shared, settings, docs };
