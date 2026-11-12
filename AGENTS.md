@@ -36,7 +36,8 @@ Troubleshooting:
 - `npx playwright test` starts its own contact function servers on ports 8081 and 8082. Stop any `npm run dev:function` first.
 - In a worktree under `.worktrees/`, the build can fail with `Tsconfig not found astro/tsconfigs/strict`. The primary checkout's own `tsconfig.json` sits above the worktree, with no `node_modules` beside it. The same commit builds in a clone outside the repository folder.
 - Outside CI, `npm run test:e2e` reuses any server that already answers on port 4321, even a preview of another worktree with an older build. Stop that preview first with `npx astro preview stop` in its folder.
-- Two worktrees cannot run `npm run test:e2e` at the same time, because `playwright.config.ts` fixes ports 4321, 8081 and 8082. Find the owner with `lsof -nP -i :4321`. If another session's run holds the ports, wait for it to finish instead of stopping it.
+- Two worktrees cannot run `npm run test:e2e` at the same time, because `playwright.config.ts` fixes ports 4321, 8081 and 8082. Find the owner with `lsof -nP -i :4321`. If another session's run holds the ports, wait for it to finish instead of stopping it. If only another session's idle preview holds 4321, run on another port without stopping it: `sed 's/4321/4341/g' playwright.config.ts > playwright.tmp.config.ts && npx playwright test -c playwright.tmp.config.ts; rm playwright.tmp.config.ts`.
+- `astro preview` allows one preview per folder. A preview you started on another port makes Playwright's own preview fail with `Another astro preview server is already running`. Stop it with `npx astro preview stop`.
 - From an agent session, `npm run test:e2e` can stop with `Process from config.webServer exited early`. With the agent variables set, `astro preview` moves to the background, and Playwright reads that as a stopped server. Run it as `env -u AI_AGENT -u CLAUDECODE -u CLAUDE_CODE_ENTRYPOINT npm run test:e2e`.
 
 ## Worktree rule
@@ -116,9 +117,16 @@ release-please owns these files. Do not edit them by hand:
 
 To change a version, land a conventional commit.
 
+## Blog
+
+- **The blog at `/blog/` is built with Starlight, like the docs.** `src/pages/blog/` renders the list and each post with `<StarlightPage>`, so the blog shares the docs layout, header, footer, consent banner and Ask panel. Its sidebar lists the posts, newest first.
+- **The RSS feed at `/rss.xml` carries the full text of each post.** `src/lib/rss.ts` builds it without a dependency. Every page, the docs included, links to it with `<link rel="alternate">`, so feed readers and Bridgy Fed find it.
+- **Posts carry microformats** (`h-entry`, `dt-published`, `e-content`) for Bridgy Fed and other IndieWeb tools. Keep them when you change the post page.
+- **Discussion happens off the site.** A post with a `discussion` URL, the Open Collective update about it, ends with a link to comment there. The site loads no comment widget.
+- `/llms.txt` lists the blog page, every post and the feed (`blogLinks` in `src/lib/llms-content.ts`). The blog is not in the knowledge index, so the Ask chat does not answer from it.
+
 ## Planned
 
-- A blog at `/blog/` with an RSS feed at `/rss.xml`.
 - Pages built at build time from APIs.
 
 ## Editing content
@@ -142,7 +150,8 @@ Where each page lives:
 - The 404 page: `src/content/pages/404.yaml`.
 - Contact, including the form labels and the messages it shows: `src/content/pages/contact.yaml`. The interest options there must match `INTEREST_OPTIONS` in `functions/contact/src/fields.ts`. Change both together, and redeploy the function. A unit test fails when they differ.
 - Ask page (`/ask/`): `src/content/pages/ask.yaml`. The chat texts are under `chat` in `src/content/settings/site.yaml`.
-- Documentation (`/docs/`): one Markdown file per page in `docs/`. The sidebar, the page title suffix and the "Contents" button label are in `src/content/settings/docs.yaml`. The docs use the site header from `site.yaml`. The skill in `.claude/skills/docs-authoring/` covers page format, preview and checks.
+- Blog posts (`/blog/`): `src/content/blog/<slug>.md`, one file per post. The file name is the last part of the URL. The front matter needs `title`, `description` and `date`. `draft: true` keeps a post out of the build and the feed. The blog texts, such as the discussion link, are under `blog` in `src/content/settings/site.yaml`.
+- Documentation (`/docs/`): one Markdown file per page in `docs/`. The sidebar, the page title suffix, the "Contents" button label and the "Edit page" note, which docs pages and blog posts share, are in `src/content/settings/docs.yaml`. The docs use the site header from `site.yaml`. The skill in `.claude/skills/docs-authoring/` covers page format, preview and checks.
 - Header, footer, navigation, the consent banner text, the site name and the default share image: `src/content/settings/site.yaml`.
 - The summary and the AI tools list in `/llms.txt`: `llms` in `src/content/settings/site.yaml`. The page and docs lists build from the pages themselves.
 - Uploaded images: `src/assets/uploads/` and `public/app/uploads/`. Theme images, such as backgrounds: `src/assets/theme/`.

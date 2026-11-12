@@ -1,0 +1,101 @@
+---
+// One page per file in src/content/blog/. The file name is the path.
+// Built with Starlight, like the docs. The microformats (h-entry and its
+// properties) let Bridgy Fed and other IndieWeb tools read the post.
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { render } from 'astro:content';
+import { blogSidebar, loadPosts, postPath, type Post } from '../../lib/blog';
+import { formatDate, isoDate } from '../../lib/blog-format';
+import { loadSettings } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const posts = await loadPosts();
+  // Newest first, so the post before an entry in the list is the newer one.
+  return posts.map((post, i) => ({
+    params: { post: post.id },
+    props: { post, posts, newer: posts[i - 1], older: posts[i + 1] },
+  }));
+}
+
+interface Props {
+  post: Post;
+  posts: Post[];
+  newer?: Post;
+  older?: Post;
+}
+
+const { post, posts, newer, older } = Astro.props;
+const { blog } = await loadSettings();
+const { Content, headings } = await render(post);
+const { title, description, date, updated, author, discussion } = post.data;
+const { discuss } = blog;
+const DISCUSS_ID = 'discuss-this-post';
+const link = (other?: Post) => (other ? { link: postPath(other), label: other.data.title } : false);
+const url = new URL(postPath(post), Astro.site).href;
+---
+
+<StarlightPage
+  frontmatter={{
+    title,
+    description,
+    head: [
+      { tag: 'title', content: `${title} | ${blog.title_suffix}` },
+      { tag: 'meta', attrs: { property: 'og:type', content: 'article' } },
+      { tag: 'meta', attrs: { property: 'article:published_time', content: isoDate(date) } },
+    ],
+    editUrl: `https://github.com/opensourceeurope/opensourceeurope.org/edit/main/src/content/blog/${post.id}.md`,
+    lastUpdated: updated ?? false,
+    prev: link(newer),
+    next: link(older),
+  }}
+  sidebar={blogSidebar(posts, blog)}
+  headings={discussion ? [...headings, { depth: 2, slug: DISCUSS_ID, text: discuss.heading }] : headings}
+>
+  <article class="h-entry">
+    <p class="blog-meta">
+      <a class="u-url" href={url}>
+        <time class="dt-published" datetime={isoDate(date)}>{formatDate(date)}</time>
+      </a>
+      {author && <span class="p-author">{blog.byline.replace('{author}', author)}</span>}
+    </p>
+    <data class="p-name" value={title}></data>
+    <p class="p-summary" hidden>{description}</p>
+    <div class="e-content">
+      <Content />
+    </div>
+  </article>
+
+  {
+    discussion && (
+      <section class="blog-discuss" aria-labelledby={DISCUSS_ID}>
+        <h2 id={DISCUSS_ID}>{discuss.heading}</h2>
+        <p>{discuss.intro}</p>
+        <p>
+          <a href={discussion}>{discuss.discussion_label}</a>
+        </p>
+      </section>
+    )
+  }
+</StarlightPage>
+
+<style>
+  .blog-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-3);
+  }
+  .blog-meta a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .blog-meta a:hover {
+    color: var(--sl-color-white);
+  }
+  .blog-discuss {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--sl-color-hairline-light);
+  }
+</style>
