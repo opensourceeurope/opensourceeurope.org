@@ -58,4 +58,4 @@ An AI tool that reads web pages can also use the docs without the knowledge base
 - [llms-full.txt](https://opensourceeurope.org/llms-full.txt) holds the text of every docs page in one file, with the address of each page.
 - Each docs page also has a Markdown copy. Replace the slash at the end of its address with `.md`, as in [basics.md](https://opensourceeurope.org/docs/how-it-works/basics.md).
 
-Both files follow the [llms.txt format](https://llmstxt.org).
+llms.txt and llms-full.txt follow the [llms.txt format](https://llmstxt.org).
