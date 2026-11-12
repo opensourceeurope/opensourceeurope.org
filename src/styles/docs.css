@@ -122,7 +122,11 @@ body {
     width: auto;
     max-width: none;
   }
-  [data-has-sidebar][data-has-toc] .main-pane {
+  /*
+   * A page without a table of contents, such as the blog list, keeps the same
+   * text column as the docs pages, instead of centring it in the full width.
+   */
+  [data-has-sidebar] .main-pane {
     width: calc(100% - var(--ose-docs-toc) - var(--grid-gutter));
   }
   .content-panel .sl-container {

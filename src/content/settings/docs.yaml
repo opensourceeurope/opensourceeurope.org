@@ -10,7 +10,7 @@ edit:
   label: Edit page
   manual_label: Edit this page on GitHub
   manual_text: Change the text in your browser and propose it as a pull request.
-  ai_text: 'Or work with an AI assistant: clone the repository and open it in Claude Code. The repository''s instructions and its docs-authoring skill guide the change, the checks and the pull request.'
+  ai_text: 'Or work with an AI assistant: clone the repository and open it in Claude Code. The repository''s instructions and its docs-authoring skill guide the change, the checks and the pull request, and its humanize skill makes the new text read like a person wrote it.'
   clone_command: git clone https://github.com/opensourceeurope/opensourceeurope.org.git
   more_label: More about contributing
   more_href: https://github.com/opensourceeurope/opensourceeurope.org#contribute-to-the-site
