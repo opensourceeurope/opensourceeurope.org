@@ -1,8 +1,8 @@
 [
   {
-    "chunk_id": "452443d65db35c4780461193af1934d56f0d734e1392b44cc3c64e3514473c4d",
+    "chunk_id": "9734acc0e821e328de9d388b147347a026ba3125751b163fc2b3ea242cb89c57",
     "chunk_type": "code_snippet",
-    "content": "# Ask OSE from your AI tools > Use it as an MCP server\nAdd the server to any MCP client, such as Claude Code, Cursor or Claude Desktop. In Claude Code, run this command:\n\n```bash\nclaude mcp add ose-knowledge -- uvx ose-knowledge-mcp==0.12.83\n```",
+    "content": "# Ask OSE from your AI tools > Use it as an MCP server\nAdd the server to any MCP client, such as Claude Code, Cursor or Claude Desktop. In Claude Code, run this command:\n\n```bash\nclaude mcp add ose-knowledge -- uvx ose-knowledge-mcp==0.13.0\n```",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Ask OSE from your AI tools > Use it as an MCP server",
@@ -16,9 +16,9 @@
     "token_count": 71
   },
   {
-    "chunk_id": "3b77f891c105bedfcd3331af9b4d4cbea3dcbe2ceb340cc6b6486253f03c8414",
+    "chunk_id": "a7fb5e205f5c55106dcb8804ac5836ccd6b93816a2a4537f08057687b03bbf77",
     "chunk_type": "code_snippet",
-    "content": "# Ask OSE from your AI tools > Use it as an MCP server\nFor another client, put this in the client's configuration:\n\n```json\n{\n  \"mcpServers\": {\n    \"ose-knowledge\": {\n      \"type\": \"stdio\",\n      \"command\": \"uvx\",\n      \"args\": [\"ose-knowledge-mcp==0.12.83\"]\n    }\n  }\n}\n```",
+    "content": "# Ask OSE from your AI tools > Use it as an MCP server\nFor another client, put this in the client's configuration:\n\n```json\n{\n  \"mcpServers\": {\n    \"ose-knowledge\": {\n      \"type\": \"stdio\",\n      \"command\": \"uvx\",\n      \"args\": [\"ose-knowledge-mcp==0.13.0\"]\n    }\n  }\n}\n```",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Ask OSE from your AI tools > Use it as an MCP server",
@@ -5156,6 +5156,99 @@
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
     "token_count": 58
+  },
+  {
+    "chunk_id": "79838a9ad250b5544ab2aab0c67c95c5c45bd36dd9671dfcef198284ce28ee47",
+    "chunk_type": "list_item",
+    "content": "# Ask OSE from your AI tools > Give the docs to any AI tool\nAn AI tool that reads web pages can also use the docs without the knowledge base. Point it at one of these files:\n[llms.txt](https://opensourceeurope.org/llms.txt) lists the pages of the website and the docs, with a short description of each.",
+    "line_start": null,
+    "metadata": {
+      "breadcrumb_path": "Ask OSE from your AI tools > Give the docs to any AI tool",
+      "depth": 0,
+      "doc_order": 9,
+      "list_caption": "An AI tool that reads web pages can also use the docs without the knowledge base. Point it at one of these files:",
+      "list_id": "efb676f251e92930",
+      "list_style": "unordered",
+      "parent_chunk_id": "9447ceade179f5754af468b99e5db9053acc1ddc30b737bb115a9253ac343375",
+      "parent_item_id": null,
+      "position": 1,
+      "section_anchor": "give-the-docs-to-any-ai-tool",
+      "sibling_ids": [
+        "595b1fc572cd542e67071ffc3e6b7f11fdab2bd398f96d9ec8b911ec7189d822",
+        "a1b7080f799bd97fc6658050b90ea4ecc6ade2704ea727de20b1af542b2bbe1a"
+      ],
+      "sibling_previews": [
+        "[llms-full.txt](https://opens…",
+        "Each docs page also has a Mar…"
+      ],
+      "source_url": "https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/",
+      "total_siblings": 3
+    },
+    "source_file": ".opencrane/llmstxt/llms-full.txt",
+    "source_name": "open-source-europe",
+    "token_count": 75
+  },
+  {
+    "chunk_id": "595b1fc572cd542e67071ffc3e6b7f11fdab2bd398f96d9ec8b911ec7189d822",
+    "chunk_type": "list_item",
+    "content": "# Ask OSE from your AI tools > Give the docs to any AI tool\nAn AI tool that reads web pages can also use the docs without the knowledge base. Point it at one of these files:\n[llms-full.txt](https://opensourceeurope.org/llms-full.txt) holds the text of every docs page in one file, with the address of each page.",
+    "line_start": null,
+    "metadata": {
+      "breadcrumb_path": "Ask OSE from your AI tools > Give the docs to any AI tool",
+      "depth": 0,
+      "doc_order": 10,
+      "list_caption": "An AI tool that reads web pages can also use the docs without the knowledge base. Point it at one of these files:",
+      "list_id": "efb676f251e92930",
+      "list_style": "unordered",
+      "parent_chunk_id": "9447ceade179f5754af468b99e5db9053acc1ddc30b737bb115a9253ac343375",
+      "parent_item_id": null,
+      "position": 2,
+      "section_anchor": "give-the-docs-to-any-ai-tool",
+      "sibling_ids": [
+        "79838a9ad250b5544ab2aab0c67c95c5c45bd36dd9671dfcef198284ce28ee47",
+        "a1b7080f799bd97fc6658050b90ea4ecc6ade2704ea727de20b1af542b2bbe1a"
+      ],
+      "sibling_previews": [
+        "[llms.txt](https://opensource…",
+        "Each docs page also has a Mar…"
+      ],
+      "source_url": "https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/",
+      "total_siblings": 3
+    },
+    "source_file": ".opencrane/llmstxt/llms-full.txt",
+    "source_name": "open-source-europe",
+    "token_count": 78
+  },
+  {
+    "chunk_id": "a1b7080f799bd97fc6658050b90ea4ecc6ade2704ea727de20b1af542b2bbe1a",
+    "chunk_type": "list_item",
+    "content": "# Ask OSE from your AI tools > Give the docs to any AI tool\nAn AI tool that reads web pages can also use the docs without the knowledge base. Point it at one of these files:\nEach docs page also has a Markdown copy. Replace the slash at the end of its address with `.md`, as in [basics.md](https://opensourceeurope.org/docs/how-it-works/basics.md).",
+    "line_start": null,
+    "metadata": {
+      "breadcrumb_path": "Ask OSE from your AI tools > Give the docs to any AI tool",
+      "depth": 0,
+      "doc_order": 11,
+      "list_caption": "An AI tool that reads web pages can also use the docs without the knowledge base. Point it at one of these files:",
+      "list_id": "efb676f251e92930",
+      "list_style": "unordered",
+      "parent_chunk_id": "9447ceade179f5754af468b99e5db9053acc1ddc30b737bb115a9253ac343375",
+      "parent_item_id": null,
+      "position": 3,
+      "section_anchor": "give-the-docs-to-any-ai-tool",
+      "sibling_ids": [
+        "79838a9ad250b5544ab2aab0c67c95c5c45bd36dd9671dfcef198284ce28ee47",
+        "595b1fc572cd542e67071ffc3e6b7f11fdab2bd398f96d9ec8b911ec7189d822"
+      ],
+      "sibling_previews": [
+        "[llms.txt](https://opensource…",
+        "[llms-full.txt](https://opens…"
+      ],
+      "source_url": "https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/",
+      "total_siblings": 3
+    },
+    "source_file": ".opencrane/llmstxt/llms-full.txt",
+    "source_name": "open-source-europe",
+    "token_count": 86
   },
   {
     "chunk_id": "80d9f226750175e35fe6f9849b0e6358746f327ae4e7f800fcd74b6cbf844879",
@@ -28547,7 +28640,7 @@
       "breadcrumb_path": "Ask OSE from your AI tools",
       "doc_order": 7,
       "heading_path": "Ask OSE from your AI tools > Use it as a Codex plugin",
-      "next_chunk_id": null,
+      "next_chunk_id": "9447ceade179f5754af468b99e5db9053acc1ddc30b737bb115a9253ac343375",
       "parent_chunk_id": "f59f8982d22adb5cdf13e91d6b0a79b4301bf14649b560d84e4a46419ce4c5b7",
       "position": 7,
       "prev_chunk_id": "8a7eeec9989c64e1abba139b7f45d2483048add2315423e14bb5927188f4ba1f",
@@ -28556,6 +28649,45 @@
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
     "token_count": 49
+  },
+  {
+    "chunk_id": "9447ceade179f5754af468b99e5db9053acc1ddc30b737bb115a9253ac343375",
+    "chunk_type": "prose",
+    "content": "## Give the docs to any AI tool\n\nAn AI tool that reads web pages can also use the docs without the knowledge base. Point it at one of these files:",
+    "line_start": null,
+    "metadata": {
+      "breadcrumb_path": "Ask OSE from your AI tools > Give the docs to any AI tool",
+      "doc_order": 8,
+      "heading_path": "Ask OSE from your AI tools > Give the docs to any AI tool",
+      "next_chunk_id": "3920e9a9b2a0fffba01bf7fb8f3d2b902f7f1a31d5dfc4d5fce5235b5af5cf4e",
+      "parent_chunk_id": "f59f8982d22adb5cdf13e91d6b0a79b4301bf14649b560d84e4a46419ce4c5b7",
+      "position": 8,
+      "prev_chunk_id": "4baf81acdeb03a4a0f94def42a2695fe9b4e87140ecf2a68fc5c73248a040376",
+      "section_anchor": "give-the-docs-to-any-ai-tool",
+      "source_url": "https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/"
+    },
+    "source_file": ".opencrane/llmstxt/llms-full.txt",
+    "source_name": "open-source-europe",
+    "token_count": 34
+  },
+  {
+    "chunk_id": "3920e9a9b2a0fffba01bf7fb8f3d2b902f7f1a31d5dfc4d5fce5235b5af5cf4e",
+    "chunk_type": "prose",
+    "content": "llms.txt and llms-full.txt follow the [llms.txt format](https://llmstxt.org).",
+    "line_start": null,
+    "metadata": {
+      "breadcrumb_path": "Ask OSE from your AI tools",
+      "doc_order": 12,
+      "heading_path": "Ask OSE from your AI tools > Give the docs to any AI tool",
+      "next_chunk_id": null,
+      "parent_chunk_id": "f59f8982d22adb5cdf13e91d6b0a79b4301bf14649b560d84e4a46419ce4c5b7",
+      "position": 9,
+      "prev_chunk_id": "9447ceade179f5754af468b99e5db9053acc1ddc30b737bb115a9253ac343375",
+      "source_url": "https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/"
+    },
+    "source_file": ".opencrane/llmstxt/llms-full.txt",
+    "source_name": "open-source-europe",
+    "token_count": 24
   },
   {
     "chunk_id": "a848530fbc6448c1cc885dca116c02498190e356defd9615d62da33f08e127d6",
