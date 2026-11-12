@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.13.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.12.83...v0.13.0) (2026-11-12)
+
+
+### Features
+
+* publish llms.txt, llms-full.txt and Markdown copies of the docs ([#226](https://github.com/opensourceeurope/opensourceeurope.org/issues/226)) ([47c2b0e](https://github.com/opensourceeurope/opensourceeurope.org/commit/47c2b0e4528c3428064f18876fd45fe463704de9))
+
+
+### Bug Fixes
+
+* **knowledge:** weekly OSE knowledge refresh ([#224](https://github.com/opensourceeurope/opensourceeurope.org/issues/224)) ([1cc98a1](https://github.com/opensourceeurope/opensourceeurope.org/commit/1cc98a1e5605ccab33b11fd35059afa3fa46c5d4))
+
 ## [0.12.83](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.12.82...v0.12.83) (2026-11-11)
 
 
