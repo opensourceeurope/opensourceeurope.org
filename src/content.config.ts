@@ -171,7 +171,8 @@ const settings = defineCollection({
                 })
                 .strict(),
             ),
-            social: z.array(link),
+            // `icon: github` shows the GitHub mark, and the label becomes the link's hidden name.
+            social: z.array(link.extend({ icon: z.enum(['github']).optional() }).strict()),
             // `action: cookie-settings` marks the link that reopens the consent banner.
             legal: z.array(link.extend({ action: z.enum(['cookie-settings']).optional() }).strict()),
             copyright: z.string(),

@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import type { loadSettings } from '../lib/site';
+import GithubIcon from './GithubIcon.astro';
 
 interface Props {
   settings: Awaited<ReturnType<typeof loadSettings>>;
@@ -17,6 +18,26 @@ const isExternal = (href: string) => /^https?:\/\//.test(href);
   </div>
   <div class="site-footer__brand">
     <a href="/"><img src={ui.logo.src} alt={ui.logo.alt} width={ui.logo.width} height={ui.logo.height} loading="lazy" /></a>
+    {
+      footer.social.length > 0 && (
+        <ul class="site-footer__social">
+          {footer.social.map((link) => (
+            <li>
+              <a href={link.href} target="_blank" rel="noopener noreferrer">
+                {link.icon === 'github' ? (
+                  <>
+                    <GithubIcon />
+                    <span class="visually-hidden">{link.label}</span>
+                  </>
+                ) : (
+                  link.label
+                )}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
   </div>
   <nav class="site-footer__columns" aria-label={ui.footer_nav_label}>
     {
@@ -40,19 +61,6 @@ const isExternal = (href: string) => /^https?:\/\//.test(href);
       ))
     }
   </nav>
-  {
-    footer.social.length > 0 && (
-      <ul class="site-footer__social">
-        {footer.social.map((link) => (
-          <li>
-            <a href={link.href} target="_blank" rel="noopener noreferrer">
-              {link.label}
-            </a>
-          </li>
-        ))}
-      </ul>
-    )
-  }
   <div class="site-footer__rule"></div>
   <div class="site-footer__credits">
     <p>{footer.copyright}</p>
@@ -174,6 +182,25 @@ const isExternal = (href: string) => /^https?:\/\//.test(href);
   }
   .site-footer__brand a::after {
     content: none;
+  }
+  .site-footer__social {
+    display: flex;
+    gap: var(--space-4);
+    margin-top: var(--space-5);
+  }
+  .site-footer__social a {
+    display: inline-flex;
+    padding: var(--space-1);
+    margin: calc(-1 * var(--space-1));
+    transition: opacity var(--duration-base) var(--ease-css);
+  }
+  .site-footer__social a:hover {
+    opacity: 0.7;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .site-footer__social a {
+      transition: none;
+    }
   }
   .site-footer__link-button {
     padding: 0;

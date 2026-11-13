@@ -103,6 +103,8 @@ footer:
           href: /blog/
         - label: RSS feed
           href: /rss.xml
+        - label: Website source code
+          href: https://github.com/opensourceeurope/opensourceeurope.org
         - label: Contact
           href: /contact/
     - title: Contact
@@ -114,7 +116,10 @@ footer:
           href: https://maps.app.goo.gl/cc81nBsmR5Tubq2t5
           prefix: "A:"
           external: true
-  social: []
+  social:
+    - label: Open Source Europe on GitHub
+      href: https://github.com/opensourceeurope
+      icon: github
   legal:
     - label: Privacy Policy
       href: /privacy-policy/
