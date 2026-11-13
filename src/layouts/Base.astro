@@ -4,17 +4,20 @@ import Header from '../components/Header.astro';
 import ConsentBanner from '../components/ConsentBanner.astro';
 import Footer from '../components/Footer.astro';
 import AskPanel from '../components/chat/AskPanel.astro';
+import WebMcp from '../components/WebMcp.astro';
 import { loadSettings } from '../lib/site';
 import type { Seo } from '../lib/seo';
 
 interface Props {
   seo: Seo;
+  // Page-specific JSON-LD for the head.
+  jsonLd?: object[];
   bodyClass?: string;
   // The 404 page has no footer, as on the live site.
   footer?: boolean;
 }
 
-const { seo, bodyClass, footer = true } = Astro.props;
+const { seo, jsonLd, bodyClass, footer = true } = Astro.props;
 const settings = await loadSettings();
 ---
 
@@ -24,7 +27,7 @@ const settings = await loadSettings();
     <script is:inline>
       document.documentElement.classList.add('js');
     </script>
-    <Head seo={seo} />
+    <Head seo={seo} jsonLd={jsonLd} />
   </head>
   <body class={bodyClass}>
     <ConsentBanner consent={settings.consent} />
@@ -35,5 +38,6 @@ const settings = await loadSettings();
     </main>
     {footer && <Footer settings={settings} />}
     {Astro.url.pathname !== '/ask/' && <AskPanel settings={settings} />}
+    <WebMcp />
   </body>
 </html>

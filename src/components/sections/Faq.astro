@@ -3,12 +3,16 @@ import DotIcon from '../DotIcon.astro';
 import Eyebrow from '../Eyebrow.astro';
 import Heading from '../Heading.astro';
 import type { SectionOf } from '../../lib/sections';
+import { faqJsonLd } from '../../lib/seo';
 
 interface Props {
   section: SectionOf<'faq'>;
 }
 const { section } = Astro.props;
 ---
+
+<!-- The questions and answers as a FAQPage, for search engines and AI answer tools. -->
+<script is:inline type="application/ld+json" set:html={JSON.stringify(faqJsonLd(section.items))} />
 
 <section id={section.id} class="faq grid-26">
   <div class="faq__head">

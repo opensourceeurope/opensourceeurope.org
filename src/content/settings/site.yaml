@@ -66,8 +66,18 @@ chat:
 
 seo:
   site_name: Open Source Europe
+  alternate_name: OSE
+  description: Open Source Europe (OSE) is a European nonprofit fiscal host for open source projects. Projects receive donations, pay expenses and grow without creating a legal entity.
   logo: /app/uploads/2026/01/cropped-ose.png
   default_og_image: /app/uploads/2026/01/cropped-ose.png
+  email: home@opensourceeurope.org
+  founding_date: "2017"
+  address:
+    locality: Brussels
+    country: BE
+  same_as:
+    - https://github.com/opensourceeurope
+    - https://opencollective.com/europe
 
 nav:
   - label: Home
@@ -182,6 +192,18 @@ llms:
   full_label: Full text of the docs
   full_description: Every docs page in one Markdown file, with the address of each page.
   source_label: "Source:"
+  # Example questions in /.well-known/ai-catalog.json, so agent registries know what OSE answers.
+  representative_queries:
+    - How do I join Open Source Europe as an open source project?
+    - How do I submit an expense to Open Source Europe?
+    - What fees does Open Source Europe charge?
+    - Can my project receive donations without a legal entity?
+
+# The tools that a browser agent can call on every page through WebMCP.
+webmcp:
+  list_pages_description: Lists the pages of the Open Source Europe website and docs, with the address and a short description of each, from llms.txt.
+  ask_description: Asks the Open Source Europe assistant a question about OSE. It answers from the OSE docs and returns the answer with the addresses of its sources.
+  question_description: The question about Open Source Europe, in one or two sentences.
 
 blog:
   title: OSE blog

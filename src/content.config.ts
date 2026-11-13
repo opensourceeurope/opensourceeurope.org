@@ -155,8 +155,16 @@ const settings = defineCollection({
         seo: z
           .object({
             site_name: z.string().min(1),
+            alternate_name: z.string().min(1).optional(),
+            // What OSE is, in one or two sentences. Search engines and AI tools read it from the JSON-LD.
+            description: z.string().min(1).optional(),
             logo: z.string().startsWith('/'),
             default_og_image: z.string().startsWith('/'),
+            email: z.email().optional(),
+            founding_date: z.string().regex(/^\d{4}(-\d{2}(-\d{2})?)?$/).optional(),
+            address: z.object({ locality: z.string().min(1), country: z.string().length(2) }).strict().optional(),
+            // Other profiles of OSE, so search engines and AI tools connect them to the site.
+            same_as: z.array(z.url()).optional(),
           })
           .strict(),
         nav: z.array(link.extend({ icon: z.literal('ai').optional() }).strict()),
@@ -211,6 +219,16 @@ const settings = defineCollection({
             full_description: z.string().min(1),
             // Before the address of each page in the Markdown copies, as in "Source: https://...".
             source_label: z.string().min(1),
+            // Example questions in /.well-known/ai-catalog.json, so agent registries know what OSE answers.
+            representative_queries: z.array(z.string().min(1)).min(2).max(5),
+          })
+          .strict(),
+        // The tools that a browser agent can call on every page through WebMCP (src/components/WebMcp.astro).
+        webmcp: z
+          .object({
+            list_pages_description: z.string().min(1),
+            ask_description: z.string().min(1),
+            question_description: z.string().min(1),
           })
           .strict(),
         // Texts of the blog at /blog/ and of its RSS feed.

@@ -6,14 +6,16 @@ import { loadSettings } from '../lib/site';
 
 interface Props {
   seo: Seo;
+  // Page-specific JSON-LD, such as a Service, after the organisation and website.
+  jsonLd?: object[];
 }
 
-const { seo } = Astro.props;
+const { seo, jsonLd: pageJsonLd = [] } = Astro.props;
 const site = Astro.site!;
 const { seo: siteSeo, blog } = await loadSettings();
 const canonical = new URL(Astro.url.pathname, site).href;
 const ogImage = new URL(seo.ogImage ?? siteSeo.default_og_image, site).href;
-const jsonLd = [organizationJsonLd(site, siteSeo), websiteJsonLd(site, siteSeo)];
+const jsonLd = [organizationJsonLd(site, siteSeo), websiteJsonLd(site, siteSeo), ...pageJsonLd];
 ---
 
 <meta charset="utf-8" />

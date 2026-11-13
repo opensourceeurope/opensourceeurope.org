@@ -106,6 +106,8 @@ jobs:
             --exclude "llms.txt" \
             --exclude "llms-full.txt" \
             --exclude "docs*.md" \
+            --exclude ".well-known/api-catalog" \
+            --exclude ".well-known/agent-skills/*.md" \
             --cache-control "public, max-age=300" \
             --delete
           # Pass 3: the files for AI tools. The CLI would send them without a charset,
@@ -118,8 +120,15 @@ jobs:
             --delete
           "$AWS_BIN" s3 sync dist/ "s3://${BUCKET}/" \
             --endpoint-url "$ENDPOINT" \
-            --exclude "*" --include "docs*.md" \
+            --exclude "*" --include "docs*.md" --include ".well-known/agent-skills/*.md" \
             --content-type "text/markdown; charset=utf-8" \
+            --cache-control "public, max-age=300" \
+            --delete
+          # The API catalog has no file extension, so the CLI cannot guess its type (RFC 9727).
+          "$AWS_BIN" s3 sync dist/ "s3://${BUCKET}/" \
+            --endpoint-url "$ENDPOINT" \
+            --exclude "*" --include ".well-known/api-catalog" \
+            --content-type "application/linkset+json" \
             --cache-control "public, max-age=300" \
             --delete
           echo "Uploaded. Purge the Edge Services cache, see dev-guide/deployment.md."
