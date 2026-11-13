@@ -40,7 +40,7 @@ describe('analytics/pageviews.jq', () => {
     const rows = run({
       data: {
         result: [
-          series('ask.opensourceeurope.org', '/', '3'),
+          series('other.opensourceeurope.org', '/', '3'),
           series('f1626baf-bded-4089-af52-08f3da6a46a9.svc.edge.scw.cloud', '/', '2'),
           series('opensourceeurope.org', '/.well-known/acme-challenge/x', '1'),
           series('WWW.opensourceeurope.org', '/contact/', '4'),

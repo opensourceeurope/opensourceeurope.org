@@ -169,18 +169,12 @@ The site is served from the bucket `opensourceeurope-site` in `pl-waw`. Set both
 
    On Scaleway, a bucket policy replaces the default access. A principal the policy does not list loses access, so the deploy application must be in it, or the site deploy fails with "Access Denied".
 
-The bucket `ose-knowledge-chat` served the old standalone chat page. It was deleted on 10 November 2026.
-
 ### Edge Services
 
-The site reuses the pipeline that served ask.opensourceeurope.org (`ose-knowledge-edge-for-https`). There is one pipeline, so no new one is needed. Its backend already points to the website endpoint of `opensourceeurope-site`.
+The site uses the Edge Services pipeline `ose-knowledge-edge-for-https`. There is one pipeline, so no new one is needed. Its backend already points to the website endpoint of `opensourceeurope-site`.
 
-1. Replace ask.opensourceeurope.org in the pipeline's DNS stage with the site domain, with a TLS certificate. Until then, the pipeline shows the warning `dns_cname_resolve`, because ask.opensourceeurope.org no longer has a DNS record.
+1. Set the pipeline's DNS stage to `www.opensourceeurope.org`, with a managed TLS certificate.
 2. After each deploy, purge the pipeline cache from the console, or with `scw edge-services purge-request create`. Pages carry `max-age=300`, but Edge Services keeps its own copy until it is purged.
-
-### Ask subdomain
-
-ask.opensourceeurope.org served the old standalone chat. It was retired on 10 November 2026 and has no DNS record, so the name no longer resolves. There is no redirect to `/ask/`.
 
 ### Function
 
@@ -283,7 +277,7 @@ These need an answer before launch.
 - Deploy leaves console variables alone: confirm with a real run that `scw function deploy` keeps the environment variables set in the console. The conclusion so far comes from reading the CLI source.
 - CLI authentication: confirm that the `scw` commands in the workflow work with only the access key, secret key and region. They may also need a project or organization ID.
 - Purge command: confirm the exact `scw edge-services purge-request create` arguments, or use the console, and decide whether to add the purge to the workflow.
-- Edge Services plan: settled. The site reuses the one existing pipeline, and ask.opensourceeurope.org is retired (see "Ask subdomain").
+- Edge Services plan: settled. The site uses the one existing pipeline.
 
 - Content types: `aws s3 sync` guesses each `Content-Type` from the file extension with Python's `mimetypes`. After the first deploy, run `aws s3api head-object` on one `.avif` and one `.woff2` file. If either comes back as `binary/octet-stream`, add `--content-type` with `--exclude`/`--include` filters for those extensions to the sync step. The sync step already skips `llms.txt`, `llms-full.txt` and the Markdown copies of the docs pages (`docs*.md`), and a third pass uploads them with `charset=utf-8`.
 - Deploy gating: the site and contact function deploy jobs run only on `main` and use the GitHub environment `production`. GitHub creates the environment on the first run. Add a protection rule to it if you want a manual approval. Do not move the Scaleway secrets and variables out of the repository settings, because jobs without an environment need them (see "Keep the Scaleway values at repository level"). Require the checks listed under "Required checks" on `main`, so a red commit does not release.
