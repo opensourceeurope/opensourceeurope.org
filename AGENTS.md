@@ -4,7 +4,7 @@ Instructions for coding agents working on opensourceeurope.org. Humans can read 
 
 ## Stack
 
-Astro (static output, TypeScript strict), content in `src/content/`, the documentation at `/docs/` built by Starlight from Markdown in `docs/`, a Scaleway Serverless Function for the contact form under `functions/`, hosting on Scaleway Object Storage. The repository also holds the OSE knowledge base: an OpenCrane index in `.opencrane/` served as an MCP server (`ose-knowledge-mcp` on PyPI), a Claude plugin in `plugins/ose-knowledge/`, the agent persona in `agent/`, a chat function in `functions/chat/` (its own `package.json`, Node 22) and the chat UI on the site (`/ask/` and the Ask panel). Target Node 22. Every workflow reads the exact version from `.node-version`, because `node-version: 22` takes whatever the runner has cached, and some runner images cache a version older than Astro accepts. This file, `DEVELOPMENT.md` and `dev-guide/` are the authority for how the site and the knowledge base are built.
+Astro (static output, TypeScript strict), content in `src/content/`, the documentation at `/docs/` built by Starlight from Markdown in `docs/`, a Scaleway Serverless Function for the contact form under `functions/`, hosting on Scaleway Object Storage behind Edge Services (see Infrastructure). The repository also holds the OSE knowledge base: an OpenCrane index in `.opencrane/` served as an MCP server (`ose-knowledge-mcp` on PyPI), a Claude plugin in `plugins/ose-knowledge/`, the agent persona in `agent/`, a chat function in `functions/chat/` (its own `package.json`, Node 22) and the chat UI on the site (`/ask/` and the Ask panel). Target Node 22. Every workflow reads the exact version from `.node-version`, because `node-version: 22` takes whatever the runner has cached, and some runner images cache a version older than Astro accepts. This file, `DEVELOPMENT.md` and `dev-guide/` are the authority for how the site and the knowledge base are built.
 
 ## Commands
 
@@ -66,6 +66,13 @@ Before you hand off a change, these must pass (the commands are under Commands a
 - Page text, links, image references and SEO fields live in `src/content/`, never in components.
 - Code is MIT, OSE content is CC-BY-4.0, Manrope is OFL-1.1, and third-party logos stay their owners' trademarks.
 - GitHub Actions are pinned to commit SHAs with a version comment, and installed tools to versions (skill `github-actions-supply-chain-pinning`).
+
+## Infrastructure
+
+The site files are in the Scaleway bucket `opensourceeurope-site`, served at `https://www.opensourceeurope.org` by the Edge Services pipeline in front of it. Edge Services serves only subdomains, so the root domain `opensourceeurope.org` points to the n8n server, whose Caddy answers it with a 301 to `www`. That site block lives in `automation/infra/Caddyfile` of `opensourceeurope/community`, not here. The domain and its DNS are at OVH. A Scaleway zone holds a copy of the records that nothing keeps in sync. `dev-guide/deployment.md` lists the records and the open registrar move.
+
+- Before you create, delete or change anything in the OSE Scaleway or OVH accounts, name the resource and its monthly price, and wait for an explicit yes. A choice of direction is not that yes.
+- For Scaleway, read the official docs before you act: `https://www.scaleway.com/en/docs/llms.txt` lists every page as Markdown, from `github.com/scaleway/docs-content`. The `scw` CLI and what you remember can be out of date.
 
 ## AI policy
 
