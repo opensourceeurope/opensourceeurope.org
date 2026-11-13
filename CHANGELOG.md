@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.13.31](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.13.30...v0.13.31) (2026-11-13)
+
+
+### Bug Fixes
+
+* **knowledge:** weekly OSE knowledge refresh ([#288](https://github.com/opensourceeurope/opensourceeurope.org/issues/288)) ([d9a5b09](https://github.com/opensourceeurope/opensourceeurope.org/commit/d9a5b09b24f312a1c4dde1cda6efdf069a5316fc))
+* **legal:** restore two wordings from the official terms of hosting ([#291](https://github.com/opensourceeurope/opensourceeurope.org/issues/291)) ([3fb756c](https://github.com/opensourceeurope/opensourceeurope.org/commit/3fb756c6f9ead65e8b4c1d50e5feca5d5bc3f066))
+
 ## [0.13.30](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.13.29...v0.13.30) (2026-11-13)
 
 
