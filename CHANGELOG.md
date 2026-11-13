@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.14.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.13.32...v0.14.0) (2026-11-13)
+
+
+### Features
+
+* **footer:** link to the OSE GitHub organisation and the website source ([#293](https://github.com/opensourceeurope/opensourceeurope.org/issues/293)) ([1c98792](https://github.com/opensourceeurope/opensourceeurope.org/commit/1c987923ebe8858761f58c7acbb675b12a43e310))
+
+
+### Bug Fixes
+
+* **knowledge:** weekly OSE knowledge refresh ([#297](https://github.com/opensourceeurope/opensourceeurope.org/issues/297)) ([b05020a](https://github.com/opensourceeurope/opensourceeurope.org/commit/b05020ad1f879a700ff8383780ae2286fe8c616b))
+
 ## [0.13.32](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.13.31...v0.13.32) (2026-11-13)
 
 
