@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://opensourceeurope.org/sitemap-index.xml
+Sitemap: https://www.opensourceeurope.org/sitemap-index.xml
 
-# For AI tools: https://opensourceeurope.org/llms.txt lists the pages and docs,
-# and https://opensourceeurope.org/llms-full.txt holds the text of every docs page.
+# For AI tools: https://www.opensourceeurope.org/llms.txt lists the pages and docs,
+# and https://www.opensourceeurope.org/llms-full.txt holds the text of every docs page.

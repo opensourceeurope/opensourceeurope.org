@@ -61,7 +61,7 @@ Before you hand off a change, these must pass (the commands are under Commands a
 - No jQuery, GSAP or Owl Carousel, and no library from a public CDN.
 - Every animation respects `prefers-reduced-motion: reduce`. Content is fully visible without JavaScript.
 - WCAG 2.1 AA is the floor: axe reports zero violations on every route.
-- The canonical origin is `https://opensourceeurope.org`, set once as Astro `site`. Routes end with a slash.
+- The canonical origin is `https://www.opensourceeurope.org`, set once as Astro `site`. `https://opensourceeurope.org` answers with a 301 to it. Routes end with a slash.
 - Image paths under `/app/uploads/` and the favicon paths stay as they are.
 - Page text, links, image references and SEO fields live in `src/content/`, never in components.
 - Code is MIT, OSE content is CC-BY-4.0, Manrope is OFL-1.1, and third-party logos stay their owners' trademarks.

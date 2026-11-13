@@ -155,7 +155,7 @@ llms:
   details: |-
     Projects that OSE hosts receive donations, pay expenses and apply for grants without a legal entity of their own. All their income and expenses are public on the Open Collective platform. To apply, use https://opencollective.com/europe/apply.
 
-    The documentation at https://opensourceeurope.org/docs/ answers questions about hosting, expenses, contributions and policies. https://opensourceeurope.org/llms-full.txt holds the text of every docs page in one file. Each docs page also has a Markdown copy: replace the slash at the end of its address with .md, as in https://opensourceeurope.org/docs/how-it-works/basics.md.
+    The documentation at https://www.opensourceeurope.org/docs/ answers questions about hosting, expenses, contributions and policies. https://www.opensourceeurope.org/llms-full.txt holds the text of every docs page in one file. Each docs page also has a Markdown copy: replace the slash at the end of its address with .md, as in https://www.opensourceeurope.org/docs/how-it-works/basics.md.
   website_heading: Website
   docs_heading: Documentation
   blog_heading: Blog
@@ -168,10 +168,10 @@ llms:
       href: https://github.com/opensourceeurope/ose-ai
       description: "Adds the MCP server, an `ask-about-ose` skill and, in Claude Code, an `ose-researcher` agent. Install it with `/plugin marketplace add opensourceeurope/ose-ai` and `/plugin install ose-knowledge@ose-ai`."
     - label: Setup guide for AI tools
-      href: https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/
+      href: https://www.opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/
       description: How to connect the knowledge base to Claude Code, Codex, Cursor or Claude Desktop.
     - label: Ask OSE chat
-      href: https://opensourceeurope.org/ask/
+      href: https://www.opensourceeurope.org/ask/
       description: A public chat that answers from the OSE docs with sources. It runs on European infrastructure.
   optional_heading: Optional
   full_label: Full text of the docs

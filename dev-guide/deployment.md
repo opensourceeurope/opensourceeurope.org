@@ -220,8 +220,8 @@ This command sets all the variables at once. `read -rs` keeps the token out of y
 ```bash
 read -rs SMTP_TOKEN
 scw function function update <function-id> region=pl-waw \
-  environment-variables.ALLOWED_ORIGINS=https://opensourceeurope.org \
-  environment-variables.SITE_URL=https://opensourceeurope.org \
+  environment-variables.ALLOWED_ORIGINS=https://www.opensourceeurope.org,https://opensourceeurope.org \
+  environment-variables.SITE_URL=https://www.opensourceeurope.org \
   environment-variables.SMTP_HOST=smtp.protonmail.ch \
   environment-variables.SMTP_PORT=587 \
   environment-variables.SMTP_USER=home@opensourceeurope.org \
@@ -278,7 +278,7 @@ Compare the listing with the files in a fresh `dist/_astro/` and delete only fil
 These need an answer before launch.
 
 - Directory URLs: check that `/about/` resolves to `/about/index.html` through Edge Services. The bucket website endpoint does this on its own. If the pipeline does not, add a rewrite or use the website endpoint as the origin.
-- Bare domain: Edge Services serves only subdomains. Its docs say a root domain is not possible, so moving the DNS to a provider with ALIAS records does not help. Serve the site from `www`, change `site` in `astro.config.mjs`, and have something with a fixed IP and its own certificate answer `opensourceeurope.org` with a 301 to `https://www.opensourceeurope.org`, such as a Scaleway Load Balancer with a redirect rule.
+- Bare domain: settled. Edge Services serves only subdomains, so the site is served from `www`, and `site` in `astro.config.mjs` is `https://www.opensourceeurope.org`. A Scaleway function answers `opensourceeurope.org` with a 301 to `www`. See "DNS records for the site".
 - SMTP port: confirm that the function can reach `smtp.protonmail.ch` on port 587. Scaleway blocks outbound port 25, but should allow 587. The contact form check in "First release" settles this.
 - Deploy leaves console variables alone: confirm with a real run that `scw function deploy` keeps the environment variables set in the console. The conclusion so far comes from reading the CLI source.
 - CLI authentication: confirm that the `scw` commands in the workflow work with only the access key, secret key and region. They may also need a project or organization ID.
@@ -290,13 +290,14 @@ These need an answer before launch.
 
 ## DNS records for the site
 
-These are added at OVH, where the DNS of `opensourceeurope.org` is. Fill in the values from the Scaleway console after the one-time setup.
+The domain `opensourceeurope.org` was registered at OVH and moved to the Scaleway registrar in November 2026, so its DNS zone is in Scaleway Domains and DNS. Scaleway hosts the DNS of a domain it registers for free. It charges for the zone of a domain registered elsewhere.
 
 | Record | Name | Value |
 |---|---|---|
 | CNAME | `www` | The Edge Services pipeline endpoint |
-| TXT or CNAME | As the console shows | The TLS certificate validation record for the pipeline, if Edge Services asks for one |
-| A | `@` | The IP of whatever sends the 301 to `www`. Edge Services cannot serve the root domain. See "Bare domain" under Open checks |
+| ALIAS | `@` | The domain of the function `root-redirect`, which answers every request with a 301 to the same path on `https://www.opensourceeurope.org` |
+
+Edge Services cannot serve a root domain, and OVH DNS has no ALIAS record, so the root domain needs the Scaleway zone. A Scaleway function has no fixed IP, so an `A` record cannot point to it. The zone also holds the mail records for Proton (MX, SPF, three DKIM CNAMEs, DMARC and the verification TXT), the Google verification CNAME and the `apply` and `automation` records. Copy them before you change a name server.
 
 The contact form needs no email records. It sends through Proton, which the domain's SPF record already allows.
 

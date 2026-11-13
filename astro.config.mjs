@@ -37,7 +37,7 @@ const keepSiteDefaults = {
 };
 
 export default defineConfig({
-  site: 'https://opensourceeurope.org',
+  site: 'https://www.opensourceeurope.org',
   trailingSlash: 'always',
   build: { format: 'directory', inlineStylesheets: 'always' },
   // Legal text is copied from the live site; keep its quotes as they are.
