@@ -108,7 +108,7 @@ The push to `main` starts `release.yml`. release-please opens a release pull req
    - the hosted MCP server, with a `search_docs` call. Then check the MCP container's logs in Scaleway Cockpit: there must be no `🔍 Search:` lines. The image sets `LOG_LEVEL=WARNING` so that search queries, which can be a visitor's question word for word, are not logged. If such lines appear, check that no `LOG_LEVEL` environment variable on the container overrides it;
    - the chat function, with a question on `/ask/`. The answer must cite at least one source. Then check the function's logs in Scaleway Cockpit for a `tool_choice_fallback` line. That line means the endpoint rejected a `tool_choice` value and the function fell back. The chat still works then, but tell the maintainers, because the forced search and the forced final answer are weaker. The values were only tested against a local model before launch. If every question fails with the generic error, the endpoint probably rejects the forced search in a way the fallback does not catch: set the repository variable `CHAT_SEARCH_FIRST=false` and redeploy the chat function (run `deploy-chat-function.yml`);
    - the chat answer streams: the status line changes and the text appears piece by piece, and the `curl -N` check in step 3 of "Verify" in [`knowledge/deploy-chat.md`](knowledge/deploy-chat.md) shows the `status` events before `done`. Scaleway does not document whether it buffers Server-Sent Events, so this is the first real check;
-   - the site, on `https://opensourceeurope.org`, including the Ask panel on another page;
+   - the site, on `https://www.opensourceeurope.org`, including the Ask panel on another page;
    - the contact form. Send one real message from `/contact/` and confirm that it lands in the `home@opensourceeurope.org` inbox (not in spam), from `home@opensourceeurope.org`, with the address you entered as Reply-To. If the form shows an error, check the function's logs in Scaleway Cockpit. A timeout on port 587 means Scaleway blocks it. See the fallback at the end of "Proton SMTP token".
 4. Turn "Allow auto-merge" on in the repository settings.
 5. Stop the old repository. Right after the first release, turn off GitHub Actions in `opensourceeurope/ose-knowledge-mcp`: Settings, Actions, General, Disable actions. Its weekly `refresh.yml` and its self-merging `release.yml` would otherwise keep redeploying the hosted MCP container and the chat function from the old code.
@@ -148,7 +148,7 @@ The site deploy waits for the PyPI publish, because `/ask/` shows the pinned pac
 The cutover starts after the site is live from the new repository. Do these steps in order:
 
 1. Check the PyPI package, the hosted MCP server and the chat function after the first release. This was already done under "First release".
-2. Check that `/ask/` and the panel answer questions on opensourceeurope.org.
+2. Check that `/ask/` and the panel answer questions on www.opensourceeurope.org.
 3. Open the pull request to `opensourceeurope/ose-ai` that changes the `ose-knowledge` plugin `url` to `opensourceeurope/opensourceeurope.org`.
 4. Once that pull request is merged, remove the old trusted publisher of `ose-knowledge-mcp` on pypi.org. Then archive `opensourceeurope/ose-knowledge-mcp`, after you add a note to its README that points to the new repository.
 
@@ -194,7 +194,7 @@ ask.opensourceeurope.org served the old standalone chat. It was retired on 10 No
 
    | Name | Value |
    |---|---|
-   | `ALLOWED_ORIGINS` | The site origin, for example `https://opensourceeurope.org`. Comma-separated for more than one |
+   | `ALLOWED_ORIGINS` | The site origin, for example `https://www.opensourceeurope.org`. Comma-separated for more than one |
    | `SITE_URL` | The site URL. The function uses it to accept no-JavaScript posts by their `Referer` |
    | `SMTP_HOST` | `smtp.protonmail.ch`. This is the default, so you can leave it out |
    | `SMTP_PORT` | `587`. This is the default, so you can leave it out |
