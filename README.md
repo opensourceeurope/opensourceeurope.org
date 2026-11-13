@@ -1,6 +1,6 @@
 # opensourceeurope.org
 
-The source of the [Open Source Europe](https://opensourceeurope.org) website. All page text, links and image references live in `src/content/`.
+The source of the [Open Source Europe](https://www.opensourceeurope.org) website. All page text, links and image references live in `src/content/`.
 
 ## Knowledge base
 

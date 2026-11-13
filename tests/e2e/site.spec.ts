@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 import { ROUTES } from './routes';
 
-const ORIGIN = 'https://opensourceeurope.org';
+const ORIGIN = 'https://www.opensourceeurope.org';
 
 test.describe('site-wide quality', () => {
   for (const route of ROUTES) {

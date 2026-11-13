@@ -5,7 +5,7 @@ description: Use when adding, editing, moving or reviewing a page of the OSE doc
 
 # Docs authoring
 
-The documentation at `https://opensourceeurope.org/docs/` is built by Starlight from Markdown files in this repository. This skill says how to change it and how to show the change to the person you work with before it is committed.
+The documentation at `https://www.opensourceeurope.org/docs/` is built by Starlight from Markdown files in this repository. This skill says how to change it and how to show the change to the person you work with before it is committed.
 
 Read `AGENTS.md` first. Its worktree rule, quality gates and AI policy apply here too.
 

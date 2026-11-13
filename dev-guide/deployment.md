@@ -108,7 +108,7 @@ The push to `main` starts `release.yml`. release-please opens a release pull req
    - the hosted MCP server, with a `search_docs` call. Then check the MCP container's logs in Scaleway Cockpit: there must be no `🔍 Search:` lines. The image sets `LOG_LEVEL=WARNING` so that search queries, which can be a visitor's question word for word, are not logged. If such lines appear, check that no `LOG_LEVEL` environment variable on the container overrides it;
    - the chat function, with a question on `/ask/`. The answer must cite at least one source. Then check the function's logs in Scaleway Cockpit for a `tool_choice_fallback` line. That line means the endpoint rejected a `tool_choice` value and the function fell back. The chat still works then, but tell the maintainers, because the forced search and the forced final answer are weaker. The values were only tested against a local model before launch. If every question fails with the generic error, the endpoint probably rejects the forced search in a way the fallback does not catch: set the repository variable `CHAT_SEARCH_FIRST=false` and redeploy the chat function (run `deploy-chat-function.yml`);
    - the chat answer streams: the status line changes and the text appears piece by piece, and the `curl -N` check in step 3 of "Verify" in [`knowledge/deploy-chat.md`](knowledge/deploy-chat.md) shows the `status` events before `done`. Scaleway does not document whether it buffers Server-Sent Events, so this is the first real check;
-   - the site, on `https://opensourceeurope.org`, including the Ask panel on another page;
+   - the site, on `https://www.opensourceeurope.org`, including the Ask panel on another page;
    - the contact form. Send one real message from `/contact/` and confirm that it lands in the `home@opensourceeurope.org` inbox (not in spam), from `home@opensourceeurope.org`, with the address you entered as Reply-To. If the form shows an error, check the function's logs in Scaleway Cockpit. A timeout on port 587 means Scaleway blocks it. See the fallback at the end of "Proton SMTP token".
 4. Turn "Allow auto-merge" on in the repository settings.
 5. Stop the old repository. Right after the first release, turn off GitHub Actions in `opensourceeurope/ose-knowledge-mcp`: Settings, Actions, General, Disable actions. Its weekly `refresh.yml` and its self-merging `release.yml` would otherwise keep redeploying the hosted MCP container and the chat function from the old code.
@@ -148,10 +148,9 @@ The site deploy waits for the PyPI publish, because `/ask/` shows the pinned pac
 The cutover starts after the site is live from the new repository. Do these steps in order:
 
 1. Check the PyPI package, the hosted MCP server and the chat function after the first release. This was already done under "First release".
-2. Check that `/ask/` and the panel answer questions on opensourceeurope.org.
-3. Check that the redirect rule from ask.opensourceeurope.org to `https://opensourceeurope.org/ask/` (301) is on the shared Edge Services pipeline (see "Edge Services"), and add it if it is not. From the first site deploy, ask.opensourceeurope.org no longer shows the old chat, so add the rule early.
-4. Open the pull request to `opensourceeurope/ose-ai` that changes the `ose-knowledge` plugin `url` to `opensourceeurope/opensourceeurope.org`.
-5. Once that pull request is merged, remove the old trusted publisher of `ose-knowledge-mcp` on pypi.org. Then archive `opensourceeurope/ose-knowledge-mcp`, after you add a note to its README that points to the new repository.
+2. Check that `/ask/` and the panel answer questions on www.opensourceeurope.org.
+3. Open the pull request to `opensourceeurope/ose-ai` that changes the `ose-knowledge` plugin `url` to `opensourceeurope/opensourceeurope.org`.
+4. Once that pull request is merged, remove the old trusted publisher of `ose-knowledge-mcp` on pypi.org. Then archive `opensourceeurope/ose-knowledge-mcp`, after you add a note to its README that points to the new repository.
 
 
 The deploy API key needs write access to Object Storage and to Serverless Functions in the OSE project. It is not the key the function uses to send mail.
@@ -170,17 +169,12 @@ The site is served from the bucket `opensourceeurope-site` in `pl-waw`. Set both
 
    On Scaleway, a bucket policy replaces the default access. A principal the policy does not list loses access, so the deploy application must be in it, or the site deploy fails with "Access Denied".
 
-The bucket `ose-knowledge-chat` served the old standalone chat page, which was removed from this repository. Delete that bucket after launch, once the Edge Services pipeline points to `opensourceeurope-site`.
-
 ### Edge Services
 
-The site reuses the pipeline that serves ask.opensourceeurope.org today (`ose-knowledge-edge-for-https`). There is one pipeline, so no new one is needed.
+The site uses the Edge Services pipeline `ose-knowledge-edge-for-https`. There is one pipeline, so no new one is needed. Its backend already points to the website endpoint of `opensourceeurope-site`.
 
-1. Change the pipeline's backend to the website endpoint of `opensourceeurope-site`.
-2. Add the site domain to the existing pipeline, with a TLS certificate.
-3. Add a redirect rule from the host ask.opensourceeurope.org to `https://opensourceeurope.org/ask/` with a 301.
-4. Once the backend points to the new bucket, ask.opensourceeurope.org no longer shows the old chat. Until the redirect rule is live, that host shows the site's home page.
-5. After each deploy, purge the pipeline cache from the console, or with `scw edge-services purge-request create`. Pages carry `max-age=300`, but Edge Services keeps its own copy until it is purged.
+1. Set the pipeline's DNS stage to `www.opensourceeurope.org`, with a managed TLS certificate.
+2. After each deploy, purge the pipeline cache from the console, or with `scw edge-services purge-request create`. Pages carry `max-age=300`, but Edge Services keeps its own copy until it is purged.
 
 ### Function
 
@@ -194,7 +188,7 @@ The site reuses the pipeline that serves ask.opensourceeurope.org today (`ose-kn
 
    | Name | Value |
    |---|---|
-   | `ALLOWED_ORIGINS` | The site origin, for example `https://opensourceeurope.org`. Comma-separated for more than one |
+   | `ALLOWED_ORIGINS` | The site origin, for example `https://www.opensourceeurope.org`. Comma-separated for more than one |
    | `SITE_URL` | The site URL. The function uses it to accept no-JavaScript posts by their `Referer` |
    | `SMTP_HOST` | `smtp.protonmail.ch`. This is the default, so you can leave it out |
    | `SMTP_PORT` | `587`. This is the default, so you can leave it out |
@@ -220,8 +214,8 @@ This command sets all the variables at once. `read -rs` keeps the token out of y
 ```bash
 read -rs SMTP_TOKEN
 scw function function update <function-id> region=pl-waw \
-  environment-variables.ALLOWED_ORIGINS=https://opensourceeurope.org \
-  environment-variables.SITE_URL=https://opensourceeurope.org \
+  environment-variables.ALLOWED_ORIGINS=https://www.opensourceeurope.org,https://opensourceeurope.org \
+  environment-variables.SITE_URL=https://www.opensourceeurope.org \
   environment-variables.SMTP_HOST=smtp.protonmail.ch \
   environment-variables.SMTP_PORT=587 \
   environment-variables.SMTP_USER=home@opensourceeurope.org \
@@ -278,25 +272,26 @@ Compare the listing with the files in a fresh `dist/_astro/` and delete only fil
 These need an answer before launch.
 
 - Directory URLs: check that `/about/` resolves to `/about/index.html` through Edge Services. The bucket website endpoint does this on its own. If the pipeline does not, add a rewrite or use the website endpoint as the origin.
-- Bare domain: `opensourceeurope.org` has its DNS at OVH, which does not allow an ALIAS or CNAME at the apex. Either move DNS to a provider with ALIAS records and keep `https://opensourceeurope.org` as the canonical address, or serve the site from `www` and change `site` in `astro.config.mjs`.
+- Bare domain: settled. Edge Services serves only subdomains, so the site is served from `www`, and `site` in `astro.config.mjs` is `https://www.opensourceeurope.org`. A Scaleway function answers `opensourceeurope.org` with a 301 to `www`. See "DNS records for the site".
 - SMTP port: confirm that the function can reach `smtp.protonmail.ch` on port 587. Scaleway blocks outbound port 25, but should allow 587. The contact form check in "First release" settles this.
 - Deploy leaves console variables alone: confirm with a real run that `scw function deploy` keeps the environment variables set in the console. The conclusion so far comes from reading the CLI source.
 - CLI authentication: confirm that the `scw` commands in the workflow work with only the access key, secret key and region. They may also need a project or organization ID.
 - Purge command: confirm the exact `scw edge-services purge-request create` arguments, or use the console, and decide whether to add the purge to the workflow.
-- Edge Services plan: settled. The site and ask.opensourceeurope.org share the one existing pipeline, so no second pipeline is needed.
+- Edge Services plan: settled. The site uses the one existing pipeline.
 
 - Content types: `aws s3 sync` guesses each `Content-Type` from the file extension with Python's `mimetypes`. After the first deploy, run `aws s3api head-object` on one `.avif` and one `.woff2` file. If either comes back as `binary/octet-stream`, add `--content-type` with `--exclude`/`--include` filters for those extensions to the sync step. The sync step already skips `llms.txt`, `llms-full.txt` and the Markdown copies of the docs pages (`docs*.md`), and a third pass uploads them with `charset=utf-8`.
 - Deploy gating: the site and contact function deploy jobs run only on `main` and use the GitHub environment `production`. GitHub creates the environment on the first run. Add a protection rule to it if you want a manual approval. Do not move the Scaleway secrets and variables out of the repository settings, because jobs without an environment need them (see "Keep the Scaleway values at repository level"). Require the checks listed under "Required checks" on `main`, so a red commit does not release.
 
 ## DNS records for the site
 
-These are added at OVH, where the DNS of `opensourceeurope.org` is. Fill in the values from the Scaleway console after the one-time setup.
+The domain `opensourceeurope.org` was registered at OVH and moved to the Scaleway registrar in November 2026, so its DNS zone is in Scaleway Domains and DNS. Scaleway hosts the DNS of a domain it registers for free. It charges for the zone of a domain registered elsewhere.
 
 | Record | Name | Value |
 |---|---|---|
 | CNAME | `www` | The Edge Services pipeline endpoint |
-| TXT or CNAME | As the console shows | The TLS certificate validation record for the pipeline, if Edge Services asks for one |
-| ALIAS, or CNAME at the apex | `@` | Not possible at OVH. See "Bare domain" under Open checks |
+| ALIAS | `@` | The domain of the function `root-redirect`, which answers every request with a 301 to the same path on `https://www.opensourceeurope.org` |
+
+Edge Services cannot serve a root domain, and OVH DNS has no ALIAS record, so the root domain needs the Scaleway zone. A Scaleway function has no fixed IP, so an `A` record cannot point to it. The zone also holds the mail records for Proton (MX, SPF, three DKIM CNAMEs, DMARC and the verification TXT), the Google verification CNAME and the `apply` and `automation` records. Copy them before you change a name server.
 
 The contact form needs no email records. It sends through Proton, which the domain's SPF record already allows.
 
