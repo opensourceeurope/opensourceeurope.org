@@ -272,7 +272,7 @@ Compare the listing with the files in a fresh `dist/_astro/` and delete only fil
 These need an answer before launch.
 
 - Directory URLs: check that `/about/` resolves to `/about/index.html` through Edge Services. The bucket website endpoint does this on its own. If the pipeline does not, add a rewrite or use the website endpoint as the origin.
-- Bare domain: settled. Edge Services serves only subdomains, so the site is served from `www`, and `site` in `astro.config.mjs` is `https://www.opensourceeurope.org`. A Scaleway function answers `opensourceeurope.org` with a 301 to `www`. See "DNS records for the site".
+- Bare domain: settled. Edge Services serves only subdomains, so the site is served from `www`, and `site` in `astro.config.mjs` is `https://www.opensourceeurope.org`. The n8n server's Caddy answers `opensourceeurope.org` with a 301 to `www`. See "DNS records for the site".
 - SMTP port: confirm that the function can reach `smtp.protonmail.ch` on port 587. Scaleway blocks outbound port 25, but should allow 587. The contact form check in "First release" settles this.
 - Deploy leaves console variables alone: confirm with a real run that `scw function deploy` keeps the environment variables set in the console. The conclusion so far comes from reading the CLI source.
 - CLI authentication: confirm that the `scw` commands in the workflow work with only the access key, secret key and region. They may also need a project or organization ID.
@@ -284,14 +284,16 @@ These need an answer before launch.
 
 ## DNS records for the site
 
-The domain `opensourceeurope.org` was registered at OVH and moved to the Scaleway registrar in November 2026, so its DNS zone is in Scaleway Domains and DNS. Scaleway hosts the DNS of a domain it registers for free. It charges for the zone of a domain registered elsewhere.
+The domain `opensourceeurope.org` is registered at OVH, and its DNS is at OVH.
 
 | Record | Name | Value |
 |---|---|---|
 | CNAME | `www` | The Edge Services pipeline endpoint |
-| ALIAS | `@` | The domain of the function `root-redirect`, which answers every request with a 301 to the same path on `https://www.opensourceeurope.org` |
+| A and AAAA | `@` | The n8n server, `151.115.35.168` and `2001:bc8:1e80:268e:dc00:ff:fed9:1aa6`. Its Caddy answers every request with a 301 to the same path on `https://www.opensourceeurope.org` and gets its own certificate. The site block is in `automation/infra/Caddyfile` of `opensourceeurope/community` |
 
-Edge Services cannot serve a root domain, and OVH DNS has no ALIAS record, so the root domain needs the Scaleway zone. A Scaleway function has no fixed IP, so an `A` record cannot point to it. The zone also holds the mail records for Proton (MX, SPF, three DKIM CNAMEs, DMARC and the verification TXT), the Google verification CNAME and the `apply` and `automation` records. Copy them before you change a name server.
+Edge Services cannot serve a root domain, OVH DNS has no ALIAS record, and a Scaleway function has no fixed IP, so the root domain points to the n8n server, which has a fixed IP and already runs Caddy. The redirect needs that server to be up. The root records have a 60-second TTL. The zone also holds the mail records for Proton (MX, SPF, three DKIM CNAMEs, DMARC and the verification TXT), the Google Search Console and Google verification records, and the `apply` and `automation` records.
+
+A move to the Scaleway registrar, ordered on 13 November 2026, failed with the status `xfer_error`: the owner contact was sent without a phone number, which Scaleway requires. Only Scaleway support can clear it. A Scaleway zone holds a copy of every OVH record. If the name servers ever move to `ns0.dom.scw.cloud` and `ns1.dom.scw.cloud`, check that zone against OVH first, because it is not kept in sync by itself.
 
 The contact form needs no email records. It sends through Proton, which the domain's SPF record already allows.
 
