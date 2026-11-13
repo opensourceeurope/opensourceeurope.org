@@ -160,6 +160,6 @@ Where each page lives:
 - Ask page (`/ask/`): `src/content/pages/ask.yaml`. The chat texts are under `chat` in `src/content/settings/site.yaml`.
 - Blog posts (`/blog/`): `src/content/blog/<slug>.md`, one file per post. The file name is the last part of the URL. The front matter needs `title`, `description` and `date`. `draft: true` keeps a post out of the build and the feed. The blog texts, such as the discussion link, are under `blog` in `src/content/settings/site.yaml`.
 - Documentation (`/docs/`): one Markdown file per page in `docs/`. The sidebar, the page title suffix, the "Contents" button label and the "Edit page" note, which docs pages and blog posts share, are in `src/content/settings/docs.yaml`. The docs use the site header from `site.yaml`. The skill in `.claude/skills/docs-authoring/` covers page format, preview and checks.
-- Header, footer, navigation, the consent banner text, the site name and the default share image: `src/content/settings/site.yaml`.
+- Header, footer, navigation, the consent banner text, the site name, the default share image and the organization details that search engines and AI tools read (`seo`): `src/content/settings/site.yaml`.
 - The summary and the AI tools list in `/llms.txt`: `llms` in `src/content/settings/site.yaml`. The page and docs lists build from the pages themselves.
 - Uploaded images: `src/assets/uploads/` and `public/app/uploads/`. Theme images, such as backgrounds: `src/assets/theme/`.
