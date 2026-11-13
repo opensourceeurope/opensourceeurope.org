@@ -103,6 +103,8 @@ footer:
           href: /blog/
         - label: RSS feed
           href: /rss.xml
+        - label: Website source code
+          href: https://github.com/opensourceeurope/opensourceeurope.org
         - label: Contact
           href: /contact/
     - title: Contact
