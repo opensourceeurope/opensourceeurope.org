@@ -8,6 +8,7 @@ import { getImage } from 'astro:assets';
 import Default from '@astrojs/starlight/components/SkipLink.astro';
 import ConsentBanner from '../ConsentBanner.astro';
 import AskPanel from '../chat/AskPanel.astro';
+import WebMcp from '../WebMcp.astro';
 import glow from '../../assets/theme/webp/bg-hero-w-home.webp';
 import { loadSettings } from '../../lib/site';
 
@@ -17,6 +18,7 @@ const glowImage = await getImage({ src: glow, width: 1684, format: 'webp' });
 
 <ConsentBanner consent={settings.consent} />
 <AskPanel settings={settings} />
+<WebMcp />
 <div class="docs-glow" style={`--docs-glow: url('${glowImage.src}')`} aria-hidden="true"></div>
 <Default />
 

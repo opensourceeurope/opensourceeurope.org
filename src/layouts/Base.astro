@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import ConsentBanner from '../components/ConsentBanner.astro';
 import Footer from '../components/Footer.astro';
 import AskPanel from '../components/chat/AskPanel.astro';
+import WebMcp from '../components/WebMcp.astro';
 import { loadSettings } from '../lib/site';
 import type { Seo } from '../lib/seo';
 
@@ -37,5 +38,6 @@ const settings = await loadSettings();
     </main>
     {footer && <Footer settings={settings} />}
     {Astro.url.pathname !== '/ask/' && <AskPanel settings={settings} />}
+    <WebMcp />
   </body>
 </html>

@@ -219,6 +219,16 @@ const settings = defineCollection({
             full_description: z.string().min(1),
             // Before the address of each page in the Markdown copies, as in "Source: https://...".
             source_label: z.string().min(1),
+            // Example questions in /.well-known/ai-catalog.json, so agent registries know what OSE answers.
+            representative_queries: z.array(z.string().min(1)).min(2).max(5),
+          })
+          .strict(),
+        // The tools that a browser agent can call on every page through WebMCP (src/components/WebMcp.astro).
+        webmcp: z
+          .object({
+            list_pages_description: z.string().min(1),
+            ask_description: z.string().min(1),
+            question_description: z.string().min(1),
           })
           .strict(),
         // Texts of the blog at /blog/ and of its RSS feed.
