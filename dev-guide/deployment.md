@@ -284,7 +284,7 @@ These need an answer before launch.
 
 ## DNS records for the site
 
-The domain `opensourceeurope.org` was registered at OVH and moved to the Scaleway registrar in November 2026, so its DNS zone is in Scaleway Domains and DNS. Scaleway hosts the DNS of a domain it registers for free. It charges for the zone of a domain registered elsewhere.
+The domain `opensourceeurope.org` is registered at OVH, and its DNS is at OVH. Its move to the Scaleway registrar, ordered on 13 November 2026, failed and waits for Scaleway support. A Scaleway zone already holds a copy of every OVH record, so the name servers can move to `ns0.dom.scw.cloud` and `ns1.dom.scw.cloud` once support confirms it. Keep both zones the same until then. The `www` CNAME below is live at OVH. The `@` ALIAS and the `root-redirect` function come after the move; until then the root domain still points to the old WordPress server. Scaleway hosts the DNS of a domain it registers for free. It charges for the zone of a domain registered elsewhere.
 
 | Record | Name | Value |
 |---|---|---|
