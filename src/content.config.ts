@@ -155,8 +155,16 @@ const settings = defineCollection({
         seo: z
           .object({
             site_name: z.string().min(1),
+            alternate_name: z.string().min(1).optional(),
+            // What OSE is, in one or two sentences. Search engines and AI tools read it from the JSON-LD.
+            description: z.string().min(1).optional(),
             logo: z.string().startsWith('/'),
             default_og_image: z.string().startsWith('/'),
+            email: z.email().optional(),
+            founding_date: z.string().regex(/^\d{4}(-\d{2}(-\d{2})?)?$/).optional(),
+            address: z.object({ locality: z.string().min(1), country: z.string().length(2) }).strict().optional(),
+            // Other profiles of OSE, so search engines and AI tools connect them to the site.
+            same_as: z.array(z.url()).optional(),
           })
           .strict(),
         nav: z.array(link.extend({ icon: z.literal('ai').optional() }).strict()),

@@ -4,6 +4,9 @@ import starlight from '@astrojs/starlight';
 import { readFileSync } from 'node:fs';
 import { parseDocsSettings, starlightSidebar } from './src/lib/docs-settings.mjs';
 import { docsGitInfo } from './src/lib/docs-git-dates.mjs';
+import { sitemapDates } from './src/lib/sitemap-dates.mjs';
+
+const lastmod = sitemapDates();
 
 const docs = parseDocsSettings(readFileSync(new URL('./src/content/settings/docs.yaml', import.meta.url), 'utf8'));
 
@@ -43,7 +46,14 @@ export default defineConfig({
   // Legal text is copied from the live site; keep its quotes as they are.
   markdown: { smartypants: false },
   integrations: [
-    sitemap({ filter: (page) => !page.endsWith('/404/') && !page.endsWith('.html') }),
+    sitemap({
+      filter: (page) => !page.endsWith('/404/') && !page.endsWith('.html'),
+      // <lastmod> for the docs, the blog posts and the legal pages (src/lib/sitemap-dates.mjs).
+      serialize: (item) => {
+        const date = lastmod.get(new URL(item.url).pathname);
+        return date ? { ...item, lastmod: date } : item;
+      },
+    }),
     starlight({
       title: docs.title,
       // The site has its own 404 page.
