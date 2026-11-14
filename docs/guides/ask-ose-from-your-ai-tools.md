@@ -12,7 +12,7 @@ All three ways start the knowledge base with `uvx`, so install [uv](https://docs
 Add the server to any MCP client, such as Claude Code, Cursor or Claude Desktop. In Claude Code, run this command:
 
 ```bash
-claude mcp add ose-knowledge -- uvx ose-knowledge-mcp==0.14.18
+claude mcp add ose-knowledge -- uvx ose-knowledge-mcp==0.14.19
 ```
 
 For another client, put this in the client's configuration:
@@ -23,7 +23,7 @@ For another client, put this in the client's configuration:
     "ose-knowledge": {
       "type": "stdio",
       "command": "uvx",
-      "args": ["ose-knowledge-mcp==0.14.18"]
+      "args": ["ose-knowledge-mcp==0.14.19"]
     }
   }
 }
