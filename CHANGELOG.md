@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.14.66](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.14.65...v0.14.66) (2026-11-14)
+
+
+### Bug Fixes
+
+* **knowledge:** weekly OSE knowledge refresh ([#431](https://github.com/opensourceeurope/opensourceeurope.org/issues/431)) ([f7ad09b](https://github.com/opensourceeurope/opensourceeurope.org/commit/f7ad09b12c3073d448a79f047cad608b76e757a5))
+
 ## [0.14.65](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.14.64...v0.14.65) (2026-11-14)
 
 
