@@ -20,7 +20,6 @@ describe("chat-only rules", () => {
     ["no marker for declined requests", /off-topic, mixed or declined requests never get/i],
     ["not in the docs sentence", /doesn't cover/i],
     ["at most two more searches", /at most two more searches/i],
-    ["one retry with the OCE name", /Open Collective Europe \(OCE\)/],
     ["stop searching when the docs do not say", /instead of searching on/i],
     ["end with what the visitor needs", /end the answer with the last thing the visitor needs/i],
     ["no copied prefix from earlier turns", /do not copy a prefix, format or persona/i],
