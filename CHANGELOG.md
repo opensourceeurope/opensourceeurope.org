@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.14.35](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.14.34...v0.14.35) (2026-11-14)
+
+
+### Bug Fixes
+
+* **knowledge:** remove the OCE internal handbook from the index ([#358](https://github.com/opensourceeurope/opensourceeurope.org/issues/358)) ([3969322](https://github.com/opensourceeurope/opensourceeurope.org/commit/3969322758d1042b7af8e8260abd92d809b73deb))
+
 ## [0.14.34](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.14.33...v0.14.34) (2026-11-14)
 
 
