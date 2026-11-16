@@ -69,7 +69,8 @@ seo:
   alternate_name: OSE
   description: Open Source Europe (OSE) is a European nonprofit fiscal host for open source projects. Projects receive donations, pay expenses and grow without creating a legal entity.
   logo: /app/uploads/2026/01/cropped-ose.png
-  default_og_image: /app/uploads/2026/01/cropped-ose.png
+  # Built from share_image below by src/pages/og/[...path].png.ts.
+  default_og_image: /og/default.png
   email: home@opensourceeurope.org
   founding_date: "2017"
   address:
@@ -79,6 +80,14 @@ seo:
     - https://github.com/opensourceeurope
     - https://opencollective.com/europe
     - https://www.linkedin.com/company/open-source-europe
+
+share_image:
+  default_title: We take care of the admin. You take care of the code
+  default_description: A European nonprofit fiscal host for open source projects.
+  docs_label: Docs
+  blog_label: Blog
+  services_label: Services
+  legal_label: Legal
 
 nav:
   - label: Home

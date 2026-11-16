@@ -24,3 +24,15 @@ subset() {
 }
 subset latin "$LATIN"
 subset latin-ext "$LATIN_EXT"
+
+# Static TTF files for the share images that the build draws in src/lib/og.ts. The renderer
+# reads neither woff2 nor variable fonts, so each weight is its own file, Latin and Latin
+# Extended in one.
+mkdir -p "$root/src/assets/fonts"
+for weight in 500 700; do
+  uvx --from fonttools==4.60.1 fonttools varLib.instancer "$tmp/Manrope.ttf" "wght=$weight" \
+    --output="$tmp/Manrope-$weight.ttf"
+  uvx --from fonttools==4.60.1 pyftsubset "$tmp/Manrope-$weight.ttf" \
+    --unicodes="$LATIN,$LATIN_EXT" --layout-features='*' \
+    --output-file="$root/src/assets/fonts/Manrope-$weight.ttf"
+done

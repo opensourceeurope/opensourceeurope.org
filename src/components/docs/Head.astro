@@ -1,18 +1,19 @@
 ---
 // Starlight's head plus what the rest of the site has: the `js` class, the
-// default share image, the organisation and website JSON-LD, a link to the
+// share image, the organisation and website JSON-LD, a link to the
 // Markdown copy of the page and a link to the blog's RSS feed. The blog pages
 // use this head too.
 import Default from '@astrojs/starlight/components/Head.astro';
 import { organizationJsonLd, websiteJsonLd } from '../../lib/seo';
 import { loadSettings } from '../../lib/site';
+import { ogImageFor } from '../../lib/og-pages';
 import { markdownUrl } from '../../lib/llms';
 import { docsPages } from '../../lib/llms-content';
 
 const { seo, blog } = await loadSettings();
 const jsonLd = [organizationJsonLd(Astro.site!, seo), websiteJsonLd(Astro.site!, seo)];
-// Starlight sets no share image, so docs pages use the site's default.
-const ogImage = new URL(seo.default_og_image, Astro.site!).href;
+// Starlight sets no share image, so each docs page and blog post uses the one the build draws for it.
+const ogImage = new URL(await ogImageFor(Astro.url.pathname), Astro.site!).href;
 // The Markdown copy of this page for AI tools. Every page in the sidebar has one.
 const pageUrl = new URL(Astro.url.pathname, Astro.site!).href;
 const hasCopy = (await docsPages(Astro.site!)).some((page) => new URL(page.url).pathname === Astro.url.pathname);
@@ -25,6 +26,8 @@ const markdown = hasCopy ? markdownUrl(pageUrl) : undefined;
 </script>
 <Default />
 <meta property="og:image" content={ogImage} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 <meta name="twitter:image" content={ogImage} />
 {markdown && <link rel="alternate" type="text/markdown" href={markdown} />}
 <link rel="alternate" type="application/rss+xml" title={blog.title} href="/rss.xml" />

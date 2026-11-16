@@ -167,6 +167,19 @@ const settings = defineCollection({
             same_as: z.array(z.url()).optional(),
           })
           .strict(),
+        // The texts on the share images that the build draws for each page (src/lib/og.ts).
+        share_image: z
+          .object({
+            // The heading of the generic image, which the home page and pages without their own image use.
+            default_title: z.string().min(1),
+            default_description: z.string().min(1),
+            // The label in the corner of the image of each part of the site.
+            docs_label: z.string().min(1),
+            blog_label: z.string().min(1),
+            services_label: z.string().min(1),
+            legal_label: z.string().min(1),
+          })
+          .strict(),
         nav: z.array(link.extend({ icon: z.literal('ai').optional() }).strict()),
         footer: z
           .object({
