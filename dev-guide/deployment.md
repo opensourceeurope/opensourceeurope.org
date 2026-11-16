@@ -168,6 +168,12 @@ The site is served from the bucket `opensourceeurope-site` in `pl-waw`. Set both
    - public read (`s3:GetObject`) on all objects for `"Principal": "*"`.
 
    On Scaleway, a bucket policy replaces the default access. A principal the policy does not list loses access, so the deploy application must be in it, or the site deploy fails with "Access Denied".
+4. Add a CORS rule that lets any origin read the files, so browser agents can fetch `/.well-known/ai-catalog.json` and the other files for AI tools. The AI catalog spec asks for `Access-Control-Allow-Origin: *`. Edge Services passes the header through, also on cached responses.
+
+   ```bash
+   aws s3api put-bucket-cors --bucket opensourceeurope-site --endpoint-url https://s3.pl-waw.scw.cloud \
+     --cors-configuration '{"CORSRules":[{"AllowedOrigins":["*"],"AllowedMethods":["GET","HEAD"],"AllowedHeaders":["*"],"MaxAgeSeconds":3600}]}'
+   ```
 
 ### Edge Services
 
