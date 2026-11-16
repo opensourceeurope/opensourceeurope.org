@@ -21,8 +21,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # A pull request that touches only files the pages cannot depend on skips the
-  # build and the audits. The list below is of paths to skip, so a new folder
+  # A pull request that touches only files the pages cannot depend on, or a
+  # release-please pull request, skips the build and the audits. The list below is of paths to skip, so a new folder
   # is audited until someone adds it here. A push to main always runs.
   changes:
     runs-on: ubuntu-latest
@@ -41,9 +41,17 @@ jobs:
           EVENT: ${{ github.event_name }}
           BASE: ${{ github.event.pull_request.base.sha }}
           HEAD: ${{ github.event.pull_request.head.sha }}
+          HEAD_REF: ${{ github.head_ref }}
         run: |
           if [ "$EVENT" != pull_request ]; then
             echo "site=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          # A release-please pull request only changes version strings and the changelog.
+          # Every change it releases was audited on its own pull request and on main.
+          if [ "$HEAD_REF" = release-please--branches--main ]; then
+            echo "Release pull request, no audit needed."
+            echo "site=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           # A failed diff stops the step here, so it never reads as "nothing changed".

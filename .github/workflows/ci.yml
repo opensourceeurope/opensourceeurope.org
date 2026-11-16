@@ -1,7 +1,7 @@
 # Two jobs that run side by side. ci: type check, unit tests, the contact
 # function bundle, the licence check and the co-author check. e2e: Playwright
-# with the accessibility scan. Its web server builds the site, so the build is
-# not a separate step.
+# with the accessibility scan, skipped on release-please pull requests. Its web
+# server builds the site, so the build is not a separate step.
 name: ci
 
 on:
@@ -59,6 +59,10 @@ jobs:
           bash scripts/check-coauthors.sh "$BASE" "$HEAD"
 
   e2e:
+    # A release-please pull request only changes version strings and the changelog.
+    # Every change it releases passed e2e on its own pull request and on main. A skipped
+    # job counts as passed for the required check, so the release still merges itself.
+    if: github.head_ref != 'release-please--branches--main'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:

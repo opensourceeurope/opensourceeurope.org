@@ -118,10 +118,10 @@ The push to `main` starts `release.yml`. release-please opens a release pull req
 Add branch protection on `main` after the first push. It requires these checks:
 
 - `ci` (type check, unit tests, licences and the co-author check)
-- `e2e` (Playwright and the accessibility scan, the second job of `ci.yml`)
+- `e2e` (Playwright and the accessibility scan, the second job of `ci.yml`; skipped on release-please pull requests, which counts as passed)
 - `validate` (the job of `knowledge-ci.yml`)
 - `commitlint`
-- `lighthouse` (the gate job of `lighthouse.yml`; it passes without auditing when a pull request changes no file the pages depend on)
+- `lighthouse` (the gate job of `lighthouse.yml`; it passes without auditing when a pull request changes no file the pages depend on, or comes from release-please)
 - `links`
 - the pull request body check (`check`, from `check-pr-body.yml`)
 
