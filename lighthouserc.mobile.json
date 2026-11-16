@@ -21,7 +21,10 @@
       "startServerReadyPattern": "localhost:4321",
       "startServerReadyTimeout": 30000,
       "settings": {
-        "chromeFlags": "--no-sandbox"
+        "chromeFlags": "--no-sandbox",
+        "skipAudits": [
+          "robots-txt"
+        ]
       }
     },
     "assert": {

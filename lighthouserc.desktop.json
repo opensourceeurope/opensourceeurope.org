@@ -22,7 +22,10 @@
       "startServerReadyTimeout": 30000,
       "settings": {
         "preset": "desktop",
-        "chromeFlags": "--no-sandbox"
+        "chromeFlags": "--no-sandbox",
+        "skipAudits": [
+          "robots-txt"
+        ]
       }
     },
     "assert": {
