@@ -4,8 +4,7 @@ All CI, release and deploy automation is in `.github/workflows/`. Content refres
 continuously. Shipping is release-gated: deploys happen only when a release is cut.
 
 - Knowledge refresh (`refresh.yml`): runs every Saturday 03:00 UTC, and on every push to `main` that changes `docs/` or
-  `.opencrane/extensions.py`. OpenCrane reads the OSE docs from `docs/`. It re-fetches the
-  internal space's `llms-full.txt` from GitBook and its per-page `llms.txt` index (used for citation links),
+  `.opencrane/extensions.py`. OpenCrane reads the OSE docs from `docs/`
   and regenerates `chunks.json`. Only when the chunks changed, it rebuilds the committed vector index
   (`embeddings.json` + `milvus.db`) via `scripts/knowledge/ensure-index.sh`. The workflow then opens a
   pull request with any changes, as a `fix:`, so release-please rolls the refreshed content into the release PR. You

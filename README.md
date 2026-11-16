@@ -4,7 +4,7 @@ The source of the [Open Source Europe](https://www.opensourceeurope.org) website
 
 ## Knowledge base
 
-The repository also holds the OSE knowledge base. It searches the OSE docs and internal operations docs and answers questions about them with cited sources. It is built with [OpenCrane](https://github.com/derberg/OpenCrane). You can use it in the chat at [opensourceeurope.org/ask/](https://opensourceeurope.org/ask/), or connect it to your AI assistant as an MCP server or a plugin for Claude Code and Codex. To set it up, see [Ask OSE from your AI tools](https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/).
+The repository also holds the OSE knowledge base. It searches the OSE docs and answers questions about them with cited sources. It is built with [OpenCrane](https://github.com/derberg/OpenCrane). You can use it in the chat at [opensourceeurope.org/ask/](https://opensourceeurope.org/ask/), or connect it to your AI assistant as an MCP server or a plugin for Claude Code and Codex. To set it up, see [Ask OSE from your AI tools](https://opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/).
 
 ## Contribute to the site
 

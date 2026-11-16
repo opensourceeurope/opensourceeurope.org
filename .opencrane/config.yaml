@@ -11,9 +11,3 @@ sources:
     docs_path: docs
     docs_url: https://opensourceeurope.org/docs
     trailing_slash: true
-  oc-europe-internal-doc:
-    url: https://docs.opencollective.com/oc-europe-internal-doc/llms-full.txt
-    docs_path: ''
-    manual: true
-    type: llmstxt
-    docs_url: https://docs.opencollective.com/oc-europe-internal-doc
