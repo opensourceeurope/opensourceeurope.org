@@ -1,5 +1,6 @@
 // The share image of every page, read from the content collections. The home page and the
-// pages with `noindex` have no card of their own and use the generic image.
+// pages with `noindex` have no card of their own and use the generic image. A page that
+// sets `seo.ogImage` uses that image instead.
 import { getCollection } from 'astro:content';
 import { loadSettings } from './site';
 import { loadPosts, postPath } from './blog';
@@ -13,9 +14,10 @@ export function ogCards(): Promise<OgCard[]> {
   cache ??= (async () => {
     const { seo: siteSeo, share_image: labels, blog } = await loadSettings();
     const title = (seoTitle: string) => pageTitle(seoTitle, siteSeo.site_name);
-    type Seo = { title: string; description: string; noindex?: boolean };
+    type Seo = { title: string; description: string; ogImage?: string; noindex?: boolean };
+    // A page with its own `seo.ogImage` needs no drawn image.
     const page = (path: string, seo: Seo, eyebrow?: string): OgCard[] =>
-      seo.noindex ? [] : [{ path, eyebrow, title: title(seo.title), description: seo.description }];
+      seo.noindex || seo.ogImage ? [] : [{ path, eyebrow, title: title(seo.title), description: seo.description }];
 
     const pages = (await getCollection('pages'))
       .filter((entry) => entry.id !== 'home')
@@ -30,7 +32,8 @@ export function ogCards(): Promise<OgCard[]> {
       title: post.data.title,
       description: post.data.description,
     }));
-    const docs = (await getCollection('docs')).map((entry) => ({
+    // Starlight builds draft pages in `npm run dev` only, so their images follow the same rule.
+    const docs = (await getCollection('docs', (entry) => import.meta.env.DEV || !entry.data.draft)).map((entry) => ({
       path: `/${entry.id}/`,
       eyebrow: labels.docs_label,
       title: entry.data.title,

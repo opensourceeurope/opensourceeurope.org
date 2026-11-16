@@ -30,8 +30,14 @@ const jsonLd = [organizationJsonLd(site, siteSeo), websiteJsonLd(site, siteSeo),
 <meta property="og:title" content={seo.title} />
 <meta property="og:description" content={seo.description} />
 <meta property="og:image" content={ogImage} />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
+{
+  !seo.ogImage && (
+    <>
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+    </>
+  )
+}
 {!seo.noindex && <meta property="og:url" content={canonical} />}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={seo.title} />

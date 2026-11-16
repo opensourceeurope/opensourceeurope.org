@@ -8,6 +8,7 @@ import { blogSidebar, loadPosts, postPath, type Post } from '../../lib/blog';
 import { formatDate, isoDate } from '../../lib/blog-format';
 import { loadSettings } from '../../lib/site';
 import { blogPostingJsonLd } from '../../lib/seo';
+import { ogImageFor } from '../../lib/og-pages';
 
 export async function getStaticPaths() {
   const posts = await loadPosts();
@@ -26,14 +27,14 @@ interface Props {
 }
 
 const { post, posts, newer, older } = Astro.props;
-const { blog, seo } = await loadSettings();
+const { blog } = await loadSettings();
 const { Content, headings } = await render(post);
 const { title, description, date, updated, author, discussion } = post.data;
 const { discuss } = blog;
 const DISCUSS_ID = 'discuss-this-post';
 const link = (other?: Post) => (other ? { link: postPath(other), label: other.data.title } : false);
 const url = new URL(postPath(post), Astro.site).href;
-const jsonLd = blogPostingJsonLd(Astro.site!, url, seo.default_og_image, post.data);
+const jsonLd = blogPostingJsonLd(Astro.site!, url, await ogImageFor(postPath(post)), post.data);
 ---
 
 <StarlightPage
