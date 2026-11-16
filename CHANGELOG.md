@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.15.17...v0.16.0) (2026-11-16)
+
+
+### Features
+
+* draw a share image for every page ([#477](https://github.com/opensourceeurope/opensourceeurope.org/issues/477)) ([905b1ab](https://github.com/opensourceeurope/opensourceeurope.org/commit/905b1ab1bf6a758309fcfd4971a795ac7965f9c1))
+
 ## [0.15.17](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.15.16...v0.15.17) (2026-11-16)
 
 
