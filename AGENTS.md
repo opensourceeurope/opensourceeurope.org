@@ -52,7 +52,7 @@ The primary checkout is read-only for edits, and nothing is committed to `main`.
 
 ## Quality gates
 
-Before you hand off a change, these must pass (the commands are under Commands above): type check and build, unit tests, end-to-end tests, the accessibility scan on every route, the licence check, and `bash scripts/test-harness.sh`.
+Before you hand off a change, these must pass (the commands are under Commands above): type check and build, unit tests, end-to-end tests, the accessibility scan on every route, the licence check, and `bash scripts/test-harness.sh`. When the change touches the pages, `public/` or the head, also run the Lighthouse budgets, which CI enforces at a score of 1.
 
 ## Global constraints
 
