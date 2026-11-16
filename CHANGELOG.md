@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.15.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.14.69...v0.15.0) (2026-11-16)
+
+
+### Features
+
+* SEO structured data and agent discovery for search and AI tools ([#301](https://github.com/opensourceeurope/opensourceeurope.org/issues/301)) ([063de92](https://github.com/opensourceeurope/opensourceeurope.org/commit/063de9215c6443003ed9c6826f3c2b50e03f7c15))
+
+
+### Bug Fixes
+
+* **knowledge:** weekly OSE knowledge refresh ([#440](https://github.com/opensourceeurope/opensourceeurope.org/issues/440)) ([a4d3c90](https://github.com/opensourceeurope/opensourceeurope.org/commit/a4d3c90afe1fb89d676af10edc33bdfc3f588a5b))
+
 ## [0.14.69](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.14.68...v0.14.69) (2026-11-16)
 
 
