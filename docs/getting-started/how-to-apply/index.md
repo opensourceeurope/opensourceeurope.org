@@ -57,7 +57,7 @@ You can edit all this information later, so it does not need to be perfect.
 After you apply on Open Collective, OSE emails you a link to the OSE application form. The form takes about ten minutes and asks for the detail that the Open Collective application does not cover:
 
 * What the project does, and where its work happens in the open
-* Which licence it uses
+* Which license it uses
 * Whether it is already a legal entity
 * What it expects to raise and to spend
 
@@ -70,7 +70,7 @@ The following timeline applies when the form does not come back:
 
 A closed application is not a rejection of the project. To resume it, contact OSE at any time.
 
-OSE aims to give a first response within seven business days after it receives your completed form. The review may take longer if we need more information. This does not guarantee acceptance, or that the review ends within seven days.
+OSE aims to give a first response within seven business days after it receives your completed form. The review may take longer if OSE needs more information. This does not guarantee acceptance, or that the review ends within seven days.
 
 After acceptance, you can start to receive contributions. OSE offers an optional welcome call. Contributions can start without waiting for it.
 

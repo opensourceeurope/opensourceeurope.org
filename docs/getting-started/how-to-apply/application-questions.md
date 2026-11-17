@@ -37,21 +37,21 @@ Prepare short answers (about 250 characters) to the following questions:
 
 Belgian anti-money-laundering rules require OSE to know who manages each Collective's money. Each administrator adds their legal name on Open Collective under Dashboard > Settings > Info, in the Legal name field. Only OSE and Open Collective see it. The public profile can keep a pseudonym.
 
-Each administrator needs a personal Open Collective account with their own email address. An organisation account, or an account named after the Collective, cannot be an administrator.
+Each administrator needs a personal Open Collective account with their own email address. An organization account, or an account named after the Collective, cannot be an administrator.
 
 ***
 
 ## What the team may ask next
 
-The OSE application form covers the project, its licence, its legal status and its budget. Depending on the project, the team may then ask about:
+The OSE application form covers the project, its license, its legal status, and its budget. Depending on the project, the team may then ask about:
 
 * The costs the money will pay for, with a breakdown for a large budget
 * Your expected funders, and the amount you have raised so far
 * The countries of the people and suppliers you will pay, so OSE can check that it can pay them
 * The people who decide how to spend the money, and how the administrators share the work
-* Your reason to use a fiscal host, especially if a company or organisation is already linked to the project
-* The owner of the project's name, domain, code and any equipment it buys
-* The public places of the work, and its licence
+* Your reason to use a fiscal host, especially if a company or organization is already linked to the project
+* The owner of the project's name, domain, code, and any equipment it buys
+* The public places of the work, and its license
 * Your safeguarding measures, if minors take part in your activities
 * Links that show the project's work so far
 

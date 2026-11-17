@@ -9,10 +9,10 @@ Open Source Europe (OSE) welcomes initiatives from around the world that align w
 
 OSE supports both the development of open source and its sustainability. A project does not have to write software to fit. These also belong at OSE:
 
-* A group that runs an instance of open source software, such as a Matrix homeserver, a mail service, a git forge or a mirror
-* A community, an event or an archive connected to open source
+* A group that runs an instance of open source software, such as a Matrix homeserver, a mail service, a git forge, or a mirror
+* A community, an event, or an archive connected to open source
 
-The project's work must use an open licence. For software, use a licence that the [Open Source Initiative](https://opensource.org/licenses) approves. For data and content, use a licence that conforms to the [Open Definition](https://opendefinition.org/licenses/).
+The project's work must use an open license. For software, use a license that the [Open Source Initiative](https://opensource.org/licenses) approves. For data and content, use a license that conforms to the [Open Definition](https://opendefinition.org/licenses/).
 
 An initiative with no connection to open source fits better with OSE's sister host, [Open Collective Europe Foundation](https://opencollective.com/oce-foundation-eur). Civil-society groups and mutual-aid groups are examples. They can apply there instead.
 
