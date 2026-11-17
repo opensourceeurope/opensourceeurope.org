@@ -1,8 +1,8 @@
 [
   {
-    "chunk_id": "ba0f6ff3f06378d63ff9097afb1946bba2d061784ab7b6f7d2e26727efc118ce",
+    "chunk_id": "d8e16b5a4a9a652995834f1dbc93b7337dfee41011328500afa8bb31d8f0463d",
     "chunk_type": "code_snippet",
-    "content": "# Ask OSE from your AI tools > Use it as an MCP server\nAdd the server to any MCP client, such as Claude Code, Cursor or Claude Desktop. In Claude Code, run this command:\n\n```bash\nclaude mcp add ose-knowledge -- uvx ose-knowledge-mcp==0.16.6\n```",
+    "content": "# Ask OSE from your AI tools > Use it as an MCP server\nAdd the server to any MCP client, such as Claude Code, Cursor or Claude Desktop. In Claude Code, run this command:\n\n```bash\nclaude mcp add ose-knowledge -- uvx ose-knowledge-mcp\n```",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Ask OSE from your AI tools > Use it as an MCP server",
@@ -13,12 +13,12 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 71
+    "token_count": 65
   },
   {
-    "chunk_id": "de7fca587510665b8e067ec3ec689172b95fcb0d2fbddb7ad5d087e5250acf29",
+    "chunk_id": "a2d6646af102627a9b299a5d97a2af524e8af8b0da8e1d407e6bbb72e614d2e4",
     "chunk_type": "code_snippet",
-    "content": "# Ask OSE from your AI tools > Use it as an MCP server\nFor another client, put this in the client's configuration:\n\n```json\n{\n  \"mcpServers\": {\n    \"ose-knowledge\": {\n      \"type\": \"stdio\",\n      \"command\": \"uvx\",\n      \"args\": [\"ose-knowledge-mcp==0.16.6\"]\n    }\n  }\n}\n```",
+    "content": "# Ask OSE from your AI tools > Use it as an MCP server\nFor another client, put this in the client's configuration:\n\n```json\n{\n  \"mcpServers\": {\n    \"ose-knowledge\": {\n      \"type\": \"stdio\",\n      \"command\": \"uvx\",\n      \"args\": [\"ose-knowledge-mcp\"]\n    }\n  }\n}\n```",
     "line_start": null,
     "metadata": {
       "breadcrumb_path": "Ask OSE from your AI tools > Use it as an MCP server",
@@ -29,7 +29,7 @@
     },
     "source_file": ".opencrane/llmstxt/llms-full.txt",
     "source_name": "open-source-europe",
-    "token_count": 84
+    "token_count": 78
   },
   {
     "chunk_id": "d1dbd7406d072149a10d1b75c5d946039ff36e856ef63c473ad7d8d011eb93c6",

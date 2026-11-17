@@ -49,5 +49,15 @@ def absolute_docs_links(content: str, file_path: Path, project_name: str) -> str
     return re.sub(r"\n{3,}", "\n\n", content)
 
 
+def unpinned_mcp_package(content: str, file_path: Path, project_name: str) -> str:
+    """Drop the version from `ose-knowledge-mcp==X.Y.Z`.
+
+    Each release rewrites the pin in docs/, and that push runs the refresh.
+    With the version in the index, the refresh opens a `fix:` pull request,
+    which cuts the next release. Without it, a release changes no chunks.
+    """
+    return re.sub(r"\bose-knowledge-mcp==[0-9A-Za-z.+_-]+", "ose-knowledge-mcp", content)
+
+
 class Config(OpenCraneConfig):
-    markdown_preprocessors = [mdx_syntax, starlight_asides, absolute_docs_links]
+    markdown_preprocessors = [mdx_syntax, starlight_asides, absolute_docs_links, unpinned_mcp_package]
