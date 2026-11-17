@@ -9,9 +9,9 @@ Use this guide to prepare and submit a hosting application, and to learn how OSE
 
 1. Read the [eligibility criteria](/docs/getting-started/how-to-apply/eligibility/), [hosting fees](/docs/faq/general-faqs/#how-much-does-it-cost) and [application questions](/docs/getting-started/how-to-apply/application-questions/).
 2. Prepare your project details and at least one administrator. We recommend two.
-3. Follow the application process below, then complete the supplementary form that OSE provides.
+3. Apply on Open Collective, then fill in the OSE application form that OSE emails you. Both steps are needed. An email to OSE does not start an application.
 
-Next, OSE aims to give a first response within seven business days after it receives the completed supplementary form. This is a target for the response, not a deadline for acceptance. After acceptance, continue with [your first steps](/docs/how-it-works/basics/).
+Next, OSE aims to give a first response within seven business days after it receives the completed application form. This is a target for the response, not a deadline for acceptance. After acceptance, continue with [your first steps](/docs/how-it-works/basics/).
 
 ## Join Open Source Europe in just a few steps
 
@@ -24,9 +24,9 @@ Applying to be hosted by Open Source Europe (OSE) is simple and usually takes a 
 Check that your initiative meets these criteria:
 
 * It aligns with OSE's mission and impact areas. Your activities should be charitable and aim to benefit the public.
-* It has at least one administrator. One is enough, and two are recommended for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed.
+* It has at least one administrator. One is enough, and two are recommended for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed. See [Administrators' legal names](/docs/getting-started/how-to-apply/application-questions/#administrators-legal-names).
 * For ordinary fiscal hosting, it has no legal entity of its own. An existing legal entity can instead discuss a Fund for a specific programme with OSE. This depends on OSE's review and agreement on the programme and on how the Fund will operate.
-* It can be based anywhere in the world, not only in Europe.
+* It can be based anywhere in the world, not only in Europe. Its balance is kept in euros. Contributions in other currencies are converted to euros. See [Which currency does a Collective use?](/docs/faq/general-faqs/#which-currency-does-a-collective-use)
 
 Also read our [Terms of Cooperation](/docs/terms-of-service/) and [Community Guidelines](/docs/about/community-guidelines/).
 
@@ -54,11 +54,24 @@ You can edit all this information later, so it does not need to be perfect.
 
 ## After Submission
 
-To complete the review, the team gives you a supplementary application form. Do not wait for an automatic email.
+After you apply on Open Collective, OSE emails you a link to the OSE application form. The form takes about ten minutes and asks for the detail that the Open Collective application does not cover:
 
-We aim to give a first response within seven business days of receiving your completed supplementary form. The review may take longer if we need more information. This does not guarantee acceptance, or that the review ends within seven days.
+* What the project does, and where its work happens in the open
+* Which licence it uses
+* Whether it is already a legal entity
+* What it expects to raise and to spend
 
-After acceptance, you can start to receive contributions. Welcome calls happen only occasionally and are not a standard onboarding step. Contributions can start without waiting for a call.
+The review starts when OSE has both the Open Collective application and the form. The form is linked to your application on Open Collective, so it does not work for someone who has not applied there. If you have a question about the form, reply to the email that brought you the link.
+
+The following timeline applies when the form does not come back:
+
+1. After seven days, OSE sends one reminder with the link.
+2. After seven more days, a person from the team picks up the application. They may close it for lack of a response, and they tell you by email.
+3. A closed application is not a rejection of the project. Get in touch at any time to resume.
+
+We aim to give a first response within seven business days of receiving your completed form. The review may take longer if we need more information. This does not guarantee acceptance, or that the review ends within seven days.
+
+After acceptance, you can start to receive contributions. OSE offers an optional welcome call. Contributions can start without waiting for it.
 
 ***
 

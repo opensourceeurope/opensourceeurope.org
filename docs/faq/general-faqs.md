@@ -122,6 +122,10 @@ No. OSE does not require a minimum balance to host your initiative.
 
 Since our fees are taken as a percentage of incoming contributions, you can start small and grow as your initiative develops.
 
+## Which currency does a Collective use?
+
+Every Collective hosted by OSE keeps its balance in euros (EUR). Donors can still give in other currencies, such as US dollars. Each contribution is converted to euros when it reaches the balance.
+
 ## Paying collaborators
 
 Collectives can pay service providers against a compliant invoice, including through a workers’ cooperative. Agree the work, price, and dates with the Collective and submit the invoice through Open Collective for review. OSE does not provide a standard employment or payroll service. If an arrangement needs OSE to sign a specific contract, discuss the arrangement with OSE and get its acceptance first.

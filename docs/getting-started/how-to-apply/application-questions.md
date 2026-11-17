@@ -16,7 +16,7 @@ Prepare your answers to the following questions before you apply to Open Source 
 * **Collective Name:** Choose a unique name for your collective that describes it.
 * **Website and/or Social Media Links:** Share links that show your initiative’s activities and online presence.
 * **Unique URL:** You can choose a unique URL for your collective’s page on the Open Collective platform.
-* **Administrators:** One administrator is enough, and two are recommended for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed. Administrators have full permissions to manage the Collective’s settings and finances.
+* **Administrators:** One administrator is enough, and two are recommended for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed. See [Administrators' legal names](#administrators-legal-names). Administrators have full permissions to manage the Collective’s settings and finances.
 
 ***
 
@@ -30,6 +30,32 @@ Prepare short answers (about 250 characters) to the following questions:
 4. **Funding Sources:** Who do you anticipate will fund your initiative?
 5. **Collective Activities:** Briefly describe what your collective does.
 6. **Mission Alignment:** Explain how your collective furthers one or more of OSE’s mission impact areas.
+
+***
+
+## Administrators' legal names
+
+Belgian anti-money-laundering rules require OSE to know who manages each Collective's money. Each administrator adds their legal name on Open Collective under Dashboard > Settings > Info, in the Legal name field. Only OSE and the platform see it. The public profile can keep a pseudonym.
+
+Each administrator needs a personal Open Collective account with their own email address. An organisation account, or an account named after the Collective, cannot be an administrator.
+
+***
+
+## What the team may ask next
+
+The OSE application form covers the project, its licence, its legal status and its budget. Depending on the project, the team may then ask about:
+
+* **Spending:** what the money will pay for. For a large budget, a breakdown by cost.
+* **Funding:** who you expect to fund the project, and what you have raised so far.
+* **Payees:** the countries where the people and suppliers you will pay are based. OSE checks that it can pay them.
+* **Governance:** who decides how the money is spent, and how the administrators share the work.
+* **Why a host:** why the project needs a fiscal host, especially if a company or organisation is already linked to it.
+* **Ownership:** who owns the project's name, domain, code and any equipment it buys.
+* **Openness:** where the work is public, and under which licence.
+* **Safeguarding:** how you protect minors, if they take part in your activities.
+* **Activity:** links that show the project's work so far.
+
+If the form already covers these points, the team has fewer questions to send.
 
 ***
 

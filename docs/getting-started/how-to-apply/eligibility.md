@@ -7,6 +7,15 @@ description: "Open Source Europe (OSE) welcomes initiatives from around the worl
 
 Open Source Europe (OSE) welcomes initiatives from around the world that align with our mission and values. OSE supports open source projects and communities. Your application should explain how your activities contribute to open source. OSE can accept an initiative before it publishes its first code or other open resources. OSE first reviews the initiative and its commitments to openness.
 
+OSE supports both the development of open source and its sustainability. A project does not have to write software to fit. These also belong at OSE:
+
+* A group that runs an instance of open source software, such as a Matrix homeserver, a mail service, a git forge or a mirror
+* A community, an event or an archive connected to open source
+
+The project's work must be under an open licence. For software, the licence must be approved by the [Open Source Initiative](https://opensource.org/licenses). For data and content, it must conform to the [Open Definition](https://opendefinition.org/licenses/).
+
+Initiatives with no connection to open source, such as civil-society, activism and mutual-aid groups, fit better with OSE's sister host, [Open Collective Europe Foundation](https://opencollective.com/oce-foundation-eur), and can apply there instead.
+
 ***
 
 ## Eligibility Criteria
