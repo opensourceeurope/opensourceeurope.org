@@ -124,7 +124,7 @@ Since our fees are taken as a percentage of incoming contributions, you can star
 
 ## Which currency does a Collective use?
 
-Every Collective hosted by OSE keeps its balance in euros (EUR). Donors can still give in other currencies, such as US dollars. Each contribution is converted to euros when it reaches the balance.
+Every Collective hosted by OSE keeps its balance in euros (EUR). Donors can still give in other currencies, such as US dollars. These contributions arrive in the balance as euros.
 
 ## Paying collaborators
 

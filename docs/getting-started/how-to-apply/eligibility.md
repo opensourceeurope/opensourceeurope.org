@@ -12,9 +12,9 @@ OSE supports both the development of open source and its sustainability. A proje
 * A group that runs an instance of open source software, such as a Matrix homeserver, a mail service, a git forge or a mirror
 * A community, an event or an archive connected to open source
 
-The project's work must be under an open licence. For software, the licence must be approved by the [Open Source Initiative](https://opensource.org/licenses). For data and content, it must conform to the [Open Definition](https://opendefinition.org/licenses/).
+The project's work must use an open licence. For software, use a licence that the [Open Source Initiative](https://opensource.org/licenses) approves. For data and content, use a licence that conforms to the [Open Definition](https://opendefinition.org/licenses/).
 
-Initiatives with no connection to open source, such as civil-society, activism and mutual-aid groups, fit better with OSE's sister host, [Open Collective Europe Foundation](https://opencollective.com/oce-foundation-eur), and can apply there instead.
+An initiative with no connection to open source fits better with OSE's sister host, [Open Collective Europe Foundation](https://opencollective.com/oce-foundation-eur). Civil-society groups and mutual-aid groups are examples. They can apply there instead.
 
 ***
 

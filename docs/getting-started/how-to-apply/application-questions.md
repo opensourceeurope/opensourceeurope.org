@@ -35,7 +35,7 @@ Prepare short answers (about 250 characters) to the following questions:
 
 ## Administrators' legal names
 
-Belgian anti-money-laundering rules require OSE to know who manages each Collective's money. Each administrator adds their legal name on Open Collective under Dashboard > Settings > Info, in the Legal name field. Only OSE and the platform see it. The public profile can keep a pseudonym.
+Belgian anti-money-laundering rules require OSE to know who manages each Collective's money. Each administrator adds their legal name on Open Collective under Dashboard > Settings > Info, in the Legal name field. Only OSE and Open Collective see it. The public profile can keep a pseudonym.
 
 Each administrator needs a personal Open Collective account with their own email address. An organisation account, or an account named after the Collective, cannot be an administrator.
 
@@ -45,15 +45,15 @@ Each administrator needs a personal Open Collective account with their own email
 
 The OSE application form covers the project, its licence, its legal status and its budget. Depending on the project, the team may then ask about:
 
-* **Spending:** what the money will pay for. For a large budget, a breakdown by cost.
-* **Funding:** who you expect to fund the project, and what you have raised so far.
-* **Payees:** the countries where the people and suppliers you will pay are based. OSE checks that it can pay them.
-* **Governance:** who decides how the money is spent, and how the administrators share the work.
-* **Why a host:** why the project needs a fiscal host, especially if a company or organisation is already linked to it.
-* **Ownership:** who owns the project's name, domain, code and any equipment it buys.
-* **Openness:** where the work is public, and under which licence.
-* **Safeguarding:** how you protect minors, if they take part in your activities.
-* **Activity:** links that show the project's work so far.
+* The costs the money will pay for, with a breakdown for a large budget
+* Your expected funders, and the amount you have raised so far
+* The countries of the people and suppliers you will pay, so OSE can check that it can pay them
+* The people who decide how to spend the money, and how the administrators share the work
+* Your reason to use a fiscal host, especially if a company or organisation is already linked to the project
+* The owner of the project's name, domain, code and any equipment it buys
+* The public places of the work, and its licence
+* Your safeguarding measures, if minors take part in your activities
+* Links that show the project's work so far
 
 If the form already covers these points, the team has fewer questions to send.
 
