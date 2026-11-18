@@ -1,7 +1,7 @@
 {
   "model": "nomic-ai/nomic-embed-text-v1.5",
   "dimensions": 768,
-  "created_at": "2026-11-18T07:10:05.472737+00:00",
+  "created_at": "2026-11-18T07:17:40.364811+00:00",
   "chunks_sha256": "4dac47f149afd9335b64eb64ad3df534bdb47bd345605f5bba2bbadbc76e10e9",
   "document_prompt": "search_document: ",
   "query_prompt": "search_query: ",

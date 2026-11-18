@@ -43,7 +43,7 @@ Follow these steps for a new page or a change to an existing one:
    Name the file in lower case with hyphens, such as `setting-up-github-sponsors.md`. Starlight lower-cases URLs and drops dots, so another name gives a URL that differs from the file name.
 3. Add a new page to `sidebar` in `docs.yaml`, in reading order. An entry is `- page: docs/<path>`, which shows the page title, or a group with `label` and `items`. The unit test fails if a page is missing from the sidebar or listed twice.
 4. When you move or rename a page, search for links to its old path in `docs/` and update them. External links to the old path break, so say so in the pull request.
-5. Run the humanize skill (`.claude/skills/humanize/`) over every sentence you wrote, before you show it.
+5. Write the text with the writing-guidelines skill (`.claude/skills/writing-guidelines/`), then run the humanize skill (`.claude/skills/humanize/`) over every sentence you wrote, before you show it.
 
 The page then appears in the sidebar and passes the unit test in `tests/unit/docs-content.test.ts`.
 
@@ -82,7 +82,7 @@ The docs support GitHub Markdown and the following Starlight additions:
 
 ## Images
 
-Put the image file next to the page and link it with a relative path. Astro optimises it at build time.
+Put the image file next to the page and link it with a relative path. Astro optimizes it at build time.
 
 ```markdown
 ![The confirmation email, with the amount, IBAN, BIC and order reference](./wire-transfer-2.png)

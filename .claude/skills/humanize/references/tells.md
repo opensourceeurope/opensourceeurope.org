@@ -96,7 +96,7 @@ Marketing language where a fact belongs: "world-class", "cutting-edge", "unparal
 
 ## 12. Title case headings
 
-Capitalising every main word of a heading. Write headings and titles in sentence case: capitalise the first word and names only.
+Capitalizing every main word of a heading. Write headings and titles in sentence case: capitalize the first word and names only.
 
 - Detect: a heading where most words start with a capital letter.
 - Before: "## Before You Submit Your Expense"
@@ -112,7 +112,7 @@ A bold label at the start of a list item or paragraph, and bold used for emphasi
 
 ## 14. Figurative language
 
-Software or organisations that want, think or decide, and images in place of facts ("the platform turns your community into a movement").
+Software or organizations that want, think, or decide, and images in place of facts ("the platform turns your community into a movement").
 
 - Detect: a thing that acts like a person, or a metaphor that a literal reader would misread.
 - Before: "The platform decides when your funds arrive."
@@ -132,7 +132,7 @@ An official name written another way. A rewrite tends to carry the wrong form ov
 
 - Open Source Europe, shortened to OSE after the first use on a page
 - Open Collective Europe (OCE), the former name, only where the text is about it
-- Open Collective, the platform; Open Collective Foundation is a different organisation
+- Open Collective, the platform; Open Collective Foundation is a different organization
 - Collective, with a capital C, for a project hosted on Open Collective
 - GitHub, GitHub Sponsors, LinkedIn, YouTube
 
