@@ -1,45 +1,49 @@
 ---
-title: "Umbrella organisation"
+title: "Umbrella organization"
 description: "Open Source Europe (OSE) provides a shared legal and financial framework for open source projects, developer networks, and software communities."
 ---
 
 Open Source Europe (OSE) provides a shared legal and financial framework for open source projects, developer networks, and software communities.
 
-## Collective Infrastructure
+## Collective infrastructure
 
-OSE is an umbrella organisation and the fiscal host for open source initiatives. Each project runs independently on the Open Collective platform, with its own public page and transparent budget. It also benefits from the legal standing of a professional Belgian non-profit (ASBL/vzw).
+OSE is an umbrella organization and the fiscal host for open source initiatives. Each project runs independently on the Open Collective platform, with its own public page and transparent budget. Each project also benefits from the legal standing of a professional Belgian nonprofit (ASBL/vzw).
 
-This structure allows communities to manage funds, pay service providers on compliant invoices, and receive grants without the work of running their own legal entity.
-
-***
-
-## Key Benefits
-
-* Simplified legal framework: Skip the complexity of non-profit incorporation, bank account openings, and statutory bookkeeping.
-* Grant eligibility: Access funding from foundations, corporations, and public authorities that require a registered non-profit intermediary.
-* Professional back-office: We handle the administrative work, including expense processing, bookkeeping, and annual financial reporting.
-* Transparency: Every transaction is logged in real time, which builds trust with your backers and contributors.
-* Ecosystem access: Join a network of like-minded maintainers and projects in the European open source community.
+With this structure, communities can manage funds, pay service providers on compliant invoices, and receive grants. They do not need to run their own legal entity.
 
 ***
 
-:::tip
-## Responsibilities and Alignment
+## Key benefits
 
-To keep the umbrella sound, hosted projects must follow three core principles:
+Hosting with OSE gives your project the following benefits.
 
-1. Mission alignment: Projects must actively support the development or sustainability of open source software.
-2. Non-profit compliance: OSE is an ASBL/vzw, so projects must operate within the limits of Belgian law, focusing on community benefit rather than purely commercial for-profit activities.
-3. Operational transparency: All financial activities must be conducted through the Open Collective platform to ensure public accountability.
+* Your project skips the complexity of nonprofit incorporation, bank account openings, and statutory bookkeeping.
+* Foundations, corporations, and public authorities that require a registered nonprofit intermediary can fund your project.
+* OSE handles the administrative work, including expense processing, bookkeeping, and annual financial reporting.
+* Every transaction is logged in real time, which builds trust with your backers and contributors.
+* Your project joins a network of like-minded maintainers and projects in the European open source community.
+
+***
+
+:::caution
+## Responsibilities and alignment
+
+To keep the umbrella organization sound, hosted projects must follow three core principles:
+
+* Mission alignment: Projects must actively support the development or sustainability of open source software.
+* Nonprofit compliance: OSE is an ASBL/vzw, so projects must operate within the limits of Belgian law. They must focus on community benefit rather than purely commercial for-profit activities.
+* Operational transparency: Projects must conduct all financial activities through the Open Collective platform to ensure public accountability.
 :::
 
 ***
 
-## Use Cases We Support
+## Use cases OSE supports
+
+OSE supports the following use cases:
 
 * Open source libraries: A legal home for critical libraries to receive corporate and individual donations.
 * Project ecosystems: One structure for a set of related tools that a distributed community manages.
-* Tech communities: Regional developer groups or meetups managing funds for events, travel stipends, and venues.
+* Tech communities: Regional developer groups or meetups that manage funds for events, travel stipends, and venues.
 
 ***
 

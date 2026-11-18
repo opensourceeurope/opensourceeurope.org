@@ -1,28 +1,28 @@
 ---
-title: "Equivalency Determination Certificate"
+title: "Equivalency Determination certificate"
 description: "Open Source Europe helps hosted projects receive grants from U.S. foundations through an Equivalency Determination (ED) arrangement."
 ---
 
 ## Grants from U.S. foundations
 
-Open Source Europe helps hosted projects receive grants from U.S. foundations through an Equivalency Determination (ED) arrangement.
+Open Source Europe (OSE) helps hosted projects receive grants from U.S. foundations through an Equivalency Determination (ED) arrangement.
 
-Contact the OSE team before applying. We coordinate with the funder, provide the relevant documentation and arrange for the grant to reach your project.
+Contact the OSE team before you apply. The OSE team coordinates with the funder, provides the relevant documentation, and arranges for the grant to reach your project.
 
-## Preparing a grant application
+## Prepare a grant application
 
 Contact <home@opensourceeurope.org> early, with:
 
-* The funder's name and the project to be supported.
-* The proposed amount, purpose and application deadline.
-* Any eligibility requirements or draft grant agreement.
+* The funder's name and the project that the grant is for
+* Proposed amount, purpose, and application deadline
+* Any eligibility requirements or draft grant agreement
 
-The team will provide the current ED documentation and confirm the details to use in the grant agreement. An ED does not guarantee that a particular funder or grant programme will accept an application.
+The team provides the current ED documentation and confirms the details to use in the grant agreement. An ED does not guarantee that a particular funder or grant program will accept an application.
 
 ## Donations from individuals
 
-An ED is different from the route for U.S. tax-deductible donations through Myriad USA. See [Tax-Deductible Giving for U.S. Donors](/docs/what-we-offer/tax-deductible-giving-for-us-donors/).
+An ED is different from the route for U.S. tax-deductible donations through Myriad USA. For more information, see [Tax-deductible giving for U.S. donors](/docs/what-we-offer/tax-deductible-giving-for-us-donors/).
 
 ## Documentation for the funder
 
-The ED used for this arrangement is held by Open Collective Europe Foundation. When this route is used, the foundation receives the grant and transfers it to OSE for your project. The OSE team coordinates these steps.
+Open Collective Europe Foundation holds the ED used for this arrangement. On this route, the foundation receives the grant and transfers it to OSE for your project. The OSE team coordinates these steps.
