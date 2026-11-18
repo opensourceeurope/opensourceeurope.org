@@ -15,14 +15,14 @@ sections:
   - type: brandAssets
     eyebrow: // Logo files
     heading:
-      text: Download the OSE logo
+      text: Download the logo
       highlight: logo
       decor: chevron-underscore
     intro: The Open Source Europe (OSE) logo comes in three forms. The main logo shows the dots and the name, the icon shows the dots alone, and the wordmark shows the name alone. Use SVG for websites, PNG for documents and slides, and PDF for print.
     downloadLabel: "file:"
     items:
       - title: Main logo in gradient
-        body: The dots in the OSE gradient and the name in dark blue. Use it on white and light backgrounds.
+        body: The dots are in the OSE gradient and the name is in dark blue. Use it on white and light backgrounds.
         preview: /brand/ose-logo-gradient.svg
         background: light
         files:
@@ -100,7 +100,7 @@ sections:
       - title: Keep the shape and colors
         body: Do not stretch, rotate, or crop the logo. Do not change its colors or add shadows, outlines, or other effects.
       - title: Leave space around it
-        body: Keep an empty area around the logo at least as wide as one dot. Text and other logos stay outside it.
+        body: Keep an empty area around the logo at least as wide as one dot. Text and other logos stay outside this empty area.
       - title: Know the colors
         body: "The dark blue is #0a242b. The gradient runs from #063f5c through #636942 to #f7ad1a."
       - title: Ask when you are unsure

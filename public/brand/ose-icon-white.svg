@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250">
   <defs>
     <style>
-      .cls-1 {
+      .ose-icon-white-1 {
         fill: #fff;
       }
     </style>
   </defs>
-  <circle class="cls-1" cx="67.87" cy="65" r="24.04"/>
-  <circle class="cls-1" cx="125" cy="65" r="24.04"/>
-  <circle class="cls-1" cx="182.13" cy="65" r="24.04"/>
-  <circle class="cls-1" cx="125" cy="125" r="24.04"/>
-  <circle class="cls-1" cx="67.87" cy="125" r="24.04"/>
-  <circle class="cls-1" cx="67.87" cy="185" r="24.04"/>
-  <circle class="cls-1" cx="125" cy="185" r="24.04"/>
-  <circle class="cls-1" cx="182.13" cy="185" r="24.04"/>
+  <circle class="ose-icon-white-1" cx="67.87" cy="65" r="24.04"/>
+  <circle class="ose-icon-white-1" cx="125" cy="65" r="24.04"/>
+  <circle class="ose-icon-white-1" cx="182.13" cy="65" r="24.04"/>
+  <circle class="ose-icon-white-1" cx="125" cy="125" r="24.04"/>
+  <circle class="ose-icon-white-1" cx="67.87" cy="125" r="24.04"/>
+  <circle class="ose-icon-white-1" cx="67.87" cy="185" r="24.04"/>
+  <circle class="ose-icon-white-1" cx="125" cy="185" r="24.04"/>
+  <circle class="ose-icon-white-1" cx="182.13" cy="185" r="24.04"/>
 </svg>
