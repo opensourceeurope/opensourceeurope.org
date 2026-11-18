@@ -68,4 +68,4 @@ When administrators or the main contact change, update access on Open Collective
 
 ## Optional welcome call
 
-Welcome calls happen only occasionally and are not a standard step. Contributions can start after acceptance without waiting for a call. See [How to apply](/docs/getting-started/how-to-apply/).
+After acceptance, OSE offers a welcome call. It is optional, and contributions can start without waiting for it. See [How to apply](/docs/getting-started/how-to-apply/).
