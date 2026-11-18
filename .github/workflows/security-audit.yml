@@ -24,9 +24,8 @@ jobs:
         with:
           node-version-file: .node-version
 
-      - name: Audit the site dependencies
-        run: npm audit --omit=dev --audit-level=high
-
-      - name: Audit the chat function dependencies
-        working-directory: functions/chat
-        run: npm audit --omit=dev --audit-level=high
+      # Runs npm audit for the site and functions/chat, and fails on a high or
+      # critical advisory that audit-exceptions.json does not cover. npm audit
+      # reads package-lock.json, so no install is needed.
+      - name: Audit the site and chat function dependencies
+        run: node scripts/check-audit.mjs

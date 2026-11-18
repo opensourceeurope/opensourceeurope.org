@@ -22,6 +22,7 @@ The following table lists the commands and what each one does:
 | `npm run dev:chat` | Starts the MCP server and the chat function locally, without the site. Needs `uv` and Ollama. |
 | `npm run test:e2e` | End-to-end and accessibility tests with Playwright. Run `npx playwright install chromium` once. The tests build the site and set `PUBLIC_CONTACT_ENDPOINT` themselves. |
 | `npm run licences` | Checks the licence of every installed package, in the site and in `functions/chat`, against the allowlist in `scripts/check-licences.mjs`. Exceptions go in `licence-exceptions.json`, each with a reason. |
+| `npm run audit` | Runs `npm audit` on the production dependencies of the site and `functions/chat`, and fails on a high or critical advisory. An advisory with no patched release can go in `audit-exceptions.json`, with a reason and an `until` date. After that date it fails again. |
 | `npx lhci autorun --config=lighthouserc.mobile.json` | Lighthouse budgets on every route (use `lighthouserc.desktop.json` for desktop). Run `npm run build` first. |
 | `bash scripts/check-coauthors.sh <base> <head>` | Fails when a commit in the range has an agent `Co-authored-by` trailer. |
 | `npm ci --prefix functions/chat && npm test --prefix functions/chat` | Installs and tests the chat function. |

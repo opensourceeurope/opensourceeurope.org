@@ -21,6 +21,7 @@ npm run check      # astro check
 npm test           # Vitest unit tests
 npm run test:e2e   # Playwright (builds and previews the site)
 npm run licences   # licence check of installed packages, site and functions/chat
+npm run audit      # npm audit of the site and functions/chat, with exceptions from audit-exceptions.json
 npm ci --prefix functions/chat && npm run build --prefix functions/chat && npm test --prefix functions/chat   # chat function tests
 scripts/knowledge/sync-agent.sh [--check]   # copies agent/ose-researcher.md into the plugin
 scripts/knowledge/ensure-index.sh [--check] # regenerates or checks the committed index
