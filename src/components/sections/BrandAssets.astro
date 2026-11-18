@@ -1,0 +1,150 @@
+---
+import Eyebrow from '../Eyebrow.astro';
+import Heading from '../Heading.astro';
+import type { SectionOf } from '../../lib/sections';
+
+interface Props {
+  section: SectionOf<'brandAssets'>;
+}
+const { section } = Astro.props;
+---
+
+<section id={section.id} class="brand grid-26">
+  <div class="brand__inner">
+    <div class="brand__head">
+      <Eyebrow text={section.eyebrow} />
+      <Heading heading={section.heading} />
+      {section.intro && <p class="brand__intro">{section.intro}</p>}
+    </div>
+    <ul class="brand__list">
+      {
+        section.items.map((item) => (
+          <li class="brand__item">
+            <div class:list={['brand__tile', `brand__tile--${item.background}`]}>
+              <img src={item.preview} alt="" width="240" height="120" loading="lazy" decoding="async" />
+            </div>
+            <h3 class="brand__title">{item.title}</h3>
+            {item.body && <p class="brand__body">{item.body}</p>}
+            <ul class="brand__files">
+              {item.files.map((file) => (
+                <li>
+                  <a href={file.href} download>
+                    {file.label}
+                    <span class="visually-hidden">
+                      {' '}
+                      {section.downloadLabel} {item.title}
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .brand {
+    padding-block: var(--section-pad-y);
+  }
+  .brand__head :global(h2) {
+    margin-top: var(--space-4);
+    font-size: var(--text-h2);
+    line-height: var(--leading-h2);
+  }
+  .brand__intro {
+    margin: var(--space-4) 0 0;
+    max-width: 62ch;
+    font-size: var(--text-body);
+    line-height: var(--leading-body-text);
+  }
+  .brand__list {
+    display: grid;
+    gap: var(--space-6);
+    margin: var(--space-6) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .brand__item {
+    min-width: 0;
+    padding: var(--space-4);
+    border: var(--border-card);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+  }
+  /* Every tile has the same 2:1 shape, so square and wide logos line up. */
+  .brand__tile {
+    position: relative;
+    aspect-ratio: 2 / 1;
+    border-radius: var(--radius-card);
+  }
+  .brand__tile--light {
+    background: #ffffff;
+  }
+  .brand__tile--dark {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+  }
+  .brand__tile img {
+    position: absolute;
+    inset: var(--space-4);
+    width: calc(100% - 2 * var(--space-4));
+    height: calc(100% - 2 * var(--space-4));
+    object-fit: contain;
+  }
+  .brand__title {
+    margin: var(--space-4) 0 0;
+    font-size: var(--text-h3);
+    line-height: var(--leading-body-text);
+    font-weight: var(--weight-bold);
+  }
+  .brand__body {
+    margin: var(--space-2) 0 0;
+    font-size: var(--text-sm);
+    line-height: var(--leading-body-text);
+    color: var(--color-text);
+  }
+  .brand__files {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin: var(--space-4) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .brand__files a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    color: var(--color-link);
+    font-size: var(--text-label);
+    font-weight: var(--weight-bold);
+    text-decoration: none;
+  }
+  .brand__files a:hover {
+    background: var(--color-surface-hover);
+  }
+  .brand__files a:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+  }
+
+  @media (min-width: 768px) {
+    .brand__list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 1024px) {
+    .brand__inner {
+      grid-column: 3 / 25;
+    }
+    .brand__list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

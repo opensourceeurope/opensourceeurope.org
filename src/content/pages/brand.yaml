@@ -1,0 +1,107 @@
+seo:
+  title: Brand assets | Open Source Europe
+  description: Download the Open Source Europe logo, icon, and wordmark as SVG, PNG, and PDF files, with the colors and the rules for using them.
+
+sections:
+  - type: hero
+    variant: title
+    heading:
+      text: Brand assets
+    background:
+      src: ../../assets/theme/webp/bg-hero-w-home.webp
+      alt: ""
+      decorative: true
+
+  - type: brandAssets
+    eyebrow: // Logo files
+    heading:
+      text: Download the OSE logo
+      highlight: logo
+      decor: chevron-underscore
+    intro: The Open Source Europe (OSE) logo comes in three forms. The main logo shows the dots and the name, the icon shows the dots alone, and the wordmark shows the name alone. Use SVG for websites, PNG for documents and slides, and PDF for print.
+    downloadLabel: "file:"
+    items:
+      - title: Main logo in gradient
+        body: The dots in the OSE gradient and the name in dark blue. Use it on white and light backgrounds.
+        preview: /brand/ose-logo-gradient.svg
+        background: light
+        files:
+          - { label: SVG, href: /brand/ose-logo-gradient.svg }
+          - { label: PNG, href: /brand/ose-logo-gradient.png }
+          - { label: PDF, href: /brand/ose-logo-gradient.pdf }
+      - title: Main logo in dark blue
+        body: Use it on light backgrounds when the logo must have one color.
+        preview: /brand/ose-logo-dark-blue.svg
+        background: light
+        files:
+          - { label: SVG, href: /brand/ose-logo-dark-blue.svg }
+          - { label: PNG, href: /brand/ose-logo-dark-blue.png }
+          - { label: PDF, href: /brand/ose-logo-dark-blue.pdf }
+      - title: Main logo in white
+        body: Use it on dark backgrounds and on photos.
+        preview: /brand/ose-logo-white.svg
+        background: dark
+        files:
+          - { label: SVG, href: /brand/ose-logo-white.svg }
+          - { label: PNG, href: /brand/ose-logo-white.png }
+          - { label: PDF, href: /brand/ose-logo-white.pdf }
+      - title: Icon in gradient
+        body: Use the dots alone where space is small, such as a profile picture. It goes on white and light backgrounds.
+        preview: /brand/ose-icon-gradient.svg
+        background: light
+        files:
+          - { label: SVG, href: /brand/ose-icon-gradient.svg }
+          - { label: PNG, href: /brand/ose-icon-gradient.png }
+          - { label: PDF, href: /brand/ose-icon-gradient.pdf }
+      - title: Icon in dark blue
+        body: The dots in one color, for light backgrounds.
+        preview: /brand/ose-icon-dark-blue.svg
+        background: light
+        files:
+          - { label: SVG, href: /brand/ose-icon-dark-blue.svg }
+          - { label: PNG, href: /brand/ose-icon-dark-blue.png }
+          - { label: PDF, href: /brand/ose-icon-dark-blue.pdf }
+      - title: Icon in white
+        body: The dots in white, for dark backgrounds and photos.
+        preview: /brand/ose-icon-white.svg
+        background: dark
+        files:
+          - { label: SVG, href: /brand/ose-icon-white.svg }
+          - { label: PNG, href: /brand/ose-icon-white.png }
+          - { label: PDF, href: /brand/ose-icon-white.pdf }
+      - title: Wordmark in dark blue
+        body: The name alone, for light backgrounds. Use it where the dots already appear nearby.
+        preview: /brand/ose-wordmark-dark-blue.svg
+        background: light
+        files:
+          - { label: SVG, href: /brand/ose-wordmark-dark-blue.svg }
+          - { label: PNG, href: /brand/ose-wordmark-dark-blue.png }
+          - { label: PDF, href: /brand/ose-wordmark-dark-blue.pdf }
+      - title: Wordmark in white
+        body: The name alone, for dark backgrounds and photos.
+        preview: /brand/ose-wordmark-white.svg
+        background: dark
+        files:
+          - { label: SVG, href: /brand/ose-wordmark-white.svg }
+          - { label: PNG, href: /brand/ose-wordmark-white.png }
+          - { label: PDF, href: /brand/ose-wordmark-white.pdf }
+
+  - type: features
+    variant: cards
+    eyebrow: // Guidelines
+    heading:
+      text: Use the logo as it is
+      highlight: as it is
+      decor: chevron-underscore
+    body: These rules keep the logo easy to recognize wherever it appears.
+    items:
+      - title: Pick the version for the background
+        body: Use the gradient or dark blue version on light backgrounds, and the white version on dark backgrounds and photos.
+      - title: Keep the shape and colors
+        body: Do not stretch, rotate, or crop the logo. Do not change its colors or add shadows, outlines, or other effects.
+      - title: Leave space around it
+        body: Keep an empty area around the logo at least as wide as one dot. Text and other logos stay outside it.
+      - title: Know the colors
+        body: "The dark blue is #0a242b. The gradient runs from #063f5c through #636942 to #f7ad1a."
+      - title: Ask when you are unsure
+        body: Write to home@opensourceeurope.org with questions about the logo, or to ask for a format that this page does not have.

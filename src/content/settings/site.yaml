@@ -123,6 +123,8 @@ footer:
           href: /blog/
         - label: RSS feed
           href: /rss.xml
+        - label: Brand assets
+          href: /brand/
         - label: Website source code
           href: https://github.com/opensourceeurope/opensourceeurope.org
         - label: Contact

@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import { resolveShared } from '../lib/shared';
 import type { Section, SectionType } from '../lib/sections';
+import BrandAssets from './sections/BrandAssets.astro';
 import Cards from './sections/Cards.astro';
 import ChatSection from './sections/ChatSection.astro';
 import ContactForm from './sections/ContactForm.astro';
@@ -45,6 +46,7 @@ const components: Record<Exclude<SectionType, 'shared'>, (props: any) => any> = 
   notFound: NotFound,
   chat: ChatSection,
   snippets: Snippets,
+  brandAssets: BrandAssets,
 };
 
 const shared = new Map<string, Section>((await getCollection('shared')).map((entry) => [entry.id, entry.data as Section]));

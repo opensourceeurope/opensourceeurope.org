@@ -35,6 +35,7 @@ export const ROUTES: Route[] = [
   { path: '/how-to-join/', enabled: true, status: 200 },
   { path: '/contact/', enabled: true, status: 200 },
   { path: '/ask/', enabled: true, status: 200 },
+  { path: '/brand/', enabled: true, status: 200 },
   { path: '/privacy-policy/', enabled: true, status: 200 },
   { path: '/term-conditions/', enabled: true, status: 200 },
   { path: '/does-not-exist/', enabled: true, status: 404 },

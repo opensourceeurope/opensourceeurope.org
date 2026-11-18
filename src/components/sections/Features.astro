@@ -63,6 +63,25 @@ const { section } = Astro.props;
     display: grid;
     gap: var(--space-4);
   }
+  .features__cards li {
+    padding: var(--space-4);
+    border: var(--border-card);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+  }
+  .features__cards h3 {
+    margin: 0;
+  }
+  .features__cards p {
+    margin: var(--space-2) 0 0;
+    font-size: var(--text-sm);
+    line-height: var(--leading-body-text);
+  }
+  @media (min-width: 768px) {
+    .features__cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   h3 {
     font-size: var(--text-h3);
     line-height: var(--leading-h3);
@@ -102,6 +121,13 @@ const { section } = Astro.props;
   }
 
   @media (min-width: 1024px) {
+    .features--cards .features__text {
+      grid-column: 3 / 25;
+    }
+    .features--cards .features__cards {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: var(--space-6);
+    }
     .features--list {
       align-items: center;
     }

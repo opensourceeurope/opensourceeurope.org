@@ -387,6 +387,32 @@ export function makeSectionSchema<I extends z.ZodType>(image: () => I) {
         items: z.array(z.object({ title: z.string().min(1), code: z.string().min(1), hint: z.string().optional() }).strict()).min(1),
       })
       .strict(),
+    z
+      .object({
+        ...common,
+        // Logo files to download. Each item shows `preview` (a file under
+        // public/) on a light or dark tile, with one link per file format.
+        type: z.literal('brandAssets'),
+        eyebrow,
+        heading: Heading,
+        intro: z.string().optional(),
+        items: z
+          .array(
+            z
+              .object({
+                title: z.string().min(1),
+                body: z.string().optional(),
+                preview: z.string().regex(/^\/.+\.svg$/, 'preview must be an SVG path under public/'),
+                // The tile behind the preview. White logos need `dark`.
+                background: z.enum(['light', 'dark']),
+                files: z.array(z.object({ label: z.string().min(1), href: z.string().regex(/^\//) }).strict()).min(1),
+              })
+              .strict(),
+          )
+          .min(1),
+        downloadLabel: z.string().min(1),
+      })
+      .strict(),
     z.object({ ...common, type: z.literal('shared'), ref: z.string().min(1) }).strict(),
   ]);
 }
