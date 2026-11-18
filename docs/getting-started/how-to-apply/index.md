@@ -54,12 +54,7 @@ You can edit all this information later, so it does not need to be perfect.
 
 ## After Submission
 
-After you apply on Open Collective, OSE emails you a link to the OSE application form. The form takes about ten minutes and asks for the detail that the Open Collective application does not cover:
-
-* What the project does, and where its work happens in the open
-* Which license it uses
-* Whether it is already a legal entity
-* What it expects to raise and to spend
+After you apply on Open Collective, OSE emails you a link to the OSE application form. The form takes about ten minutes. It asks for the detail that the Open Collective application does not cover, such as the license, the budget, and any company connected to the project. For the full list, see [Questions in the OSE application form](/docs/getting-started/how-to-apply/application-questions/#questions-in-the-ose-application-form).
 
 The review starts when OSE has both the Open Collective application and the form. The form is linked to your application on Open Collective, so it does not work for someone who has not applied there. If you have a question about the form, reply to the email that brought you the link.
 

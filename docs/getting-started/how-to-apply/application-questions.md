@@ -41,21 +41,25 @@ Each administrator needs a personal Open Collective account with their own email
 
 ***
 
-## What the team may ask next
+## Questions in the OSE application form
 
-The OSE application form covers the project, its license, its legal status, and its budget. Depending on the project, the team may then ask about:
+After you apply on Open Collective, OSE emails you a link to its application form. The form asks for the following:
 
-* The costs the money will pay for, with a breakdown for a large budget
-* Your expected funders, and the amount you have raised so far
-* The countries of the people and suppliers you will pay, so OSE can check that it can pay them
-* The people who decide how to spend the money, and how the administrators share the work
-* Your reason to use a fiscal host, especially if a company or organization is already linked to the project
-* The owner of the project's name, domain, code, and any equipment it buys
-* The public places of the work, and its license
-* Your safeguarding measures, if minors take part in your activities
-* Links that show the project's work so far
+* The kind of initiative: a single project, a group of projects, a community, or a service run for a community
+* Links to the repository, the website, or the service
+* The license the project uses
+* How the work happens in the open
+* Legal status, and for a registered entity, its type and country
+* How long the project has been operating
+* What the project does, and how it furthers open source in Europe
+* The amount raised so far, the fundraising target, and the expected funders
+* Expected expenses, and the countries of the people the Collective will pay
+* Any company connected to the project: who owns the code and the project name, what is sold, and by whom
+* An optional second administrator
 
-If the form already covers these points, the team has fewer questions to send.
+A company around the project is fine if it stays separate from the Collective. Money given to the Collective is a donation. The company sells and invoices its own services, and the project website makes clear which offers come from the company.
+
+If the team needs more detail, it asks by email.
 
 ***
 
