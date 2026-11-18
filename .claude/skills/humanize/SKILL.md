@@ -7,7 +7,7 @@ description: Use to make drafted text read like a person wrote it instead of an 
 
 Rewrites drafted text to remove the signs of AI writing, then reports what it changed. The docs-authoring skill runs it over every new sentence in the OSE docs.
 
-The skill states all its rules itself, because OSE has no separate style guide.
+The OSE writing rules are in the writing-guidelines skill (`.claude/skills/writing-guidelines/`). Write the text with them first. This skill is the last pass, and it catches the habits that make text read as machine written.
 
 Read `references/tells.md` before every run. It lists the tells, how to detect each one, and a before and after example.
 
@@ -42,5 +42,5 @@ Clean: pull request description (no tells)
 
 - Write for the least fluent reader. The OSE docs reach project maintainers across Europe, many of whom read English as a second or third language. Plain words beat precise-sounding ones.
 - Do not change the meaning. A humanized sentence says the same thing in plainer words. If a rewrite would drop information, keep the information and change only the wording. Never add a claim that was not in the original.
-- Leave quoted text alone: legal text, the terms of hosting and text quoted from another organisation keep their wording.
+- Leave quoted text alone: legal text, the terms of hosting and text quoted from another organization keep their wording.
 - These instructions follow their own catalog: plain English, no em-dashes, no Latin abbreviations.
