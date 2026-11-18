@@ -1,5 +1,32 @@
 # Changelog
 
+## [0.16.7](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.16.6...v0.16.7) (2026-11-18)
+
+
+### Bug Fixes
+
+* **knowledge:** weekly OSE knowledge refresh ([#492](https://github.com/opensourceeurope/opensourceeurope.org/issues/492)) ([a00719a](https://github.com/opensourceeurope/opensourceeurope.org/commit/a00719a3cf24f4140bde7a09829f517e1f7e25ed))
+* **knowledge:** weekly OSE knowledge refresh ([#496](https://github.com/opensourceeurope/opensourceeurope.org/issues/496)) ([43affcc](https://github.com/opensourceeurope/opensourceeurope.org/commit/43affccd759272f87da8f9f9c30bf07a4f487dc0))
+* **knowledge:** weekly OSE knowledge refresh ([#498](https://github.com/opensourceeurope/opensourceeurope.org/issues/498)) ([34c8af5](https://github.com/opensourceeurope/opensourceeurope.org/commit/34c8af5d963406a4514a80077856ef64c5621117))
+* **knowledge:** weekly OSE knowledge refresh ([#500](https://github.com/opensourceeurope/opensourceeurope.org/issues/500)) ([182b3b0](https://github.com/opensourceeurope/opensourceeurope.org/commit/182b3b0319c4cdc84f2299d957a609a5b4dec1f5))
+* **knowledge:** weekly OSE knowledge refresh ([#502](https://github.com/opensourceeurope/opensourceeurope.org/issues/502)) ([7b6b4fe](https://github.com/opensourceeurope/opensourceeurope.org/commit/7b6b4fe4039cfd8c1e117d6f7631e4f4c9281580))
+* **knowledge:** weekly OSE knowledge refresh ([#504](https://github.com/opensourceeurope/opensourceeurope.org/issues/504)) ([1a5cdc6](https://github.com/opensourceeurope/opensourceeurope.org/commit/1a5cdc67b215d13b37d813a4b57a15636d3086f6))
+* **knowledge:** weekly OSE knowledge refresh ([#506](https://github.com/opensourceeurope/opensourceeurope.org/issues/506)) ([8c5a297](https://github.com/opensourceeurope/opensourceeurope.org/commit/8c5a2978e17da8cc20908d234aa3d7f31a1ccb6d))
+* **knowledge:** weekly OSE knowledge refresh ([#508](https://github.com/opensourceeurope/opensourceeurope.org/issues/508)) ([35f72be](https://github.com/opensourceeurope/opensourceeurope.org/commit/35f72be4eb099916c613ba8447e4e0f3b47a1c03))
+* **knowledge:** weekly OSE knowledge refresh ([#510](https://github.com/opensourceeurope/opensourceeurope.org/issues/510)) ([a78d03b](https://github.com/opensourceeurope/opensourceeurope.org/commit/a78d03bac5da5b87ebfc0bef43aebf5d1aac984f))
+* **knowledge:** weekly OSE knowledge refresh ([#512](https://github.com/opensourceeurope/opensourceeurope.org/issues/512)) ([7650b56](https://github.com/opensourceeurope/opensourceeurope.org/commit/7650b569cc439c59e20c8107d29682781b1670c8))
+* **knowledge:** weekly OSE knowledge refresh ([#514](https://github.com/opensourceeurope/opensourceeurope.org/issues/514)) ([6bba56b](https://github.com/opensourceeurope/opensourceeurope.org/commit/6bba56b7c86681ba9d7aed363dd0b7e4afb72e94))
+* **knowledge:** weekly OSE knowledge refresh ([#516](https://github.com/opensourceeurope/opensourceeurope.org/issues/516)) ([f894a51](https://github.com/opensourceeurope/opensourceeurope.org/commit/f894a513332f43f9baf96c024403400eab35cdb1))
+* **knowledge:** weekly OSE knowledge refresh ([#518](https://github.com/opensourceeurope/opensourceeurope.org/issues/518)) ([24c70cb](https://github.com/opensourceeurope/opensourceeurope.org/commit/24c70cb5168c367217bb25c6b300dfa280aafe48))
+* **knowledge:** weekly OSE knowledge refresh ([#520](https://github.com/opensourceeurope/opensourceeurope.org/issues/520)) ([0aa38d3](https://github.com/opensourceeurope/opensourceeurope.org/commit/0aa38d31e3decabb949b788d2dd41b0e8cd84460))
+* **knowledge:** weekly OSE knowledge refresh ([#522](https://github.com/opensourceeurope/opensourceeurope.org/issues/522)) ([2bbe7bc](https://github.com/opensourceeurope/opensourceeurope.org/commit/2bbe7bcbfa35e6ef5720ca8cff8a657eb51795e2))
+* **knowledge:** weekly OSE knowledge refresh ([#524](https://github.com/opensourceeurope/opensourceeurope.org/issues/524)) ([33a4dbc](https://github.com/opensourceeurope/opensourceeurope.org/commit/33a4dbcda5b60b9ce1a8ed9fe2be08eb7df1e8bf))
+* **knowledge:** weekly OSE knowledge refresh ([#526](https://github.com/opensourceeurope/opensourceeurope.org/issues/526)) ([c93f226](https://github.com/opensourceeurope/opensourceeurope.org/commit/c93f22632f23645d2fc6ffee867985c60cbb271c))
+* **knowledge:** weekly OSE knowledge refresh ([#528](https://github.com/opensourceeurope/opensourceeurope.org/issues/528)) ([023be36](https://github.com/opensourceeurope/opensourceeurope.org/commit/023be36400ac0efdb24bd8a71c56f049e31640d6))
+* **knowledge:** weekly OSE knowledge refresh ([#530](https://github.com/opensourceeurope/opensourceeurope.org/issues/530)) ([3ba83bc](https://github.com/opensourceeurope/opensourceeurope.org/commit/3ba83bce5c9bb58e2e4cac93de16d6e611a40691))
+* **knowledge:** weekly OSE knowledge refresh ([#532](https://github.com/opensourceeurope/opensourceeurope.org/issues/532)) ([862c4ef](https://github.com/opensourceeurope/opensourceeurope.org/commit/862c4ef55130d54eddaf6051bfd9fc60f0e2075a))
+* **knowledge:** weekly OSE knowledge refresh ([#534](https://github.com/opensourceeurope/opensourceeurope.org/issues/534)) ([004a749](https://github.com/opensourceeurope/opensourceeurope.org/commit/004a749d75c99834df3f951e4a9970464e7c3889))
+
 ## [0.16.6](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.16.5...v0.16.6) (2026-11-17)
 
 
