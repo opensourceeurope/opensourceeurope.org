@@ -1,68 +1,78 @@
 ---
 title: "Basics"
-description: "This is your starting point after OSE accepts your Collective. Work through the essentials, then use the relevant guide for each transaction."
+description: "This page is your starting point after Open Source Europe (OSE) accepts your Collective. Work through the essentials, then use the relevant guide for each transaction."
 ---
 
-This is your starting point after OSE accepts your Collective. Work through the essentials, then use the relevant guide for each transaction.
+This page is your starting point after Open Source Europe (OSE) accepts your Collective. Work through the essentials, then use the relevant guide for each transaction.
 
 ## Your first steps
 
 1. Check your public profile and contacts. Use the platform's [Quick Start Guide](https://docs.opencollective.com/help/collectives/quick-start-guide). Keep administrator access and the main contact up to date, and notify OSE of changes.
 2. Choose how to receive funds. Start with [donations and funding routes](/docs/how-it-works/financial-contributions-how-to-donate/). You can receive contributions without waiting for a welcome call.
 3. Agree how your Collective makes spending decisions. Read [budget decisions](/docs/guides/deciding-on-how-to-use-your-money/).
-4. Prepare your first payment. Use [Pay and get reimbursed](/docs/how-it-works/expenses/). Funds must be received and available before payment.
-5. Keep the community informed. Use Updates and review the responsibilities below.
+4. Prepare your first payment. Use [Pay and get reimbursed](/docs/how-it-works/expenses/). Your Collective must receive the funds before payment, and the funds must be available.
+5. Keep the community informed. Use Updates and review the responsibilities on this page.
 
-Some steps need OSE's agreement first. Contact the team before a grant application naming OSE as recipient or signatory, a specific contract OSE would sign, or a proposed commercial arrangement. Details follow below.
+Some steps need OSE's agreement first. Contact the OSE team before any of these steps:
 
-## Welcome to Open Source Europe!
+* A grant application that names OSE as recipient or signatory
+* A specific contract that OSE would sign
+* A proposed commercial arrangement
 
-Once your application to be hosted by Open Source Europe (OSE) is approved, you can immediately start managing your Collective on the Open Collective platform. Welcome aboard!
+The section "Top five things to remember" gives the details.
+
+## Welcome to Open Source Europe
+
+Once OSE approves your hosting application, you can start to manage your Collective on the Open Collective platform right away.
 
 ***
 
-## Top 5 Things to Remember
+## Top five things to remember
 
-1. Contracts and agreements: Before any arrangement requires OSE to sign a specific contract, discuss it with OSE and get its acceptance.
-2. Grant applications: If OSE will be named as recipient or signatory, contact the team before submission so it can review and accept its role and commitments.
-3. Community updates: Use the Updates feature to keep your community informed. OSE recommends publishing at least one update per year. This is not a general hosting obligation. Reporting requirements in a funding arrangement or applicable agreement still apply.
-4. Expenses: Follow the [expense guide](/docs/how-it-works/expenses/) for documents, review and payment.
-5. Contributions: OSE mainly supports donations and grants. Before committing to sales, invoiced services or contributions with promised benefits, contact OSE to discuss whether the arrangement can be supported and under what conditions. Do this before making commitments or receiving payment. Acceptance is not guaranteed.
+The following points apply to every Collective that OSE hosts:
+
+* If an arrangement requires OSE to sign a specific contract, discuss the contract with OSE and get OSE's acceptance first.
+* If a grant application names OSE as recipient or signatory, contact the OSE team before you submit the application. The team can then review and accept OSE's role and commitments.
+* Use the Updates feature to keep your community informed. OSE recommends at least one update per year. This recommendation is not a general hosting obligation. Reporting requirements in a funding arrangement or applicable agreement still apply.
+* For expenses, follow the [expense guide](/docs/how-it-works/expenses/) for documents, review, and payment.
+* OSE mainly supports donations and grants. Before you commit to sales, invoiced services, or contributions with promised benefits, contact OSE. Discuss whether OSE can support the arrangement, and under what conditions. Do this before you receive any payment. OSE does not guarantee acceptance.
 
 ***
 
 ## Understanding Open Collective
 
-Open Collective is the platform that OSE operates on. It provides tools for transparent budgeting, customizing a Collective profile, setting up tiers and goals, and more.
+Open Collective is the platform that OSE operates on. It provides tools to budget transparently, customize a Collective profile, set up tiers and goals, and more.
 
-For an overview of using the Open Collective platform, check out its [documentation](https://docs.opencollective.com/help/about/documentation). It explains the features you can use.
+For an overview of the Open Collective platform, see its [documentation](https://docs.opencollective.com/help/about/documentation). It explains the features you can use.
 
 Its [Quick Start Guide](https://docs.opencollective.com/help/collectives/quick-start-guide) is another good place to start.
 
 ***
 
-## Budget Management of Your Collective
+## Budget management of your Collective
 
-Receiving funds and submitting expenses are both simple. Each has its own page in these docs with the details. Feel free to share them with the contributors and members of your Collective.
+These docs have one page about how to receive funds and one about how to submit expenses. You can share these pages with the contributors and members of your Collective.
 
-Being fiscally hosted by OSE means joining a community of hundreds of initiatives that share the same tools to manage their independent projects. It needs little attention, but it does need some to work properly.
+When OSE hosts your Collective, your Collective joins a community of hundreds of initiatives. They use the same tools to manage their independent projects. This setup needs little attention, but it does need some to work properly.
 
-Please read the guidelines on [donations](https://docs.opencollective.com/help/collectives/raising-money) and [expenses](https://docs.opencollective.com/help/expenses-and-getting-paid/submitting-expenses). If you have any questions or doubts, contact us at <home@opensourceeurope.org>.
-
-***
-
-## Important Notes
-
-* Tax obligations: You’re responsible for understanding and fulfilling all of your tax obligations. If you’re not sure whether you need to charge or pay tax, we encourage you to ask a tax professional about your tax obligations. OSE can’t provide tax advice.
-* Terms & Conditions: Please review our [Terms & Conditions](/docs/terms-of-service/) for detailed information about your responsibilities and our policies.
+Read the Open Collective guidelines on [donations](https://docs.opencollective.com/help/collectives/raising-money) and [expenses](https://docs.opencollective.com/help/expenses-and-getting-paid/submitting-expenses). If you have questions or doubts, contact OSE at <home@opensourceeurope.org>.
 
 ***
 
-## Need Assistance?
+## Important notes
 
-If you have any questions or need help, feel free to [contact us](mailto:home@opensourceeurope.org).
+The following points cover your own obligations:
 
-## Keeping your contacts up to date
+* You must understand and fulfill all of your tax obligations. If you’re not sure whether you need to charge or pay tax, OSE encourages you to ask a tax professional. OSE can’t give tax advice.
+* The OSE [Terms of Service](/docs/terms-of-service/) give details about your responsibilities and OSE's policies.
+
+***
+
+## Get help
+
+If you have questions or need help, [contact OSE](mailto:home@opensourceeurope.org).
+
+## Keep your contacts up to date
 
 When administrators or the main contact change, update access on Open Collective and notify OSE so the team can keep supporting you without a break.
 
