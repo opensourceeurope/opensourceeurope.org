@@ -5,42 +5,43 @@ description: "What your initiative can do with Open Source Europe, what it costs
 
 ## What can I do with an Open Source Europe account?
 
-By joining Open Source Europe, your initiative can:
+When your initiative joins Open Source Europe (OSE), it can:
 
 * Collect recurring or one-off donations
 * Apply for subsidies or grants
 * Pay invoices and reimburse expenses
 * Offer full budget transparency to your community
 * Operate without creating your own legal entity
-* Pay service providers on compliant invoices, including through workers’ cooperatives; reimburse eligible volunteer expenses
+* Pay service providers on compliant invoices, including through workers’ cooperatives
+* Reimburse eligible volunteer expenses
 
 ***
 
 ## What am I not allowed to do?
 
-To stay compliant with our legal and charitable framework, you may not:
+To comply with the legal and charitable framework of OSE, you may not:
 
-* Issue invoices or sign documents in the name of OSE. Any specific contract that needs OSE’s signature must be discussed and accepted beforehand. Do not use OSE’s legal name or VAT number to have supplier invoices issued for your Collective
-* Use funds to influence legislation or politics (lobbying)
-* Support or engage in illegal activity
-* Use funds for personal profit
-* Have another fiscal host at the same time. Technical or community affiliations may be accepted after review
-* Spend funds on purposes outside your initiative’s mission. If you do, they must be reimbursed
+* Issue invoices or sign documents in the name of OSE. Any specific contract that needs OSE’s signature must be discussed and accepted beforehand. Do not use OSE’s legal name or VAT number to have supplier invoices issued for your Collective.
+* Use funds to influence legislation or politics (lobbying).
+* Support or engage in illegal activity.
+* Use funds for personal profit.
+* Have another fiscal host at the same time. Technical or community affiliations may be accepted after review.
+* Spend funds on purposes outside your initiative’s mission. If you do, they must be reimbursed.
 
 ***
 
 ## Why should I use Open Collective?
 
-Open Source Europe uses the Open Collective platform to make financial management simpler and more transparent.
+OSE uses the Open Collective platform to make financial management simpler and more transparent.
 
 Benefits include:
 
 * Easy collection of recurring or one-off contributions
-* Simple spending: submit a receipt/invoice → approve → paid
+* Simple spending: submit a receipt or invoice → approve → paid
 * Automatic and public budget tracking
 * Shared financial visibility, which builds collaboration and trust
 
-> We believe transparency makes communities more resilient and democratic.
+> OSE believes that transparency makes communities more resilient and democratic.
 
 ***
 
@@ -50,14 +51,14 @@ OSE differs in these ways:
 
 * Designed for collaborative communities, as well as for campaigns or individuals
 * Open source, with built-in transparency (no hidden ledgers)
-* We provide fiscal hosting as a service using a nonprofit legal framework
+* Fiscal hosting as a service, with a nonprofit legal framework
 * Based in Europe, but globally connected
 
 ***
 
 ## How much does it cost?
 
-The current OSE hosting fees are:
+The following table lists the current OSE hosting fees:
 
 | Contribution type                                                 | OSE fee |
 | ----------------------------------------------------------------- | ------- |
@@ -67,9 +68,9 @@ The current OSE hosting fees are:
 | Tax-deductible donations through the supported intermediary route | 10%     |
 | GitHub Sponsors                                                   | 10%     |
 
-For ordinary card and PayPal donations, the 8% OSE hosting fee is calculated on the donation amount before payment processing fees are deducted. For example, a €20 donation has a €1.60 OSE hosting fee. Payment processing fees are separate and also reduce the amount available to the Collective. Their amount may vary.
+For ordinary card and PayPal donations, OSE calculates the 8% hosting fee on the donation amount before payment processing fees. For example, a €20 donation has a €1.60 OSE hosting fee. Payment processing fees are separate and also reduce the amount available to the Collective. The amount of these fees can vary.
 
-The 10% OSE hosting fee applies to incoming bank transfers, grants and public subsidies, donations through Myriad → OCEF → OSE, and GitHub Sponsors. OSE calculates it on each amount it actually receives, after any fees deducted before the money reaches OSE.
+The 10% OSE hosting fee applies to incoming bank transfers, grants and public subsidies, donations through Myriad → OCEF → OSE, and GitHub Sponsors. OSE calculates this fee on each amount that it actually receives, after any fees deducted before the money reaches OSE.
 
 Currency conversion services or intermediaries may have additional costs. Contact OSE to confirm the costs applicable to a specific route. This page gives no combined fee rate.
 
@@ -77,29 +78,28 @@ These are the current rates. This page does not introduce any fee reduction.
 
 ***
 
-## Can we get a discount?
+## Can my Collective get a discount?
 
-We’re often asked for fee reductions, and we understand why.\
-Many initiatives bring in funds already raised, and we know how tight nonprofit budgets can be.
+OSE often gets requests for fee reductions and understands why. Many initiatives bring in funds that they already raised, and OSE knows how tight nonprofit budgets can be.
 
-However, our standard fees are already kept as low as possible to cover the real costs of:
+OSE already keeps its standard fees as low as possible. The fees cover the real costs of:
 
-* Legal & administrative management
+* Legal and administrative management
 * Risk and compliance
 * Payments, reports, and support over time
 
 :::caution
-Our standard hosting fees apply. OSE does not offer hosting fee discounts or waivers.
+The standard OSE hosting fees apply. OSE does not offer hosting fee discounts or waivers.
 :::
 
 ***
 
 ## What if I want to become my own fiscal host someday?
 
-No problem! You're welcome to use Open Source Europe as your fiscal host for as long as you need and remain eligible.
+You can use OSE as your fiscal host for as long as you need it and remain eligible.
 
 * You can ask to end fiscal hosting, following the notice and remaining-balance rules in your [hosting agreement](/docs/terms-of-service/).
-* If you plan to move to managing your own structure, we can help you prepare.
+* If you plan to manage your own structure, OSE can help you prepare.
 * The [Open Collective platform](https://opencollective.com/) also supports organizations that wish to become fiscal hosts themselves.
 
 ***
@@ -107,25 +107,25 @@ No problem! You're welcome to use Open Source Europe as your fiscal host for as 
 ## How long does it take to get started?
 
 * The application process only takes a few minutes.
-* We might reach out with a few follow-up questions.
+* OSE might contact you with a few follow-up questions.
 * Once your application is accepted, you can start receiving donations right away.
 
 :::note
-Completing the application and being accepted are separate steps. See [How to apply](/docs/getting-started/how-to-apply/) for the review process and indicative response time. Additional information may be required before acceptance.
+The application and the acceptance are separate steps. See [How to apply](/docs/getting-started/how-to-apply/) for the review process and indicative response time. OSE may ask for more information before acceptance.
 :::
 
 ***
 
 ## Is there a minimum required budget?
 
-Nope! There is no minimum balance required to be hosted by OSE.
+No. OSE does not require a minimum balance to host your initiative.
 
 Since our fees are taken as a percentage of incoming contributions, you can start small and grow as your initiative develops.
 
 ## Paying collaborators
 
-Collectives can pay service providers against a compliant invoice, including through a workers’ cooperative. Agree the work, price and dates with the Collective and submit the invoice through Open Collective for review. OSE does not provide a standard employment or payroll service. Any arrangement requiring OSE to sign a specific contract must be discussed and accepted beforehand.
+Collectives can pay service providers against a compliant invoice, including through a workers’ cooperative. Agree the work, price, and dates with the Collective and submit the invoice through Open Collective for review. OSE does not provide a standard employment or payroll service. If an arrangement needs OSE to sign a specific contract, discuss the arrangement with OSE and get its acceptance first.
 
 ## Discounts and nonprofit benefits
 
-OSE may support a request or provide an attestation on a case-by-case basis. Hosting does not automatically qualify a Collective for every nonprofit discount or benefit. Each supplier sets its own eligibility criteria; OSE cannot guarantee acceptance.
+OSE may support a request or provide an attestation on a case-by-case basis. Hosting does not automatically qualify a Collective for every nonprofit discount or benefit. Each supplier sets its own eligibility criteria. OSE cannot guarantee acceptance.
