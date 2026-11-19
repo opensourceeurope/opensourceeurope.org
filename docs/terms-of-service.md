@@ -23,7 +23,7 @@ This overview explains the main points of the association's Terms of Hosting. It
 
 OSE recommends that you publish a public update on your Collective page at least once a year. This is not a general hosting obligation. Any specific reporting requirements in your applicable agreement or funding arrangement still apply.
 
-## Starting, changing or ending the arrangement
+## Starting, changing, or ending the arrangement
 
 Contact the team before you enter into a grant agreement or make a commitment on behalf of the association. Also contact the team before a significant change to your project's mission or activities. Collectives manage routine adjustments themselves. Any specific approval requirements for contracts and funding arrangements still apply.
 

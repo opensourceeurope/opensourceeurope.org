@@ -1,24 +1,24 @@
 ---
 title: "Terminology"
-description: "We use some terms to describe processes in the Open Collective ecosystem. Please use these terms instead of 'user' when you create issues or support requests. Everyone is a user!"
+description: "OSE uses the following terms to describe processes in the Open Collective ecosystem. Use them instead of 'user' in issues and support requests, because everyone is a user."
 ---
 
-We use some terms to describe processes in the Open Collective ecosystem. Please use these terms instead of 'user' when you create issues or support requests. Everyone is a user!
+Open Source Europe (OSE) uses the following terms to describe processes in the Open Collective ecosystem. Use these terms instead of 'user' when you create issues or support requests, because everyone is a user.
 
 ## Individuals
 
-Everyone interacting with the Open Collective platform is considered an individual. Individuals can take on different roles in the ecosystem:
+Everyone who interacts with the Open Collective platform is an individual. Individuals can take on different roles in the ecosystem:
 
-* **Contributor**: Someone who supports an initiative, with money or in other ways.
-* **Organizer**: An individual who creates or manages an initiative.
+* Contributor: someone who supports an initiative, with money or in other ways.
+* Organizer: an individual who creates or manages an initiative.
 
-## Financial Contributors
+## Financial contributors
 
-### Organizational Financial Contributor
+### Organizational financial contributor
 
-A company or organization that supports an initiative financially, often at a higher tier. These contributors are often called sponsors. They may want benefits such as brand exposure, community goodwill, or tangible perks.
+A company or organization that supports an initiative financially, often at a higher tier. People often call these contributors sponsors. They may want benefits such as brand exposure, community goodwill, or tangible perks.
 
-### Individual Financial Contributor
+### Individual financial contributor
 
 An individual who supports an initiative financially, with one-time or recurring contributions. They may find initiatives through:
 
@@ -26,23 +26,23 @@ An individual who supports an initiative financially, with one-time or recurring
 * Direct links to a Collective
 * Organizer's page
 
-### Expense Submitter
+### Expense submitter
 
-An individual who requests payment from an initiative's budget using the expense function. This can be to get paid back for purchases made for the initiative, or to get paid for completed work.
+An individual who requests payment from an initiative's budget using the expense function. The request can be to get paid back for purchases made for the initiative, or to get paid for completed work.
 
-## Non-Financial Contributors
+## Non-financial contributors
 
 ### Organizer
 
-An individual who creates or works on an initiative. After they talk with our team, organizers decide whether they are creating a 'Fund' or a 'Collective'.
+An individual who creates or works on an initiative. After they talk with the OSE team, organizers decide whether they create a 'Fund' or a 'Collective'.
 
-### Core Contributor
+### Core contributor
 
 Individuals who are major contributors and represent the Collective on its page as part of the team.
 
-### Collective Admin
+### Collective admin
 
-A type of Core Contributor with additional permissions, allowing them to:
+A type of core contributor with additional permissions that let them:
 
 * Edit the Collective
 * Change settings
@@ -50,20 +50,20 @@ A type of Core Contributor with additional permissions, allowing them to:
 * Make financial contributions to other Collectives
 * Receive messages from people trying to contact the Collective
 
-Core Contributors aim to make their communities financially sustainable, using tools like tiers, goals, and social media sharing. They focus on managing and growing their communities by creating events and sending updates.
+Core contributors aim to make their communities financially sustainable. They use tools such as tiers, goals, and social media sharing. To manage and grow their communities, they create events and send updates.
 
-### Event Attendee
+### Event attendee
 
-Individuals who register to attend a Collective's event, often arriving through direct links provided by event organizers.
+Individuals who register to attend a Collective's event. They often arrive through direct links from event organizers.
 
 ## Initiatives
 
-Initiatives are accounts for projects or groups hosted by Open Source Europe. An initiative can be either a Collective or a Fund. During the application process, our team will help you choose the right account type for your project.
+Initiatives are accounts for projects or groups that OSE hosts. An initiative can be either a Collective or a Fund. During the application process, the OSE team helps you choose the right account type for your project.
 
 ### Collective
 
-A Collective represents a project or group with a mission or purpose, raising and spending funds transparently to achieve their goals.
+A Collective represents a project or group with a mission or purpose. It raises and spends funds transparently to achieve its goals.
 
-## Fiscal Hosts
+## Fiscal hosts
 
-A Fiscal Host, or Sponsor, is a type of Organization that lets Collectives handle money without having to legally incorporate. The Fiscal Host holds a Collective’s funds in their bank account and can generate invoices and receipts for Financial Contributors. Think of a Fiscal Host as an umbrella organization for the Collectives it supports.
+A fiscal host, or sponsor, is a type of organization that lets Collectives handle money without having to legally incorporate. The fiscal host holds a Collective’s funds in its bank account and can generate invoices and receipts for financial contributors. A fiscal host is an umbrella organization for the Collectives it supports.

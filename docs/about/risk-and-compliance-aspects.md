@@ -1,5 +1,5 @@
 ---
-title: "Risk and Compliance aspects"
+title: "Risk and compliance aspects"
 description: "Open Source Europe: Grant Eligibility and Risk Assessment Policy"
 ---
 
@@ -7,21 +7,21 @@ Open Source Europe: Grant Eligibility and Risk Assessment Policy
 
 ## Introduction
 
-Open Source Europe (OSE) is committed to supporting initiatives that promote positive social change and a more just world. This policy covers grants that a Collective wants to receive through OSE. OSE decides whether to support the proposed funding arrangement. If an application names OSE as recipient or signatory, contact the team before you submit it. OSE must first review and accept its role and commitments. The criteria below cover grant eligibility and possible compliance risks linked to terrorism or extremism financing.
+Open Source Europe (OSE) is committed to supporting initiatives that promote positive social change and a more just world. This policy covers grants that a Collective wants to receive through OSE. OSE decides whether to support the proposed funding arrangement. If an application names OSE as recipient or signatory, contact the team before you submit it. OSE must first review and accept its role and commitments. The following sections cover grant eligibility and possible compliance risks linked to terrorism or extremism financing.
 
 ***
 
-## Grant Eligibility Criteria
+## Grant eligibility criteria
 
 OSE prioritizes proposals from initiatives that:
 
-* Operate in accordance with the law.
-* Do not support or glorify terrorist groups.
-* Show that they manage money responsibly, including transparent record-keeping and reporting.
+* Operate in accordance with the law
+* Do not support or glorify terrorist groups
+* Show that they manage money responsibly, including transparent record-keeping and reporting
 
 ***
 
-## Compliance Risk Assessment
+## Compliance risk assessment
 
 OSE considers the following factors when it assesses potential compliance risks of a grant proposal. They are in no fixed order of importance:
 
@@ -32,20 +32,20 @@ OSE considers the following factors when it assesses potential compliance risks 
 
 ***
 
-## Contextual Considerations
+## Contextual considerations
 
 OSE takes context into account when it evaluates proposals. It carries out due diligence to understand the specific circumstances and actions of the initiative.
 
 ***
 
-## Information Sources
+## Information sources
 
 To assess grant proposals, OSE uses information sources that fit the circumstances of each case. It may use the following sources. They have no fixed ranking, and OSE does not have to check every source for every proposal:
 
-* Initiative websites and reports.
-* Credible news sources and independent research organizations.
-* United Nations and human rights organization reports.
-* Government watchlists and sanctions lists.
+* Initiative websites and reports
+* Credible news sources and independent research organizations
+* United Nations and human rights organization reports
+* Government watchlists and sanctions lists
 
 ***
 
@@ -61,18 +61,18 @@ If OSE declines to support a proposed grant arrangement, the Collective may ask 
 
 ***
 
-## Policy Review and Revision
+## Policy review and revision
 
-This policy is reviewed and revised periodically, to make sure it stays effective and in line with best practices.
+OSE reviews and revises this policy periodically, to make sure it stays effective and in line with best practices.
 
 ***
 
 ## Conclusion
 
-OSE is committed to balancing the prevention of terrorism financing with support for legitimate initiatives that work towards positive social change. This policy is the framework for that goal.
+OSE is committed to balancing the prevention of terrorism financing with support for legitimate initiatives that work toward positive social change. This policy is the framework for that goal.
 
 ***
 
-## Need Assistance?
+## Need assistance?
 
-For questions or more information about risk and compliance aspects, please contact us at <home@opensourceeurope.org>.
+For questions or more information about risk and compliance aspects, contact OSE at <home@opensourceeurope.org>.

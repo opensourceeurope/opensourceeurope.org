@@ -1,5 +1,5 @@
 ---
-title: "Safeguarding Policy"
+title: "Safeguarding policy"
 description: "Open Source Europe (OSE) is committed to creating a safe and inclusive environment for all staff, volunteers, partners, and beneficiaries."
 ---
 
@@ -9,7 +9,7 @@ Open Source Europe (OSE) is committed to creating a safe and inclusive environme
 
 ***
 
-## What is Safeguarding?
+## What is safeguarding?
 
 Safeguarding refers to the actions we take to protect people, especially children and vulnerable adults, from harm. This includes protection from:
 
@@ -21,19 +21,19 @@ Safeguarding refers to the actions we take to protect people, especially childre
 
 ***
 
-## Our Commitment
+## Our commitment
 
 OSE is committed to:
 
-* Promoting a culture of safety and well-being for everyone involved in our activities.
-* Sharing safeguarding guidance with staff and volunteers, including how to report concerns and their role in protecting people.
-* Providing clear procedures for reporting concerns.
-* Taking all concerns seriously and having the safeguarding leads review them to determine appropriate next steps.
-* Supporting anyone who has been affected by safeguarding incidents.
+* Promoting a culture of safety and well-being for everyone involved in our activities
+* Sharing safeguarding guidance with staff and volunteers, including how to report concerns and their role in protecting people
+* Providing clear procedures for reporting concerns
+* Taking all concerns seriously and having the safeguarding leads review them to determine appropriate next steps
+* Supporting anyone who has been affected by safeguarding incidents
 
 ***
 
-## Who is Vulnerable?
+## Who is vulnerable?
 
 Safeguarding applies to everyone, but some people may be more vulnerable to harm. This includes:
 
@@ -44,7 +44,7 @@ Safeguarding applies to everyone, but some people may be more vulnerable to harm
 
 ***
 
-## Reporting Concerns
+## Reporting concerns
 
 Anyone who has a concern about the safety or well-being of someone involved in OSE activities should report it immediately. This applies even if they are not sure about the nature of the concern.
 
@@ -52,7 +52,7 @@ Contact the safeguarding leads listed below to report a concern. OSE does not pr
 
 ***
 
-## How to Report a Concern
+## How to report a concern
 
 Concerns can be reported to:
 
@@ -66,7 +66,7 @@ Reports can be made in person, by email, or in writing. Information is shared on
 
 ***
 
-## What Happens When a Concern is Reported?
+## What happens when a concern is reported?
 
 All reported concerns are taken seriously. The safeguarding leads review each report and determine appropriate next steps, including referral to external services or relevant authorities where necessary. OSE does not systematically conduct an internal investigation.
 
@@ -86,7 +86,7 @@ OSE limits the sharing of information about safeguarding concerns to those who n
 
 ## Support
 
-OSE listens to people affected by safeguarding incidents and directs them towards appropriate support services. OSE does not organise or fund psychological counselling.
+OSE listens to people affected by safeguarding incidents and directs them toward appropriate support services. OSE does not organize or fund psychological counseling.
 
 ***
 
@@ -102,6 +102,6 @@ This policy will be reviewed regularly to ensure it remains effective.
 
 ***
 
-## Need Assistance?
+## Need assistance?
 
 For any questions about this policy or safeguarding in general, please contact the safeguarding lead at <home@opensourceeurope.org>.
