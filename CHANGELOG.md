@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.17.1](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.17.0...v0.17.1) (2026-11-19)
+
+
+### Bug Fixes
+
+* link to the www origin in the docs and the knowledge base ([#547](https://github.com/opensourceeurope/opensourceeurope.org/issues/547)) ([30ddd85](https://github.com/opensourceeurope/opensourceeurope.org/commit/30ddd85fce5102b032c1a003aea28c12dd42df15))
+
 ## [0.17.0](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.16.8...v0.17.0) (2026-11-18)
 
 
