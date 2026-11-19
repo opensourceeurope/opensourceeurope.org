@@ -48,7 +48,7 @@ These community guidelines apply to all individuals participating in OSE activit
 
 ## Safeguarding
 
-OSE is committed to safeguarding the well-being of all participants. See our [Safeguarding Policy](https://opensourceeurope.org/docs/about/safeguarding-policy/) for details of our safeguarding practices.
+OSE is committed to safeguarding the well-being of all participants. See our [Safeguarding Policy](https://www.opensourceeurope.org/docs/about/safeguarding-policy/) for details of our safeguarding practices.
 
 ***
 
@@ -74,7 +74,7 @@ For questions, concerns, or to report a violation of this Code of Conduct, pleas
 | A submitted expense                                            | Use its comments on Open Collective for routine questions. Send sensitive information privately to OSE. |
 | Hosting, a funding arrangement or another OSE question         | Email <home@opensourceeurope.org>.                                                                         |
 | Suspected misuse of funds or an issue involving administrators | Contact OSE directly in private. You do not need to go through those administrators.                    |
-| A safeguarding concern                                         | Use the [safeguarding contacts and procedure](https://opensourceeurope.org/docs/about/safeguarding-policy/).        |
+| A safeguarding concern                                         | Use the [safeguarding contacts and procedure](https://www.opensourceeurope.org/docs/about/safeguarding-policy/).        |
 | A technical problem with Open Collective                       | Use [platform support](https://opencollective.com/help).                                                |
 
 OSE aims to answer general questions within seven business days. This is a target, not a guaranteed response time. It does not replace the specific guidance for applications, payments or safeguarding.
@@ -424,7 +424,7 @@ Unlike traditional non-profits, Open Source Europe (OSE) combines a legal struct
 
 OSE provides a Belgian nonprofit home for open source projects. We use the Open Collective platform to manage budgets, receive contributions and process expenses transparently.
 
-See our [Terms of Service](https://opensourceeurope.org/docs/terms-of-service/) for the hosting agreement.
+See our [Terms of Service](https://www.opensourceeurope.org/docs/terms-of-service/) for the hosting agreement.
 
 ***
 
@@ -479,7 +479,7 @@ If a donor is not comfortable with online credit card transactions, they can sen
 
 ## **I sent in money but I don't see my donation on the collective's page?!**
 
-[Contact us!](https://opensourceeurope.org/docs/about/contact-us/)
+[Contact us!](https://www.opensourceeurope.org/docs/about/contact-us/)
 
 We often receive money in our bank account without any sign of where it should go. This is why it is so important to include the order number in the bank transfer. We always search carefully for the right collective, but sometimes we cannot find it.
 
@@ -504,7 +504,7 @@ OSE can confirm receipt of a donation, but a donation confirmation is not a sale
 
 Open Collective already includes crowdfunding tools and is the usual option. External platforms such as Patreon, Ko-fi or GoFundMe are considered case by case. Contact OSE before you set up a campaign to receive funds through OSE. The team checks payout arrangements, supporting records and any promised benefits. Compatibility and acceptance are not automatic.
 
-See [GitHub Sponsors](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/setting-up-github-sponsors/) for that specific route.
+See [GitHub Sponsors](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/setting-up-github-sponsors/) for that specific route.
 
 ## Can we receive earned income (i.e., non-donations)?
 
@@ -524,32 +524,32 @@ Transfers to another hosted Collective are different from ordinary external dona
 
 ## U.S. tax-deductible donations
 
-The established Myriad → OCEF → OSE route supports U.S. tax-deductible giving, subject to applicable tax rules. Contact OSE before payment to organise the right route. See [U.S. giving](https://opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/).
+The established Myriad → OCEF → OSE route supports U.S. tax-deductible giving, subject to applicable tax rules. Contact OSE before payment to organise the right route. See [U.S. giving](https://www.opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/).
 
 ## Donation refunds
 
-Contact the Collective administrators first. They forward the request to OSE. If they do not respond, contact OSE directly. Contact does not guarantee a refund. See [Refunds](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/refunds/).
+Contact the Collective administrators first. They forward the request to OSE. If they do not respond, contact OSE directly. Contact does not guarantee a refund. See [Refunds](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/refunds/).
 
 
 <!-- opencrane:page -->
 
 # Expense FAQs
 
-The detailed answers are maintained in [Expenses & Getting Paid – FAQs](https://opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/). Use the links below to go directly to your question.
+The detailed answers are maintained in [Expenses & Getting Paid – FAQs](https://www.opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/). Use the links below to go directly to your question.
 
 ## What does the approval process look like for expenses?
 
-See [approval and payment timing](https://opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/#how-does-paying-people-work).
+See [approval and payment timing](https://www.opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/#how-does-paying-people-work).
 
 ## Can we pay people for their time?
 
-See [paying service providers](https://opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/#can-we-pay-people-for-their-time).
+See [paying service providers](https://www.opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/#can-we-pay-people-for-their-time).
 
 ## Which documents are needed?
 
-See [supporting documents and invoice details](https://opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/#which-documents-are-needed).
+See [supporting documents and invoice details](https://www.opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/#which-documents-are-needed).
 
-For a step-by-step walkthrough, read the [expense guide](https://opensourceeurope.org/docs/how-it-works/expenses/).
+For a step-by-step walkthrough, read the [expense guide](https://www.opensourceeurope.org/docs/how-it-works/expenses/).
 
 
 <!-- opencrane:page -->
@@ -585,7 +585,7 @@ If your Collective does not yet have a Fiscal Host, you can add one by:
 
 ## More Info
 
-See [How to apply](https://opensourceeurope.org/docs/getting-started/how-to-apply/) and our [Terms of Service](https://opensourceeurope.org/docs/terms-of-service/) for hosting with OSE.
+See [How to apply](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/) and our [Terms of Service](https://www.opensourceeurope.org/docs/terms-of-service/) for hosting with OSE.
 
 ## Moving to another fiscal host
 
@@ -699,7 +699,7 @@ However, our standard fees are already kept as low as possible to cover the real
 
 No problem! You're welcome to use Open Source Europe as your fiscal host for as long as you need and remain eligible.
 
-* You can ask to end fiscal hosting, following the notice and remaining-balance rules in your [hosting agreement](https://opensourceeurope.org/docs/terms-of-service/).
+* You can ask to end fiscal hosting, following the notice and remaining-balance rules in your [hosting agreement](https://www.opensourceeurope.org/docs/terms-of-service/).
 * If you plan to move to managing your own structure, we can help you prepare.
 * The [Open Collective platform](https://opencollective.com/) also supports organizations that wish to become fiscal hosts themselves.
 
@@ -711,7 +711,7 @@ No problem! You're welcome to use Open Source Europe as your fiscal host for as 
 * We might reach out with a few follow-up questions.
 * Once your application is accepted, you can start receiving donations right away.
 
-> **Note:** Completing the application and being accepted are separate steps. See [How to apply](https://opensourceeurope.org/docs/getting-started/how-to-apply/) for the review process and indicative response time. Additional information may be required before acceptance.
+> **Note:** Completing the application and being accepted are separate steps. See [How to apply](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/) for the review process and indicative response time. Additional information may be required before acceptance.
 
 ***
 
@@ -793,7 +793,7 @@ Open Source Europe (OSE) welcomes initiatives from around the world that align w
 To be eligible for fiscal hosting by OSE, your initiative must:
 
 * Align with OSE's mission and impact areas. Your activities should be charitable and aim to benefit the public.
-* Be non-profit. Profits must not be distributed to members. For the types of contributions accepted through OSE, including the rules on membership benefits and other counterparty benefits, see [Contributions FAQ](https://opensourceeurope.org/docs/faq/contributions-faq/).
+* Be non-profit. Profits must not be distributed to members. For the types of contributions accepted through OSE, including the rules on membership benefits and other counterparty benefits, see [Contributions FAQ](https://www.opensourceeurope.org/docs/faq/contributions-faq/).
 * Have no separate legal entity, for ordinary fiscal hosting. Initiatives with their own legal status, such as registered NGOs, are not eligible for ordinary fiscal hosting. They can set up a Fund with OSE for a specific programme. OSE must first review and agree to the programme and how the Fund will operate. Contact OSE to discuss the arrangement. OSE does not accept it automatically.
 * Have at least one administrator. One is enough, and two are recommended for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed.
 * Keep to appropriate content standards. Content that promotes violence, hate speech, pornography, or any other material considered inappropriate or offensive is not permitted.
@@ -827,7 +827,7 @@ OSE aims to lower barriers for initiatives with impact, so we do not require:
 
 ## Ready to Apply?
 
-If your initiative meets the criteria above, follow our [How to Apply](https://opensourceeurope.org/docs/getting-started/how-to-apply/) guide to start your application.
+If your initiative meets the criteria above, follow our [How to Apply](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/) guide to start your application.
 
 If you have questions, [contact us](mailto:home@opensourceeurope.org).
 
@@ -844,11 +844,11 @@ Use this guide to prepare and submit a hosting application, and to learn how OSE
 
 ## Start here
 
-1. Read the [eligibility criteria](https://opensourceeurope.org/docs/getting-started/how-to-apply/eligibility/), [hosting fees](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost) and [application questions](https://opensourceeurope.org/docs/getting-started/how-to-apply/application-questions/).
+1. Read the [eligibility criteria](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/eligibility/), [hosting fees](https://www.opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost) and [application questions](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/application-questions/).
 2. Prepare your project details and at least one administrator. We recommend two.
 3. Follow the application process below, then complete the supplementary form that OSE provides.
 
-Next, OSE aims to give a first response within seven business days after it receives the completed supplementary form. This is a target for the response, not a deadline for acceptance. After acceptance, continue with [your first steps](https://opensourceeurope.org/docs/how-it-works/basics/).
+Next, OSE aims to give a first response within seven business days after it receives the completed supplementary form. This is a target for the response, not a deadline for acceptance. After acceptance, continue with [your first steps](https://www.opensourceeurope.org/docs/how-it-works/basics/).
 
 ## Join Open Source Europe in just a few steps
 
@@ -865,7 +865,7 @@ Check that your initiative meets these criteria:
 * For ordinary fiscal hosting, it has no legal entity of its own. An existing legal entity can instead discuss a Fund for a specific programme with OSE. This depends on OSE's review and agreement on the programme and on how the Fund will operate.
 * It can be based anywhere in the world, not only in Europe.
 
-Also read our [Terms of Cooperation](https://opensourceeurope.org/docs/terms-of-service/) and [Community Guidelines](https://opensourceeurope.org/docs/about/community-guidelines/).
+Also read our [Terms of Cooperation](https://www.opensourceeurope.org/docs/terms-of-service/) and [Community Guidelines](https://www.opensourceeurope.org/docs/about/community-guidelines/).
 
 ***
 
@@ -970,9 +970,9 @@ Then run `/plugins` in Codex, install `ose-knowledge` and start a new session. T
 
 An AI tool that reads web pages can also use the docs without the knowledge base. Point it at one of these files:
 
-- [llms.txt](https://opensourceeurope.org/llms.txt) lists the pages of the website and the docs, with a short description of each.
-- [llms-full.txt](https://opensourceeurope.org/llms-full.txt) holds the text of every docs page in one file, with the address of each page.
-- Each docs page also has a Markdown copy. Replace the slash at the end of its address with `.md`, as in [basics.md](https://opensourceeurope.org/docs/how-it-works/basics.md).
+- [llms.txt](https://www.opensourceeurope.org/llms.txt) lists the pages of the website and the docs, with a short description of each.
+- [llms-full.txt](https://www.opensourceeurope.org/llms-full.txt) holds the text of every docs page in one file, with the address of each page.
+- Each docs page also has a Markdown copy. Replace the slash at the end of its address with `.md`, as in [basics.md](https://www.opensourceeurope.org/docs/how-it-works/basics.md).
 
 llms.txt and llms-full.txt follow the [llms.txt format](https://llmstxt.org).
 
@@ -1042,7 +1042,7 @@ If you have a roadmap, pay new contractors or services to take repetitive tasks 
 
 ### Hiring Contractors
 
-You can hire collaborators for your collective as contractors. You can choose who to hire informally or through a public job posting. See [the invoicing options](https://opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/).
+You can hire collaborators for your collective as contractors. You can choose who to hire informally or through a public job posting. See [the invoicing options](https://www.opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/).
 
 ### Using Bounties Cautiously
 
@@ -1080,9 +1080,9 @@ This is your starting point after OSE accepts your Collective. Work through the 
 ## Your first steps
 
 1. Check your public profile and contacts. Use the platform's [Quick Start Guide](https://docs.opencollective.com/help/collectives/quick-start-guide). Keep administrator access and the main contact up to date, and notify OSE of changes.
-2. Choose how to receive funds. Start with [donations and funding routes](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/). You can receive contributions without waiting for a welcome call.
-3. Agree how your Collective makes spending decisions. Read [budget decisions](https://opensourceeurope.org/docs/guides/deciding-on-how-to-use-your-money/).
-4. Prepare your first payment. Use [Pay and get reimbursed](https://opensourceeurope.org/docs/how-it-works/expenses/). Funds must be received and available before payment.
+2. Choose how to receive funds. Start with [donations and funding routes](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/). You can receive contributions without waiting for a welcome call.
+3. Agree how your Collective makes spending decisions. Read [budget decisions](https://www.opensourceeurope.org/docs/guides/deciding-on-how-to-use-your-money/).
+4. Prepare your first payment. Use [Pay and get reimbursed](https://www.opensourceeurope.org/docs/how-it-works/expenses/). Funds must be received and available before payment.
 5. Keep the community informed. Use Updates and review the responsibilities below.
 
 Some steps need OSE's agreement first. Contact the team before a grant application naming OSE as recipient or signatory, a specific contract OSE would sign, or a proposed commercial arrangement. Details follow below.
@@ -1098,7 +1098,7 @@ Once your application to be hosted by Open Source Europe (OSE) is approved, you 
 1. Contracts and agreements: Before any arrangement requires OSE to sign a specific contract, discuss it with OSE and get its acceptance.
 2. Grant applications: If OSE will be named as recipient or signatory, contact the team before submission so it can review and accept its role and commitments.
 3. Community updates: Use the Updates feature to keep your community informed. OSE recommends publishing at least one update per year. This is not a general hosting obligation. Reporting requirements in a funding arrangement or applicable agreement still apply.
-4. Expenses: Follow the [expense guide](https://opensourceeurope.org/docs/how-it-works/expenses/) for documents, review and payment.
+4. Expenses: Follow the [expense guide](https://www.opensourceeurope.org/docs/how-it-works/expenses/) for documents, review and payment.
 5. Contributions: OSE mainly supports donations and grants. Before committing to sales, invoiced services or contributions with promised benefits, contact OSE to discuss whether the arrangement can be supported and under what conditions. Do this before making commitments or receiving payment. Acceptance is not guaranteed.
 
 ***
@@ -1126,7 +1126,7 @@ Please read the guidelines on [donations](https://docs.opencollective.com/help/c
 ## Important Notes
 
 * Tax obligations: You’re responsible for understanding and fulfilling all of your tax obligations. If you’re not sure whether you need to charge or pay tax, we encourage you to ask a tax professional about your tax obligations. OSE can’t provide tax advice.
-* Terms & Conditions: Please review our [Terms & Conditions](https://opensourceeurope.org/docs/terms-of-service/) for detailed information about your responsibilities and our policies.
+* Terms & Conditions: Please review our [Terms & Conditions](https://www.opensourceeurope.org/docs/terms-of-service/) for detailed information about your responsibilities and our policies.
 
 ***
 
@@ -1140,14 +1140,14 @@ When administrators or the main contact change, update access on Open Collective
 
 ## Optional welcome call
 
-Welcome calls happen only occasionally and are not a standard step. Contributions can start after acceptance without waiting for a call. See [How to apply](https://opensourceeurope.org/docs/getting-started/how-to-apply/).
+Welcome calls happen only occasionally and are not a standard step. Contributions can start after acceptance without waiting for a call. See [How to apply](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/).
 
 
 <!-- opencrane:page -->
 
 # Expenses & Getting Paid – FAQs
 
-For the steps from planning a purchase to payment, start with the [expense guide](https://opensourceeurope.org/docs/how-it-works/expenses/). This page answers specific payment questions.
+For the steps from planning a purchase to payment, start with the [expense guide](https://www.opensourceeurope.org/docs/how-it-works/expenses/). This page answers specific payment questions.
 
 ## How does paying people work?
 
@@ -1170,7 +1170,7 @@ Go to your initiative's page and click **“Submit Expense”**. You’ll need t
 * **Reimbursement**: Use this when you paid with your own money. You need a receipt that shows the vendor's name, address and tax ID. Order confirmations are not valid receipts.
 * **Invoice**: Use this when you're requesting payment for services. You need a formal invoice with contact details, tax information and a description of the services.
 
-> **Note:** [Invoices vs. Reimbursements – OSE Docs](https://opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/)
+> **Note:** [Invoices vs. Reimbursements – OSE Docs](https://www.opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/)
 
 ***
 
@@ -1182,7 +1182,7 @@ Collectives can pay service providers against a compliant invoice. This includes
 
 Invoices must be addressed to the Collective or the person who placed the order. OSE acts only as the payer for these purchases. Collectives must not use OSE’s legal name or VAT number to have invoices issued.
 
-Reimbursements require an invoice or receipt. A bank statement alone is not enough. See the [expense guide](https://opensourceeurope.org/docs/how-it-works/expenses/) and [Invoices or Reimbursements?](https://opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/).
+Reimbursements require an invoice or receipt. A bank statement alone is not enough. See the [expense guide](https://www.opensourceeurope.org/docs/how-it-works/expenses/) and [Invoices or Reimbursements?](https://www.opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/).
 
 ***
 
@@ -1219,9 +1219,9 @@ Prepare a payment from your Collective's budget. Start by choosing the situation
 
 | Your situation                                             | Where to start                                                                                                                  |
 | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| You have already paid for something for the Collective     | [Prepare a reimbursement](https://opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/#prepare-a-reimbursement)      |
-| A supplier needs to be paid for goods or services          | [Prepare an invoice](https://opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/#prepare-an-invoice)                |
-| The payment is a donation or grant to another organisation | [Ask OSE about an outgoing grant or donation](https://opensourceeurope.org/docs/how-it-works/expenses/request-a-grant-for-nonprofits-only/) |
+| You have already paid for something for the Collective     | [Prepare a reimbursement](https://www.opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/#prepare-a-reimbursement)      |
+| A supplier needs to be paid for goods or services          | [Prepare an invoice](https://www.opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/#prepare-an-invoice)                |
+| The payment is a donation or grant to another organisation | [Ask OSE about an outgoing grant or donation](https://www.opensourceeurope.org/docs/how-it-works/expenses/request-a-grant-for-nonprofits-only/) |
 
 ## Before you submit
 
@@ -1338,8 +1338,8 @@ Supported payout options:
 
 * [Overview: How to Submit Expenses](https://docs.opencollective.com/help/expenses-and-getting-paid/submitting-expenses)
 * [Expenses in the Ledger – Open Collective Docs](https://docs.opencollective.com/open-collective-docs/product/ledger/expenses-in-the-ledger)
-* [Expenses and getting paid: frequently asked questions](https://opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/)
-* [Outgoing grants and donations](https://opensourceeurope.org/docs/how-it-works/expenses/request-a-grant-for-nonprofits-only/)
+* [Expenses and getting paid: frequently asked questions](https://www.opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/)
+* [Outgoing grants and donations](https://www.opensourceeurope.org/docs/how-it-works/expenses/request-a-grant-for-nonprofits-only/)
 
 
 <!-- opencrane:page -->
@@ -1353,11 +1353,11 @@ Choose the request type before you submit an expense. Use **Reimbursement** if y
 1. Choose the matching document checklist below: **Invoice** or **Reimbursement**.
 2. Open your Collective on Open Collective and choose **Submit Expense**.
 3. Select the type, complete the details, attach the supporting document and choose the payout method.
-4. Submit for Collective and OSE review. Follow the [approval and payment guidance](https://opensourceeurope.org/docs/how-it-works/expenses/#approval-workflow).
+4. Submit for Collective and OSE review. Follow the [approval and payment guidance](https://www.opensourceeurope.org/docs/how-it-works/expenses/#approval-workflow).
 
 If someone cannot pay the cost first, OSE can pay the supplier directly on a compliant invoice. OSE does not provide advances to individuals. Payment is subject to review and available funds.
 
-For a donation or grant to another organisation, use the [outgoing grants guide](https://opensourceeurope.org/docs/how-it-works/expenses/request-a-grant-for-nonprofits-only/). Do not treat it as a supplier invoice.
+For a donation or grant to another organisation, use the [outgoing grants guide](https://www.opensourceeurope.org/docs/how-it-works/expenses/request-a-grant-for-nonprofits-only/). Do not treat it as a supplier invoice.
 
 ## Understanding the Difference
 
@@ -1423,7 +1423,7 @@ If you have questions, [contact us](mailto:home@opensourceeurope.org).
 
 ## Documents and review
 
-Reimbursement is refused without an invoice or receipt. A bank statement alone is not enough. See [Expenses](https://opensourceeurope.org/docs/how-it-works/expenses/) for the rules on prior spending, submission timing, available funds and payment targets.
+Reimbursement is refused without an invoice or receipt. A bank statement alone is not enough. See [Expenses](https://www.opensourceeurope.org/docs/how-it-works/expenses/) for the rules on prior spending, submission timing, available funds and payment targets.
 
 
 <!-- opencrane:page -->
@@ -1524,7 +1524,7 @@ For purchases by a Collective, invoices must be issued to the Collective or the 
 
 VAT treatment depends on the specific transaction and the rules that apply to it. Do not assume one rule applies to every purchase. Ask the supplier or an accountant about exemptions, reverse charge or VAT recovery.
 
-> **Note:** [Read more: VAT in Europe and how it works in OSE](https://opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-ose/)
+> **Note:** [Read more: VAT in Europe and how it works in OSE](https://www.opensourceeurope.org/docs/how-it-works/expenses/the-partnership/vat-in-europe-and-how-it-works-in-ose/)
 
 ***
 
@@ -1590,7 +1590,7 @@ Use this guide when a funder may support your Collective through OSE. Your Colle
 3. When the funds arrive, use the Collective budget in line with the funding conditions. A promised grant is not an available balance.
 4. During the project, prepare activity reports and project monitoring. OSE provides the accounting information it holds and validates anything that binds OSE.
 
-The details of the agreement, communication and reporting requirements are below. See also [hosting fees](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost) and [spending the grant budget](https://opensourceeurope.org/docs/how-it-works/expenses/).
+The details of the agreement, communication and reporting requirements are below. See also [hosting fees](https://www.opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost) and [spending the grant budget](https://www.opensourceeurope.org/docs/how-it-works/expenses/).
 
 ## Overview
 
@@ -1610,7 +1610,7 @@ Open Source Europe (OSE) enables hosted Collectives to receive grants from insti
    Some funders do not allow grants to fiscally sponsored initiatives. Ask the funder whether they accept a hosted structure.
 3. For U.S. funders
 
-   Contact the OSE team to arrange the documentation required by your funder. See [Equivalency Determination Certificate](https://opensourceeurope.org/docs/what-we-offer/equivalency-determination-certificate/).
+   Contact the OSE team to arrange the documentation required by your funder. See [Equivalency Determination Certificate](https://www.opensourceeurope.org/docs/what-we-offer/equivalency-determination-certificate/).
 
 ***
 
@@ -1659,7 +1659,7 @@ The Collective leads its own fundraising. OSE may occasionally share opportuniti
 
 ## Hosting fees
 
-See the [current OSE fee reference](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost).
+See the [current OSE fee reference](https://www.opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost).
 
 
 <!-- opencrane:page -->
@@ -1682,7 +1682,7 @@ The Collective may ask OSE at any time to transfer the funds received on Every.o
 
 ## Fees
 
-See the [current OSE fee reference](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost). Contact OSE for the applicable processing, conversion and intermediary costs before sending funds. Do not assume a combined fee or transfer date.
+See the [current OSE fee reference](https://www.opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost). Contact OSE for the applicable processing, conversion and intermediary costs before sending funds. Do not assume a combined fee or transfer date.
 
 
 <!-- opencrane:page -->
@@ -1699,15 +1699,15 @@ External platforms such as Patreon, Ko-fi and GoFundMe are considered case by ca
 
 ## Supported routes
 
-* [GitHub Sponsors](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/setting-up-github-sponsors/)
-* [U.S. tax-deductible donations](https://opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/)
-* [Cryptocurrency donations](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/contributions-in-cryptocurrencies/)
+* [GitHub Sponsors](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/setting-up-github-sponsors/)
+* [U.S. tax-deductible donations](https://www.opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/)
+* [Cryptocurrency donations](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/contributions-in-cryptocurrencies/)
 
 ## Fundraising support
 
 The Collective leads its fundraising. OSE may occasionally share opportunities or make introductions when it has capacity. It does not guarantee funding or provide a standard fundraising service.
 
-For an unidentified incoming payment, [contact OSE](https://opensourceeurope.org/docs/about/contact-us/) with its reference, so the team can find out where it should go. This is separate from how OSE handles the balances of inactive Collectives.
+For an unidentified incoming payment, [contact OSE](https://www.opensourceeurope.org/docs/about/contact-us/) with its reference, so the team can find out where it should go. This is separate from how OSE handles the balances of inactive Collectives.
 
 
 <!-- opencrane:page -->
@@ -1722,15 +1722,15 @@ Choose the route that matches the donor or funding arrangement. For an ordinary 
 
 | What you want to do                    | Guide                                                                                                                                                           |
 | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Donate by bank transfer                | [Bank transfer instructions](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/wire-transfer-instructions-via-open-collective-platform/) |
-| Apply for or receive a grant           | [Grant applications](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/applying-for-grants/)                                             |
-| Receive GitHub sponsorships            | [Connect GitHub Sponsors](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/setting-up-github-sponsors/)                                 |
-| Arrange tax-deductible U.S. giving     | [U.S. donation routes](https://opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/)                                                              |
-| Receive a crypto donation              | [Crypto donations through Every.org](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/contributions-in-cryptocurrencies/)               |
-| Consider another crowdfunding platform | [Fundraising tools and external platforms](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/fundraising-tools-and-resources/)           |
-| Request a donation refund              | [Refund requests](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/refunds/)                                                            |
+| Donate by bank transfer                | [Bank transfer instructions](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/wire-transfer-instructions-via-open-collective-platform/) |
+| Apply for or receive a grant           | [Grant applications](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/applying-for-grants/)                                             |
+| Receive GitHub sponsorships            | [Connect GitHub Sponsors](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/setting-up-github-sponsors/)                                 |
+| Arrange tax-deductible U.S. giving     | [U.S. donation routes](https://www.opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/)                                                              |
+| Receive a crypto donation              | [Crypto donations through Every.org](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/contributions-in-cryptocurrencies/)               |
+| Consider another crowdfunding platform | [Fundraising tools and external platforms](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/fundraising-tools-and-resources/)           |
+| Request a donation refund              | [Refund requests](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/refunds/)                                                            |
 
-Before choosing a route, check the [current hosting fees](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost). Contact OSE before you set up an external collection or promise goods, services or other benefits in return for funding.
+Before choosing a route, check the [current hosting fees](https://www.opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost). Contact OSE before you set up an external collection or promise goods, services or other benefits in return for funding.
 
 ## Why Donate via Open Source Europe?
 
@@ -1764,13 +1764,13 @@ When donating, you may be asked for:
 ## Bank Transfer Instructions
 
 If you want to contribute by bank transfer, follow the step-by-step guide here:\
-👉 [Wire Transfer Instructions](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/wire-transfer-instructions-via-open-collective-platform/)
+👉 [Wire Transfer Instructions](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/wire-transfer-instructions-via-open-collective-platform/)
 
 ***
 
 ## Tax-Deductible Giving
 
-U.S. donors can use the established Myriad → OCEF → OSE route for tax-deductible giving, subject to applicable tax rules. Contact OSE before you pay, so that OSE can organise the right route. See [U.S. giving](https://opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/).
+U.S. donors can use the established Myriad → OCEF → OSE route for tax-deductible giving, subject to applicable tax rules. Contact OSE before you pay, so that OSE can organise the right route. See [U.S. giving](https://www.opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/).
 
 ***
 
@@ -1781,7 +1781,7 @@ If you’re not sure which method to use, or want to check your transaction, con
 
 ## Hosting fees
 
-See the [current OSE fee reference](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost).
+See the [current OSE fee reference](https://www.opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost).
 
 
 <!-- opencrane:page -->
@@ -1870,7 +1870,7 @@ Contact OSE to organise a change from another fiscal host. Moving your Collectiv
 
 ## Fees and sponsorship benefits
 
-See the [current OSE fee reference](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost). GitHub’s own fees are separate. See its [current fee guidance](https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes).
+See the [current OSE fee reference](https://www.opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost). GitHub’s own fees are separate. See its [current fee guidance](https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes).
 
 If you plan to promise goods, services or other benefits to sponsors, contact OSE before you commit or receive payment. GitHub’s tier features do not automatically make an arrangement acceptable to OSE.
 
@@ -1945,7 +1945,7 @@ If you prefer to contribute to a Collective by bank transfer, Open Source Europe
 
 ## Hosting fees
 
-See the [current OSE fee reference](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost).
+See the [current OSE fee reference](https://www.opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost).
 
 
 <!-- opencrane:page -->
@@ -1954,33 +1954,33 @@ See the [current OSE fee reference](https://opensourceeurope.org/docs/faq/genera
 
 Practical guidance for joining OSE, receiving funds and managing your Collective.
 
-If you are new to OSE: [Start your application](https://opensourceeurope.org/docs/getting-started/how-to-apply/). If OSE has already accepted you: [Follow your first steps](https://opensourceeurope.org/docs/how-it-works/basics/).
+If you are new to OSE: [Start your application](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/). If OSE has already accepted you: [Follow your first steps](https://www.opensourceeurope.org/docs/how-it-works/basics/).
 
 ## Choose your task
 
-- [Join OSE](https://opensourceeurope.org/docs/getting-started/how-to-apply/): Check whether hosting fits your project and prepare your application.
-- [Run your Collective](https://opensourceeurope.org/docs/how-it-works/basics/): Start after acceptance, manage your budget and keep your contacts up to date.
-- [Receive funds](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/): Choose a donation route, receive a grant or connect GitHub Sponsors.
-- [Pay and get reimbursed](https://opensourceeurope.org/docs/how-it-works/expenses/): Choose an invoice or reimbursement and prepare your payment request.
-- [Fees and hosting rules](https://opensourceeurope.org/docs/faq/general-faqs/): Understand hosting costs and find answers about your arrangement with OSE.
-- [Get help](https://opensourceeurope.org/docs/about/contact-us/): Find the right contact for a question, a payment issue or a sensitive concern.
+- [Join OSE](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/): Check whether hosting fits your project and prepare your application.
+- [Run your Collective](https://www.opensourceeurope.org/docs/how-it-works/basics/): Start after acceptance, manage your budget and keep your contacts up to date.
+- [Receive funds](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/): Choose a donation route, receive a grant or connect GitHub Sponsors.
+- [Pay and get reimbursed](https://www.opensourceeurope.org/docs/how-it-works/expenses/): Choose an invoice or reimbursement and prepare your payment request.
+- [Fees and hosting rules](https://www.opensourceeurope.org/docs/faq/general-faqs/): Understand hosting costs and find answers about your arrangement with OSE.
+- [Get help](https://www.opensourceeurope.org/docs/about/contact-us/): Find the right contact for a question, a payment issue or a sensitive concern.
 
 ## Common tasks
 
-* [Check project eligibility](https://opensourceeurope.org/docs/getting-started/how-to-apply/eligibility/)
-* [Review hosting fees](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost)
-* [Choose invoice or reimbursement](https://opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/)
-* [Apply for a grant](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/applying-for-grants/)
-* [Connect GitHub Sponsors](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/setting-up-github-sponsors/)
-* [Arrange U.S. donations](https://opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/)
-* [Make an outgoing grant or donation](https://opensourceeurope.org/docs/how-it-works/expenses/request-a-grant-for-nonprofits-only/)
-* [Move or close a Collective](https://opensourceeurope.org/docs/faq/fiscal-hosting-faqs/)
+* [Check project eligibility](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/eligibility/)
+* [Review hosting fees](https://www.opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost)
+* [Choose invoice or reimbursement](https://www.opensourceeurope.org/docs/how-it-works/expenses/invoices-or-reimbursements/)
+* [Apply for a grant](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/applying-for-grants/)
+* [Connect GitHub Sponsors](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/setting-up-github-sponsors/)
+* [Arrange U.S. donations](https://www.opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/)
+* [Make an outgoing grant or donation](https://www.opensourceeurope.org/docs/how-it-works/expenses/request-a-grant-for-nonprofits-only/)
+* [Move or close a Collective](https://www.opensourceeurope.org/docs/faq/fiscal-hosting-faqs/)
 
 ## Understand OSE
 
-Read [what OSE offers](https://opensourceeurope.org/docs/what-we-offer/), explore [budget decisions](https://opensourceeurope.org/docs/guides/deciding-on-how-to-use-your-money/), or consult the [payment FAQ](https://opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/).
+Read [what OSE offers](https://www.opensourceeurope.org/docs/what-we-offer/), explore [budget decisions](https://www.opensourceeurope.org/docs/guides/deciding-on-how-to-use-your-money/), or consult the [payment FAQ](https://www.opensourceeurope.org/docs/how-it-works/expenses/expenses-and-getting-paid-faqs/).
 
-For a safeguarding concern, go directly to the [safeguarding policy and contacts](https://opensourceeurope.org/docs/about/safeguarding-policy/).
+For a safeguarding concern, go directly to the [safeguarding policy and contacts](https://www.opensourceeurope.org/docs/about/safeguarding-policy/).
 
 Open Source Europe is a Belgian Association (ASBL/vzw). Its tech platform lets open source groups raise and spend funds, all in full transparency.
 
@@ -2055,7 +2055,7 @@ Contact the team before you enter into a grant agreement or make a commitment on
 
 The Terms of Hosting provide for termination with **30 days' written notice**. Valid outstanding expenses and any remaining balance are handled under the agreement's termination provisions. A remaining balance is not automatically available for distribution to individual administrators.
 
-For current guidance on contributions, see [Contributions FAQ](https://opensourceeurope.org/docs/faq/contributions-faq/). If your planned activity raises a question about the scope of the hosting agreement, contact the team before proceeding.
+For current guidance on contributions, see [Contributions FAQ](https://www.opensourceeurope.org/docs/faq/contributions-faq/). If your planned activity raises a question about the scope of the hosting agreement, contact the team before proceeding.
 
 ## Contact
 
@@ -2084,7 +2084,7 @@ The team will provide the current ED documentation and confirm the details to us
 
 ## Donations from individuals
 
-An ED is different from the route for U.S. tax-deductible donations through Myriad USA. See [Tax-Deductible Giving for U.S. Donors](https://opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/).
+An ED is different from the route for U.S. tax-deductible donations through Myriad USA. See [Tax-Deductible Giving for U.S. Donors](https://www.opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/).
 
 ## Documentation for the funder
 
@@ -2153,15 +2153,15 @@ Contact OSE at <home@opensourceeurope.org> before payment, and give the name of 
 
 A donation through the ordinary Open Collective checkout does not automatically use this arrangement. Confirm which organisation will issue the donation documentation for the selected route.
 
-The [current OSE hosting fees](https://opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost) apply. The team will confirm any additional costs associated with the route.
+The [current OSE hosting fees](https://www.opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost) apply. The team will confirm any additional costs associated with the route.
 
 ## Other cases
 
 If the tax-deductible route for your circumstances has not already been confirmed, contact OSE before giving to check the available route and documents. OSE does not guarantee an individual tax benefit.
 
-Cryptocurrency donations must start on Every.org. See [Cryptocurrency contributions](https://opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/contributions-in-cryptocurrencies/).
+Cryptocurrency donations must start on Every.org. See [Cryptocurrency contributions](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/contributions-in-cryptocurrencies/).
 
-For grants from U.S. foundations, see [Equivalency Determination Certificate](https://opensourceeurope.org/docs/what-we-offer/equivalency-determination-certificate/).
+For grants from U.S. foundations, see [Equivalency Determination Certificate](https://www.opensourceeurope.org/docs/what-we-offer/equivalency-determination-certificate/).
 
 Further information: [Myriad FAQ](https://myriadusa.org/about/faqs/) and [ways to give](https://myriadusa.org/waystogive/).
 

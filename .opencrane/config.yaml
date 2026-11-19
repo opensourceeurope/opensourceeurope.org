@@ -9,5 +9,5 @@ sources:
   open-source-europe:
     local: true
     docs_path: docs
-    docs_url: https://opensourceeurope.org/docs
+    docs_url: https://www.opensourceeurope.org/docs
     trailing_slash: true

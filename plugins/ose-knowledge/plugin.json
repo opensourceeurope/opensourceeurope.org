@@ -15,7 +15,7 @@
         "displayName": "Open Source Europe Knowledge Base",
         "shortDescription": "Answer questions about Open Source Europe from its docs",
         "developerName": "Open Source Europe",
-        "websiteUrl": "https://opensourceeurope.org",
+        "websiteUrl": "https://www.opensourceeurope.org",
         "capabilities": [
           "Read"
         ]

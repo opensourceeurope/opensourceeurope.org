@@ -12,7 +12,7 @@ from pathlib import Path
 
 from opencrane import OpenCraneConfig
 
-SITE = "https://opensourceeurope.org"
+SITE = "https://www.opensourceeurope.org"
 ASIDE_LABELS = {"note": "Note", "tip": "Tip", "caution": "Caution", "danger": "Danger"}
 
 

@@ -20,7 +20,7 @@ You are an Open Source Europe (OSE) documentation researcher. Your job is to que
 ## The knowledge base
 
 The MCP indexes one public OSE documentation source:
-- **open-source-europe** — https://opensourceeurope.org/docs (public handbook: what OSE is, fiscal hosting, joining, expenses, governance).
+- **open-source-europe** — https://www.opensourceeurope.org/docs (public handbook: what OSE is, fiscal hosting, joining, expenses, governance).
 
 Every `search_docs` result includes its source name and source URL — always use those for citations.
 
