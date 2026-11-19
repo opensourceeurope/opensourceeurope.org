@@ -12,7 +12,7 @@ By joining Open Source Europe, your initiative can:
 * Pay invoices and reimburse expenses
 * Offer full budget transparency to your community
 * Operate without creating your own legal entity
-* Pay service providers on compliant invoices, including through workers’ cooperatives; reimburse eligible volunteer expenses
+* Pay service providers on compliant invoices, including through workers’ cooperatives or umbrella companies; reimburse eligible volunteer expenses
 
 ***
 
@@ -124,7 +124,7 @@ Since our fees are taken as a percentage of incoming contributions, you can star
 
 ## Paying collaborators
 
-Collectives can pay service providers against a compliant invoice, including through a workers’ cooperative. Agree the work, price and dates with the Collective and submit the invoice through Open Collective for review. OSE does not provide a standard employment or payroll service. Any arrangement requiring OSE to sign a specific contract must be discussed and accepted beforehand.
+Collectives can pay people for their work against a compliant invoice, including their own members and admins. An admin's invoice for their own work needs approval from another admin. OSE does not provide a standard employment or payroll service. See [Paying service providers](/docs/how-it-works/expenses/#paying-service-providers) for who can issue the invoice and how approval works.
 
 ## Discounts and nonprofit benefits
 

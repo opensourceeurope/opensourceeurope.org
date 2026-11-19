@@ -36,7 +36,7 @@ Go to your initiative's page and click **“Submit Expense”**. You’ll need t
 
 ## Can we pay people for their time?
 
-Collectives can pay service providers against a compliant invoice. This includes payment through a workers’ cooperative. Agree the work, price and dates with the Collective and submit the invoice through Open Collective for review. OSE does not provide a standard employment or payroll service. If an arrangement requires OSE to sign a specific contract, it must be discussed and accepted beforehand.
+Collectives can pay people for their work against a compliant invoice, including their own members and admins. An admin's invoice for their own work needs approval from another admin. OSE does not provide a standard employment or payroll service. See [Paying service providers](/docs/how-it-works/expenses/#paying-service-providers) for who can issue the invoice and how approval works.
 
 ## Which documents are needed?
 

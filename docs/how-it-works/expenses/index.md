@@ -36,6 +36,31 @@ OSE does not ask for advance approval of every ordinary expense. If you are not 
 
 If someone cannot pay the cost first, OSE can pay the supplier directly on a compliant invoice. OSE does not provide advances to individuals. OSE may pay a supplier deposit before delivery or completion. It must first review and agree to the documents and conditions, and the funds must be available.
 
+## Examples of expenses
+
+Collectives hosted by OSE regularly pay for the costs in the following table. The list shows common cases and is not complete. OSE still reviews each expense.
+
+| Cost                                                                                                          | Usual request type                                                                         |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Servers, cloud hosting, storage and CDN                                                                       | Reimbursement, or an invoice from the provider to the Collective                           |
+| Domains and DNS                                                                                               | Reimbursement                                                                              |
+| Developer program fees, such as the Apple Developer Program                                                   | Reimbursement                                                                              |
+| Software subscriptions used for the project, such as code hosting, IDEs, design tools, video calls and AI coding assistants | Reimbursement                                                                              |
+| CI and build servers                                                                                          | Reimbursement, or an invoice from the provider                                             |
+| Development, maintenance and system administration work                                                       | Invoice from the person or company that did the work, or from a cooperative or umbrella company |
+| Design work                                                                                                   | Invoice                                                                                    |
+| Hardware for development and testing, such as test devices                                                    | Reimbursement                                                                              |
+| Travel and accommodation for conferences and hackathons                                                       | Reimbursement                                                                              |
+| Stickers, banners and other printed material                                                                  | Reimbursement                                                                              |
+
+For a recurring cost, such as a monthly server bill, submit the receipt for each bill. You can submit several bills in one expense.
+
+Ask OSE before you spend on the following:
+
+* Equipment that a person also uses privately, such as a laptop.
+* Courses and training.
+* Anything without a receipt or invoice, such as a lump sum for running costs.
+
 ***
 
 ## Types of Expenses
@@ -83,7 +108,14 @@ There is no general fixed deadline to submit a reimbursement. Deadlines in a fun
 
 ## Paying service providers
 
-Collectives can pay service providers against a compliant invoice, including through a workers’ cooperative. Agree the work, price and dates with the Collective and submit the invoice through Open Collective for review. OSE does not provide a standard employment or payroll service. Any arrangement that requires OSE to sign a specific contract must be discussed and accepted beforehand.
+Collectives can pay people for their work against a compliant invoice, including their own members and admins. The invoice can come from either of the following:
+
+* You, in your own name, as a self-employed person or a company.
+* A workers' cooperative or umbrella company that invoices the Collective for you.
+
+If an admin of the Collective submits an invoice for their own work, another admin of the Collective must approve it. The admin who submitted the invoice does not approve it. A Collective with only one admin adds a second admin before it pays that admin for their work.
+
+Agree the work, price and dates with the Collective and submit the invoice through Open Collective for review. OSE does not provide a standard employment or payroll service. Any arrangement that requires OSE to sign a specific contract must be discussed and accepted beforehand.
 
 ***
 
@@ -104,6 +136,8 @@ We aim to start the payment within seven business days. The expense must be comp
 ## Approval Workflow
 
 The Collective and OSE review expenses. If the only administrator asks for their own reimbursement, OSE can check the supporting documents and pay without a second approver from the Collective.
+
+An invoice from an admin for their own work always needs approval from another admin of the Collective. See [Paying service providers](#paying-service-providers).
 
 OSE checks the documents before payment. Incomplete or non-compliant expenses may be rejected. A promised donation or grant is not an available balance: funds must be received and available before payment.
 
