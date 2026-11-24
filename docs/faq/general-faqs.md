@@ -120,11 +120,11 @@ The application and the acceptance are separate steps. See [How to apply](/docs/
 
 No. OSE does not require a minimum balance to host your initiative.
 
-Since our fees are taken as a percentage of incoming contributions, you can start small and grow as your initiative develops.
+OSE takes its fees as a percentage of incoming contributions, so you can start small and grow as your initiative develops.
 
 ## Which currency does a Collective use?
 
-Every Collective hosted by OSE keeps its balance in euros (EUR). Donors can still give in other currencies, such as US dollars. These contributions arrive in the balance as euros.
+Every Collective that OSE hosts keeps its balance in euros (EUR). Donors can still give in other currencies, such as US dollars. These contributions arrive in the balance as euros.
 
 ## Paying collaborators
 

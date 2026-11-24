@@ -1,41 +1,43 @@
 ---
-title: "Application Questions"
+title: "Application questions"
 description: "Prepare your answers to these questions before you apply to Open Source Europe (OSE), so the application goes faster."
 ---
 
-## Prepare Your Answers Before Applying
+## Prepare your answers before you apply
 
-Prepare your answers to the following questions before you apply to Open Source Europe (OSE). This makes the application faster and easier, and helps you explain the purpose of your initiative.
-
-***
-
-## Required Information
-
-* **Location:** Give the city and country where your initiative is mainly based. OSE hosts initiatives all over the world, but knowing your location helps us support you better.
-* **Your Name and Email Address:** Give your full name and a valid email address where we can contact you.
-* **Collective Name:** Choose a unique name for your collective that describes it.
-* **Website and/or Social Media Links:** Share links that show your initiative’s activities and online presence.
-* **Unique URL:** You can choose a unique URL for your collective’s page on the Open Collective platform.
-* **Administrators:** One administrator is enough, and two are recommended for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed. See [Administrators' legal names](#administrators-legal-names). Administrators have full permissions to manage the Collective’s settings and finances.
+Prepare your answers to the following questions before you apply to Open Source Europe (OSE). Prepared answers make the application faster and easier, and help you explain the purpose of your initiative.
 
 ***
 
-## Application Questions
+## Required information
+
+Prepare the following information:
+
+* Give the city and country where your initiative is mainly based. OSE hosts initiatives all over the world, but your location helps OSE support you better.
+* Enter your full name and a valid email address where OSE can contact you.
+* Choose a unique name for your Collective that describes it.
+* Share links that show your initiative's activities and online presence, such as your website or social media.
+* Pick a unique URL for your Collective's page on the Open Collective platform, if you want one.
+* Add at least one administrator. One is enough, and OSE recommends two for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed. See [Administrators' legal names](#administrators-legal-names). Administrators have full permissions to manage the Collective's settings and finances.
+
+***
+
+## Short-answer questions
 
 Prepare short answers (about 250 characters) to the following questions:
 
-1. **Duration:** How long has your collective been operating?
-2. **Fundraising to Date:** If you’ve started fundraising, how much have you raised so far?
-3. **Fundraising Goals:** What is your target fundraising amount?
-4. **Funding Sources:** Who do you anticipate will fund your initiative?
-5. **Collective Activities:** Briefly describe what your collective does.
-6. **Mission Alignment:** Explain how your collective furthers one or more of OSE’s mission impact areas.
+* How long has your Collective been operating?
+* If you've started fundraising, how much have you raised so far?
+* What is your target fundraising amount?
+* Who do you expect to fund your initiative?
+* What does your Collective do, in brief?
+* How does your Collective further one or more of OSE's mission impact areas?
 
 ***
 
 ## Administrators' legal names
 
-Belgian anti-money-laundering rules require OSE to know who manages each Collective's money. Each administrator adds their legal name on Open Collective under Dashboard > Settings > Info, in the Legal name field. Only OSE and Open Collective see it. The public profile can keep a pseudonym.
+Belgian anti-money-laundering rules require OSE to know who manages each Collective's money. Each administrator adds their legal name on Open Collective under **Dashboard** > **Settings** > **Info**, in the **Legal name** field. Only OSE and Open Collective see the legal name. The public profile can keep a pseudonym.
 
 Each administrator needs a personal Open Collective account with their own email address. An organization account, or an account named after the Collective, cannot be an administrator.
 
@@ -57,21 +59,23 @@ After you apply on Open Collective, OSE emails you a link to its application for
 * Any company connected to the project: who owns the code and the project name, what is sold, and by whom
 * An optional second administrator
 
-A company around the project is fine if it stays separate from the Collective. Money given to the Collective is a donation. The company sells and invoices its own services, and the project website makes clear which offers come from the company.
+A company connected to the project is fine if it stays separate from the Collective. Money given to the Collective is a donation. The company sells and invoices its own services, and the project website makes clear which offers come from the company.
 
-If the team needs more detail, it asks by email.
+If the OSE team needs more detail, the team asks by email.
 
 ***
 
-## Tips for a Successful Application
+## Tips for a successful application
+
+The following tips help your application:
 
 * Keep your answers clear and to the point.
-* Show how your initiative contributes to the public good and fits OSE’s mission.
-* Include links to your work, such as project websites, social media pages or articles, to support your application.
+* Show how your initiative contributes to the public good and fits OSE's mission.
+* Include links to your work, such as project websites, social media pages, or articles, to support your application.
 * Check your answers for clarity and completeness before you submit your application.
 
 ***
 
-## Need Assistance?
+## Get help
 
-If you have questions or need help with the application process, [contact us](mailto:home@opensourceeurope.org).
+If you have questions or need help with the application process, [contact OSE](mailto:home@opensourceeurope.org).
