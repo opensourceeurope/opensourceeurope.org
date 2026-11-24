@@ -721,7 +721,11 @@ You can use OSE as your fiscal host for as long as you need it and remain eligib
 
 No. OSE does not require a minimum balance to host your initiative.
 
-Since our fees are taken as a percentage of incoming contributions, you can start small and grow as your initiative develops.
+OSE takes its fees as a percentage of incoming contributions, so you can start small and grow as your initiative develops.
+
+## Which currency does a Collective use?
+
+Every Collective that OSE hosts keeps its balance in euros (EUR). Donors can still give in other currencies, such as US dollars. These contributions arrive in the balance as euros.
 
 ## Paying collaborators
 
@@ -734,187 +738,247 @@ OSE may support a request or provide an attestation on a case-by-case basis. Hos
 
 <!-- opencrane:page -->
 
-# Application Questions
+# Application questions
 
-## Prepare Your Answers Before Applying
+## Prepare your answers before you apply
 
-Prepare your answers to the following questions before you apply to Open Source Europe (OSE). This makes the application faster and easier, and helps you explain the purpose of your initiative.
-
-***
-
-## Required Information
-
-* **Location:** Give the city and country where your initiative is mainly based. OSE hosts initiatives all over the world, but knowing your location helps us support you better.
-* **Your Name and Email Address:** Give your full name and a valid email address where we can contact you.
-* **Collective Name:** Choose a unique name for your collective that describes it.
-* **Website and/or Social Media Links:** Share links that show your initiative’s activities and online presence.
-* **Unique URL:** You can choose a unique URL for your collective’s page on the Open Collective platform.
-* **Administrators:** One administrator is enough, and two are recommended for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed. Administrators have full permissions to manage the Collective’s settings and finances.
+Prepare your answers to the following questions before you apply to Open Source Europe (OSE). Prepared answers make the application faster and easier, and help you explain the purpose of your initiative.
 
 ***
 
-## Application Questions
+## Required information
+
+Prepare the following information:
+
+* Give the city and country where your initiative is mainly based. OSE hosts initiatives all over the world, but your location helps OSE support you better.
+* Enter your full name and a valid email address where OSE can contact you.
+* Choose a unique name for your Collective that describes it.
+* Share links that show your initiative's activities and online presence, such as your website or social media.
+* Pick a unique URL for your Collective's page on the Open Collective platform, if you want one.
+* Add at least one administrator. One is enough, and OSE recommends two for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed. See Administrators' legal names. Administrators have full permissions to manage the Collective's settings and finances.
+
+***
+
+## Short-answer questions
 
 Prepare short answers (about 250 characters) to the following questions:
 
-1. **Duration:** How long has your collective been operating?
-2. **Fundraising to Date:** If you’ve started fundraising, how much have you raised so far?
-3. **Fundraising Goals:** What is your target fundraising amount?
-4. **Funding Sources:** Who do you anticipate will fund your initiative?
-5. **Collective Activities:** Briefly describe what your collective does.
-6. **Mission Alignment:** Explain how your collective furthers one or more of OSE’s mission impact areas.
+* How long has your Collective been operating?
+* If you've started fundraising, how much have you raised so far?
+* What is your target fundraising amount?
+* Who do you expect to fund your initiative?
+* What does your Collective do, in brief?
+* How does your Collective further one or more of OSE's mission impact areas?
 
 ***
 
-## Tips for a Successful Application
+## Administrators' legal names
+
+Belgian anti-money-laundering rules require OSE to know who manages each Collective's money. Each administrator adds their legal name on Open Collective under **Dashboard** > **Settings** > **Info**, in the **Legal name** field. Only OSE and Open Collective see the legal name. The public profile can keep a pseudonym.
+
+Each administrator needs a personal Open Collective account with their own email address. An organization account, or an account named after the Collective, cannot be an administrator.
+
+***
+
+## Questions in the OSE application form
+
+After you apply on Open Collective, OSE emails you a link to its application form. The form asks for the following:
+
+* The kind of initiative: a single project, a group of projects, a community, or a service run for a community
+* Links to the repository, the website, or the service
+* The license the project uses
+* How the work happens in the open
+* Legal status, and for a registered entity, its type and country
+* How long the project has been operating
+* What the project does, and how it furthers open source in Europe
+* The amount raised so far, the fundraising target, and the expected funders
+* Expected expenses, and the countries of the people the Collective will pay
+* Any company connected to the project: who owns the code and the project name, what is sold, and by whom
+* An optional second administrator
+
+A company connected to the project is fine if it stays separate from the Collective. Money given to the Collective is a donation. The company sells and invoices its own services, and the project website makes clear which offers come from the company.
+
+If the OSE team needs more detail, the team asks by email.
+
+***
+
+## Tips for a successful application
+
+The following tips help your application:
 
 * Keep your answers clear and to the point.
-* Show how your initiative contributes to the public good and fits OSE’s mission.
-* Include links to your work, such as project websites, social media pages or articles, to support your application.
+* Show how your initiative contributes to the public good and fits OSE's mission.
+* Include links to your work, such as project websites, social media pages, or articles, to support your application.
 * Check your answers for clarity and completeness before you submit your application.
 
 ***
 
-## Need Assistance?
+## Get help
 
-If you have questions or need help with the application process, [contact us](mailto:home@opensourceeurope.org).
+If you have questions or need help with the application process, [contact OSE](mailto:home@opensourceeurope.org).
 
 
 <!-- opencrane:page -->
 
 # Eligibility
 
-## Who Can Apply to Be Hosted by Open Source Europe?
+## Who can apply
 
-Open Source Europe (OSE) welcomes initiatives from around the world that align with our mission and values. OSE supports open source projects and communities. Your application should explain how your activities contribute to open source. OSE can accept an initiative before it publishes its first code or other open resources. OSE first reviews the initiative and its commitments to openness.
+Open Source Europe (OSE) welcomes initiatives from around the world that align with its mission and values. OSE supports open source projects and communities. Your application should explain how your activities contribute to open source. OSE can accept an initiative before it publishes its first code or other open resources. OSE first reviews the initiative and its commitments to openness.
+
+OSE supports both the development of open source and its sustainability. A project does not have to write software to fit. The following initiatives also fit OSE:
+
+* Groups that run an instance of open source software, such as a Matrix homeserver, a mail service, a git forge, or a mirror
+* Communities, events, or archives connected to open source
+
+The project's work must use an open license. For software, use a license that the [Open Source Initiative](https://opensource.org/licenses) approves. For data and content, use a license that conforms to the [Open Definition](https://opendefinition.org/licenses/).
+
+An initiative with no connection to open source fits better with OSE's sister host, [Open Collective Europe Foundation](https://opencollective.com/oce-foundation-eur). Civil-society groups and mutual-aid groups are examples. They can apply there instead.
 
 ***
 
-## Eligibility Criteria
+## Eligibility criteria
 
 To be eligible for fiscal hosting by OSE, your initiative must:
 
 * Align with OSE's mission and impact areas. Your activities should be charitable and aim to benefit the public.
-* Be non-profit. Profits must not be distributed to members. For the types of contributions accepted through OSE, including the rules on membership benefits and other counterparty benefits, see [Contributions FAQ](https://www.opensourceeurope.org/docs/faq/contributions-faq/).
-* Have no separate legal entity, for ordinary fiscal hosting. Initiatives with their own legal status, such as registered NGOs, are not eligible for ordinary fiscal hosting. They can set up a Fund with OSE for a specific programme. OSE must first review and agree to the programme and how the Fund will operate. Contact OSE to discuss the arrangement. OSE does not accept it automatically.
-* Have at least one administrator. One is enough, and two are recommended for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed.
-* Keep to appropriate content standards. Content that promotes violence, hate speech, pornography, or any other material considered inappropriate or offensive is not permitted.
+* Be nonprofit. The initiative must not distribute profits to members. For the types of contributions that OSE accepts, including the rules on membership benefits and other counterparty benefits, see [Contributions FAQ](https://www.opensourceeurope.org/docs/faq/contributions-faq/).
+* Have no separate legal entity, for ordinary fiscal hosting. Initiatives with their own legal status, such as registered nongovernmental organizations (NGOs), are not eligible for ordinary fiscal hosting. They can set up a Fund with OSE for a specific program. OSE must first review and agree to the program and how the Fund operates. Contact OSE to discuss the arrangement. OSE does not accept the arrangement automatically.
+* Have at least one administrator. One is enough, and OSE recommends two for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed.
+* Keep to appropriate content standards. OSE does not permit content that promotes violence, hate speech, pornography, or any other material considered inappropriate or offensive.
 
 ***
 
-## Global Reach
+## Global reach
 
-OSE welcomes applications from around the world. The team assesses which hosting and payment arrangements are available for each application. A project's location alone does not guarantee that hosting or payments will be possible.
+OSE welcomes applications from around the world. The team assesses which hosting and payment arrangements are available for each application. A project's location alone does not guarantee that hosting or payments are possible.
 
 ***
 
-## Not Required
+## Not required
 
-OSE aims to lower barriers for initiatives with impact, so we do not require:
+OSE aims to lower barriers for initiatives with impact, so OSE does not require:
 
 * Application fees
 * A minimum budget balance
 * A minimum annual fundraising amount
 * A fixed duration of commitment
-* Complex reporting requirements as a general condition of hosting. OSE recommends an annual update on your Collective page. Reporting requirements in a specific funding arrangement or agreement still apply.
+* Complex reporting requirements as a general condition of hosting
+
+OSE recommends an annual update on your Collective page. Reporting requirements in a specific funding arrangement or agreement still apply.
 
 ***
 
-## Important Considerations
+## Important considerations
 
-* OSE administers funds on behalf of your initiative under the hosting agreement. If you move to another host or close, contact OSE to agree how outstanding expenses and the remaining balance are handled under the applicable agreement and funding restrictions.
-* OSE assesses possible compliance risks of initiatives. It checks that initiatives align with legal frameworks and avoid activities that could be linked to terrorism or extremism financing.
+Keep the following points in mind:
+
+* Under the hosting agreement, OSE administers funds on behalf of your initiative. If you move to another host or close, contact OSE. You then agree with OSE how to handle outstanding expenses and the remaining balance, under the applicable agreement and funding restrictions.
+* OSE assesses possible compliance risks of initiatives. OSE checks that initiatives align with legal frameworks and avoid activities that could be linked to terrorism or extremism financing.
 
 ***
 
-## Ready to Apply?
+## Ready to apply
 
-If your initiative meets the criteria above, follow our [How to Apply](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/) guide to start your application.
+If your initiative meets the criteria on this page, follow the [How to apply](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/) guide to start your application.
 
-If you have questions, [contact us](mailto:home@opensourceeurope.org).
+If you have questions, [contact OSE](mailto:home@opensourceeurope.org).
 
-## Affiliation with another organisation
+## Affiliation with another organization
 
-OSE does not accept fiscal hosting at the same time as another host. OSE may accept a technical or community affiliation with another organisation after review. Affiliation alone does not mean fiscal hosting.
+OSE does not accept fiscal hosting at the same time as another host. OSE may accept a technical or community affiliation with another organization after review. Affiliation alone does not mean fiscal hosting.
 
 
 <!-- opencrane:page -->
 
 # How to apply
 
-Use this guide to prepare and submit a hosting application, and to learn how OSE reviews it.
+Use this guide to prepare and submit a hosting application to Open Source Europe (OSE), and to learn how OSE reviews it.
 
 ## Start here
 
-1. Read the [eligibility criteria](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/eligibility/), [hosting fees](https://www.opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost) and [application questions](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/application-questions/).
-2. Prepare your project details and at least one administrator. We recommend two.
-3. Follow the application process below, then complete the supplementary form that OSE provides.
+Follow these steps to apply:
 
-Next, OSE aims to give a first response within seven business days after it receives the completed supplementary form. This is a target for the response, not a deadline for acceptance. After acceptance, continue with [your first steps](https://www.opensourceeurope.org/docs/how-it-works/basics/).
+1. Read the [eligibility criteria](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/eligibility/), [hosting fees](https://www.opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost), and [application questions](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/application-questions/).
+2. Prepare your project details and at least one administrator. OSE recommends two.
+3. Apply on Open Collective, then fill in the OSE application form that OSE emails you. You need both steps. An email to OSE does not start an application.
 
-## Join Open Source Europe in just a few steps
+Next, OSE aims to give a first response within seven business days after it receives the completed application form. The seven days are a target for the response, not a deadline for acceptance. After acceptance, continue with [your first steps](https://www.opensourceeurope.org/docs/how-it-works/basics/).
 
-Applying to be hosted by Open Source Europe (OSE) is simple and usually takes a few minutes. After OSE accepts you, you can receive contributions and manage your initiative in the open on the Open Collective platform.
+## Join Open Source Europe in a few steps
+
+The application to OSE usually takes a few minutes. After OSE accepts you, you can receive contributions and manage your initiative in the open on the Open Collective platform.
 
 ***
 
-## Before You Apply
+## Before you apply
 
 Check that your initiative meets these criteria:
 
-* It aligns with OSE's mission and impact areas. Your activities should be charitable and aim to benefit the public.
-* It has at least one administrator. One is enough, and two are recommended for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed.
-* For ordinary fiscal hosting, it has no legal entity of its own. An existing legal entity can instead discuss a Fund for a specific programme with OSE. This depends on OSE's review and agreement on the programme and on how the Fund will operate.
-* It can be based anywhere in the world, not only in Europe.
+* The initiative aligns with OSE's mission and impact areas. Its activities should be charitable and aim to benefit the public.
+* It has at least one administrator. One is enough, and OSE recommends two for shared management and continuity. OSE must know the administrators' real identities. A public pseudonym is allowed. See [Administrators' legal names](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/application-questions/#administrators-legal-names).
+* For ordinary fiscal hosting, the initiative has no legal entity of its own. An existing legal entity can instead discuss a Fund for a specific program with OSE. This option depends on OSE's review and agreement on the program and on how the Fund operates.
+* Its base can be anywhere in the world, not only in Europe. It keeps its balance in euros, and contributions in other currencies arrive in the balance as euros. See [Which currency does a Collective use?](https://www.opensourceeurope.org/docs/faq/general-faqs/#which-currency-does-a-collective-use)
 
-Also read our [Terms of Cooperation](https://www.opensourceeurope.org/docs/terms-of-service/) and [Community Guidelines](https://www.opensourceeurope.org/docs/about/community-guidelines/).
+Also read the [Terms of Service](https://www.opensourceeurope.org/docs/terms-of-service/) and the [community guidelines](https://www.opensourceeurope.org/docs/about/community-guidelines/).
 
 ***
 
-## Application Process
+## Application process
 
-1. Go to the [Open Source Europe profile](https://opencollective.com/europe) and click "Apply".
-2. Choose your collective type:
-   * If you are new to the Open Collective platform, select "Create New Collective".
-   * If you already have a collective, choose it from the list.
+Apply on Open Collective with these steps:
+
+1. Go to the [Open Source Europe profile](https://opencollective.com/europe) and click **Apply**.
+2. Choose your Collective type:
+   * If you are new to the Open Collective platform, select **Create New Collective**.
+   * For an existing Collective, choose it from the list.
 3. Complete the application form. Give information about your initiative, including:
    * Location
    * Name and email address
    * Collective name
-   * Website and/or social media links
-   * Brief description of your collective's activities
-   * Explanation of how your collective furthers OSE's mission impact areas
-4. Add at least one administrator. Two are recommended for shared management and continuity.
-5. Review your information, accept the terms of service and submit your application.
+   * Links to your website or social media
+   * Short description of your Collective's activities
+   * Explanation of how your Collective furthers OSE's mission impact areas
+4. Add at least one administrator. OSE recommends two for shared management and continuity.
+5. Review your information, accept the terms of service, and submit your application.
 
 You can edit all this information later, so it does not need to be perfect.
 
 ***
 
-## After Submission
+## After submission
 
-To complete the review, the team gives you a supplementary application form. Do not wait for an automatic email.
+After you apply on Open Collective, OSE emails you a link to the OSE application form. The form takes about ten minutes. The form asks for the detail that the Open Collective application does not cover, such as the license, the budget, and any company connected to the project. For the full list, see [Questions in the OSE application form](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/application-questions/#questions-in-the-ose-application-form).
 
-We aim to give a first response within seven business days of receiving your completed supplementary form. The review may take longer if we need more information. This does not guarantee acceptance, or that the review ends within seven days.
+The review starts when OSE has both the Open Collective application and the form. The form link belongs to your application on Open Collective, so the form does not work for someone who has not applied there. If you have a question about the form, reply to the email that brought you the link.
 
-After acceptance, you can start to receive contributions. Welcome calls happen only occasionally and are not a standard onboarding step. Contributions can start without waiting for a call.
+The following timeline applies when the form does not come back:
+
+1. After seven days, OSE sends one reminder with the link.
+2. After seven more days, a person from the OSE team takes over the application. They may close it for lack of a response, and they tell you by email.
+
+A closed application is not a rejection of the project. To resume it, contact OSE at any time.
+
+OSE aims to give a first response within seven business days after it receives your completed form. The review may take longer if OSE needs more information. This target does not guarantee acceptance, or that the review ends within seven days.
+
+After acceptance, you can start to receive contributions. OSE offers an optional welcome call. Contributions can start without waiting for the call.
 
 ***
 
-## Transitioning from Another Fiscal Host
+## Move from another fiscal host
 
-If you are moving from another fiscal host:
+If you move from another fiscal host, the process depends on your current platform:
 
-* If you use the Open Collective platform, the move is fairly simple.
-* If you do not use the Open Collective platform, the process depends on what your current organization requires. Usually, they can transfer your funds to OSE, and you can start quickly.
+* On the Open Collective platform, the move is fairly simple.
+* Outside the Open Collective platform, the process depends on what your current organization requires. Usually, your current fiscal host can transfer your funds to OSE, and you can start quickly.
 
 Tell both OSE and your current fiscal host about your plans before you apply, so that the move goes smoothly.
 
 ***
 
-## Need Assistance?
+## Get help
 
-If you have questions or need help with the application process, [contact us](mailto:home@opensourceeurope.org).
+If you have questions or need help with the application process, [contact OSE](mailto:home@opensourceeurope.org).
 
 
 <!-- opencrane:page -->
@@ -1166,7 +1230,7 @@ When administrators or the main contact change, update access on Open Collective
 
 ## Optional welcome call
 
-Welcome calls happen only occasionally and are not a standard step. Contributions can start after acceptance without waiting for a call. See [How to apply](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/).
+After acceptance, OSE offers a welcome call. The call is optional, and contributions can start without waiting for it. See [How to apply](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/).
 
 
 <!-- opencrane:page -->

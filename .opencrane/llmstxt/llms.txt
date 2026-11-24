@@ -12,7 +12,7 @@
 - [Expense FAQs](https://www.opensourceeurope.org/docs/faq/expense-faqs/)
 - [Fiscal hosting FAQs](https://www.opensourceeurope.org/docs/faq/fiscal-hosting-faqs/)
 - [General FAQs](https://www.opensourceeurope.org/docs/faq/general-faqs/)
-- [Application Questions](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/application-questions/)
+- [Application questions](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/application-questions/)
 - [Eligibility](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/eligibility/)
 - [How to apply](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/)
 - [Ask OSE from your AI tools](https://www.opensourceeurope.org/docs/guides/ask-ose-from-your-ai-tools/)
