@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.17.4](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.17.3...v0.17.4) (2026-11-24)
+
+
+### Bug Fixes
+
+* explain the two-step application, legal names and who fits OSE in the docs ([#488](https://github.com/opensourceeurope/opensourceeurope.org/issues/488)) ([1855c81](https://github.com/opensourceeurope/opensourceeurope.org/commit/1855c816ae29c09fb35f79aa26aaf02fca2adf81))
+
 ## [0.17.3](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.17.2...v0.17.3) (2026-11-24)
 
 
