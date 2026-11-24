@@ -14,15 +14,15 @@ These community guidelines apply to all individuals participating in OSE activit
 
 ***
 
-## Core Principles
+## Core principles
 
 * **Transparency**: Operate with transparency and integrity. Ensure that financial activities, decision-making processes, and communications are open and accessible.
-* **Respect and Dignity**: Treat everyone with respect and dignity. Harassment, discrimination, or exclusionary behavior of any kind will not be tolerated.
+* **Respect and dignity**: Treat everyone with respect and dignity. Harassment, discrimination, or exclusionary behavior of any kind will not be tolerated.
 * **Inclusivity**: Promote a welcoming environment where diversity is valued. Encourage participation from all individuals regardless of gender, race, ethnicity, nationality, religion, disability, sexual orientation, or age.
 
 ***
 
-## Expected Behavior
+## Expected behavior
 
 * **Collaboration**: Work together and support each other. Take part constructively and be open to different points of view.
 * **Communication**: Communicate respectfully and professionally. Avoid offensive, inflammatory, or inappropriate language.
@@ -30,7 +30,7 @@ These community guidelines apply to all individuals participating in OSE activit
 
 ***
 
-## Unacceptable Behavior
+## Unacceptable behavior
 
 * **Harassment**: Any form of harassment, including but not limited to sexual harassment, bullying, or intimidation.
 * **Discrimination**: Discriminatory comments or actions based on personal characteristics or beliefs.
@@ -38,7 +38,7 @@ These community guidelines apply to all individuals participating in OSE activit
 
 ***
 
-## Reporting and Enforcement
+## Reporting and enforcement
 
 * **Reporting**: If you witness or experience behavior that violates these community guidelines, report it to the designated contact person immediately.
 * **Review and follow-up**: Reports are taken seriously and reviewed to decide the right next steps. OSE does not always run an internal investigation, and it does not guarantee a response time.
@@ -48,66 +48,68 @@ These community guidelines apply to all individuals participating in OSE activit
 
 ## Safeguarding
 
-OSE is committed to safeguarding the well-being of all participants. See our [Safeguarding Policy](https://www.opensourceeurope.org/docs/about/safeguarding-policy/) for details of our safeguarding practices.
+OSE is committed to safeguarding the well-being of all participants. See our [Safeguarding policy](https://www.opensourceeurope.org/docs/about/safeguarding-policy/) for details of our safeguarding practices.
 
 ***
 
-## Continuous Improvement
+## Continuous improvement
 
 We keep improving our policies and practices. We welcome feedback and suggestions to improve this Code of Conduct. You can send them to our team.
 
 ***
 
-## Contact Information
+## Contact information
 
 For questions, concerns, or to report a violation of this Code of Conduct, please contact us at <home@opensourceeurope.org>.
 
 
 <!-- opencrane:page -->
 
-# Contact Us
+# Contact OSE
 
 ## Choose the right contact
+
+The following table lists where to go for each kind of question:
 
 | You need help with                                             | What to do                                                                                              |
 | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | A submitted expense                                            | Use its comments on Open Collective for routine questions. Send sensitive information privately to OSE. |
-| Hosting, a funding arrangement or another OSE question         | Email <home@opensourceeurope.org>.                                                                         |
+| Hosting, a funding arrangement, or another OSE question        | Email <home@opensourceeurope.org>.                                                                         |
 | Suspected misuse of funds or an issue involving administrators | Contact OSE directly in private. You do not need to go through those administrators.                    |
 | A safeguarding concern                                         | Use the [safeguarding contacts and procedure](https://www.opensourceeurope.org/docs/about/safeguarding-policy/).        |
 | A technical problem with Open Collective                       | Use [platform support](https://opencollective.com/help).                                                |
 
-OSE aims to answer general questions within seven business days. This is a target, not a guaranteed response time. It does not replace the specific guidance for applications, payments or safeguarding.
+OSE aims to answer general questions within seven business days. The seven days are a target, not a guaranteed response time. It does not replace the specific guidance for applications, payments, or safeguarding.
 
-### Learning & Reading
+### Learning & reading
 
-🔍 Use the search at the top of the page to find detailed information about specific topics
+🔍 Use the search at the top of the page to find detailed information about specific topics.
 
-💬 Join our [Discord](https://discord.gg/TmbRzFBqBa) to talk with the whole Open Collective community, and join the #opensource channel
+💬 Join the [Discord server](https://discord.gg/TmbRzFBqBa) to talk with the whole Open Collective community, and join the #opensource channel.
 
-🌱 Read the latest [Updates from OSE](https://opencollective.com/europe/updates) on our page and on the [Open Collective Blog](https://blog.opencollective.com)
+🌱 Read the latest [updates from OSE](https://opencollective.com/europe/updates) on the OSE page and on the [Open Collective blog](https://blog.opencollective.com).
 
-Follow us on [Twitter](https://twitter.com/OC_Europe), [Instagram](https://www.instagram.com/oc_europe/), [YouTube](https://www.youtube.com/c/OpenCollective), [Facebook](https://www.facebook.com/OpenCollect) and [LinkedIn](https://www.linkedin.com/company/open-collective-europe/).
+Follow OSE on [Twitter](https://twitter.com/OC_Europe), [Instagram](https://www.instagram.com/oc_europe/), [YouTube](https://www.youtube.com/c/OpenCollective), [Facebook](https://www.facebook.com/OpenCollect), and [LinkedIn](https://www.linkedin.com/company/open-collective-europe/).
 
-### Talking to a Person
+### Talking to a person
 
-> **Note:** Our small team helps you Monday to Friday, across several time zones. We aim to answer general questions within seven business days. This is a target, not a guaranteed response time.
+> **Note:** The small OSE team helps you Monday to Friday, across several time zones. OSE aims to answer general questions within seven business days. The seven days are a target, not a guaranteed response time.
 
-💌 Email any OSE-specific questions to <home@opensourceeurope.org>
+💌 Email any OSE-specific questions to <home@opensourceeurope.org>.
 
-🎟 Request platform support [here](https://opencollective.com/help)
+🎟 Request [platform support](https://opencollective.com/help).
 
-💬 Join our [Discord](https://discord.gg/TmbRzFBqBa) to talk with the whole Open Collective community, and join the #opensource channel
+💬 Join the [Discord server](https://discord.gg/TmbRzFBqBa) to talk with the whole Open Collective community, and join the #opensource channel.
 
-### Reporting an Issue
+### Reporting an issue
 
-👩‍💻 Use [Open Collective](https://github.com/opencollective) on GitHub to file an issue or see what we are working on
+👩‍💻 To file an issue or see current work, use [Open Collective on GitHub](https://github.com/opencollective).
 
-> **Tip:** We are transparent. View our [budget](https://opencollective.com/europe) and read our [blog](https://blog.opencollective.com/).
+> **Note:** OSE is transparent. View the OSE [budget](https://opencollective.com/europe) and read the [Open Collective blog](https://blog.opencollective.com/).
 
 ## Expense follow-up and sensitive concerns
 
-Use comments on the expense for routine questions about a submitted expense. The comments are not public. The expense submitter, the Collective's administrators and the fiscal host's administrators can see them. Email <home@opensourceeurope.org> directly for sensitive information that the Collective's administrators should not see.
+Use comments on the expense for routine questions about a submitted expense. The comments are not public. The expense submitter, the Collective's administrators, and the fiscal host's administrators can see them. Email <home@opensourceeurope.org> directly for sensitive information that the Collective's administrators should not see.
 
 For suspected misuse of funds or a problem involving Collective administrators, contact the OSE team directly in private at <home@opensourceeurope.org>. You do not need to go through the administrators concerned.
 
@@ -118,56 +120,56 @@ Collectives manage their own internal conflicts. OSE intervenes when the situati
 
 <!-- opencrane:page -->
 
-# Mission, Vision & Impact areas
+# Mission, vision & impact areas
 
-It all comes back to resilience
+It all comes back to resilience.
 
 ## Mission
 
-Open Source Europe wants to make the social and solidarity economy and open source technologies sustainable. Our mission is to enable initiatives to raise and spend money transparently under a common umbrella nonprofit.
+Open Source Europe (OSE) works to make the social and solidarity economy and open source technologies sustainable. The OSE mission is to enable initiatives to raise and spend money transparently under a common umbrella nonprofit.
 
-*Open Collective is an unusual company. In its ecosystem, a software company coexists with independent associations and foundations that we call 'hosts.' Open Source Europe is growing as one of the first major fiscal hosts on the European continent. We host initiatives that share our values and work towards a better future. Our values, and our vision for a healthy and thriving world, start with resilience. From that central concern come six related areas where we want to make a difference.*
+*Open Collective is an unusual company. In its ecosystem, a software company coexists with independent associations and foundations known as 'hosts.' OSE is growing as one of the first major fiscal hosts on the European continent. OSE hosts initiatives that share its values and work toward a better future. The OSE values, and the OSE vision for a healthy and thriving world, start with resilience. From that central concern come six related areas where OSE works to make a difference.*
 
 ### Resilient communities
 
-Humanity is divided on countless fronts, but most will agree on the need for resilience. When systems fail, we need fallback buffers. Resilient communities don't break when one system failure causes the next. They have a patchwork of fallbacks to absorb the shocks. Resilience is when people next to you on the street know how to give CPR or can swim to save someone from drowning. It is when the families in your neighborhood own their own homes, and when your community has enough nurses to deliver your children and enough teachers to educate them. It is when every other house in your neighborhood has solar panels, feeding spare capacity back to the grid. When authorities arrive at a natural disaster, they find that the local community has already started helping itself. It is a society of ordinary people who are great leaders when they need to be. Resilience keeps people, jobs, and services in your hometown. And when we can trust our community to catch us if we fall, we can safely turn our attention to working for the greater good. That is why we put resilient communities at the center of our mission.
+Humanity is divided on countless fronts, but most people agree on the need for resilience. When systems fail, people need fallback buffers. Resilient communities don't break when one system failure causes the next. They have a patchwork of fallbacks to absorb the shocks. Resilience is when people next to you on the street know how to give cardiopulmonary resuscitation (CPR) or can swim to save someone from drowning. It is when the families in your neighborhood own their own homes. It is also when your community has enough nurses to deliver your children and enough teachers to educate them. It is when every other house in your neighborhood has solar panels that feed spare capacity back to the grid. When authorities arrive at a natural disaster, they find that the local community has already started helping itself. It is a society of ordinary people who are great leaders when they need to be. Resilience keeps people, jobs, and services in your hometown. When people can trust their community to catch them if they fall, they can safely turn their attention to working for the greater good. That is why OSE puts resilient communities at the center of its mission.
 
 ### Open innovation
 
-When we use science and technology wisely, it makes us more resourceful. We expand our horizons and capabilities. If we share our findings, we grow stronger together. We encourage people to work together, and through the network effect we help knowledge and technology spread faster. Otherwise, we risk becoming divided by increasing technological gaps. Civil society is key to making innovation available to all. Distributed networks of passionate people around the world develop open-source software. Citizen scientists collect and share data. Civil engineers document how to build more energy-efficient homes. Technologists share blueprints for 3D printers and robots. Maker spaces around the world help people innovate and repair. Open innovation makes all of this possible.
+When people use science and technology wisely, they become more resourceful. They expand their horizons and capabilities. If they share their findings, they grow stronger together. OSE encourages people to work together. Through the network effect, OSE helps knowledge and technology spread faster. Without this sharing, society risks becoming divided by increasing technological gaps. Civil society is key to making innovation available to all. Distributed networks of passionate people around the world develop open source software. Citizen scientists collect and share data. Civil engineers document how to build more energy-efficient homes. Technologists share blueprints for 3D printers and robots. Maker spaces around the world help people innovate and repair. Open innovation makes all of this possible.
 
 ### Commons stewardship
 
-When a social innovation, cultural institution, or green space starts feeling like it has always been there, it has become a common good. We hope the commons we create will become so readily available that they appear unremarkable. And it is at exactly this point that it becomes vulnerable. Humankind longs for what is new and exciting. We want to solve the urgent problems of the day, and that is where we focus our attention. But we also need to pay attention to maintaining the solutions to problems we have already solved. Once saved from deforestation, a forest needs protection from invasive species. A community center built by one generation must be repaired and maintained by the next. Technology that encrypts websites and emails and keeps us safe from surveillance must be updated. We cannot take our commons for granted. If we do, all our work on communities, solidarity, culture, innovation, and ecologies risks being undone. For our progress to last, we need to support commons stewardship.
+When a social innovation, cultural institution, or green space starts to feel like it has always been there, it has become a common good. Ideally, the commons that people create become so readily available that they appear unremarkable. At exactly this point, the common good becomes vulnerable. Humankind longs for what is new and exciting. People want to solve the urgent problems of the day, and that is where they focus their attention. But people also need to maintain the solutions to problems they have already solved. Once saved from deforestation, a forest needs protection from invasive species. When one generation builds a community center, the next must repair and maintain it. Someone must update the technology that encrypts websites and emails and keeps people safe from surveillance. Nobody can take the commons for granted. Otherwise, all the work on communities, solidarity, culture, innovation, and ecologies risks being undone. For this progress to last, commons stewardship needs support.
 
 ### Fiscal hosting in Europe and beyond
 
-We are based in Europe but offer fiscal hosting to initiatives around the world. If our vision speaks to you, get in touch. We are ready to host your collective today and would be excited to hear from you. [You can apply here.](https://opencollective.com/europe/apply)
+OSE is based in Europe but offers fiscal hosting to initiatives around the world. If this vision speaks to you, get in touch. OSE is ready to host your Collective today and would be excited to hear from you. To apply, use the [application form](https://opencollective.com/europe/apply).
 
 
 <!-- opencrane:page -->
 
-# Risk and Compliance aspects
+# Risk and compliance aspects
 
 Open Source Europe: Grant Eligibility and Risk Assessment Policy
 
 ## Introduction
 
-Open Source Europe (OSE) is committed to supporting initiatives that promote positive social change and a more just world. This policy covers grants that a Collective wants to receive through OSE. OSE decides whether to support the proposed funding arrangement. If an application names OSE as recipient or signatory, contact the team before you submit it. OSE must first review and accept its role and commitments. The criteria below cover grant eligibility and possible compliance risks linked to terrorism or extremism financing.
+Open Source Europe (OSE) is committed to supporting initiatives that promote positive social change and a more just world. This policy covers grants that a Collective wants to receive through OSE. OSE decides whether to support the proposed funding arrangement. If an application names OSE as recipient or signatory, contact the team before you submit it. OSE must first review and accept its role and commitments. The following sections cover grant eligibility and possible compliance risks linked to terrorism or extremism financing.
 
 ***
 
-## Grant Eligibility Criteria
+## Grant eligibility criteria
 
 OSE prioritizes proposals from initiatives that:
 
-* Operate in accordance with the law.
-* Do not support or glorify terrorist groups.
-* Show that they manage money responsibly, including transparent record-keeping and reporting.
+* Operate in accordance with the law
+* Do not support or glorify terrorist groups
+* Show that they manage money responsibly, including transparent record-keeping and reporting
 
 ***
 
-## Compliance Risk Assessment
+## Compliance risk assessment
 
 OSE considers the following factors when it assesses potential compliance risks of a grant proposal. They are in no fixed order of importance:
 
@@ -178,20 +180,20 @@ OSE considers the following factors when it assesses potential compliance risks 
 
 ***
 
-## Contextual Considerations
+## Contextual considerations
 
 OSE takes context into account when it evaluates proposals. It carries out due diligence to understand the specific circumstances and actions of the initiative.
 
 ***
 
-## Information Sources
+## Information sources
 
 To assess grant proposals, OSE uses information sources that fit the circumstances of each case. It may use the following sources. They have no fixed ranking, and OSE does not have to check every source for every proposal:
 
-* Initiative websites and reports.
-* Credible news sources and independent research organizations.
-* United Nations and human rights organization reports.
-* Government watchlists and sanctions lists.
+* Initiative websites and reports
+* Credible news sources and independent research organizations
+* United Nations and human rights organization reports
+* Government watchlists and sanctions lists
 
 ***
 
@@ -207,26 +209,26 @@ If OSE declines to support a proposed grant arrangement, the Collective may ask 
 
 ***
 
-## Policy Review and Revision
+## Policy review and revision
 
-This policy is reviewed and revised periodically, to make sure it stays effective and in line with best practices.
+OSE reviews and revises this policy periodically, to make sure it stays effective and in line with best practices.
 
 ***
 
 ## Conclusion
 
-OSE is committed to balancing the prevention of terrorism financing with support for legitimate initiatives that work towards positive social change. This policy is the framework for that goal.
+OSE is committed to balancing the prevention of terrorism financing with support for legitimate initiatives that work toward positive social change. This policy is the framework for that goal.
 
 ***
 
-## Need Assistance?
+## Need assistance?
 
-For questions or more information about risk and compliance aspects, please contact us at <home@opensourceeurope.org>.
+For questions or more information about risk and compliance aspects, contact OSE at <home@opensourceeurope.org>.
 
 
 <!-- opencrane:page -->
 
-# Safeguarding Policy
+# Safeguarding policy
 
 ## Introduction
 
@@ -234,7 +236,7 @@ Open Source Europe (OSE) is committed to creating a safe and inclusive environme
 
 ***
 
-## What is Safeguarding?
+## What is safeguarding?
 
 Safeguarding refers to the actions we take to protect people, especially children and vulnerable adults, from harm. This includes protection from:
 
@@ -246,19 +248,19 @@ Safeguarding refers to the actions we take to protect people, especially childre
 
 ***
 
-## Our Commitment
+## Our commitment
 
 OSE is committed to:
 
-* Promoting a culture of safety and well-being for everyone involved in our activities.
-* Sharing safeguarding guidance with staff and volunteers, including how to report concerns and their role in protecting people.
-* Providing clear procedures for reporting concerns.
-* Taking all concerns seriously and having the safeguarding leads review them to determine appropriate next steps.
-* Supporting anyone who has been affected by safeguarding incidents.
+* Promoting a culture of safety and well-being for everyone involved in our activities
+* Sharing safeguarding guidance with staff and volunteers, including how to report concerns and their role in protecting people
+* Providing clear procedures for reporting concerns
+* Taking all concerns seriously and having the safeguarding leads review them to determine appropriate next steps
+* Supporting anyone who has been affected by safeguarding incidents
 
 ***
 
-## Who is Vulnerable?
+## Who is vulnerable?
 
 Safeguarding applies to everyone, but some people may be more vulnerable to harm. This includes:
 
@@ -269,7 +271,7 @@ Safeguarding applies to everyone, but some people may be more vulnerable to harm
 
 ***
 
-## Reporting Concerns
+## Reporting concerns
 
 Anyone who has a concern about the safety or well-being of someone involved in OSE activities should report it immediately. This applies even if they are not sure about the nature of the concern.
 
@@ -277,7 +279,7 @@ Contact the safeguarding leads listed below to report a concern. OSE does not pr
 
 ***
 
-## How to Report a Concern
+## How to report a concern
 
 Concerns can be reported to:
 
@@ -291,7 +293,7 @@ Reports can be made in person, by email, or in writing. Information is shared on
 
 ***
 
-## What Happens When a Concern is Reported?
+## What happens when a concern is reported?
 
 All reported concerns are taken seriously. The safeguarding leads review each report and determine appropriate next steps, including referral to external services or relevant authorities where necessary. OSE does not systematically conduct an internal investigation.
 
@@ -311,7 +313,7 @@ OSE limits the sharing of information about safeguarding concerns to those who n
 
 ## Support
 
-OSE listens to people affected by safeguarding incidents and directs them towards appropriate support services. OSE does not organise or fund psychological counselling.
+OSE listens to people affected by safeguarding incidents and directs them toward appropriate support services. OSE does not organize or fund psychological counseling.
 
 ***
 
@@ -327,7 +329,7 @@ This policy will be reviewed regularly to ensure it remains effective.
 
 ***
 
-## Need Assistance?
+## Need assistance?
 
 For any questions about this policy or safeguarding in general, please contact the safeguarding lead at <home@opensourceeurope.org>.
 
@@ -336,22 +338,22 @@ For any questions about this policy or safeguarding in general, please contact t
 
 # Terminology
 
-We use some terms to describe processes in the Open Collective ecosystem. Please use these terms instead of 'user' when you create issues or support requests. Everyone is a user!
+Open Source Europe (OSE) uses the following terms to describe processes in the Open Collective ecosystem. Use these terms instead of 'user' when you create issues or support requests, because everyone is a user.
 
 ## Individuals
 
-Everyone interacting with the Open Collective platform is considered an individual. Individuals can take on different roles in the ecosystem:
+Everyone who interacts with the Open Collective platform is an individual. Individuals can take on different roles in the ecosystem:
 
-* **Contributor**: Someone who supports an initiative, with money or in other ways.
-* **Organizer**: An individual who creates or manages an initiative.
+* Contributor: someone who supports an initiative, with money or in other ways.
+* Organizer: an individual who creates or manages an initiative.
 
-## Financial Contributors
+## Financial contributors
 
-### Organizational Financial Contributor
+### Organizational financial contributor
 
-A company or organization that supports an initiative financially, often at a higher tier. These contributors are often called sponsors. They may want benefits such as brand exposure, community goodwill, or tangible perks.
+A company or organization that supports an initiative financially, often at a higher tier. People often call these contributors sponsors. They may want benefits such as brand exposure, community goodwill, or tangible perks.
 
-### Individual Financial Contributor
+### Individual financial contributor
 
 An individual who supports an initiative financially, with one-time or recurring contributions. They may find initiatives through:
 
@@ -359,23 +361,23 @@ An individual who supports an initiative financially, with one-time or recurring
 * Direct links to a Collective
 * Organizer's page
 
-### Expense Submitter
+### Expense submitter
 
-An individual who requests payment from an initiative's budget using the expense function. This can be to get paid back for purchases made for the initiative, or to get paid for completed work.
+An individual who requests payment from an initiative's budget using the expense function. The request can be to get paid back for purchases made for the initiative, or to get paid for completed work.
 
-## Non-Financial Contributors
+## Non-financial contributors
 
 ### Organizer
 
-An individual who creates or works on an initiative. After they talk with our team, organizers decide whether they are creating a 'Fund' or a 'Collective'.
+An individual who creates or works on an initiative. After they talk with the OSE team, organizers decide whether they create a 'Fund' or a 'Collective'.
 
-### Core Contributor
+### Core contributor
 
 Individuals who are major contributors and represent the Collective on its page as part of the team.
 
-### Collective Admin
+### Collective admin
 
-A type of Core Contributor with additional permissions, allowing them to:
+A type of core contributor with additional permissions that let them:
 
 * Edit the Collective
 * Change settings
@@ -383,52 +385,54 @@ A type of Core Contributor with additional permissions, allowing them to:
 * Make financial contributions to other Collectives
 * Receive messages from people trying to contact the Collective
 
-Core Contributors aim to make their communities financially sustainable, using tools like tiers, goals, and social media sharing. They focus on managing and growing their communities by creating events and sending updates.
+Core contributors aim to make their communities financially sustainable. They use tools such as tiers, goals, and social media sharing. To manage and grow their communities, they create events and send updates.
 
-### Event Attendee
+### Event attendee
 
-Individuals who register to attend a Collective's event, often arriving through direct links provided by event organizers.
+Individuals who register to attend a Collective's event. They often arrive through direct links from event organizers.
 
 ## Initiatives
 
-Initiatives are accounts for projects or groups hosted by Open Source Europe. An initiative can be either a Collective or a Fund. During the application process, our team will help you choose the right account type for your project.
+Initiatives are accounts for projects or groups that OSE hosts. An initiative can be either a Collective or a Fund. During the application process, the OSE team helps you choose the right account type for your project.
 
 ### Collective
 
-A Collective represents a project or group with a mission or purpose, raising and spending funds transparently to achieve their goals.
+A Collective represents a project or group with a mission or purpose. It raises and spends funds transparently to achieve its goals.
 
-## Fiscal Hosts
+## Fiscal hosts
 
-A Fiscal Host, or Sponsor, is a type of Organization that lets Collectives handle money without having to legally incorporate. The Fiscal Host holds a Collective’s funds in their bank account and can generate invoices and receipts for Financial Contributors. Think of a Fiscal Host as an umbrella organization for the Collectives it supports.
+A fiscal host, or sponsor, is a type of organization that lets Collectives handle money without having to legally incorporate. The fiscal host holds a Collective’s funds in its bank account and can generate invoices and receipts for financial contributors. A fiscal host is an umbrella organization for the Collectives it supports.
 
 
 <!-- opencrane:page -->
 
 # About Open Source Europe
 
-Open Source Europe is a Belgian association. It is the fiscal host for open source initiatives and works with philanthropic institutions to support regranting around the world.
+Open Source Europe (OSE) is a Belgian association. It is the fiscal host for open source initiatives and works with philanthropic institutions to support regranting around the world.
 
 ***
 
-## Service Overview
+## Service overview
 
-Unlike traditional non-profits, Open Source Europe (OSE) combines a legal structure with its own digital infrastructure. Together they make the following possible:
+Unlike traditional nonprofits, OSE combines a legal structure with its own digital infrastructure. Together they make the following possible:
 
-* Fiscal hosting for open source projects. We give developers, maintainers and communities a legal umbrella, so they can operate without creating their own legal entity.
-* Grant distribution and fund management. We manage funds for foundations and companies that want to support critical open source projects in Europe and beyond.
+* Fiscal hosting for open source projects. OSE gives developers, maintainers, and communities a legal umbrella, so they can operate without creating their own legal entity.
+* Grant distribution and fund management. OSE manages funds for foundations and companies that want to support critical open source projects in Europe and beyond.
 * Radical transparency. All financial activity is public on the Open Collective platform, which builds trust and accountability in the community.
 
 ***
 
 ## How hosting works
 
-OSE provides a Belgian nonprofit home for open source projects. We use the Open Collective platform to manage budgets, receive contributions and process expenses transparently.
+OSE provides a Belgian nonprofit home for open source projects. OSE uses the Open Collective platform to manage budgets, receive contributions, and process expenses transparently.
 
-See our [Terms of Service](https://www.opensourceeurope.org/docs/terms-of-service/) for the hosting agreement.
+For the hosting agreement, see the [Terms of Service](https://www.opensourceeurope.org/docs/terms-of-service/).
 
 ***
 
-## Who We Serve
+## Who OSE serves
+
+OSE works with the following groups:
 
 * Project maintainers of open source projects that have no legal structure of their own.
 * Funders and corporates, such as international companies that want a trusted intermediary to support open source in Europe.
@@ -436,10 +440,12 @@ See our [Terms of Service](https://www.opensourceeurope.org/docs/terms-of-servic
 
 ***
 
-## How to Work With Us
+## How to work with OSE
+
+You can work with OSE in the following ways:
 
 * Projects can apply for fiscal hosting to start receiving donations and grants legally.
-* Funders can support projects and manage their contributions transparently through our hosted funds.
+* Funders can support projects and manage their contributions transparently through the funds that OSE hosts.
 * Organizations can manage large-scale distributions efficiently, without complex international structures.
 
 ***
@@ -450,9 +456,9 @@ See our [Terms of Service](https://www.opensourceeurope.org/docs/terms-of-servic
 
 ## A little history
 
-Open Source Europe grew out of Open Collective Europe's fiscal hosting work. As that work grew, OSE became the home for open source projects and communities. Open Collective Europe Foundation developed its wider philanthropic activities. Our hosting agreement still uses the association's name, Open Collective Europe ASBL/vzw.
+Open Source Europe grew out of Open Collective Europe's fiscal hosting work. As that work grew, OSE became the home for open source projects and communities. Open Collective Europe Foundation developed its wider philanthropic activities. The OSE hosting agreement still uses the association's name, Open Collective Europe ASBL/vzw.
 
-Today, OSE focuses on helping open source communities receive funding, pay contributors and manage their projects transparently.
+Today, OSE focuses on helping open source communities receive funding, pay contributors, and manage their projects transparently.
 
 
 <!-- opencrane:page -->
@@ -1952,20 +1958,22 @@ See the [current OSE fee reference](https://www.opensourceeurope.org/docs/faq/ge
 
 # Open Source Europe documentation
 
-Practical guidance for joining OSE, receiving funds and managing your Collective.
+Practical guidance for joining Open Source Europe (OSE), receiving funds, and managing your Collective.
 
 If you are new to OSE: [Start your application](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/). If OSE has already accepted you: [Follow your first steps](https://www.opensourceeurope.org/docs/how-it-works/basics/).
 
 ## Choose your task
 
 - [Join OSE](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/): Check whether hosting fits your project and prepare your application.
-- [Run your Collective](https://www.opensourceeurope.org/docs/how-it-works/basics/): Start after acceptance, manage your budget and keep your contacts up to date.
-- [Receive funds](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/): Choose a donation route, receive a grant or connect GitHub Sponsors.
+- [Run your Collective](https://www.opensourceeurope.org/docs/how-it-works/basics/): Start after acceptance, manage your budget, and keep your contacts up to date.
+- [Receive funds](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/): Choose a donation route, receive a grant, or connect GitHub Sponsors.
 - [Pay and get reimbursed](https://www.opensourceeurope.org/docs/how-it-works/expenses/): Choose an invoice or reimbursement and prepare your payment request.
 - [Fees and hosting rules](https://www.opensourceeurope.org/docs/faq/general-faqs/): Understand hosting costs and find answers about your arrangement with OSE.
-- [Get help](https://www.opensourceeurope.org/docs/about/contact-us/): Find the right contact for a question, a payment issue or a sensitive concern.
+- [Get help](https://www.opensourceeurope.org/docs/about/contact-us/): Find the right contact for a question, a payment issue, or a sensitive concern.
 
 ## Common tasks
+
+The following pages cover common tasks:
 
 * [Check project eligibility](https://www.opensourceeurope.org/docs/getting-started/how-to-apply/eligibility/)
 * [Review hosting fees](https://www.opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost)
@@ -1982,47 +1990,49 @@ Read [what OSE offers](https://www.opensourceeurope.org/docs/what-we-offer/), ex
 
 For a safeguarding concern, go directly to the [safeguarding policy and contacts](https://www.opensourceeurope.org/docs/about/safeguarding-policy/).
 
-Open Source Europe is a Belgian Association (ASBL/vzw). Its tech platform lets open source groups raise and spend funds, all in full transparency.
+Open Source Europe is a Belgian association (ASBL/vzw). Its tech platform lets open source groups raise and spend funds in full transparency.
 
-### Our Mission
+### Mission
 
-We support movements and decentralized communities by providing the infrastructure needed to:
+OSE supports movements and decentralized communities with the infrastructure they need to:
 
-* Launch new projects.
-* Manage and oversee financial operations.
-* Keep open source initiatives legally and fiscally compliant.
+* Launch new projects
+* Manage and oversee financial operations
+* Keep open source initiatives legally and fiscally compliant
 
-If you are an open source project, OSE helps you reach your goals by taking on the administrative work of managing your funds.
+If you run an open source project, OSE helps you reach your goals. OSE takes on the administrative work of managing your funds.
 
-We also work with foundations and philanthropists to set up dedicated funds. These funds let them re-grant resources to open source initiatives globally.
-
-***
-
-### How We Can Help
-
-#### For Open Source Collectives
-
-By partnering with OSE, your group can:
-
-* Launch and manage projects without having to incorporate a separate legal entity.
-* Simplify financial operations with the Open Collective platform.
-* Connect with global philanthropic opportunities and corporate sponsors.
-
-#### For Foundations and Philanthropists
-
-We offer professional help with:
-
-* Creating and managing philanthropic funds.
-* Supporting transparent re-granting processes.
-* Supporting open source initiatives on a global scale through a recognized European structure.
+OSE also works with foundations and philanthropists to set up dedicated funds. These funds let them re-grant resources to open source initiatives globally.
 
 ***
 
-### Get Started
+### How OSE can help
+
+#### For open source Collectives
+
+When your group partners with OSE, it can:
+
+* Launch and manage projects without having to incorporate a separate legal entity
+* Simplify financial operations with the Open Collective platform
+* Connect with global philanthropic opportunities and corporate sponsors
+
+#### For foundations and philanthropists
+
+OSE offers professional help to:
+
+* Support transparent re-granting processes
+* Create and manage philanthropic funds
+* Support open source initiatives on a global scale through a recognized European structure
+
+***
+
+### Get started
+
+The following links take you to the next step:
 
 * [Apply for hosting](https://opencollective.com/europe/apply)
-* [Join our Discord](https://discord.gg/TmbRzFBqBa)
-* [Contact us](mailto:home@opensourceeurope.org)
+* [Join the Discord server](https://discord.gg/TmbRzFBqBa)
+* [Contact OSE](mailto:home@opensourceeurope.org)
 
 
 <!-- opencrane:page -->
@@ -2049,7 +2059,7 @@ This overview explains the main points of the association's Terms of Hosting. It
 
 OSE recommends that you publish a public update on your Collective page at least once a year. This is not a general hosting obligation. Any specific reporting requirements in your applicable agreement or funding arrangement still apply.
 
-## Starting, changing or ending the arrangement
+## Starting, changing, or ending the arrangement
 
 Contact the team before you enter into a grant agreement or make a commitment on behalf of the association. Also contact the team before a significant change to your project's mission or activities. Collectives manage routine adjustments themselves. Any specific approval requirements for contracts and funding arrangements still apply.
 
@@ -2064,146 +2074,148 @@ For current guidance on contributions, see [Contributions FAQ](https://www.opens
 
 <!-- opencrane:page -->
 
-# Equivalency Determination Certificate
+# Equivalency Determination certificate
 
 ## Grants from U.S. foundations
 
-Open Source Europe helps hosted projects receive grants from U.S. foundations through an Equivalency Determination (ED) arrangement.
+Open Source Europe (OSE) helps hosted projects receive grants from U.S. foundations through an Equivalency Determination (ED) arrangement.
 
-Contact the OSE team before applying. We coordinate with the funder, provide the relevant documentation and arrange for the grant to reach your project.
+Contact the OSE team before you apply. The OSE team coordinates with the funder, provides the relevant documentation, and arranges for the grant to reach your project.
 
-## Preparing a grant application
+## Prepare a grant application
 
 Contact <home@opensourceeurope.org> early, with:
 
-* The funder's name and the project to be supported.
-* The proposed amount, purpose and application deadline.
-* Any eligibility requirements or draft grant agreement.
+* The funder's name and the project that the grant is for
+* Proposed amount, purpose, and application deadline
+* Any eligibility requirements or draft grant agreement
 
-The team will provide the current ED documentation and confirm the details to use in the grant agreement. An ED does not guarantee that a particular funder or grant programme will accept an application.
+The team provides the current ED documentation and confirms the details to use in the grant agreement. An ED does not guarantee that a particular funder or grant program will accept an application.
 
 ## Donations from individuals
 
-An ED is different from the route for U.S. tax-deductible donations through Myriad USA. See [Tax-Deductible Giving for U.S. Donors](https://www.opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/).
+An ED is different from the route for U.S. tax-deductible donations through Myriad USA. For more information, see [Tax-deductible giving for U.S. donors](https://www.opensourceeurope.org/docs/what-we-offer/tax-deductible-giving-for-us-donors/).
 
 ## Documentation for the funder
 
-The ED used for this arrangement is held by Open Collective Europe Foundation. When this route is used, the foundation receives the grant and transfers it to OSE for your project. The OSE team coordinates these steps.
+Open Collective Europe Foundation holds the ED used for this arrangement. On this route, the foundation receives the grant and transfers it to OSE for your project. The OSE team coordinates these steps.
 
 
 <!-- opencrane:page -->
 
-# What We Offer
+# What OSE offers
 
-Open Source Europe provides the legal and financial infrastructure that open source projects need. Our services let you focus on your code instead of paperwork.
+Open Source Europe (OSE) provides the legal and financial infrastructure that open source projects need. OSE services let you focus on your code instead of paperwork.
 
-We offer one core service, fiscal hosting. It includes everything you need to run your project professionally.
+OSE offers one core service: fiscal hosting. Fiscal hosting includes everything you need to run your project professionally.
 
 ***
 
-## Core Infrastructure
+## Core infrastructure
 
-### A Legal Home for Your Project
+### A legal home for your project
 
-Operate under our Belgian non-profit association (ASBL/vzw). Your project can then receive funds, manage contracts and act as a single legal entity, without the work and cost of creating its own.
+Operate under OSE, a Belgian nonprofit association (ASBL/vzw). Your project can then receive funds, manage contracts, and act as a single legal entity, without the work and cost of creating its own.
 
-### Transparent Financial Tools
+### Transparent financial tools
 
 Use the Open Collective platform to manage your budget, receive donations, and pay contributors and expenses with full transparency. Your community and backers can see every transaction in real time, which builds trust and accountability.
 
-### Access to Grants and Funding
+### Access to grants and funding
 
-Many foundations and companies want to fund open source but find it hard to support unincorporated groups. We act as a trusted intermediary, so your project can receive grants from these larger institutional funders.
-
-***
-
-## Why Choose Fiscal Hosting?
-
-This structure suits open source projects that want to focus on their mission without the admin work of formal incorporation. It gives you:
-
-* Immediate legitimacy, with high-level compliance for corporate sponsors.
-* Less overhead, with no need for your own accounting or legal teams.
-* A place among open source projects that share the same infrastructure.
+Many foundations and companies want to fund open source but find it hard to support unincorporated groups. OSE acts as a trusted intermediary, so your project can receive grants from these larger institutional funders.
 
 ***
 
-## Get Started
+## Why choose fiscal hosting
 
-To join our community of open source projects:
+Fiscal hosting suits open source projects that want to focus on their mission without the admin work of formal incorporation. Fiscal hosting gives you:
+
+* Immediate legitimacy, with high-level compliance for corporate sponsors
+* Less overhead, with no need for your own accounting or legal teams
+* A place among open source projects that share the same infrastructure
+
+***
+
+## Get started
+
+To join the community of open source projects that OSE hosts:
 
 * [Apply for hosting](https://opencollective.com/europe/apply)
-* [Join our Discord](https://discord.gg/TmbRzFBqBa)
-* [Contact the team](mailto:home@opensourceeurope.org)
+* [Join the OSE Discord](https://discord.gg/TmbRzFBqBa)
+* [Contact the OSE team](mailto:home@opensourceeurope.org)
 
 
 <!-- opencrane:page -->
 
-# Tax-Deductible Giving for U.S. Donors
+# Tax-deductible giving for U.S. donors
 
 ## An established route for U.S. giving
 
-U.S. individuals and businesses can support OSE Collectives through Myriad USA → Open Collective Europe Foundation (OCEF) → OSE. This established arrangement allows U.S. tax-deductible donations, within the limits of the applicable tax rules. The donor’s actual deduction depends on their circumstances.
+U.S. individuals and businesses can support Collectives hosted by Open Source Europe (OSE) through Myriad USA → Open Collective Europe Foundation (OCEF) → OSE. This established arrangement allows U.S. tax-deductible donations, within the limits of the applicable tax rules. The donor’s actual deduction depends on their circumstances.
 
 ## Choose the appropriate donation route
 
-Contact OSE at <home@opensourceeurope.org> before payment, and give the name of the Collective you want to support. The team organises the route, reference, documents, applicable costs and transfer arrangements.
+Contact OSE at <home@opensourceeurope.org> before payment, and give the name of the Collective you want to support. The team organizes the route, reference, documents, applicable costs, and transfer arrangements.
 
-* Regular fundraising from U.S. donors: an Every.org page organised with OSE is the preferred option. Funds follow Every.org → Myriad → OCEF → OSE.
-* A larger donation: the donor gives directly to Myriad, without Every.org, then funds follow Myriad → OCEF → OSE. Ask the team for the correct instructions. This page gives no fixed amount threshold.
+* For regular fundraising from U.S. donors, an Every.org page organized with OSE is the preferred option. Funds follow Every.org → Myriad → OCEF → OSE.
+* A donor who gives a larger donation gives directly to Myriad, without Every.org. Funds then follow Myriad → OCEF → OSE. Ask the team for the correct instructions. This page gives no fixed amount threshold.
 
-A donation through the ordinary Open Collective checkout does not automatically use this arrangement. Confirm which organisation will issue the donation documentation for the selected route.
+A donation through the ordinary Open Collective checkout does not automatically use this arrangement. Confirm which organization issues the donation documentation for the route you choose.
 
-The [current OSE hosting fees](https://www.opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost) apply. The team will confirm any additional costs associated with the route.
+The [current OSE hosting fees](https://www.opensourceeurope.org/docs/faq/general-faqs/#how-much-does-it-cost) apply. The team confirms any additional costs of the route.
 
 ## Other cases
 
-If the tax-deductible route for your circumstances has not already been confirmed, contact OSE before giving to check the available route and documents. OSE does not guarantee an individual tax benefit.
+If the tax-deductible route for your circumstances is not confirmed yet, contact OSE before you give, and check the available route and documents. OSE does not guarantee an individual tax benefit.
 
-Cryptocurrency donations must start on Every.org. See [Cryptocurrency contributions](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/contributions-in-cryptocurrencies/).
+Cryptocurrency donations must start on Every.org. For more information, see [Cryptocurrency contributions](https://www.opensourceeurope.org/docs/how-it-works/financial-contributions-how-to-donate/contributions-in-cryptocurrencies/).
 
-For grants from U.S. foundations, see [Equivalency Determination Certificate](https://www.opensourceeurope.org/docs/what-we-offer/equivalency-determination-certificate/).
+For grants from U.S. foundations, see [Equivalency Determination certificate](https://www.opensourceeurope.org/docs/what-we-offer/equivalency-determination-certificate/).
 
-Further information: [Myriad FAQ](https://myriadusa.org/about/faqs/) and [ways to give](https://myriadusa.org/waystogive/).
+For more information about Myriad, see the [Myriad FAQ](https://myriadusa.org/about/faqs/) and the [Myriad ways to give](https://myriadusa.org/waystogive/).
 
 
 <!-- opencrane:page -->
 
-# The Open Collective Platform
+# The Open Collective platform
 
-A shared tool for managing contributions, expenses, and grants with full transparency.
+Open Collective is a shared tool to manage contributions, expenses, and grants with full transparency.
 
 ## A transparent financial and community management tool
 
-Open Collective is a digital platform that lets hosted initiatives and philanthropic partners raise, manage, and distribute funds with full transparency. Each group or fund hosted by Open Source Europe gets its own public page, with tools to:
+Open Collective is a digital platform that lets hosted initiatives and philanthropic partners raise, manage, and distribute funds with full transparency. Each group or fund hosted by Open Source Europe (OSE) gets its own public page, with tools to:
 
-* Collect financial contributions: Accept donations via credit card, PayPal, or bank transfer, and manage grants.
-* Manage expenses and disbursements: Submit, approve, and reimburse expenses directly through the platform.
-* Display a transparent budget: All income and expenditures are visible in real time, which builds trust and accountability.
-* Engage with the community: Post updates, host events, and share progress with supporters.
+* Accept donations by credit card, PayPal, or bank transfer, and manage grants
+* Submit, approve, and reimburse expenses directly on the platform
+* Display a transparent budget that shows all income and expenditures in real time, which builds trust and accountability
+* Post updates, host events, and share progress with supporters
 
-Having these tools in one place makes financial administration simpler and helps your initiative or fund work together.
+These tools in one place make financial administration simpler and help your initiative or fund work together.
 
-## Support for Philanthropic Regranting
+## Support for philanthropic regranting
 
-Foundations and funders can use the platform too, not only grassroots initiatives. Through Open Collective, OSE can set up dedicated online funds to:
+Grassroots initiatives use the platform, and foundations and funders can use it too. Through Open Collective, OSE can set up dedicated online funds to:
 
 * Receive donations or grants earmarked for specific causes or regions
 * Disburse grants to multiple projects (including informal or unincorporated groups) in a simple, transparent way
-* Enable funders and the public to track how resources are used
+* Let funders and the public track how resources are used
 
-Each fund has its own profile page, budget, and update feed, just like a Collective. Regranting partners can then easily share their goals, track disbursements, and meet reporting obligations with little extra work.
+Each fund has its own profile page, budget, and update feed, like a Collective. Regranting partners can then easily share their goals, track disbursements, and meet reporting obligations with little extra work.
 
 ## Why transparency matters
 
 Transparency is central to the Open Collective platform. When financial information is public, initiatives and funders can:
 
-* Build credibility: Show responsible fund management to donors and stakeholders
-* Simplify reporting: Funders can directly monitor how their resources are allocated
-* Improve collaboration: Encourage trust and coordination between grantees and grantmakers
+* Show responsible fund management to donors and stakeholders
+* Simplify reporting, because funders can directly monitor how their resources are allocated
+* Encourage trust and coordination between grantees and grantmakers
 
-Financial transactions are public, but personal details like names and email addresses are only visible to authorized admins.
+Financial transactions are public, but personal details such as names and email addresses are visible only to authorized admins.
 
-## Key Features
+## Key features
+
+The Open Collective platform includes:
 
 * Real-time budget tracking
 * Integrated expense and payout tools
@@ -2215,43 +2227,47 @@ Financial transactions are public, but personal details like names and email add
 
 <!-- opencrane:page -->
 
-# Umbrella organisation
+# Umbrella organization
 
 Open Source Europe (OSE) provides a shared legal and financial framework for open source projects, developer networks, and software communities.
 
-## Collective Infrastructure
+## Collective infrastructure
 
-OSE is an umbrella organisation and the fiscal host for open source initiatives. Each project runs independently on the Open Collective platform, with its own public page and transparent budget. It also benefits from the legal standing of a professional Belgian non-profit (ASBL/vzw).
+OSE is an umbrella organization and the fiscal host for open source initiatives. Each project runs independently on the Open Collective platform, with its own public page and transparent budget. Each project also benefits from the legal standing of a professional Belgian nonprofit (ASBL/vzw).
 
-This structure allows communities to manage funds, pay service providers on compliant invoices, and receive grants without the work of running their own legal entity.
-
-***
-
-## Key Benefits
-
-* Simplified legal framework: Skip the complexity of non-profit incorporation, bank account openings, and statutory bookkeeping.
-* Grant eligibility: Access funding from foundations, corporations, and public authorities that require a registered non-profit intermediary.
-* Professional back-office: We handle the administrative work, including expense processing, bookkeeping, and annual financial reporting.
-* Transparency: Every transaction is logged in real time, which builds trust with your backers and contributors.
-* Ecosystem access: Join a network of like-minded maintainers and projects in the European open source community.
+With this structure, communities can manage funds, pay service providers on compliant invoices, and receive grants. They do not need to run their own legal entity.
 
 ***
 
-> **Tip:** ## Responsibilities and Alignment
+## Key benefits
+
+Hosting with OSE gives your project the following benefits.
+
+* Your project skips the complexity of nonprofit incorporation, bank account openings, and statutory bookkeeping.
+* Foundations, corporations, and public authorities that require a registered nonprofit intermediary can fund your project.
+* OSE handles the administrative work, including expense processing, bookkeeping, and annual financial reporting.
+* Every transaction is logged in real time, which builds trust with your backers and contributors.
+* Your project joins a network of like-minded maintainers and projects in the European open source community.
+
+***
+
+> **Caution:** ## Responsibilities and alignment
 >
-> To keep the umbrella sound, hosted projects must follow three core principles:
+> To keep the umbrella organization sound, hosted projects must follow three core principles:
 >
-> 1. Mission alignment: Projects must actively support the development or sustainability of open source software.
-> 2. Non-profit compliance: OSE is an ASBL/vzw, so projects must operate within the limits of Belgian law, focusing on community benefit rather than purely commercial for-profit activities.
-> 3. Operational transparency: All financial activities must be conducted through the Open Collective platform to ensure public accountability.
+> * Mission alignment: Projects must actively support the development or sustainability of open source software.
+> * Nonprofit compliance: OSE is an ASBL/vzw, so projects must operate within the limits of Belgian law. They must focus on community benefit rather than purely commercial for-profit activities.
+> * Operational transparency: Projects must conduct all financial activities through the Open Collective platform to ensure public accountability.
 
 ***
 
-## Use Cases We Support
+## Use cases OSE supports
+
+OSE supports the following use cases:
 
 * Open source libraries: A legal home for critical libraries to receive corporate and individual donations.
 * Project ecosystems: One structure for a set of related tools that a distributed community manages.
-* Tech communities: Regional developer groups or meetups managing funds for events, travel stipends, and venues.
+* Tech communities: Regional developer groups or meetups that manage funds for events, travel stipends, and venues.
 
 ***
 
