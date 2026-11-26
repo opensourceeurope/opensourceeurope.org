@@ -19,6 +19,10 @@ const email = labelParts(form.email.label);
 const legend = labelParts(form.interest.legend);
 const message = labelParts(form.message.label);
 const link = labelParts(form.link.label);
+
+// Without JavaScript the page-load time is the build time. The script replaces
+// it with the real one. The function drops a post without a numeric `ts`.
+const buildTime = String(Date.now());
 ---
 
 <section id={section.id ?? 'contact-form'} class="contact grid-26">
@@ -109,11 +113,11 @@ const link = labelParts(form.link.label);
       <p id="link-error" class="field__error" hidden></p>
     </div>
 
-    <div class="honeypot" aria-hidden="true">
-      <label for="website">{form.honeypotLabel}</label>
-      <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    <div class="form__aux" aria-hidden="true">
+      <label for="subject">{form.honeypotLabel}</label>
+      <input id="subject" name="subject" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" />
     </div>
-    <input type="hidden" name="ts" value="" />
+    <input type="hidden" name="ts" value={buildTime} />
 
     <div class="field--wide actions">
       <button type="submit" class="submit"><span>{form.submit}</span></button>
@@ -300,8 +304,9 @@ const link = labelParts(form.link.label);
     display: none;
   }
 
-  /* Off screen rather than display: none, so form-filling bots still see it. */
-  .honeypot {
+  /* The spam trap. Off screen rather than display: none, so form-filling bots
+     still see it. Its class, name and label look like a normal field on purpose. */
+  .form__aux {
     position: absolute;
     left: -10000px;
     width: 1px;

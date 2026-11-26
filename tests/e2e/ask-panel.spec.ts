@@ -91,7 +91,7 @@ test.describe('ask panel', () => {
     await page.goto('/about/');
     await button(page).click();
     await expect(dialog(page)).toBeVisible();
-    const honeypot = dialog(page).locator('input[name="website"]');
+    const honeypot = dialog(page).locator('input[name="subject"]');
     await expect(honeypot).toHaveAttribute('tabindex', '-1');
     await expect(honeypot).toHaveAttribute('aria-hidden', 'true');
     await expect(honeypot).not.toBeInViewport();

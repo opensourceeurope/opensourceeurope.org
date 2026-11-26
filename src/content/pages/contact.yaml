@@ -50,7 +50,9 @@ sections:
         label: Add a link with files or something additional
         placeholder: https://
         description: We encourage you to include files or images in a cloud drive link.
-      honeypotLabel: Leave this field empty
+      # The label of the hidden spam trap. Only bots see it, so it reads like a
+      # normal field and gives no hint to leave it empty.
+      honeypotLabel: Subject
       submit: send a message
       # The live confirmation text only shows after a real submission. These
       # are placeholders for OSE to replace.

@@ -13,6 +13,7 @@ const valid = {
   email: 'ada@example.org',
   interest: 'Founding a project',
   message: 'Hello',
+  ts: String(Date.now() - 60_000),
 };
 const form = (o: Record<string, string>) => new URLSearchParams(o).toString();
 const post = (body: string, headers: Record<string, string>, extra: object = {}) =>
@@ -109,10 +110,10 @@ describe('handle', () => {
     expect(r.headers.Location).toBe(`${SITE}/contact/#form-invalid`);
   });
   it('answers spam with the success response and sends nothing', async () => {
-    const f = await post(form({ ...valid, website: 'http://spam' }), urlenc);
+    const f = await post(form({ ...valid, subject: 'http://spam' }), urlenc);
     expect(f.statusCode).toBe(303);
     expect(f.headers.Location).toBe(`${SITE}/contact/#form-sent`);
-    const j = await post(JSON.stringify({ ...valid, website: 'x' }), json);
+    const j = await post(JSON.stringify({ ...valid, subject: 'x' }), json);
     expect(JSON.parse(j.body)).toEqual({ ok: true });
     expect(sendEmail).not.toHaveBeenCalled();
   });
@@ -141,6 +142,12 @@ describe('handle', () => {
     const [msg, cfg] = vi.mocked(sendEmail).mock.calls[0];
     expect(msg.replyTo).toBe('ada@example.org');
     expect(cfg).toMatchObject({ host: 'smtp.protonmail.ch', port: 587, user: 'home@x.org', token: 'tok', from: 'home@x.org', to: 'to@x.org' });
+  });
+  it('treats a post without ts as spam', async () => {
+    const { ts: _ts, ...noTs } = valid;
+    const r = await post(form(noTs), urlenc);
+    expect(r.headers.Location).toBe(`${SITE}/contact/#form-sent`);
+    expect(sendEmail).not.toHaveBeenCalled();
   });
   it('treats a too-fast post as spam', async () => {
     const r = await post(JSON.stringify({ ...valid, ts: String(Date.now()) }), json);

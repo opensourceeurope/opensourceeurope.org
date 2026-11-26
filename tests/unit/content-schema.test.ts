@@ -14,7 +14,7 @@ const contactText = (interest: Record<string, unknown> = {}) => ({
   interest: { legend: 'I am interested in*', options: ['Founding a project', 'Other'], checked: 'Founding a project', other: 'Other', otherLabel: 'Other Choice, please specify', ...interest },
   message: { label: "What's your message*", placeholder: 'Write your message here...', description: 'Details' },
   link: { label: 'Add a link', placeholder: 'https://' },
-  honeypotLabel: 'Leave this field empty',
+  honeypotLabel: 'Subject',
   submit: 'send a message',
   status: { sent: 'Thanks', invalid: 'Check the form', error: 'Not sent' },
 });
