@@ -69,7 +69,7 @@ export function mountChat(
   const sendBtn = need<HTMLButtonElement>(root, '[data-chat-send]');
   const sharingText = root.querySelector<HTMLElement>('[data-chat-sharing-text]');
   // The hidden spam trap. People never see it, so only a bot fills it in.
-  const honeypot = root.querySelector<HTMLInputElement>('[data-chat-honeypot]');
+  const honeypot = root.querySelector<HTMLInputElement>('[data-chat-aux]');
   let statusEl = root.querySelector<HTMLElement>('[data-chat-status]');
   if (!statusEl) {
     statusEl = el('p', 'visually-hidden');

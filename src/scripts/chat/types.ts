@@ -22,7 +22,8 @@ export interface ChatTexts {
   intro: string;
   placeholder: string;
   input_label: string;
-  honeypot_label: string;
+  /** The spam trap's label. Chat.astro renders it and leaves it out of data-chat-texts. */
+  honeypot_label?: string;
   send_label: string;
   suggestions_label: string;
   suggestions: string[];

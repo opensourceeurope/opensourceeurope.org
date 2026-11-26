@@ -43,8 +43,9 @@ matters who may call the function:
   a determined attacker can still call the endpoint directly. The last protection is at
   platform level: Scaleway free-tier and account limits cap total spend, and you can add
   rate-limiting in front of the function (gateway/CDN/WAF) if abuse appears.
-- The chat form (on `/ask/` and in the panel) has a hidden `website` honeypot
-  field, like the contact form. People never see it. The browser sends it only when
+- The chat form (on `/ask/` and in the panel) has a hidden honeypot field, `subject`
+  in the page and `website` in the request body, like the contact form. People never
+  see it, and its label reads like a normal field. The browser sends it only when
   something filled it. The function answers such a request with `400 bad_request`
   before any search or model call, so it costs nothing. It catches bots that fill in
   the form. A script that posts to the function directly skips the form, so this check

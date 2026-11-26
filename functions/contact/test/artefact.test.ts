@@ -58,7 +58,7 @@ it('sends a message from the zip through SMTP with STARTTLS', async () => {
       const r = await handle({
         httpMethod: 'POST',
         headers: { 'content-type': 'application/json', origin: 'https://opensourceeurope.org' },
-        body: JSON.stringify({ name: 'Zip Test', email: 'zip@example.org', interest: 'Becoming a partner', message: '<i>hi</i>' }),
+        body: JSON.stringify({ name: 'Zip Test', email: 'zip@example.org', interest: 'Becoming a partner', message: '<i>hi</i>', ts: String(Date.now() - 60_000) }),
       });
       process.stdout.write(JSON.stringify(r));
     `;

@@ -7,7 +7,9 @@ const good = {
   email: 'ada@example.org',
   interest: 'Founding a project',
   message: 'Hello',
+  ts: String(now - 10_000),
 };
+const { ts: _ts, ...goodData } = good;
 
 describe('parseBody', () => {
   it('reads JSON and urlencoded bodies', () => {
@@ -23,18 +25,29 @@ describe('parseBody', () => {
 
 describe('validate', () => {
   it('accepts a good submission', () => {
-    expect(validate(good, now)).toEqual({ kind: 'ok', data: good });
+    expect(validate(good, now)).toEqual({ kind: 'ok', data: goodData });
   });
-  it('flags the honeypot', () => {
-    expect(validate({ ...good, website: 'x' }, now)).toEqual({ kind: 'spam', reason: 'honeypot' });
+  it('flags the trap field', () => {
+    expect(validate({ ...good, subject: 'x' }, now)).toEqual({ kind: 'spam', reason: 'honeypot' });
+    expect(validate({ ...good, website: 'x' }, now).kind).toBe('ok');
   });
   it('flags a fast submission and passes a slow one', () => {
     expect(validate({ ...good, ts: String(now - 1000) }, now)).toEqual({ kind: 'spam', reason: 'too-fast' });
     expect(validate({ ...good, ts: String(now - 5000) }, now).kind).toBe('ok');
   });
-  it('ignores a missing or non-numeric ts', () => {
-    expect(validate(good, now).kind).toBe('ok');
-    expect(validate({ ...good, ts: 'abc' }, now).kind).toBe('ok');
+  it('flags a missing, empty or non-numeric ts', () => {
+    for (const ts of [undefined, '', ' ', 'abc', '1e6', '-5', '12.5']) {
+      const f = ts === undefined ? goodData : { ...good, ts };
+      expect(validate(f, now), String(ts)).toEqual({ kind: 'spam', reason: 'no-ts' });
+    }
+  });
+  it('flags a "test" probe and passes a real message that says test', () => {
+    for (const [name, message] of [['Test', 'Test'], ['test', 'test.'], ['TEST', ' Test! ']]) {
+      expect(validate({ ...good, name, message }, now), name + message).toEqual({ kind: 'spam', reason: 'test' });
+    }
+    expect(validate({ ...good, name: 'Test', message: 'Hello' }, now).kind).toBe('ok');
+    expect(validate({ ...good, name: 'Ada', message: 'test' }, now).kind).toBe('ok');
+    expect(validate({ ...good, name: 'Test', message: 'A test of the form' }, now).kind).toBe('ok');
   });
   it('ignores a ts in the future (client clock ahead)', () => {
     expect(validate({ ...good, ts: String(now + 500) }, now).kind).toBe('ok');
@@ -44,7 +57,7 @@ describe('validate', () => {
     expect(validate({ ...good, ts: String(now) }, now)).toEqual({ kind: 'spam', reason: 'too-fast' });
   });
   it('requires the main fields', () => {
-    const r = validate({}, now);
+    const r = validate({ ts: good.ts }, now);
     expect(r.kind).toBe('invalid');
     if (r.kind === 'invalid') {
       expect(Object.keys(r.errors).sort()).toEqual(['email', 'interest', 'message', 'name']);

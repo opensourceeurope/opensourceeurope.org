@@ -17,7 +17,7 @@ export type Submission = {
 
 export type ValidationResult =
   | { kind: 'ok'; data: Submission }
-  | { kind: 'spam'; reason: 'honeypot' | 'too-fast' }
+  | { kind: 'spam'; reason: 'honeypot' | 'no-ts' | 'too-fast' | 'test' }
   | { kind: 'invalid'; errors: Partial<Record<keyof Submission, string>> };
 
 /** Maximum length of each field, in UTF-16 code units. The form's maxlength attributes use it too. */
@@ -63,22 +63,31 @@ function isHttpUrl(value: string): boolean {
   }
 }
 
+/** The hidden trap field. Its name and label look like a normal field, so a bot fills it in. */
+export const TRAP_FIELD = 'subject';
+
+/** True for a probe like "Test", "test." or "TEST!". */
+const isTestWord = (v: string | undefined) => (v ?? '').toLowerCase().replace(/[^a-z]/g, '') === 'test';
+
 /**
- * Checks spam signals first, then the fields. `ts` is the client's page-load
- * time, so a value ahead of the server clock (client clock skew) is ignored
- * like a missing one rather than counted as a fast post.
+ * Checks spam signals first, then the fields. `ts` is the page-load time: the
+ * build writes it into the page and the script refreshes it, so a post without
+ * a numeric `ts` did not come from the form. A value ahead of the server clock
+ * (client clock skew) is not counted as a fast post.
  */
 export function validate(
   fields: Record<string, string>,
   now: number,
   minDelayMs = 3000,
 ): ValidationResult {
-  if ((fields.website ?? '').trim() !== '') return { kind: 'spam', reason: 'honeypot' };
+  if ((fields[TRAP_FIELD] ?? '').trim() !== '') return { kind: 'spam', reason: 'honeypot' };
 
-  const ts = fields.ts !== undefined && fields.ts.trim() !== '' ? Number(fields.ts) : NaN;
-  if (Number.isFinite(ts) && now - ts >= 0 && now - ts < minDelayMs) {
-    return { kind: 'spam', reason: 'too-fast' };
-  }
+  const tsText = (fields.ts ?? '').trim();
+  const ts = /^\d+$/.test(tsText) ? Number(tsText) : NaN;
+  if (!Number.isFinite(ts)) return { kind: 'spam', reason: 'no-ts' };
+  if (now - ts >= 0 && now - ts < minDelayMs) return { kind: 'spam', reason: 'too-fast' };
+
+  if (isTestWord(fields.name) && isTestWord(fields.message)) return { kind: 'spam', reason: 'test' };
 
   const name = (fields.name ?? '').trim();
   const email = (fields.email ?? '').trim();

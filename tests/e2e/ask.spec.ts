@@ -102,11 +102,12 @@ async function askAndReadOptIn(page: Page, question: string, reply: number): Pro
 
 test('the honeypot is out of reach', async ({ page }) => {
   await page.goto('/ask/');
-  const honeypot = page.locator('[data-chat] input[name="website"]');
+  const honeypot = page.locator('[data-chat] input[name="subject"]');
   await expect(honeypot).toHaveAttribute('tabindex', '-1');
   await expect(honeypot).toHaveAttribute('autocomplete', 'off');
   await expect(honeypot).toHaveAttribute('aria-hidden', 'true');
-  await expect(page.locator('[data-chat] .chat__honeypot label')).toHaveText('Leave this field empty');
+  await expect(page.locator('[data-chat] .chat__aux label')).toHaveText('Subject');
+  await expect(page.locator('[data-chat] .chat__honeypot')).toHaveCount(0);
   await expect(honeypot).not.toBeInViewport();
 });
 
@@ -119,7 +120,7 @@ test('sends the honeypot only when something filled it', async ({ page }, info) 
   await page.getByLabel('Your question').press('Enter');
   expect((await posted).postDataJSON()).not.toHaveProperty('website');
   await expect(page.getByText('(reply 1)')).toBeVisible();
-  await page.locator('[data-chat] input[name="website"]').fill('https://spam.example', { force: true });
+  await page.locator('[data-chat] input[name="subject"]').fill('https://spam.example', { force: true });
   posted = page.waitForRequest((r) => r.url() === ENDPOINT && r.method() === 'POST');
   await page.getByLabel('Your question').fill('And the fees?');
   await page.getByLabel('Your question').press('Enter');

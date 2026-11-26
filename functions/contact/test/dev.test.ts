@@ -49,7 +49,7 @@ it('the dev server ignores exported SMTP credentials', async () => {
         res = await fetch(`http://127.0.0.1:${port}/`, {
           method: 'POST',
           headers: { 'content-type': 'application/json', origin: 'http://localhost:4321' },
-          body: JSON.stringify({ name: 'Dev Guard', email: 'dev@example.org', interest: 'Becoming a partner', message: 'hi' }),
+          body: JSON.stringify({ name: 'Dev Guard', email: 'dev@example.org', interest: 'Becoming a partner', message: 'hi', ts: String(Date.now() - 60_000) }),
         });
       } catch {
         await new Promise((r) => setTimeout(r, 200));

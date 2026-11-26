@@ -63,13 +63,15 @@ test('the fields have the live labels, placeholders and descriptions', async ({ 
 });
 
 test('the honeypot is out of reach and the timestamp is hidden', async ({ page }) => {
-  const honeypot = page.locator('input[name="website"]');
+  const honeypot = page.locator('input[name="subject"]');
   await expect(honeypot).toHaveAttribute('tabindex', '-1');
   await expect(honeypot).toHaveAttribute('autocomplete', 'off');
   await expect(honeypot).toHaveAttribute('aria-hidden', 'true');
-  await expect(page.locator('label[for="website"]')).toHaveText('Leave this field empty');
+  await expect(page.locator('label[for="subject"]')).toHaveText('Subject');
+  await expect(page.locator('.honeypot')).toHaveCount(0);
   await expect(honeypot).not.toBeInViewport();
   await expect(page.locator('input[name="ts"]')).toHaveAttribute('type', 'hidden');
+  await expect(page.locator('input[name="ts"]')).toHaveValue(/^\d{13}$/);
 });
 
 test('"Other" reveals the text field', async ({ page }) => {
