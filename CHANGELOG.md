@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.17.6](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.17.5...v0.17.6) (2026-11-26)
+
+
+### Bug Fixes
+
+* stop the spam traps naming themselves and drop test posts ([#558](https://github.com/opensourceeurope/opensourceeurope.org/issues/558)) ([4f7a4f4](https://github.com/opensourceeurope/opensourceeurope.org/commit/4f7a4f431ac67e87c181933aaf4df3199f28d895))
+
 ## [0.17.5](https://github.com/opensourceeurope/opensourceeurope.org/compare/v0.17.4...v0.17.5) (2026-11-24)
 
 
